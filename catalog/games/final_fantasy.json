@@ -1,0 +1,46 @@
+{
+  "id": "final_fantasy",
+  "display_name": "Final Fantasy",
+  "subtitle": "BizHawk",
+  "platform": "NES",
+  "version": "1.0.0",
+  "_verified": "2026-08-17",
+  "ap_world_name": "Final Fantasy",
+  "_ap_world_name_source": "world source: ArchipelagoMW/Archipelago worlds/ff1 (upstream), read from the world's own code -- the world's own `game` value",
+  "description": "The four Fiends as a multiworld. Key items and progression are shuffled across the session.",
+  "_description_source": "written by us from the structure of the game - no text copied from the game itself",
+  "checks_verified": false,
+  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Until then London warns.",
+  "requires": "own_copy",
+  "_requires_source": "NES title - the game lives on a cartridge the player owns",
+  "rom": {
+    "description": "A Final Fantasy (NES) ROM",
+    "_description_source": "world source: ArchipelagoMW/Archipelago worlds/ff1 (upstream), read from the world's own code",
+    "md5": [],
+    "size": null,
+    "_size_note": "Not measured. London reads size 0 as 'unknown' and matches on MD5 alone, which is the stronger check.",
+    "_hash_note": "This world declares NO base-ROM hash."
+  },
+  "emulator": {
+    "name": "BizHawk",
+    "min_version": null,
+    "_source": "Not stated in the material we read. The group floor in catalog/GROUP_NES.md covers it."
+  },
+  "client": {
+    "name": "Archipelago's BizHawk Client",
+    "protocol": "bizhawk",
+    "lua": "data/lua/connector_bizhawk_generic.lua",
+    "_source": "world source: ArchipelagoMW/Archipelago worlds/ff1 (upstream), read from the world's own code -- read from the world's client class"
+  },
+  "apworld": {
+    "bundled": true,
+    "url": null,
+    "_source": "game list: \"Bundled with Archipelago\""
+  },
+  "patch": {
+    "extension": null,
+    "needs_vanilla_rom": false,
+    "_source": "world source: ArchipelagoMW/Archipelago worlds/ff1 (upstream), read from the world's own code -- patch_file_ending / patch_suffix"
+  },
+  "_note": "This world has NO rom.py and declares no patch extension and no base-ROM hash: the randomised ROM is produced by the external Final Fantasy Randomizer, not by Archipelago. London therefore cannot verify the player's file for this game, and says so."
+}

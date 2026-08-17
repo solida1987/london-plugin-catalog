@@ -73,11 +73,17 @@ def main(platform):
     for field in ("subtitle", "requires", "description"):
         vals = Counter(m.get(field) for m in games.values() if m.get(field))
         if len(vals) == 1 and len(games) > 1:
-            v = list(vals)[0]
+            v, n = list(vals.items())[0]
             deliberate = field != "description"
+            # Count the games that actually CARRY the value, not the group size.
+            # Saying "in all 4" when only 2 have it and 2 are blank is the kind
+            # of small lie that makes a report stop being worth reading.
+            where = ("in all %d" % n if n == len(games)
+                     else "in %d of %d (%d leave it blank)"
+                          % (n, len(games), len(games) - n))
             note("OK" if deliberate else "FAIL",
-                 "%s is %r in all %d - %s"
-                 % (field, v[:40], len(games),
+                 "%s is %r %s - %s"
+                 % (field, v[:40], where,
                     "deliberate" if deliberate
                     else "descriptions must not be identical"))
 
