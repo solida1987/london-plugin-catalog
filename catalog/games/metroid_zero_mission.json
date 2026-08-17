@@ -46,5 +46,6 @@
   },
   "lua_module": "mzm",
   "_lua_module_source": "filename under Multiworld-Launcher/Plugins/Scripts/games/ — the modules predate this catalogue and use their own short names",
-  "patch_extension": "unaudited"
+  "patch_extension": "refused",
+  "_patch_extension_source": "read from the compiled world at mzm.apworld: adds new steps ['apply_json'] in mzm/patch.py:MZMPatchExtensions"
 }
