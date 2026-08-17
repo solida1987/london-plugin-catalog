@@ -57,8 +57,9 @@ console does.
 
   "client": {
     "name": "Archipelago's BizHawk Client",
+    "protocol": "bizhawk",              // bizhawk | sni | unknown
     "lua": "data/lua/connector_bizhawk_generic.lua",
-    "_source": "setup guide"
+    "_source": "the world's client subclasses BizHawkClient"
   },
 
   "apworld": {
@@ -104,6 +105,21 @@ wrong one in silence.
 | `mod` | The player owns the game; the plugin installs the AP developer's mod | write into an existing install |
 | `free` | The game itself is free | fetch the whole game |
 | `unknown` | Not classified yet | nothing automatic |
+
+## `client.protocol` — how the game talks to Archipelago
+
+Read it from the world's client class, never guessed:
+
+| Value | The world's client subclasses | Buildable today |
+|---|---|---|
+| `bizhawk` | `BizHawkClient` | yes |
+| `sni` | `SNIClient` | **no** — London has no SNI bridge |
+| `unknown` | not established | no |
+
+`GenericEmulatorPlugin` drives BizHawk with the generic Lua connector and
+nothing else. A plugin built for an `sni` world would install cleanly, launch an
+emulator, and never connect — no error, just a player waiting. So the build
+**refuses** it. See `catalog/GROUP_SNES.md`.
 
 `tools/build_plugins.py` **refuses to build** a manifest whose `requires` is
 outside this set. A value it does not recognise must never fall through to a
