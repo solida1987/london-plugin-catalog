@@ -34,6 +34,29 @@ SCRIPTS = ROOT.parent / "Multiworld-Launcher" / "Plugins" / "Scripts"
 ENTRY = "LauncherV2.Plugins.Catalog.GenericEmulatorPlugin"
 AUTHOR = "Solida Games"
 
+# The launcher these plugins are built against. Raise it only when the catalog
+# starts using something newer -- it is what stops an old launcher from failing
+# with an assembly-binding error nobody can read.
+MIN_LAUNCHER = "3.4.0"
+
+# Where each catalog plugin publishes its own updates.
+#
+# ⚠ NOT "releases/latest/download". This repository has one release per
+# platform plus an index release, and the index is deliberately published LAST
+# so GitHub marks IT as latest -- so "latest" resolves to the release that
+# contains no plugins at all. The platform tag is the stable address: tags
+# never change name, a platform release is updated in place.
+CATALOG_RAW = ("https://raw.githubusercontent.com/solida1987/"
+               "london-plugin-catalog/main/catalog/versions")
+CATALOG_RELEASE = ("https://github.com/solida1987/london-plugin-catalog/"
+                   "releases/download")
+
+# Which release tag each platform's plugins live on.
+PLATFORM_TAG = {
+    "GBA": "gba", "SNES": "snes", "NES": "nes", "GBC": "gbc",
+    "N64": "n64", "NDS": "nds", "PC": "pc", "WEB": "web",
+}
+
 # How the game talks to Archipelago. GenericEmulatorPlugin drives BizHawk with
 # the generic Lua connector and NOTHING ELSE, so a world on another protocol
 # must be REFUSED rather than built.
@@ -229,6 +252,18 @@ def build_one(path, results):
             "requiresOriginalGame": REQUIRES[m["requires"]],
         },
         "rulesAcknowledged": True,
+        # The launcher this build binds to. Without it, a player on an older
+        # launcher gets a raw .NET assembly-binding error instead of a sentence.
+        "minLauncher": MIN_LAUNCHER,
+        # Where this plugin publishes newer builds. One feed per game id, so a
+        # single game can be updated without touching the other 400.
+        # ⚠ The asset name must NOT carry the version -- a versioned URL points
+        # at a file that will not exist on the next release.
+        "update": {
+            "versionUrl": f"{CATALOG_RAW}/{gid}.txt",
+            "packageUrl": f"{CATALOG_RELEASE}/{PLATFORM_TAG[m['platform']]}"
+                          f"/{gid}.londonplugin",
+        },
     }, indent=2, ensure_ascii=False), encoding="utf-8")
 
     r = subprocess.run(["dotnet", "build", str(proj), "-c", "Release", "--nologo",
