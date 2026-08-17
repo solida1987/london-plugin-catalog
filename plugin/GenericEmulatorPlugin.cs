@@ -44,7 +44,14 @@ public class GenericEmulatorPlugin : EmulatorPlugin
 
     protected override string RomSystem     => Manifest.Platform;
     protected override string LuaScriptName => "bizhawk_ap_connector.lua";
-    // LuaModuleName is inherited: the base default is GameId, which IS Manifest.Id.
+
+    /// Which file under Plugins/Scripts/games/ carries this game's RAM map.
+    ///
+    /// NOT the game id. The modules were written before this catalogue existed
+    /// and use their own short names -- "cvcotm" for castlevania_cotm, "mm2"
+    /// for mega_man_2, "The Minish Cap" with spaces. Letting the id decide
+    /// would silently load nothing for ten of the sixteen GBA games.
+    protected override string LuaModuleName => Manifest.LuaModule ?? Manifest.Id;
 
     /// Only becomes true once the RAM map for THIS game has been measured
     /// in-game. Until then the launcher warns at launch, so nobody sits in a
@@ -100,7 +107,7 @@ public sealed record RomSpecManifest(
 public sealed record GameManifest(
     string Id, string DisplayName, string Subtitle, string Platform,
     string ApWorldName, string Description,
-    RomSpecManifest? Rom, bool ChecksVerified)
+    RomSpecManifest? Rom, bool ChecksVerified, string? LuaModule)
 {
     public static GameManifest Parse(string json)
     {
@@ -139,7 +146,8 @@ public sealed record GameManifest(
             Str(r, "description") ?? "",
             rom,
             r.TryGetProperty("checks_verified", out var c)
-                && c.ValueKind == JsonValueKind.True);
+                && c.ValueKind == JsonValueKind.True,
+            Str(r, "lua_module"));
     }
 
     static string? Str(JsonElement o, string k)

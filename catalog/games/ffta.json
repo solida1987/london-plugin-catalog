@@ -43,5 +43,7 @@
     "needs_vanilla_rom": true,
     "_source": "world source: spicynun/Archipelago @ ffta, worlds/ffta -- read from the world's own code -- patch_file_ending / patch_suffix"
   },
-  "_note": "Lives on the branch 'ffta', not on main."
+  "_note": "Lives on the branch 'ffta', not on main.",
+  "lua_module": "ffta",
+  "_lua_module_source": "filename under Multiworld-Launcher/Plugins/Scripts/games/ — the modules predate this catalogue and use their own short names"
 }

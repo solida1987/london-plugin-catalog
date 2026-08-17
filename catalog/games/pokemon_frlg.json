@@ -46,5 +46,7 @@
     "needs_vanilla_rom": true,
     "_source": "world source: vyneras/Archipelago @ frlg-stable, worlds/pokemon_frlg -- read from the world's own code -- patch_file_ending / patch_suffix"
   },
-  "_note": "TWO patch extensions, one per version: .apfirered and .apleafgreen. The four hashes are FireRed rev0/rev1 and LeafGreen rev0/rev1."
+  "_note": "TWO patch extensions, one per version: .apfirered and .apleafgreen. The four hashes are FireRed rev0/rev1 and LeafGreen rev0/rev1.",
+  "lua_module": "pokemon_frlg",
+  "_lua_module_source": "filename under Multiworld-Launcher/Plugins/Scripts/games/ — the modules predate this catalogue and use their own short names"
 }

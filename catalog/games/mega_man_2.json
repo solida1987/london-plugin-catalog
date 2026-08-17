@@ -47,5 +47,7 @@
     "needs_vanilla_rom": true,
     "_source": "world source: ArchipelagoMW/Archipelago worlds/mm2 (upstream), read from the world's own code -- patch_file_ending / patch_suffix"
   },
-  "_note": "Four accepted dumps. The setup guide names the Legacy Collection explicitly as an alternative to a cartridge dump."
+  "_note": "Four accepted dumps. The setup guide names the Legacy Collection explicitly as an alternative to a cartridge dump.",
+  "lua_module": "mm2",
+  "_lua_module_source": "filename under Multiworld-Launcher/Plugins/Scripts/games/ — the modules predate this catalogue and use their own short names"
 }

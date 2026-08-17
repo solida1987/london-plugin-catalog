@@ -42,5 +42,7 @@
     "needs_vanilla_rom": false,
     "_source": "world source: ArchipelagoMW/Archipelago worlds/ff1 (upstream), read from the world's own code -- patch_file_ending / patch_suffix"
   },
-  "_note": "This world has NO rom.py and declares no patch extension and no base-ROM hash: the randomised ROM is produced by the external Final Fantasy Randomizer, not by Archipelago. London therefore cannot verify the player's file for this game, and says so."
+  "_note": "This world has NO rom.py and declares no patch extension and no base-ROM hash: the randomised ROM is produced by the external Final Fantasy Randomizer, not by Archipelago. London therefore cannot verify the player's file for this game, and says so.",
+  "lua_module": "ff1",
+  "_lua_module_source": "filename under Multiworld-Launcher/Plugins/Scripts/games/ — the modules predate this catalogue and use their own short names"
 }

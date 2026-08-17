@@ -29,6 +29,7 @@ DIST = ROOT / "dist"
 SHARED = ROOT / "plugin" / "GenericEmulatorPlugin.cs"
 LAUNCHER = ROOT.parent / "Multiworld-Launcher" / "LauncherV2.csproj"
 PACKER = ROOT.parent / "Multiworld-Launcher" / "Tools" / "pack_plugin.py"
+SCRIPTS = ROOT.parent / "Multiworld-Launcher" / "Plugins" / "Scripts"
 
 ENTRY = "LauncherV2.Plugins.Catalog.GenericEmulatorPlugin"
 AUTHOR = "Solida Games"
@@ -124,6 +125,17 @@ def check(m, gid):
                         "drives BizHawk, so this would install and then never "
                         "connect" % proto)
 
+    # The game-side half. Without a module under Plugins/Scripts/games/ the
+    # connector loads nothing and the game sends no checks -- which is exactly
+    # how every plugin looked before this was noticed: installs, loads, casts,
+    # passes PluginCheck, and then does nothing.
+    if PROTOCOLS.get(proto):
+        mod = m.get("lua_module") or m.get("id")
+        if not (SCRIPTS / "games" / (mod + ".lua")).is_file():
+            problems.append("no RAM map: Plugins/Scripts/games/%s.lua does not "
+                            "exist, so this game would launch and send nothing"
+                            % mod)
+
     rom = m.get("rom") or {}
     if rom and not rom.get("size") and not rom.get("md5"):
         # Not an error -- but it belongs in the report rather than hidden.
@@ -150,7 +162,7 @@ def build_one(path, results):
     # catalogue -- they are documentation for US, not for the program.
     embedded = {k: m[k] for k in
                 ("id", "display_name", "subtitle", "platform", "ap_world_name",
-                 "description", "checks_verified")
+                 "description", "checks_verified", "lua_module")
                 if k in m}
     if m.get("rom"):
         embedded["rom"] = {k: m["rom"].get(k)
