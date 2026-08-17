@@ -1,0 +1,68 @@
+{
+  "id": "pokemon_emerald",
+  "display_name": "Pokémon Emerald",
+  "platform": "GBA",
+  "_verified": "2026-08-17",
+
+  "requires": "egen_fil",
+  "_requires_source": "GBA-titel — spillet ligger på en kassette spilleren ejer",
+
+  "rom": {
+    "description": "An English Pokémon Emerald ROM",
+    "_description_source": "archipelago.gg opsætningsvejledning, ordret",
+    "sha1": null,
+    "size": null,
+    "_hash_note": "⚠ Vejledningen angiver INGEN checksum for Emerald — modsat FireRed/LeafGreen, hvor SHA-1 for v1.0 og v1.1 står nævnt. Feltet står tomt indtil vi kan måle en dump og krydstjekke mod BizHawks gamedb. Pluginet falder imens tilbage til størrelseskontrol og siger det ligeud.",
+    "dump_name_in_gamedb": "Pokemon - Emerald Version (USA, Europe)",
+    "_gamedb_source": "tools/BizHawk-2.11.1/gamedb/gamedb_gba.txt"
+  },
+
+  "emulator": {
+    "name": "BizHawk",
+    "min_version": "2.7",
+    "_source": "opsætningsvejledningen: \"BizHawk 2.7 or later\""
+  },
+
+  "client": {
+    "name": "Archipelago's BizHawk Client",
+    "lua": "data/lua/connector_bizhawk_generic.lua",
+    "_source": "opsætningsvejledningen"
+  },
+
+  "apworld": {
+    "bundled": true,
+    "url": null,
+    "_source": "spillisten: \"Bundled with Archipelago\""
+  },
+
+  "patch": {
+    "extension": ".apemerald",
+    "produced_by": "Archipelago Launcher — Open Patch",
+    "needs_vanilla_rom": true,
+    "_source": "opsætningsvejledningen"
+  },
+
+  "steps": [
+    "Opret YAML-indstillingsfil",
+    "Generér spillet gennem Archipelago",
+    "Åbn ArchipelagoLauncher.exe",
+    "Vælg Open Patch og find patch-filen",
+    "Peg på din egen ROM (kun første gang)",
+    "En patchet .gba-fil bliver skrevet",
+    "Åbn patchen med BizHawk Client",
+    "Peg på EmuHawk.exe (kun første gang)",
+    "Kør det patchede ROM i EmuHawk",
+    "Åbn Lua Console under Tools",
+    "Indlæs connector-scriptet",
+    "Indtast serveradresse og port i klienten"
+  ],
+  "_steps_source": "archipelago.gg opsætningsvejledning",
+
+  "london_can_remove": [
+    "trin 3-4: launcheren finder selv patchen for seeden",
+    "trin 7-8: launcheren kender emulatorens sti",
+    "trin 10-11: launcheren starter EmuHawk med --lua=",
+    "trin 12: launcheren ejer forbindelsen, spilleren taster intet"
+  ],
+  "_london_note": "Tolv trin bliver til to: peg på din ROM, tryk Play."
+}
