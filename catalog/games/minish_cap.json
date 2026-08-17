@@ -1,0 +1,47 @@
+{
+  "id": "minish_cap",
+  "display_name": "The Legend of Zelda: The Minish Cap",
+  "subtitle": "BizHawk",
+  "platform": "GBA",
+  "version": "1.0.0",
+  "_verified": "2026-08-17",
+  "ap_world_name": "The Minish Cap",
+  "_ap_world_name_source": "world source: eternalcode0/Archipelago @ feat/new-game-minish-cap, worlds/tmc -- read from the world's own code -- the world's own `game` value",
+  "description": "Hyrule at two scales as a multiworld. Kinstones, figurines and key items are shuffled across the session.",
+  "_description_source": "written by us from the structure of the game - no text copied from the game itself",
+  "checks_verified": false,
+  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Until then London warns at launch.",
+  "requires": "own_copy",
+  "_requires_source": "GBA title - the game lives on a cartridge the player owns",
+  "rom": {
+    "description": "A The Legend of Zelda: The Minish Cap ROM",
+    "_description_source": "world source: eternalcode0/Archipelago @ feat/new-game-minish-cap, worlds/tmc -- read from the world's own code",
+    "md5": [
+      "2af78edbe244b5de44471368ae2b6f0b"
+    ],
+    "size": null,
+    "_size_note": "Not measured. London reads size 0 as 'unknown' and matches on MD5 alone, which is the stronger check.",
+    "_md5_source": "world source: eternalcode0/Archipelago @ feat/new-game-minish-cap, worlds/tmc -- read from the world's own code -- the accepted-dump list the world validates the player's file against"
+  },
+  "emulator": {
+    "name": "BizHawk",
+    "min_version": "2.7",
+    "_source": "setup guide: \"BizHawk 2.7 or later\""
+  },
+  "client": {
+    "name": "Archipelago's BizHawk Client",
+    "lua": "data/lua/connector_bizhawk_generic.lua",
+    "_source": "world source: eternalcode0/Archipelago @ feat/new-game-minish-cap, worlds/tmc -- read from the world's own code"
+  },
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/eternalcode0/Archipelago/releases",
+    "_source": "game list plus the world's own repository"
+  },
+  "patch": {
+    "extension": ".aptmc",
+    "needs_vanilla_rom": true,
+    "_source": "world source: eternalcode0/Archipelago @ feat/new-game-minish-cap, worlds/tmc -- read from the world's own code -- patch_file_ending / patch_suffix"
+  },
+  "_note": "Lives on the branch 'feat/new-game-minish-cap' -- still a feature branch upstream."
+}

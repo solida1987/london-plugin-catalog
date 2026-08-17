@@ -51,30 +51,51 @@ public class GenericEmulatorPlugin : EmulatorPlugin
     /// multiworld for an hour with no checks arriving.
     public override bool ChecksImplemented => Manifest.ChecksVerified;
 
-    /// Only a game we HAVE a verified hash for can reject precisely. Without
-    /// one we have size alone -- and then the dialog says so.
+    /// One entry per accepted dump. A game can legitimately accept more than
+    /// one -- the Castlevania worlds take the original cartridge dump AND the
+    /// Advance Collection rip, which are different files.
+    ///
+    /// Size is 0 when we have not measured it. The launcher reads that as
+    /// "size unknown" and matches on MD5 alone, which is the stronger check.
     protected override IReadOnlyList<RomIdentity> AcceptableBaseRoms
-        => Manifest.Rom is { Size: > 0 } r
-            ? new[] { new RomIdentity(r.Size, r.Md5, r.Description) }
-            : Array.Empty<RomIdentity>();
+        => Manifest.Rom is null
+            ? Array.Empty<RomIdentity>()
+            : Manifest.Rom.Md5.Count > 0
+                ? Manifest.Rom.Md5
+                          .Select(h => new RomIdentity(Manifest.Rom.Size, h,
+                                                       Manifest.Rom.Description))
+                          .ToArray()
+                : Manifest.Rom.Size > 0
+                    ? new[] { new RomIdentity(Manifest.Rom.Size, null,
+                                              Manifest.Rom.Description) }
+                    : Array.Empty<RomIdentity>();
 
     public override RomRequirement? GetUnmetRomRequirement()
     {
         if (RomPath != null && File.Exists(RomPath)) return null;
 
         string what = Manifest.Rom?.Description ?? $"a {RomSystem} {DisplayName} ROM";
-        if (Manifest.Rom?.Md5 is null)
+        var hashes = Manifest.Rom?.Md5 ?? (IReadOnlyList<string>)Array.Empty<string>();
+        if (hashes.Count == 0)
             what += "  —  this edition cannot be checked exactly; "
                   + "make sure yourself that it is the right dump";
+        else if (hashes.Count > 1)
+            what += $"  —  {hashes.Count} different dumps are accepted";
 
+        // RomRequirement shows ONE hash. With several accepted dumps there is no
+        // single right answer, so it shows none rather than naming one and
+        // making the other look wrong; AcceptableBaseRoms still checks them all.
         return new RomRequirement(DisplayName, RomSystem, what,
-                                  Manifest.Rom?.Md5, WrongVersionPresent: false,
-                                  BuildRomFilter());
+                                  hashes.Count == 1 ? hashes[0] : null,
+                                  WrongVersionPresent: false, BuildRomFilter());
     }
     // GameBadges is inherited too -- the base "ROM needed" is exactly right here.
 }
 
-public sealed record RomSpecManifest(string Description, long Size, string? Md5);
+/// Md5 is a LIST: some games accept more than one legitimate dump. Empty means
+/// no hash is known, which is a real state -- not an error to paper over.
+public sealed record RomSpecManifest(
+    string Description, long Size, IReadOnlyList<string> Md5);
 
 public sealed record GameManifest(
     string Id, string DisplayName, string Subtitle, string Platform,
@@ -92,8 +113,20 @@ public sealed record GameManifest(
         {
             long size = ro.TryGetProperty("size", out var s)
                      && s.ValueKind == JsonValueKind.Number ? s.GetInt64() : 0;
-            string? md5 = ro.TryGetProperty("md5", out var m)
-                       && m.ValueKind == JsonValueKind.String ? m.GetString() : null;
+
+            // md5 accepts a single string or an array, so a one-dump game does
+            // not have to write a one-element list.
+            var md5 = new List<string>();
+            if (ro.TryGetProperty("md5", out var m))
+            {
+                if (m.ValueKind == JsonValueKind.String)
+                    md5.Add(m.GetString()!);
+                else if (m.ValueKind == JsonValueKind.Array)
+                    md5.AddRange(m.EnumerateArray()
+                                  .Where(e => e.ValueKind == JsonValueKind.String)
+                                  .Select(e => e.GetString()!));
+            }
+
             rom = new RomSpecManifest(
                 Str(ro, "description") ?? "your own copy of the game", size, md5);
         }

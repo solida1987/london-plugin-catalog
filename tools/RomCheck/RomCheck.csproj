@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Asks a built plugin the question a player's ROM actually gets asked:   -->
+  <!-- "would you accept this file?" PluginCheck proves a plugin LOADS; this  -->
+  <!-- proves the ROM gate behaves. Without it, "size unknown + MD5 known"    -->
+  <!-- would be an untested code path deciding whether a player can play.     -->
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>RomCheck</AssemblyName>
+    <RootNamespace>LauncherV2.Tools.RomCheck</RootNamespace>
+
+    <!-- The launcher publishes self-contained, and a self-contained exe can    -->
+    <!-- only be referenced by another one (NETSDK1151). Matching it also means  -->
+    <!-- this gate runs against the same runtime the players get.                -->
+    <SelfContained>true</SelfContained>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Multiworld-Launcher\LauncherV2.csproj" />
+  </ItemGroup>
+
+</Project>
