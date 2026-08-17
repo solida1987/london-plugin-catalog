@@ -89,11 +89,19 @@ def main():
         print("mapped but NOT packaged (%d): %s\n"
               % (len(blocked), ", ".join(sorted(blocked))))
 
+    # The harvest lists GB and GBC separately; the table gives them one row.
+    # ⚠ The fold has to apply to BOTH counters. Folding only the built side
+    # leaves the row with known=0, and a group with nothing known is skipped --
+    # which is exactly how a finished Game Boy Color plugin disappeared from
+    # the overview entirely.
+    FOLD = {"GBC": "GB/GBC", "GB": "GB/GBC"}
+
     known = collections.Counter()
     for g in games:
         for pf in g["platforms"] or ["unknown"]:
-            known[pf] += 1
-    done = collections.Counter(m["platform"] for m in built.values())
+            known[FOLD.get(pf, pf)] += 1
+    done = collections.Counter(FOLD.get(m["platform"], m["platform"])
+                               for m in built.values())
 
     idx = {"generated_for": "London Plugin Catalog", "groups": [], "plugins": []}
     rows = []
