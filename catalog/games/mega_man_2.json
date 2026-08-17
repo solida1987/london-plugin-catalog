@@ -1,0 +1,51 @@
+{
+  "id": "mega_man_2",
+  "display_name": "Mega Man 2",
+  "subtitle": "BizHawk",
+  "platform": "NES",
+  "version": "1.0.0",
+  "_verified": "2026-08-17",
+  "ap_world_name": "Mega Man 2",
+  "_ap_world_name_source": "world source: ArchipelagoMW/Archipelago worlds/mm2 (upstream), read from the world's own code -- the world's own `game` value",
+  "description": "The eight Robot Masters as a multiworld. Weapons, items and stage access are shuffled across the session.",
+  "_description_source": "written by us from the structure of the game - no text copied from the game itself",
+  "checks_verified": false,
+  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Until then London warns.",
+  "requires": "own_copy",
+  "_requires_source": "NES title - the game lives on a cartridge the player owns",
+  "rom": {
+    "description": "An English Mega Man 2 ROM - the cartridge dump, the Virtual Console release, or the copy inside Mega Man Legacy Collection on Steam (four dumps are accepted)",
+    "_description_source": "world source: ArchipelagoMW/Archipelago worlds/mm2 (upstream), read from the world's own code",
+    "md5": [
+      "0527a0ee512f69e08b8db6dc97964632",
+      "0c78dfe8e90fb8f3eed022ff01126ad3",
+      "37f2c36ce7592f1e16b3434b3985c497",
+      "b69fff40212b80c94f19e786d1efbf61"
+    ],
+    "size": null,
+    "_size_note": "Not measured. London reads size 0 as 'unknown' and matches on MD5 alone, which is the stronger check.",
+    "_md5_source": "world source: ArchipelagoMW/Archipelago worlds/mm2 (upstream), read from the world's own code -- the accepted-dump list the world validates the player's file against"
+  },
+  "emulator": {
+    "name": "BizHawk",
+    "min_version": null,
+    "_source": "Not stated in the material we read. The group floor in catalog/GROUP_NES.md covers it."
+  },
+  "client": {
+    "name": "Archipelago's BizHawk Client",
+    "protocol": "bizhawk",
+    "lua": "data/lua/connector_bizhawk_generic.lua",
+    "_source": "world source: ArchipelagoMW/Archipelago worlds/mm2 (upstream), read from the world's own code -- read from the world's client class"
+  },
+  "apworld": {
+    "bundled": true,
+    "url": null,
+    "_source": "game list: \"Bundled with Archipelago\""
+  },
+  "patch": {
+    "extension": ".apmm2",
+    "needs_vanilla_rom": true,
+    "_source": "world source: ArchipelagoMW/Archipelago worlds/mm2 (upstream), read from the world's own code -- patch_file_ending / patch_suffix"
+  },
+  "_note": "Four accepted dumps. The setup guide names the Legacy Collection explicitly as an alternative to a cartridge dump."
+}
