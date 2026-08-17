@@ -1,0 +1,27 @@
+{
+  "id": "banjo_tooie",
+  "display_name": "Banjo-Tooie",
+  "subtitle": "",
+  "platform": "N64",
+  "_platform_source": "harvested game list: platform_raw='N64'",
+  "version": "1.0.0",
+  "ap_world_name": "Banjo-Tooie",
+  "_ap_world_name_source": "harvested game list, name as written there",
+  "description": "Banjo-Tooie as a multiworld. Items and progression are shuffled across the session.",
+  "checks_verified": false,
+  "requires": "own_copy",
+  "_requires_source": "harvested game list: requires='own_copy'",
+  "lua_module": "banjo_tooie",
+  "_lua_module_source": "Plugins/Scripts/games/banjo_tooie.lua exists",
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/jjjj12212/Archipelago-BanjoTooie/releases",
+    "_source": "harvested game list: source='url'"
+  },
+  "client": {
+    "protocol": "unknown",
+    "_source": "world not available to read"
+  },
+  "patch_extension": "unaudited",
+  "_description_source": "placeholder assembled from display_name; replace with what this game actually shuffles"
+}

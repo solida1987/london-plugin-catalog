@@ -1,0 +1,27 @@
+{
+  "id": "mk64",
+  "display_name": "Mario Kart 64",
+  "subtitle": "",
+  "platform": "N64",
+  "_platform_source": "harvested game list: platform_raw='N64'",
+  "version": "1.0.0",
+  "ap_world_name": "Mario Kart 64",
+  "_ap_world_name_source": "harvested game list, name as written there",
+  "description": "Mario Kart 64 as a multiworld. Items and progression are shuffled across the session.",
+  "checks_verified": false,
+  "requires": "own_copy",
+  "_requires_source": "harvested game list: requires='own_copy'",
+  "lua_module": "mk64",
+  "_lua_module_source": "Plugins/Scripts/games/mk64.lua exists",
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/Edsploration/MK64-Archipelago/releases",
+    "_source": "harvested game list: source='url'"
+  },
+  "client": {
+    "protocol": "unknown",
+    "_source": "world not available to read"
+  },
+  "patch_extension": "unaudited",
+  "_description_source": "placeholder assembled from display_name; replace with what this game actually shuffles"
+}

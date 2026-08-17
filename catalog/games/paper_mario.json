@@ -1,0 +1,27 @@
+{
+  "id": "paper_mario",
+  "display_name": "Paper Mario",
+  "subtitle": "",
+  "platform": "N64",
+  "_platform_source": "harvested game list: platform_raw='N64'",
+  "version": "1.0.0",
+  "ap_world_name": "Paper Mario",
+  "_ap_world_name_source": "harvested game list, name as written there",
+  "description": "Paper Mario as a multiworld. Items and progression are shuffled across the session.",
+  "checks_verified": false,
+  "requires": "own_copy",
+  "_requires_source": "harvested game list: requires='own_copy'",
+  "lua_module": "paper_mario",
+  "_lua_module_source": "Plugins/Scripts/games/paper_mario.lua exists",
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/icebound777/PMR_APWorld/releases",
+    "_source": "harvested game list: source='url'"
+  },
+  "client": {
+    "protocol": "unknown",
+    "_source": "world not available to read"
+  },
+  "patch_extension": "unaudited",
+  "_description_source": "placeholder assembled from display_name; replace with what this game actually shuffles"
+}

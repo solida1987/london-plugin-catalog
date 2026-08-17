@@ -1,0 +1,27 @@
+{
+  "id": "donkey_kong_country_2",
+  "display_name": "Donkey Kong Country 2: Diddy's Kong Quest",
+  "subtitle": "",
+  "platform": "SNES",
+  "_platform_source": "harvested game list: platform_raw='SNES'",
+  "version": "1.0.0",
+  "ap_world_name": "Donkey Kong Country 2: Diddy's Kong Quest",
+  "_ap_world_name_source": "harvested game list, name as written there",
+  "description": "Donkey Kong Country 2: Diddy's Kong Quest as a multiworld. Items and progression are shuffled across the session.",
+  "checks_verified": false,
+  "requires": "own_copy",
+  "_requires_source": "harvested game list: requires='own_copy'",
+  "lua_module": "Donkey Kong Country 2",
+  "_lua_module_source": "Plugins/Scripts/games/Donkey Kong Country 2.lua exists",
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/TheLX5/Archipelago/releases?q=country+2&expanded=true",
+    "_source": "harvested game list: source='url'"
+  },
+  "client": {
+    "protocol": "unknown",
+    "_source": "world not available to read"
+  },
+  "patch_extension": "unaudited",
+  "_description_source": "placeholder assembled from display_name; replace with what this game actually shuffles"
+}

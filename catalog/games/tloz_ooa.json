@@ -1,0 +1,27 @@
+{
+  "id": "tloz_ooa",
+  "display_name": "The Legend of Zelda: Oracle of Ages",
+  "subtitle": "",
+  "platform": "GBC",
+  "_platform_source": "harvested game list: platform_raw='GBC'",
+  "version": "1.0.0",
+  "ap_world_name": "The Legend of Zelda: Oracle of Ages",
+  "_ap_world_name_source": "harvested game list, name as written there",
+  "description": "The Legend of Zelda: Oracle of Ages as a multiworld. Items and progression are shuffled across the session.",
+  "checks_verified": false,
+  "requires": "own_copy",
+  "_requires_source": "harvested game list: requires='own_copy'",
+  "lua_module": "tloz_ooa",
+  "_lua_module_source": "Plugins/Scripts/games/tloz_ooa.lua exists",
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/josephanimate2021/ArchipelagoOoA/releases",
+    "_source": "harvested game list: source='url'"
+  },
+  "client": {
+    "protocol": "unknown",
+    "_source": "world not available to read"
+  },
+  "patch_extension": "unaudited",
+  "_description_source": "placeholder assembled from display_name; replace with what this game actually shuffles"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "adventure",
+  "display_name": "Adventure",
+  "subtitle": "",
+  "platform": "2600",
+  "_platform_source": "harvested game list: platform_raw='2600'",
+  "version": "1.0.0",
+  "ap_world_name": "Adventure",
+  "_ap_world_name_source": "harvested game list, name as written there",
+  "description": "Adventure as a multiworld. Items and progression are shuffled across the session.",
+  "checks_verified": false,
+  "requires": "own_copy",
+  "_requires_source": "harvested game list: requires='own_copy'",
+  "lua_module": "adventure",
+  "_lua_module_source": "Plugins/Scripts/games/adventure.lua exists",
+  "apworld": {
+    "bundled": true,
+    "url": "",
+    "_source": "harvested game list: source='bundled'"
+  },
+  "client": {
+    "protocol": "unknown",
+    "_source": "no SNIClient and no BizHawkClient -- the world most likely ships a standalone client of its own"
+  },
+  "patch_extension": "none",
+  "_patch_extension_source": "read from adventure: no APPatchExtension in 8 compiled file(s)",
+  "_description_source": "placeholder assembled from display_name; replace with what this game actually shuffles"
+}

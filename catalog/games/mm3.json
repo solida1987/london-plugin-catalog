@@ -1,0 +1,28 @@
+{
+  "id": "mm3",
+  "display_name": "Mega Man 3",
+  "subtitle": "",
+  "platform": "NES",
+  "_platform_source": "harvested game list: platform_raw='NES'",
+  "version": "1.0.0",
+  "ap_world_name": "Mega Man 3",
+  "_ap_world_name_source": "harvested game list, name as written there",
+  "description": "Mega Man 3 as a multiworld. Items and progression are shuffled across the session.",
+  "checks_verified": false,
+  "requires": "own_copy",
+  "_requires_source": "harvested game list: requires='own_copy'",
+  "lua_module": "mm3",
+  "_lua_module_source": "Plugins/Scripts/games/mm3.lua exists",
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/Silvris/Archipelago/releases?q=tag%3Amm3_0&expanded=true",
+    "_source": "harvested game list: source='url'"
+  },
+  "client": {
+    "protocol": "bizhawk",
+    "_source": "the world's client subclasses BizHawkClient"
+  },
+  "patch_extension": "none",
+  "_patch_extension_source": "read from mm3.apworld: no APPatchExtension in 15 compiled file(s)",
+  "_description_source": "placeholder assembled from display_name; replace with what this game actually shuffles"
+}

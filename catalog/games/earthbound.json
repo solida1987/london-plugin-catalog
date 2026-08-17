@@ -1,0 +1,28 @@
+{
+  "id": "earthbound",
+  "display_name": "EarthBound",
+  "subtitle": "",
+  "platform": "SNES",
+  "_platform_source": "harvested game list: platform_raw='SNES'",
+  "version": "1.0.0",
+  "ap_world_name": "EarthBound",
+  "_ap_world_name_source": "harvested game list, name as written there",
+  "description": "EarthBound as a multiworld. Items and progression are shuffled across the session.",
+  "checks_verified": false,
+  "requires": "own_copy",
+  "_requires_source": "harvested game list: requires='own_copy'",
+  "lua_module": "earthbound",
+  "_lua_module_source": "Plugins/Scripts/games/earthbound.lua exists",
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/PinkSwitch/Archipelago/releases?q=earthbound&expanded=true",
+    "_source": "harvested game list: source='url'"
+  },
+  "client": {
+    "protocol": "sni",
+    "_source": "the world's client subclasses SNIClient"
+  },
+  "patch_extension": "refused",
+  "_patch_extension_source": "read from earthbound.apworld: adds new steps ['repoint_vanilla_tables'] in earthbound/Rom.pyc:EBPatchExtensions",
+  "_description_source": "placeholder assembled from display_name; replace with what this game actually shuffles"
+}
