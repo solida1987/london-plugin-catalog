@@ -46,5 +46,7 @@
   },
   "_blocked": "BLOCKED: GenericEmulatorPlugin drives BizHawk with the generic Lua connector. This world speaks SNI. Building it would produce a plugin that installs, launches an emulator, and never connects. See catalog/GROUP_SNES.md.",
   "lua_module": "smw",
-  "_lua_module_source": "filename under Multiworld-Launcher/Plugins/Scripts/games/ — the modules predate this catalogue and use their own short names"
+  "_lua_module_source": "filename under Multiworld-Launcher/Plugins/Scripts/games/ — the modules predate this catalogue and use their own short names",
+  "patch_extension": "none",
+  "_source_patch_extension": "Local apworld scanned 17/8: no APPatchExtension in smw-verdenen."
 }

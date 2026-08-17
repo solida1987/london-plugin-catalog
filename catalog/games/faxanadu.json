@@ -42,5 +42,7 @@
     "needs_vanilla_rom": false,
     "_source": "world source: ArchipelagoMW/Archipelago worlds/faxanadu (upstream), read from the world's own code -- patch_file_ending / patch_suffix"
   },
-  "_note": "BLOCKED: the world has no Client.py and no rom.py, and its setup guide mentions only Archipelago's Text Client - so how checks reach the server is not established from the source. Recorded as protocol 'unknown', which the build refuses rather than guessing."
+  "_note": "BLOCKED: the world has no Client.py and no rom.py, and its setup guide mentions only Archipelago's Text Client - so how checks reach the server is not established from the source. Recorded as protocol 'unknown', which the build refuses rather than guessing.",
+  "patch_extension": "none",
+  "_source_patch_extension": "Local apworld scanned 17/8: no APPatchExtension in faxanadu-verdenen."
 }

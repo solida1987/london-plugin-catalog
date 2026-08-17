@@ -2,6 +2,8 @@ using System.IO;
 using System.Linq;
 using System.Text.Json;
 
+using LauncherV2.Core;
+using LauncherV2.Core.Patching;
 using LauncherV2.Core.Plugins;
 using LauncherV2.Plugins.Emulated;
 
@@ -96,6 +98,114 @@ public class GenericEmulatorPlugin : EmulatorPlugin
                                   hashes.Count == 1 ? hashes[0] : null,
                                   WrongVersionPresent: false, BuildRomFilter());
     }
+    /// Turn the player's own ROM into THIS seed's ROM.
+    ///
+    /// Without this the launcher starts the plain library ROM: the emulator
+    /// runs, the connector attaches, and the game sits there being ordinary
+    /// vanilla. Nothing errors -- there are simply never any checks. So the
+    /// note below is written on every path, including the ones that do nothing.
+    ///
+    /// The patch says which slot it belongs to, so nothing has to be configured:
+    /// a player drops all their patches in and each seed picks its own.
+    protected override async Task<string?> PrepareSessionRomAsync(
+        ApSession session, CancellationToken ct)
+    {
+        await Task.CompletedTask;
+
+        string? patch = ResolvePatch(session.SlotName, out string note);
+        if (patch is null)
+        {
+            SessionRomNote = note;
+            return null;
+        }
+
+        // One output per slot, rebuilt every launch. Patching a 16 MB ROM takes
+        // a fraction of a second, and always rebuilding means a re-generated
+        // seed can never be played against yesterday's patched copy.
+        string safeSlot = string.Concat(session.SlotName
+                            .Select(c => Path.GetInvalidFileNameChars().Contains(c) ? '_' : c));
+        string ending = ApPatch.ReadManifest(patch)?.ResultFileEnding ?? ".rom";
+        string outPath = Path.Combine(RomLibraryDirectory, "sessions", safeSlot + ending);
+
+        var result = ApPatch.Apply(patch, RomPath!, outPath);
+        SessionRomNote = $"[{DisplayName}] Patched for slot \"{session.SlotName}\" "
+                       + $"({result.Size / (1024 * 1024)} MB, MD5 {result.Md5[..8]}).";
+        return outPath;
+    }
+
+    /// Which patch file is this (seed, slot)'s, and why not, when there is none.
+    ///
+    /// Two ways in, in this order:
+    ///   1. The store, keyed by (seed, slot). This is the real answer -- it was
+    ///      recorded when the player handed the patch over while connected to
+    ///      that seed, which is the only moment the link is known.
+    ///   2. Any patch in the folder whose manifest names this slot and game.
+    ///      Covers a file dropped on the window before ever connecting, and the
+    ///      patches already sitting in folders from before the store existed.
+    ///      Weaker: a second seed for the same slot name would also match, which
+    ///      is exactly why (1) is tried first and why (2) records what it finds.
+    string? ResolvePatch(string slot, out string note)
+    {
+        note = "";
+        string? seed = GetSeedName?.Invoke();
+        var store = SeedPatchStore.For(GameId);
+
+        if (!string.IsNullOrWhiteSpace(seed))
+        {
+            string? known = store.Resolve(seed!, slot);
+            if (known != null) return known;
+        }
+
+        string patchDir = store.PatchDirectory;
+        if (Directory.Exists(patchDir))
+        {
+            var loose = Directory.EnumerateFiles(patchDir)
+                .Select(p => (Path: p, M: ApPatch.ReadManifest(p)))
+                .Where(c => c.M is not null
+                         && string.Equals(c.M!.Game, ApWorldName, StringComparison.OrdinalIgnoreCase)
+                         && string.Equals(c.M!.PlayerName, slot, StringComparison.OrdinalIgnoreCase))
+                .Select(c => c.Path)
+                .FirstOrDefault();
+
+            if (loose != null)
+            {
+                // Claim it for this seed so the guess only ever happens once.
+                if (!string.IsNullOrWhiteSpace(seed))
+                    try { return store.Import(loose, seed!, slot, ApWorldName); }
+                    catch { /* keep playing with the file we found */ }
+                return loose;
+            }
+        }
+
+        note = $"[{DisplayName}] No patch stored for slot \"{slot}\""
+             + (string.IsNullOrWhiteSpace(seed) ? "" : $" in seed {seed}")
+             + " — playing the unpatched ROM, so no checks will be sent.";
+        return null;
+    }
+
+    public SeedPatchRequest? GetUnmetSeedPatch(string seed, string slot)
+    {
+        // Asked BEFORE launch, when the seed is known but the plugin has not run
+        // yet, so this must not depend on GetSeedName having been called.
+        if (SeedPatchStore.For(GameId).Resolve(seed, slot) != null) return null;
+
+        return new SeedPatchRequest(DisplayName, seed, slot,
+            "Archipelago patch (*.ap*)|*.ap*|All files (*.*)|*.*");
+    }
+
+    public string? ImportSeedPatch(string sourcePath, string seed, string slot)
+    {
+        try
+        {
+            SeedPatchStore.For(GameId).Import(sourcePath, seed, slot, ApWorldName);
+            return null;
+        }
+        catch (Exception ex)
+        {
+            return ex.Message;
+        }
+    }
+
     // GameBadges is inherited too -- the base "ROM needed" is exactly right here.
 }
 

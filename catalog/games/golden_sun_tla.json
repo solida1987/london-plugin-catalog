@@ -45,5 +45,6 @@
   },
   "_note": "Lives on the branch 'gstla', not on main.",
   "lua_module": "gstla",
-  "_lua_module_source": "filename under Multiworld-Launcher/Plugins/Scripts/games/ — the modules predate this catalogue and use their own short names"
+  "_lua_module_source": "filename under Multiworld-Launcher/Plugins/Scripts/games/ — the modules predate this catalogue and use their own short names",
+  "patch_extension": "unaudited"
 }

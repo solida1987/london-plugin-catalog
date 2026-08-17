@@ -44,5 +44,6 @@
   },
   "_note": "BLOCKED: the world has Rom.py and a base patch, but no client class we could find, so the protocol is not established. Recorded as 'unknown' rather than assumed to be BizHawk.",
   "lua_module": "tloz",
-  "_lua_module_source": "filename under Multiworld-Launcher/Plugins/Scripts/games/ — the modules predate this catalogue and use their own short names"
+  "_lua_module_source": "filename under Multiworld-Launcher/Plugins/Scripts/games/ — the modules predate this catalogue and use their own short names",
+  "patch_extension": "none"
 }

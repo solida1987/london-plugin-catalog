@@ -48,6 +48,22 @@ PROTOCOLS = {
     "unknown": False,   # not established; do not guess
 }
 
+# Whether the game's WORLD overrides patch steps in Python (APPatchExtension).
+# The patch container does not say -- the manifest looks ordinary -- so this
+# has to be established by READING the world's rom.py, once, at manifest time.
+#
+# Two classes exist. NEW step names (MLSS's enemy_randomize) make the
+# launcher's patcher refuse loudly -- safe. REUSED generic names with changed
+# behaviour (FRLG's rev0/rev1 dispatch) make generic code produce silently
+# corrupt ROMs -- that class MUST be replicated in Core/Patching/ApPatch.cs
+# before the manifest may say 'replicated'.
+PATCH_EXTENSION = {
+    "none":       True,   # world audited, no extension - generic steps correct
+    "replicated": True,   # extension replicated in ApPatch.cs (cite the source)
+    "refused":    True,   # extension adds NEW step names - refused loudly
+    "unaudited":  True,   # world source not available locally - flagged below
+}
+
 # What a game needs from the player. Anything outside this set is a typo or a
 # half-finished rename, and either way we must not guess -- see check().
 REQUIRES = {
@@ -135,6 +151,22 @@ def check(m, gid):
             problems.append("no RAM map: Plugins/Scripts/games/%s.lua does not "
                             "exist, so this game would launch and send nothing"
                             % mod)
+
+    # The patch-extension audit is a REQUIRED answer, not a default: a missing
+    # field means nobody read the world's rom.py, and that is how FRLG's
+    # rev0/rev1 dispatch nearly shipped as silent corruption.
+    ext = m.get("patch_extension")
+    if ext not in PATCH_EXTENSION:
+        problems.append("patch_extension=%r is not one of %s - read the "
+                        "world's rom.py for APPatchExtension and answer"
+                        % (ext, "/".join(sorted(PATCH_EXTENSION))))
+    elif ext == "unaudited":
+        problems.append("NOTE: patch_extension unaudited - a Python step "
+                        "override would corrupt silently; audit before "
+                        "checks_verified can ever be claimed")
+    elif ext == "refused":
+        problems.append("NOTE: world patches via custom Python steps - the "
+                        "launcher refuses them loudly and plays unpatched")
 
     rom = m.get("rom") or {}
     if rom and not rom.get("size") and not rom.get("md5"):

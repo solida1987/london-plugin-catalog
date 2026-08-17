@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Applies a REAL seed patch with the launcher's own C# patcher and        -->
+  <!-- compares the result byte-for-byte against a known-good MD5 produced by  -->
+  <!-- Archipelago's own Python patcher. The launcher carries a hand-written   -->
+  <!-- bzip2 decoder (.NET has none), and "looks right" is not a standard a    -->
+  <!-- decompressor can be held to: either the bytes match or they do not.     -->
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>PatchCheck</AssemblyName>
+    <RootNamespace>LauncherV2.Tools.PatchCheck</RootNamespace>
+
+    <SelfContained>true</SelfContained>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Multiworld-Launcher\LauncherV2.csproj" />
+  </ItemGroup>
+
+</Project>
