@@ -43,5 +43,7 @@
     "needs_vanilla_rom": true,
     "_source": "world source: CT075/Archipelago @ fe8/stable, worlds/fe8 -- read from the world's own code -- patch_file_ending / patch_suffix"
   },
-  "_note": "Lives on the branch 'fe8/stable', not on main."
+  "_note": "Lives on the branch 'fe8/stable', not on main.",
+  "lua_module": "fe8",
+  "_lua_module_source": "filename under Multiworld-Launcher/Plugins/Scripts/games/ — the modules predate this catalogue and use their own short names"
 }

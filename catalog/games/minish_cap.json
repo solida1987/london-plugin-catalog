@@ -43,5 +43,7 @@
     "needs_vanilla_rom": true,
     "_source": "world source: eternalcode0/Archipelago @ feat/new-game-minish-cap, worlds/tmc -- read from the world's own code -- patch_file_ending / patch_suffix"
   },
-  "_note": "Lives on the branch 'feat/new-game-minish-cap' -- still a feature branch upstream."
+  "_note": "Lives on the branch 'feat/new-game-minish-cap' -- still a feature branch upstream.",
+  "lua_module": "The Minish Cap",
+  "_lua_module_source": "filename under Multiworld-Launcher/Plugins/Scripts/games/ — the modules predate this catalogue and use their own short names"
 }

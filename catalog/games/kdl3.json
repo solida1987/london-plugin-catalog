@@ -46,5 +46,7 @@
     "_source": "world source: ArchipelagoMW/Archipelago worlds/kdl3 (upstream), read from the world's own code -- patch_file_ending / patch_suffix"
   },
   "_blocked": "BLOCKED: GenericEmulatorPlugin drives BizHawk with the generic Lua connector. This world speaks SNI. Building it would produce a plugin that installs, launches an emulator, and never connects. See catalog/GROUP_SNES.md.",
-  "_note": "Two dumps accepted: KDL3UHASH (US) and KDL3JHASH (Japanese)."
+  "_note": "Two dumps accepted: KDL3UHASH (US) and KDL3JHASH (Japanese).",
+  "lua_module": "kdl3",
+  "_lua_module_source": "filename under Multiworld-Launcher/Plugins/Scripts/games/ — the modules predate this catalogue and use their own short names"
 }

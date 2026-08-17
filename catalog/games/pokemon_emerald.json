@@ -42,5 +42,7 @@
     "extension": ".apemerald",
     "needs_vanilla_rom": true,
     "_source": "world source: ArchipelagoMW/Archipelago worlds/pokemon_emerald (upstream), read from the world's own code -- patch_file_ending / patch_suffix"
-  }
+  },
+  "lua_module": "pokemon_emerald",
+  "_lua_module_source": "filename under Multiworld-Launcher/Plugins/Scripts/games/ — the modules predate this catalogue and use their own short names"
 }

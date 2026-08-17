@@ -43,5 +43,7 @@
     "_source": "world source: ArchipelagoMW/Archipelago worlds/ffmq (upstream), read from the world's own code -- patch_file_ending / patch_suffix"
   },
   "_blocked": "BLOCKED: GenericEmulatorPlugin drives BizHawk with the generic Lua connector. This world speaks SNI. Building it would produce a plugin that installs, launches an emulator, and never connects. See catalog/GROUP_SNES.md.",
-  "_note": "This world declares no base-ROM hash: its patch is produced through an external randomizer API rather than from a local base ROM."
+  "_note": "This world declares no base-ROM hash: its patch is produced through an external randomizer API rather than from a local base ROM.",
+  "lua_module": "ffmq",
+  "_lua_module_source": "filename under Multiworld-Launcher/Plugins/Scripts/games/ — the modules predate this catalogue and use their own short names"
 }

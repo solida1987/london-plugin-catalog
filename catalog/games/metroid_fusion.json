@@ -44,5 +44,7 @@
     "needs_vanilla_rom": true,
     "_source": "world source: StalledStorm/ArchipelagoMine @ metroidfusion, worlds/metroidfusion -- read from the world's own code -- patch_file_ending / patch_suffix"
   },
-  "_note": "The world CONTRADICTS ITSELF: __init__.py validates the player's ROM against af5040.../5d07cc..., while Rom.py's patch declares hash = 27D02A4F03E172E029C9B82AC3DB79F7. We use the two from __init__.py because that is the check applied to the PLAYER'S file, which is exactly the question London asks. Worth reporting upstream."
+  "_note": "The world CONTRADICTS ITSELF: __init__.py validates the player's ROM against af5040.../5d07cc..., while Rom.py's patch declares hash = 27D02A4F03E172E029C9B82AC3DB79F7. We use the two from __init__.py because that is the check applied to the PLAYER'S file, which is exactly the question London asks. Worth reporting upstream.",
+  "lua_module": "metroidfusion",
+  "_lua_module_source": "filename under Multiworld-Launcher/Plugins/Scripts/games/ — the modules predate this catalogue and use their own short names"
 }
