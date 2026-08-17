@@ -83,13 +83,42 @@ player in a multiworld sending nothing, which is worse than saying no.
 Finishing the SNI transport unblocks all 31 SNES games — they are already
 mapped in `catalog/games/`.
 
-## Building and checking one
+## Building them
 
 ```
-dotnet build extensions/sni/CatalogSniBridge.csproj -c Release
-python tools/ExtensionCheck ...        # via the built exe, see below
+python tools/build_extensions.py --stage <launcher-build-folder>
 ```
 
-`ExtensionCheck <extensions-dir> <protocol>` loads the folder, registers what it
-finds, and fails if a bridge that is not ready reports itself servable, or if a
-missing bridge produces no explanation.
+Builds every extension, packs each as a `.londonextension` in `dist/`, and
+**installs the BizHawk one into the launcher's `Extensions/` folder**.
+
+That last part is not optional. The launcher drives no emulator of its own, so a
+package without `Extensions/bizhawk_bridge/` cannot start a single game — and it
+looks completely healthy until somebody presses Play. `pack_launcher.py` refuses
+such a package; this is what puts the file there. Verified both ways:
+
+```
+without the bridge : exit 1  "zip mangler Extensions/bizhawk_bridge/"
+with the bridge    : exit 0
+```
+
+## Installing one
+
+The player picks the `.londonextension` with the launcher's **Add plugin…**
+button — one button takes both kinds, because nobody should have to know
+whether the file they were handed is a game or the bridge that game needs.
+
+`ExtensionInstallFlow` runs the same order as the plugin side: look inside
+without running anything, show what it declares and who wrote it, install, then
+reload the registry so its emulator folders appear without a restart.
+
+If the bridge is added but cannot run yet, **it says so right then** rather than
+letting the player find out when a game sends no checks.
+
+## Checking one
+
+`ExtensionCheck <extensions-dir|package> <protocol>` takes either a folder or a
+`.londonextension`. Given a package it installs it the way a player would, then
+verifies the registry picks it up. It fails if a bridge that is not ready
+reports itself servable, if a missing bridge produces no explanation, or if a
+native runner cannot resolve its own program.

@@ -29,6 +29,27 @@ internal static class Program
         string dir = Path.GetFullPath(args[0]);
         string protocol = args[1];
 
+        // Given a .londonextension instead of a folder, take the package the
+        // whole way a player would: look inside, install, then see whether the
+        // registry actually picks it up. Inspect+Install are otherwise only
+        // reachable through the UI, which is exactly where a gate cannot go.
+        if (File.Exists(dir) && dir.EndsWith(ExtensionPackage.Extension,
+                                             StringComparison.OrdinalIgnoreCase))
+        {
+            var cand = ExtensionPackage.Inspect(dir);
+            Console.WriteLine($"  package  : {Path.GetFileName(dir)}");
+            Console.WriteLine($"  sha256   : {cand.ShortHash}");
+            if (!cand.IsUsable) { Console.WriteLine("  FAIL: " + cand.Error); return 1; }
+            Console.WriteLine($"  manifest : {cand.Manifest!.ExtensionId} "
+                            + $"protocol={cand.Manifest.Protocol}");
+
+            string? err = ExtensionPackage.Install(cand);
+            if (err != null) { Console.WriteLine("  FAIL install: " + err); return 1; }
+            Console.WriteLine("  installed into " + ExtensionPackage.DirectoryFor(
+                cand.Manifest.ExtensionId));
+            dir = BridgeRegistry.Directory;
+        }
+
         Console.WriteLine($"  extensions dir : {dir}");
         Console.WriteLine($"  exists         : {Directory.Exists(dir)}");
 
