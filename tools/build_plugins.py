@@ -53,7 +53,10 @@ CATALOG_RELEASE = ("https://github.com/solida1987/london-plugin-catalog/"
 
 # Which release tag each platform's plugins live on.
 PLATFORM_TAG = {
-    "GBA": "gba", "SNES": "snes", "NES": "nes", "GBC": "gbc",
+    "GBA": "gba", "SNES": "snes", "NES": "nes",
+    # Game Boy and Game Boy Color share one release -- see
+    # docs/RELEASES.md and tools/make_index.py, which both call it gb-gbc.
+    "GBC": "gb-gbc", "GB": "gb-gbc",
     "N64": "n64", "NDS": "nds", "PC": "pc", "WEB": "web",
 }
 
