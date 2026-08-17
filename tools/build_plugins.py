@@ -57,19 +57,33 @@ PLATFORM_TAG = {
     "N64": "n64", "NDS": "nds", "PC": "pc", "WEB": "web",
 }
 
-# How the game talks to Archipelago. GenericEmulatorPlugin drives BizHawk with
-# the generic Lua connector and NOTHING ELSE, so a world on another protocol
-# must be REFUSED rather than built.
+# How the game talks to Archipelago.
 #
-# This is not theoretical: every SNES world in Archipelago subclasses SNIClient,
-# which speaks to SNI (a separate program) rather than to a Lua script inside
-# BizHawk. A plugin built for one of those would install cleanly, launch
-# BizHawk, and then never connect -- silent, and worse than not shipping.
-PROTOCOLS = {
-    "bizhawk": True,    # BizHawkClient + connector_bizhawk_generic.lua
-    "sni": False,       # SNIClient -- London has no SNI bridge yet
-    "unknown": False,   # not established; do not guess
-}
+# A plugin may only be built for a protocol some INSTALLED BRIDGE speaks. A
+# plugin on a protocol nothing carries would install cleanly, launch, and then
+# never connect -- silent, and worse than not shipping.
+#
+# ⚠ Read from extensions/*/extension.json rather than written out by hand. The
+# hand-written version said "London has no SNI bridge yet" for as long as the
+# SNI bridge existed and worked, which held every SNES game out of the catalogue
+# for no reason. A list that has to be remembered is a list that goes stale.
+def _protocols_with_a_bridge():
+    found = {}
+    for d in sorted((ROOT / "extensions").glob("*/extension.json")):
+        try:
+            m = json.loads(d.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        if m.get("protocol"):
+            found[m["protocol"]] = d.parent.name
+    return found
+
+BRIDGES = _protocols_with_a_bridge()
+
+# "unknown" is never buildable however many bridges exist: it means nobody has
+# established what the game speaks, and guessing is the thing this whole
+# catalogue refuses to do.
+PROTOCOLS = dict({p: True for p in BRIDGES}, unknown=False)
 
 # Whether the game's WORLD overrides patch steps in Python (APPatchExtension).
 # The patch container does not say -- the manifest looks ordinary -- so this
@@ -160,9 +174,8 @@ def check(m, gid):
         problems.append("client.protocol=%r is not one of %s"
                         % (proto, "/".join(sorted(PROTOCOLS))))
     elif not PROTOCOLS[proto]:
-        problems.append("client.protocol=%r - GenericEmulatorPlugin only "
-                        "drives BizHawk, so this would install and then never "
-                        "connect" % proto)
+        problems.append("client.protocol=%r - no bridge extension speaks it, "
+                        "so this would install and then never connect" % proto)
 
     # The game-side half. Without a module under Plugins/Scripts/games/ the
     # connector loads nothing and the game sends no checks -- which is exactly
@@ -223,6 +236,15 @@ def build_one(path, results):
         embedded["rom"] = {k: m["rom"].get(k)
                            for k in ("description", "size", "md5")
                            if m["rom"].get(k) is not None}
+
+    # ⚠ The protocol decides which BRIDGE the launcher asks for at launch. Left
+    # out of the embedded manifest, every plugin silently falls back to the
+    # bizhawk default -- so a SNES game would pass every gate here, install
+    # cleanly, and then start BizHawk and never connect. Exactly the failure
+    # this file's PROTOCOLS table exists to prevent, reintroduced one layer down.
+    proto = (m.get("client") or {}).get("protocol")
+    if proto:
+        embedded["client"] = {"protocol": proto}
     (proj / "game.json").write_text(
         json.dumps(embedded, indent=2, ensure_ascii=False), encoding="utf-8")
 

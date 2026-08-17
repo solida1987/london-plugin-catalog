@@ -45,6 +45,16 @@ public class GenericEmulatorPlugin : EmulatorPlugin
     public override string Description => Manifest.Description;
 
     protected override string RomSystem     => Manifest.Platform;
+
+    /// Which bridge extension carries this game's checks, straight from the
+    /// manifest. BizHawk is the default only because most of the catalogue is
+    /// BizHawk -- a SNES game says "sni" and the launcher resolves that in
+    /// BridgeRegistry, with no code here knowing what SNI is.
+    protected override string ClientProtocol => Manifest.ClientProtocol;
+
+    /// The in-emulator connector. Only meaningful for the Lua protocols: a
+    /// bridge that attaches to a running program (SNI) never reads it, and
+    /// BridgeContext.ScriptPath is simply ignored on that path.
     protected override string LuaScriptName => "bizhawk_ap_connector.lua";
 
     /// Which file under Plugins/Scripts/games/ carries this game's RAM map.
@@ -217,7 +227,8 @@ public sealed record RomSpecManifest(
 public sealed record GameManifest(
     string Id, string DisplayName, string Subtitle, string Platform,
     string ApWorldName, string Description,
-    RomSpecManifest? Rom, bool ChecksVerified, string? LuaModule)
+    RomSpecManifest? Rom, bool ChecksVerified, string? LuaModule,
+    string ClientProtocol)
 {
     public static GameManifest Parse(string json)
     {
@@ -257,7 +268,14 @@ public sealed record GameManifest(
             rom,
             r.TryGetProperty("checks_verified", out var c)
                 && c.ValueKind == JsonValueKind.True,
-            Str(r, "lua_module"));
+            Str(r, "lua_module"),
+            // client.protocol, defaulting to bizhawk. The build tool refuses a
+            // manifest whose protocol has no installed bridge, so an unknown
+            // value never reaches here -- but the default keeps an older
+            // manifest that predates the field loading rather than throwing.
+            (r.TryGetProperty("client", out var cl)
+                 && cl.ValueKind == JsonValueKind.Object
+                 ? Str(cl, "protocol") : null) ?? "bizhawk");
     }
 
     static string? Str(JsonElement o, string k)
