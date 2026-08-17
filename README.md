@@ -25,23 +25,44 @@ launcheren den fra udgiverens egen adresse, ligesom han selv ville have gjort.
 
 ---
 
-## ⚠ Det der afgør om et plugin må hente noget
+## Spillisten — 472 spil med platform
 
-Et plugin kan gøre to vidt forskellige ting, og forskellen er juridisk:
+`catalog/games.json` er den vigtigste fil. Den kommer fra Marcos egen
+sammenskrivning af kanalen (`catalog/gamelist_raw.txt`), som er **rigere end
+det maskinlæsbare indeks**: den siger hvilken platform hvert spil kører på.
 
-| Spillet er | Pluginet må |
+⭐ Og det er platformen der afgør hvad et plugin må.
+
+| Kilde | Antal |
 |---|---|
-| Frit / open source (fx OpenTTD) | **Hente og installere spillet** |
-| Kommercielt (fx en GBA-titel) | **Kun bede spilleren om hans egen fil** |
+| Direkte URL | 382 |
+| Følger med Archipelago | 76 |
+| Kun i en Discord-tråd | 14 |
 
-Derfor står `requires` på **`ukendt`** for alle 454 poster indtil videre.
-Indekset siger nemlig intet om selve spillet — kun om apworld'en. Et gæt her
-ville blive til et plugin der henter noget det ikke måtte, så hver post skal
-vurderes én gang og skrives ned.
+## ⚠ Tre kategorier, ikke to
 
-Maskineriet til den anden kolonne findes allerede: `RomRequirement` og
+| Spillet er | Pluginet må | Antal |
+|---|---|---|
+| **Konsolspil** — SNES, N64, GBA, PSX … | kun bede om spillerens egen ROM | **166** |
+| **Frit** — Web, PICO-8 | hente hele spillet | **12** |
+| **PC** — Steam og gratis ser ens ud | skal vurderes enkeltvis | **294** |
+
+De 166 er klassificeret **automatisk**: står der `(SNES)`, ligger spillet på
+en kassette spilleren ejer, og så er sagen afgjort uden at nogen skal
+skønne.
+
+De 294 er næsten alle `(PC)`. Her er der oftest en tredje mulighed: spillet
+ejes på Steam, og pluginet installerer **AP-udviklerens mod** ind i den
+installation spilleren allerede har. Det er hverken at hente spillet eller at
+bede om en ROM — og det er lovligt, fordi mod'en er udviklerens eget arbejde.
+
+⚠ Derfor bliver `requires` stående som `ukendt` for de 294 indtil hver enkelt
+er set efter. Et gæt her ville blive til et plugin der henter noget det ikke
+måtte.
+
+Maskineriet til kolonne 1 findes allerede: `RomRequirement` og
 `AcceptableBaseRoms` i launcherens `EmulatorPlugin` beder om spillerens egen
-fil og verificerer den på hash. Det er samme model som Pokémon-projektet.
+fil og verificerer den på hash. Samme model som Pokémon-projektet.
 
 ---
 
@@ -70,10 +91,11 @@ Diablo II og OpenTTD, der begge har deres eget.
 
 ## Faser
 
-**1 — kartoteket** ✅ 454 poster hentet og struktureret
+**1 — kartoteket** ✅ 454 apworlds fra indekset + 472 spil med platform
 
-**2 — klassificering.** Hver post får `requires` sat: frit spil, egen fil,
-eller "ingen spilfil" (Manual-verdener). ⚠ Manuelt, én gang, skrevet ned.
+**2 — klassificering.** ✅ 166 konsolspil og 12 frie afgjort automatisk.
+⏳ 294 PC-titler tilbage: ejes spillet på Steam (pluginet installerer en mod),
+eller er det frit (pluginet må hente det)? Manuelt, én gang, skrevet ned.
 
 **3 — det generiske plugin.** `GenericEmulatorPlugin : EmulatorPlugin` drevet
 af et manifest. Bevises på ét spil før det bruges på flere.

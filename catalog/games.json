@@ -1,0 +1,4736 @@
+{
+  "note": "Navne, platforme og adresser. Aldrig andres indhold.",
+  "count": 472,
+  "by_requires": {
+    "egen_fil": 166,
+    "ukendt": 294,
+    "frit": 12
+  },
+  "by_source": {
+    "url": 382,
+    "bundlet": 76,
+    "kun_discord": 14
+  },
+  "games": [
+    {
+      "name": "(The Legend of) Spyro: Dawn of the Dragon",
+      "platform_raw": "PS2",
+      "platforms": [
+        "PS2"
+      ],
+      "source": "url",
+      "url": "https://github.com/IcyPenguin28/DotDAP",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "2048",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Ishigh1/Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "A Dance of Fire and Ice",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/ClaudeChibout/ADOFAI_AP-Mod/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "A Difficult Game About Climbing",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/BlastSlimey/GrabbingChecks/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "A Hat in Time",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "A Short Hike",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "A Space Archipelago",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://berserker66.itch.io/space-archipelago",
+      "requires": "ukendt"
+    },
+    {
+      "name": "ActRaiser",
+      "platform_raw": "SNES",
+      "platforms": [
+        "SNES"
+      ],
+      "source": "url",
+      "url": "https://github.com/Happyhappyism/Archipelago/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Adventure",
+      "platform_raw": "2600",
+      "platforms": [
+        "2600"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Against the Storm",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Ryguy-9999/ArchipelagoATS/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Age of Empires II: Definitive Edition",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/dmwever/Ageipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Air Delivery",
+      "platform_raw": "PICO-8",
+      "platforms": [
+        "PICO-8"
+      ],
+      "source": "url",
+      "url": "https://github.com/qwint/ap-air-delivery/releases",
+      "requires": "frit"
+    },
+    {
+      "name": "An Untitled Story",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/ThatOneGuy27/Archipelago-aus/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Angband",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/zane31415/APangband/releases/tag/v0.2.0",
+      "requires": "ukendt"
+    },
+    {
+      "name": "ANIMAL WELL",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/ScipioWright/Archipelago-SW/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Anno 1800",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Dark-Listener/ArchipelagoA1800/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Anodyne",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/PixieCatSupreme/ArchipelagoAno/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Another Crab's Treasure",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Automagic00/ACT-AP-Client-Plugin/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "AP-Rummy",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Miiroun/ap-rummy/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Ape Escape",
+      "platform_raw": "PSX",
+      "platforms": [
+        "PSX"
+      ],
+      "source": "url",
+      "url": "https://github.com/Thedragon005/Archipelago-Ape-Escape/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Ape Escape 3",
+      "platform_raw": "PS2",
+      "platforms": [
+        "PS2"
+      ],
+      "source": "url",
+      "url": "https://github.com/aidanii24/ae3-archipelago/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "APQuest",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Aquaria",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Archipela-Go!",
+      "platform_raw": "Android",
+      "platforms": [
+        "Android"
+      ],
+      "source": "url",
+      "url": "https://github.com/aki665/react-native-archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Archipeladoku",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/galdiuz/archipeladoku/",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Armored Core",
+      "platform_raw": "PSX",
+      "platforms": [
+        "PSX"
+      ],
+      "source": "url",
+      "url": "https://github.com/JustinMarshall98/Armored-Core-PSX-Archipelago/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Astalon: Tears of the Earth",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/drtchops/Archipelago-Astalon/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Autopelago",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/airbreather/Autopelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Axiom Verge",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/mail-liam/Archipelago/releases/latest",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Balatro",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/BurndiL/BalatroAP/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Banjo-Tooie",
+      "platform_raw": "N64",
+      "platforms": [
+        "N64"
+      ],
+      "source": "url",
+      "url": "https://github.com/jjjj12212/Archipelago-BanjoTooie/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Blasphemous",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Blasphemous 2",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "kun_discord",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Bloons Tower Defense 6",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Matt41321/Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Blue Sphere",
+      "platform_raw": "GEN",
+      "platforms": [
+        "GEN"
+      ],
+      "source": "url",
+      "url": "https://github.com/FlitPix/ap-bluesphere/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Bomb Rush Cyberfunk",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Bomberman 64",
+      "platform_raw": "N64",
+      "platforms": [
+        "N64"
+      ],
+      "source": "url",
+      "url": "https://github.com/Happyhappyism/Archipelago/releases?q=093058ece14c8cc1a887b2087eb5cfe9&expanded=true",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Bomberman 64: The Second Attack!",
+      "platform_raw": "N64",
+      "platforms": [
+        "N64"
+      ],
+      "source": "url",
+      "url": "https://github.com/Happyhappyism/Archipelago/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Bomberman Hero",
+      "platform_raw": "N64",
+      "platforms": [
+        "N64"
+      ],
+      "source": "kun_discord",
+      "url": "",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Bomberman Quest",
+      "platform_raw": "GB",
+      "platforms": [
+        "GB"
+      ],
+      "source": "url",
+      "url": "https://github.com/Happyhappyism/Archipelago/releases?q=bomberman&expanded=true",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Brave Fencer Musashi",
+      "platform_raw": "PSX",
+      "platforms": [
+        "PSX"
+      ],
+      "source": "url",
+      "url": "https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Brotato",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Buckshot Roulette",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/asdfwyay/APBuckshot/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Bugs Bunny: Lost in Time",
+      "platform_raw": "PSX",
+      "platforms": [
+        "PSX"
+      ],
+      "source": "url",
+      "url": "https://github.com/SynthKat67/BugsBunnylitAPWorld/tree/main",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Build a Jetpack",
+      "platform_raw": "PICO-8",
+      "platforms": [
+        "PICO-8"
+      ],
+      "source": "url",
+      "url": "https://github.com/NyanMC/build-a-jetpack/releases",
+      "requires": "frit"
+    },
+    {
+      "name": "Bumper Stickers",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Candy Box 2",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/vicr123/Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "CartogrAP",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://xmcacutt.itch.io/cartograp",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Castlevania 64",
+      "platform_raw": "N64",
+      "platforms": [
+        "N64"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Castlevania: Circle of the Moon",
+      "platform_raw": "GBA",
+      "platforms": [
+        "GBA"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Castlevania: Dawn of Sorrow",
+      "platform_raw": "NDS",
+      "platforms": [
+        "NDS"
+      ],
+      "source": "url",
+      "url": "https://github.com/PinkSwitch/Archipelago/releases?q=castlevania:%20dawn%20of%20sorrow&expanded=true",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Castlevania: Harmony of Dissonance",
+      "platform_raw": "GBA",
+      "platforms": [
+        "GBA"
+      ],
+      "source": "url",
+      "url": "https://github.com/LiquidCat64/LiquidCatipelago/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Castlevania: Legacy of Darkness",
+      "platform_raw": "N64",
+      "platforms": [
+        "N64"
+      ],
+      "source": "url",
+      "url": "https://github.com/LiquidCat64/LiquidCatipelago/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Castlevania: Order or Ecclesia",
+      "platform_raw": "NDS",
+      "platforms": [
+        "NDS"
+      ],
+      "source": "url",
+      "url": "https://github.com/PinkSwitch/Archipelago/releases?q=castlevania:%20order%20of%20ecclesia&expanded=true",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Castlevania: Portrait of Ruin",
+      "platform_raw": "DS",
+      "platforms": [
+        "DS"
+      ],
+      "source": "url",
+      "url": "https://github.com/PinkSwitch/Archipelago/releases?q=castlevania:%20portrait%20of%20ruin&expanded=true",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Castlevania: Symphony of the Night",
+      "platform_raw": "PSX",
+      "platforms": [
+        "PSX"
+      ],
+      "source": "url",
+      "url": "https://github.com/Darvitz/Archipelago-Crystal/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Cat Quest",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Nikkilites/Archipelago-CatQuest/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Cave Story",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/kl3cks7r/CaveStoryArchipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Cavern of Dreams",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/wu4/Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Celeste",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "kun_discord",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Celeste (Open World)",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Celeste 64",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Chained Echoes",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Samupo/ChainedEchoesRandomizer/releases/",
+      "requires": "ukendt"
+    },
+    {
+      "name": "ChecksFinder",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "ChecksMate",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/chesslogic/chessv/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Chibi Robo Plug Into Adventure",
+      "platform_raw": "GC",
+      "platforms": [
+        "GC"
+      ],
+      "source": "url",
+      "url": "https://github.com/EverydaySimpleDev/Archipelago/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Choo-Choo Charles",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Chrono Trigger",
+      "platform_raw": "SNES",
+      "platforms": [
+        "SNES"
+      ],
+      "source": "url",
+      "url": "https://www.wiki.ctjot.com/doku.php?id=multiworld",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Clique",
+      "platform_raw": "Web",
+      "platforms": [
+        "Web"
+      ],
+      "source": "url",
+      "url": "https://pharware.com/git/Phar/Clique/releases/latest",
+      "requires": "frit"
+    },
+    {
+      "name": "ClusterTruck",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Nullctipus/ArchipelagoClusterTruck/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Cobalt Core",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Isaac-SOL/CobaltCoreArchipelagoMod/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Conbunn Cardboard",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/SWCreeperKing/Conbunnipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Content Warning",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Jakeodude/cw-apworld/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Corn Kidz 64",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Cyb3RGER/cornkidz64_apworld/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Crash Bash",
+      "platform_raw": "PSX",
+      "platforms": [
+        "PSX"
+      ],
+      "source": "url",
+      "url": "https://github.com/JustinMarshall98/Crash-Bash-PSX-Archipelago/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Crash Team Racing",
+      "platform_raw": "PSX",
+      "platforms": [
+        "PSX"
+      ],
+      "source": "url",
+      "url": "https://github.com/dowlle/ctr-native-ap/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Crazy Taxi",
+      "platform_raw": "GC",
+      "platforms": [
+        "GC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Spriddles/crazy-taxi-apworld",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "CrossCode",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Crosswords",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/jm771/apworld_crossword/releases/",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Crypt of the NecroDancer",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/lastingParadox/Archipelago-CotND/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Crystal Project",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Emerassi/CrystalProjectAPWorld/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Crystalis",
+      "platform_raw": "NES",
+      "platforms": [
+        "NES"
+      ],
+      "source": "url",
+      "url": "https://github.com/Ars-Ignis/Archipelago/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Cuphead",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/JKLeckr/Archipelago-cuphead/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Dark Cloud",
+      "platform_raw": "PS2",
+      "platforms": [
+        "PS2"
+      ],
+      "source": "url",
+      "url": "https://github.com/Lizardman175/DC1AP/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Dark Souls II",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/WildBunnie/DarkSoulsII-Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Dark Souls III",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Dark Souls: Remastered",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/tathxo/DSAP/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Dead Cells",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Maxlamenace572/DeadCellsArchipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Deadlock",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/ArchipelagoBrad/deadlockipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Death's Door",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/roseasromeo/DeathsDoorAPWorld/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Deep Rock Galactic",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "kun_discord",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Delivering HOPE",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/StellatedCUBE/Delivering-Hope-Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Deltarune",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/theemeraldsword85/DELTARUNEAP/releases/",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Devil May Cry 3",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/AshIndigo/DMC3ArchipelagoClient/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Dicey Dungeons",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Fylcoast/AP_diceydungeons/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Diddy Kong Racing",
+      "platform_raw": "N64",
+      "platforms": [
+        "N64"
+      ],
+      "source": "url",
+      "url": "https://github.com/zakwiz/DiddyKongRacingAP/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Digimon World",
+      "platform_raw": "PSX",
+      "platforms": [
+        "PSX"
+      ],
+      "source": "url",
+      "url": "https://github.com/ArsonAssassin/DWAP/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "DLC Quest",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Dome Keeper",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Arrcival/ArchipelagoDK/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Don't Starve Together",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/DragonWolfLeo/Archipelago-DST/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Donkey Kong 64",
+      "platform_raw": "N64",
+      "platforms": [
+        "N64"
+      ],
+      "source": "url",
+      "url": "https://dev.dk64randomizer.com/wiki/index.html?title=Archipelago-Dev-Setup-Guide",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Donkey Kong Country",
+      "platform_raw": "SNES",
+      "platforms": [
+        "SNES"
+      ],
+      "source": "url",
+      "url": "https://github.com/TheLX5/Archipelago/releases?q=\"Donkey+Kong+Country+1\"&expanded=true",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Donkey Kong Country 2: Diddy's Kong Quest",
+      "platform_raw": "SNES",
+      "platforms": [
+        "SNES"
+      ],
+      "source": "url",
+      "url": "https://github.com/TheLX5/Archipelago/releases?q=country+2&expanded=true",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Donkey Kong Country 3: Dixie Kong's Double Trouble!",
+      "platform_raw": "SNES",
+      "platforms": [
+        "SNES"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "DOOM 1993",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "DOOM II",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Door to Door Door Salesman",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://interestedsc2.itch.io/door-to-door-door-salesman",
+      "requires": "ukendt"
+    },
+    {
+      "name": "DORONKO WANKO",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Vendily/DoronkoWankoArchipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Dracomino",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/DragonWolfLeo/DracominoAPWorld/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Dragon Quest IX: Sentinels of the Starry Skies",
+      "platform_raw": "DS",
+      "platforms": [
+        "DS"
+      ],
+      "source": "url",
+      "url": "https://github.com/kid2407/ArchipelagoDQIX/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Dragon Warrior 1",
+      "platform_raw": "NES",
+      "platforms": [
+        "NES"
+      ],
+      "source": "url",
+      "url": "https://github.com/Serpikmin/Archipelago-DragonWarrior/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "DREDGE",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/alextric234/ArchipelagoDredge/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Duke Nukem 3D: Atomic Edition",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/LLCoolDave/Duke3DAP/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Dungeon Clawler",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/agilbert1412/Clawrchipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "EarthBound",
+      "platform_raw": "SNES",
+      "platforms": [
+        "SNES"
+      ],
+      "source": "url",
+      "url": "https://github.com/PinkSwitch/Archipelago/releases?q=earthbound&expanded=true",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Ender Lilies: Quietus of the Knights",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Trexounay/EnderLilies.Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Etrian Odyssey",
+      "platform_raw": "DS",
+      "platforms": [
+        "DS"
+      ],
+      "source": "url",
+      "url": "https://github.com/TheMasterZelda/Etrian_Odyssey_1_Archipelago/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Everhood 2",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/DeamonHunter/ArchipelagoEverhood2/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Factorio",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Factorio Space Age Without Space",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "kun_discord",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Fakutori",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/chickentuna/Archipelago-Fakutori/releases/tag/apworld",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Faustdle",
+      "platform_raw": "Discord",
+      "platforms": [
+        "Discord"
+      ],
+      "source": "url",
+      "url": "https://github.com/Xtra3678/faustdle",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Faxanadu",
+      "platform_raw": "NES",
+      "platforms": [
+        "NES"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Final Fantasy",
+      "platform_raw": "NES",
+      "platforms": [
+        "NES"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Final Fantasy IV",
+      "platform_raw": "SNES",
+      "platforms": [
+        "SNES"
+      ],
+      "source": "url",
+      "url": "https://github.com/Rosalie-A/Archipelago/releases?q=FF4&expanded=true",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Final Fantasy Mystic Quest",
+      "platform_raw": "SNES",
+      "platforms": [
+        "SNES"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Final Fantasy Pixel Remaster",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/wildham0/FF1PRAP/releases/latest",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Final Fantasy Tactics A2: Grimoire of the Rift",
+      "platform_raw": "DS",
+      "platforms": [
+        "DS"
+      ],
+      "source": "url",
+      "url": "https://github.com/Rurusachi/Archipelago/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Final Fantasy Tactics Advance",
+      "platform_raw": "GBA",
+      "platforms": [
+        "GBA"
+      ],
+      "source": "url",
+      "url": "https://github.com/spicynun/Archipelago/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Final Fantasy Tactics: Ivalice Island",
+      "platform_raw": "PS1",
+      "platforms": [
+        "PS1"
+      ],
+      "source": "url",
+      "url": "https://github.com/Rosalie-A/Archipelago/releases?q=Tactics&expanded=true",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Final Fantasy VI",
+      "platform_raw": "SNES",
+      "platforms": [
+        "SNES"
+      ],
+      "source": "url",
+      "url": "https://docs.google.com/document/d/1ZN-eO3ZasTEAReGCRP7l9tgI-kEh0GG4gJxVv7JOlyk/edit?tab=t.0",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Final Fantasy X HD Remaster",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/FFX-AP/Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Final Fantasy XII: Open World",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Bartz24/Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Final Fantasy XII: Trial Mode",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/silasary/Archipelago/releases?q=\"FFXII+Trial+Mode\"&expanded=true",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Fire Emblem: The Sacred Stones",
+      "platform_raw": "GBA",
+      "platforms": [
+        "GBA"
+      ],
+      "source": "url",
+      "url": "https://github.com/CT075/Archipelago/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "FNAF Ultimate Custom Night",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/fewffwa/UCN-AP/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "FNAF World",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/EviVirus/Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Freddy Fazbear's Pizzeria Simulator",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "kun_discord",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Freedom Planet 2",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Knuxfan24/Freedom-Planet-2-Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Friday Night Funkin'",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Z11Coding/Mixtape-Engine-Rework/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Frogmonster",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Rooby-Roo/FrogmonsterAPWorld/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Funi Racoon Game",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Garfield Kart - Furious Racing",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/FeluciaPS/Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Gato Roboto",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Ravenmist-Games/Gato-Roboto-AP-Tracker/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Gato Roboto B-Side",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Nitroxyz/Gato-Roboto-B-Side-Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Gauntlet Legends",
+      "platform_raw": "N64",
+      "platforms": [
+        "N64"
+      ],
+      "source": "url",
+      "url": "https://github.com/jamesbrq/GauntletLegendsAP/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Gemcraft: Frostborn Wrath",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Getting Over It with Bennett Foddy",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/BlastSlimey/CheckingOverIt/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "GLYPHS",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/BuffYoda21/ap-glyphs/releases/",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Gnosia",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Mat8071/Gnosia-Archipelago-Randomizer/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Golden Sun: The Lost Age",
+      "platform_raw": "GBA",
+      "platforms": [
+        "GBA"
+      ],
+      "source": "url",
+      "url": "https://github.com/cjmang/Archipelago/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Goldeneye 007",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/NotFamilyJules/goldeneye_ap/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Grim Dawn",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/routhken/Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Guild Wars 2",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Feldar99/Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "gzDoom",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/ToxicFrog/doom-mods/blob/main/release/gzdoom.apworld",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Hacknet",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/AutumnRivers/Archipelago-Hacknet/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Hades",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/NaixGames/Polycosmos/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Hammerwatch",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Parcosmic/Hammerwatch-Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Harry Potter and the Chamber of Secrets",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Kryen112/HP2PC_AP/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "HASTE: Broken Worlds",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/WritingHusky/haste_apworld/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Hatsune Miku: Project Diva Mega Mix+",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Cynichill/DivaAPworld/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Hello Kitty: Roller Rescue",
+      "platform_raw": "GC",
+      "platforms": [
+        "GC"
+      ],
+      "source": "url",
+      "url": "https://github.com/richarm4/Archipelago/releases?q=Hello+Kitty&expanded=true",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Here Comes Niko!",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/niieli/Niko-Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Heretic",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Hero Core",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Minish-Link/HeroCore-Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Hexcells Infinite",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Heaxeus/Archipelago/releases/",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Hi-Fi RUSH",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/TRPG0/HbkArchipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "High Roller",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/ElireFeltores/High-Roller/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Hollow Knight",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "holo8",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/KitLemonfoot/ArchipelagoHolo8/releases/latest",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Hololive Treasure Mountain",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/StellatedCUBE/Treasure-Mountain-Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Hylics 2",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Hyperrogue",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/RealMelwei/hyperrogue_archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Iji",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Minish-Link/Iji-Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Inscryption",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Into the Breach",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Ishigh1/ITB-randomizer-for-AP/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Isles of Sea and Sky",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Kim-Delicious/Archipelago_IslesOfSeaAndSky/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Isles of Trials",
+      "platform_raw": "PICO-8",
+      "platforms": [
+        "PICO-8"
+      ],
+      "source": "url",
+      "url": "https://github.com/NyanMC/ap-islesoftrials/releases",
+      "requires": "frit"
+    },
+    {
+      "name": "Ittle Dew 2+",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Extra-2-Dew/ArchipelagoRandomizer/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Jak 2",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/narramoment/Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Jak 3",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Blake645/Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Jak and Daxter: The Precursor Legacy",
+      "platform_raw": "PS2",
+      "platforms": [
+        "PS2"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Jet Island",
+      "platform_raw": "VR",
+      "platforms": [
+        "VR"
+      ],
+      "source": "url",
+      "url": "https://github.com/Nullctipus/JetIslandArchipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Jigsaw",
+      "platform_raw": "Web",
+      "platforms": [
+        "Web"
+      ],
+      "source": "url",
+      "url": "https://github.com/spineraks-org/ArchipelagoJigsaw/releases",
+      "requires": "frit"
+    },
+    {
+      "name": "JS Paint",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "K-On! After School Live!!",
+      "platform_raw": "PSP",
+      "platforms": [
+        "PSP"
+      ],
+      "source": "url",
+      "url": "https://github.com/dannybonz/k-on_archipelago/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Kabuto Park DEMO",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "kun_discord",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Keep Talking and Nobody Explodes",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/GreenPower713/Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Keymaster's Keep",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/SerpentAI/Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Keys of the Cays",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Birdwards/keysofthecays/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "KINGDOM HEARTS Birth by Sleep FINAL MIX",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/gaithernOrg/ArchipelagoKHBBS/releases/",
+      "requires": "ukendt"
+    },
+    {
+      "name": "KINGDOM HEARTS Chain of Memories",
+      "platform_raw": "GBA",
+      "platforms": [
+        "GBA"
+      ],
+      "source": "url",
+      "url": "https://github.com/gaithernOrg/ArchipelagoKHCOM/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "KINGDOM HEARTS FINAL MIX",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "KINGDOM HEARTS II FINAL MIX",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "KINGDOM HEARTS Re:Chain of Memories",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/gaithernOrg/ArchipelagoKHRECOM/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Kirby 64: The Crystal Shards",
+      "platform_raw": "N64",
+      "platforms": [
+        "N64"
+      ],
+      "source": "url",
+      "url": "https://github.com/Silvris/Archipelago/releases?q=tag%3Ak64_0&expanded=true",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Kirby Air Ride",
+      "platform_raw": "GC",
+      "platforms": [
+        "GC"
+      ],
+      "source": "url",
+      "url": "https://github.com/DeDeDeK/KARchipelago/releases/latest",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Kirby Super Star",
+      "platform_raw": "SNES",
+      "platforms": [
+        "SNES"
+      ],
+      "source": "url",
+      "url": "https://github.com/Silvris/Archipelago/releases?q=tag%3Akss_0&expanded=true",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Kirby's Dream Land 3",
+      "platform_raw": "SNES",
+      "platforms": [
+        "SNES"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Laika: Aged Through Blood",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/ItsSeras/Laika-Aged-Through-Blood-Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Landstalker - The Treasures of King Nole",
+      "platform_raw": "GEN",
+      "platforms": [
+        "GEN"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "League of Legends",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/kbab13reel/Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Legend of Dragoon",
+      "platform_raw": "PSX",
+      "platforms": [
+        "PSX"
+      ],
+      "source": "url",
+      "url": "https://github.com/pkolb-dev/Archipelago/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Lego Batman: The Video Game",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/ZAPaDASH04/LEGO-Batman-Archipelago-Mod/releases/latest",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Lego Harry Potter 5-7",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/jradcode23/LHP2-APWorld/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Lego Rock Raiders / Manic Miners",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/fogmike/Archipelago_ManicMiners/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Lego Star Wars: The Complete Saga",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Mysteryem/Archipelago-TCS/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Lethal Company",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/T0r1nn/APLC/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Lil Gator Game",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/natronium/GatorArchipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Lingo",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Lingo 2",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://code.fourisland.com/lingo2-archipelago/about/",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Little Witch Nobeta",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/danielgruethling/RandomizedWitchNobeta/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Loonyland: Halloween Hill",
+      "platform_raw": "PC/Web",
+      "platforms": [
+        "PC/Web"
+      ],
+      "source": "url",
+      "url": "https://github.com/AutomaticFrenzy/HamSandwich/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Lufia II: Rise of the Sinistrals",
+      "platform_raw": "SNES",
+      "platforms": [
+        "SNES"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Luigi's Mansion",
+      "platform_raw": "GC",
+      "platforms": [
+        "GC"
+      ],
+      "source": "url",
+      "url": "https://github.com/BootsinSoots/Archipelago/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Lunacid",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Witchybun/LunacidAPClient/releases/",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Mario & Luigi: Superstar Saga",
+      "platform_raw": "GBA",
+      "platforms": [
+        "GBA"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Mario is Missing!",
+      "platform_raw": "SNES",
+      "platforms": [
+        "SNES"
+      ],
+      "source": "url",
+      "url": "https://github.com/TheRealSolidusSnake/Mario-Is-Missing/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Mario Kart 64",
+      "platform_raw": "N64",
+      "platforms": [
+        "N64"
+      ],
+      "source": "url",
+      "url": "https://github.com/Edsploration/MK64-Archipelago/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Mario Kart Wii",
+      "platform_raw": "Wii",
+      "platforms": [
+        "Wii"
+      ],
+      "source": "url",
+      "url": "https://github.com/toent/Archipelago-MKWii/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Mario Kart: Double Dash",
+      "platform_raw": "GC",
+      "platforms": [
+        "GC"
+      ],
+      "source": "url",
+      "url": "https://github.com/aXu-AP/archipelago-double-dash/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Mario Sports Mix",
+      "platform_raw": "Wii",
+      "platforms": [
+        "Wii"
+      ],
+      "source": "url",
+      "url": "https://github.com/ElectroStarz/ArchipelagoMSM/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Mario Super Sluggers",
+      "platform_raw": "Wii",
+      "platforms": [
+        "Wii"
+      ],
+      "source": "url",
+      "url": "https://github.com/MarioManTAW/Archipelago/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "MediEvil (1998)",
+      "platform_raw": "PSX",
+      "platforms": [
+        "PSX"
+      ],
+      "source": "url",
+      "url": "https://github.com/riezahughes/MedievilAPWorld/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Mega Man 2",
+      "platform_raw": "NES",
+      "platforms": [
+        "NES"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Mega Man 3",
+      "platform_raw": "NES",
+      "platforms": [
+        "NES"
+      ],
+      "source": "url",
+      "url": "https://github.com/Silvris/Archipelago/releases?q=tag%3Amm3_0&expanded=true",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Mega Man 7",
+      "platform_raw": "SNES",
+      "platforms": [
+        "SNES"
+      ],
+      "source": "url",
+      "url": "https://github.com/SanchoBob8/Archipelago-MM7/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Mega Man Battle Network 3 Blue",
+      "platform_raw": "GBA",
+      "platforms": [
+        "GBA"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Mega Man X",
+      "platform_raw": "SNES",
+      "platforms": [
+        "SNES"
+      ],
+      "source": "url",
+      "url": "https://github.com/TheLX5/Archipelago/releases?q=\"Mega+Man+X\"&expanded=true",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Mega Man X2",
+      "platform_raw": "SNES",
+      "platforms": [
+        "SNES"
+      ],
+      "source": "url",
+      "url": "https://github.com/TheLX5/Archipelago/releases?q=\"Mega+Man+X2\"&expanded=true",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Mega Man X3",
+      "platform_raw": "SNES",
+      "platforms": [
+        "SNES"
+      ],
+      "source": "url",
+      "url": "https://github.com/TheLX5/Archipelago/releases?q=\"Mega+Man+X3\"&expanded=true",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Melatonin",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/xMcacutt-Archipelago/Archipelago-Melatonin/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Meritous",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "MetroCUBEvania",
+      "platform_raw": "PICO-8",
+      "platforms": [
+        "PICO-8"
+      ],
+      "source": "url",
+      "url": "https://github.com/ap-metrocubevania/ap-metrocubevania/releases",
+      "requires": "frit"
+    },
+    {
+      "name": "Metroid Fusion",
+      "platform_raw": "GBA",
+      "platforms": [
+        "GBA"
+      ],
+      "source": "url",
+      "url": "https://github.com/StalledStorm/ArchipelagoMine/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Metroid Prime",
+      "platform_raw": "GC",
+      "platforms": [
+        "GC"
+      ],
+      "source": "url",
+      "url": "https://github.com/UltiNaruto/MetroidAPrime/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Metroid: Zero Mission",
+      "platform_raw": "GBA",
+      "platforms": [
+        "GBA"
+      ],
+      "source": "url",
+      "url": "https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Mina the Hollower",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/FyreDay/Archipelago-MinaTheHollower/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Mindustry",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/JohnMahglass/Archipelago-Mindustry/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Minecraft (NeoForge)",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/qixils/NeoForgeAP/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Minecraft Dig",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/jacobmix/Minecraft_AP_Randomizer/releases/",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Minishoot' Adventures",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/TheNooodle/MinishootRandomizer/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Minit",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/qwint/APMinit/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Momodora: Moonlit Farewell",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/alditoOt/Momodora-Moonlit-Farewell-Randomizer/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Monster Hunter World",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/QPL22/MHW_Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Monster Sanctuary",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Gtaray/archipelago-monstersanctuary/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Muck",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/PGMProductions/Muck-for-Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Muse Dash",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Mystical Ninja Starring Goemon",
+      "platform_raw": "N64",
+      "platforms": [
+        "N64"
+      ],
+      "source": "url",
+      "url": "https://github.com/Killklli/MNSGRecompRando/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Naruto: Clash of Ninja 2",
+      "platform_raw": "GC",
+      "platforms": [
+        "GC"
+      ],
+      "source": "url",
+      "url": "https://github.com/richarm4/Archipelago/releases?q=clash+of+ninja+2",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "New Super Mario Bros Wii",
+      "platform_raw": "Wii",
+      "platforms": [
+        "Wii"
+      ],
+      "source": "url",
+      "url": "https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Nine Sols",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Nodebuster",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/AzuriCaelum2/Archipelago-Nodebuster/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Noita",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Nonogram (Picross)",
+      "platform_raw": "PC/Mobile",
+      "platforms": [
+        "PC/Mobile"
+      ],
+      "source": "url",
+      "url": "https://github.com/spineraks-org/ArchipelagoNonogram/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Northgard",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/ChakraaThePanda/Archipelago-Northgard/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Old School Runescape",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "One Must Fall 2097",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/stubobis1/archipelago-openomf-apworld/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "OpenRCT2",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Crazycolbster/rollercoaster-tycoon-randomizer/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "OpenTTD",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/solida1987/openttd-archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "OpenTTD CargoLock",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/kbab13reel/openttd-archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Ori and the Blind Forest",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/c-ostic/Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Ori and the Will of the Wisps",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Satisha10/APwotw_release/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Osu!",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/lilymnky-F/Archipelago-Osu/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Our Ascent",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/AzuriCaelum/OurAscentAPWorld/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Outer Wilds",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Overcooked! 2",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Oxygen Not Included",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/ShadowKitty42/ONI-Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Panel De Pon/Tetris Attack",
+      "platform_raw": "SNES",
+      "platforms": [
+        "SNES"
+      ],
+      "source": "url",
+      "url": "https://github.com/AgStarRay/TetrisAttackAP/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Paper Mario",
+      "platform_raw": "N64",
+      "platforms": [
+        "N64"
+      ],
+      "source": "url",
+      "url": "https://github.com/icebound777/PMR_APWorld/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Paper Mario: The Thousand Year Door",
+      "platform_raw": "GC",
+      "platforms": [
+        "GC"
+      ],
+      "source": "url",
+      "url": "https://github.com/jamesbrq/ArchipelagoTTYD/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Parkitect",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/CrusherRL/AP_Parkitect_World/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Peaks of Yore",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "kun_discord",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Peggle Deluxe",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/SerpentAI/Archipelago/releases?q=\"peggle+deluxe\"&expanded=true",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Peggle Nights",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/SerpentAI/Archipelago/releases?q=\"peggle+nights\"&expanded=true",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Pikmin 1",
+      "platform_raw": "GC",
+      "platforms": [
+        "GC"
+      ],
+      "source": "url",
+      "url": "https://github.com/TheLynk/Archipelago/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Pikmin 2",
+      "platform_raw": "GC",
+      "platforms": [
+        "GC"
+      ],
+      "source": "url",
+      "url": "https://github.com/chpas0/Pikmin2Archipelago",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Pikuniku",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Piku/releases/latest",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Pinball FX3",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/SerpentAI/Archipelago/releases?q=\"pinball+fx3\"&expanded=true",
+      "requires": "ukendt"
+    },
+    {
+      "name": "PixelDraw",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://interestedsc2.itch.io/pixel-draw",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Pizza Tower",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/unsafetyskizzers/Archipelago/releases/latest/",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Placid Plastic Duck Simulator",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/SWCreeperKing/PPDSArchipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Plants vs Zombies: Replanted/GOTY",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/dannybonz/replanted_archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Plateup!",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/CazIsABoi/Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Plok",
+      "platform_raw": "SNES",
+      "platforms": [
+        "SNES"
+      ],
+      "source": "url",
+      "url": "https://github.com/Happyhappyism/Archipelago/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Pokémon Black and White",
+      "platform_raw": "DS",
+      "platforms": [
+        "DS"
+      ],
+      "source": "url",
+      "url": "https://github.com/BlastSlimey/PokemonBWAP/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Pokémon Crystal",
+      "platform_raw": "GBC",
+      "platforms": [
+        "GBC"
+      ],
+      "source": "url",
+      "url": "https://github.com/gerbiljames/Archipelago-Crystal/releases/latest",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Pokémon Emerald",
+      "platform_raw": "GBA",
+      "platforms": [
+        "GBA"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Pokémon FireRed and LeafGreen",
+      "platform_raw": "GBA",
+      "platforms": [
+        "GBA"
+      ],
+      "source": "url",
+      "url": "https://github.com/vyneras/Archipelago/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Pokémon Mystery Dungeon Explorers of Sky",
+      "platform_raw": "DS",
+      "platforms": [
+        "DS"
+      ],
+      "source": "url",
+      "url": "https://github.com/CrypticMonkey33/ArchipelagoExplorersOfSky/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Pokémon Pinball",
+      "platform_raw": "GB",
+      "platforms": [
+        "GB"
+      ],
+      "source": "url",
+      "url": "https://github.com/Happyhappyism/Archipelago/releases?q=pokemon&expanded=true",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Pokémon Platinum",
+      "platform_raw": "DS",
+      "platforms": [
+        "DS"
+      ],
+      "source": "url",
+      "url": "https://github.com/ljtpetersen/platinum_archipelago?tab=readme-ov-file",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Pokémon Ranger (Quest)",
+      "platform_raw": "DS",
+      "platforms": [
+        "DS"
+      ],
+      "source": "url",
+      "url": "https://github.com/BlastSlimey/Archipelago/releases?q=Pokémon+Ranger+(Quest)&expanded=true",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Pokémon Red and Blue",
+      "platform_raw": "GB",
+      "platforms": [
+        "GB"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Pokémon Trozei / Link!",
+      "platform_raw": "DS",
+      "platforms": [
+        "DS"
+      ],
+      "source": "url",
+      "url": "https://github.com/WCutePy/ArchipelagoAlmia/releases?q=Pokemon+Trozei&expanded=true",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "PokéPark Wii: Pikachu's Adventure",
+      "platform_raw": "Wii",
+      "platforms": [
+        "Wii"
+      ],
+      "source": "url",
+      "url": "https://github.com/Mekurushi/Archipelago_Pokepark/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Poképelago - Pokémon Guessing Game",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/dowlle/PokepelagoClient/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Portal 2",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/GlassToadstool/Archipelago/releases/latest",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Powerwash Simulator",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/SWCreeperKing/PowerwashSimAP/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Prodigal",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/randomsalience/ProdigalArchipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Pseudoregalia",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/pseudoregalia-modding/pseudoregalia-archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Psychonauts",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Akashortstack/Psychonauts-AP-Integration/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "R.E.P.O.",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Rabi-Ribi",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/tdkollins/Archipelago-Rabi-Ribi/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Raft",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Rain World",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/alphappy/ArchipelagoRW/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Ratchet & Clank",
+      "platform_raw": "PS3",
+      "platforms": [
+        "PS3"
+      ],
+      "source": "url",
+      "url": "https://github.com/Panda291/Archipelago/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Ratchet & Clank 3: Up Your Arsenal",
+      "platform_raw": "PS2",
+      "platforms": [
+        "PS2"
+      ],
+      "source": "url",
+      "url": "https://github.com/Taoshix/Archipelago-RaC3/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Ratchet & Clank: Going Commando",
+      "platform_raw": "PS2",
+      "platforms": [
+        "PS2"
+      ],
+      "source": "url",
+      "url": "https://github.com/evilwb/APRac2/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Rayman 2: The Great Escape",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Aeltumn/Rayman2AP/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Refunct",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/spinerak/refunct-tas-archipelago/releases/latest",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Reventure",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Droppel/ReventureEndingRando/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Rift of the NecroDancer",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/studkid/RiftArchipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Rift Wizard",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/TheBigSalarius/Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Risk of Rain",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/studkid/RoR_Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Risk of Rain 2",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Risk of Rain Returns",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/studkid/RoR_Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Rogue Legacy",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "kun_discord",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Rusted Moss",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/dgrossmann144/Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Satisfactory",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Jarno458/SatisfactoryArchipelagoMod/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Saving Princess",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Scooby Doo Unmasked",
+      "platform_raw": "PS2",
+      "platforms": [
+        "PS2"
+      ],
+      "source": "url",
+      "url": "https://github.com/Its-Retro/Archipelago/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Scooby-Doo! Night of 100 Frights",
+      "platform_raw": "GC",
+      "platforms": [
+        "GC"
+      ],
+      "source": "url",
+      "url": "https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Secret of Evermore",
+      "platform_raw": "SNES",
+      "platforms": [
+        "SNES"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Secret of Mana",
+      "platform_raw": "SNES",
+      "platforms": [
+        "SNES"
+      ],
+      "source": "url",
+      "url": "https://github.com/black-sliver/som-apworld/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Sentinels of the Multiverse",
+      "platform_raw": "PC / Physical",
+      "platforms": [
+        "PC / Physical"
+      ],
+      "source": "url",
+      "url": "https://github.com/Totox00/Archipelago-sotm/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Severed Soul",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Grenhunterr/Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Shadow the Hedgehog",
+      "platform_raw": "GC",
+      "platforms": [
+        "GC"
+      ],
+      "source": "url",
+      "url": "https://github.com/choatix/Archipelago/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Shadowgate 64",
+      "platform_raw": "N64",
+      "platforms": [
+        "N64"
+      ],
+      "source": "url",
+      "url": "https://github.com/jjjj12212/Archipelago-Shadowgate64/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Shapez",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/BlastSlimey/shapezipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Shapez 2",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/BlastSlimey/2hapezipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Shellipelago",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://dragonsidestudios.itch.io/shellipelago",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Shivers",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Sid Meier's Civilization V",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/1313e/Civ-V-AP-World/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Sid Meier's Civilization VI",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Simon Tatham's Portable Puzzle Collection",
+      "platform_raw": "Web",
+      "platforms": [
+        "Web"
+      ],
+      "source": "url",
+      "url": "https://github.com/ishanpm/ap-sgtpuzzles-web/releases",
+      "requires": "frit"
+    },
+    {
+      "name": "Skul the Hero Slayer",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Skul/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Slay the Spire",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/cjmang/StS-AP-World/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Slay the Spire 2",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Slime Rancher",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/SWCreeperKing/Slimipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Sly 2: Band of Thieves",
+      "platform_raw": "PS2",
+      "platforms": [
+        "PS2"
+      ],
+      "source": "url",
+      "url": "https://github.com/NikolajDanger/APSly2/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Sly Cooper and the Thievius Raccoonus",
+      "platform_raw": "PS2",
+      "platforms": [
+        "PS2"
+      ],
+      "source": "url",
+      "url": "https://github.com/hoppel16/ArchipelagoBranchSly1/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Smushi Come Home",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/xMcacutt-Archipelago/Archipelago-SmushiComeHome/releases/latest",
+      "requires": "ukendt"
+    },
+    {
+      "name": "SMW: Spicy Mycena Waffles",
+      "platform_raw": "SNES",
+      "platforms": [
+        "SNES"
+      ],
+      "source": "url",
+      "url": "https://github.com/TheLX5/Archipelago/releases?q=Spicy&expanded=true",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "SMZ3",
+      "platform_raw": "SNES",
+      "platforms": [
+        "SNES"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Sonic Adventure 2: Battle",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Sonic Adventure DX",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/ClassicSpeed/sadx-classic-randomizer/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Sonic Battle",
+      "platform_raw": "GBA",
+      "platforms": [
+        "GBA"
+      ],
+      "source": "url",
+      "url": "https://github.com/Happyhappyism/Archipelago/releases?q=sonic+battle&expanded=true",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Sonic Colours",
+      "platform_raw": "DS",
+      "platforms": [
+        "DS"
+      ],
+      "source": "url",
+      "url": "https://github.com/SilicDev/Archipelago/releases?q=Sonic+Colours&expanded=true",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Sonic Heroes",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Ethicallogic-Archipelago/SonicHeroesArchipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Sonic Riders",
+      "platform_raw": "GC",
+      "platforms": [
+        "GC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Ninjakakes/Archipelago/releases?q=Sonic+Riders&expanded=true",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Sonic Rush",
+      "platform_raw": "DS",
+      "platforms": [
+        "DS"
+      ],
+      "source": "url",
+      "url": "https://github.com/BlastSlimey/SonicRushAP/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Sonic the Hedgehog",
+      "platform_raw": "GEN",
+      "platforms": [
+        "GEN"
+      ],
+      "source": "url",
+      "url": "https://github.com/kaithar/Archipelago/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Soulblazer",
+      "platform_raw": "SNES",
+      "platforms": [
+        "SNES"
+      ],
+      "source": "url",
+      "url": "https://github.com/Tranquilite0/Archipelago-SoulBlazer/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Spelunker",
+      "platform_raw": "NES",
+      "platforms": [
+        "NES"
+      ],
+      "source": "kun_discord",
+      "url": "",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Spelunky 2",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/DDR-Khat/Spelunky2-Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Spinball",
+      "platform_raw": "Web",
+      "platforms": [
+        "Web"
+      ],
+      "source": "url",
+      "url": "https://github.com/spineraks-org/ArchipelagoSpinball/releases",
+      "requires": "frit"
+    },
+    {
+      "name": "SpongeBob SquarePants: Battle For Bikini Bottom",
+      "platform_raw": "GC",
+      "platforms": [
+        "GC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Cyb3RGER/bfbb_ap_world/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Spyro 2",
+      "platform_raw": "PSX",
+      "platforms": [
+        "PSX"
+      ],
+      "source": "url",
+      "url": "https://github.com/Uroogla/S2AP/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Spyro 3",
+      "platform_raw": "PSX",
+      "platforms": [
+        "PSX"
+      ],
+      "source": "url",
+      "url": "https://github.com/Uroogla/S3AP/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Stacklands",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/JammyGeeza/Stacklands-Randomizer/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Star Wars: Episode I - Racer",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/wcolding/SWR_AP_Client/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "StarCraft II",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Stardew Valley",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Starfox 64",
+      "platform_raw": "N64",
+      "platforms": [
+        "N64"
+      ],
+      "source": "url",
+      "url": "https://github.com/Auztin/AP-Star-Fox-64/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "StarQuest 64",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://caesius.itch.io/star-quest-64",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Stick Ranger",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Kryen112/AP_Stick_Ranger/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Streets of Rage",
+      "platform_raw": "GEN",
+      "platforms": [
+        "GEN"
+      ],
+      "source": "url",
+      "url": "https://github.com/UltiNaruto/SOR_AP_Randomizer/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Subnautica",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Super Cat Planet",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/lone01/scp/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Super Junkoid",
+      "platform_raw": "SNES",
+      "platforms": [
+        "SNES"
+      ],
+      "source": "url",
+      "url": "https://github.com/Ninjakakes/Archipelago/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Super Mario 64",
+      "platform_raw": "N64/PC",
+      "platforms": [
+        "N64/PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Super Mario Land 2: 6 Golden Coins",
+      "platform_raw": "GB",
+      "platforms": [
+        "GB"
+      ],
+      "source": "kun_discord",
+      "url": "",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Super Mario RPG",
+      "platform_raw": "SNES",
+      "platforms": [
+        "SNES"
+      ],
+      "source": "url",
+      "url": "https://github.com/TheRealSolidusSnake/SMRPG_apworld/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Super Mario Sunshine",
+      "platform_raw": "GC",
+      "platforms": [
+        "GC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Joshark/archipelago-sms/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Super Mario Sunshine Arcade 2",
+      "platform_raw": "GC",
+      "platforms": [
+        "GC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Jorbori/SMSA2AP/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Super Mario World",
+      "platform_raw": "SNES",
+      "platforms": [
+        "SNES"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Super Mario World 2: Yoshi's Island",
+      "platform_raw": "SNES",
+      "platforms": [
+        "SNES"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Super Market Simulator",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Lemix028/SupermarketSimulator-Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Super Metroid",
+      "platform_raw": "SNES",
+      "platforms": [
+        "SNES"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Super Metroid Map Rando",
+      "platform_raw": "SNES",
+      "platforms": [
+        "SNES"
+      ],
+      "source": "kun_discord",
+      "url": "",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Super Smash Bros",
+      "platform_raw": "N64",
+      "platforms": [
+        "N64"
+      ],
+      "source": "url",
+      "url": "https://github.com/IncidiousJacob/Smashipelago/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Super Smash Bros. Brawl: Subspace Emissary",
+      "platform_raw": "Wii",
+      "platforms": [
+        "Wii"
+      ],
+      "source": "url",
+      "url": "https://github.com/kenniky/ArchipelagoSSE/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Super Smash Bros. Melee",
+      "platform_raw": "GC",
+      "platforms": [
+        "GC"
+      ],
+      "source": "url",
+      "url": "https://github.com/PinkSwitch/Archipelago/releases?q=melee&expanded=true",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Sweet Defeat",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://interestedsc2.itch.io/sweet-defeat",
+      "requires": "ukendt"
+    },
+    {
+      "name": "System Shock 2",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Partatio/SS2-Apworld/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Talos Principle Reawakened",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/johnso48/TalosPrincipleArchipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Taz Wanted",
+      "platform_raw": "PS2",
+      "platforms": [
+        "PS2"
+      ],
+      "source": "url",
+      "url": "https://github.com/imklubb/Archipelago-Taz-Wanted/releases/latest",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "TCG Card Shop Simulator",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/FyreDay/Archipelago-TCGCardShopSimulator/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Teardown",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Evereliquest/Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Terraria",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Tetris",
+      "platform_raw": "GB",
+      "platforms": [
+        "GB"
+      ],
+      "source": "url",
+      "url": "https://github.com/Alchav/Archipelago/releases?q=Tetris&expanded=true",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "TEVI",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/BlackSoulKnight/Tevi_Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "The Binding of Isaac: Repentance",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/NaveTK/Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "The Forged Curse",
+      "platform_raw": "PICO-8",
+      "platforms": [
+        "PICO-8"
+      ],
+      "source": "url",
+      "url": "https://github.com/cheesepak/ap-forged-curse/releases",
+      "requires": "frit"
+    },
+    {
+      "name": "The Grinch",
+      "platform_raw": "PSX",
+      "platforms": [
+        "PSX"
+      ],
+      "source": "url",
+      "url": "https://github.com/MarioSpore/Grinch-AP/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "The Legend of Heroes: Trails in the Sky the 3rd",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Archipelago-Trails-in-the-Sky-the-3rd/Archipelago-Trails-in-the-Sky-the-3rd/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "The Legend of Zelda",
+      "platform_raw": "NES",
+      "platforms": [
+        "NES"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "The Legend of Zelda II: The Adventure of Link",
+      "platform_raw": "NES",
+      "platforms": [
+        "NES"
+      ],
+      "source": "url",
+      "url": "https://github.com/PinkSwitch/Archipelago/releases?q=zelda&expanded=true",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "The Legend of Zelda: A Link Between Worlds",
+      "platform_raw": "3DS",
+      "platforms": [
+        "3DS"
+      ],
+      "source": "url",
+      "url": "https://github.com/randomsalience/albw-archipelago/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "The Legend of Zelda: A Link to the Past",
+      "platform_raw": "SNES",
+      "platforms": [
+        "SNES"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "The Legend of Zelda: Link's Awakening DX",
+      "platform_raw": "GBC",
+      "platforms": [
+        "GBC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "The Legend of Zelda: Majora's Mask",
+      "platform_raw": "N64/PC",
+      "platforms": [
+        "N64/PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/RecompRando/MMRecompRando/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "The Legend of Zelda: Ocarina of Time",
+      "platform_raw": "N64",
+      "platforms": [
+        "N64"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "The Legend of Zelda: Ocarina of Time (Ship of Harkinian)",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/HarbourMasters/Archipelago-SoH?tab=readme-ov-file#ship-of-harkinian--archipelago",
+      "requires": "ukendt"
+    },
+    {
+      "name": "The Legend of Zelda: Ocarina of Time but it's just Master Quest Water Temple",
+      "platform_raw": "N64",
+      "platforms": [
+        "N64"
+      ],
+      "source": "url",
+      "url": "https://github.com/Alchav/Archipelago/releases?q=Water&expanded=true",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "The Legend of Zelda: Oracle of Ages",
+      "platform_raw": "GBC",
+      "platforms": [
+        "GBC"
+      ],
+      "source": "url",
+      "url": "https://github.com/josephanimate2021/ArchipelagoOoA/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "The Legend of Zelda: Oracle of Seasons",
+      "platform_raw": "GBC",
+      "platforms": [
+        "GBC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Dinopony/ArchipelagoOoS/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "The Legend of Zelda: Phantom Hourglass",
+      "platform_raw": "DS",
+      "platforms": [
+        "DS"
+      ],
+      "source": "url",
+      "url": "https://github.com/carrotinator/Archipelago/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "The Legend of Zelda: Skyward Sword",
+      "platform_raw": "Wii",
+      "platforms": [
+        "Wii"
+      ],
+      "source": "url",
+      "url": "https://github.com/Battlecats59/SS_APWorld/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "The Legend of Zelda: Spirit Tracks",
+      "platform_raw": "DS",
+      "platforms": [
+        "DS"
+      ],
+      "source": "url",
+      "url": "https://github.com/DayKat/spirit-tracks/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "The Legend of Zelda: The Minish Cap",
+      "platform_raw": "GBA",
+      "platforms": [
+        "GBA"
+      ],
+      "source": "url",
+      "url": "https://github.com/eternalcode0/Archipelago/releases/",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "The Legend of Zelda: The Wind Waker",
+      "platform_raw": "GC",
+      "platforms": [
+        "GC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "The Legend of Zelda: Twilight Princess",
+      "platform_raw": "GC",
+      "platforms": [
+        "GC"
+      ],
+      "source": "url",
+      "url": "https://github.com/WritingHusky/Twilight_Princess_apworld/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "The Messenger",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "The Simpsons: Hit and Run",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/nmize1/Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "The Sims 4",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/benny-dreamly/Archipelago/releases/latest",
+      "requires": "ukendt"
+    },
+    {
+      "name": "The Witness",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Three Goblin Wobblin'",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/melenehh/Three-Goblin-Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Time is Broken Again",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://foxolotl713.itch.io/time-is-broken-again",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Timespinner",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Toejam & Earl",
+      "platform_raw": "GEN",
+      "platforms": [
+        "GEN"
+      ],
+      "source": "url",
+      "url": "https://github.com/IgnisUmbrae/TJE-Archipelago/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "TOEM",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/bbernardoni/Archipelago.TOEM/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Tombola",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Arenes214/APWorld-Tombola/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Tony Hawk's Pro Skater 1 + 2",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/SerpentAI/Archipelago/releases?q=\"tony+hawk\"&expanded=true",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Total War Warhammer 3: Immortal Empires",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/jordansds/Archipelago_TWW3_Alt/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Totally Accurate Battle Simulator",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/duckboycool/TABS-Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Touhou 18.5",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/furret78/Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Toy Story 2: Buzz Lightyear to the Rescue",
+      "platform_raw": "PS1",
+      "platforms": [
+        "PS1"
+      ],
+      "source": "url",
+      "url": "https://github.com/imklubb/Archipelago-Toy-Story-2/releases/latest",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Trackmania Random Campaign",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/SerialBoxes/ArchipelagoTrackmania/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "TUNIC",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Turnip Boy Commits Tax Evasion",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/pointfivetee/TurnipBoyRandomizer/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Twisty Cube",
+      "platform_raw": "PC/Mobile",
+      "platforms": [
+        "PC/Mobile"
+      ],
+      "source": "url",
+      "url": "https://github.com/spineraks-org/ArchipelagoTwistyCube/releases/latest",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Ty the Tasmanian Tiger",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/xMcacutt/Archipelago-TyTheTasmanianTiger/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Tyrian",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/KScl/TyrianArchipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "UFO 50",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/UFO-50-Archipelago/Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "ULTRAKILL",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/TRPG0/ArchipelagoULTRAKILL/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Undertale",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Unfair Flips",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/xMcacutt-Archipelago/Archipelago-UnfairFlips/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Vacation Simulator",
+      "platform_raw": "VR",
+      "platforms": [
+        "VR"
+      ],
+      "source": "kun_discord",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Vampire Survivors",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/SWCreeperKing/ArchipelagoSurvivors/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Void Sols",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/cookie966507/Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Void Stranger",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/CriminalPancake/void-stranger-ap/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Voltorb Flip (HGSS)",
+      "platform_raw": "DS",
+      "platforms": [
+        "DS"
+      ],
+      "source": "url",
+      "url": "https://github.com/BlastSlimey/Archipelago/releases?q=Voltorb+Flip&expanded=true",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "VVVVVV",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Wargroove",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Wargroove 2",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/FlySniper/Archipelago/releases?q=Wargroove+2&expanded=true",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Wario Land 3",
+      "platform_raw": "GBC",
+      "platforms": [
+        "GBC"
+      ],
+      "source": "url",
+      "url": "https://github.com/RvPA-Roopa/Wario-Land-3-Archipelago/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Wario Land 4",
+      "platform_raw": "GBA",
+      "platforms": [
+        "GBA"
+      ],
+      "source": "url",
+      "url": "https://github.com/lilDavid/Archipelago-Wario-Land-4/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Wario Land: Super Mario Land 3",
+      "platform_raw": "GB",
+      "platforms": [
+        "GB"
+      ],
+      "source": "url",
+      "url": "https://github.com/randomcodegen/Archipelago/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Wario World",
+      "platform_raw": "GC",
+      "platforms": [
+        "GC"
+      ],
+      "source": "url",
+      "url": "https://github.com/m0ester/WarioworldAP/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Watery Words",
+      "platform_raw": "Web",
+      "platforms": [
+        "Web"
+      ],
+      "source": "url",
+      "url": "https://github.com/spineraks-org/ArchipelagoWateryWords/releases",
+      "requires": "frit"
+    },
+    {
+      "name": "WEBFISHING",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/mwoiii/webfishing-ap/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "West of Loathing",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Lucasvdm/WOLAP/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Wordipelago",
+      "platform_raw": "Web",
+      "platforms": [
+        "Web"
+      ],
+      "source": "url",
+      "url": "https://github.com/ProfDeCube/Archipelago/releases",
+      "requires": "frit"
+    },
+    {
+      "name": "Wynncraft",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/EpicPuppy613/Wynncraft-APWorld/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "XCOM 2: War of the Chosen",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/MaxReinstadler/X2WOTCArchipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Xenoblade Chronicles X",
+      "platform_raw": "Wii U",
+      "platforms": [
+        "Wii U"
+      ],
+      "source": "url",
+      "url": "https://github.com/MaragonMH/Archipelago/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Yacht Dice",
+      "platform_raw": "Web",
+      "platforms": [
+        "Web"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "frit"
+    },
+    {
+      "name": "YARG (Guitar Hero/Rock Band)",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "YARG (Yet Another Rhythm Game)",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/energymaster22/YARGArchipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Yellow Taxi Goes Vroom",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/soopercool101/Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Yohane the Parhelion: Blaze in the Deepblue",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/SilicDev/Archipelago/releases?q=yohane&expanded=true",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Yoku's Island Express",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://git.makuluni.com/Archipelago/YokuAPWorld/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Yooka-Laylee",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/Awareqwx/Archipelago/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Yu-Gi-Oh GX Duel Academy",
+      "platform_raw": "GBA",
+      "platforms": [
+        "GBA"
+      ],
+      "source": "kun_discord",
+      "url": "",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Yu-Gi-Oh! Dungeon Dice Monsters",
+      "platform_raw": "GBA",
+      "platforms": [
+        "GBA"
+      ],
+      "source": "url",
+      "url": "https://github.com/JustinMarshall98/Archipelago/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Yu-Gi-Oh! Forbidden Memories",
+      "platform_raw": "PSX",
+      "platforms": [
+        "PSX"
+      ],
+      "source": "url",
+      "url": "https://github.com/sg4e/Archipelago/releases",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Yu-Gi-Oh! Ultimate Masters: WCT 2006",
+      "platform_raw": "GBA",
+      "platforms": [
+        "GBA"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Zillion",
+      "platform_raw": "SMS",
+      "platforms": [
+        "SMS"
+      ],
+      "source": "bundlet",
+      "url": "",
+      "requires": "egen_fil"
+    },
+    {
+      "name": "Zoominoes",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/chickentuna/Archipelago-Zoominoes/releases",
+      "requires": "ukendt"
+    },
+    {
+      "name": "Zork: Grand Inquisitor",
+      "platform_raw": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "source": "url",
+      "url": "https://github.com/SerpentAI/Archipelago/releases?q=zork&expanded=true",
+      "requires": "ukendt"
+    }
+  ]
+}
