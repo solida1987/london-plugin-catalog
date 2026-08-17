@@ -1,0 +1,27 @@
+{
+  "id": "sonic1",
+  "display_name": "Sonic the Hedgehog",
+  "subtitle": "",
+  "platform": "GEN",
+  "_platform_source": "harvested game list: platform_raw='GEN'",
+  "version": "1.0.0",
+  "ap_world_name": "Sonic the Hedgehog",
+  "_ap_world_name_source": "harvested game list, name as written there",
+  "description": "Sonic the Hedgehog as a multiworld. Items and progression are shuffled across the session.",
+  "checks_verified": false,
+  "requires": "own_copy",
+  "_requires_source": "harvested game list: requires='own_copy'",
+  "lua_module": "sonic1",
+  "_lua_module_source": "Plugins/Scripts/games/sonic1.lua exists",
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/kaithar/Archipelago/releases",
+    "_source": "harvested game list: source='url'"
+  },
+  "client": {
+    "protocol": "unknown",
+    "_source": "world not available to read"
+  },
+  "patch_extension": "unaudited",
+  "_description_source": "placeholder assembled from display_name; replace with what this game actually shuffles"
+}

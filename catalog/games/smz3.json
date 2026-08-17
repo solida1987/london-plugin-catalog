@@ -1,0 +1,28 @@
+{
+  "id": "smz3",
+  "display_name": "SMZ3",
+  "subtitle": "",
+  "platform": "SNES",
+  "_platform_source": "harvested game list: platform_raw='SNES'",
+  "version": "1.0.0",
+  "ap_world_name": "SMZ3",
+  "_ap_world_name_source": "harvested game list, name as written there",
+  "description": "SMZ3 as a multiworld. Items and progression are shuffled across the session.",
+  "checks_verified": false,
+  "requires": "own_copy",
+  "_requires_source": "harvested game list: requires='own_copy'",
+  "lua_module": "smz3",
+  "_lua_module_source": "Plugins/Scripts/games/smz3.lua exists",
+  "apworld": {
+    "bundled": true,
+    "url": "",
+    "_source": "harvested game list: source='bundled'"
+  },
+  "client": {
+    "protocol": "sni",
+    "_source": "the world's client subclasses SNIClient"
+  },
+  "patch_extension": "refused",
+  "_patch_extension_source": "read from smz3.apworld: adds new steps ['apply_basepatch'] in smz3/Rom.pyc:SMZ3PatchExtensions",
+  "_description_source": "placeholder assembled from display_name; replace with what this game actually shuffles"
+}

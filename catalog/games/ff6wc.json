@@ -1,0 +1,27 @@
+{
+  "id": "ff6wc",
+  "display_name": "Final Fantasy VI",
+  "subtitle": "",
+  "platform": "SNES",
+  "_platform_source": "harvested game list: platform_raw='SNES'",
+  "version": "1.0.0",
+  "ap_world_name": "Final Fantasy VI",
+  "_ap_world_name_source": "harvested game list, name as written there",
+  "description": "Final Fantasy VI as a multiworld. Items and progression are shuffled across the session.",
+  "checks_verified": false,
+  "requires": "own_copy",
+  "_requires_source": "harvested game list: requires='own_copy'",
+  "lua_module": "ff6wc",
+  "_lua_module_source": "Plugins/Scripts/games/ff6wc.lua exists",
+  "apworld": {
+    "bundled": false,
+    "url": "https://docs.google.com/document/d/1ZN-eO3ZasTEAReGCRP7l9tgI-kEh0GG4gJxVv7JOlyk/edit?tab=t.0",
+    "_source": "harvested game list: source='url'"
+  },
+  "client": {
+    "protocol": "unknown",
+    "_source": "world not available to read"
+  },
+  "patch_extension": "unaudited",
+  "_description_source": "placeholder assembled from display_name; replace with what this game actually shuffles"
+}

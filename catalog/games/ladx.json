@@ -1,0 +1,28 @@
+{
+  "id": "ladx",
+  "display_name": "The Legend of Zelda: Link's Awakening DX",
+  "subtitle": "",
+  "platform": "GBC",
+  "_platform_source": "harvested game list: platform_raw='GBC'",
+  "version": "1.0.0",
+  "ap_world_name": "The Legend of Zelda: Link's Awakening DX",
+  "_ap_world_name_source": "harvested game list, name as written there",
+  "description": "The Legend of Zelda: Link's Awakening DX as a multiworld. Items and progression are shuffled across the session.",
+  "checks_verified": false,
+  "requires": "own_copy",
+  "_requires_source": "harvested game list: requires='own_copy'",
+  "lua_module": "ladx",
+  "_lua_module_source": "Plugins/Scripts/games/ladx.lua exists",
+  "apworld": {
+    "bundled": true,
+    "url": "",
+    "_source": "harvested game list: source='bundled'"
+  },
+  "client": {
+    "protocol": "bizhawk",
+    "_source": "the world's client subclasses BizHawkClient"
+  },
+  "patch_extension": "refused",
+  "_patch_extension_source": "read from ladx.apworld: adds new steps ['generate_rom', 'patch_title_screen'] in ladx/Rom.pyc:LADXPatchExtensions",
+  "_description_source": "placeholder assembled from display_name; replace with what this game actually shuffles"
+}

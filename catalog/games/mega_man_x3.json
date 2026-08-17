@@ -1,0 +1,27 @@
+{
+  "id": "mega_man_x3",
+  "display_name": "Mega Man X3",
+  "subtitle": "",
+  "platform": "SNES",
+  "_platform_source": "harvested game list: platform_raw='SNES'",
+  "version": "1.0.0",
+  "ap_world_name": "Mega Man X3",
+  "_ap_world_name_source": "harvested game list, name as written there",
+  "description": "Mega Man X3 as a multiworld. Items and progression are shuffled across the session.",
+  "checks_verified": false,
+  "requires": "own_copy",
+  "_requires_source": "harvested game list: requires='own_copy'",
+  "lua_module": "Mega Man X3",
+  "_lua_module_source": "Plugins/Scripts/games/Mega Man X3.lua exists",
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/TheLX5/Archipelago/releases?q=\"Mega+Man+X3\"&expanded=true",
+    "_source": "harvested game list: source='url'"
+  },
+  "client": {
+    "protocol": "unknown",
+    "_source": "world not available to read"
+  },
+  "patch_extension": "unaudited",
+  "_description_source": "placeholder assembled from display_name; replace with what this game actually shuffles"
+}
