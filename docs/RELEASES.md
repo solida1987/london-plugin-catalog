@@ -93,7 +93,12 @@ checked without installing it.
 2. **Double-check the group as a whole**: do two games point at the same
    client? do they need the same emulator version? is anyone missing a hash?
 3. **Build** the plugin for each game and run PluginCheck on every one
-4. **Release** the group, then update `index` afterwards so it is newest
+4. **Checksums** with `tools/checksums.py` — never by hand. Writing the file
+   with PowerShell produced CRLF line endings, which made `sha256sum -c`
+   report "No such file or directory" for a file sitting right beside it. A
+   checksums file that does not verify is worse than none, because it tells
+   the reader the download was checked when it was not.
+5. **Release** the group, then update `index` afterwards so it is newest
 
 Step 2 is not a formality. Mistakes in this kind of data are the same across a
 group — get one GBA game wrong and there is a good chance the other 17 carry
