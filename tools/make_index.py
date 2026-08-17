@@ -74,10 +74,20 @@ def main():
     games = json.loads((ROOT / "catalog" / "games.json").read_text(
         encoding="utf-8"))["games"]
 
-    built = {}
+    # A manifest is NOT a plugin. Ground truth is what actually got packaged --
+    # counting manifests once claimed 8 SNES games were "built" and linked to a
+    # release that did not exist, because those manifests are blocked by the
+    # protocol gate. The index must never promise more than dist/ holds.
+    packaged = {p.name.rsplit("-", 1)[0] for p in DIST.glob("*.londonplugin")}
+
+    built, blocked = {}, {}
     for p in sorted(glob.glob(str(ROOT / "catalog" / "games" / "*.json"))):
         m = json.loads(Path(p).read_text(encoding="utf-8"))
-        built[m["id"]] = m
+        (built if m["id"] in packaged else blocked)[m["id"]] = m
+
+    if blocked:
+        print("mapped but NOT packaged (%d): %s\n"
+              % (len(blocked), ", ".join(sorted(blocked))))
 
     known = collections.Counter()
     for g in games:

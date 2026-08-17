@@ -33,6 +33,20 @@ PACKER = ROOT.parent / "Multiworld-Launcher" / "Tools" / "pack_plugin.py"
 ENTRY = "LauncherV2.Plugins.Catalog.GenericEmulatorPlugin"
 AUTHOR = "Solida Games"
 
+# How the game talks to Archipelago. GenericEmulatorPlugin drives BizHawk with
+# the generic Lua connector and NOTHING ELSE, so a world on another protocol
+# must be REFUSED rather than built.
+#
+# This is not theoretical: every SNES world in Archipelago subclasses SNIClient,
+# which speaks to SNI (a separate program) rather than to a Lua script inside
+# BizHawk. A plugin built for one of those would install cleanly, launch
+# BizHawk, and then never connect -- silent, and worse than not shipping.
+PROTOCOLS = {
+    "bizhawk": True,    # BizHawkClient + connector_bizhawk_generic.lua
+    "sni": False,       # SNIClient -- London has no SNI bridge yet
+    "unknown": False,   # not established; do not guess
+}
+
 # What a game needs from the player. Anything outside this set is a typo or a
 # half-finished rename, and either way we must not guess -- see check().
 REQUIRES = {
@@ -98,6 +112,17 @@ def check(m, gid):
     if req not in REQUIRES:
         problems.append("requires=%r is not one of %s"
                         % (req, "/".join(sorted(REQUIRES))))
+
+    # Default to bizhawk only when the manifest predates this field; an
+    # explicit value is never second-guessed.
+    proto = (m.get("client") or {}).get("protocol", "bizhawk")
+    if proto not in PROTOCOLS:
+        problems.append("client.protocol=%r is not one of %s"
+                        % (proto, "/".join(sorted(PROTOCOLS))))
+    elif not PROTOCOLS[proto]:
+        problems.append("client.protocol=%r - GenericEmulatorPlugin only "
+                        "drives BizHawk, so this would install and then never "
+                        "connect" % proto)
 
     rom = m.get("rom") or {}
     if rom and not rom.get("size") and not rom.get("md5"):
