@@ -68,6 +68,12 @@ public sealed class SniBridge : IEmulatorBridge
              + "refused rather than started.";
     }
 
+    /// Null on purpose: SNI attaches to an emulator the PLAYER starts, so there
+    /// is nothing for London to launch. A native port returns a real plan here;
+    /// a bridge like this one does not.
+    public LaunchPlan? GetLaunchPlan(BridgeContext context, string emulatorsRoot)
+        => null;
+
     /// A plain TCP connect. Enough to tell "SNI is up" from "SNI is not up",
     /// and deliberately nothing more -- claiming to speak a protocol we have
     /// not implemented would be the failure this whole design exists to stop.
