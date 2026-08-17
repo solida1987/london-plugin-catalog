@@ -107,7 +107,15 @@ checked without installing it.
    report "No such file or directory" for a file sitting right beside it. A
    checksums file that does not verify is worse than none, because it tells
    the reader the download was checked when it was not.
-5. **Release** the group, then update `index` afterwards so it is newest
+5. **Release** the group, then make `index` Latest again:
+
+   ```
+   gh release edit index --repo <repo> --latest
+   ```
+
+   ⚠ Editing the notes is NOT enough. GitHub picks Latest by publish date, and
+   editing a release does not move that date — so publishing any group silently
+   takes the top spot away from the overview. It has to be set explicitly.
 
 Step 2 is not a formality. Mistakes in this kind of data are the same across a
 group — get one GBA game wrong and there is a good chance the other 17 carry
