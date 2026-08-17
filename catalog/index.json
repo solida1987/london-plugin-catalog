@@ -1,0 +1,5390 @@
+{
+  "source": "https://github.com/Eijebong/Archipelago-index",
+  "note": "Adresser og metadata. Aldrig andres indhold.",
+  "count": 454,
+  "entries": [
+    {
+      "id": "A Hat in Time",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "A Link to the Past",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "A Short Hike",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Adventure",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Air Delivery",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1252453771661803523",
+      "apworld_url": "https://github.com/qwint/ap-air-delivery/releases/download/{{version}}/air_delivery.apworld",
+      "versions": [
+        "0.1.5",
+        "0.1.6"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "An Untitled Story",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1194062970230165554",
+      "apworld_url": "",
+      "versions": [
+        "1.0.0-beta",
+        "1.1.0-beta",
+        "1.1.0",
+        "1.5.0-beta"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "ANIMAL WELL",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1238463626344665119",
+      "apworld_url": "https://github.com/ScipioWright/Archipelago-SW/releases/download/{{version}}/animal_well.apworld",
+      "versions": [
+        "0.4.2",
+        "0.5.0",
+        "0.5.2",
+        "0.5.3"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Anodyne",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1121290232688545792",
+      "apworld_url": "https://github.com/PixieCatSupreme/ArchipelagoAno/releases/download/v{{version}}/anodyne.apworld",
+      "versions": [
+        "0.5.0",
+        "0.5.1",
+        "0.5.2",
+        "0.6.0",
+        "0.6.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Another Crabs Treasure",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1239467743116525688",
+      "apworld_url": "https://github.com/Automagic00/ACT-AP-Client-Plugin/releases/download/{{version}}/another_crab.apworld",
+      "versions": [
+        "0.3.1",
+        "0.4.0",
+        "0.4.2",
+        "0.4.3",
+        "0.4.4"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Ape Escape",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1168645708103028856",
+      "apworld_url": "https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v{{version}}/apeescape.apworld",
+      "versions": [
+        "0.9.2",
+        "0.9.3",
+        "0.9.4",
+        "0.9.5",
+        "0.9.6"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Ape Escape 3",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1336332485788831825",
+      "apworld_url": "https://github.com/aidanii24/ae3-archipelago/releases/download/v{{version}}/ape_escape_3.apworld",
+      "versions": [
+        "1.0.60",
+        "1.0.70",
+        "1.0.71",
+        "1.0.80-exp+hotfix1",
+        "2.0.2",
+        "2.0.4",
+        "2.0.5"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "APQuest",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Aquaria",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Archipela-Go!",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1203890996794884126",
+      "apworld_url": "https://github.com/aki665/react-native-archipelago/releases/download/{{version}}/apgo.apworld",
+      "versions": [
+        "0.5.0",
+        "0.5.2",
+        "0.5.3",
+        "0.6.0",
+        "0.6.2",
+        "0.7.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Archipeladoku",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1451642525726150677",
+      "apworld_url": "",
+      "versions": [
+        "2026.3.3",
+        "2026.3.14",
+        "2026.4.6",
+        "2026.4.10",
+        "2026.4.16",
+        "2026.4.18"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Archipelago",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Astalon",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1211521722881286164",
+      "apworld_url": "https://github.com/drtchops/Archipelago-Astalon/releases/download/v{{version}}/astalon.apworld",
+      "versions": [
+        "0.17.0",
+        "0.18.2",
+        "0.21.2",
+        "0.23.1",
+        "0.24.0-rc3",
+        "0.24.0",
+        "0.24.1",
+        "0.25.0",
+        "0.27.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Autopelago",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1307517897194868768",
+      "apworld_url": "https://github.com/airbreather/Autopelago/releases/download/v{{version}}/autopelago.apworld",
+      "versions": [
+        "0.7.3",
+        "0.8.0",
+        "0.9.0",
+        "0.10.0",
+        "0.10.3",
+        "0.10.4",
+        "0.11.7",
+        "0.11.11",
+        "0.11.17"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Axiom Verge",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1032831597583536208",
+      "apworld_url": "",
+      "versions": [
+        "0.3.1",
+        "0.3.2",
+        "0.3.3"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Balatro",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1220179325739864168",
+      "apworld_url": "",
+      "versions": [
+        "0.1.9-b",
+        "0.1.9-d",
+        "0.1.9-e"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Banjo-Tooie",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1135352499172286505",
+      "apworld_url": "https://github.com/jjjj12212/Archipelago-BanjoTooie/releases/download/V{{version}}/banjo_tooie.apworld",
+      "versions": [
+        "4.11.4"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Bits & Bops",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1457256322624917524",
+      "apworld_url": "https://github.com/xMcacutt-Archipelago/Archipelago-Bits-and-Bops/releases/download/{{version}}/bits_and_bops.apworld",
+      "versions": [
+        "1.0.2",
+        "1.0.3",
+        "1.0.6"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Black Market of Bulletphilia ~ 100th Black Market",
+      "display_name": "Touhou 18.5: Black Market of Bulletphilia ~ 100th Black Market",
+      "home": "https://discord.com/channels/731205301247803413/1346288808512983040",
+      "apworld_url": "",
+      "versions": [
+        "0.3.5"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Black Ops 3 - Zombies",
+      "display_name": "",
+      "home": "https://discord.com/channels/1085716850370957462/1205200487175950386",
+      "apworld_url": "https://github.com/colin969/bo3_archipelago/releases/download/{{version}}/cod_bo3.apworld",
+      "versions": [
+        "0.5.1",
+        "0.4.0",
+        "0.3.0",
+        "0.2.3",
+        "0.4.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Blasphemous",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Blasphemous 2",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1399145913649467524",
+      "apworld_url": "https://github.com/TRPG0/Archipelago/releases/download/blas2-{{version}}/blasphemous2.apworld",
+      "versions": [
+        "1.2.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Bloons TD6",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1188559959508668527",
+      "apworld_url": "https://github.com/GamingInfinite/Archipelago/releases/download/{{version}}.0/bloonstd6.apworld",
+      "versions": [
+        "0.2.3",
+        "0.3.3"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Bomb Rush Cyberfunk",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Bomberman 64",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1326400868773400677",
+      "apworld_url": "https://github.com/Happyhappyism/Archipelago/releases/download/bomb64_v{{version}}/bomberman_64.apworld",
+      "versions": [
+        "0.1.3+hotfix1",
+        "0.1.4"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Brave Fencer Musashi",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1291453297370337351",
+      "apworld_url": "https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/download/v{{version}}/bfm.apworld",
+      "versions": [
+        "0.4.2",
+        "0.5.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Brotato",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1154944430097313803",
+      "apworld_url": "https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/download/v{{version}}/brotato.apworld",
+      "versions": [
+        "0.8.0",
+        "0.8.1",
+        "0.8.2",
+        "0.10.0",
+        "0.10.1",
+        "0.11.0",
+        "0.12.1",
+        "0.13.0",
+        "0.14.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Buckshot Roulette",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1234399148665737237",
+      "apworld_url": "https://github.com/asdfwyay/APBuckshot/releases/download/v{{version}}/buckshot.apworld",
+      "versions": [
+        "0.0.3",
+        "0.1.0",
+        "0.1.1",
+        "0.2.0",
+        "0.3.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Bumper Stickers",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Candy Box 2",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1351112920398037015/",
+      "apworld_url": "",
+      "versions": [
+        "0.1.0+20251208-1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Castlevania - Circle of the Moon",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Castlevania - Harmony of Dissonance",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1356897465046929498",
+      "apworld_url": "https://github.com/LiquidCat64/LiquidCatipelago/releases/download/cvhodis_v{{version}}/cvhodis.apworld",
+      "versions": [
+        "0.2.0-hf"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Castlevania 64",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Castlevania: Dawn of Sorrow",
+      "display_name": "",
+      "home": "",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Castlevania: Legacy of Darkness",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1178601625078738985",
+      "apworld_url": "",
+      "versions": [
+        "1.1.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Cat Quest",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1319965826601844736",
+      "apworld_url": "https://github.com/Nikkilites/Archipelago-CatQuest/releases/download/{{version}}/cat_quest.apworld",
+      "versions": [
+        "0.2.3-alpha",
+        "0.3.0-alpha"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Cave Story",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1083474864150695956",
+      "apworld_url": "https://github.com/kl3cks7r/CaveStoryArchipelago/releases/download/{{version}}/cave_story.apworld",
+      "versions": [
+        "0.6.7"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Cavern of Dreams",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1189647737210286080",
+      "apworld_url": "",
+      "versions": [
+        "1.10.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Caves of Qud",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1368279310317654087",
+      "apworld_url": "https://github.com/lonesurv1vor/CavesOfQudArchipelagoRandomizer/releases/download/v{{version}}/cavesofqud.apworld",
+      "versions": [
+        "0.7.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Celeste",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1367624611256205443",
+      "apworld_url": "https://github.com/doshyw/CelesteArchipelago/releases/download/{{version}}/celeste.apworld",
+      "versions": [
+        "0.3.0",
+        "0.4.0-alpha+unreleased"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Celeste (Open World)",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Celeste 64",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "ChecksFinder",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "ChecksMate",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1033159819114319892",
+      "apworld_url": "https://github.com/chesslogic/chessv/releases/download/v{{version}}/checksmate.apworld",
+      "versions": [
+        "0.3.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Choo-Choo Charles",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Chrono Trigger Jets of Time",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1063559984148906035",
+      "apworld_url": "https://github.com/Anguirel86/Archipelago/releases/download/v{{version}}/ctjot.apworld",
+      "versions": [
+        "0.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Civilization V",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1342924294757552229",
+      "apworld_url": "https://github.com/1313e/Civ-V-AP-World/releases/download/v{{version}}/civv.apworld",
+      "versions": [
+        "0.6.1",
+        "0.6.2",
+        "0.6.3",
+        "0.6.4",
+        "0.7.1",
+        "0.9.4",
+        "0.9.5",
+        "0.9.6",
+        "0.9.8"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Civilization VI",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Cobalt Core",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1190007746641272912",
+      "apworld_url": "https://github.com/Isaac-SOL/CobaltCoreArchipelagoMod/releases/download/release/{{version}}/cobalt_core.apworld",
+      "versions": [
+        "1.2.0-rc2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Commander Keen",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1478939374727987294",
+      "apworld_url": "https://github.com/kodbyte/Archipelago-Keen/releases/download/v{{version}}/keen.apworld",
+      "versions": [
+        "0.0.4"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Crab Champions",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1295008123131658270",
+      "apworld_url": "https://github.com/Str8UpWHITE64/CrabChampionsAP/releases/download/{{version}}/crabchampions.apworld",
+      "versions": [
+        "1.3.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "CrossCode",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1128180904926396437",
+      "apworld_url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/{{version}}/crosscode.apworld",
+      "versions": [
+        "0.7.7",
+        "0.7.8",
+        "0.8.0",
+        "0.8.1",
+        "0.8.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "CrosswordAP",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1433538371031924798",
+      "apworld_url": "https://github.com/densebamboo/CrosswordAP/releases/download/v{{version}}-release/crossword_ap.apworld",
+      "versions": [
+        "1.0.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Crystal Project",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1193008693827076106",
+      "apworld_url": "https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v{{version}}/crystal_project.apworld",
+      "versions": [
+        "0.7.0",
+        "0.9.0",
+        "0.11.4",
+        "0.13.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Cuphead",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1050929729844297789",
+      "apworld_url": "",
+      "versions": [
+        "0.0.2-alpha+b",
+        "0.0.2-alpha+f"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Dark Cloud 1",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1176970562032128192",
+      "apworld_url": "https://github.com/Lizardman175/DC1AP/releases/download/v{{version}}/dc1.apworld",
+      "versions": [
+        "0.4.1",
+        "0.4.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Dark Souls II",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1124935172287123466",
+      "apworld_url": "https://github.com/WildBunnie/DarkSoulsII-Archipelago/releases/download/v{{version}}/dark_souls_2.apworld",
+      "versions": [
+        "0.5.5"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Dark Souls III",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Dark Souls Remastered",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1367143578576621670",
+      "apworld_url": "https://github.com/ArsonAssassin/DSAP/releases/download/{{version}}/dsr.apworld",
+      "versions": [
+        "0.0.21",
+        "0.0.22-0",
+        "0.1.0-0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "DELTARUNE",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1481971897024516250",
+      "apworld_url": "https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v{{version}}/deltarune.apworld",
+      "versions": [
+        "0.2.7",
+        "1.0.4",
+        "1.0.6",
+        "1.0.7",
+        "1.1.2",
+        "1.1.3",
+        "1.1.4",
+        "1.2.0",
+        "1.2.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Devil May Cry 3",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1255822049163612271",
+      "apworld_url": "",
+      "versions": [
+        "0.3.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Diddy Kong Racing",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1057754627795337387",
+      "apworld_url": "https://github.com/zakwiz/DiddyKongRacingAP/releases/download/v{{version}}/diddy_kong_racing.apworld",
+      "versions": [
+        "0.3.1",
+        "0.5.2",
+        "0.6.1",
+        "1.0.0",
+        "1.1.4"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "DLCQuest",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Dome Keeper",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1195385214877306921",
+      "apworld_url": "https://github.com/Arrcival/ArchipelagoDK/releases/download/v{{version}}/dome_keeper.apworld",
+      "versions": [
+        "1.1.4",
+        "1.2.0",
+        "1.3.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Donkey Kong Country",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1364840991755997244",
+      "apworld_url": "https://github.com/TheLX5/Archipelago/releases/download/dkc-v{{version}}/dkc.apworld",
+      "versions": [
+        "1.2.2",
+        "1.2.3"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Donkey Kong Country 2",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1023381145565548646",
+      "apworld_url": "https://github.com/TheLX5/Archipelago/releases/download/dkc2-v{{version}}/dkc2.apworld",
+      "versions": [
+        "2.0.0+patch1",
+        "2.2.0",
+        "3.0.2",
+        "3.0.4",
+        "3.1.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Donkey Kong Country 3",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Donkey Kong Toluca",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1488984041637019812",
+      "apworld_url": "https://github.com/TheLX5/Archipelago/releases/download/toluca-v{{version}}/dktoluca.apworld",
+      "versions": [
+        "0.2.3"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "DOOM 1993",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "DOOM 1993 (Beta)",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1444322671545548881",
+      "apworld_url": "https://github.com/ArchipelagoDoom/APDoom/releases/download/v{{version}}/doom_1993_beta.apworld",
+      "versions": [
+        "2.0.0-beta2",
+        "2.0.0-beta3"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "DOOM II",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "DOOM II (Beta)",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1444322671545548881",
+      "apworld_url": "https://github.com/ArchipelagoDoom/APDoom/releases/download/v{{version}}/doom_ii_beta.apworld",
+      "versions": [
+        "2.0.0-beta2",
+        "2.0.0-beta3"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "DORONKO WANKO",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1325915019313152097",
+      "apworld_url": "https://github.com/Vendily/DoronkoWankoArchipelago/releases/download/{{version}}/doronko_wanko.apworld",
+      "versions": [
+        "0.3.0",
+        "0.3.1",
+        "0.3.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Duke Nukem 3D",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1223230842130796544",
+      "apworld_url": "https://github.com/LLCoolDave/Duke3DAP/releases/download/{{version}}/duke3d.apworld",
+      "versions": [
+        "0.0.5"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "EarthBound",
+      "display_name": "",
+      "home": "",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Ender Lilies",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1093030832886792242",
+      "apworld_url": "",
+      "versions": [
+        "0.8.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Factorio",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Factorio - Space Age Without Space",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1311946326040383589",
+      "apworld_url": "",
+      "versions": [
+        "0.0.6"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Faxanadu",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "FF1 Pixel Remaster",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1195372952166879262",
+      "apworld_url": "https://github.com/wildham0/FF1PRAP/releases/download/{{version}}/ff1pr.apworld",
+      "versions": [
+        "0.5.15",
+        "0.5.17"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Final Fantasy",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Final Fantasy 12 Open World",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1229091295465570456",
+      "apworld_url": "https://github.com/Bartz24/Archipelago/releases/download/{{version}}/ff12_open_world.apworld",
+      "versions": [
+        "0.6.3"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Final Fantasy IV Free Enterprise",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1170144930610557008",
+      "apworld_url": "",
+      "versions": [
+        "0.6.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Final Fantasy Mystic Quest",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Final Fantasy Tactics A2",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1296095764518277143",
+      "apworld_url": "https://github.com/Rurusachi/Archipelago/releases/download/FFTA2_{{version}}/ffta2.apworld",
+      "versions": [
+        "0.0.8",
+        "0.0.9"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Final Fantasy Tactics Advance",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1100823015819837449",
+      "apworld_url": "https://github.com/spicynun/Archipelago/releases/download/{{version}}/ffta.apworld",
+      "versions": [
+        "0.6.3",
+        "0.6.5"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Final Fantasy Tactics Ivalice Island",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1451730887136903240",
+      "apworld_url": "https://github.com/Rosalie-A/Archipelago/releases/download/FFT-v{{version}}/fftii.apworld",
+      "versions": [
+        "0.2.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Final Fantasy XII Trial Mode",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1177092493981007922",
+      "apworld_url": "https://github.com/silasary/Archipelago/releases/download/ffxiitm-{{version}}/ffxiitm.apworld",
+      "versions": [
+        "0.0.9"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Fire Emblem Sacred Stones",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1098762105445953546",
+      "apworld_url": "https://github.com/CT075/Archipelago/releases/download/fe8-alpha-{{version}}/fe8.apworld",
+      "versions": [
+        "0.3.2",
+        "0.3.3-rc1",
+        "0.4.0-rc2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "FNaFW",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1104088448127729704",
+      "apworld_url": "",
+      "versions": [
+        "0.0.4"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Frogmonster",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1271323478779363398",
+      "apworld_url": "https://github.com/Rooby-Roo/FrogmonsterAPWorld/releases/download/v{{version}}/frogmonster.apworld",
+      "versions": [
+        "0.2.1",
+        "0.2.2",
+        "0.2.4",
+        "0.2.5"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Garfield Kart - Furious Racing",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1315673680155639848",
+      "apworld_url": "https://github.com/FeluciaPS/Archipelago/releases/download/{{version}}/garfkart.apworld",
+      "versions": [
+        "0.4.4-beta",
+        "0.5.2-beta"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Gato Roboto B-Side",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1466872819433607248",
+      "apworld_url": "https://github.com/Nitroxyz/Gato-Roboto-B-Side-Archipelago/releases/download/{{version}}/gatoroboto_b_side.apworld",
+      "versions": [
+        "0.3.0",
+        "0.4.0",
+        "0.5.1",
+        "0.5.2",
+        "0.6.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Gauntlet Legends",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1195336830258778183",
+      "apworld_url": "https://github.com/jamesbrq/GauntletLegendsAP/releases/download/v{{version}}/gl.apworld",
+      "versions": [
+        "1.7.1",
+        "1.7.2",
+        "2.1.0",
+        "2.1.1",
+        "2.1.5"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Glover",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1203432460847677461",
+      "apworld_url": "https://github.com/Smg065/GloverArchipelago/releases/download/v{{version}}/glover.apworld",
+      "versions": [
+        "1.0.0",
+        "1.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "GLYPHS",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1401434680808575017",
+      "apworld_url": "https://github.com/BuffYoda21/ap-glyphs/releases/download/v{{version}}/glyphs.apworld",
+      "versions": [
+        "1.0.0",
+        "1.0.1",
+        "1.0.2",
+        "1.1.1",
+        "1.1.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Golden Sun The Lost Age",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1055515261270241320",
+      "apworld_url": "https://github.com/cjmang/Archipelago/releases/download/{{version}}/gstla.apworld",
+      "versions": [
+        "0.2.3-beta"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Grapple Dog",
+      "display_name": "Grapple Dog",
+      "home": "https://discord.com/channels/731205301247803413/1418006654204641441",
+      "apworld_url": "https://github.com/ProfDeCube-org/Archipelago-GrappleDog/releases/download/{{version}}/grappledog.apworld",
+      "versions": [
+        "1.3.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Grim Dawn",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1114646643225137224",
+      "apworld_url": "https://github.com/routhken/Archipelago/releases/download/v{{version}}/grim_dawn.apworld",
+      "versions": [
+        "0.1.5",
+        "0.2.0",
+        "0.3.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Hades",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1142985359563685898",
+      "apworld_url": "https://github.com/NaixGames/Polycosmos/releases/download/{{version}}/hades.apworld",
+      "versions": [
+        "0.13.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Haste",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1356638437872111687",
+      "apworld_url": "https://github.com/WritingHusky/haste_apworld/releases/download/v{{version}}/haste.apworld",
+      "versions": [
+        "0.3.2",
+        "0.4.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Hatsune Miku Project Diva Mega Mix+",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1241134454391443580",
+      "apworld_url": "https://github.com/Cynichill/DivaAPworld/releases/download/{{version}}B/megamix.apworld",
+      "versions": [
+        "1.4.3",
+        "1.4.4-unofficial",
+        "1.4.4-unofficial2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Here Comes Niko!",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1289974001434886287",
+      "apworld_url": "https://github.com/niieli/Niko-Archipelago/releases/download/{{version}}/hcniko.apworld",
+      "versions": [
+        "0.6.0",
+        "0.7.1",
+        "0.7.2",
+        "0.7.4",
+        "0.7.5",
+        "0.7.7",
+        "0.7.8",
+        "0.8.0",
+        "0.8.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Heretic",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Heretic (Beta)",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1444322671545548881",
+      "apworld_url": "https://github.com/ArchipelagoDoom/APDoom/releases/download/v{{version}}/heretic_beta.apworld",
+      "versions": [
+        "2.0.0-beta2",
+        "2.0.0-beta3"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Hexcells Infinite",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1398578301081223260",
+      "apworld_url": "",
+      "versions": [
+        "1.2.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Hi-Fi RUSH",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1223862313145073674",
+      "apworld_url": "https://github.com/TRPG0/HbkArchipelago/releases/download/{{version}}/hi_fi_rush.apworld",
+      "versions": [
+        "0.2.0",
+        "0.2.1",
+        "0.2.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "HITMAN World of Assassination",
+      "display_name": "",
+      "home": "https://discord.com/channels/1085716850370957462/1183989489782235168",
+      "apworld_url": "https://github.com/BenDipp/Archipelago/releases/download/{{version}}/hitman_woa.apworld",
+      "versions": [
+        "0.7.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Hollow Knight",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "holo8",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1368677346869252228",
+      "apworld_url": "https://github.com/KitLemonfoot/ArchipelagoHolo8/releases/download/v{{version}}/holo8.apworld",
+      "versions": [
+        "0.2.0-alpha",
+        "0.2.1-alpha",
+        "0.2.2-alpha",
+        "0.2.3-alpha",
+        "0.3.0-alpha"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Hylics 2",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Iji",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1335786670641123400",
+      "apworld_url": "https://github.com/Minish-Link/Iji-Archipelago/releases/download/v{{version}}/iji.apworld",
+      "versions": [
+        "1.1.3",
+        "1.1.4",
+        "1.2.5",
+        "1.2.6"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Inscryption",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Into the Breach",
+      "display_name": "",
+      "home": "https://github.com/Ishigh1/ITB-randomizer-for-AP",
+      "apworld_url": "https://github.com/Ishigh1/ITB-randomizer-for-AP/releases/download/v{{version}}/into_the_breach.apworld",
+      "versions": [
+        "0.15.15",
+        "0.15.17"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Isles Of Sea And Sky",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1253182614441951282",
+      "apworld_url": "",
+      "versions": [
+        "0.0.14+hotfix-1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Ittle Dew 2",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1260030530217574500",
+      "apworld_url": "https://github.com/Extra-2-Dew/ArchipelagoRandomizer/releases/download/{{version}}/ittle_dew_2.apworld",
+      "versions": [
+        "0.2.1+region-gates",
+        "0.3.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Jak and Daxter: The Precursor Legacy",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1394026388683755613",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Jigsaw",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1337582193802870907",
+      "apworld_url": "https://github.com/spineraks-org/ArchipelagoJigsaw/releases/download/v{{version}}/jigsaw.apworld",
+      "versions": [
+        "0.7.0",
+        "0.7.1",
+        "0.7.2",
+        "0.8.0",
+        "0.9.0",
+        "0.9.1",
+        "0.10.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "K-On! After School Live!!",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1388861873025323059",
+      "apworld_url": "https://github.com/dannybonz/k-on_archipelago/releases/download/v{{version}}/kon.apworld",
+      "versions": [
+        "1.1.1",
+        "1.1.3"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Keep Talking and Nobody Explodes",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1058549067107532840",
+      "apworld_url": "",
+      "versions": [
+        "0.2.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Keymaster's Keep",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1321323711676284939",
+      "apworld_url": "",
+      "versions": [
+        "0.2.0+silasarybundle"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "KeyWe",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1437107675128266912",
+      "apworld_url": "https://github.com/xMcacutt-Archipelago/Archipelago-KeyWe/releases/download/{{version}}/keywe.apworld",
+      "versions": [
+        "1.0.3",
+        "1.1.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Kingdom Hearts",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Kingdom Hearts 2",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Kingdom Hearts Birth by Sleep",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1158149027385319434",
+      "apworld_url": "https://github.com/gaithernOrg/ArchipelagoKHBBS/releases/download/{{version}}/khbbs.apworld",
+      "versions": [
+        "0.1.7"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Kingdom Hearts Chain of Memories",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1074710550384234587",
+      "apworld_url": "https://github.com/gaithernOrg/ArchipelagoKHCOM/releases/download/{{version}}/khcom.apworld",
+      "versions": [
+        "1.0.0",
+        "1.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Kingdom Hearts Days",
+      "display_name": "",
+      "home": "",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Kingdom Hearts Dream Drop Distance",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1196504617941475379",
+      "apworld_url": "https://github.com/LuxMake/Archipelago-KHDDD/releases/download/{{version}}/khddd.apworld",
+      "versions": [
+        "0.0.4",
+        "0.0.5",
+        "0.0.6"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Kingdom Hearts RE Chain of Memories",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1074710550384234587",
+      "apworld_url": "https://github.com/gaithernOrg/ArchipelagoKHRECOM/releases/download/{{version}}/khrecom.apworld",
+      "versions": [
+        "1.4.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Kirby 64 - The Crystal Shards",
+      "display_name": "",
+      "home": "https://canary.discord.com/channels/731205301247803413/1175344681928904806",
+      "apworld_url": "https://github.com/Silvris/Archipelago/releases/download/k64_{{version}}/k64.apworld",
+      "versions": [
+        "0.2.2",
+        "0.3.0",
+        "0.3.1",
+        "0.3.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Kirby Air Ride",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1291501105389502554",
+      "apworld_url": "https://github.com/DeDeDeK/KARchipelago/releases/download/v{{version}}/kirby_air_ride.apworld",
+      "versions": [
+        "0.6.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Kirby Super Star",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1455078199611490384",
+      "apworld_url": "https://github.com/Silvris/Archipelago/releases/download/kss_{{version}}/kss.apworld",
+      "versions": [
+        "0.0.4",
+        "0.1.1",
+        "0.1.2",
+        "0.1.4",
+        "0.1.6",
+        "0.1.7",
+        "0.1.9"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Kirby's Dream Land 3",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Landstalker - The Treasures of King Nole",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Lego Star Wars: The Complete Saga",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1110760232763801711",
+      "apworld_url": "https://github.com/Mysteryem/Archipelago-TCS/releases/download/v{{version}}/lego_star_wars_tcs.apworld",
+      "versions": [
+        "1.0.1",
+        "1.1.3",
+        "1.2.1",
+        "1.3.0",
+        "1.4.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Lethal Company",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1183860023147896942",
+      "apworld_url": "https://github.com/T0r1nn/APLC/releases/download/{{version}}/lethal_company.apworld",
+      "versions": [
+        "0.6.9-beta",
+        "0.6.13-beta",
+        "0.7.1-beta",
+        "0.7.5-beta",
+        "0.7.7-beta",
+        "0.7.9-beta"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Lies Of P",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1232017331232706680",
+      "apworld_url": "https://github.com/Xtruh/LiesOfAP/releases/download/{{version}}/liesofp.apworld",
+      "versions": [
+        "0.1.3",
+        "0.1.4",
+        "0.1.5+hotfix2",
+        "0.1.7"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Lightning Returns: Final Fantasy XIII",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1076899812022173736",
+      "apworld_url": "https://github.com/Bartz24/ArchipelagoLR/releases/download/{{version}}/lrff13.apworld",
+      "versions": [
+        "0.3.0",
+        "0.3.1",
+        "0.4.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Lil Gator Game",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1084922067469734039",
+      "apworld_url": "https://github.com/natronium/GatorArchipelago/releases/download/v{{version}}/lil_gator_game.apworld",
+      "versions": [
+        "1.2.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Lingo",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Links Awakening DX",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Links Awakening DX Beta",
+      "display_name": "",
+      "home": "https://canary.discord.com/channels/731205301247803413/1316960757526695997",
+      "apworld_url": "",
+      "versions": [
+        "12.5.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Little Witch Nobeta",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1170655339323080796",
+      "apworld_url": "https://github.com/danielgruethling/Archipelago/releases/download/{{version}}/little_witch_nobeta.apworld",
+      "versions": [
+        "0.2.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Lufia II Ancient Cave",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Luigi's Mansion",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1378465872917827614",
+      "apworld_url": "https://github.com/BootsinSoots/Archipelago/releases/download/V{{version}}/luigismansion.apworld",
+      "versions": [
+        "0.4.9",
+        "0.4.10",
+        "0.5.1",
+        "0.5.2",
+        "0.5.4",
+        "0.5.5",
+        "0.5.7+hotfix",
+        "0.5.10",
+        "0.5.16",
+        "0.5.17",
+        "0.5.18",
+        "0.5.20",
+        "0.5.21",
+        "0.6.0",
+        "0.6.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Lunacid",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1176614031067455528",
+      "apworld_url": "https://github.com/Witchybun/LunacidAPClient/releases/download/{{version}}/lunacid.apworld",
+      "versions": [
+        "0.8.13",
+        "0.8.14",
+        "0.9.7",
+        "0.9.9",
+        "0.9.10",
+        "1.0.6",
+        "1.0.11",
+        "1.0.14",
+        "1.0.17",
+        "1.0.18"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_AlanWake2_Ninjabox",
+      "display_name": "Manual: Alan Wake 2",
+      "home": "https://discord.com/channels/1097532591650910289/1483275880737406996",
+      "apworld_url": "https://github.com/Ninjabox1399/AlanWake2_Archipelago/releases/download/v{{version}}/manual_alanwake2_ninjabox.apworld",
+      "versions": [
+        "0.0.5"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_BaldisBasicsClassicRemastered_WolfBoi008",
+      "display_name": "Manual: Baldi's Basics Classic Remastered",
+      "home": "https://github.com/WolfBoi008/Baldi-s-Basics-Classic-Remastered/tree/main",
+      "apworld_url": "",
+      "versions": [
+        "1.2.1+b"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_BattleBlockTheater_commanderdot",
+      "display_name": "Manual: BattleBlock Theater",
+      "home": "https://discord.com/channels/1097532591650910289/1371605100178440263",
+      "apworld_url": "",
+      "versions": [
+        "1.0.0",
+        "1.1.0",
+        "1.2.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_Betrayal_Axxroy",
+      "display_name": "Manual: Betrayal at the House on the Hill",
+      "home": "https://github.com/axxroytovu/archipelago_manuals",
+      "apworld_url": "https://github.com/axxroytovu/archipelago_manuals/releases/download/Betrayal_{{version}}/manual_betrayal_axxroy.apworld",
+      "versions": [
+        "0.0.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_BlockTales_WolfBoi008",
+      "display_name": "Manual: Block Tales",
+      "home": "https://discord.com/channels/1097532591650910289/1377245145493274644",
+      "apworld_url": "https://github.com/WolfBoi008/Block-Tales/releases/download/{{version}}/manual_blocktales_wolfboi008.apworld",
+      "versions": [
+        "4.2.2",
+        "4.2.3"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_BO6LibertyFalls_Delcatty16",
+      "display_name": "Manual: Black Ops 6 - Liberty falls",
+      "home": "https://discord.com/channels/1097532591650910289/1333448663858679829",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_Borderlands4_jkxWinG",
+      "display_name": "Manual: Borderlands 4",
+      "home": "",
+      "apworld_url": "",
+      "versions": [
+        "0.1.4"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_BuckshotRoulette_WolfBoi008",
+      "display_name": "Manual: Buckshot Roulette",
+      "home": "https://github.com/WolfBoi008/Buckshot-Roulette",
+      "apworld_url": "https://github.com/WolfBoi008/Buckshot-Roulette/releases/download/{{version}}/manual_buckshotroulette_wolfboi008.apworld",
+      "versions": [
+        "1.2.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_Cars_WolfBoi008",
+      "display_name": "Manual: Cars",
+      "home": "https://github.com/WolfBoi008/Cars/tree/main",
+      "apworld_url": "https://github.com/WolfBoi008/Cars/releases/download/{{version}}/manual_cars_wolfboi008.apworld",
+      "versions": [
+        "1.2.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_CartoonNetworkPunchTimeExplosionXL_BunkBunker",
+      "display_name": "Manual: Cartoon Network Punch Time Explosion XL",
+      "home": "https://discord.com/channels/1097532591650910289/1445597085897326632",
+      "apworld_url": "",
+      "versions": [
+        "0.1.0",
+        "0.2.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_ClubhouseGames51_Buck",
+      "display_name": "Manual: Clubhouse Games - 51 Worldwide Classics",
+      "home": "https://discord.com/channels/1097532591650910289/1222398529486716929",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1",
+        "0.0.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_ClubhouseGamesDS_Avery",
+      "display_name": "Manual: Clubhouse Games DS",
+      "home": "https://discord.com/channels/1097532591650910289/1222398529486716929",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_CookServeDelicious3_Farren",
+      "display_name": "Manual: Cook Serve Delicious 3",
+      "home": "https://github.com/Gearwcu/CookServeDelicious3-Manual",
+      "apworld_url": "",
+      "versions": [
+        "1.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_CrashTeamRacingNitroFueled_Hallstead",
+      "display_name": "Manual: Crash Team Racing: Nitro Fueled",
+      "home": "https://discord.com/channels/1097532591650910289/1200640681056682044",
+      "apworld_url": "",
+      "versions": [
+        "6.2.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_CurrencyWars_MayaXTG",
+      "display_name": "Manual: Currency Wars",
+      "home": "https://discord.com/channels/1097532591650910289/1449553615373992148",
+      "apworld_url": "",
+      "versions": [
+        "1.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_DeadByDaylight-Killer-C35_nivomi",
+      "display_name": "Manual: Dead By Daylight (Killer)",
+      "home": "https://discord.com/channels/1097532591650910289/1219470964312510595",
+      "apworld_url": "https://github.com/nivomi/deadbydaylight_manual_archipelago/releases/download/{{version}}/manual_deadbydaylight-killer-c35_nivomi.apworld",
+      "versions": [
+        "0.0.6"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_DemonSlayerKimetsunoYaibaTheHinokamiChronicles_Inuzuka28",
+      "display_name": "Manual: Demon Slayer Kimetsu no Yaiba Hinokami Chronicles 2",
+      "home": "https://discord.com/channels/1097532591650910289/1434591072188633149",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1",
+        "0.0.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_Diablo2_Maragan",
+      "display_name": "Manual: Diablo 2",
+      "home": "",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_DiddyKongRacing_DecoyTroy",
+      "display_name": "Manual: Diddy Kong Racing",
+      "home": "",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_DonaldDuckQuackAttack_1313e",
+      "display_name": "Manual: Donald Duck Quack Attack",
+      "home": "https://discord.com/channels/1097532591650910289/1334634929388130415",
+      "apworld_url": "https://github.com/1313e/manual_donaldduckquackattack_1313e/releases/download/v{{version}}/manual_donaldduckquackattack_1313e.apworld",
+      "versions": [
+        "0.0.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_DRG_Miro",
+      "display_name": "Manual: Deep Rock Galactic",
+      "home": "https://discord.com/channels/1097532591650910289/1234221842357555221",
+      "apworld_url": "",
+      "versions": [
+        "1.1.2",
+        "1.10.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_EpicUniverseWandMagic_tornadowizard",
+      "display_name": "Manual: Epic Universe Wand Magic",
+      "home": "https://discord.com/channels/1097532591650910289/1381636766414671902",
+      "apworld_url": "",
+      "versions": [
+        "1.0.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_ETS2_dopin",
+      "display_name": "Manual: Euro Truck Simulator 2 (dopin)",
+      "home": "https://github.com/dopinpt/ETS2Manual",
+      "apworld_url": "https://github.com/dopinpt/ETS2Manual/releases/download/{{version}}/manual_ets2_dopin.apworld",
+      "versions": [
+        "0.1.0",
+        "0.1.1",
+        "1.0.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_EuroTruckSim2_bdi",
+      "display_name": "Manual: Euro Truck Simulator 2",
+      "home": "",
+      "apworld_url": "",
+      "versions": [
+        "0.0.3"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_ffdissidia_silasary",
+      "display_name": "Manual: Dissidia Final Fantasy 012 duodecim",
+      "home": "https://discord.com/channels/1097532591650910289/1101780299014209617",
+      "apworld_url": "",
+      "versions": [
+        "0.0.3"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_FFXIV_Silasary",
+      "display_name": "Manual: Final Fantasy XIV",
+      "home": "https://discord.com/channels/1097532591650910289/1187584337877684294",
+      "apworld_url": "https://github.com/silasary/APxiv/releases/download/{{version}}/ffxiv.apworld",
+      "versions": [
+        "0.22.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_FFXIVPotD_Goomboss",
+      "display_name": "Manual: Final Fantasy XIV - Palace of the Dead",
+      "home": "https://discord.com/channels/1097532591650910289/1201994522465403041/1201994522465403041",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1-dopin"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_Fifa2001_Satanos",
+      "display_name": "Manual: FIFA 2001",
+      "home": "https://discord.com/channels/1097532591650910289/1440768079155040337",
+      "apworld_url": "",
+      "versions": [
+        "1.1.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_Fifa98RoadtotheWorldCup_Satanos",
+      "display_name": "Manual: FIFA: Road to World Cup 98",
+      "home": "https://discord.com/channels/1097532591650910289/1435031138719629523",
+      "apworld_url": "",
+      "versions": [
+        "1.3.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_FireEmblemPathofRadiance_MercenaryGreil",
+      "display_name": "Manual: Fire Emblem - Path of Radiance",
+      "home": "https://discord.com/channels/1097532591650910289/1407405321621602334",
+      "apworld_url": "https://github.com/MercenaryGreil/Archipelago-FireEmblem-PathofRadiance/releases/download/v{{version}}/manual_fireemblempathofradiance_mercenarygreil.apworld",
+      "versions": [
+        "1.1.0",
+        "1.2.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_FreshTracks_IRCheesecake82",
+      "display_name": "Manual: Fresh Tracks",
+      "home": "",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_Ghostrunner_Evoker",
+      "display_name": "Manual: Ghostrunner",
+      "home": "https://discord.com/channels/1097532591650910289/1458061225194946675",
+      "apworld_url": "",
+      "versions": [
+        "1.0.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_GrappleDog_ProfDeCube",
+      "display_name": "Manual: Grapple Dog",
+      "home": "https://discord.com/channels/731205301247803413/1418006654204641441",
+      "apworld_url": "",
+      "versions": [
+        "1.0.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_GrensEpicCartRideRobloxCreateACart_Grenhunterr",
+      "display_name": "Manual: Gren's Epic Cart Ride - Roblox",
+      "home": "https://discord.com/channels/105852066324365312/1329887489787166801/1460771831685583026",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_guitarhero2_nyvgf",
+      "display_name": "Manual: Guitar Hero 2",
+      "home": "https://discord.com/channels/1097532591650910289/1215381088625762364",
+      "apworld_url": "",
+      "versions": [
+        "0.0.2+zeenobae"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_GuitarHeroSmashHits_Smalls",
+      "display_name": "Manual: Guitar Hero: Smash/Greatest Hits",
+      "home": "https://discord.com/channels/1097532591650910289/1431526653359816724",
+      "apworld_url": "",
+      "versions": [
+        "1.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_GunfireReborn_NanashiSR",
+      "display_name": "Manual: Gunfire Reborn",
+      "home": "https://gitlab.com/nanashi-archipelago/manual-gunfire-reborn",
+      "apworld_url": "",
+      "versions": [
+        "0.2.0",
+        "0.3.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_HonkaiStarRailGoldAndGears_Erkigmo",
+      "display_name": "Manual: Gold And Gears",
+      "home": "https://discord.com/channels/1097532591650910289/1448413373590147293",
+      "apworld_url": "https://github.com/Erkigmo/Gold-And-Gears-Manual/releases/download/v{{version}}/manual_honkaistarrailgoldandgears_erkigmo.apworld",
+      "versions": [
+        "0.1.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_HyruleWarriorsDefinitiveEdition_Elreaw",
+      "display_name": "Manual: Hyrule Warriors - Definitive Edition",
+      "home": "https://discord.com/channels/1097532591650910289/1223734731120578560",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_ISPYSpookyMansionWiiNormal_MJB20077",
+      "display_name": "Manual: ISPY Spooky Mansion",
+      "home": "https://discord.com/channels/1097532591650910289/1434302459966394459",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1",
+        "0.0.2",
+        "0.0.3"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_JumpUltimateStars_Pizzaking405",
+      "display_name": "Manual: Jump Ultimate Stars",
+      "home": "https://discord.com/channels/1097532591650910289/1278498367399526472",
+      "apworld_url": "",
+      "versions": [
+        "3.5.0",
+        "4.0.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_KirbyAirRiders_ManaKatti",
+      "display_name": "Manual: Kirby Air Riders",
+      "home": "https://discord.com/channels/1097532591650910289/1460804578055291124",
+      "apworld_url": "",
+      "versions": [
+        "0.0.4",
+        "0.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_KirbyandtheForgottenLand_Noodlelizer",
+      "display_name": "Manual: Kirby and the Forgotten Land",
+      "home": "https://discord.com/channels/1097532591650910289/1461491018380869693",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1",
+        "0.0.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_KotamaAcademyCitadel_bluepinkdragon",
+      "display_name": "Manual: Kotama and Academy Citadel",
+      "home": "https://github.com/Bluepinkdragon/manualKotama",
+      "apworld_url": "https://github.com/Bluepinkdragon/manualKotama/releases/download/{{version}}/manual_kotamaacademycitadel_bluepinkdragon.apworld",
+      "versions": [
+        "0.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_KTaNE Centurion_Awesome7285",
+      "display_name": "Manual: KTaNe Centurion",
+      "home": "",
+      "apworld_url": "",
+      "versions": [
+        "0.1.2+repacked"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_LEGORockBand_GWAF",
+      "display_name": "Manual: LEGO Rock Band",
+      "home": "",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_MarioKart7_BigBradley",
+      "display_name": "Manual: Mario Kart 7",
+      "home": "https://discord.com/channels/1097532591650910289/1435713778611257475/1435713778611257475",
+      "apworld_url": "",
+      "versions": [
+        "1.0.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_MarioKartDS_Xanderoni",
+      "display_name": "Manual: Mario Kart DS",
+      "home": "https://discord.com/channels/1097532591650910289/1226021777025536050",
+      "apworld_url": "",
+      "versions": [
+        "0.0.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_MarioParty9_SmashEBrada",
+      "display_name": "Manual: Mario Party 9",
+      "home": "https://discord.com/channels/1097532591650910289/1439733841018491022",
+      "apworld_url": "",
+      "versions": [
+        "1.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_MarvelRivals_SnolidIce",
+      "display_name": "Manual: Marvel Rivals (Generic)",
+      "home": "https://discord.com/channels/1097532591650910289/1314368372225474632",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_MarvelRivals_SylvieSpark",
+      "display_name": "Manual: Marvel Rivals - SylvieSpark",
+      "home": "",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_MHRiseHub_Axxroy",
+      "display_name": "Manual: Monster Hunter Rise (Hub Quests)",
+      "home": "https://discord.com/channels/1097532591650910289/1172769920610738246",
+      "apworld_url": "",
+      "versions": [
+        "2.0.1+repacked2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_mkwii_magnetico",
+      "display_name": "Manual: Mario Kart Wii",
+      "home": "https://discord.com/channels/1097532591650910289/1224087283964051617",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1+magnetico"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_MMXLCXCHalllenge_Pizzaking405",
+      "display_name": "Manual: Mega Man X Legacy Collections: X Challenge",
+      "home": "https://github.com/pizzaking405/Mega-Man-X-Legacy-Collections-X-Challenge-Archipelago-Manual-/",
+      "apworld_url": "",
+      "versions": [
+        "2.1.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_MonsterHunterWilds_Raving",
+      "display_name": "Manual: Monster Hunter Wilds",
+      "home": "https://discord.com/channels/1097532591650910289/1458177887189471232",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_MonsterHunterWorld_PaNIC",
+      "display_name": "Manual: Monster Hunter World",
+      "home": "",
+      "apworld_url": "",
+      "versions": [
+        "0.0.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_NewSuperMarioBrosWii_zuils",
+      "display_name": "Manual: New Super Mario Bros Wii",
+      "home": "https://discord.com/channels/1097532591650910289/1207348591371227186",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_NightmareKart_LOLZ1190",
+      "display_name": "Manual: Nightmare Kart",
+      "home": "https://discord.com/channels/1097532591650910289/1333827572462784572",
+      "apworld_url": "",
+      "versions": [
+        "0.0.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_NullscapeROBLOX_sucrosesnowstorm",
+      "display_name": "Manual: Nullscape (ROBLOX)",
+      "home": "https://discord.com/channels/1097532591650910289/1478883336146518118",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1",
+        "0.0.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_onedeckdungeon_vertlizard",
+      "display_name": "Manual: One Deck Dungeon (vertlizard)",
+      "home": "https://github.com/vertlizard/OneDeckDungeon_APmanual",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_OneMoreNight_WolfBoi008",
+      "display_name": "Manual: One More Night (Roblox)",
+      "home": "https://github.com/WolfBoi008/One-More-Night",
+      "apworld_url": "https://github.com/WolfBoi008/One-More-Night/releases/download/{{version}}/manual_onemorenight_wolfboi008.apworld",
+      "versions": [
+        "2.2.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_Phasmophobia_TinMines",
+      "display_name": "Manual: Phasmophobia",
+      "home": "https://discord.com/channels/1097532591650910289/1238914721227345990",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_PizzaTower_Steph",
+      "display_name": "Manual: Pizza Tower",
+      "home": "https://discord.com/channels/1097532591650910289/1109918404812492922",
+      "apworld_url": "",
+      "versions": [
+        "0.0.4"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_PLA_Miro",
+      "display_name": "Manual: Pokemon Legends Arceus",
+      "home": "https://discord.com/channels/1097532591650910289/1155150756622643260",
+      "apworld_url": "",
+      "versions": [
+        "1.1.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_PlantsVsZombies2Gardendless_Trikehard",
+      "display_name": "Manual: Plants Vs Zombies 2",
+      "home": "https://discord.com/channels/1097532591650910289/1435957999809335368",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_PlatinumBattleZone_Linneus",
+      "display_name": "Manual: Platinum Battle Zone Challenge",
+      "home": "https://discord.com/channels/1097532591650910289/1400667209172517046",
+      "apworld_url": "https://github.com/Linneus/Platinum-Battle-Zone-Challenge/releases/download/{{version}}/manual_platinumbattlezone_linneus.apworld",
+      "versions": [
+        "1.0.3",
+        "1.0.4"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_PlaytimewithPercy_WolfBoi008",
+      "display_name": "Manual: Playtime with Percy",
+      "home": "https://discord.com/channels/1097532591650910289/1422262889942876170",
+      "apworld_url": "https://github.com/WolfBoi008/Playtime-with-Percy/releases/download/{{version}}/manual_playtimewithpercy_wolfboi008.apworld",
+      "versions": [
+        "1.2.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_PokemonBW_Snifit",
+      "display_name": "Manual: Pokemon B/W",
+      "home": "https://discord.com/channels/1097532591650910289/1385428435509448826",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1",
+        "0.0.2",
+        "1.0.0",
+        "2.0.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_PokemonPlatinum_Linneus",
+      "display_name": "Manual: Pokemon Platinum",
+      "home": "https://discord.com/channels/1097532591650910289/1251699106058080296",
+      "apworld_url": "",
+      "versions": [
+        "2.1.0",
+        "2.2.1",
+        "2.3.0",
+        "2.4.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_PokemonSnap_AliRobotnik",
+      "display_name": "Manual: Pokemon Snap (N64)",
+      "home": "https://discord.com/channels/1097532591650910289/1231737689951178773",
+      "apworld_url": "https://github.com/AliRobotnik/PokemonSnap-Archipelago-Manual/releases/download/V{{version}}/manual_pokemonsnap_alirobotnik.apworld",
+      "versions": [
+        "1.3.1",
+        "1.3.2",
+        "1.4.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_PokemonSS_Riannehx",
+      "display_name": "Manual: Pokemon Sword and Shield",
+      "home": "https://discord.com/channels/1097532591650910289/1470683499823366245",
+      "apworld_url": "https://github.com/willekeh/Manual/releases/download/PSS_v{{version}}/Manual_pokemonss_riannehx.apworld",
+      "versions": [
+        "0.0.4"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_PowerwashSimulator_hallojasper",
+      "display_name": "Manual: Powerwash Simulator",
+      "home": "https://discord.com/channels/1097532591650910289/1181412855187243079",
+      "apworld_url": "https://github.com/hallojasper/Powerwash-Simulator-Archipelago-Manual-Randomizer/releases/download/v{{version}}/manual_powerwashsimulator_hallojasper.apworld",
+      "versions": [
+        "0.1.7",
+        "0.1.8",
+        "0.2.0",
+        "0.2.1",
+        "0.2.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_PrincessPeachShowtime_AliRobotnik",
+      "display_name": "Manual: Princess Peach Showtime",
+      "home": "https://github.com/AliRobotnik/Princess-Peach-Showtime-Archipelago-Manual",
+      "apworld_url": "",
+      "versions": [
+        "1.2.0",
+        "1.2.3"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_ResidentEvil4_VincentsSin",
+      "display_name": "Manual: Resident Evil 4",
+      "home": "https://discord.com/channels/1097532591650910289/1297382888614006859",
+      "apworld_url": "https://github.com/VincentsSin/Resident-Evil-4-Manual-AP/releases/download/v{{version}}/manual_residentevil4_vincentssin.apworld",
+      "versions": [
+        "1.2.0",
+        "2.0.0+hotfix1",
+        "2.0.4"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_RhythmDoctor_crimsonDestroyer",
+      "display_name": "Manual: Rhythm Doctor",
+      "home": "https://discord.com/channels/731205301247803413/1240437664692572312",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1",
+        "0.0.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_RobloxDecayingWinter_ShadowWhelm",
+      "display_name": "Manual: Roblox Decaying Winter",
+      "home": "https://discord.com/channels/1097532591650910289/1222398529486716929",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1",
+        "0.0.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_RobloxForsaken_Cocobird24",
+      "display_name": "Manual: Roblox Forsaken",
+      "home": "",
+      "apworld_url": "",
+      "versions": [
+        "0.0.6"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_RobloxTowerDefenseSimulator_JuJubeanYT",
+      "display_name": "Manual: Roblox Tower Defense Simulator",
+      "home": "",
+      "apworld_url": "",
+      "versions": [
+        "1.0.0",
+        "1.0.1",
+        "1.1.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_Roguecraft_ConnorMiner",
+      "display_name": "Manual: Roguecraft",
+      "home": "",
+      "apworld_url": "",
+      "versions": [
+        "0.0.5",
+        "0.0.6",
+        "0.0.7"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_ShovelKnightTreasureTrove_QLilaOfTorment",
+      "display_name": "Manual: Shovel Knight - Specter of Torment",
+      "home": "https://discord.com/channels/1097532591650910289/1363411568104312912",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_SilentHillsPT_TheAgentOfChaos",
+      "display_name": "Manual: Silent Hills P.T.",
+      "home": "",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_SlimeRancher_Axxroy",
+      "display_name": "Manual: Slime Rancher",
+      "home": "",
+      "apworld_url": "https://github.com/axxroytovu/archipelago_manuals/releases/download/slimerancher_{{version}}/manual_slimerancher_axxroy.apworld",
+      "versions": [
+        "0.1.2-a"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_smo_main_ending_melen",
+      "display_name": "Manual: Super Mario Odyssey Main Ending",
+      "home": "https://discord.com/channels/1097532591650910289/1146498720792334336",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_SMO_mp3",
+      "display_name": "Manual: Super Mario Odyssey",
+      "home": "https://discord.com/channels/1097532591650910289/1146498720792334336",
+      "apworld_url": "https://github.com/empathy-mp3/SMO-manual-AP/releases/download/v{{version}}/manual_smo_mp3.apworld",
+      "versions": [
+        "2.2.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_SongbirdSymphony_MJB20077",
+      "display_name": "Manual: Songbird Symphony",
+      "home": "https://discord.com/channels/1097532591650910289/1444476490547859587",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_SonicXShadowGenerations_FlutterRazzo",
+      "display_name": "Manual: Sonic X Shadow Generations",
+      "home": "https://discord.com/channels/1097532591650910289/1213231763103424622",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_Splatoon 3_MageKitLemonfoot",
+      "display_name": "Manual: Splatoon 3",
+      "home": "https://github.com/KitLemonfoot/LemonfootAPManuals",
+      "apworld_url": "https://github.com/KitLemonfoot/LemonfootAPManuals/releases/download/splatoon3-v{{version}}/manual_splatoon3_magekitlemonfoot.apworld",
+      "versions": [
+        "0.1.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_spongebobmoviegame_loaf",
+      "display_name": "Manual: the Spongebob Movie Game",
+      "home": "https://github.com/kekosaurus-rex/Spongebob-movie-game-manual",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1",
+        "0.0.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_SpyroTheDragon_MuffinJets",
+      "display_name": "Manual: Spyro the dragon",
+      "home": "https://discordapp.com/channels/1097532591650910289/1101017660520665189",
+      "apworld_url": "",
+      "versions": [
+        "0.0.3"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_SSBMSlippi_Delta",
+      "display_name": "Manual: Super Smash Bros Melee",
+      "home": "https://discord.com/channels/1097532591650910289/1200060248577298485",
+      "apworld_url": "",
+      "versions": [
+        "0.0.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_Stray_Arnold0",
+      "display_name": "Manual: Stray",
+      "home": "https://discord.com/channels/1097532591650910289/1229917306709344316",
+      "apworld_url": "",
+      "versions": [
+        "0.0.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_SuperBomberman3_Phye",
+      "display_name": "Manual: Super Bomberman 3",
+      "home": "https://discord.com/channels/1097532591650910289/1471185390168834178",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_TeamFortress2_GP",
+      "display_name": "Manual: Team Fortress 2",
+      "home": "https://discord.com/channels/1097532591650910289/1365434728978845787",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_TeamFortress2Frag_rowTF2",
+      "display_name": "Manual: Team Fortress 2 Frag",
+      "home": "",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_TheLegendofZeldaEchoesofWisdomEchoHunt_killedragon",
+      "display_name": "Manual: The Legend of Zelda - Echoes of Wisdom: Echo Hunt",
+      "home": "https://discord.com/channels/1097532591650910289/1290033190961938452",
+      "apworld_url": "",
+      "versions": [
+        "0.0.3"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_TheLordoftheRingsTheReturnoftheKing_Zojalyx",
+      "display_name": "Manual: The Lord of the Rings: The Return of the King",
+      "home": "https://discord.com/channels/1097532591650910289/1312537028608659497",
+      "apworld_url": "",
+      "versions": [
+        "1.6.0",
+        "1.7.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_Titanfall_2_niyrme",
+      "display_name": "Manual: Titanfall 2",
+      "home": "https://discord.com/channels/1097532591650910289/1489409190454890527",
+      "apworld_url": "https://codeberg.org/niyrme/archipelago-titanfall-2-manual/releases/download/v{{version}}/manual_titanfall_2_niyrme.apworld",
+      "versions": [
+        "0.14.0",
+        "0.15.1",
+        "0.16.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_TMNF_dopin",
+      "display_name": "Manual: Trackmania Nations Forever",
+      "home": "https://discord.com/channels/1097532591650910289/1329792432635908097",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_TooManyNights_WolfBoi008",
+      "display_name": "Manual: TOO MANY NIGHTS",
+      "home": "https://github.com/WolfBoi008/Too-Many-Nights/tree/main",
+      "apworld_url": "",
+      "versions": [
+        "2.1.0+a"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_Touhou Fumo Racing_AwesomeZuils",
+      "display_name": "Manual: Touhou Fumo Racing",
+      "home": "https://discord.com/channels/1097532591650910289/1462399064627744819/1462513817547440252",
+      "apworld_url": "",
+      "versions": [
+        "1.0.1",
+        "4.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_UltimateMarvelVsCapcom3_ManualTeam",
+      "display_name": "Manual: Ultimate Marvel VS Capcom 3",
+      "home": "https://github.com/ManualForArchipelago/Manual",
+      "apworld_url": "",
+      "versions": [
+        "0.0.0-20241119",
+        "0.0.0-20250714",
+        "0.0.0-20260319"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_UmamusumePrettyDerby_Quindo",
+      "display_name": "Manual: Umamusume: Pretty Derby",
+      "home": "https://discord.com/channels/1097532591650910289/1404922064741077012",
+      "apworld_url": "",
+      "versions": [
+        "0.0.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_UncannyCatGolf_spoonsnoops",
+      "display_name": "Manual: Uncanny Cat Golf",
+      "home": "",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_VacationSimulator_Basosaurus",
+      "display_name": "Manual: Vacation Simulator",
+      "home": "https://discord.com/channels/1097532591650910289/1495457119695274216",
+      "apworld_url": "",
+      "versions": [
+        "1.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_VIVIDLOPE_redpenguiin",
+      "display_name": "Manual: Vividlope",
+      "home": "",
+      "apworld_url": "",
+      "versions": [
+        "1.0.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_vividstasis_JuegAriel",
+      "display_name": "Manual: Vivid/Statis",
+      "home": "",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_WeLoveKatamariReroll_sapphisylph",
+      "display_name": "Manual: We Love Katamari Reroll",
+      "home": "https://discord.com/channels/1097532591650910289/1348016489181085776",
+      "apworld_url": "https://github.com/sapphisylph/We-Love-Katamari-Manual-APWorld/releases/download/v{{version}}/manual_welovekatamarireroll_sapphisylph.apworld",
+      "versions": [
+        "0.3.3",
+        "0.3.4",
+        "0.3.5",
+        "0.4.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_WinxClubGBA_shadowspussy",
+      "display_name": "Manual: Winx Club (GBA)",
+      "home": "https://discord.com/channels/1097532591650910289/1469490143629934755",
+      "apworld_url": "",
+      "versions": [
+        "0.0.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Manual_WorldofWarcraftDungeons_Chakraa",
+      "display_name": "Manual: World of Warcraft dungeons",
+      "home": "https://discord.com/channels/1097532591650910289/1199421257322594345",
+      "apworld_url": "",
+      "versions": [
+        "2025.2.13"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Marble It Up! Ultra",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1491886661829656676",
+      "apworld_url": "https://github.com/KitLemonfoot/ArchipelagoMIUU/releases/download/v{{version}}/miuultra.apworld",
+      "versions": [
+        "0.1.1-alpha"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Mario & Luigi Superstar Saga",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Mario Kart 64",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1124649084544876615",
+      "apworld_url": "",
+      "versions": [
+        "0.2.1-c"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Mario Kart Double Dash",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1257102472967884882",
+      "apworld_url": "https://github.com/aXu-AP/archipelago-double-dash/releases/download/v{{version}}/mario_kart_double_dash.apworld",
+      "versions": [
+        "0.1.1",
+        "0.1.1+fantanoice1",
+        "0.2.1",
+        "0.2.2",
+        "0.2.3",
+        "0.3.1",
+        "0.3.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Mario Super Sluggers",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1238777175033909318",
+      "apworld_url": "https://github.com/MarioManTAW/Archipelago/releases/download/sluggers-v{{version}}/mario_super_sluggers.apworld",
+      "versions": [
+        "0.2.1",
+        "0.2.2",
+        "0.2.3"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Mega Man",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1363566809726451815",
+      "apworld_url": "https://github.com/Silvris/Archipelago/releases/download/mm1_{{version}}/mm1.apworld",
+      "versions": [
+        "0.1.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Mega Man 2",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Mega Man 3",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Mega Man X",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1134349743984742520",
+      "apworld_url": "https://github.com/TheLX5/Archipelago/releases/download/mmx-v{{version}}/mmx.apworld",
+      "versions": [
+        "1.4.0",
+        "1.5.0",
+        "1.6.0-beta"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Mega Man X2",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1232388647127613490",
+      "apworld_url": "https://github.com/TheLX5/Archipelago/releases/download/mmx2-v{{version}}/mmx2.apworld",
+      "versions": [
+        "1.1.1",
+        "1.2.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Mega Man X3",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1134349743984742520",
+      "apworld_url": "https://github.com/TheLX5/Archipelago/releases/download/mmx3-v{{version}}/mmx3.apworld",
+      "versions": [
+        "1.2.1",
+        "1.4.0",
+        "1.5.0",
+        "1.5.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Mega Man X4",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1365560558224674826",
+      "apworld_url": "https://github.com/Daxtear/ArchipelagoMMX4/releases/download/{{version}}/mmx4.apworld",
+      "versions": [
+        "0.0.6"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "MegaMan Battle Network 3",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Melatonin",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1365778928102277151",
+      "apworld_url": "https://github.com/xMcacutt-Archipelago/Archipelago-Melatonin/releases/download/{{version}}/melatonin.apworld",
+      "versions": [
+        "1.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Meritous",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Metal Gear Solid",
+      "display_name": "",
+      "home": "https://github.com/SDMichaud/Archipelago-MGS",
+      "apworld_url": "https://github.com/SDMichaud/Archipelago-MGS/releases/download/v{{version}}/mgs.apworld",
+      "versions": [
+        "0.7.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "MetroCUBEvania",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1259263968245977128",
+      "apworld_url": "https://github.com/ap-metrocubevania/ap-metrocubevania/releases/download/v_{{version}}/metrocubevania.apworld",
+      "versions": [
+        "0.2.0-beta"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Metroid Fusion",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1493332737765933137",
+      "apworld_url": "",
+      "versions": [
+        "0.0.17",
+        "0.0.21+hotfix3"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Metroid: Zero Mission",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1106280250528235620",
+      "apworld_url": "https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/{{version}}/mzm.apworld",
+      "versions": [
+        "0.5.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Minecraft Dig",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/837136185662111746",
+      "apworld_url": "https://github.com/jacobmix/Minecraft_AP_Randomizer/releases/download/{{version}}_dig/minecraft_dig.apworld",
+      "versions": [
+        "0.0.10",
+        "0.0.11"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Minecraft Fabric",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1461461958040621241",
+      "apworld_url": "https://github.com/Deadlydiamond98/MinecraftFabricAPWorld/releases/download/v{{version}}/minecraft_fabric.apworld",
+      "versions": [
+        "1.0.6-alpha",
+        "1.0.7"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Minishoot Adventures",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1307687662798508113",
+      "apworld_url": "https://github.com/TheNooodle/MinishootRandomizer/releases/download/v{{version}}/minishoot.apworld",
+      "versions": [
+        "0.4.2",
+        "0.5.1",
+        "0.5.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Minit",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1167463223528787998",
+      "apworld_url": "https://github.com/qwint/APMinit/releases/download/v{{version}}/minit.apworld",
+      "versions": [
+        "0.6.4",
+        "0.6.6",
+        "0.6.8",
+        "0.6.9",
+        "0.6.10"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Momodora Moonlit Farewell",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1351406749315240007",
+      "apworld_url": "",
+      "versions": [
+        "1.7.5+1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Monster Sanctuary",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1217944663864901632",
+      "apworld_url": "https://github.com/Gtaray/archipelago-monstersanctuary/releases/download/v{{version}}/monster_sanctuary.apworld",
+      "versions": [
+        "1.3.4",
+        "1.3.2+hotfix1",
+        "1.3.0",
+        "1.2.1",
+        "1.2.0",
+        "1.3.5",
+        "1.3.6",
+        "1.3.7"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Muse Dash",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "New 'n' Tasty",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1474177461708263565",
+      "apworld_url": "https://github.com/Knuxfan24/New-n-Tasty-Archipelago/releases/download/{{version}}/nnt.apworld",
+      "versions": [
+        "1.0.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Nine Sols",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1291949699150123048",
+      "apworld_url": "https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/download/{{version}}/nine_sols.apworld",
+      "versions": [
+        "0.1.1",
+        "0.1.4",
+        "0.1.6",
+        "0.2.1",
+        "0.3.6",
+        "0.4.3",
+        "0.4.4",
+        "0.4.6",
+        "0.5.1",
+        "0.5.3"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Noita",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Noita-Killsanity",
+      "display_name": "Noita (Killsanity)",
+      "home": "https://discord.com/channels/731205301247803413/1109174779619057795",
+      "apworld_url": "https://github.com/madolinn/NoitaArchipelago/releases/download/v{{version}}/noita-killsanity.apworld",
+      "versions": [
+        "0.9.3",
+        "0.9.4"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Nonograhmm",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1454544116711952384",
+      "apworld_url": "https://github.com/spineraks-org/ArchipelagoNonogram/releases/download/v{{version}}/nonograhmm.apworld",
+      "versions": [
+        "0.2.3",
+        "0.3.0",
+        "0.3.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Ocarina of Time",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Old School Runescape",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Once Upon a Katamari",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1445303088020852831",
+      "apworld_url": "https://github.com/ItsSeafoamy/Once-Upon-an-Archipelago/releases/download/v{{version}}/ouakatamari.apworld",
+      "versions": [
+        "0.1.0",
+        "0.2.0",
+        "0.2.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "OpenRCT2",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1095746758774108240",
+      "apworld_url": "https://github.com/Crazycolbster/rollercoaster-tycoon-randomizer/releases/download/v{{version}}/openrct2.apworld",
+      "versions": [
+        "0.1.19-beta",
+        "0.1.20-beta",
+        "0.1.21-beta"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Ori and the Blind Forest",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1036405779726610452",
+      "apworld_url": "https://github.com/c-ostic/Archipelago/releases/download/v{{version}}/oribf.apworld",
+      "versions": [
+        "0.3.3-alpha",
+        "0.4.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "osu!",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1195040661171355730",
+      "apworld_url": "",
+      "versions": [
+        "1.1.1-beta",
+        "1.2.0-beta",
+        "1.3.0-beta",
+        "1.3.2-beta"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Outer Wilds",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1462820272012005489",
+      "apworld_url": "https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v{{version}}/outer_wilds.apworld",
+      "versions": [
+        "0.3.6",
+        "0.3.9",
+        "0.3.11",
+        "0.3.12",
+        "0.3.13",
+        "0.3.14",
+        "0.3.15",
+        "0.3.16",
+        "0.3.17",
+        "0.3.18",
+        "0.3.19",
+        "1.0.1",
+        "1.1.0",
+        "1.2.0",
+        "1.2.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Overcooked! 2",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Paint",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Paper Mario",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1369329691076329582",
+      "apworld_url": "https://github.com/JKBSunshine/PMR_APWorld/releases/download/v{{version}}/papermario.apworld",
+      "versions": [
+        "0.6.3",
+        "0.6.4"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Paper Mario: The Thousand-Year Door",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1205136944259145728",
+      "apworld_url": "https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v{{version}}/ttyd.apworld",
+      "versions": [
+        "0.5.3-HOTFIX",
+        "0.6.2",
+        "0.7.0",
+        "0.8.0",
+        "0.9.0",
+        "0.9.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Peaks of Yore",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1332506808182378677",
+      "apworld_url": "",
+      "versions": [
+        "2.0.0",
+        "2.1.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Peggle Deluxe",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1470246861557334016",
+      "apworld_url": "https://github.com/SerpentAI/Archipelago/releases/download/peggle-deluxe-v{{version}}/peggle_deluxe.apworld",
+      "versions": [
+        "1.2.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Peggle Nights",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1470912354941141156",
+      "apworld_url": "https://github.com/SerpentAI/Archipelago/releases/download/peggle-nights-v{{version}}/peggle_nights.apworld",
+      "versions": [
+        "1.1.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Pinball FX3",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1465211526141972684",
+      "apworld_url": "https://github.com/SerpentAI/Archipelago/releases/download/pinballfx3-v{{version}}/pinball_fx3.apworld",
+      "versions": [
+        "1.3.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "PixelDraw",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1483851572340457604",
+      "apworld_url": "https://github.com/TheOmnipresence/PixelDrawAPWorld/releases/download/{{version}}/pixeldraw.apworld",
+      "versions": [
+        "1.2.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Pizza Tower",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1079671816257277972",
+      "apworld_url": "https://github.com/unsafetyskizzers/Archipelago/releases/download/{{version}}/pizza_tower.apworld",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Placid Plastic Duck Simulator",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1104785671262056559",
+      "apworld_url": "https://github.com/SWCreeperKing/PPDSArchipelago/releases/download/v.{{version}}/placidplasticducksim.apworld",
+      "versions": [
+        "0.1.1-hf1",
+        "0.1.1",
+        "0.1.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Plants vs. Zombies",
+      "display_name": "Plants vs. Zombies Replanted and GOTY",
+      "home": "https://discord.com/channels/731205301247803413/1437352496455483413",
+      "apworld_url": "https://github.com/dannybonz/replanted_archipelago/releases/download/v{{version}}/pvzr.apworld",
+      "versions": [
+        "1.6.2",
+        "1.6.3"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Poco",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1458419659727568937",
+      "apworld_url": "https://github.com/SWCreeperKing/Pocopelago/releases/download/v{{version}}/poco.apworld",
+      "versions": [
+        "0.1.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Pokemon Black and White",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1414928022854696991",
+      "apworld_url": "https://github.com/BlastSlimey/PokemonBWAP/releases/download/{{version}}/pokemon_bw_without_maps.apworld",
+      "versions": [
+        "0.3.17",
+        "0.3.14",
+        "0.3.13"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Pokemon Crystal",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1365127145709502575",
+      "apworld_url": "https://github.com/gerbiljames/Archipelago/releases/download/{{version}}/pokemon_crystal.apworld",
+      "versions": [
+        "4.0.12",
+        "5.0.3",
+        "5.1.6",
+        "5.2.7",
+        "5.3.0",
+        "5.3.1",
+        "5.3.2",
+        "5.3.3",
+        "5.3.5",
+        "5.3.6",
+        "5.3.7",
+        "5.3.8",
+        "5.3.9",
+        "5.3.10",
+        "5.4.0",
+        "5.4.1",
+        "5.4.2",
+        "5.4.3"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Pokemon Emerald",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Pokemon FireRed and LeafGreen",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1365127226533871718",
+      "apworld_url": "https://github.com/vyneras/Archipelago/releases/download/{{version}}/pokemon_frlg.apworld",
+      "versions": [
+        "1.0.4",
+        "1.0.3",
+        "1.0.2",
+        "1.0.1",
+        "1.0.0",
+        "0.9.6"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Pokemon Mystery Dungeon Explorers of Sky",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1175911373822242946",
+      "apworld_url": "https://github.com/CrypticMonkey33/ArchipelagoExplorersOfSky/releases/download/v{{version}}/pmd_eos.apworld",
+      "versions": [
+        "0.3.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Pokemon Pinball Ruby & Sapphire",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1488985632889110660",
+      "apworld_url": "https://github.com/Silvris/Archipelago/releases/download/pbrs_{{version}}/pokemon_pinball_rs.apworld",
+      "versions": [
+        "0.0.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Pokemon Platinum",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1197311500528922655",
+      "apworld_url": "https://github.com/ljtpetersen/platinum_archipelago/releases/download/v{{version}}/pokemon_platinum.apworld",
+      "versions": [
+        "0.1.4",
+        "0.1.5",
+        "0.1.6",
+        "0.1.7",
+        "0.1.8"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Pokemon Red and Blue",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "PokePark",
+      "display_name": "PokePark Wii: Pikachu's Adventure",
+      "home": "https://discord.com/channels/731205301247803413/1365710916011819088",
+      "apworld_url": "https://github.com/Mekurushi/Archipelago_Pokepark/releases/download/{{version}}/pokepark.apworld",
+      "versions": [
+        "1.0.1",
+        "1.0.3",
+        "1.1.1",
+        "1.1.2",
+        "1.1.3",
+        "1.2.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Pokepelago",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1474030797811093514",
+      "apworld_url": "https://github.com/dowlle/PokepelagoClient/releases/download/v{{version}}/pokepelago.apworld",
+      "versions": [
+        "0.4.4",
+        "0.5.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Portal 2",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1172548724921208852",
+      "apworld_url": "https://github.com/GlassToadstool/Archipelago/releases/download/{{version}}/portal2.apworld",
+      "versions": [
+        "0.3.2",
+        "0.3.3",
+        "0.4.0",
+        "0.5.6",
+        "0.6.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Powerwash Simulator",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1158367507703410739",
+      "apworld_url": "https://github.com/SWCreeperKing/PowerwashSimAP/releases/download/v.{{version}}/powerwashsimulator.apworld",
+      "versions": [
+        "0.1.0+hf3",
+        "0.3.2",
+        "0.5.1",
+        "0.5.2",
+        "0.5.3",
+        "0.5.5",
+        "0.5.12",
+        "0.5.13",
+        "0.5.14"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Pseudoregalia",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1147564210436452393",
+      "apworld_url": "https://github.com/qwint/pseudoregalia-archipelago/releases/download/{{version}}/pseudoregalia.apworld",
+      "versions": [
+        "0.7.3",
+        "0.7.4",
+        "0.8.1",
+        "0.9.0",
+        "0.9.3",
+        "0.9.4",
+        "0.10.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Psychonauts",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1191273397976584212",
+      "apworld_url": "https://github.com/Akashortstack/Psychonauts-AP-Integration/releases/download/v{{version}}/psychonauts.apworld",
+      "versions": [
+        "0.8.0+hotfix1",
+        "0.9.3-BETA+hotfix1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "R.E.P.O",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1345146101094678639",
+      "apworld_url": "https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/{{version}}/repo.apworld",
+      "versions": [
+        "0.2.4",
+        "0.3.0",
+        "0.3.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Raft",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Rain World",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1136042293162418176",
+      "apworld_url": "https://github.com/alphappy/ArchipelagoRW/releases/download/v{{version}}/rain_world.apworld",
+      "versions": [
+        "1.3.1",
+        "1.3.2",
+        "1.4.0",
+        "1.5.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Ratchet & Clank",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1146024297324879872",
+      "apworld_url": "https://github.com/Panda291/Archipelago/releases/download/v{{version}}/rac1.apworld",
+      "versions": [
+        "0.1.3"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Ratchet & Clank 2",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1325015730218860554",
+      "apworld_url": "https://github.com/evilwb/APRac2/releases/download/v{{version}}/rac2.apworld",
+      "versions": [
+        "0.4.2",
+        "0.5.0",
+        "0.5.1",
+        "0.6.1",
+        "0.6.2",
+        "0.6.3",
+        "0.6.4"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Ratchet and Clank 3",
+      "display_name": "Ratchet & Clank 3",
+      "home": "https://discord.com/channels/731205301247803413/1357102103054651622",
+      "apworld_url": "https://github.com/Taoshix/Archipelago-RaC3/releases/download/v{{version}}/rac3.apworld",
+      "versions": [
+        "0.4.1",
+        "0.5.1",
+        "0.5.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Refunct",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1273001824919617577",
+      "apworld_url": "https://github.com/spinerak/refunct-tas-archipelago/releases/download/v{{version}}/refunct.apworld",
+      "versions": [
+        "0.3.2",
+        "0.4.2",
+        "0.5.3",
+        "0.6.0",
+        "0.6.1",
+        "0.7.0",
+        "0.8.0",
+        "0.8.1",
+        "0.8.2",
+        "0.8.3",
+        "0.9.0",
+        "1.0.1",
+        "1.0.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Resident Evil 2 Remake",
+      "display_name": "",
+      "home": "https://discord.com/channels/1085716850370957462/1259648589039272028",
+      "apworld_url": "https://github.com/FuzzyGamesOn/RE2R_AP_World/releases/download/{{version}}/residentevil2remake.apworld",
+      "versions": [
+        "0.2.7",
+        "0.3.0",
+        "0.3.3"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Resident Evil 3 Remake",
+      "display_name": "",
+      "home": "https://discord.com/channels/1085716850370957462/1261562909809709056",
+      "apworld_url": "https://github.com/TheRealSolidusSnake/RE3R_AP_World/releases/download/{{version}}/residentevil3remake.apworld",
+      "versions": [
+        "0.2.6"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Reventure",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1200081144629174363",
+      "apworld_url": "https://github.com/Droppel/ReventureEndingRando/releases/download/{{version}}/reventure.apworld",
+      "versions": [
+        "0.19.0",
+        "0.19.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Rift of the Necrodancer",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1337112354130759757",
+      "apworld_url": "https://github.com/studkid/RiftArchipelago/releases/download/v{{version}}/rotn.apworld",
+      "versions": [
+        "0.9.0",
+        "0.10.0",
+        "0.11.0",
+        "0.12.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Rift Wizard",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1097001818564853770",
+      "apworld_url": "https://github.com/TheBigSalarius/Archipelago/releases/download/v{{version}}/riftwizard.apworld",
+      "versions": [
+        "1.3.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Risk of Rain",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1193665646467231764",
+      "apworld_url": "https://github.com/studkid/RoR_Archipelago/releases/download/v{{version}}/ror1.apworld",
+      "versions": [
+        "0.6.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Risk of Rain 2",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Rogue Legacy",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/929585237695029268",
+      "apworld_url": "",
+      "versions": [
+        "1.1.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Rusted Moss",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1239286100472758302",
+      "apworld_url": "https://github.com/dgrossmann144/Archipelago/releases/download/v{{version}}/rusted_moss.apworld",
+      "versions": [
+        "0.1.5-alpha",
+        "0.1.6-alpha"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Satisfactory",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Saving Princess",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Schedule I",
+      "display_name": "",
+      "home": "https://discord.com/channels/1085716850370957462/1424079825697509427",
+      "apworld_url": "https://github.com/MacH8s/Narcopelago/releases/download/v{{version}}/Schedule_I.apworld",
+      "versions": [
+        "3.4.0",
+        "3.5.4"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Scooby-Doo! Night of 100 Frights",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1188152412498829352",
+      "apworld_url": "",
+      "versions": [
+        "1.3.5"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Secret of Evermore",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Severed Soul",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1400131509569978478",
+      "apworld_url": "",
+      "versions": [
+        "2.6.0",
+        "2.7.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Shadow The Hedgehog",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1142558464242094200",
+      "apworld_url": "https://github.com/choatix/Archipelago/releases/download/shadow-{{version}}/shadow_the_hedgehog.apworld",
+      "versions": [
+        "0.4.1",
+        "0.4.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "shapez",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Ship of Harkinian",
+      "display_name": "Ocarina of Time: Ship of Harkinian",
+      "home": "https://discord.com/channels/731205301247803413/1434235335625281707",
+      "apworld_url": "https://github.com/HarbourMasters/Archipelago-SoH/releases/download/SoH_{{version}}/oot_soh.apworld",
+      "versions": [
+        "1.0.0",
+        "1.1.0+hotfix",
+        "1.2.0",
+        "1.2.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Shivers",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Simon Tatham's Portable Puzzle Collection",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1278733078516207719",
+      "apworld_url": "https://github.com/ishanpm/ap-sgtpuzzles-web/releases/download/v{{version}}/sgtpuzzles.apworld",
+      "versions": [
+        "0.1.8-prealpha",
+        "0.1.10-prealpha",
+        "0.1.11-prealpha",
+        "0.1.15-prealpha"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Skyward Sword",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1469917221068214444",
+      "apworld_url": "https://github.com/Battlecats59/SS_APWorld/releases/download/v{{version}}/ss.apworld",
+      "versions": [
+        "0.5.4"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Slay the Spire",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/884926940182609920",
+      "apworld_url": "https://github.com/cjmang/StS-AP-World/releases/download/{{version}}/spire.apworld",
+      "versions": [
+        "2.0.2",
+        "2.1.2",
+        "2.2.0",
+        "2.2.1",
+        "2.3.1",
+        "2.3.3",
+        "2.3.4",
+        "2.3.5"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Slay the Spire II",
+      "display_name": "",
+      "home": "",
+      "apworld_url": "https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/download/v{{version}}/spire2.apworld",
+      "versions": [
+        "0.4.1-alpha"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Slime Rancher",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1108426937409486909",
+      "apworld_url": "https://github.com/SWCreeperKing/Slimipelago/releases/download/v{{version}}/slime_rancher.apworld",
+      "versions": [
+        "0.2.2",
+        "0.2.4",
+        "0.3.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Sly 2: Band of Thieves",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1359447263981600788",
+      "apworld_url": "https://github.com/NikolajDanger/APSly2/releases/download/v{{version}}/sly2.apworld",
+      "versions": [
+        "0.8.2",
+        "0.8.4",
+        "0.8.6"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Sly Cooper and the Thievius Raccoonus",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1170557242660093952",
+      "apworld_url": "https://github.com/hoppel16/ArchipelagoBranchSly1/releases/download/v{{version}}/sly1.apworld",
+      "versions": [
+        "0.1.5-alpha",
+        "0.2.2-alpha",
+        "0.2.4-alpha"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Smushi Come Home",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1443621717552402535",
+      "apworld_url": "https://github.com/xMcacutt-Archipelago/Archipelago-SmushiComeHome/releases/download/{{version}}/smushi_come_home.apworld",
+      "versions": [
+        "1.0.9"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "SMW: Spicy Mycena Waffles",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1435322478024200202",
+      "apworld_url": "https://github.com/TheLX5/Archipelago/releases/download/waffles-v{{version}}/waffles.apworld",
+      "versions": [
+        "1.1.2",
+        "1.2.3",
+        "1.2.6",
+        "1.2.7",
+        "1.2.8",
+        "1.3.1",
+        "1.3.3"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "SMZ3",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Sonic Adventure 2 Battle",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Sonic Adventure DX",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1183347590981505075",
+      "apworld_url": "https://github.com/ClassicSpeed/sadx-classic-randomizer/releases/download/v{{version}}/sadx.apworld",
+      "versions": [
+        "0.8.7-b",
+        "0.8.8",
+        "1.0.0",
+        "1.0.1",
+        "1.1.0",
+        "1.1.1-b",
+        "1.1.2",
+        "1.1.3"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Sonic Heroes",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1234592520403423352",
+      "apworld_url": "https://github.com/Ethicallogic-Archipelago/SonicHeroesArchipelago/releases/download/{{version}}/sonic_heroes.apworld",
+      "versions": [
+        "1.4.0",
+        "1.5.0",
+        "2.0.0",
+        "2.0.1+hotfix1",
+        "2.1.0",
+        "2.2.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Sonic Riders",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1292128680046235739",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Sonic Rush",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1280648306124394567",
+      "apworld_url": "https://github.com/BlastSlimey/SonicRushAP/releases/download/{{version}}/sonic_rush.apworld",
+      "versions": [
+        "0.2.3"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Soul Blazer",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1209689725057761310",
+      "apworld_url": "https://github.com/Tranquilite0/Archipelago-SoulBlazer/releases/download/v{{version}}/soulblazer.apworld",
+      "versions": [
+        "0.4.1",
+        "0.4.2",
+        "0.5.0",
+        "0.6.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Spelunker",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1237999589907234938",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Spelunky 2",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1142626744629735555",
+      "apworld_url": "https://github.com/DDR-Khat/Spelunky2-Archipelago/releases/download/{{version}}/spelunky2.apworld",
+      "versions": [
+        "0.2.4",
+        "0.3.6",
+        "0.3.8"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Spinball",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1325257989891952742",
+      "apworld_url": "https://github.com/spineraks-org/ArchipelagoSpinball/releases/download/v{{version}}/spinball.apworld",
+      "versions": [
+        "0.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Spyro 2",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1281660590431015046",
+      "apworld_url": "https://github.com/Uroogla/S2AP/releases/download/{{version}}/spyro2.apworld",
+      "versions": [
+        "0.1.2",
+        "0.3.2",
+        "1.0.0",
+        "1.0.1",
+        "1.1.0",
+        "1.1.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Spyro 3",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1018847303722872843",
+      "apworld_url": "https://github.com/Uroogla/S3AP/releases/download/{{version}}/spyro3.apworld",
+      "versions": [
+        "0.2.3",
+        "0.3.0",
+        "0.5.2",
+        "1.0.1",
+        "1.1.0",
+        "1.2.1",
+        "1.2.2",
+        "1.3.0",
+        "1.3.4"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Spyro the Dragon",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1281652479779536958",
+      "apworld_url": "https://github.com/gamefreq0/Archipelago/releases/download/spyro-v{{version}}/spyro.apworld",
+      "versions": [
+        "0.4.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Star Fox 64",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1024876649151475732",
+      "apworld_url": "https://github.com/Auztin/AP-Star-Fox-64/releases/download/v{{version}}/star_fox_64.apworld",
+      "versions": [
+        "0.4.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Star Wars Episode I Racer",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1207274588120158269",
+      "apworld_url": "https://github.com/wcolding/SWR_AP_Client/releases/download/v{{version}}/swr.apworld",
+      "versions": [
+        "0.7.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Starcraft 2",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Stardew Valley",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Streets of Rage",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1421815799504437409",
+      "apworld_url": "",
+      "versions": [
+        "0.1.15+norandom"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Subnautica",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Sudoku",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Super Junkoid",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1196920710724071555",
+      "apworld_url": "https://github.com/Ninjakakes/Archipelago/releases/download/sj_v{{version}}/superjunkoid.apworld",
+      "versions": [
+        "0.1.10"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Super Mario 64",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Super Mario Land 2",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Super Mario Sunshine",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1383204057514250300",
+      "apworld_url": "https://github.com/Joshark/archipelago-sms/releases/download/{{version}}/sms.apworld",
+      "versions": [
+        "0.5.2+hotfix1",
+        "0.5.3",
+        "0.6.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Super Mario Sunshine Arcade 2",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1399897298301096048",
+      "apworld_url": "https://github.com/Jorbori/SMSA2AP/releases/download/{{version}}/smsa2.apworld",
+      "versions": [
+        "0.1.2",
+        "0.2.0",
+        "0.3.0",
+        "0.4.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Super Mario World",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Super Metroid",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Super Smash Bros. Melee",
+      "display_name": "",
+      "home": "",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Symphony of the Night",
+      "display_name": "Castlevania: Symphony Of The Night",
+      "home": "https://discord.com/channels/731205301247803413/1462294492752380167",
+      "apworld_url": "",
+      "versions": [
+        "0.8.16+unofficial"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "TCG Card Shop Simulator",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1302063649812250665",
+      "apworld_url": "https://github.com/FyreDay/Archipelago-TCGCardShopSimulator/releases/download/v{{version}}/tcg_card_shop_simulator.apworld",
+      "versions": [
+        "0.5.13"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Terraria",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Tevi",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1320015979736203304",
+      "apworld_url": "",
+      "versions": [
+        "0.6.6"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "The Binding of Isaac Repentance",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1454262765047775326",
+      "apworld_url": "https://github.com/NaveTK/Archipelago/releases/download/v{{version}}/tboir.apworld",
+      "versions": [
+        "0.3.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "The Grinch",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1279837475338190999",
+      "apworld_url": "https://github.com/MarioSpore/Grinch-AP/releases/download/v{{version}}/grinch.apworld",
+      "versions": [
+        "1.0.2",
+        "1.0.3",
+        "1.1.2",
+        "1.2.2",
+        "1.2.3",
+        "1.3.2",
+        "1.4.0",
+        "1.5.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "The Guardian Legend",
+      "display_name": "",
+      "home": "https://discord.com/channels/1085716850370957462/1218013523943231579",
+      "apworld_url": "https://github.com/CoreZer0/TheGuardianLegend-AP/releases/download/v{{version}}/guardianlegend.apworld",
+      "versions": [
+        "0.7.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "The Legend of Zelda",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "The Legend of Zelda - Oracle of Ages",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1492540520462024774",
+      "apworld_url": "",
+      "versions": [
+        "0.4.3+hotfix-0.6.2",
+        "0.5.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "The Legend of Zelda - Oracle of Seasons",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1130706151303041054",
+      "apworld_url": "https://github.com/Dinopony/ArchipelagoOoS/releases/download/oos-{{version}}/tloz_oos.apworld",
+      "versions": [
+        "20.1.7"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "The Messenger",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "The Minish Cap",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1419820477404418140",
+      "apworld_url": "https://github.com/eternalcode0/Archipelago/releases/download/v{{version}}/tmc.apworld",
+      "versions": [
+        "0.0.10",
+        "0.1.0-rc2",
+        "0.1.0",
+        "0.2.0",
+        "0.3.0",
+        "0.3.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "The Simpsons Hit And Run",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1158211913495359548",
+      "apworld_url": "",
+      "versions": [
+        "0.1.6-alpha"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "The Sims 4",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1079002955262480424",
+      "apworld_url": "https://github.com/Simsipelago/Archipelago/releases/download/{{version}}/sims4.apworld",
+      "versions": [
+        "1.6.1",
+        "1.7.5"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "The Wind Waker",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "The Witness",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Timespinner",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "ToeJam and Earl",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1204326236415856671",
+      "apworld_url": "https://github.com/IgnisUmbrae/TJE-Archipelago/releases/download/v{{version}}/tje.apworld",
+      "versions": [
+        "0.3.1",
+        "0.3.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "TOEM: A Photo Adventure",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1255989734497587241",
+      "apworld_url": "https://github.com/bbernardoni/Archipelago.TOEM/releases/download/{{version}}/toem.apworld",
+      "versions": [
+        "1.1.1",
+        "1.9.0",
+        "2.0.1",
+        "2.0.3"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Tony Hawk's Pro Skater 1 + 2",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1349754176296583198",
+      "apworld_url": "https://github.com/SerpentAI/Archipelago/releases/download/thps12-v{{version}}/tony_hawks_pro_skater_1_2.apworld",
+      "versions": [
+        "1.1.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Totally Accurate Battle Simulator",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1348142956682547230",
+      "apworld_url": "https://github.com/duckboycool/TABS-Archipelago/releases/download/v{{version}}/tabs.apworld",
+      "versions": [
+        "0.1.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Touhou Eiyashou ~ Imperishable Night",
+      "display_name": "",
+      "home": "https://discord.com/channels/1085716850370957462/1397282580646203653",
+      "apworld_url": "https://github.com/Nepley/in-apworld/releases/download/v{{version}}/th08.apworld",
+      "versions": [
+        "0.1.3",
+        "0.2.3",
+        "1.0.1",
+        "1.1.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Touhou Koumakyou ~ the Embodiment of Scarlet Devil",
+      "display_name": "",
+      "home": "https://discord.com/channels/1085716850370957462/1353408740480778270",
+      "apworld_url": "https://github.com/Nepley/eosd-apworld/releases/download/v{{version}}/th06.apworld",
+      "versions": [
+        "1.3.2",
+        "1.3.3",
+        "1.4.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Touhou Youyoumu ~ Perfect Cherry Blossom",
+      "display_name": "",
+      "home": "https://discord.com/channels/1085716850370957462/1368333426142216342",
+      "apworld_url": "https://github.com/Nepley/pcb-apworld/releases/download/v{{version}}/th07.apworld",
+      "versions": [
+        "1.1.2",
+        "1.1.4",
+        "1.2.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Trackmania",
+      "display_name": "Trackmania 2020",
+      "home": "https://discord.com/channels/731205301247803413/1368696493904625785",
+      "apworld_url": "https://github.com/SerialBoxes/ArchipelagoTrackmania/releases/download/v{{version}}/trackmania.apworld",
+      "versions": [
+        "1.2.0",
+        "1.2.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Trails in the Sky the 3rd",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1217595862872490065",
+      "apworld_url": "https://github.com/Archipelago-Trails-in-the-Sky-the-3rd/Archipelago-Trails-in-the-Sky-the-3rd/releases/download/{{version}}/tits_the_3rd.apworld",
+      "versions": [
+        "0.1.6"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "TUNIC",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "TurnipBoy",
+      "display_name": "Turnip Boy Commits Tax Evasion",
+      "home": "https://discord.com/channels/731205301247803413/1297617351977734214",
+      "apworld_url": "https://github.com/pointfivetee/TurnipBoyRandomizer/releases/download/v{{version}}/turnipboy.apworld",
+      "versions": [
+        "0.1.3"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Twilight Princess",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1369050080887312506",
+      "apworld_url": "",
+      "versions": [
+        "0.2.3",
+        "0.3.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Twisty Cube",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1420821472057757716",
+      "apworld_url": "https://github.com/spineraks-org/ArchipelagoTwistyCube/releases/download/v{{version}}/twistycube.apworld",
+      "versions": [
+        "0.0.1",
+        "0.0.2",
+        "1.0.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Ty the Tasmanian Tiger",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1111533202184613991",
+      "apworld_url": "https://github.com/xMcacutt/Archipelago-TyTheTasmanianTiger/releases/download/{{version}}/ty_the_tasmanian_tiger.apworld",
+      "versions": [
+        "1.1.2",
+        "1.1.4",
+        "1.1.7",
+        "1.2.1",
+        "1.2.3",
+        "1.3.1",
+        "1.3.3",
+        "1.3.6",
+        "1.4.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Ty the Tasmanian Tiger 2",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1370284619655544852",
+      "apworld_url": "https://github.com/FyreDay/Archipelago-TyTheTasmanianTiger2/releases/download/v{{version}}/ty_the_tasmanian_tiger_2.apworld",
+      "versions": [
+        "0.2.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Ty the Tasmanian Tiger 3",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1427906326649897001",
+      "apworld_url": "https://github.com/xMcacutt-Archipelago/Archipelago-TyTheTasmanianTiger3/releases/download/{{version}}/ty_the_tasmanian_tiger_3.apworld",
+      "versions": [
+        "1.2.0",
+        "1.2.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Tyrian",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1224498137570349076",
+      "apworld_url": "https://github.com/KScl/TyrianArchipelago/releases/download/v{{version}}/tyrian.apworld",
+      "versions": [
+        "0.80.2",
+        "1.0.1",
+        "1.0.4"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "ULTRAKILL",
+      "display_name": "",
+      "home": "https://discord.com/channels/1085716850370957462/1123371409339584532",
+      "apworld_url": "https://github.com/TRPG0/ArchipelagoULTRAKILL/releases/download/{{version}}/ultrakill.apworld",
+      "versions": [
+        "3.2.3",
+        "3.2.4",
+        "3.2.6",
+        "3.4.5"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "UNBEATABLE Arcade",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1454317500329099317",
+      "apworld_url": "https://github.com/AllPoland/unbeatAP/releases/download/v{{version}}/unbeatable_arcade.apworld",
+      "versions": [
+        "0.1.0-alpha",
+        "0.2.1-alpha",
+        "0.3.0-alpha"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Undertale",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Unfair Flips",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1460737685151940819",
+      "apworld_url": "https://github.com/xMcacutt-Archipelago/Archipelago-UnfairFlips/releases/download/{{version}}/unfair_flips.apworld",
+      "versions": [
+        "1.0.4",
+        "1.1.0",
+        "1.2.0",
+        "1.2.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Very Very Valet",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1481104627322851483",
+      "apworld_url": "https://github.com/xMcacutt-Archipelago/Archipelago-VeryVeryValet/releases/download/{{version}}/very_very_valet.apworld",
+      "versions": [
+        "1.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Vespadian",
+      "display_name": "",
+      "home": "https://github.com/Quinn-Patrick/Archipelago-Vespadian",
+      "apworld_url": "https://github.com/Quinn-Patrick/Archipelago-Vespadian/releases/download/V{{version}}/vespadian.apworld",
+      "versions": [
+        "0.1.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Void Sols",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1448045030777421844",
+      "apworld_url": "https://github.com/cookie966507/Archipelago/releases/download/{{version}}-Void-Sols/void_sols.apworld",
+      "versions": [
+        "1.0.1",
+        "1.0.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Void Stranger",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1231073014439743528",
+      "apworld_url": "https://github.com/CriminalPancake/void-stranger-ap/raw/refs/tags/v{{version}}/voidstranger.apworld",
+      "versions": [
+        "0.9.2+hotfix1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Voltorb Flip",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1419104603126890506",
+      "apworld_url": "https://github.com/BlastSlimey/Archipelago/releases/download/voltorb_flip_{{version}}/voltorb_flip.apworld",
+      "versions": [
+        "1.1.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "VVVVVV",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Wargroove",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Wargroove 2",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1159482310652076082",
+      "apworld_url": "https://github.com/FlySniper/Archipelago/releases/download/wargroove2-{{version}}/wargroove2.apworld",
+      "versions": [
+        "1.1.6"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Wario Land",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1173641836502454303",
+      "apworld_url": "https://github.com/randomcodegen/Archipelago/releases/download/{{version}}/wl.apworld",
+      "versions": [
+        "1.2.5",
+        "1.2.6"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Wario Land 4",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1079899101732290620",
+      "apworld_url": "https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/download/{{version}}/wl4.apworld",
+      "versions": [
+        "3.0.0",
+        "3.1.0",
+        "3.1.1",
+        "3.2.0",
+        "3.3.0",
+        "3.3.1",
+        "3.3.2",
+        "3.3.3"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "We Love Katamari Reroll",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1141745266723131523",
+      "apworld_url": "https://github.com/sapphisylph/We-Love-Archipelago-Reroll/releases/download/v{{version}}/wlkrr.apworld",
+      "versions": [
+        "0.1.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "WEBFISHING",
+      "display_name": "Webfishing",
+      "home": "https://discord.com/channels/731205301247803413/1299564055597416449",
+      "apworld_url": "https://github.com/mwoiii/webfishing-ap/releases/download/v{{version}}/webfishing.apworld",
+      "versions": [
+        "1.2.2-alpha"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Wordipelago",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1336387000928047186",
+      "apworld_url": "https://github.com/ProfDeCube/Archipelago/releases/download/{{version}}/wordipelago.apworld",
+      "versions": [
+        "1.0.2",
+        "1.1.0"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "WordSearch",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1377289543467667638",
+      "apworld_url": "",
+      "versions": [
+        "0.0.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "XCOM 2 War of the Chosen",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1037751568700805141",
+      "apworld_url": "https://github.com/MaxReinstadler/X2WOTCArchipelago/releases/download/{{version}}/x2wotc.apworld",
+      "versions": [
+        "0.7.5-alpha",
+        "0.9.1-beta",
+        "0.9.2-beta",
+        "0.10.7-beta",
+        "0.10.10-beta"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Yacht Dice",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Yacht Dice Bliss",
+      "display_name": "",
+      "home": "",
+      "apworld_url": "https://github.com/spinerak/ArchipelagoYachtDice/releases/download/v{{version}}/yachtdicebliss.apworld",
+      "versions": [
+        "2.3.4"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "YARG",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1451771538943508490",
+      "apworld_url": "https://github.com/energymaster22/YARGArchipelago/releases/download/{{version}}/yarg.apworld",
+      "versions": [
+        "0.0.10",
+        "0.0.13"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "YARGLEGORockBand",
+      "display_name": "",
+      "home": "",
+      "apworld_url": "https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/{{version}}/YARGLEGORockBand.apworld",
+      "versions": [
+        "26.4.12"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "YARGRockBand3",
+      "display_name": "Rock Band 3",
+      "home": "",
+      "apworld_url": "",
+      "versions": [
+        "26.2.21"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Yellow Taxi Goes Vroom",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1265482079118950422",
+      "apworld_url": "https://github.com/soopercool101/Archipelago/releases/download/YTGV.v{{version}}/yellowtaxi.apworld",
+      "versions": [
+        "0.3.2"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "YOHANE THE PARHELION -BLAZE in the DEEPBLUE-",
+      "display_name": "",
+      "home": "",
+      "apworld_url": "https://github.com/SilicDev/Archipelago/releases/download/yohane_bitdb-v{{version}}/yohane_deepblue.apworld",
+      "versions": [
+        "0.0.3"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Yoku's Island Express",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1225283906333446245",
+      "apworld_url": "https://git.makuluni.com/Archipelago/YokuAPWorld/releases/download/{{version}}/yoku.apworld",
+      "versions": [
+        "0.0.2",
+        "0.0.3",
+        "0.0.4"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Yoshi's Island",
+      "display_name": "",
+      "home": "",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Yu-Gi-Oh! 2006",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Yu-Gi-Oh! Forbidden Memories",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1210743818564149288",
+      "apworld_url": "https://github.com/sg4e/Archipelago/releases/download/v{{version}}/fm.apworld",
+      "versions": [
+        "2.1.1",
+        "2.1.2",
+        "2.1.3",
+        "2.1.4"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Zelda II: The Adventure of Link",
+      "display_name": "",
+      "home": "",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Zillion",
+      "display_name": "",
+      "home": "https://archipelago.gg",
+      "apworld_url": "",
+      "versions": [],
+      "requires": "ukendt",
+      "plugin": null
+    },
+    {
+      "id": "Zork Grand Inquisitor",
+      "display_name": "",
+      "home": "https://discord.com/channels/731205301247803413/1224389493289648218",
+      "apworld_url": "https://github.com/SerpentAI/Archipelago/releases/download/zgi-v{{version}}/zork_grand_inquisitor.apworld",
+      "versions": [
+        "2.0.6+hotfix1",
+        "2.0.7+hotfix1",
+        "2.1.1"
+      ],
+      "requires": "ukendt",
+      "plugin": null
+    }
+  ]
+}
