@@ -1,16 +1,17 @@
 # -*- coding: utf-8 -*-
-"""Dobbelttjek en HEL gruppe, ikke ét spil ad gangen.
+"""Double-check a WHOLE group, not one game at a time.
 
     python tools/group_check.py GBA
 
-Trin 2 i docs/UDGIVELSER.md. Den leder efter fejl der er FÆLLES for gruppen,
-fordi det er dem der gør mest skade: rammer man forkert på ét GBA-spil, har de
-17 andre efter al sandsynlighed samme fejl. Enkeltfejl fanger build_plugins.py.
+Step 2 in docs/RELEASES.md. It looks for mistakes that are SHARED across the
+group, because those do the most damage: get something wrong on one GBA game
+and the other 17 very likely have the same mistake. Single-game problems are
+caught by build_plugins.py.
 
-Historikken bag: fire gange har et opfundet øvre loft stille skåret data væk
-(kort > 120, tegn < 0xA1, trænerklasse > 100). Ingen af dem fejlede — de
-returnerede bare mindre. Derfor kigger den her efter TAVSHED: felter uden
-kilde, værdier der er ens overalt, huller ingen har nævnt.
+The history behind this: four separate times an invented upper bound quietly
+cut data away (map > 120, charset < 0xA1, trainer class > 100). None of them
+failed -- they just returned less. So this looks for SILENCE: fields with no
+source, values that are identical everywhere, gaps nobody wrote down.
 """
 
 import json
@@ -21,8 +22,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 GAMES = ROOT / "catalog" / "games"
 
-# Felter der SKAL kunne spores. Et tal uden kilde er et gæt der ser ud som
-# en måling.
+# Fields that must be traceable. A number with no source is a guess wearing
+# the clothes of a measurement.
 NEEDS_SOURCE = ["ap_world_name", "description", "requires"]
 
 findings = []
@@ -40,16 +41,16 @@ def main(platform):
             games[p.stem] = m
 
     if not games:
-        print("ingen manifester for %s" % platform)
+        print("no manifests for %s" % platform)
         return 1
 
-    print("Gruppe-tjek: %s, %d manifester\n" % (platform, len(games)))
+    print("Group check: %s, %d manifests\n" % (platform, len(games)))
 
-    # 1. Kolliderer noget? To spil med samme id/apworld-navn/patch-endelse
-    #    ville stille overskrive hinanden.
+    # 1. Does anything collide? Two games sharing an id / AP name / patch
+    #    extension would quietly overwrite each other.
     for field, path in (("id", ("id",)),
                         ("ap_world_name", ("ap_world_name",)),
-                        ("patch-endelse", ("patch", "extension"))):
+                        ("patch extension", ("patch", "extension"))):
         seen = defaultdict(list)
         for gid, m in games.items():
             v = m
@@ -59,66 +60,68 @@ def main(platform):
                 seen[v].append(gid)
         for v, who in seen.items():
             if len(who) > 1:
-                note("FEJL", "%s %r deles af: %s" % (field, v, ", ".join(who)))
+                note("FAIL", "%s %r is shared by: %s" % (field, v, ", ".join(who)))
 
-    # 2. Har hvert sporbart felt en kilde?
+    # 2. Does every traceable field carry its source?
     for gid, m in games.items():
         for f in NEEDS_SOURCE:
             if m.get(f) and not m.get("_%s_source" % f):
-                note("FEJL", "%s: %s har ingen _%s_source" % (gid, f, f))
+                note("FAIL", "%s: %s has no _%s_source" % (gid, f, f))
 
-    # 3. Er en værdi ens ALLE steder? Så er den enten strukturel eller
-    #    copy-paste. Den skal ses efter, ikke antages.
+    # 3. Is a value identical EVERYWHERE? Then it is either structural or a
+    #    copy-paste. It gets looked at rather than assumed.
     for field in ("subtitle", "requires", "description"):
         vals = Counter(m.get(field) for m in games.values() if m.get(field))
         if len(vals) == 1 and len(games) > 1:
             v = list(vals)[0]
-            level = "OK" if field != "description" else "FEJL"
-            note(level, "%s er %r i alle %d - %s"
+            deliberate = field != "description"
+            note("OK" if deliberate else "FAIL",
+                 "%s is %r in all %d - %s"
                  % (field, v[:40], len(games),
-                    "ens med vilje" if level == "OK"
-                    else "beskrivelser maa ikke vaere ens"))
+                    "deliberate" if deliberate
+                    else "descriptions must not be identical"))
 
-    # 4. Hullerne. Ikke fejl, men de skal STAA der - ikke opdages af en
-    #    spiller hvis ROM bliver accepteret og ikke virker.
+    # 4. The gaps. Not errors, but they must be WRITTEN DOWN rather than
+    #    discovered by a player whose ROM is accepted and does not work.
     nohash = [g for g, m in games.items()
               if not (m.get("rom") or {}).get("md5")
               and not (m.get("rom") or {}).get("size")]
     if nohash:
-        note("HUL", "%d/%d har hverken md5 eller stoerrelse - de kan kun "
-                    "ADVARE om en forkert ROM, ikke afvise den: %s"
+        note("GAP", "%d/%d have neither md5 nor size - they can only WARN "
+                    "about a wrong ROM, not reject it: %s"
              % (len(nohash), len(games), ", ".join(sorted(nohash))))
 
     unver = [g for g, m in games.items() if not m.get("checks_verified")]
     if unver:
-        note("HUL", "%d/%d har checks_verified=false - London advarer ved "
-                    "start, og det er korrekt indtil RAM-kortet er maalt"
+        note("GAP", "%d/%d have checks_verified=false - London warns at "
+                    "launch, which is correct until the RAM map is measured"
              % (len(unver), len(games)))
 
     unconfirmed = [g for g, m in games.items()
-                   if "SKAL bekraeftes" in (m.get("_ap_world_name_source") or "")]
+                   if "must be confirmed" in (m.get("_ap_world_name_source") or "")]
     if unconfirmed:
-        note("HUL", "%d ap_world_name er AFLEDT af tutorial-adressen og ikke "
-                    "bekraeftet mod apworldet: %s"
+        note("GAP", "%d ap_world_name values are DERIVED from the tutorial "
+                    "URL and not confirmed against the apworld: %s"
              % (len(unconfirmed), ", ".join(sorted(unconfirmed))))
 
-    # 5. Emulator-gulvet for gruppen. Forskellige krav er ikke en fejl, men
-    #    gruppens tekst skal naevne det HOEJESTE, ellers installerer en
-    #    spiller en for gammel BizHawk og faar en uforklarlig fejl.
+    # 5. The group's emulator floor. Different requirements are not an error,
+    #    but the group text has to state the HIGHEST one, or somebody installs
+    #    a too-old BizHawk and gets an unexplainable failure.
     vers = {g: (m.get("emulator") or {}).get("min_version")
             for g, m in games.items()}
     known = sorted({v for v in vers.values() if v},
                    key=lambda s: [int(x) for x in s.split(".")])
     if known:
-        note("OK", "BizHawk-krav i gruppen: %s -> gruppeteksten skal sige "
-                   "mindst %s" % (", ".join(known), known[-1]))
+        note("OK", "BizHawk requirements in this group: %s -> the group text "
+                   "must say at least %s" % (", ".join(known), known[-1]))
 
-    order = {"FEJL": 0, "HUL": 1, "OK": 2}
+    order = {"FAIL": 0, "GAP": 1, "OK": 2}
     for level, msg in sorted(findings, key=lambda f: order[f[0]]):
         print("  [%-4s] %s" % (level, msg))
 
-    bad = [f for f in findings if f[0] == "FEJL"]
-    print("\n%d fejl, %d huller" % (len(bad), len([f for f in findings if f[0] == "HUL"])))
+    bad = [f for f in findings if f[0] == "FAIL"]
+    print("\n%d failures, %d gaps"
+          % (len(bad), len([f for f in findings if f[0] == "GAP"])))
     return 1 if bad else 0
 
 

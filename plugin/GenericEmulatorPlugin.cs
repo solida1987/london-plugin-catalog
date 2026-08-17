@@ -7,19 +7,19 @@ using LauncherV2.Plugins.Emulated;
 
 namespace LauncherV2.Plugins.Catalog;
 
-// Eet plugin, mange spil. Opfoerslen kommer fra game.json ved siden af
-// assemblyen, saa et nyt spil er en datafil - ikke en ny klasse.
+// One plugin, many games. The behaviour comes from an embedded game.json,
+// so a new game is a data file -- not a new class.
 //
-// ⚠ Manifestet maa GAETTE paa ingenting. Er et felt tomt, siger pluginet det
-// til spilleren i stedet for at finde paa en vaerdi. Se catalog/SKEMA.md.
+// The manifest must GUESS at nothing. Where a field is empty, the plugin says
+// so to the player instead of inventing a value. See catalog/SCHEMA.md.
 public class GenericEmulatorPlugin : EmulatorPlugin
 {
     protected readonly GameManifest Manifest;
 
-    // Manifestet ligger INDE i assemblyen, ikke ved siden af den. pack_plugin.py
-    // hvidlister med vilje kun assembly + deps + plugin.json - en loes game.json
-    // ville aldrig naa med i pakken, og pluginet ville starte uden at kunne finde
-    // sig selv. Som embedded resource kan de to ikke komme fra hinanden.
+    // The manifest lives INSIDE the assembly, not beside it. pack_plugin.py
+    // deliberately whitelists only assembly + deps + plugin.json, so a loose
+    // game.json would never reach the package and the plugin would start
+    // unable to find itself. As an embedded resource the two cannot be parted.
     public GenericEmulatorPlugin()
     {
         var asm = GetType().Assembly;
@@ -29,7 +29,7 @@ public class GenericEmulatorPlugin : EmulatorPlugin
         if (name is null)
             throw new InvalidOperationException(
                 $"{asm.GetName().Name} has no embedded game.json. The plugin was "
-              + "built without its manifest - see catalog/SKEMA.md.");
+              + "built without its manifest - see catalog/SCHEMA.md.");
 
         using var s = asm.GetManifestResourceStream(name)!;
         using var r = new StreamReader(s);
@@ -44,15 +44,15 @@ public class GenericEmulatorPlugin : EmulatorPlugin
 
     protected override string RomSystem     => Manifest.Platform;
     protected override string LuaScriptName => "bizhawk_ap_connector.lua";
-    // LuaModuleName arves: basisklassens default er GameId, som ER Manifest.Id.
+    // LuaModuleName is inherited: the base default is GameId, which IS Manifest.Id.
 
-    /// ⛔ Bliver foerst true naar RAM-kortet for netop dette spil er maalt i
-    /// spillet. Indtil da advarer launcheren ved start, saa ingen sidder en
-    /// time i en multiworld uden at der kommer checks.
+    /// Only becomes true once the RAM map for THIS game has been measured
+    /// in-game. Until then the launcher warns at launch, so nobody sits in a
+    /// multiworld for an hour with no checks arriving.
     public override bool ChecksImplemented => Manifest.ChecksVerified;
 
-    /// Kun spil hvor vi HAR en verificeret hash kan afvise praecist.
-    /// Mangler den, faar vi kun stoerrelsen - og saa siger dialogen det.
+    /// Only a game we HAVE a verified hash for can reject precisely. Without
+    /// one we have size alone -- and then the dialog says so.
     protected override IReadOnlyList<RomIdentity> AcceptableBaseRoms
         => Manifest.Rom is { Size: > 0 } r
             ? new[] { new RomIdentity(r.Size, r.Md5, r.Description) }
@@ -71,7 +71,7 @@ public class GenericEmulatorPlugin : EmulatorPlugin
                                   Manifest.Rom?.Md5, WrongVersionPresent: false,
                                   BuildRomFilter());
     }
-    // GameBadges arves ogsaa - basisklassens "ROM needed" er praecis rigtig her.
+    // GameBadges is inherited too -- the base "ROM needed" is exactly right here.
 }
 
 public sealed record RomSpecManifest(string Description, long Size, string? Md5);

@@ -6,44 +6,45 @@
   "version": "1.0.0",
   "_verified": "2026-08-17",
   "ap_world_name": "Mario & Luigi Superstar Saga",
-  "_ap_world_name_source": "bekraeftet ordret mod spillelisten paa archipelago.gg/games (17-08-2026); stemte overens med tutorial-adressen",
+  "_ap_world_name_source": "confirmed word for word against the game list on archipelago.gg/games (2026-08-17); matched the tutorial URL",
   "description": "The Beanbean Kingdom as a multiworld. Bros. moves, gear and key items are shuffled across the session.",
-  "_description_source": "skrevet af os ud fra spillets struktur - ingen tekst kopieret fra spillet",
+  "_description_source": "written by us from the structure of the game - no text copied from the game itself",
   "checks_verified": false,
-  "_checks_verified_note": "⛔ Bliver foerst true naar RAM-kortet er MAALT i spillet. Indtil da advarer London ved start.",
-  "requires": "egen_fil",
-  "_requires_source": "GBA-titel - spillet ligger paa en kassette spilleren ejer",
+  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Until then London warns at launch, so nobody sits in a multiworld wondering why no checks arrive.",
+  "requires": "own_copy",
+  "_requires_source": "GBA title - the game lives on a cartridge the player owns",
   "rom": {
     "description": "A US copy of Mario & Luigi: Superstar Saga",
-    "_description_source": "opsaetningsvejledningen, ordret",
+    "_description_source": "archipelago.gg setup guide, word for word",
     "md5": null,
     "size": null,
-    "_hash_note": "⚠ Vejledningen angiver INGEN checksum. Faelles for hele GBA-gruppen - se catalog/GRUPPE_GBA.md. Pluginet falder tilbage til at advare i stedet for at afvise, og siger det ligeud."
+    "_hash_note": "The setup guide states NO checksum. This is true for the whole GBA group - see catalog/GROUP_GBA.md. The plugin falls back to warning instead of rejecting, and says so plainly."
   },
   "emulator": {
     "name": "BizHawk",
     "min_version": "2.9.1",
-    "_source": "opsaetningsvejledningen: \"Version 2.9.1 is recommended.\""
+    "_source": "archipelago.gg setup guide: \"Version 2.9.1 is recommended.\""
   },
   "client": {
     "name": "Archipelago's BizHawk Client",
     "lua": "data/lua/connector_bizhawk_generic.lua",
-    "_source": "opsaetningsvejledningen"
+    "_source": "archipelago.gg setup guide"
   },
   "apworld": {
     "bundled": true,
     "url": null,
-    "_source": "spillisten: \"Bundled with Archipelago\""
+    "_source": "game list: \"Bundled with Archipelago\""
   },
   "patch": {
     "extension": ".apmlss",
     "needs_vanilla_rom": true,
-    "_source": "opsaetningsvejledningen"
+    "produced_by": "Archipelago Launcher - Open Patch",
+    "_source": "archipelago.gg setup guide"
   },
-  "_steps_source": "archipelago.gg opsaetningsvejledning",
+  "_steps_source": "archipelago.gg setup guide",
   "london_can_remove": [
-    "launcheren finder selv patchen for seeden",
-    "launcheren kender emulatorens sti og starter EmuHawk med --lua=",
-    "launcheren ejer forbindelsen, spilleren taster hverken adresse eller port"
+    "the launcher finds the patch for the seed itself",
+    "the launcher knows the emulator path and starts EmuHawk with --lua=",
+    "the launcher owns the connection - the player types neither address nor port"
   ]
 }
