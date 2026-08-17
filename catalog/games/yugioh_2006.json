@@ -6,45 +6,42 @@
   "version": "1.0.0",
   "_verified": "2026-08-17",
   "ap_world_name": "Yu-Gi-Oh! 2006",
-  "_ap_world_name_source": "confirmed word for word against the game list on archipelago.gg/games (2026-08-17); matched the tutorial URL",
+  "_ap_world_name_source": "world source: ArchipelagoMW/Archipelago worlds/yugioh06 (upstream), read from the world's own code -- the world's own `game` value",
   "description": "The 2006 World Championship as a multiworld. Cards, packs and campaign progress are shuffled across the session.",
   "_description_source": "written by us from the structure of the game - no text copied from the game itself",
   "checks_verified": false,
-  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Until then London warns at launch, so nobody sits in a multiworld wondering why no checks arrive.",
+  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Until then London warns at launch.",
   "requires": "own_copy",
   "_requires_source": "GBA title - the game lives on a cartridge the player owns",
   "rom": {
-    "description": "A US or European Yu-Gi-Oh! Ultimate Masters: World Championship Tournament 2006 Rom",
-    "_description_source": "archipelago.gg setup guide, word for word",
-    "md5": null,
+    "description": "A US Yu-Gi-Oh! Ultimate Masters: World Championship Tournament 2006 ROM",
+    "_description_source": "world source: ArchipelagoMW/Archipelago worlds/yugioh06 (upstream), read from the world's own code",
+    "md5": [
+      "b8a7c976b28172995fe9e465d654297a"
+    ],
     "size": null,
-    "_hash_note": "The setup guide states NO checksum. This is true for the whole GBA group - see catalog/GROUP_GBA.md. The plugin falls back to warning instead of rejecting, and says so plainly."
+    "_size_note": "Not measured. London reads size 0 as 'unknown' and matches on MD5 alone, which is the stronger check.",
+    "_md5_source": "world source: ArchipelagoMW/Archipelago worlds/yugioh06 (upstream), read from the world's own code -- the accepted-dump list the world validates the player's file against"
   },
   "emulator": {
     "name": "BizHawk",
     "min_version": "2.7.0",
-    "_source": "archipelago.gg setup guide: \"Version 2.7.0 and later are supported.\""
+    "_source": "setup guide: \"Version 2.7.0 and later are supported.\""
   },
   "client": {
     "name": "Archipelago's BizHawk Client",
     "lua": "data/lua/connector_bizhawk_generic.lua",
-    "_source": "archipelago.gg setup guide"
+    "_source": "world source: ArchipelagoMW/Archipelago worlds/yugioh06 (upstream), read from the world's own code"
   },
   "apworld": {
     "bundled": true,
     "url": null,
-    "_source": "game list: \"Bundled with Archipelago\""
+    "_source": "game list plus the world's own repository"
   },
   "patch": {
     "extension": ".apygo06",
     "needs_vanilla_rom": true,
-    "produced_by": "Archipelago Launcher - Open Patch",
-    "_source": "archipelago.gg setup guide"
+    "_source": "world source: ArchipelagoMW/Archipelago worlds/yugioh06 (upstream), read from the world's own code -- patch_file_ending / patch_suffix"
   },
-  "_steps_source": "archipelago.gg setup guide",
-  "london_can_remove": [
-    "the launcher finds the patch for the seed itself",
-    "the launcher knows the emulator path and starts EmuHawk with --lua=",
-    "the launcher owns the connection - the player types neither address nor port"
-  ]
+  "_note": "rom.py also defines a European hash (020411d3b08f5639eb8cb878283f84bf) but sets hash = MD5America, so only the US dump is accepted. The setup guide says 'US or European' -- the CODE is narrower, and the code runs."
 }

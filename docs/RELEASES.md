@@ -88,11 +88,20 @@ checked without installing it.
 
 ## The order for a group
 
+0. **Read the world's own code, not its setup guide.** Every Archipelago world
+   declares the dumps it accepts and the patch extension it produces in its own
+   Python (`rom.py` / `client.py` / `__init__.py`). The guide is a summary that
+   can be stale or wrong — Harmony of Dissonance's guide states Circle of the
+   Moon's patch extension — and the code is what runs. For a fork, diff its
+   `worlds/` against upstream's to find which world it adds; keyword guessing
+   matched *Yacht Dice* when we wanted *Dungeon Dice Monsters*.
 1. **Map** every game in the group — a manifest with a source on every field,
    see `catalog/SCHEMA.md`
 2. **Double-check the group as a whole**: do two games point at the same
    client? do they need the same emulator version? is anyone missing a hash?
-3. **Build** the plugin for each game and run PluginCheck on every one
+3. **Build** the plugin for each game and run PluginCheck on every one, then
+   `tools/rom_gate_test.py` to prove the ROM gate still accepts the right file
+   and refuses everything else
 4. **Checksums** with `tools/checksums.py` — never by hand. Writing the file
    with PowerShell produced CRLF line endings, which made `sha256sum -c`
    report "No such file or directory" for a file sitting right beside it. A

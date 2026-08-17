@@ -1,0 +1,47 @@
+{
+  "id": "fire_emblem_sacred_stones",
+  "display_name": "Fire Emblem: The Sacred Stones",
+  "subtitle": "BizHawk",
+  "platform": "GBA",
+  "version": "1.0.0",
+  "_verified": "2026-08-17",
+  "ap_world_name": "Fire Emblem Sacred Stones",
+  "_ap_world_name_source": "world source: CT075/Archipelago @ fe8/stable, worlds/fe8 -- read from the world's own code -- the world's own `game` value",
+  "description": "Magvel as a multiworld. Weapons, promotion items and recruitment are shuffled across the session.",
+  "_description_source": "written by us from the structure of the game - no text copied from the game itself",
+  "checks_verified": false,
+  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Until then London warns at launch.",
+  "requires": "own_copy",
+  "_requires_source": "GBA title - the game lives on a cartridge the player owns",
+  "rom": {
+    "description": "An English Fire Emblem: The Sacred Stones ROM",
+    "_description_source": "world source: CT075/Archipelago @ fe8/stable, worlds/fe8 -- read from the world's own code",
+    "md5": [
+      "005531fef9efbb642095fb8f64645236"
+    ],
+    "size": null,
+    "_size_note": "Not measured. London reads size 0 as 'unknown' and matches on MD5 alone, which is the stronger check.",
+    "_md5_source": "world source: CT075/Archipelago @ fe8/stable, worlds/fe8 -- read from the world's own code -- the accepted-dump list the world validates the player's file against"
+  },
+  "emulator": {
+    "name": "BizHawk",
+    "min_version": "2.8",
+    "_source": "setup guide: \"BizHawk 2.8 or later\""
+  },
+  "client": {
+    "name": "Archipelago's BizHawk Client",
+    "lua": "data/lua/connector_bizhawk_generic.lua",
+    "_source": "world source: CT075/Archipelago @ fe8/stable, worlds/fe8 -- read from the world's own code"
+  },
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/CT075/Archipelago/releases",
+    "_source": "game list plus the world's own repository"
+  },
+  "patch": {
+    "extension": ".apfe8",
+    "needs_vanilla_rom": true,
+    "_source": "world source: CT075/Archipelago @ fe8/stable, worlds/fe8 -- read from the world's own code -- patch_file_ending / patch_suffix"
+  },
+  "_note": "Lives on the branch 'fe8/stable', not on main."
+}

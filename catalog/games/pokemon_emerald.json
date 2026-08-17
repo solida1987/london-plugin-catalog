@@ -1,53 +1,46 @@
 {
   "id": "pokemon_emerald",
-  "display_name": "Pokémon Emerald",
+  "display_name": "Pokemon Emerald",
   "subtitle": "BizHawk",
   "platform": "GBA",
   "version": "1.0.0",
   "_verified": "2026-08-17",
   "ap_world_name": "Pokemon Emerald",
-  "_ap_world_name_source": "confirmed word for word against the game list on archipelago.gg/games (2026-08-17); matched the tutorial URL",
+  "_ap_world_name_source": "world source: ArchipelagoMW/Archipelago worlds/pokemon_emerald (upstream), read from the world's own code -- the world's own `game` value",
   "description": "The Hoenn region as a multiworld. Badges, HM moves and key items are shuffled across the whole session, so progress through Hoenn depends on what the other players find.",
   "_description_source": "written by us from the structure of the game - no text copied from the game itself",
   "checks_verified": false,
-  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Until then London warns at launch, so nobody sits in a multiworld wondering why no checks arrive.",
+  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Until then London warns at launch.",
   "requires": "own_copy",
   "_requires_source": "GBA title - the game lives on a cartridge the player owns",
   "rom": {
-    "description": "An English Pokémon Emerald ROM",
-    "_description_source": "archipelago.gg setup guide, word for word",
-    "md5": null,
+    "description": "An English Pokemon Emerald ROM",
+    "_description_source": "world source: ArchipelagoMW/Archipelago worlds/pokemon_emerald (upstream), read from the world's own code",
+    "md5": [
+      "605b89b67018abcea91e693a4dd25be3"
+    ],
     "size": null,
-    "_hash_note": "The guide states NO checksum for Emerald - unlike FireRed/LeafGreen, where SHA-1 for v1.0 and v1.1 is given. Stays empty until we can measure a dump and cross-check it against BizHawk's gamedb. Meanwhile the plugin falls back to a size check and says so plainly.",
-    "dump_name_in_gamedb": "Pokemon - Emerald Version (USA, Europe)",
-    "_gamedb_source": "tools/BizHawk-2.11.1/gamedb/gamedb_gba.txt"
+    "_size_note": "Not measured. London reads size 0 as 'unknown' and matches on MD5 alone, which is the stronger check.",
+    "_md5_source": "world source: ArchipelagoMW/Archipelago worlds/pokemon_emerald (upstream), read from the world's own code -- the accepted-dump list the world validates the player's file against"
   },
   "emulator": {
     "name": "BizHawk",
     "min_version": "2.7",
-    "_source": "archipelago.gg setup guide: \"BizHawk 2.7 or later\""
+    "_source": "setup guide: \"BizHawk 2.7 or later\""
   },
   "client": {
     "name": "Archipelago's BizHawk Client",
     "lua": "data/lua/connector_bizhawk_generic.lua",
-    "_source": "archipelago.gg setup guide"
+    "_source": "world source: ArchipelagoMW/Archipelago worlds/pokemon_emerald (upstream), read from the world's own code"
   },
   "apworld": {
     "bundled": true,
     "url": null,
-    "_source": "game list: \"Bundled with Archipelago\""
+    "_source": "game list plus the world's own repository"
   },
   "patch": {
     "extension": ".apemerald",
     "needs_vanilla_rom": true,
-    "produced_by": "Archipelago Launcher - Open Patch",
-    "_source": "archipelago.gg setup guide"
-  },
-  "_steps_source": "archipelago.gg setup guide",
-  "london_can_remove": [
-    "the launcher finds the patch for the seed itself",
-    "the launcher knows the emulator path and starts EmuHawk with --lua=",
-    "the launcher owns the connection - the player types neither address nor port"
-  ],
-  "_london_note": "Twelve steps become two: point at your ROM, press Play."
+    "_source": "world source: ArchipelagoMW/Archipelago worlds/pokemon_emerald (upstream), read from the world's own code -- patch_file_ending / patch_suffix"
+  }
 }
