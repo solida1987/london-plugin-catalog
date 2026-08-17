@@ -49,5 +49,7 @@
   },
   "_note": "Four accepted dumps. The setup guide names the Legacy Collection explicitly as an alternative to a cartridge dump.",
   "lua_module": "mm2",
-  "_lua_module_source": "filename under Multiworld-Launcher/Plugins/Scripts/games/ — the modules predate this catalogue and use their own short names"
+  "_lua_module_source": "filename under Multiworld-Launcher/Plugins/Scripts/games/ — the modules predate this catalogue and use their own short names",
+  "patch_extension": "none",
+  "_source_patch_extension": "Local apworld scanned 17/8: no APPatchExtension in mm2-verdenen."
 }

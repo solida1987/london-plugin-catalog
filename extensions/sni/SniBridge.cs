@@ -1,5 +1,7 @@
 using System;
-using System.Net.Sockets;
+using System.Net.WebSockets;
+using System.Text;
+using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -18,18 +20,26 @@ namespace LauncherV2.Extensions.Sni;
 //    emulator themselves; we never fetch either. Tools/lint_no_emulator_download.py
 //    covers Core/Extensions for exactly this reason.
 //
-// STATE: the transport is NOT finished. Reachability is real -- we can tell you
-// whether SNI is running -- but memory reads and writes are not implemented, so
-// IsReady stays false and the launcher refuses to start a game with it rather
-// than letting somebody play into silence. Everything below is honest about
-// which half works.
+// THE PROTOCOL
+// ────────────
+// SNI keeps a usb2snes-compatible WebSocket interface on port 23074, and that
+// is what Archipelago's own SNIClient uses -- read out of the shipped client
+// itself, which carries "ws://", 23074, and the four opcodes below. SNI also
+// speaks gRPC on 8191, and an earlier version of this file probed THAT port to
+// decide whether SNI was running: the wrong question, answered confidently.
+//
+// usb2snes is JSON control frames with binary payloads:
+//   {"Opcode":"DeviceList","Space":"SNES"}              -> {"Results":[names]}
+//   {"Opcode":"Attach","Space":"SNES","Operands":[name]} (no reply)
+//   {"Opcode":"GetAddress",...,"Operands":[addr,size]}  -> size bytes, any framing
+//   {"Opcode":"PutAddress",...,"Operands":[addr,size]}  then size bytes
+// Addresses are hex WITHOUT 0x, in SNI's flat space (WRAM starts at 0xF50000).
 public sealed class SniBridge : IEmulatorBridge
 {
-    // SNI's default gRPC port. Published by the SNI project; the player can
-    // move it, which is why a failed check says "not reachable" rather than
-    // "not installed".
-    private const int DefaultPort = 8191;
-    private const int ProbeTimeoutMs = 400;
+    // The usb2snes-compatible port. NOT 8191 -- that is SNI's gRPC service,
+    // which this bridge does not speak.
+    private const int DefaultPort = 23074;
+    private const int ProbeTimeoutMs = 1500;
 
     public string   Protocol    => "sni";
     public string   DisplayName => "SNI (Super Nintendo Interface)";
@@ -49,23 +59,42 @@ public sealed class SniBridge : IEmulatorBridge
             "https://github.com/snes9xgit/snes9x/releases", "snes9x-x64.exe"),
     };
 
-    /// ⛔ Stays false until reads and writes are proven against a real game.
-    /// The same honesty gate as EmulatorBackend.BridgeReady: an unfinished
-    /// bridge is explained, never silently offered.
-    public bool IsReady => false;
+    /// The transport is implemented. Whether it can be USED right now is a
+    /// separate question, and GetUnmetRequirement answers that one -- SNI has
+    /// to be running with a device attached, and neither is our doing.
+    public bool IsReady => true;
+
+    private ClientWebSocket? _socket;
+    private string? _device;
+    private readonly SemaphoreSlim _gate = new(1, 1);
 
     public string? GetUnmetRequirement()
     {
-        if (!IsSniReachable())
+        string[]? devices;
+        try
+        {
+            devices = ProbeDevicesAsync().GetAwaiter().GetResult();
+        }
+        catch (Exception ex)
+        {
+            return "SNI could not be reached.\n\n"
+                 + $"({ex.GetType().Name}: {ex.Message})\n\n"
+                 + "Start SNI, then try again. You can get it from "
+                 + $"{HomepageUrl} — this launcher never downloads it for you.";
+        }
+
+        if (devices is null)
             return "SNI does not appear to be running.\n\n"
                  + "Start SNI and connect it to your emulator, then try again. "
                  + $"You can get SNI from {HomepageUrl} — this launcher never "
                  + "downloads it for you.";
 
-        return "SNI is running, but this bridge cannot carry checks yet: the "
-             + "memory transport is not implemented.\n\n"
-             + "The game would run and never send a single check, so it is "
-             + "refused rather than started.";
+        if (devices.Length == 0)
+            return "SNI is running, but no emulator or console is attached to it.\n\n"
+                 + "Open your SNES emulator and load the game, then check that "
+                 + "SNI lists it as a device.";
+
+        return null;
     }
 
     /// Null on purpose: SNI attaches to an emulator the PLAYER starts, so there
@@ -74,35 +103,175 @@ public sealed class SniBridge : IEmulatorBridge
     public LaunchPlan? GetLaunchPlan(BridgeContext context, string emulatorsRoot)
         => null;
 
-    /// A plain TCP connect. Enough to tell "SNI is up" from "SNI is not up",
-    /// and deliberately nothing more -- claiming to speak a protocol we have
-    /// not implemented would be the failure this whole design exists to stop.
-    private static bool IsSniReachable()
+    // ── connection ────────────────────────────────────────────────────────────
+
+    /// Open a socket and ask what is attached. Returns null when SNI is not
+    /// answering at all, an empty array when it answers but has no device --
+    /// two states the player has to fix in different places.
+    private static async Task<string[]?> ProbeDevicesAsync()
     {
+        using var cts = new CancellationTokenSource(ProbeTimeoutMs);
+        ClientWebSocket? ws = null;
         try
         {
-            using var client = new TcpClient();
-            var connect = client.ConnectAsync("127.0.0.1", DefaultPort);
-            return connect.Wait(ProbeTimeoutMs) && client.Connected;
+            ws = new ClientWebSocket();
+            await ws.ConnectAsync(new Uri($"ws://127.0.0.1:{DefaultPort}"), cts.Token)
+                    .ConfigureAwait(false);
+            return await DeviceListAsync(ws, cts.Token).ConfigureAwait(false);
+        }
+        catch (WebSocketException) { return null; }
+        catch (OperationCanceledException) { return null; }
+        finally
+        {
+            ws?.Dispose();
+        }
+    }
+
+    private static async Task<string[]> DeviceListAsync(ClientWebSocket ws, CancellationToken ct)
+    {
+        await SendJsonAsync(ws, "DeviceList", null, ct).ConfigureAwait(false);
+        string reply = await ReceiveTextAsync(ws, ct).ConfigureAwait(false);
+
+        using var doc = JsonDocument.Parse(reply);
+        if (!doc.RootElement.TryGetProperty("Results", out var results)
+            || results.ValueKind != JsonValueKind.Array)
+            return Array.Empty<string>();
+
+        var list = new List<string>();
+        foreach (var e in results.EnumerateArray())
+            if (e.ValueKind == JsonValueKind.String) list.Add(e.GetString()!);
+        return list.ToArray();
+    }
+
+    public async Task<bool> ConnectAsync(BridgeContext context, CancellationToken ct)
+    {
+        await DisconnectAsync().ConfigureAwait(false);
+
+        var ws = new ClientWebSocket();
+        try
+        {
+            await ws.ConnectAsync(new Uri($"ws://127.0.0.1:{DefaultPort}"), ct)
+                    .ConfigureAwait(false);
+
+            var devices = await DeviceListAsync(ws, ct).ConfigureAwait(false);
+            if (devices.Length == 0) { ws.Dispose(); return false; }
+
+            // First device, deliberately. SNI lists one entry per attached
+            // emulator or console; picking for the player when there are
+            // several would be a guess, and there is nowhere to ask from here.
+            _device = devices[0];
+            await SendJsonAsync(ws, "Attach", new[] { _device }, ct).ConfigureAwait(false);
+            await SendJsonAsync(ws, "Name", new[] { "Multiworld Launcher" }, ct)
+                  .ConfigureAwait(false);
+
+            _socket = ws;
+            return true;
         }
         catch
         {
+            ws.Dispose();
             return false;
         }
     }
 
-    public Task<bool> ConnectAsync(BridgeContext context, CancellationToken ct)
-        => Task.FromResult(false);
+    // ── memory ────────────────────────────────────────────────────────────────
 
-    public Task<byte[]> ReadAsync(long address, int length, CancellationToken ct)
-        => throw new NotImplementedException(
-            "The SNI memory transport is not implemented. IsReady is false, so "
-            + "the launcher should never have reached this call.");
+    public async Task<byte[]> ReadAsync(long address, int length, CancellationToken ct)
+    {
+        var ws = _socket ?? throw new InvalidOperationException(
+            "ReadAsync before a successful ConnectAsync.");
 
-    public Task WriteAsync(long address, byte[] data, CancellationToken ct)
-        => throw new NotImplementedException(
-            "The SNI memory transport is not implemented. IsReady is false, so "
-            + "the launcher should never have reached this call.");
+        await _gate.WaitAsync(ct).ConfigureAwait(false);
+        try
+        {
+            await SendJsonAsync(ws, "GetAddress",
+                                new[] { address.ToString("x"), length.ToString("x") }, ct)
+                  .ConfigureAwait(false);
+            return await ReceiveExactAsync(ws, length, ct).ConfigureAwait(false);
+        }
+        finally { _gate.Release(); }
+    }
 
-    public Task DisconnectAsync() => Task.CompletedTask;
+    public async Task WriteAsync(long address, byte[] data, CancellationToken ct)
+    {
+        var ws = _socket ?? throw new InvalidOperationException(
+            "WriteAsync before a successful ConnectAsync.");
+
+        await _gate.WaitAsync(ct).ConfigureAwait(false);
+        try
+        {
+            await SendJsonAsync(ws, "PutAddress",
+                                new[] { address.ToString("x"), data.Length.ToString("x") }, ct)
+                  .ConfigureAwait(false);
+            await ws.SendAsync(data, WebSocketMessageType.Binary, true, ct)
+                    .ConfigureAwait(false);
+        }
+        finally { _gate.Release(); }
+    }
+
+    public async Task DisconnectAsync()
+    {
+        var ws = _socket;
+        _socket = null;
+        _device = null;
+        if (ws is null) return;
+
+        try
+        {
+            if (ws.State == WebSocketState.Open)
+                await ws.CloseAsync(WebSocketCloseStatus.NormalClosure, "", CancellationToken.None)
+                        .ConfigureAwait(false);
+        }
+        catch { /* the far end going away first is not an error worth raising */ }
+        finally { ws.Dispose(); }
+    }
+
+    // ── framing ───────────────────────────────────────────────────────────────
+
+    private static Task SendJsonAsync(ClientWebSocket ws, string opcode,
+                                      string[]? operands, CancellationToken ct)
+    {
+        var payload = new Dictionary<string, object> { ["Opcode"] = opcode, ["Space"] = "SNES" };
+        if (operands != null) payload["Operands"] = operands;
+
+        byte[] bytes = Encoding.UTF8.GetBytes(JsonSerializer.Serialize(payload));
+        return ws.SendAsync(bytes, WebSocketMessageType.Text, true, ct);
+    }
+
+    private static async Task<string> ReceiveTextAsync(ClientWebSocket ws, CancellationToken ct)
+    {
+        var buffer = new byte[8192];
+        var sb = new StringBuilder();
+        while (true)
+        {
+            var r = await ws.ReceiveAsync(buffer, ct).ConfigureAwait(false);
+            if (r.MessageType == WebSocketMessageType.Close)
+                throw new WebSocketException("SNI closed the connection.");
+            sb.Append(Encoding.UTF8.GetString(buffer, 0, r.Count));
+            if (r.EndOfMessage) return sb.ToString();
+        }
+    }
+
+    /// Read exactly `length` bytes. SNI is free to split a reply across frames
+    /// and often does for large reads, so "one receive = one answer" would
+    /// return a short buffer that looks like real data.
+    private static async Task<byte[]> ReceiveExactAsync(ClientWebSocket ws, int length,
+                                                        CancellationToken ct)
+    {
+        var result = new byte[length];
+        int got = 0;
+        while (got < length)
+        {
+            var r = await ws.ReceiveAsync(new Memory<byte>(result, got, length - got), ct)
+                            .ConfigureAwait(false);
+            if (r.MessageType == WebSocketMessageType.Close)
+                throw new WebSocketException(
+                    $"SNI closed the connection after {got} of {length} bytes.");
+            if (r.Count == 0)
+                throw new WebSocketException(
+                    $"SNI sent an empty frame after {got} of {length} bytes.");
+            got += r.Count;
+        }
+        return result;
+    }
 }

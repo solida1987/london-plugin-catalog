@@ -43,5 +43,6 @@
     "needs_vanilla_rom": true,
     "_source": "world source: JustinMarshall98/Archipelago @ main, worlds/yugiohddm -- read from the world's own code -- patch_file_ending / patch_suffix"
   },
-  "_note": "The AP game name comes from the world's own archipelago.json."
+  "_note": "The AP game name comes from the world's own archipelago.json.",
+  "patch_extension": "unaudited"
 }

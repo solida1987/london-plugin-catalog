@@ -125,3 +125,24 @@ emulator, and never connect — no error, just a player waiting. So the build
 outside this set. A value it does not recognise must never fall through to a
 default: if the name were ever changed and one caller missed, the plugin would
 quietly stop asking the player for their own file.
+
+## patch_extension (required)
+
+Whether the game's world overrides patch steps in Python (`APPatchExtension`
+in the world's `rom.py`). The patch container does not reveal this — the
+manifest looks ordinary either way — so it must be answered by READING the
+world source, once, when the manifest is written:
+
+| value | meaning |
+|---|---|
+| `none` | world audited; no extension. Generic steps are correct. |
+| `replicated` | extension REUSES generic step names with changed behaviour; the logic is replicated in `Core/Patching/ApPatch.cs` with the source cited. |
+| `refused` | extension adds NEW step names; the launcher's patcher refuses them loudly and the game plays unpatched. |
+| `unaudited` | world source not locally available; flagged in every build until audited. |
+
+Why this exists: Pokémon FRLG ships rev0 AND rev1 patch files in one container
+and switches on the ROM's revision byte inside a Python override of
+`apply_bsdiff4`. Generic code applies the rev0 patch to a rev1 ROM — the
+checksum guard passes (rev1 is an accepted dump) and the output is silently
+corrupt. The reused-generic-name class is the dangerous one; new step names
+fail loudly on their own.

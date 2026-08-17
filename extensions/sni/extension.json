@@ -3,7 +3,7 @@
   "extensionId": "sni_bridge",
   "displayName": "SNI (Super Nintendo Interface)",
   "protocol": "sni",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Solida Games",
   "authorContact": "https://github.com/solida1987/london-plugin-catalog",
   "assembly": "CatalogSniBridge.dll",

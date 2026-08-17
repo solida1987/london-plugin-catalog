@@ -9,7 +9,7 @@
   "_ap_world_name_source": "world source: ArchipelagoMW/Archipelago worlds/pokemon_emerald (upstream), read from the world's own code -- the world's own `game` value",
   "description": "The Hoenn region as a multiworld. Badges, HM moves and key items are shuffled across the whole session, so progress through Hoenn depends on what the other players find.",
   "_description_source": "written by us from the structure of the game - no text copied from the game itself",
-  "checks_verified": false,
+  "checks_verified": true,
   "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Until then London warns at launch.",
   "requires": "own_copy",
   "_requires_source": "GBA title - the game lives on a cartridge the player owns",
@@ -44,5 +44,7 @@
     "_source": "world source: ArchipelagoMW/Archipelago worlds/pokemon_emerald (upstream), read from the world's own code -- patch_file_ending / patch_suffix"
   },
   "lua_module": "pokemon_emerald",
-  "_lua_module_source": "filename under Multiworld-Launcher/Plugins/Scripts/games/ — the modules predate this catalogue and use their own short names"
+  "_lua_module_source": "filename under Multiworld-Launcher/Plugins/Scripts/games/ — the modules predate this catalogue and use their own short names",
+  "_source_checks_verified": "Proven live 2026-08-17: seed 06266467730091096620, slot LondonTest1. Petalburg Woods - Item Southwest sent 'Ice Heal' to LondonTest2 and the server routed it; launcher Items tab and Progression (1/194) both recorded it.",
+  "patch_extension": "none"
 }

@@ -1,0 +1,27 @@
+{
+  "id": "pokemon_crystal",
+  "display_name": "Pokemon Crystal",
+  "subtitle": "Johto badges, wild encounters and items across the multiworld",
+  "platform": "GBC",
+  "ap_world_name": "Pokemon Crystal",
+  "description": "Randomizes Johto: badges, items, trainers and wild encounters join the multiworld. Requires your own Pokemon Crystal ROM (US 1.0 or 1.1); the seed's .apcrystal patch is applied to it.",
+  "checks_verified": false,
+  "lua_module": "pokemon_crystal",
+  "client": {
+    "protocol": "bizhawk",
+    "_source": "pokemon_crystal/client.py subclasses BizHawkClient (local apworld, read 17/8)"
+  },
+  "requires": "own_copy",
+  "patch_extension": "replicated",
+  "_source_patch_extension": "pokemon_crystal/rom.py: apply_bsdiff4 dispatches on AP_ROM_Revision (data.json rom_addresses=332) to basepatch11.bsdiff4; apply_overrides reads host.yaml option_overrides and is identity without them. Replicated in Core/Patching/ApPatch.cs 17/8.",
+  "rom": {
+    "description": "Pokemon Crystal (USA) — 1.0 or 1.1 dump",
+    "size": 2097152,
+    "md5": [
+      "9f2922b235a5eeb78d65594e82ef5dde",
+      "301899b8087289a6436b0a241fbbb474"
+    ],
+    "_source": "CRYSTAL_1_0_HASH / CRYSTAL_1_1_HASH in pokemon_crystal/rom.py"
+  },
+  "version": "1.0.0"
+}

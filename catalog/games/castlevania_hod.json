@@ -44,5 +44,6 @@
     "needs_vanilla_rom": true,
     "_source": "world source: LiquidCat64/LiquidCatipelago @ CVHoDis, worlds/cvhodis -- read from the world's own code -- patch_file_ending / patch_suffix"
   },
-  "_note": "The setup guide states the patch extension as '.apcvcotm', which is Circle of the Moon's. The same author wrote both worlds, so this looks like a copy-paste slip in their documentation. The CODE says '.apcvhodis' in both rom.py and client.py, and the code is what runs."
+  "_note": "The setup guide states the patch extension as '.apcvcotm', which is Circle of the Moon's. The same author wrote both worlds, so this looks like a copy-paste slip in their documentation. The CODE says '.apcvhodis' in both rom.py and client.py, and the code is what runs.",
+  "patch_extension": "unaudited"
 }
