@@ -32,7 +32,8 @@
   "client": {
     "name": "Archipelago's BizHawk Client",
     "lua": "data/lua/connector_bizhawk_generic.lua",
-    "_source": "world source: StalledStorm/ArchipelagoMine @ metroidfusion, worlds/metroidfusion -- read from the world's own code"
+    "_source": "the world's client subclasses BizHawkClient",
+    "protocol": "bizhawk"
   },
   "apworld": {
     "bundled": false,
