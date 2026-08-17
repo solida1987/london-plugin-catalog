@@ -49,6 +49,40 @@ internal static class Program
             + (why is null ? "(none - it can run)"
                            : "\n      " + why.Replace("\n", "\n      ")));
 
+        // Installing a bridge must make its emulator folders and notes appear,
+        // so the player is never left guessing where a newly supported emulator
+        // goes. This is the mechanism, exercised rather than assumed.
+        LauncherV2.Plugins.Emulated.EmulatorPlugin.EnsureEmulatorFolders();
+        string emus = Path.Combine(AppContext.BaseDirectory, "Emulators");
+        Console.WriteLine($"  emulator folders in {emus}:");
+        if (Directory.Exists(emus))
+            foreach (string d in Directory.GetDirectories(emus).OrderBy(x => x))
+            {
+                string[] notes = Directory.GetFiles(d, "PUT * HERE.txt");
+                Console.WriteLine($"    - {Path.GetFileName(d),-12} "
+                    + (notes.Length > 0
+                        ? "note: " + Path.GetFileName(notes[0])
+                        : "NO NOTE"));
+            }
+
+        foreach (var e in BridgeRegistry.Installed)
+            foreach (var need in e.Bridge.Emulators)
+            {
+                string want = Path.Combine(emus, need.FolderName);
+                if (!need.IsSafeFolderName)
+                {
+                    Console.WriteLine($"  OK: refused unsafe folder name "
+                                    + $"\"{need.FolderName}\"");
+                    continue;
+                }
+                if (!Directory.Exists(want))
+                {
+                    Console.WriteLine($"  FAIL: {need.DisplayName} asked for "
+                                    + $"{need.FolderName}\\ and it was not created");
+                    return 1;
+                }
+            }
+
         // A bridge that is installed but not ready MUST NOT be servable, and
         // MUST produce an explanation. Silence here would be the bug.
         var found = BridgeRegistry.Find(protocol);
