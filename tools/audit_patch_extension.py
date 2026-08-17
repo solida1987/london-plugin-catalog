@@ -45,6 +45,11 @@ AP = Path(os.environ.get("ARCHIPELAGO_DIR", r"C:\ProgramData\Archipelago"))
 # the two games we already KNEW carry patch extensions.
 WORLD_DIRS = [AP / "lib" / "worlds", AP / "custom_worlds"]
 
+# A world the player has not installed can still be audited: every manifest
+# records where its author publishes it. Point --worlds at a folder of
+# downloaded .apworld files and they are searched first.
+EXTRA_DIR = None
+
 # The step names our own patcher implements. A world that defines a method with
 # one of these names has REDEFINED it -- the dangerous class.
 GENERIC_STEPS = {
@@ -224,7 +229,8 @@ def find_world(m):
     guess = m["ap_world_name"].lower().replace(" ", "").replace("'", "")
     names += [guess, guess.replace(":", ""), m["id"].replace("_", "")]
 
-    for root in WORLD_DIRS:
+    roots = ([EXTRA_DIR] if EXTRA_DIR else []) + WORLD_DIRS
+    for root in roots:
         if not root.exists():
             continue
         for n in [x for x in names if x]:
@@ -242,11 +248,18 @@ def find_world(m):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("games", nargs="*")
+    ap.add_argument("--worlds", metavar="DIR",
+                    help="a folder of .apworld files downloaded from their "
+                         "authors' own releases, searched before the install")
     ap.add_argument("--write", action="store_true",
                     help="update patch_extension in the manifests")
     args = ap.parse_args()
 
-    if not any(d.exists() for d in WORLD_DIRS):
+    global EXTRA_DIR
+    if args.worlds:
+        EXTRA_DIR = Path(args.worlds)
+
+    if not any(d.exists() for d in WORLD_DIRS) and not EXTRA_DIR:
         print("no Archipelago worlds under %s -- set ARCHIPELAGO_DIR" % AP)
         return 1
 

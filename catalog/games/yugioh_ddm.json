@@ -44,5 +44,6 @@
     "_source": "world source: JustinMarshall98/Archipelago @ main, worlds/yugiohddm -- read from the world's own code -- patch_file_ending / patch_suffix"
   },
   "_note": "The AP game name comes from the world's own archipelago.json.",
-  "patch_extension": "unaudited"
+  "patch_extension": "refused",
+  "_patch_extension_source": "read from the compiled world at yugiohddm.apworld: adds new steps ['patch_rom'] in yugiohddm/rom.py:YuGiOhDDMPatchExtension"
 }

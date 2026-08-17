@@ -46,5 +46,6 @@
   "_note": "Lives on the branch 'fe8/stable', not on main.",
   "lua_module": "fe8",
   "_lua_module_source": "filename under Multiworld-Launcher/Plugins/Scripts/games/ — the modules predate this catalogue and use their own short names",
-  "patch_extension": "unaudited"
+  "patch_extension": "refused",
+  "_patch_extension_source": "read from the compiled world at fe8.apworld: adds new steps ['apply_gameplay_changes'] in fe8/rom.py:FE8PatchExtension"
 }
