@@ -83,6 +83,50 @@ internal static class Program
                 }
             }
 
+        // Reading where the program lives and running it FROM THERE is the
+        // whole point of the folder-and-note mechanism, so it gets exercised:
+        // absent -> no plan; present -> a plan pointing inside that folder.
+        foreach (var e in BridgeRegistry.Installed)
+        {
+            var ctx = new BridgeContext("probe", "N64", "", emus);
+            var before = e.Bridge.GetLaunchPlan(ctx, emus);
+            if (e.Bridge.Emulators.Count == 0) continue;
+
+            var need = e.Bridge.Emulators[0];
+            string exe = Path.Combine(emus, need.FolderName, need.ExeName);
+            Console.WriteLine($"  launch plan for {e.Manifest.ExtensionId}:");
+            Console.WriteLine($"    without the file : "
+                            + (before is null ? "none (correct)" : "A PLAN?!"));
+
+            File.WriteAllBytes(exe, new byte[] { 0x4D, 0x5A });   // stand-in
+            var after = e.Bridge.GetLaunchPlan(ctx, emus);
+            File.Delete(exe);
+
+            if (after is null)
+            {
+                Console.WriteLine("    with the file    : still none");
+                if (e.Bridge.Protocol.StartsWith("native"))
+                {
+                    Console.WriteLine("  FAIL: a native runner must resolve its own program");
+                    return 1;
+                }
+                Console.WriteLine("    (bridge attaches to a program the player starts - correct)");
+            }
+            else
+            {
+                bool inside = after.ExePath.StartsWith(
+                    Path.Combine(emus, need.FolderName), StringComparison.OrdinalIgnoreCase);
+                Console.WriteLine($"    with the file    : {after.ExePath}");
+                Console.WriteLine($"    working dir      : {after.WorkingDirectory}");
+                if (!inside)
+                {
+                    Console.WriteLine("  FAIL: launch plan points outside the player's folder");
+                    return 1;
+                }
+                Console.WriteLine("  OK: resolved inside the folder the player filled");
+            }
+        }
+
         // A bridge that is installed but not ready MUST NOT be servable, and
         // MUST produce an explanation. Silence here would be the bug.
         var found = BridgeRegistry.Find(protocol);
