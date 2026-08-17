@@ -1,11 +1,12 @@
-"""Hent det offentlige apworld-indeks og byg vores eget kartotek.
+# -*- coding: utf-8 -*-
+"""Fetch the public apworld index and build our own catalogue.
 
-Kilden er `Eijebong/Archipelago-index` — et offentligt, maskinlæsbart indeks
-over uofficielle apworlds. Vi kopierer det ikke; vi læser det og bygger vores
-egen tabel med de felter et London-plugin skal bruge.
+The source is `Eijebong/Archipelago-index`, a public machine-readable index of
+unofficial apworlds. We do not copy it; we read it and build our own table
+with the fields a London plugin needs.
 
-⚠ Vi henter ALDRIG selve apworld-filerne. Kartoteket indeholder adresser og
-metadata — aldrig andres indhold. Samme regel som alt andet vi bygger.
+We NEVER fetch the apworld files themselves. The catalogue holds addresses and
+metadata -- never anyone else's content. Same rule as everything else here.
 """
 
 import json
@@ -24,16 +25,16 @@ def gh(path):
     run = subprocess.run(["gh", "api", path], capture_output=True, text=True,
                          encoding="utf-8")
     if run.returncode != 0:
-        raise SystemExit(f"gh api {path} fejlede:\n{run.stderr[-800:]}")
+        raise SystemExit(f"gh api {path} failed:\n{run.stderr[-800:]}")
     return json.loads(run.stdout)
 
 
 def parse_toml(text):
-    """Lille TOML-læser til netop dette format.
+    """A small TOML reader for exactly this format.
 
-    ⚠ Bevidst minimal: indekset bruger kun nøgle=værdi og én [versions]-tabel.
-    En fuld TOML-parser ville være en afhængighed vi ikke har brug for — men
-    hvis formatet udvides, skal det her erstattes, ikke lappes."""
+    Deliberately minimal: the index uses only key=value and one [versions]
+    table. A full TOML parser would be a dependency we do not need -- but if
+    the format grows, this gets REPLACED, not patched."""
     out = {"versions": []}
     section = None
     for line in text.splitlines():
@@ -55,19 +56,19 @@ def parse_toml(text):
 
 
 def classify(entry):
-    """Hvad kræver spillet af spilleren?
+    """What does the game require from the player?
 
-    Kan ikke afgøres af indekset alene — det siger intet om selve spillet.
-    Derfor: alt starter som 'ukendt', og hver post skal vurderes én gang og
-    skrives ned. Et gæt her ville blive til en plugin der henter noget den
-    ikke må."""
-    return "ukendt"
+    The index alone cannot answer this -- it says nothing about the game
+    itself. So everything starts as 'unknown', and each entry gets judged
+    once and written down. A guess here would turn into a plugin that
+    fetches something it is not allowed to."""
+    return "unknown"
 
 
 def main():
-    print(f"henter indeks fra {REPO} …")
+    print(f"fetching index from {REPO} ...")
     files = gh(f"repos/{REPO}/contents/index")
-    print(f"  {len(files)} poster")
+    print(f"  {len(files)} entries")
 
     entries = []
     for i, f in enumerate(files, 1):
@@ -94,15 +95,15 @@ def main():
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps({
         "source": f"https://github.com/{REPO}",
-        "note": "Adresser og metadata. Aldrig andres indhold.",
+        "note": "Addresses and metadata. Never anyone else's content.",
         "count": len(entries),
         "entries": entries,
     }, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
     with_url = sum(1 for e in entries if e["apworld_url"])
-    print(f"\nskrevet: {OUT.relative_to(ROOT)}")
-    print(f"  {len(entries)} spil, {with_url} med direkte apworld-adresse")
-    print(f"  {len(entries) - with_url} uden — de skal slås op i hånden")
+    print(f"\nwrote: {OUT.relative_to(ROOT)}")
+    print(f"  {len(entries)} games, {with_url} with a direct apworld address")
+    print(f"  {len(entries) - with_url} without -- those need a manual lookup")
     return 0
 
 

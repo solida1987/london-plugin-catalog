@@ -1,6 +1,6 @@
 {
   "source": "https://github.com/Eijebong/Archipelago-index",
-  "note": "Adresser og metadata. Aldrig andres indhold.",
+  "note": "Addresses and metadata. Never anyone else's content.",
   "count": 454,
   "entries": [
     {
@@ -9,7 +9,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -18,7 +18,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -27,7 +27,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -36,7 +36,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -48,7 +48,7 @@
         "0.1.5",
         "0.1.6"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -62,7 +62,7 @@
         "1.1.0",
         "1.5.0-beta"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -76,7 +76,7 @@
         "0.5.2",
         "0.5.3"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -91,7 +91,7 @@
         "0.6.0",
         "0.6.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -106,7 +106,7 @@
         "0.4.3",
         "0.4.4"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -121,7 +121,7 @@
         "0.9.5",
         "0.9.6"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -138,7 +138,7 @@
         "2.0.4",
         "2.0.5"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -147,7 +147,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -156,7 +156,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -172,7 +172,7 @@
         "0.6.2",
         "0.7.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -188,7 +188,7 @@
         "2026.4.16",
         "2026.4.18"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -197,7 +197,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -216,7 +216,7 @@
         "0.25.0",
         "0.27.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -235,7 +235,7 @@
         "0.11.11",
         "0.11.17"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -248,7 +248,7 @@
         "0.3.2",
         "0.3.3"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -261,7 +261,7 @@
         "0.1.9-d",
         "0.1.9-e"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -272,7 +272,7 @@
       "versions": [
         "4.11.4"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -285,7 +285,7 @@
         "1.0.3",
         "1.0.6"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -296,7 +296,7 @@
       "versions": [
         "0.3.5"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -311,7 +311,7 @@
         "0.2.3",
         "0.4.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -320,7 +320,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -331,7 +331,7 @@
       "versions": [
         "1.2.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -343,7 +343,7 @@
         "0.2.3",
         "0.3.3"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -352,7 +352,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -364,7 +364,7 @@
         "0.1.3+hotfix1",
         "0.1.4"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -376,7 +376,7 @@
         "0.4.2",
         "0.5.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -395,7 +395,7 @@
         "0.13.0",
         "0.14.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -410,7 +410,7 @@
         "0.2.0",
         "0.3.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -419,7 +419,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -430,7 +430,7 @@
       "versions": [
         "0.1.0+20251208-1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -439,7 +439,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -450,7 +450,7 @@
       "versions": [
         "0.2.0-hf"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -459,7 +459,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -468,7 +468,7 @@
       "home": "",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -479,7 +479,7 @@
       "versions": [
         "1.1.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -491,7 +491,7 @@
         "0.2.3-alpha",
         "0.3.0-alpha"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -502,7 +502,7 @@
       "versions": [
         "0.6.7"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -513,7 +513,7 @@
       "versions": [
         "1.10.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -524,7 +524,7 @@
       "versions": [
         "0.7.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -536,7 +536,7 @@
         "0.3.0",
         "0.4.0-alpha+unreleased"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -545,7 +545,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -554,7 +554,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -563,7 +563,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -574,7 +574,7 @@
       "versions": [
         "0.3.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -583,7 +583,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -594,7 +594,7 @@
       "versions": [
         "0.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -613,7 +613,7 @@
         "0.9.6",
         "0.9.8"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -622,7 +622,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -633,7 +633,7 @@
       "versions": [
         "1.2.0-rc2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -644,7 +644,7 @@
       "versions": [
         "0.0.4"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -655,7 +655,7 @@
       "versions": [
         "1.3.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -670,7 +670,7 @@
         "0.8.1",
         "0.8.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -681,7 +681,7 @@
       "versions": [
         "1.0.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -695,7 +695,7 @@
         "0.11.4",
         "0.13.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -707,7 +707,7 @@
         "0.0.2-alpha+b",
         "0.0.2-alpha+f"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -719,7 +719,7 @@
         "0.4.1",
         "0.4.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -730,7 +730,7 @@
       "versions": [
         "0.5.5"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -739,7 +739,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -752,7 +752,7 @@
         "0.0.22-0",
         "0.1.0-0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -771,7 +771,7 @@
         "1.2.0",
         "1.2.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -782,7 +782,7 @@
       "versions": [
         "0.3.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -797,7 +797,7 @@
         "1.0.0",
         "1.1.4"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -806,7 +806,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -819,7 +819,7 @@
         "1.2.0",
         "1.3.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -831,7 +831,7 @@
         "1.2.2",
         "1.2.3"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -846,7 +846,7 @@
         "3.0.4",
         "3.1.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -855,7 +855,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -866,7 +866,7 @@
       "versions": [
         "0.2.3"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -875,7 +875,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -887,7 +887,7 @@
         "2.0.0-beta2",
         "2.0.0-beta3"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -896,7 +896,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -908,7 +908,7 @@
         "2.0.0-beta2",
         "2.0.0-beta3"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -921,7 +921,7 @@
         "0.3.1",
         "0.3.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -932,7 +932,7 @@
       "versions": [
         "0.0.5"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -941,7 +941,7 @@
       "home": "",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -952,7 +952,7 @@
       "versions": [
         "0.8.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -961,7 +961,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -972,7 +972,7 @@
       "versions": [
         "0.0.6"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -981,7 +981,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -993,7 +993,7 @@
         "0.5.15",
         "0.5.17"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1002,7 +1002,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1013,7 +1013,7 @@
       "versions": [
         "0.6.3"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1024,7 +1024,7 @@
       "versions": [
         "0.6.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1033,7 +1033,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1045,7 +1045,7 @@
         "0.0.8",
         "0.0.9"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1057,7 +1057,7 @@
         "0.6.3",
         "0.6.5"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1068,7 +1068,7 @@
       "versions": [
         "0.2.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1079,7 +1079,7 @@
       "versions": [
         "0.0.9"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1092,7 +1092,7 @@
         "0.3.3-rc1",
         "0.4.0-rc2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1103,7 +1103,7 @@
       "versions": [
         "0.0.4"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1117,7 +1117,7 @@
         "0.2.4",
         "0.2.5"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1129,7 +1129,7 @@
         "0.4.4-beta",
         "0.5.2-beta"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1144,7 +1144,7 @@
         "0.5.2",
         "0.6.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1159,7 +1159,7 @@
         "2.1.1",
         "2.1.5"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1171,7 +1171,7 @@
         "1.0.0",
         "1.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1186,7 +1186,7 @@
         "1.1.1",
         "1.1.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1197,7 +1197,7 @@
       "versions": [
         "0.2.3-beta"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1208,7 +1208,7 @@
       "versions": [
         "1.3.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1221,7 +1221,7 @@
         "0.2.0",
         "0.3.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1232,7 +1232,7 @@
       "versions": [
         "0.13.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1244,7 +1244,7 @@
         "0.3.2",
         "0.4.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1257,7 +1257,7 @@
         "1.4.4-unofficial",
         "1.4.4-unofficial2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1276,7 +1276,7 @@
         "0.8.0",
         "0.8.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1285,7 +1285,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1297,7 +1297,7 @@
         "2.0.0-beta2",
         "2.0.0-beta3"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1308,7 +1308,7 @@
       "versions": [
         "1.2.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1321,7 +1321,7 @@
         "0.2.1",
         "0.2.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1332,7 +1332,7 @@
       "versions": [
         "0.7.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1341,7 +1341,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1356,7 +1356,7 @@
         "0.2.3-alpha",
         "0.3.0-alpha"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1365,7 +1365,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1379,7 +1379,7 @@
         "1.2.5",
         "1.2.6"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1388,7 +1388,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1400,7 +1400,7 @@
         "0.15.15",
         "0.15.17"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1411,7 +1411,7 @@
       "versions": [
         "0.0.14+hotfix-1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1423,7 +1423,7 @@
         "0.2.1+region-gates",
         "0.3.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1432,7 +1432,7 @@
       "home": "https://discord.com/channels/731205301247803413/1394026388683755613",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1449,7 +1449,7 @@
         "0.9.1",
         "0.10.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1461,7 +1461,7 @@
         "1.1.1",
         "1.1.3"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1472,7 +1472,7 @@
       "versions": [
         "0.2.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1483,7 +1483,7 @@
       "versions": [
         "0.2.0+silasarybundle"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1495,7 +1495,7 @@
         "1.0.3",
         "1.1.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1504,7 +1504,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1513,7 +1513,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1524,7 +1524,7 @@
       "versions": [
         "0.1.7"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1536,7 +1536,7 @@
         "1.0.0",
         "1.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1547,7 +1547,7 @@
       "versions": [
         "0.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1560,7 +1560,7 @@
         "0.0.5",
         "0.0.6"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1571,7 +1571,7 @@
       "versions": [
         "1.4.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1585,7 +1585,7 @@
         "0.3.1",
         "0.3.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1596,7 +1596,7 @@
       "versions": [
         "0.6.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1613,7 +1613,7 @@
         "0.1.7",
         "0.1.9"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1622,7 +1622,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1631,7 +1631,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1646,7 +1646,7 @@
         "1.3.0",
         "1.4.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1662,7 +1662,7 @@
         "0.7.7-beta",
         "0.7.9-beta"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1676,7 +1676,7 @@
         "0.1.5+hotfix2",
         "0.1.7"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1689,7 +1689,7 @@
         "0.3.1",
         "0.4.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1700,7 +1700,7 @@
       "versions": [
         "1.2.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1709,7 +1709,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1718,7 +1718,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1729,7 +1729,7 @@
       "versions": [
         "12.5.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1740,7 +1740,7 @@
       "versions": [
         "0.2.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1749,7 +1749,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1774,7 +1774,7 @@
         "0.6.0",
         "0.6.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1794,7 +1794,7 @@
         "1.0.17",
         "1.0.18"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1805,7 +1805,7 @@
       "versions": [
         "0.0.5"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1816,7 +1816,7 @@
       "versions": [
         "1.2.1+b"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1829,7 +1829,7 @@
         "1.1.0",
         "1.2.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1840,7 +1840,7 @@
       "versions": [
         "0.0.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1852,7 +1852,7 @@
         "4.2.2",
         "4.2.3"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1863,7 +1863,7 @@
       "versions": [
         "0.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1874,7 +1874,7 @@
       "versions": [
         "0.1.4"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1885,7 +1885,7 @@
       "versions": [
         "1.2.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1896,7 +1896,7 @@
       "versions": [
         "1.2.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1908,7 +1908,7 @@
         "0.1.0",
         "0.2.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1920,7 +1920,7 @@
         "0.0.1",
         "0.0.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1931,7 +1931,7 @@
       "versions": [
         "0.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1942,7 +1942,7 @@
       "versions": [
         "1.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1953,7 +1953,7 @@
       "versions": [
         "6.2.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1964,7 +1964,7 @@
       "versions": [
         "1.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1975,7 +1975,7 @@
       "versions": [
         "0.0.6"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1987,7 +1987,7 @@
         "0.0.1",
         "0.0.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -1998,7 +1998,7 @@
       "versions": [
         "0.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2009,7 +2009,7 @@
       "versions": [
         "0.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2020,7 +2020,7 @@
       "versions": [
         "0.0.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2032,7 +2032,7 @@
         "1.1.2",
         "1.10.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2043,7 +2043,7 @@
       "versions": [
         "1.0.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2056,7 +2056,7 @@
         "0.1.1",
         "1.0.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2067,7 +2067,7 @@
       "versions": [
         "0.0.3"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2078,7 +2078,7 @@
       "versions": [
         "0.0.3"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2089,7 +2089,7 @@
       "versions": [
         "0.22.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2100,7 +2100,7 @@
       "versions": [
         "0.0.1-dopin"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2111,7 +2111,7 @@
       "versions": [
         "1.1.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2122,7 +2122,7 @@
       "versions": [
         "1.3.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2134,7 +2134,7 @@
         "1.1.0",
         "1.2.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2145,7 +2145,7 @@
       "versions": [
         "0.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2156,7 +2156,7 @@
       "versions": [
         "1.0.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2167,7 +2167,7 @@
       "versions": [
         "1.0.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2178,7 +2178,7 @@
       "versions": [
         "0.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2189,7 +2189,7 @@
       "versions": [
         "0.0.2+zeenobae"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2200,7 +2200,7 @@
       "versions": [
         "1.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2212,7 +2212,7 @@
         "0.2.0",
         "0.3.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2223,7 +2223,7 @@
       "versions": [
         "0.1.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2234,7 +2234,7 @@
       "versions": [
         "0.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2247,7 +2247,7 @@
         "0.0.2",
         "0.0.3"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2259,7 +2259,7 @@
         "3.5.0",
         "4.0.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2271,7 +2271,7 @@
         "0.0.4",
         "0.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2283,7 +2283,7 @@
         "0.0.1",
         "0.0.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2294,7 +2294,7 @@
       "versions": [
         "0.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2305,7 +2305,7 @@
       "versions": [
         "0.1.2+repacked"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2316,7 +2316,7 @@
       "versions": [
         "0.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2327,7 +2327,7 @@
       "versions": [
         "1.0.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2338,7 +2338,7 @@
       "versions": [
         "0.0.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2349,7 +2349,7 @@
       "versions": [
         "1.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2360,7 +2360,7 @@
       "versions": [
         "0.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2371,7 +2371,7 @@
       "versions": [
         "0.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2382,7 +2382,7 @@
       "versions": [
         "2.0.1+repacked2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2393,7 +2393,7 @@
       "versions": [
         "0.0.1+magnetico"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2404,7 +2404,7 @@
       "versions": [
         "2.1.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2415,7 +2415,7 @@
       "versions": [
         "0.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2426,7 +2426,7 @@
       "versions": [
         "0.0.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2437,7 +2437,7 @@
       "versions": [
         "0.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2448,7 +2448,7 @@
       "versions": [
         "0.0.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2460,7 +2460,7 @@
         "0.0.1",
         "0.0.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2471,7 +2471,7 @@
       "versions": [
         "0.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2482,7 +2482,7 @@
       "versions": [
         "2.2.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2493,7 +2493,7 @@
       "versions": [
         "0.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2504,7 +2504,7 @@
       "versions": [
         "0.0.4"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2515,7 +2515,7 @@
       "versions": [
         "1.1.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2526,7 +2526,7 @@
       "versions": [
         "0.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2538,7 +2538,7 @@
         "1.0.3",
         "1.0.4"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2549,7 +2549,7 @@
       "versions": [
         "1.2.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2563,7 +2563,7 @@
         "1.0.0",
         "2.0.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2577,7 +2577,7 @@
         "2.3.0",
         "2.4.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2590,7 +2590,7 @@
         "1.3.2",
         "1.4.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2601,7 +2601,7 @@
       "versions": [
         "0.0.4"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2616,7 +2616,7 @@
         "0.2.1",
         "0.2.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2628,7 +2628,7 @@
         "1.2.0",
         "1.2.3"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2641,7 +2641,7 @@
         "2.0.0+hotfix1",
         "2.0.4"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2653,7 +2653,7 @@
         "0.0.1",
         "0.0.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2665,7 +2665,7 @@
         "0.0.1",
         "0.0.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2676,7 +2676,7 @@
       "versions": [
         "0.0.6"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2689,7 +2689,7 @@
         "1.0.1",
         "1.1.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2702,7 +2702,7 @@
         "0.0.6",
         "0.0.7"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2713,7 +2713,7 @@
       "versions": [
         "0.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2724,7 +2724,7 @@
       "versions": [
         "0.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2735,7 +2735,7 @@
       "versions": [
         "0.1.2-a"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2746,7 +2746,7 @@
       "versions": [
         "0.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2757,7 +2757,7 @@
       "versions": [
         "2.2.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2768,7 +2768,7 @@
       "versions": [
         "0.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2779,7 +2779,7 @@
       "versions": [
         "0.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2790,7 +2790,7 @@
       "versions": [
         "0.1.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2802,7 +2802,7 @@
         "0.0.1",
         "0.0.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2813,7 +2813,7 @@
       "versions": [
         "0.0.3"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2824,7 +2824,7 @@
       "versions": [
         "0.0.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2835,7 +2835,7 @@
       "versions": [
         "0.0.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2846,7 +2846,7 @@
       "versions": [
         "0.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2857,7 +2857,7 @@
       "versions": [
         "0.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2868,7 +2868,7 @@
       "versions": [
         "0.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2879,7 +2879,7 @@
       "versions": [
         "0.0.3"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2891,7 +2891,7 @@
         "1.6.0",
         "1.7.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2904,7 +2904,7 @@
         "0.15.1",
         "0.16.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2915,7 +2915,7 @@
       "versions": [
         "0.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2926,7 +2926,7 @@
       "versions": [
         "2.1.0+a"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2938,7 +2938,7 @@
         "1.0.1",
         "4.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2951,7 +2951,7 @@
         "0.0.0-20250714",
         "0.0.0-20260319"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2962,7 +2962,7 @@
       "versions": [
         "0.0.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2973,7 +2973,7 @@
       "versions": [
         "0.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2984,7 +2984,7 @@
       "versions": [
         "1.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -2995,7 +2995,7 @@
       "versions": [
         "1.0.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3006,7 +3006,7 @@
       "versions": [
         "0.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3020,7 +3020,7 @@
         "0.3.5",
         "0.4.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3031,7 +3031,7 @@
       "versions": [
         "0.0.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3042,7 +3042,7 @@
       "versions": [
         "2025.2.13"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3053,7 +3053,7 @@
       "versions": [
         "0.1.1-alpha"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3062,7 +3062,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3073,7 +3073,7 @@
       "versions": [
         "0.2.1-c"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3090,7 +3090,7 @@
         "0.3.1",
         "0.3.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3103,7 +3103,7 @@
         "0.2.2",
         "0.2.3"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3114,7 +3114,7 @@
       "versions": [
         "0.1.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3123,7 +3123,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3132,7 +3132,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3145,7 +3145,7 @@
         "1.5.0",
         "1.6.0-beta"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3157,7 +3157,7 @@
         "1.1.1",
         "1.2.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3171,7 +3171,7 @@
         "1.5.0",
         "1.5.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3182,7 +3182,7 @@
       "versions": [
         "0.0.6"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3191,7 +3191,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3202,7 +3202,7 @@
       "versions": [
         "1.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3211,7 +3211,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3222,7 +3222,7 @@
       "versions": [
         "0.7.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3233,7 +3233,7 @@
       "versions": [
         "0.2.0-beta"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3245,7 +3245,7 @@
         "0.0.17",
         "0.0.21+hotfix3"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3256,7 +3256,7 @@
       "versions": [
         "0.5.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3268,7 +3268,7 @@
         "0.0.10",
         "0.0.11"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3280,7 +3280,7 @@
         "1.0.6-alpha",
         "1.0.7"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3293,7 +3293,7 @@
         "0.5.1",
         "0.5.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3308,7 +3308,7 @@
         "0.6.9",
         "0.6.10"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3319,7 +3319,7 @@
       "versions": [
         "1.7.5+1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3337,7 +3337,7 @@
         "1.3.6",
         "1.3.7"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3346,7 +3346,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3357,7 +3357,7 @@
       "versions": [
         "1.0.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3377,7 +3377,7 @@
         "0.5.1",
         "0.5.3"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3386,7 +3386,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3398,7 +3398,7 @@
         "0.9.3",
         "0.9.4"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3411,7 +3411,7 @@
         "0.3.0",
         "0.3.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3420,7 +3420,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3429,7 +3429,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3442,7 +3442,7 @@
         "0.2.0",
         "0.2.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3455,7 +3455,7 @@
         "0.1.20-beta",
         "0.1.21-beta"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3467,7 +3467,7 @@
         "0.3.3-alpha",
         "0.4.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3481,7 +3481,7 @@
         "1.3.0-beta",
         "1.3.2-beta"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3506,7 +3506,7 @@
         "1.2.0",
         "1.2.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3515,7 +3515,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3524,7 +3524,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3536,7 +3536,7 @@
         "0.6.3",
         "0.6.4"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3552,7 +3552,7 @@
         "0.9.0",
         "0.9.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3564,7 +3564,7 @@
         "2.0.0",
         "2.1.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3575,7 +3575,7 @@
       "versions": [
         "1.2.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3586,7 +3586,7 @@
       "versions": [
         "1.1.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3597,7 +3597,7 @@
       "versions": [
         "1.3.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3608,7 +3608,7 @@
       "versions": [
         "1.2.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3617,7 +3617,7 @@
       "home": "https://discord.com/channels/731205301247803413/1079671816257277972",
       "apworld_url": "https://github.com/unsafetyskizzers/Archipelago/releases/download/{{version}}/pizza_tower.apworld",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3630,7 +3630,7 @@
         "0.1.1",
         "0.1.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3642,7 +3642,7 @@
         "1.6.2",
         "1.6.3"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3653,7 +3653,7 @@
       "versions": [
         "0.1.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3666,7 +3666,7 @@
         "0.3.14",
         "0.3.13"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3694,7 +3694,7 @@
         "5.4.2",
         "5.4.3"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3703,7 +3703,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3719,7 +3719,7 @@
         "1.0.0",
         "0.9.6"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3730,7 +3730,7 @@
       "versions": [
         "0.3.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3741,7 +3741,7 @@
       "versions": [
         "0.0.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3756,7 +3756,7 @@
         "0.1.7",
         "0.1.8"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3765,7 +3765,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3781,7 +3781,7 @@
         "1.1.3",
         "1.2.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3793,7 +3793,7 @@
         "0.4.4",
         "0.5.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3808,7 +3808,7 @@
         "0.5.6",
         "0.6.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3827,7 +3827,7 @@
         "0.5.13",
         "0.5.14"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3844,7 +3844,7 @@
         "0.9.4",
         "0.10.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3856,7 +3856,7 @@
         "0.8.0+hotfix1",
         "0.9.3-BETA+hotfix1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3869,7 +3869,7 @@
         "0.3.0",
         "0.3.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3878,7 +3878,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3892,7 +3892,7 @@
         "1.4.0",
         "1.5.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3903,7 +3903,7 @@
       "versions": [
         "0.1.3"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3920,7 +3920,7 @@
         "0.6.3",
         "0.6.4"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3933,7 +3933,7 @@
         "0.5.1",
         "0.5.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3956,7 +3956,7 @@
         "1.0.1",
         "1.0.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3969,7 +3969,7 @@
         "0.3.0",
         "0.3.3"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3980,7 +3980,7 @@
       "versions": [
         "0.2.6"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -3992,7 +3992,7 @@
         "0.19.0",
         "0.19.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4006,7 +4006,7 @@
         "0.11.0",
         "0.12.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4017,7 +4017,7 @@
       "versions": [
         "1.3.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4028,7 +4028,7 @@
       "versions": [
         "0.6.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4037,7 +4037,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4048,7 +4048,7 @@
       "versions": [
         "1.1.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4060,7 +4060,7 @@
         "0.1.5-alpha",
         "0.1.6-alpha"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4069,7 +4069,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4078,7 +4078,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4090,7 +4090,7 @@
         "3.4.0",
         "3.5.4"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4101,7 +4101,7 @@
       "versions": [
         "1.3.5"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4110,7 +4110,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4122,7 +4122,7 @@
         "2.6.0",
         "2.7.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4134,7 +4134,7 @@
         "0.4.1",
         "0.4.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4143,7 +4143,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4157,7 +4157,7 @@
         "1.2.0",
         "1.2.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4166,7 +4166,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4180,7 +4180,7 @@
         "0.1.11-prealpha",
         "0.1.15-prealpha"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4191,7 +4191,7 @@
       "versions": [
         "0.5.4"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4209,7 +4209,7 @@
         "2.3.4",
         "2.3.5"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4220,7 +4220,7 @@
       "versions": [
         "0.4.1-alpha"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4233,7 +4233,7 @@
         "0.2.4",
         "0.3.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4246,7 +4246,7 @@
         "0.8.4",
         "0.8.6"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4259,7 +4259,7 @@
         "0.2.2-alpha",
         "0.2.4-alpha"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4270,7 +4270,7 @@
       "versions": [
         "1.0.9"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4287,7 +4287,7 @@
         "1.3.1",
         "1.3.3"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4296,7 +4296,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4305,7 +4305,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4323,7 +4323,7 @@
         "1.1.2",
         "1.1.3"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4339,7 +4339,7 @@
         "2.1.0",
         "2.2.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4348,7 +4348,7 @@
       "home": "https://discord.com/channels/731205301247803413/1292128680046235739",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4359,7 +4359,7 @@
       "versions": [
         "0.2.3"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4373,7 +4373,7 @@
         "0.5.0",
         "0.6.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4384,7 +4384,7 @@
       "versions": [
         "0.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4397,7 +4397,7 @@
         "0.3.6",
         "0.3.8"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4408,7 +4408,7 @@
       "versions": [
         "0.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4424,7 +4424,7 @@
         "1.1.0",
         "1.1.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4443,7 +4443,7 @@
         "1.3.0",
         "1.3.4"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4454,7 +4454,7 @@
       "versions": [
         "0.4.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4465,7 +4465,7 @@
       "versions": [
         "0.4.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4476,7 +4476,7 @@
       "versions": [
         "0.7.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4485,7 +4485,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4494,7 +4494,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4505,7 +4505,7 @@
       "versions": [
         "0.1.15+norandom"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4514,7 +4514,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4523,7 +4523,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4534,7 +4534,7 @@
       "versions": [
         "0.1.10"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4543,7 +4543,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4552,7 +4552,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4565,7 +4565,7 @@
         "0.5.3",
         "0.6.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4579,7 +4579,7 @@
         "0.3.0",
         "0.4.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4588,7 +4588,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4597,7 +4597,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4606,7 +4606,7 @@
       "home": "",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4617,7 +4617,7 @@
       "versions": [
         "0.8.16+unofficial"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4628,7 +4628,7 @@
       "versions": [
         "0.5.13"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4637,7 +4637,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4648,7 +4648,7 @@
       "versions": [
         "0.6.6"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4659,7 +4659,7 @@
       "versions": [
         "0.3.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4677,7 +4677,7 @@
         "1.4.0",
         "1.5.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4688,7 +4688,7 @@
       "versions": [
         "0.7.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4697,7 +4697,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4709,7 +4709,7 @@
         "0.4.3+hotfix-0.6.2",
         "0.5.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4720,7 +4720,7 @@
       "versions": [
         "20.1.7"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4729,7 +4729,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4745,7 +4745,7 @@
         "0.3.0",
         "0.3.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4756,7 +4756,7 @@
       "versions": [
         "0.1.6-alpha"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4768,7 +4768,7 @@
         "1.6.1",
         "1.7.5"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4777,7 +4777,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4786,7 +4786,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4795,7 +4795,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4807,7 +4807,7 @@
         "0.3.1",
         "0.3.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4821,7 +4821,7 @@
         "2.0.1",
         "2.0.3"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4832,7 +4832,7 @@
       "versions": [
         "1.1.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4843,7 +4843,7 @@
       "versions": [
         "0.1.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4857,7 +4857,7 @@
         "1.0.1",
         "1.1.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4870,7 +4870,7 @@
         "1.3.3",
         "1.4.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4883,7 +4883,7 @@
         "1.1.4",
         "1.2.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4895,7 +4895,7 @@
         "1.2.0",
         "1.2.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4906,7 +4906,7 @@
       "versions": [
         "0.1.6"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4915,7 +4915,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4926,7 +4926,7 @@
       "versions": [
         "0.1.3"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4938,7 +4938,7 @@
         "0.2.3",
         "0.3.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4951,7 +4951,7 @@
         "0.0.2",
         "1.0.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4970,7 +4970,7 @@
         "1.3.6",
         "1.4.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4981,7 +4981,7 @@
       "versions": [
         "0.2.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -4993,7 +4993,7 @@
         "1.2.0",
         "1.2.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -5006,7 +5006,7 @@
         "1.0.1",
         "1.0.4"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -5020,7 +5020,7 @@
         "3.2.6",
         "3.4.5"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -5033,7 +5033,7 @@
         "0.2.1-alpha",
         "0.3.0-alpha"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -5042,7 +5042,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -5056,7 +5056,7 @@
         "1.2.0",
         "1.2.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -5067,7 +5067,7 @@
       "versions": [
         "1.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -5078,7 +5078,7 @@
       "versions": [
         "0.1.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -5090,7 +5090,7 @@
         "1.0.1",
         "1.0.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -5101,7 +5101,7 @@
       "versions": [
         "0.9.2+hotfix1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -5112,7 +5112,7 @@
       "versions": [
         "1.1.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -5121,7 +5121,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -5130,7 +5130,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -5141,7 +5141,7 @@
       "versions": [
         "1.1.6"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -5153,7 +5153,7 @@
         "1.2.5",
         "1.2.6"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -5171,7 +5171,7 @@
         "3.3.2",
         "3.3.3"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -5182,7 +5182,7 @@
       "versions": [
         "0.1.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -5193,7 +5193,7 @@
       "versions": [
         "1.2.2-alpha"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -5205,7 +5205,7 @@
         "1.0.2",
         "1.1.0"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -5216,7 +5216,7 @@
       "versions": [
         "0.0.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -5231,7 +5231,7 @@
         "0.10.7-beta",
         "0.10.10-beta"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -5240,7 +5240,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -5251,7 +5251,7 @@
       "versions": [
         "2.3.4"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -5263,7 +5263,7 @@
         "0.0.10",
         "0.0.13"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -5274,7 +5274,7 @@
       "versions": [
         "26.4.12"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -5285,7 +5285,7 @@
       "versions": [
         "26.2.21"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -5296,7 +5296,7 @@
       "versions": [
         "0.3.2"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -5307,7 +5307,7 @@
       "versions": [
         "0.0.3"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -5320,7 +5320,7 @@
         "0.0.3",
         "0.0.4"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -5329,7 +5329,7 @@
       "home": "",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -5338,7 +5338,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -5352,7 +5352,7 @@
         "2.1.3",
         "2.1.4"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -5361,7 +5361,7 @@
       "home": "",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -5370,7 +5370,7 @@
       "home": "https://archipelago.gg",
       "apworld_url": "",
       "versions": [],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     },
     {
@@ -5383,7 +5383,7 @@
         "2.0.7+hotfix1",
         "2.1.1"
       ],
-      "requires": "ukendt",
+      "requires": "unknown",
       "plugin": null
     }
   ]
