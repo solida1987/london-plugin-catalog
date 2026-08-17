@@ -48,5 +48,6 @@
   "_note": "The AP game name is just 'Yoshi's Island', not the full retail title.",
   "lua_module": "yoshisisland",
   "_lua_module_source": "filename under Multiworld-Launcher/Plugins/Scripts/games/ — the modules predate this catalogue and use their own short names",
-  "patch_extension": "unaudited"
+  "patch_extension": "none",
+  "_patch_extension_source": "read from the compiled world at yoshisisland.apworld: no APPatchExtension in 11 compiled file(s)"
 }
