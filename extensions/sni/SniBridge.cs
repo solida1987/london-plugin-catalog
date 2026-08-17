@@ -36,6 +36,19 @@ public sealed class SniBridge : IEmulatorBridge
     public string[] Systems     => new[] { "SNES" };
     public string   HomepageUrl => "https://github.com/alttpo/sni";
 
+    /// SNI is a bridge, not an emulator: it needs BOTH itself and something to
+    /// talk to. London creates a folder and a note for each, and the player
+    /// puts their own copy in -- we never fetch either.
+    public IReadOnlyList<EmulatorRequirement> Emulators => new[]
+    {
+        new EmulatorRequirement(
+            "SNI", "SNI (Super Nintendo Interface)",
+            "https://github.com/alttpo/sni", "sni.exe"),
+        new EmulatorRequirement(
+            "snes9x", "snes9x",
+            "https://github.com/snes9xgit/snes9x/releases", "snes9x-x64.exe"),
+    };
+
     /// ⛔ Stays false until reads and writes are proven against a real game.
     /// The same honesty gate as EmulatorBackend.BridgeReady: an unfinished
     /// bridge is explained, never silently offered.
