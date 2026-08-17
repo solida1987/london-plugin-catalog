@@ -5,21 +5,18 @@ launcheren klarer resten.
 
 ---
 
-## To lag, ikke ét
+## GitHub er hele forsiden
 
-**Kataloget er sandheden. Releases er hvor filerne ligger.**
+Launcheren har ingen browsende spilliste, og skal ikke have en: spilleren
+tilføjer et plugin, og spillet dukker op i listen til venstre. Jo flere
+plugins, jo længere liste — kataloget hører til på GitHub, ikke inde i
+programmet.
 
-London har allerede et katalog-endpoint — `CatalogRepo/catalog.json` på
-launcherens `main`, med `schema_version: 2`. Det er dét spilleren ser **inde i
-launcheren**, og det skal blive ved med at være vejen ind.
+⚠ `CatalogRepo/catalog.json` i launcheren bruges **ikke** af det her. Den
+skal alligevel bygges om.
 
-⭐ Så en spiller behøver i princippet aldrig åbne GitHub. Releases-siden er
-reserven for dem der vil hente en fil i hånden.
-
-| Lag | Hvad | Hvem læser det |
-|---|---|---|
-| `catalog.json` | listen over spil, med adresse til hvert plugin | London |
-| Releases | selve `.londonplugin`-filerne, grupperet | mennesker |
+Det betyder at **releases-siden ER opslagsværket**, og den skal kunne læses
+af et menneske der leder efter ét bestemt spil.
 
 ---
 
@@ -55,9 +52,10 @@ den du sidst rørte ved, ikke den vigtigste. GitHub fremhæver altid én som
 
 Tag `index`. Den indeholder ingen plugins — kun:
 
-- `catalog.json` (samme fil London læser)
 - en indholdsfortegnelse i beskrivelsen: hver platform, hvor mange spil, og
   et link til gruppen
+- `plugins.json` — hele listen i maskinlæsbar form, hvis London eller en
+  tracker på et tidspunkt skal kunne slå op i den
 
 Hver gang en gruppe opdateres, opdateres `index` bagefter. Så er den altid
 nyest, og **Latest** peger altid på oversigten frem for på en tilfældig
@@ -95,7 +93,7 @@ kontrolleres uden at installere den.
 2. **Dobbelttjek gruppen samlet**: peger to spil på samme klient? bruger de
    samme emulator-version? mangler nogen en hash?
 3. **Byg** pluginet pr. spil og kør PluginCheck på hver enkelt
-4. **Udgiv** gruppen, opdatér `catalog.json`, opdatér `index`
+4. **Udgiv** gruppen, og opdatér `index` bagefter så den er nyest
 
 ⚠ Trin 2 er ikke en formalitet. Fejl i den slags data er ens på tværs af en
 gruppe — rammer man forkert på ét GBA-spil, er der god chance for at de
