@@ -1,0 +1,44 @@
+{
+  "id": "adventure",
+  "display_name": "Adventure",
+  "subtitle": "",
+  "platform": "2600",
+  "_platform_source": "harvested game list: platform_raw='2600'",
+  "version": "1.0.0",
+  "ap_world_name": "Adventure",
+  "_ap_world_name_source": "harvested game list, name as written there",
+  "description": "Adventure as a multiworld. Items and progression are shuffled across the session.",
+  "checks_verified": false,
+  "requires": "own_copy",
+  "_requires_source": "harvested game list: requires='own_copy'",
+  "lua_module": "adventure",
+  "_lua_module_source": "Plugins/Scripts/games/adventure.lua exists",
+  "apworld": {
+    "bundled": true,
+    "url": "",
+    "_source": "harvested game list: source='bundled'"
+  },
+  "client": {
+    "protocol": "bizhawk",
+    "_source": "the world ships its own client, but our RAM map Plugins/Scripts/games/adventure.lua drives it through the BizHawk bridge"
+  },
+  "patch_extension": "none",
+  "_patch_extension_source": "read from adventure: no APPatchExtension in 8 compiled file(s)",
+  "_description_source": "placeholder assembled from display_name; replace with what this game actually shuffles",
+  "patch": {
+    "model": "custom",
+    "_source": "audit_patch_model.py read the world: C:\\ProgramData\\Archipelago\\lib\\worlds\\adventure\\Rom.pyc: class AdventureDeltaPatch(['APPatch'])"
+  },
+  "credits": {
+    "plugin_by": "solida1987",
+    "world_by": {
+      "name": "the Archipelago project and its contributors",
+      "url": "https://github.com/ArchipelagoMW/Archipelago",
+      "_source": "this world ships with Archipelago itself (apworld.bundled)",
+      "licence": "MIT",
+      "_licence_source": "read from ArchipelagoMW/Archipelago's own LICENSE file, 2026-08-19 -- the MIT text; GitHub's classifier says 'Other' because the file carries extra wording, so the body was read rather than the label"
+    },
+    "game_by": null,
+    "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
+  }
+}

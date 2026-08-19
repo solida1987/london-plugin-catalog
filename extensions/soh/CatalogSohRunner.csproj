@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Ship of Harkinian as an installable extension. A native port, not an   -->
+  <!-- emulator: London finds it where the player put it and starts it.        -->
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>CatalogSohRunner</AssemblyName>
+    <RootNamespace>LauncherV2.Extensions.Soh</RootNamespace>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <Version>0.1.0</Version>
+    <Company>Solida Games</Company>
+    <Product>Ship of Harkinian runner extension for Multiworld Launcher</Product>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Private=false for the same reason a plugin does it: the launcher      -->
+    <!-- already has IEmulatorBridge loaded, and a second copy here would make  -->
+    <!-- the interface in this assembly a DIFFERENT type from the host's, so    -->
+    <!-- the cast in BridgeRegistry would fail on a type that visibly           -->
+    <!-- implements it.                                                         -->
+    <ProjectReference Include="..\..\..\Multiworld-Launcher\LauncherV2.csproj"
+                      Private="false" ExcludeAssets="runtime" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="extension.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>

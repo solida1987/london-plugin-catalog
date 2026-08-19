@@ -1,0 +1,44 @@
+{
+  "id": "paper_mario",
+  "display_name": "Paper Mario",
+  "subtitle": "",
+  "platform": "N64",
+  "_platform_source": "harvested game list: platform_raw='N64'",
+  "version": "1.0.0",
+  "ap_world_name": "Paper Mario",
+  "_ap_world_name_source": "harvested game list, name as written there",
+  "description": "Paper Mario as a multiworld. Items and progression are shuffled across the session.",
+  "checks_verified": false,
+  "requires": "own_copy",
+  "_requires_source": "harvested game list: requires='own_copy'",
+  "lua_module": "paper_mario",
+  "_lua_module_source": "Plugins/Scripts/games/paper_mario.lua exists",
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/icebound777/PMR_APWorld/releases",
+    "_source": "harvested game list: source='url'"
+  },
+  "client": {
+    "protocol": "bizhawk",
+    "_source": "our RAM map Plugins/Scripts/games/paper_mario.lua drives this game through the BizHawk bridge"
+  },
+  "patch_extension": "refused",
+  "_description_source": "placeholder assembled from display_name; replace with what this game actually shuffles",
+  "_patch_extension_source": "read from the compiled world at papermario.apworld: adds new steps ['calculate_pm_crc'] in papermario/Rom.py:PaperMarioPatchExtensions",
+  "patch": {
+    "model": "procedure",
+    "_source": "audit_patch_model.py read the world: class PaperMarioProcedurePatch(APProcedurePatch, APTokenMixin)"
+  },
+  "credits": {
+    "plugin_by": "solida1987",
+    "world_by": {
+      "name": "icebound777",
+      "url": "https://github.com/icebound777/PMR_APWorld/releases",
+      "_source": "the address this world is published at, from apworld.url in this manifest",
+      "licence": "MIT",
+      "_licence_source": "GitHub reports MIT for icebound777/PMR_APWorld, read 2026-08-19"
+    },
+    "game_by": null,
+    "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
+  }
+}

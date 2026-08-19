@@ -1,0 +1,63 @@
+{
+  "id": "yugioh_2006",
+  "display_name": "Yu-Gi-Oh! Ultimate Masters: WCT 2006",
+  "subtitle": "BizHawk",
+  "platform": "GBA",
+  "version": "1.0.0",
+  "_verified": "2026-08-17",
+  "ap_world_name": "Yu-Gi-Oh! 2006",
+  "_ap_world_name_source": "world source: ArchipelagoMW/Archipelago worlds/yugioh06 (upstream), read from the world's own code -- the world's own `game` value",
+  "description": "The 2006 World Championship as a multiworld. Cards, packs and campaign progress are shuffled across the session.",
+  "_description_source": "written by us from the structure of the game - no text copied from the game itself",
+  "checks_verified": false,
+  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Until then London warns at launch.",
+  "requires": "own_copy",
+  "_requires_source": "GBA title - the game lives on a cartridge the player owns",
+  "rom": {
+    "description": "A US Yu-Gi-Oh! Ultimate Masters: World Championship Tournament 2006 ROM",
+    "_description_source": "world source: ArchipelagoMW/Archipelago worlds/yugioh06 (upstream), read from the world's own code",
+    "md5": [
+      "b8a7c976b28172995fe9e465d654297a"
+    ],
+    "size": null,
+    "_size_note": "Not measured. London reads size 0 as 'unknown' and matches on MD5 alone, which is the stronger check.",
+    "_md5_source": "world source: ArchipelagoMW/Archipelago worlds/yugioh06 (upstream), read from the world's own code -- the accepted-dump list the world validates the player's file against"
+  },
+  "emulator": {
+    "name": "BizHawk",
+    "min_version": "2.7.0",
+    "_source": "setup guide: \"Version 2.7.0 and later are supported.\""
+  },
+  "client": {
+    "name": "Archipelago's BizHawk Client",
+    "lua": "data/lua/connector_bizhawk_generic.lua",
+    "_source": "the world's client subclasses BizHawkClient",
+    "protocol": "bizhawk"
+  },
+  "apworld": {
+    "bundled": true,
+    "url": null,
+    "_source": "game list plus the world's own repository"
+  },
+  "patch": {
+    "model": "procedure",
+    "_source": "audit_patch_model.py read the world: yugioh06/rom.pyc: class YGO06ProcedurePatch(APProcedurePatch)"
+  },
+  "_note": "rom.py also defines a European hash (020411d3b08f5639eb8cb878283f84bf) but sets hash = MD5America, so only the US dump is accepted. The setup guide says 'US or European' -- the CODE is narrower, and the code runs.",
+  "lua_module": "yugioh06",
+  "_lua_module_source": "filename under Multiworld-Launcher/Plugins/Scripts/games/ — the modules predate this catalogue and use their own short names",
+  "patch_extension": "none",
+  "_patch_extension_source": "read from the compiled world at yugioh06.apworld: no APPatchExtension in 13 compiled file(s)",
+  "credits": {
+    "plugin_by": "solida1987",
+    "world_by": {
+      "name": "the Archipelago project and its contributors",
+      "url": "https://github.com/ArchipelagoMW/Archipelago",
+      "_source": "this world ships with Archipelago itself (apworld.bundled)",
+      "licence": "MIT",
+      "_licence_source": "read from ArchipelagoMW/Archipelago's own LICENSE file, 2026-08-19 -- the MIT text; GitHub's classifier says 'Other' because the file carries extra wording, so the body was read rather than the label"
+    },
+    "game_by": null,
+    "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
+  }
+}

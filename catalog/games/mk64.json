@@ -1,0 +1,47 @@
+{
+  "id": "mk64",
+  "display_name": "Mario Kart 64",
+  "subtitle": "",
+  "platform": "N64",
+  "_platform_source": "harvested game list: platform_raw='N64'",
+  "version": "1.0.0",
+  "ap_world_name": "Mario Kart 64",
+  "_ap_world_name_source": "harvested game list, name as written there",
+  "description": "Mario Kart 64 as a multiworld. Items and progression are shuffled across the session.",
+  "checks_verified": false,
+  "requires": "own_copy",
+  "_requires_source": "harvested game list: requires='own_copy'",
+  "lua_module": "mk64",
+  "_lua_module_source": "Plugins/Scripts/games/mk64.lua exists",
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/Edsploration/MK64-Archipelago/releases",
+    "_source": "harvested game list: source='url'"
+  },
+  "client": {
+    "protocol": "bizhawk",
+    "_source": "our RAM map Plugins/Scripts/games/mk64.lua drives this game through the BizHawk bridge"
+  },
+  "patch_extension": "none",
+  "_description_source": "placeholder assembled from display_name; replace with what this game actually shuffles",
+  "_patch_extension_source": "read from the compiled world at mk64.apworld: no APPatchExtension in 9 source file(s)",
+  "patch": {
+    "model": "delta",
+    "_source": "audit_patch_model.py read the world: class MK64DeltaPatch(APDeltaPatch), no dangerous overrides",
+    "base_md5": [
+      "3a67d9986f54eb282924fca4cd5f6dff"
+    ]
+  },
+  "credits": {
+    "plugin_by": "solida1987",
+    "world_by": {
+      "name": "Edsploration",
+      "url": "https://github.com/Edsploration/MK64-Archipelago/releases",
+      "_source": "the address this world is published at, from apworld.url in this manifest",
+      "licence": "MIT",
+      "_licence_source": "read from Edsploration/MK64-Archipelago's own LICENSE file, 2026-08-19 -- the MIT text; GitHub's classifier says 'Other' because the file carries extra wording, so the body was read rather than the label"
+    },
+    "game_by": null,
+    "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
+  }
+}

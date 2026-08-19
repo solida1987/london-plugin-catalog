@@ -1,0 +1,44 @@
+{
+  "id": "tloz_oos",
+  "display_name": "The Legend of Zelda: Oracle of Seasons",
+  "subtitle": "",
+  "platform": "GBC",
+  "_platform_source": "harvested game list: platform_raw='GBC'",
+  "version": "1.0.0",
+  "ap_world_name": "The Legend of Zelda - Oracle of Seasons",
+  "_ap_world_name_source": "audit_world_name.py read the world itself; it declares game = 'The Legend of Zelda - Oracle of Seasons' (manifest said 'The Legend of Zelda: Oracle of Seasons'). The world is the authority.",
+  "description": "The Legend of Zelda: Oracle of Seasons as a multiworld. Items and progression are shuffled across the session.",
+  "checks_verified": false,
+  "requires": "own_copy",
+  "_requires_source": "harvested game list: requires='own_copy'",
+  "lua_module": "tloz_oos",
+  "_lua_module_source": "Plugins/Scripts/games/tloz_oos.lua exists",
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/Dinopony/ArchipelagoOoS/releases",
+    "_source": "harvested game list: source='url'"
+  },
+  "client": {
+    "protocol": "bizhawk",
+    "_source": "the world's client subclasses BizHawkClient"
+  },
+  "patch_extension": "refused",
+  "_patch_extension_source": "read from tloz_oos.apworld: adds new steps ['apply_patches'] in tloz_oos/patching/ProcedurePatch.py:OoSPatchExtensions",
+  "_description_source": "placeholder assembled from display_name; replace with what this game actually shuffles",
+  "patch": {
+    "model": "procedure",
+    "_source": "audit_patch_model.py read the world: class OoSProcedurePatch(APProcedurePatch, APTokenMixin)"
+  },
+  "credits": {
+    "plugin_by": "solida1987",
+    "world_by": {
+      "name": "Dinopony",
+      "url": "https://github.com/Dinopony/ArchipelagoOoS/releases",
+      "_source": "the address this world is published at, from apworld.url in this manifest",
+      "licence": "MIT",
+      "_licence_source": "read from Dinopony/ArchipelagoOoS's own LICENSE file, 2026-08-19 -- the MIT text; GitHub's classifier says 'Other' because the file carries extra wording, so the body was read rather than the label"
+    },
+    "game_by": null,
+    "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
+  }
+}

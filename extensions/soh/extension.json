@@ -1,0 +1,13 @@
+{
+  "apiVersion": 1,
+  "extensionId": "soh_runner",
+  "displayName": "Ship of Harkinian",
+  "protocol": "native_soh",
+  "version": "0.1.0",
+  "author": "Solida Games",
+  "authorContact": "https://github.com/solida1987/london-plugin-catalog",
+  "assembly": "CatalogSohRunner.dll",
+  "entryType": "LauncherV2.Extensions.Soh.SohRunner",
+  "homepageUrl": "https://github.com/HarbourMasters/Shipwright/releases",
+  "rulesAcknowledged": true
+}

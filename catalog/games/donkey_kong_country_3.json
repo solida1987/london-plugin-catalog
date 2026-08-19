@@ -1,0 +1,47 @@
+{
+  "id": "donkey_kong_country_3",
+  "display_name": "Donkey Kong Country 3: Dixie Kong's Double Trouble!",
+  "subtitle": "",
+  "platform": "SNES",
+  "_platform_source": "harvested game list: platform_raw='SNES'",
+  "version": "1.0.0",
+  "ap_world_name": "Donkey Kong Country 3",
+  "_ap_world_name_source": "audit_world_name.py read the world itself; it declares game = 'Donkey Kong Country 3' (manifest said \"Donkey Kong Country 3: Dixie Kong's Double Trouble!\"). The world is the authority.",
+  "description": "Donkey Kong Country 3: Dixie Kong's Double Trouble! as a multiworld. Items and progression are shuffled across the session.",
+  "checks_verified": false,
+  "requires": "own_copy",
+  "_requires_source": "harvested game list: requires='own_copy'",
+  "lua_module": "Donkey Kong Country 3",
+  "_lua_module_source": "Plugins/Scripts/games/Donkey Kong Country 3.lua exists",
+  "apworld": {
+    "bundled": true,
+    "url": "",
+    "_source": "harvested game list: source='bundled'"
+  },
+  "client": {
+    "protocol": "bizhawk",
+    "_source": "our RAM map Plugins/Scripts/games/Donkey Kong Country 3.lua drives this game through the BizHawk bridge"
+  },
+  "patch_extension": "none",
+  "_description_source": "placeholder assembled from display_name; replace with what this game actually shuffles",
+  "_patch_extension_source": "read from the compiled world at dkc3.apworld: no APPatchExtension in 12 compiled file(s)",
+  "patch": {
+    "model": "delta",
+    "_source": "audit_patch_model.py read the world: dkc3/Rom.pyc: class DKC3DeltaPatch(APDeltaPatch), methods ['get_source_data']",
+    "base_md5": [
+      "120abf304f0c40fe059f6a192ed4f947"
+    ]
+  },
+  "credits": {
+    "plugin_by": "solida1987",
+    "world_by": {
+      "name": "the Archipelago project and its contributors",
+      "url": "https://github.com/ArchipelagoMW/Archipelago",
+      "_source": "this world ships with Archipelago itself (apworld.bundled)",
+      "licence": "MIT",
+      "_licence_source": "read from ArchipelagoMW/Archipelago's own LICENSE file, 2026-08-19 -- the MIT text; GitHub's classifier says 'Other' because the file carries extra wording, so the body was read rather than the label"
+    },
+    "game_by": null,
+    "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "smz3",
+  "display_name": "SMZ3",
+  "subtitle": "",
+  "platform": "SNES",
+  "_platform_source": "harvested game list: platform_raw='SNES'",
+  "version": "1.0.0",
+  "ap_world_name": "SMZ3",
+  "_ap_world_name_source": "harvested game list, name as written there",
+  "description": "SMZ3 as a multiworld. Items and progression are shuffled across the session.",
+  "checks_verified": false,
+  "requires": "own_copy",
+  "_requires_source": "harvested game list: requires='own_copy'",
+  "lua_module": "smz3",
+  "_lua_module_source": "Plugins/Scripts/games/smz3.lua exists",
+  "apworld": {
+    "bundled": true,
+    "url": "",
+    "_source": "harvested game list: source='bundled'"
+  },
+  "client": {
+    "protocol": "bizhawk",
+    "_source": "bizhawk, decided 2026-08-19. The world's OWN client subclasses SNIClient -- that is upstream's transport, and the previous value recorded it. But the launcher never runs upstream's client: it has its own AP connection and its own RAM map, and Plugins/Scripts/games/smz3.lua is a BizHawk module that translates the SNI addresses to BizHawk domains itself. Proven live that day with A Link to the Past: 3 checks out, 6 items in. The sni extension carries the protocol but cannot drive a game -- its GetLaunchPlan returns null and nothing in the launcher calls its Read/Write -- so \"sni\" here meant a plugin that installs and then throws at launch."
+  },
+  "patch_extension": "refused",
+  "_patch_extension_source": "read from smz3.apworld: adds new steps ['apply_basepatch'] in smz3/Rom.pyc:SMZ3PatchExtensions",
+  "_description_source": "placeholder assembled from display_name; replace with what this game actually shuffles",
+  "patch": {
+    "model": "procedure",
+    "_source": "audit_patch_model.py read the world: smz3/Rom.pyc: class SMZ3ProcedurePatch(APProcedurePatch)"
+  },
+  "credits": {
+    "plugin_by": "solida1987",
+    "world_by": {
+      "name": "the Archipelago project and its contributors",
+      "url": "https://github.com/ArchipelagoMW/Archipelago",
+      "_source": "this world ships with Archipelago itself (apworld.bundled)",
+      "licence": "MIT",
+      "_licence_source": "read from ArchipelagoMW/Archipelago's own LICENSE file, 2026-08-19 -- the MIT text; GitHub's classifier says 'Other' because the file carries extra wording, so the body was read rather than the label"
+    },
+    "game_by": null,
+    "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
+  }
+}

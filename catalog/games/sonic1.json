@@ -1,0 +1,44 @@
+{
+  "id": "sonic1",
+  "display_name": "Sonic the Hedgehog",
+  "subtitle": "",
+  "platform": "GEN",
+  "_platform_source": "harvested game list: platform_raw='GEN'",
+  "version": "1.0.0",
+  "ap_world_name": "Sonic the Hedgehog 1",
+  "_ap_world_name_source": "audit_world_name.py read the world itself; it declares game = 'Sonic the Hedgehog 1' (manifest said 'Sonic the Hedgehog'). The world is the authority.",
+  "description": "Sonic the Hedgehog as a multiworld. Items and progression are shuffled across the session.",
+  "checks_verified": false,
+  "requires": "own_copy",
+  "_requires_source": "harvested game list: requires='own_copy'",
+  "lua_module": "sonic1",
+  "_lua_module_source": "Plugins/Scripts/games/sonic1.lua exists",
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/kaithar/Archipelago/releases",
+    "_source": "harvested game list: source='url'"
+  },
+  "client": {
+    "protocol": "bizhawk",
+    "_source": "our RAM map Plugins/Scripts/games/sonic1.lua drives this game through the BizHawk bridge"
+  },
+  "patch_extension": "refused",
+  "_description_source": "placeholder assembled from display_name; replace with what this game actually shuffles",
+  "_patch_extension_source": "read from the compiled world at sonic1.apworld: adds new steps ['apply_s1_multi_patch', 'gce_to_rev1', 'rev0_to_ap', 'rev1_to_rev0'] in sonic1/configurable.py:Sonic1MultiPatch",
+  "patch": {
+    "model": "procedure",
+    "_source": "audit_patch_model.py read the world: class Sonic1ProcedurePatch(APProcedurePatch)"
+  },
+  "credits": {
+    "plugin_by": "solida1987",
+    "world_by": {
+      "name": "kaithar",
+      "url": "https://github.com/kaithar/Archipelago/releases",
+      "_source": "the address this world is published at, from apworld.url in this manifest",
+      "licence": "MIT",
+      "_licence_source": "read from kaithar/Archipelago's own LICENSE file, 2026-08-19 -- the MIT text; GitHub's classifier says 'Other' because the file carries extra wording, so the body was read rather than the label"
+    },
+    "game_by": null,
+    "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
+  }
+}
