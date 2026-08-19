@@ -1,0 +1,71 @@
+{
+  "id": "minish_cap",
+  "display_name": "The Legend of Zelda: The Minish Cap",
+  "subtitle": "BizHawk",
+  "platform": "GBA",
+  "version": "1.0.0",
+  "_verified": "2026-08-17",
+  "ap_world_name": "The Minish Cap",
+  "_ap_world_name_source": "world source: eternalcode0/Archipelago @ feat/new-game-minish-cap, worlds/tmc -- read from the world's own code -- the world's own `game` value",
+  "description": "Hyrule at two scales as a multiworld. Kinstones, figurines and key items are shuffled across the session.",
+  "_description_source": "written by us from the structure of the game - no text copied from the game itself",
+  "checks_verified": true,
+  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Until then London warns at launch.",
+  "requires": "own_copy",
+  "_requires_source": "GBA title - the game lives on a cartridge the player owns",
+  "rom": {
+    "description": "A The Legend of Zelda: The Minish Cap ROM",
+    "_description_source": "world source: eternalcode0/Archipelago @ feat/new-game-minish-cap, worlds/tmc -- read from the world's own code",
+    "md5": [
+      "2af78edbe244b5de44471368ae2b6f0b"
+    ],
+    "size": null,
+    "_size_note": "Not measured. London reads size 0 as 'unknown' and matches on MD5 alone, which is the stronger check.",
+    "_md5_source": "world source: eternalcode0/Archipelago @ feat/new-game-minish-cap, worlds/tmc -- read from the world's own code -- the accepted-dump list the world validates the player's file against"
+  },
+  "emulator": {
+    "name": "BizHawk",
+    "min_version": "2.7",
+    "_source": "setup guide: \"BizHawk 2.7 or later\""
+  },
+  "client": {
+    "name": "Archipelago's BizHawk Client",
+    "lua": "data/lua/connector_bizhawk_generic.lua",
+    "_source": "the world's client subclasses BizHawkClient",
+    "protocol": "bizhawk"
+  },
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/eternalcode0/Archipelago/releases",
+    "_source": "game list plus the world's own repository"
+  },
+  "patch": {
+    "model": "procedure",
+    "_source": "audit_patch_model.py read the world: class MinishCapProcedurePatch(APProcedurePatch, APTokenMixin)"
+  },
+  "_note": "Lives on the branch 'feat/new-game-minish-cap' -- still a feature branch upstream.",
+  "lua_module": "The Minish Cap",
+  "_lua_module_source": "filename under Multiworld-Launcher/Plugins/Scripts/games/ — the modules predate this catalogue and use their own short names",
+  "patch_extension": "none",
+  "_patch_extension_source": "read from the compiled world at tmc.apworld: no APPatchExtension in 16 source file(s)",
+  "_checks_verified_source": "live end-to-end run 2026-08-18: seed 72988792516927198557, slot MinishTest. The launcher built the ROM itself (MD5 f04ad7397de4893e235d8cbc1dec7ddc, byte-identical to the reference patcher); the RAM map reported CHECK sent for 6029375/6029374/6029376/6029113/6029018 and the server logged each as a real location (Wind Tribe 1F Right/Left Chest, Wind Tribe 2F Chest, Hills Fusion Chest, South Field Fusion Chest). Delivery works in the other direction too: five items written into the game, receive-index 1..5.",
+  "credits": {
+    "plugin_by": "solida1987",
+    "world_by": {
+      "name": "eternalcode0",
+      "url": "https://github.com/eternalcode0/Archipelago/releases",
+      "_source": "the address this world is published at, from apworld.url in this manifest",
+      "licence": "MIT",
+      "_licence_source": "read from eternalcode0/Archipelago's own LICENSE file, 2026-08-19 -- the MIT text; GitHub's classifier says 'Other' because the file carries extra wording, so the body was read rather than the label"
+    },
+    "game_by": null,
+    "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987.",
+    "setup_guide_by": {
+      "names": [
+        "eternalcode",
+        "Deoxis9001"
+      ],
+      "_source": "the world's own Tutorial() entries -- these people wrote the setup guide, which is not necessarily who wrote the world"
+    }
+  }
+}

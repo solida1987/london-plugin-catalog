@@ -1,0 +1,67 @@
+{
+  "id": "alttp",
+  "display_name": "The Legend of Zelda: A Link to the Past",
+  "subtitle": "SNI",
+  "platform": "SNES",
+  "version": "1.0.0",
+  "_verified": "2026-08-17",
+  "ap_world_name": "A Link to the Past",
+  "_ap_world_name_source": "world source: ArchipelagoMW/Archipelago worlds/alttp (upstream), read from the world's own code -- the world's own `game` value",
+  "description": "Hyrule as a multiworld. The original Archipelago game.",
+  "_description_source": "written by us from the structure of the game - no text copied from the game itself",
+  "checks_verified": true,
+  "_checks_verified_note": "Proven live 2026-08-19: 3 checks out (Link's House, Link's Uncle, Secret Passage) and 6 items in, against a ROM the launcher patched itself. Run over the BizHawk bridge with Plugins/Scripts/games/alttp.lua -- see client.protocol below, which still names the transport the UPSTREAM world uses.",
+  "requires": "own_copy",
+  "_requires_source": "SNES title - the game lives on a cartridge the player owns",
+  "rom": {
+    "description": "A Japanese 1.0 The Legend of Zelda: A Link to the Past ROM",
+    "_description_source": "world source: ArchipelagoMW/Archipelago worlds/alttp (upstream), read from the world's own code",
+    "md5": [
+      "03a63945398191337e896e5771f77173"
+    ],
+    "size": null,
+    "_size_note": "Not measured. London reads size 0 as 'unknown' and matches on MD5 alone.",
+    "_md5_source": "world source: ArchipelagoMW/Archipelago worlds/alttp (upstream), read from the world's own code -- the accepted-dump list the world validates the player's file against"
+  },
+  "emulator": {
+    "name": null,
+    "min_version": null,
+    "_source": "Not applicable yet: SNI talks to snes9x/bsnes or real hardware, and London has no SNI bridge."
+  },
+  "client": {
+    "name": "Archipelago's SNI Client",
+    "protocol": "bizhawk",
+    "lua": null,
+    "_source": "bizhawk, decided 2026-08-19. The world's OWN client subclasses SNIClient -- that is upstream's transport, and the previous value recorded it. But the launcher never runs upstream's client: it has its own AP connection and its own RAM map, and Plugins/Scripts/games/alttp.lua is a BizHawk module that translates the SNI addresses to BizHawk domains itself. Proven live that day with A Link to the Past: 3 checks out, 6 items in. The sni extension carries the protocol but cannot drive a game -- its GetLaunchPlan returns null and nothing in the launcher calls its Read/Write -- so \"sni\" here meant a plugin that installs and then throws at launch."
+  },
+  "apworld": {
+    "bundled": true,
+    "url": null,
+    "_source": "game list: \"Bundled with Archipelago\""
+  },
+  "patch": {
+    "model": "delta",
+    "_source": "audit_patch_model.py read the world: C:\\ProgramData\\Archipelago\\lib\\worlds\\alttp\\Rom.pyc: class LttPDeltaPatch(APDeltaPatch), methods ['get_source_data']",
+    "base_md5": [
+      "03a63945398191337e896e5771f77173",
+      "8704fb9b9fa4fad52d4d2f9a95fb5360"
+    ]
+  },
+  "_note": "The accepted dump is the JAPANESE 1.0 ROM (constant LTTPJPN10HASH), not a US one -- the randomizer patches from that base. Two patch extensions: .aplttp and .apz3. AP game name is 'A Link to the Past', without the 'Legend of Zelda:' prefix.",
+  "lua_module": "alttp",
+  "_lua_module_source": "filename under Multiworld-Launcher/Plugins/Scripts/games/ — the modules predate this catalogue and use their own short names",
+  "patch_extension": "none",
+  "_patch_extension_source": "read from the compiled world at alttp: no APPatchExtension in 82 compiled file(s)",
+  "credits": {
+    "plugin_by": "solida1987",
+    "world_by": {
+      "name": "the Archipelago project and its contributors",
+      "url": "https://github.com/ArchipelagoMW/Archipelago",
+      "_source": "this world ships with Archipelago itself (apworld.bundled)",
+      "licence": "MIT",
+      "_licence_source": "read from ArchipelagoMW/Archipelago's own LICENSE file, 2026-08-19 -- the MIT text; GitHub's classifier says 'Other' because the file carries extra wording, so the body was read rather than the label"
+    },
+    "game_by": null,
+    "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "smrpg",
+  "display_name": "Super Mario RPG",
+  "subtitle": "",
+  "platform": "SNES",
+  "_platform_source": "harvested game list: platform_raw='SNES'",
+  "version": "1.0.0",
+  "ap_world_name": "Super Mario RPG",
+  "_ap_world_name_source": "harvested game list, name as written there",
+  "description": "Super Mario RPG as a multiworld. Items and progression are shuffled across the session.",
+  "checks_verified": false,
+  "requires": "own_copy",
+  "_requires_source": "harvested game list: requires='own_copy'",
+  "lua_module": "smrpg",
+  "_lua_module_source": "Plugins/Scripts/games/smrpg.lua exists",
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/TheRealSolidusSnake/SMRPG_apworld/releases",
+    "_source": "harvested game list: source='url'"
+  },
+  "client": {
+    "protocol": "bizhawk",
+    "_source": "our RAM map Plugins/Scripts/games/smrpg.lua drives this game through the BizHawk bridge"
+  },
+  "patch_extension": "none",
+  "_description_source": "placeholder assembled from display_name; replace with what this game actually shuffles",
+  "_patch_extension_source": "read from the compiled world at smrpg.apworld: no APPatchExtension in 66 source file(s)",
+  "patch": {
+    "model": "delta",
+    "_source": "audit_patch_model.py read the world: class SMRPGDeltaPatch(APDeltaPatch), no dangerous overrides",
+    "base_md5": [
+      "d0b68d68d9efc0558242f5476d1c5b81"
+    ]
+  },
+  "credits": {
+    "plugin_by": "solida1987",
+    "world_by": {
+      "name": "TheRealSolidusSnake",
+      "url": "https://github.com/TheRealSolidusSnake/SMRPG_apworld/releases",
+      "_source": "the address this world is published at, from apworld.url in this manifest",
+      "licence": "MIT",
+      "_licence_source": "GitHub reports MIT for TheRealSolidusSnake/SMRPG_apworld, read 2026-08-19"
+    },
+    "game_by": null,
+    "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
+  }
+}

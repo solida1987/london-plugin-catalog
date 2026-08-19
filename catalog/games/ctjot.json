@@ -1,0 +1,43 @@
+{
+  "id": "ctjot",
+  "display_name": "Chrono Trigger",
+  "subtitle": "",
+  "platform": "SNES",
+  "_platform_source": "harvested game list: platform_raw='SNES'",
+  "version": "1.0.0",
+  "ap_world_name": "Chrono Trigger",
+  "_ap_world_name_source": "harvested game list, name as written there",
+  "description": "Chrono Trigger as a multiworld. Items and progression are shuffled across the session.",
+  "checks_verified": false,
+  "requires": "own_copy",
+  "_requires_source": "harvested game list: requires='own_copy'",
+  "lua_module": "ctjot",
+  "_lua_module_source": "Plugins/Scripts/games/ctjot.lua exists",
+  "apworld": {
+    "bundled": false,
+    "url": "https://www.wiki.ctjot.com/doku.php?id=multiworld",
+    "_source": "harvested game list: source='url'"
+  },
+  "client": {
+    "protocol": "bizhawk",
+    "_source": "our RAM map Plugins/Scripts/games/ctjot.lua drives this game through the BizHawk bridge"
+  },
+  "patch_extension": "unaudited",
+  "_description_source": "placeholder assembled from display_name; replace with what this game actually shuffles",
+  "patch": {
+    "model": "unknown",
+    "_source": "audit_patch_model.py read the world: world not available to read"
+  },
+  "credits": {
+    "plugin_by": "solida1987",
+    "world_by": {
+      "name": "www.wiki.ctjot.com",
+      "url": "https://www.wiki.ctjot.com/doku.php?id=multiworld",
+      "_source": "the address this world is published at, from apworld.url in this manifest",
+      "licence": null,
+      "_licence_source": "not established: the world's author has published no licence file we could read, so nothing is claimed here"
+    },
+    "game_by": null,
+    "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
+  }
+}

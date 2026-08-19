@@ -1,0 +1,44 @@
+{
+  "id": "ff4fe",
+  "display_name": "Final Fantasy IV",
+  "subtitle": "",
+  "platform": "SNES",
+  "_platform_source": "harvested game list: platform_raw='SNES'",
+  "version": "1.0.0",
+  "ap_world_name": "Final Fantasy IV Free Enterprise",
+  "_ap_world_name_source": "audit_world_name.py read the world itself; it declares game = 'Final Fantasy IV Free Enterprise' (manifest said 'Final Fantasy IV'). The world is the authority.",
+  "description": "Final Fantasy IV as a multiworld. Items and progression are shuffled across the session.",
+  "checks_verified": false,
+  "requires": "own_copy",
+  "_requires_source": "harvested game list: requires='own_copy'",
+  "lua_module": "ff4fe",
+  "_lua_module_source": "Plugins/Scripts/games/ff4fe.lua exists",
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/Rosalie-A/Archipelago/releases?q=FF4&expanded=true",
+    "_source": "harvested game list: source='url'"
+  },
+  "client": {
+    "protocol": "bizhawk",
+    "_source": "our RAM map Plugins/Scripts/games/ff4fe.lua drives this game through the BizHawk bridge"
+  },
+  "patch_extension": "refused",
+  "_description_source": "placeholder assembled from display_name; replace with what this game actually shuffles",
+  "_patch_extension_source": "read from the compiled world at ff4fe.apworld: adds new steps ['call_fe'] in ff4fe/rom.py:FF4FEPatchExtension",
+  "patch": {
+    "model": "procedure",
+    "_source": "audit_patch_model.py read the world: class FF4FEProcedurePatch(APProcedurePatch, APTokenMixin)"
+  },
+  "credits": {
+    "plugin_by": "solida1987",
+    "world_by": {
+      "name": "Rosalie-A",
+      "url": "https://github.com/Rosalie-A/Archipelago/releases?q=FF4&expanded=true",
+      "_source": "the address this world is published at, from apworld.url in this manifest",
+      "licence": "MIT",
+      "_licence_source": "read from Rosalie-A/Archipelago's own LICENSE file, 2026-08-19 -- the MIT text; GitHub's classifier says 'Other' because the file carries extra wording, so the body was read rather than the label"
+    },
+    "game_by": null,
+    "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
+  }
+}

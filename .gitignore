@@ -1,0 +1,16 @@
+﻿__pycache__/
+*.pyc
+/build/
+[Bb]in/
+[Oo]bj/
+/dist/
+
+# Internal build/test notes -- not part of what a player installs.
+NAESTE_TEST.md
+docs/RELEASES.md
+
+# Our own build machinery: manifest audits, plugin builder, gates.
+# The plugins themselves are on the releases page.
+tools/
+docs/EXTENSIONS.md
+catalog/GROUP_*.md

@@ -1,0 +1,61 @@
+{
+  "id": "yugioh_ddm",
+  "display_name": "Yu-Gi-Oh! Dungeon Dice Monsters",
+  "subtitle": "BizHawk",
+  "platform": "GBA",
+  "version": "1.0.0",
+  "_verified": "2026-08-17",
+  "ap_world_name": "Yu-Gi-Oh! Dungeon Dice Monsters",
+  "_ap_world_name_source": "world source: JustinMarshall98/Archipelago @ main, worlds/yugiohddm -- read from the world's own code -- the world's own `game` value",
+  "description": "Duelist progression as a multiworld. Dice, duelists and shop stock are shuffled across the session.",
+  "_description_source": "written by us from the structure of the game - no text copied from the game itself",
+  "checks_verified": false,
+  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Until then London warns at launch.",
+  "requires": "own_copy",
+  "_requires_source": "GBA title - the game lives on a cartridge the player owns",
+  "rom": {
+    "description": "A Yu-Gi-Oh! Dungeon Dice Monsters GBA ROM",
+    "_description_source": "world source: JustinMarshall98/Archipelago @ main, worlds/yugiohddm -- read from the world's own code",
+    "md5": [
+      "1ac4901f9a831d6b86ca776bb61f8d8b"
+    ],
+    "size": null,
+    "_size_note": "Not measured. London reads size 0 as 'unknown' and matches on MD5 alone, which is the stronger check.",
+    "_md5_source": "world source: JustinMarshall98/Archipelago @ main, worlds/yugiohddm -- read from the world's own code -- the accepted-dump list the world validates the player's file against"
+  },
+  "emulator": {
+    "name": "BizHawk",
+    "min_version": "2.7",
+    "_source": "setup guide: \"BizHawk 2.7 or later. Other emulators are not supported.\""
+  },
+  "client": {
+    "name": "Archipelago's BizHawk Client",
+    "lua": "data/lua/connector_bizhawk_generic.lua",
+    "_source": "the world's client subclasses BizHawkClient",
+    "protocol": "bizhawk"
+  },
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/JustinMarshall98/Archipelago/releases",
+    "_source": "game list plus the world's own repository"
+  },
+  "patch": {
+    "model": "procedure",
+    "_source": "audit_patch_model.py read the world: class YuGiOhDDMProcedurePatch(APProcedurePatch, APTokenMixin)"
+  },
+  "_note": "The AP game name comes from the world's own archipelago.json.",
+  "patch_extension": "refused",
+  "_patch_extension_source": "read from the compiled world at yugiohddm.apworld: adds new steps ['patch_rom'] in yugiohddm/rom.py:YuGiOhDDMPatchExtension",
+  "credits": {
+    "plugin_by": "solida1987",
+    "world_by": {
+      "name": "JustinMarshall98",
+      "url": "https://github.com/JustinMarshall98/Archipelago/releases",
+      "_source": "the address this world is published at, from apworld.url in this manifest",
+      "licence": "MIT",
+      "_licence_source": "read from JustinMarshall98/Archipelago's own LICENSE file, 2026-08-19 -- the MIT text; GitHub's classifier says 'Other' because the file carries extra wording, so the body was read rather than the label"
+    },
+    "game_by": null,
+    "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
+  }
+}

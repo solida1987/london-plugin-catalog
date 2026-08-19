@@ -1,0 +1,44 @@
+{
+  "id": "banjo_tooie",
+  "display_name": "Banjo-Tooie",
+  "subtitle": "",
+  "platform": "N64",
+  "_platform_source": "harvested game list: platform_raw='N64'",
+  "version": "1.0.0",
+  "ap_world_name": "Banjo-Tooie",
+  "_ap_world_name_source": "harvested game list, name as written there",
+  "description": "Banjo-Tooie as a multiworld. Items and progression are shuffled across the session.",
+  "checks_verified": false,
+  "requires": "own_copy",
+  "_requires_source": "harvested game list: requires='own_copy'",
+  "lua_module": "banjo_tooie",
+  "_lua_module_source": "Plugins/Scripts/games/banjo_tooie.lua exists",
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/jjjj12212/Archipelago-BanjoTooie/releases",
+    "_source": "harvested game list: source='url'"
+  },
+  "client": {
+    "protocol": "bizhawk",
+    "_source": "our RAM map Plugins/Scripts/games/banjo_tooie.lua drives this game through the BizHawk bridge"
+  },
+  "patch_extension": "none",
+  "_description_source": "placeholder assembled from display_name; replace with what this game actually shuffles",
+  "_patch_extension_source": "read from the compiled world at banjo_tooie.apworld: no APPatchExtension in 64 source file(s)",
+  "patch": {
+    "model": "none",
+    "_source": "audit_patch_model.py read the world: source readable; no patch class and no generate_output -- this world produces no patch"
+  },
+  "credits": {
+    "plugin_by": "solida1987",
+    "world_by": {
+      "name": "jjjj12212",
+      "url": "https://github.com/jjjj12212/Archipelago-BanjoTooie/releases",
+      "_source": "the address this world is published at, from apworld.url in this manifest",
+      "licence": "MIT",
+      "_licence_source": "GitHub reports MIT for jjjj12212/Archipelago-BanjoTooie, read 2026-08-19"
+    },
+    "game_by": null,
+    "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
+  }
+}

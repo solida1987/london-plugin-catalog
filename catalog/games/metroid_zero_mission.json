@@ -1,0 +1,63 @@
+{
+  "id": "metroid_zero_mission",
+  "display_name": "Metroid: Zero Mission",
+  "subtitle": "BizHawk",
+  "platform": "GBA",
+  "version": "1.0.0",
+  "_verified": "2026-08-17",
+  "ap_world_name": "Metroid: Zero Mission",
+  "_ap_world_name_source": "world source: lilDavid/Archipelago-Metroid-Zero-Mission @ main -- read from the world's own code (repo root, not worlds/) -- the world's own `game` value",
+  "description": "Zebes as a multiworld. Suit upgrades, beams and missile tanks are shuffled across the session.",
+  "_description_source": "written by us from the structure of the game - no text copied from the game itself",
+  "checks_verified": false,
+  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Until then London warns at launch.",
+  "requires": "own_copy",
+  "_requires_source": "GBA title - the game lives on a cartridge the player owns",
+  "rom": {
+    "description": "A US Metroid: Zero Mission ROM -- either the original cartridge dump or the Wii U Virtual Console release",
+    "_description_source": "world source: lilDavid/Archipelago-Metroid-Zero-Mission @ main -- read from the world's own code (repo root, not worlds/)",
+    "md5": [
+      "ebbce58109988b6da61ebb06c7a432d5",
+      "e23c14997c2ea4f11e5996908e577125"
+    ],
+    "size": null,
+    "_size_note": "Not measured. London reads size 0 as 'unknown' and matches on MD5 alone, which is the stronger check.",
+    "_md5_source": "world source: lilDavid/Archipelago-Metroid-Zero-Mission @ main -- read from the world's own code (repo root, not worlds/) -- the accepted-dump list the world validates the player's file against"
+  },
+  "emulator": {
+    "name": "BizHawk",
+    "min_version": null,
+    "_source": "Not stated in the material we read. The group floor in catalog/GROUP_GBA.md covers it."
+  },
+  "client": {
+    "name": "Archipelago's BizHawk Client",
+    "lua": "data/lua/connector_bizhawk_generic.lua",
+    "_source": "the world's client subclasses BizHawkClient",
+    "protocol": "bizhawk"
+  },
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases",
+    "_source": "game list plus the world's own repository"
+  },
+  "patch": {
+    "model": "procedure",
+    "_source": "audit_patch_model.py read the world: class MZMProcedurePatch(APProcedurePatch)"
+  },
+  "lua_module": "mzm",
+  "_lua_module_source": "filename under Multiworld-Launcher/Plugins/Scripts/games/ — the modules predate this catalogue and use their own short names",
+  "patch_extension": "refused",
+  "_patch_extension_source": "read from the compiled world at mzm.apworld: adds new steps ['apply_json'] in mzm/patch.py:MZMPatchExtensions",
+  "credits": {
+    "plugin_by": "solida1987",
+    "world_by": {
+      "name": "lilDavid",
+      "url": "https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases",
+      "_source": "the address this world is published at, from apworld.url in this manifest",
+      "licence": "MIT",
+      "_licence_source": "GitHub reports MIT for lilDavid/Archipelago-Metroid-Zero-Mission, read 2026-08-19"
+    },
+    "game_by": null,
+    "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
+  }
+}

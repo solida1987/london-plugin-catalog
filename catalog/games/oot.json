@@ -1,0 +1,48 @@
+{
+  "id": "oot",
+  "display_name": "The Legend of Zelda: Ocarina of Time",
+  "subtitle": "",
+  "platform": "N64",
+  "_platform_source": "harvested game list: platform_raw='N64'",
+  "version": "1.0.0",
+  "ap_world_name": "Ocarina of Time",
+  "_ap_world_name_source": "audit_world_name.py read the world itself; it declares game = 'Ocarina of Time' (manifest said 'The Legend of Zelda: Ocarina of Time'). The world is the authority.",
+  "description": "The Legend of Zelda: Ocarina of Time as a multiworld. Items and progression are shuffled across the session.",
+  "checks_verified": false,
+  "requires": "own_copy",
+  "_requires_source": "harvested game list: requires='own_copy'",
+  "lua_module": "oot",
+  "_lua_module_source": "Plugins/Scripts/games/oot.lua exists",
+  "apworld": {
+    "bundled": true,
+    "url": "",
+    "_source": "harvested game list: source='bundled'"
+  },
+  "client": {
+    "protocol": "bizhawk",
+    "_source": "the world ships its own client, but our RAM map Plugins/Scripts/games/oot.lua drives it through the BizHawk bridge"
+  },
+  "patch_extension": "none",
+  "_patch_extension_source": "read from oot: no APPatchExtension in 36 compiled file(s)",
+  "_description_source": "placeholder assembled from display_name; replace with what this game actually shuffles",
+  "patch": {
+    "model": "custom",
+    "_source": "audit_patch_model.py read the world: C:\\ProgramData\\Archipelago\\lib\\worlds\\oot\\Patches.pyc: class OoTContainer(['APPatch'])",
+    "base_md5": [
+      "5bd1fe107bf8106b2ab6650abecd54d6"
+    ],
+    "_base_md5_source": "OoT 1.0 USA -- the dump worlds/oot validates its input against (verified against the local file 2026-08-19). Present so the launcher can PROVE a chosen ROM is the unpatched input rather than this seed's output."
+  },
+  "credits": {
+    "plugin_by": "solida1987",
+    "world_by": {
+      "name": "the Archipelago project and its contributors",
+      "url": "https://github.com/ArchipelagoMW/Archipelago",
+      "_source": "this world ships with Archipelago itself (apworld.bundled)",
+      "licence": "MIT",
+      "_licence_source": "read from ArchipelagoMW/Archipelago's own LICENSE file, 2026-08-19 -- the MIT text; GitHub's classifier says 'Other' because the file carries extra wording, so the body was read rather than the label"
+    },
+    "game_by": null,
+    "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
+  }
+}
