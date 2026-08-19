@@ -1,9 +1,9 @@
 {
   "id": "alttp",
   "display_name": "The Legend of Zelda: A Link to the Past",
-  "subtitle": "SNI",
+  "subtitle": "SNES",
   "platform": "SNES",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "_verified": "2026-08-17",
   "ap_world_name": "A Link to the Past",
   "_ap_world_name_source": "world source: ArchipelagoMW/Archipelago worlds/alttp (upstream), read from the world's own code -- the world's own `game` value",
