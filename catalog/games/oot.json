@@ -4,7 +4,7 @@
   "subtitle": "",
   "platform": "N64",
   "_platform_source": "harvested game list: platform_raw='N64'",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "ap_world_name": "Ocarina of Time",
   "_ap_world_name_source": "audit_world_name.py read the world itself; it declares game = 'Ocarina of Time' (manifest said 'The Legend of Zelda: Ocarina of Time'). The world is the authority.",
   "description": "The Legend of Zelda: Ocarina of Time as a multiworld. Items and progression are shuffled across the session.",
@@ -44,5 +44,14 @@
     },
     "game_by": null,
     "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
+  },
+  "rom": {
+    "description": "An Ocarina of Time 1.0 USA ROM (uncompressed .z64)",
+    "_description_source": "worlds/oot validates its input against the 1.0 USA dump",
+    "md5": [
+      "5bd1fe107bf8106b2ab6650abecd54d6"
+    ],
+    "size": 33554432,
+    "_md5_source": "measured against the local accepted dump 2026-08-19; matches host.yaml's rom the world accepted at generation"
   }
 }
