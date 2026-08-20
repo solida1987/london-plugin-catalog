@@ -1,6 +1,6 @@
 {
   "note": "Which London plugin covers which Archipelago game. Addresses and metadata only.",
-  "count": 340,
+  "count": 341,
   "games": {
     "Adventure": {
       "id": "adventure",
@@ -42,6 +42,12 @@
       "id": "cv64",
       "platform": "N64",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/n64/cv64.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Castlevania: Legacy of Darkness": {
+      "id": "cvlod",
+      "platform": "N64",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/n64/cvlod.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Diddy Kong Racing": {

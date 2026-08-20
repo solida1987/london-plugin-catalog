@@ -1,6 +1,6 @@
 {
   "note": "The launcher's store window. Addresses and metadata only — no artwork and no code is stored here. Installing still runs the launcher's own consent flow.",
-  "count": 340,
+  "count": 341,
   "platforms": [
     "Atari 2600",
     "Game Boy",
@@ -185,6 +185,28 @@
       "plugin_by": "solida1987",
       "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Nintendo%2064/Named_Boxarts/Castlevania%20%28USA%29%20%28Rev%201%29.png",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/n64/cv64.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases",
+      "install_kind": "rom",
+      "tested": false
+    },
+    {
+      "id": "cvlod",
+      "name": "Castlevania: Legacy of Darkness",
+      "ap_world_name": "Castlevania: Legacy of Darkness",
+      "subtitle": "",
+      "description": "Castlevania: Legacy of Darkness as a multiworld. Items and progression are shuffled across the session.",
+      "platform": "N64",
+      "platform_label": "Nintendo 64",
+      "family": "Nintendo",
+      "genres": [
+        "Metroidvania"
+      ],
+      "version": "1.0.0",
+      "world_by": "unnamed — no published author recorded",
+      "world_licence": "",
+      "plugin_by": "solida1987",
+      "cover": null,
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/n64/cvlod.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases",
       "install_kind": "rom",
       "tested": false

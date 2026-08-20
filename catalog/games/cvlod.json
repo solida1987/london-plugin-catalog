@@ -1,0 +1,29 @@
+{
+  "id": "cvlod",
+  "display_name": "Castlevania: Legacy of Darkness",
+  "subtitle": "",
+  "platform": "N64",
+  "_platform_source": "harvested game list: platform_raw='N64'",
+  "version": "1.0.0",
+  "ap_world_name": "Castlevania: Legacy of Darkness",
+  "_ap_world_name_source": "harvested game list, name as written there",
+  "description": "Castlevania: Legacy of Darkness as a multiworld. Items and progression are shuffled across the session.",
+  "_description_source": "placeholder assembled from display_name; replace with what this game actually shuffles",
+  "checks_verified": false,
+  "requires": "own_copy",
+  "_requires_source": "harvested game list: requires='own_copy'",
+  "lua_module": "cvlod",
+  "_lua_module_source": "Plugins/Scripts/games/cvlod.lua exists",
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/LiquidCat64/LiquidCatipelago/releases",
+    "_source": "harvested game list: source='url'"
+  },
+  "client": {
+    "protocol": "bizhawk",
+    "_source": "the world's client subclasses BizHawkClient"
+  },
+  "patch_extension": "refused",
+  "_patch_extension_source": "read from cvlod.apworld: adds new steps ['apply_patches'] in cvlod/rom.py:CVLoDPatchExtensions",
+  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Until then London warns."
+}
