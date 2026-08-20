@@ -187,8 +187,8 @@ and the module in the launcher that reads that game's memory.
 
 | Asked | Worlds | Outcome |
 |---|---|---|
-| PinkSwitch ([#3](https://github.com/solida1987/london-plugin-catalog/issues/3)) | Earthbound, Yoshi's Island, Zelda II | Removed 20 August 2026, along with the three memory modules in the launcher |
-| Panda291 ([#1](https://github.com/solida1987/london-plugin-catalog/issues/1)) | Ratchet & Clank | Never in the catalogue; none of these games has ever been supported here |
-| 1theory, for Taoshi ([#2](https://github.com/solida1987/london-plugin-catalog/issues/2)) | Ratchet & Clank 3 | Never in the catalogue |
+| PinkSwitch | Earthbound, Yoshi's Island, Zelda II | Removed 20 August 2026, along with the three memory modules in the launcher |
+| Panda291 | Ratchet & Clank | Never in the catalogue; none of these games has ever been supported here |
+| 1theory, for Taoshi | Ratchet & Clank 3 | Never in the catalogue |
 
 ---
