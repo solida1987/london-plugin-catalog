@@ -1,6 +1,6 @@
 {
   "note": "The launcher's store window. Addresses and metadata only — no artwork and no code is stored here. Installing still runs the launcher's own consent flow.",
-  "count": 341,
+  "count": 344,
   "platforms": [
     "Atari 2600",
     "Game Boy",
@@ -10,7 +10,9 @@
     "Mega Drive / Genesis",
     "NES",
     "Nintendo 64",
+    "Nintendo DS",
     "PC",
+    "PlayStation",
     "Super Nintendo"
   ],
   "families": [
@@ -969,6 +971,28 @@
       "tested": false
     },
     {
+      "id": "pokemon_bw",
+      "name": "Pokémon Black and White",
+      "ap_world_name": "Pokémon Black and White",
+      "subtitle": "",
+      "description": "Pokémon Black and White as a multiworld. Items and progression are shuffled across the session.",
+      "platform": "DS",
+      "platform_label": "Nintendo DS",
+      "family": "Other",
+      "genres": [
+        "Adventure"
+      ],
+      "version": "1.0.0",
+      "world_by": "unnamed — no published author recorded",
+      "world_licence": "",
+      "plugin_by": "solida1987",
+      "cover": null,
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ds/pokemon_bw.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases",
+      "install_kind": "rom",
+      "tested": false
+    },
+    {
       "id": "pokemon_crystal",
       "name": "Pokemon Crystal",
       "ap_world_name": "Pokemon Crystal",
@@ -1036,6 +1060,28 @@
       "page": "https://github.com/solida1987/london-plugin-catalog/releases",
       "install_kind": "rom",
       "tested": true
+    },
+    {
+      "id": "pokemon_platinum",
+      "name": "Pokémon Platinum",
+      "ap_world_name": "Pokémon Platinum",
+      "subtitle": "",
+      "description": "Pokémon Platinum as a multiworld. Items and progression are shuffled across the session.",
+      "platform": "DS",
+      "platform_label": "Nintendo DS",
+      "family": "Other",
+      "genres": [
+        "Adventure"
+      ],
+      "version": "1.0.0",
+      "world_by": "unnamed — no published author recorded",
+      "world_licence": "",
+      "plugin_by": "solida1987",
+      "cover": null,
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ds/pokemon_platinum.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases",
+      "install_kind": "rom",
+      "tested": false
     },
     {
       "id": "pokemon_rb",
@@ -1166,6 +1212,28 @@
       "plugin_by": "solida1987",
       "cover": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Sonic%20The%20Hedgehog%20%28USA%29.png",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/sega/sonic1.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases",
+      "install_kind": "rom",
+      "tested": false
+    },
+    {
+      "id": "sotn",
+      "name": "Castlevania: Symphony of the Night",
+      "ap_world_name": "Castlevania: Symphony of the Night",
+      "subtitle": "",
+      "description": "Castlevania: Symphony of the Night as a multiworld. Items and progression are shuffled across the session.",
+      "platform": "PSX",
+      "platform_label": "PlayStation",
+      "family": "Other",
+      "genres": [
+        "Metroidvania"
+      ],
+      "version": "1.0.0",
+      "world_by": "unnamed — no published author recorded",
+      "world_licence": "",
+      "plugin_by": "solida1987",
+      "cover": null,
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/playstation/sotn.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases",
       "install_kind": "rom",
       "tested": false

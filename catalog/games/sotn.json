@@ -1,0 +1,29 @@
+{
+  "id": "sotn",
+  "display_name": "Castlevania: Symphony of the Night",
+  "subtitle": "",
+  "platform": "PSX",
+  "_platform_source": "harvested game list: platform_raw='PSX'",
+  "version": "1.0.0",
+  "ap_world_name": "Castlevania: Symphony of the Night",
+  "_ap_world_name_source": "harvested game list, name as written there",
+  "description": "Castlevania: Symphony of the Night as a multiworld. Items and progression are shuffled across the session.",
+  "_description_source": "placeholder assembled from display_name; replace with what this game actually shuffles",
+  "checks_verified": false,
+  "requires": "own_copy",
+  "_requires_source": "harvested game list: requires='own_copy'",
+  "lua_module": "sotn",
+  "_lua_module_source": "Plugins/Scripts/games/sotn.lua exists",
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/Darvitz/Archipelago-Crystal/releases",
+    "_source": "harvested game list: source='url'"
+  },
+  "client": {
+    "protocol": "bizhawk",
+    "_source": "world not available to read",
+    "_protocol_source": "NOT from the world: the world ships no BizHawk client class. London does not use Archipelago client, so the bridge is our own connector plus Plugins/Scripts/games/sotn.lua, derived from the world source. Never measured in a running game."
+  },
+  "patch_extension": "unaudited",
+  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Until then London warns."
+}

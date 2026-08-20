@@ -35,8 +35,15 @@ public sealed class BizHawkBridge : IEmulatorBridge
     public string   HomepageUrl => "https://tasvideos.org/BizHawk/ReleaseHistory";
 
     /// The systems BizHawk can host. Matched against a plugin's RomSystem.
+    ///
+    /// Kept in step with Core/EmulatorBackends.cs on the launcher side: a
+    /// platform listed there but not here gives the player an empty emulator
+    /// dropdown and a Play button that cannot answer. PSX runs on the bundled
+    /// Nymashock core and NDS on melonDS; both spellings of the Atari are
+    /// carried because the catalogue writes "2600" and the backend "A26".
     public string[] Systems => new[]
-        { "GBA", "GBC", "GB", "SNES", "NES", "N64", "GEN", "SMS", "PCE" };
+        { "GBA", "GBC", "GB", "SNES", "NES", "N64", "GEN", "SMS", "PCE",
+          "PSX", "NDS", "2600", "A26" };
 
     /// Proven: this is the transport the GBA plugins already run on.
     public bool IsReady => true;

@@ -1,6 +1,6 @@
 {
   "note": "Which London plugin covers which Archipelago game. Addresses and metadata only.",
-  "count": 341,
+  "count": 344,
   "games": {
     "Adventure": {
       "id": "adventure",
@@ -254,6 +254,12 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/n64/paper_mario.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
+    "Pokémon Black and White": {
+      "id": "pokemon_bw",
+      "platform": "DS",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ds/pokemon_bw.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
     "Pokemon Crystal": {
       "id": "pokemon_crystal",
       "platform": "GBC",
@@ -270,6 +276,12 @@
       "id": "pokemon_frlg",
       "platform": "GBA",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/pokemon_frlg.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Pokémon Platinum": {
+      "id": "pokemon_platinum",
+      "platform": "DS",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ds/pokemon_platinum.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Pokémon Red and Blue": {
@@ -306,6 +318,12 @@
       "id": "sonic1",
       "platform": "GEN",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/sega/sonic1.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Castlevania: Symphony of the Night": {
+      "id": "sotn",
+      "platform": "PSX",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/playstation/sotn.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Super Metroid": {
