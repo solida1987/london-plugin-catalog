@@ -15,3 +15,11 @@ tools/
 docs/EXTENSIONS.md
 catalog/GROUP_*.md
 catalog/pc_build_report.json
+
+# Harvested research lists. These are how WE find games; they are not how a
+# player installs one, and the launcher never reads them. They also carry a
+# link to every world author's repository, which is a standing invitation to
+# the request PinkSwitch had to make twice. Kept locally, published nowhere.
+catalog/games.json
+catalog/index.json
+catalog/gamelist_raw.txt
