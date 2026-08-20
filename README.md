@@ -72,7 +72,6 @@ no one has played it through yet — try it and please report what happens.
 | Donkey Kong Country | Ready, untested | [TheLX5](https://github.com/TheLX5/Archipelago/releases?q="Donkey+Kong+Country+1"&expanded=true) | MIT |
 | Donkey Kong Country 2: Diddy's Kong Quest | Ready, untested | [TheLX5](https://github.com/TheLX5/Archipelago/releases?q=country+2&expanded=true) | MIT |
 | Donkey Kong Country 3: Dixie Kong's Double Trouble! | Ready, untested | [the Archipelago project and its contributors](https://github.com/ArchipelagoMW/Archipelago) | MIT |
-| EarthBound | Ready, untested | [PinkSwitch](https://github.com/PinkSwitch/Archipelago/releases?q=earthbound&expanded=true) | MIT |
 | Final Fantasy IV | Ready, untested | [Rosalie-A](https://github.com/Rosalie-A/Archipelago/releases?q=FF4&expanded=true) | MIT |
 | Final Fantasy Mystic Quest | Patch with Archipelago's client first | [Alchav, Artea](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
 | Final Fantasy VI | Not ready | [docs.google.com](https://docs.google.com/document/d/1ZN-eO3ZasTEAReGCRP7l9tgI-kEh0GG4gJxVv7JOlyk/edit?tab=t.0) | not stated by its author |
@@ -85,7 +84,6 @@ no one has played it through yet — try it and please report what happens.
 | Secret of Evermore | Ready, untested | [Black Sliver](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
 | Super Mario RPG | Ready, untested | [TheRealSolidusSnake](https://github.com/TheRealSolidusSnake/SMRPG_apworld/releases) | MIT |
 | Super Mario World | Ready, untested | [PoryGone](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
-| Super Mario World 2: Yoshi's Island | Ready, untested | [Pink Switch](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
 | Super Metroid | Ready, untested | [Farrak Kilhn](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
 | The Legend of Zelda: A Link to the Past | **Playable** | [Farrak Kilhn, Berserker, Fischfilet, Edos, Coxla, Nyx Edelstein](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
 
@@ -111,7 +109,6 @@ no one has played it through yet — try it and please report what happens.
 | Mega Man 2 | Ready, untested | [Silvris](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
 | Mega Man 3 | Ready, untested | [Silvris](https://github.com/Silvris/Archipelago/releases?q=tag%3Amm3_0&expanded=true) | MIT |
 | The Legend of Zelda | Ready, untested | [Rosalie and Figment](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
-| The Legend of Zelda II: The Adventure of Link | Ready, untested | [PinkSwitch](https://github.com/PinkSwitch/Archipelago/releases?q=zelda&expanded=true) | MIT |
 
 ### Game Boy Color
 
@@ -168,4 +165,30 @@ you what it would download before it downloads anything.
 
 ---
 
-*64 games. 3 confirmed playable; the rest are built and waiting for somebody to play them.*
+*61 games. 3 confirmed playable; the rest are built and waiting for somebody to play them.*
+
+---
+
+## If you would rather not be here
+
+The Archipelago worlds this catalogue supports are other people's work. If you
+wrote one and would rather it were not supported here, **open an issue and it
+will be removed.** No argument, no conditions, and it will not come back later.
+
+That stands whether or not a licence would let us carry on. Someone who does
+not want their work associated with this project has a better claim on that
+decision than we do, and a permission granted years ago to nobody in particular
+is not the same as agreement.
+
+Removal means everything: the plugin, its entry here, the published download,
+and the module in the launcher that reads that game's memory.
+
+### Removed on request
+
+| Asked | Worlds | Outcome |
+|---|---|---|
+| PinkSwitch ([#3](https://github.com/solida1987/london-plugin-catalog/issues/3)) | Earthbound, Yoshi's Island, Zelda II | Removed 20 August 2026, along with the three memory modules in the launcher |
+| Panda291 ([#1](https://github.com/solida1987/london-plugin-catalog/issues/1)) | Ratchet & Clank | Never in the catalogue; none of these games has ever been supported here |
+| 1theory, for Taoshi ([#2](https://github.com/solida1987/london-plugin-catalog/issues/2)) | Ratchet & Clank 3 | Never in the catalogue |
+
+---

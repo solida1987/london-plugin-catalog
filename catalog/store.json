@@ -1,6 +1,6 @@
 {
   "note": "The launcher's store window. Addresses and metadata only — no artwork and no code is stored here. Installing still runs the launcher's own consent flow.",
-  "count": 344,
+  "count": 341,
   "platforms": [
     "Atari 2600",
     "Game Boy",
@@ -319,28 +319,6 @@
       "plugin_by": "solida1987",
       "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Donkey%20Kong%20Country%203%20-%20Dixie%20Kong%27s%20Double%20Trouble%21%20%28USA%29%20%28En%2CFr%29.png",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/snes/donkey_kong_country_3.londonplugin",
-      "page": "https://github.com/solida1987/london-plugin-catalog/releases",
-      "install_kind": "rom",
-      "tested": false
-    },
-    {
-      "id": "earthbound",
-      "name": "EarthBound",
-      "ap_world_name": "EarthBound",
-      "subtitle": "",
-      "description": "EarthBound as a multiworld. Items and progression are shuffled across the session.",
-      "platform": "SNES",
-      "platform_label": "Super Nintendo",
-      "family": "Nintendo",
-      "genres": [
-        "RPG"
-      ],
-      "version": "1.0.0",
-      "world_by": "PinkSwitch",
-      "world_licence": "MIT",
-      "plugin_by": "solida1987",
-      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/EarthBound%20%28USA%29.png",
-      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/snes/earthbound.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases",
       "install_kind": "rom",
       "tested": false
@@ -1327,28 +1305,6 @@
       "tested": false
     },
     {
-      "id": "yoshis_island",
-      "name": "Super Mario World 2: Yoshi's Island",
-      "ap_world_name": "Yoshi's Island",
-      "subtitle": "SNI",
-      "description": "Yoshi's Island as a multiworld. Level unlocks, items and abilities are shuffled across the session.",
-      "platform": "SNES",
-      "platform_label": "Super Nintendo",
-      "family": "Nintendo",
-      "genres": [
-        "Platformer"
-      ],
-      "version": "1.0.0",
-      "world_by": "the Archipelago project and its contributors",
-      "world_licence": "MIT",
-      "plugin_by": "solida1987",
-      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Super%20Mario%20World%202%20-%20Yoshi%27s%20Island%20%28USA%29%20%28Rev%201%29.png",
-      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/snes/yoshis_island.londonplugin",
-      "page": "https://github.com/solida1987/london-plugin-catalog/releases",
-      "install_kind": "rom",
-      "tested": false
-    },
-    {
       "id": "yugioh_2006",
       "name": "Yu-Gi-Oh! Ultimate Masters: WCT 2006",
       "ap_world_name": "Yu-Gi-Oh! 2006",
@@ -1367,29 +1323,6 @@
       "plugin_by": "solida1987",
       "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Advance/Named_Boxarts/Yu-Gi-Oh%21%20-%20Ultimate%20Masters%20-%20World%20Championship%20Tournament%202006%20%28USA%29%20%28En%2CJa%2CFr%2CDe%2CEs%2CIt%29.png",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/yugioh_2006.londonplugin",
-      "page": "https://github.com/solida1987/london-plugin-catalog/releases",
-      "install_kind": "rom",
-      "tested": false
-    },
-    {
-      "id": "zelda2",
-      "name": "The Legend of Zelda II: The Adventure of Link",
-      "ap_world_name": "Zelda II: The Adventure of Link",
-      "subtitle": "",
-      "description": "The Legend of Zelda II: The Adventure of Link as a multiworld. Items and progression are shuffled across the session.",
-      "platform": "NES",
-      "platform_label": "NES",
-      "family": "Nintendo",
-      "genres": [
-        "Action-Adventure",
-        "RPG"
-      ],
-      "version": "1.0.0",
-      "world_by": "PinkSwitch",
-      "world_licence": "MIT",
-      "plugin_by": "solida1987",
-      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Nintendo%20Entertainment%20System/Named_Boxarts/Zelda%20II%20-%20The%20Adventure%20of%20Link%20%28USA%29%20%28Virtual%20Console%29.png",
-      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/nes/zelda2.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases",
       "install_kind": "rom",
       "tested": false
