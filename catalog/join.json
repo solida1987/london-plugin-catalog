@@ -167,7 +167,7 @@
     "Super Mario Land 2: 6 Golden Coins": {
       "id": "marioland2",
       "platform": "GB",
-      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gb/marioland2.londonplugin",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gb-gbc/marioland2.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Mega Man 2": {
@@ -263,7 +263,7 @@
     "Pokémon Red and Blue": {
       "id": "pokemon_rb",
       "platform": "GB",
-      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gb/pokemon_rb.londonplugin",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gb-gbc/pokemon_rb.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Super Mario RPG": {
