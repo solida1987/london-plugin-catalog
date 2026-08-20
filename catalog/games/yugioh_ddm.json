@@ -43,7 +43,7 @@
     "model": "procedure",
     "_source": "audit_patch_model.py read the world: class YuGiOhDDMProcedurePatch(APProcedurePatch, APTokenMixin)"
   },
-  "_note": "The AP game name comes from the world's own archipelago.json.",
+  "_note": "BLOCKED on the item-delivery path, not on detection. Reading checks is plain arithmetic (duelist win counters, tournament division bytes, dice collection) and could be written today. But the world's client also WRITES: it unlocks duelists by OR-ing bitflags into DUELIST_UNLOCK_OFFSET as duelist items arrive. Without that write a seed reports checks and can never progress -- a plugin that looks like it works and cannot be finished. The write path needs measuring in a running game before it ships. Source: JustinMarshall98/Archipelago yugiohddm v0.3.4, client.py game_watcher.",
   "patch_extension": "refused",
   "_patch_extension_source": "read from the compiled world at yugiohddm.apworld: adds new steps ['patch_rom'] in yugiohddm/rom.py:YuGiOhDDMPatchExtension",
   "credits": {
@@ -57,5 +57,6 @@
     },
     "game_by": null,
     "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
-  }
+  },
+  "_blocked_since": "2026-08-20"
 }
