@@ -47,22 +47,22 @@ no one has played it through yet — try it and please report what happens.
 
 | Game | Status | Archipelago world by | Licence |
 |---|---|---|---|
-| Castlevania: Circle of the Moon | Ready, untested | [the Archipelago project and its contributors](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
+| Castlevania: Circle of the Moon | Ready, untested | [Liquid Cat](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
 | Castlevania: Harmony of Dissonance | Ready, untested | [LiquidCat64](https://github.com/LiquidCat64/LiquidCatipelago/releases) | MIT |
 | Final Fantasy Tactics Advance | Ready, untested | [spicynun](https://github.com/spicynun/Archipelago/releases) | MIT |
 | Fire Emblem: The Sacred Stones | Ready, untested | [CT075](https://github.com/CT075/Archipelago/releases) | MIT |
 | Golden Sun: The Lost Age | Ready, untested | [cjmang](https://github.com/cjmang/Archipelago/releases) | MIT |
 | KINGDOM HEARTS Chain of Memories | Ready, untested | [gaithernOrg](https://github.com/gaithernOrg/ArchipelagoKHCOM/releases) | MIT |
-| Mario & Luigi: Superstar Saga | Ready, untested | [the Archipelago project and its contributors](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
-| Mega Man Battle Network 3 Blue | Ready, untested | [the Archipelago project and its contributors](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
+| Mario & Luigi: Superstar Saga | Ready, untested | [jamesbrq, GreenMarco](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
+| Mega Man Battle Network 3 Blue | Ready, untested | [digiholic](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
 | Metroid Fusion | Ready, untested | [StalledStorm](https://github.com/StalledStorm/ArchipelagoMine/releases) | GPL-3.0 |
 | Metroid: Zero Mission | Ready, untested | [lilDavid](https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases) | MIT |
-| Pokemon Emerald | **Playable** | [the Archipelago project and its contributors](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
+| Pokemon Emerald | **Playable** | [Zunawe, nachocua, Tsukino, RhenaudTheLukark](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
 | Pokemon FireRed and LeafGreen | Ready, untested | [vyneras](https://github.com/vyneras/Archipelago/releases) | MIT |
 | The Legend of Zelda: The Minish Cap | **Playable** | [eternalcode0](https://github.com/eternalcode0/Archipelago/releases) | MIT |
 | Wario Land 4 | Ready, untested | [lilDavid](https://github.com/lilDavid/Archipelago-Wario-Land-4/releases) | MIT |
 | Yu-Gi-Oh! Dungeon Dice Monsters | Ready, untested | [JustinMarshall98](https://github.com/JustinMarshall98/Archipelago/releases) | MIT |
-| Yu-Gi-Oh! Ultimate Masters: WCT 2006 | Ready, untested | [the Archipelago project and its contributors](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
+| Yu-Gi-Oh! Ultimate Masters: WCT 2006 | Ready, untested | [Rensen](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
 
 ### Super Nintendo
 
@@ -71,54 +71,54 @@ no one has played it through yet — try it and please report what happens.
 | Chrono Trigger | Not ready | [www.wiki.ctjot.com](https://www.wiki.ctjot.com/doku.php?id=multiworld) | not stated by its author |
 | Donkey Kong Country | Ready, untested | [TheLX5](https://github.com/TheLX5/Archipelago/releases?q="Donkey+Kong+Country+1"&expanded=true) | MIT |
 | Donkey Kong Country 2: Diddy's Kong Quest | Ready, untested | [TheLX5](https://github.com/TheLX5/Archipelago/releases?q=country+2&expanded=true) | MIT |
-| Donkey Kong Country 3: Dixie Kong's Double Trouble! | Ready, untested | [the Archipelago project and its contributors](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
+| Donkey Kong Country 3: Dixie Kong's Double Trouble! | Ready, untested | [the Archipelago project and its contributors](https://github.com/ArchipelagoMW/Archipelago) | MIT |
 | EarthBound | Ready, untested | [PinkSwitch](https://github.com/PinkSwitch/Archipelago/releases?q=earthbound&expanded=true) | MIT |
 | Final Fantasy IV | Ready, untested | [Rosalie-A](https://github.com/Rosalie-A/Archipelago/releases?q=FF4&expanded=true) | MIT |
-| Final Fantasy Mystic Quest | Patch with Archipelago's client first | [the Archipelago project and its contributors](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
+| Final Fantasy Mystic Quest | Patch with Archipelago's client first | [Alchav, Artea](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
 | Final Fantasy VI | Not ready | [docs.google.com](https://docs.google.com/document/d/1ZN-eO3ZasTEAReGCRP7l9tgI-kEh0GG4gJxVv7JOlyk/edit?tab=t.0) | not stated by its author |
-| Kirby's Dream Land 3 | Ready, untested | [the Archipelago project and its contributors](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
-| Lufia II: Rise of the Sinistrals | Ready, untested | [the Archipelago project and its contributors](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
+| Kirby's Dream Land 3 | Ready, untested | [Silvris](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
+| Lufia II: Rise of the Sinistrals | Ready, untested | [word_fcuk](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
 | Mega Man X | Ready, untested | [TheLX5](https://github.com/TheLX5/Archipelago/releases?q="Mega+Man+X"&expanded=true) | MIT |
 | Mega Man X2 | Ready, untested | [TheLX5](https://github.com/TheLX5/Archipelago/releases?q="Mega+Man+X2"&expanded=true) | MIT |
 | Mega Man X3 | Ready, untested | [TheLX5](https://github.com/TheLX5/Archipelago/releases?q="Mega+Man+X3"&expanded=true) | MIT |
-| SMZ3 | Ready, untested | [the Archipelago project and its contributors](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
-| Secret of Evermore | Ready, untested | [the Archipelago project and its contributors](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
+| SMZ3 | Ready, untested | [lordlou](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
+| Secret of Evermore | Ready, untested | [Black Sliver](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
 | Super Mario RPG | Ready, untested | [TheRealSolidusSnake](https://github.com/TheRealSolidusSnake/SMRPG_apworld/releases) | MIT |
-| Super Mario World | Ready, untested | [the Archipelago project and its contributors](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
-| Super Mario World 2: Yoshi's Island | Ready, untested | [the Archipelago project and its contributors](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
-| Super Metroid | Ready, untested | [the Archipelago project and its contributors](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
-| The Legend of Zelda: A Link to the Past | **Playable** | [the Archipelago project and its contributors](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
+| Super Mario World | Ready, untested | [PoryGone](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
+| Super Mario World 2: Yoshi's Island | Ready, untested | [Pink Switch](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
+| Super Metroid | Ready, untested | [Farrak Kilhn](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
+| The Legend of Zelda: A Link to the Past | **Playable** | [Farrak Kilhn, Berserker, Fischfilet, Edos, Coxla, Nyx Edelstein](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
 
 ### Nintendo 64
 
 | Game | Status | Archipelago world by | Licence |
 |---|---|---|---|
 | Banjo-Tooie | Ready, untested | [jjjj12212](https://github.com/jjjj12212/Archipelago-BanjoTooie/releases) | MIT |
-| Castlevania 64 | Ready, untested | [the Archipelago project and its contributors](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
+| Castlevania 64 | Ready, untested | [Liquid Cat](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
 | Diddy Kong Racing | Ready, untested | [zakwiz](https://github.com/zakwiz/DiddyKongRacingAP/releases) | MIT |
 | Donkey Kong 64 | Not ready | [dev.dk64randomizer.com](https://dev.dk64randomizer.com/wiki/index.html?title=Archipelago-Dev-Setup-Guide) | not stated by its author |
 | Kirby 64: The Crystal Shards | Ready, untested | [Silvris](https://github.com/Silvris/Archipelago/releases?q=tag%3Ak64_0&expanded=true) | MIT |
 | Mario Kart 64 | Ready, untested | [Edsploration](https://github.com/Edsploration/MK64-Archipelago/releases) | MIT |
 | Paper Mario | Ready, untested | [icebound777](https://github.com/icebound777/PMR_APWorld/releases) | MIT |
-| The Legend of Zelda: Ocarina of Time | Patch with Archipelago's client first | [the Archipelago project and its contributors](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
+| The Legend of Zelda: Ocarina of Time | Patch with Archipelago's client first | [Edos, TheLynk, Held_der_Zeit](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
 
 ### NES
 
 | Game | Status | Archipelago world by | Licence |
 |---|---|---|---|
-| Faxanadu | Ready, untested | [the Archipelago project and its contributors](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
-| Final Fantasy | Ready, untested | [the Archipelago project and its contributors](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
-| Mega Man 2 | Ready, untested | [the Archipelago project and its contributors](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
+| Faxanadu | Ready, untested | [Daivuk](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
+| Final Fantasy | Ready, untested | [jat2980](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
+| Mega Man 2 | Ready, untested | [Silvris](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
 | Mega Man 3 | Ready, untested | [Silvris](https://github.com/Silvris/Archipelago/releases?q=tag%3Amm3_0&expanded=true) | MIT |
-| The Legend of Zelda | Ready, untested | [the Archipelago project and its contributors](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
+| The Legend of Zelda | Ready, untested | [Rosalie and Figment](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
 | The Legend of Zelda II: The Adventure of Link | Ready, untested | [PinkSwitch](https://github.com/PinkSwitch/Archipelago/releases?q=zelda&expanded=true) | MIT |
 
 ### Game Boy Color
 
 | Game | Status | Archipelago world by | Licence |
 |---|---|---|---|
-| Pokemon Crystal | Ready, untested | unknown | not stated by its author |
-| The Legend of Zelda: Link's Awakening DX | Ready, untested | [the Archipelago project and its contributors](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
+| Pokemon Crystal | Ready, untested | [gerbiljames](https://github.com/gerbiljames/Archipelago-Crystal) | not stated by its author |
+| The Legend of Zelda: Link's Awakening DX | Ready, untested | [the Archipelago project and its contributors](https://github.com/ArchipelagoMW/Archipelago) | MIT |
 | The Legend of Zelda: Oracle of Ages | Ready, untested | [josephanimate2021](https://github.com/josephanimate2021/ArchipelagoOoA/releases) | MIT |
 | The Legend of Zelda: Oracle of Seasons | Ready, untested | [Dinopony](https://github.com/Dinopony/ArchipelagoOoS/releases) | MIT |
 
@@ -132,13 +132,13 @@ no one has played it through yet — try it and please report what happens.
 
 | Game | Status | Archipelago world by | Licence |
 |---|---|---|---|
-| Zillion | Patch with Archipelago's client first | [the Archipelago project and its contributors](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
+| Zillion | Patch with Archipelago's client first | [beauxq](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
 
 ### Atari 2600
 
 | Game | Status | Archipelago world by | Licence |
 |---|---|---|---|
-| Adventure | Patch with Archipelago's client first | [the Archipelago project and its contributors](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
+| Adventure | Patch with Archipelago's client first | [JusticePS, TheLynk](https://github.com/ArchipelagoMW/Archipelago) — ships with Archipelago | MIT |
 
 ---
 
@@ -168,4 +168,4 @@ you what it would download before it downloads anything.
 
 ---
 
-*57 games. 3 confirmed playable, 47 ready to try.*
+*64 games. 3 confirmed playable; the rest are built and waiting for somebody to play them.*

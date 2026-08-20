@@ -75,7 +75,18 @@ public class GenericEmulatorPlugin : EmulatorPlugin
                     "belongs to its publisher -- you supply your own copy",
                     Highlight: true));
 
-            if (!string.IsNullOrWhiteSpace(c?.WorldBy))
+            // Name the people first. The organisation is who holds the licence,
+            // not who did the work, and a world's authors deserve to see their
+            // own names where a player looks.
+            if (c is not null && c.WorldAuthors.Count > 0)
+            {
+                list.Add(new GameCredit("Archipelago world by",
+                                        string.Join(", ", c.WorldAuthors),
+                                        Highlight: true));
+                if (!string.IsNullOrWhiteSpace(c.WorldBy))
+                    list.Add(new GameCredit("Released by", c.WorldBy!));
+            }
+            else if (!string.IsNullOrWhiteSpace(c?.WorldBy))
                 list.Add(new GameCredit("Archipelago world by", c!.WorldBy!,
                                         Highlight: true));
 
@@ -363,7 +374,10 @@ public sealed record RomSpecManifest(
 /// only the plugin is ours, and the launcher says so on the game's page.
 public sealed record CreditsManifest(
     string? GameBy, string? WorldBy, string? WorldUrl,
-    IReadOnlyList<string> SetupGuideBy, string? PluginBy);
+    IReadOnlyList<string> SetupGuideBy, string? PluginBy,
+    /// The people the world names in its own source. Empty when the world
+    /// publishes none -- then WorldBy (the licence holder) is all we can say.
+    IReadOnlyList<string> WorldAuthors);
 
 public sealed record GameManifest(
     string Id, string DisplayName, string Subtitle, string Platform,
@@ -435,11 +449,17 @@ public sealed record GameManifest(
                 return null;
 
             string? WorldName = null, WorldUrl = null;
+            var worldAuthors = new List<string>();
             if (c.TryGetProperty("world_by", out var w)
                 && w.ValueKind == JsonValueKind.Object)
             {
                 WorldName = Str(w, "name");
                 WorldUrl = Str(w, "url");
+                if (w.TryGetProperty("authors", out var wa)
+                    && wa.ValueKind == JsonValueKind.Array)
+                    worldAuthors.AddRange(wa.EnumerateArray()
+                                            .Where(e => e.ValueKind == JsonValueKind.String)
+                                            .Select(e => e.GetString()!));
             }
 
             var guide = new List<string>();
@@ -452,7 +472,8 @@ public sealed record GameManifest(
                                  .Select(e => e.GetString()!));
 
             return new CreditsManifest(
-                Str(c, "game_by"), WorldName, WorldUrl, guide, Str(c, "plugin_by"));
+                Str(c, "game_by"), WorldName, WorldUrl, guide, Str(c, "plugin_by"),
+                worldAuthors);
         }
 
         static string PatchModel(JsonElement r)
