@@ -34,8 +34,8 @@
       "name": "dev.dk64randomizer.com",
       "url": "https://dev.dk64randomizer.com/wiki/index.html?title=Archipelago-Dev-Setup-Guide",
       "_source": "the address this world is published at, from apworld.url in this manifest",
-      "licence": null,
-      "_licence_source": "not established: the world's author has published no licence file we could read, so nothing is claimed here"
+      "licence": "not verified",
+      "_licence_source": "Not verified: the only address we hold for this world is its guide or wiki, not its source repository, so no licence file could be read. Guessing a repository would risk crediting the wrong project -- the harvested list already points Symphony of the Night at an unrelated one. We redistribute none of this world code; the plugin carries only our own assembly."
     },
     "game_by": null,
     "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."

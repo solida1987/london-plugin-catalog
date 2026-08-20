@@ -26,5 +26,15 @@
   },
   "patch_extension": "none",
   "_patch_extension_source": "read from the compiled world at landstalker.apworld: no APPatchExtension in 15 compiled file(s)",
-  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Until then London warns."
+  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Until then London warns.",
+  "credits": {
+    "world_by": {
+      "authors": [
+        "Dinopony"
+      ],
+      "_authors_source": "read from worlds/landstalker/__init__.py in ArchipelagoMW/Archipelago -- the names the world itself publishes in its WebWorld tutorial credits. These are credited for the world's guide, which is usually but not always the same people who wrote the world; the licence holder above is unchanged.",
+      "licence": "MIT",
+      "_licence_source": "read from ArchipelagoMW/Archipelago's own LICENSE file -- the MIT text. GitHub's classifier reports 'Other' because the file carries extra wording, so the body was read rather than the label."
+    }
+  }
 }

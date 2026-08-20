@@ -25,5 +25,16 @@
   },
   "patch_extension": "refused",
   "_patch_extension_source": "read from cvlod.apworld: adds new steps ['apply_patches'] in cvlod/rom.py:CVLoDPatchExtensions",
-  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Until then London warns."
+  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Until then London warns.",
+  "credits": {
+    "world_by": {
+      "name": "LiquidCat64",
+      "url": "https://github.com/LiquidCat64/LiquidCatipelago",
+      "_source": "the cvlod.apworld we read was downloaded from this repository's own release (tag cvlod_v1.1) and its client declares game = \"Castlevania - Legacy of Darkness\"",
+      "licence": "MIT",
+      "_licence_source": "read from LiquidCat64/LiquidCatipelago's LICENSE -- the MIT text, carried over from Archipelago (copyright LLCoolDave, Berserker66). GitHub reports 'Other' because of the extra wording."
+    },
+    "plugin_by": "solida1987"
+  },
+  "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
 }

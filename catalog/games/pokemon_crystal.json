@@ -31,13 +31,14 @@
   "credits": {
     "plugin_by": "solida1987",
     "world_by": {
-      "name": null,
-      "url": null,
-      "_source": "no published address recorded, so nobody is named",
-      "licence": null,
-      "_licence_source": "not established: the world's author has published no licence file we could read, so nothing is claimed here"
+      "name": "gerbiljames",
+      "url": "https://github.com/gerbiljames/Archipelago-Crystal",
+      "_source": "the repository the harvested game list gives for this world",
+      "licence": "MIT",
+      "_licence_source": "read from gerbiljames/Archipelago-Crystal's LICENSE -- the MIT text, carried over from Archipelago (copyright LLCoolDave, Berserker66)."
     },
     "game_by": null,
     "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
-  }
+  },
+  "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
 }
