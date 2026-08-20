@@ -1,6 +1,6 @@
 {
   "note": "The launcher's store window. Addresses and metadata only — no artwork and no code is stored here. Installing still runs the launcher's own consent flow.",
-  "count": 339,
+  "count": 340,
   "platforms": [
     "Atari 2600",
     "Game Boy",
@@ -119,6 +119,28 @@
       "plugin_by": "solida1987",
       "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Advance/Named_Boxarts/Castlevania%20-%20Circle%20of%20the%20Moon%20%28USA%29%20%28Castlevania%20Advance%20Collection%29.png",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/castlevania_cotm.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases",
+      "install_kind": "rom",
+      "tested": false
+    },
+    {
+      "id": "castlevania_hod",
+      "name": "Castlevania: Harmony of Dissonance",
+      "ap_world_name": "Castlevania - Harmony of Dissonance",
+      "subtitle": "BizHawk",
+      "description": "Dracula's castle across two layers as a multiworld. Relics, spell books and furniture are shuffled across the session.",
+      "platform": "GBA",
+      "platform_label": "Game Boy Advance",
+      "family": "Nintendo",
+      "genres": [
+        "Metroidvania"
+      ],
+      "version": "1.0.0",
+      "world_by": "LiquidCat64",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": null,
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/castlevania_hod.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases",
       "install_kind": "rom",
       "tested": false

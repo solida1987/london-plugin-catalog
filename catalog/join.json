@@ -1,6 +1,6 @@
 {
   "note": "Which London plugin covers which Archipelago game. Addresses and metadata only.",
-  "count": 339,
+  "count": 340,
   "games": {
     "Adventure": {
       "id": "adventure",
@@ -24,6 +24,12 @@
       "id": "castlevania_cotm",
       "platform": "GBA",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/castlevania_cotm.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Castlevania - Harmony of Dissonance": {
+      "id": "castlevania_hod",
+      "platform": "GBA",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/castlevania_hod.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Chrono Trigger": {
