@@ -3,7 +3,7 @@
   "count": 339,
   "platforms": [
     "Atari 2600",
-    "GB",
+    "Game Boy",
     "Game Boy Advance",
     "Game Boy Color",
     "Master System",
@@ -639,7 +639,7 @@
       "subtitle": "",
       "description": "Super Mario Land 2: 6 Golden Coins as a multiworld. Items and progression are shuffled across the session.",
       "platform": "GB",
-      "platform_label": "GB",
+      "platform_label": "Game Boy",
       "family": "Other",
       "genres": [
         "Platformer"
@@ -649,7 +649,7 @@
       "world_licence": "",
       "plugin_by": "solida1987",
       "cover": null,
-      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gb/marioland2.londonplugin",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gb-gbc/marioland2.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases",
       "install_kind": "rom",
       "tested": false
@@ -1000,7 +1000,7 @@
       "subtitle": "",
       "description": "Pokémon Red and Blue as a multiworld. Items and progression are shuffled across the session.",
       "platform": "GB",
-      "platform_label": "GB",
+      "platform_label": "Game Boy",
       "family": "Other",
       "genres": [
         "Adventure"
@@ -1010,7 +1010,7 @@
       "world_licence": "",
       "plugin_by": "solida1987",
       "cover": null,
-      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gb/pokemon_rb.londonplugin",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gb-gbc/pokemon_rb.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases",
       "install_kind": "rom",
       "tested": false
