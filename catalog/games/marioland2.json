@@ -5,8 +5,8 @@
   "platform": "GB",
   "_platform_source": "harvested game list: platform_raw='GB'",
   "version": "1.0.0",
-  "ap_world_name": "Super Mario Land 2: 6 Golden Coins",
-  "_ap_world_name_source": "harvested game list, name as written there",
+  "ap_world_name": "Super Mario Land 2",
+  "_ap_world_name_source": "read from the world's own game attribute in ArchipelagoMW/Archipelago. The published game list writes it differently ('Super Mario Land 2: 6 Golden Coins'), but the server sends what the code declares, and Join matches on that.",
   "description": "Super Mario Land 2: 6 Golden Coins as a multiworld. Items and progression are shuffled across the session.",
   "_description_source": "placeholder assembled from display_name; replace with what this game actually shuffles",
   "checks_verified": false,
@@ -26,5 +26,15 @@
   },
   "patch_extension": "none",
   "_patch_extension_source": "read from the compiled world at marioland2.apworld: no APPatchExtension in 10 compiled file(s)",
-  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Until then London warns."
+  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Until then London warns.",
+  "credits": {
+    "world_by": {
+      "authors": [
+        "Alchav"
+      ],
+      "_authors_source": "read from worlds/marioland2/__init__.py in ArchipelagoMW/Archipelago -- the names the world itself publishes in its WebWorld tutorial credits. These are credited for the world's guide, which is usually but not always the same people who wrote the world; the licence holder above is unchanged.",
+      "licence": "MIT",
+      "_licence_source": "read from ArchipelagoMW/Archipelago's own LICENSE file -- the MIT text. GitHub's classifier reports 'Other' because the file carries extra wording, so the body was read rather than the label."
+    }
+  }
 }

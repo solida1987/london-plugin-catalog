@@ -176,7 +176,7 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/mario_luigi_superstar_saga.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
-    "Super Mario Land 2: 6 Golden Coins": {
+    "Super Mario Land 2": {
       "id": "marioland2",
       "platform": "GB",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gb-gbc/marioland2.londonplugin",
@@ -284,7 +284,7 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ds/pokemon_platinum.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
-    "Pokémon Red and Blue": {
+    "Pokemon Red and Blue": {
       "id": "pokemon_rb",
       "platform": "GB",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gb-gbc/pokemon_rb.londonplugin",

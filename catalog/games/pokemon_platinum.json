@@ -26,5 +26,16 @@
   },
   "patch_extension": "none",
   "_patch_extension_source": "read from pokemon_platinum.apworld: no APPatchExtension in 17 source file(s)",
-  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Until then London warns."
+  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Until then London warns.",
+  "credits": {
+    "world_by": {
+      "name": "ljtpetersen",
+      "url": "https://github.com/ljtpetersen/platinum_archipelago",
+      "_source": "the repository the harvested game list gives for this world; the installed apworld's client declares game = \"Pokemon Platinum\"",
+      "licence": "MIT",
+      "_licence_source": "read from ljtpetersen/platinum_archipelago's own licence metadata via the GitHub API"
+    },
+    "plugin_by": "solida1987"
+  },
+  "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
 }

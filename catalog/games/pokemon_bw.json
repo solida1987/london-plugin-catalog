@@ -26,5 +26,16 @@
   },
   "patch_extension": "none",
   "_patch_extension_source": "read from pokemon_bw.apworld: no APPatchExtension in 133 source file(s)",
-  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Until then London warns."
+  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Until then London warns.",
+  "credits": {
+    "world_by": {
+      "name": "BlastSlimey",
+      "url": "https://github.com/BlastSlimey/PokemonBWAP",
+      "_source": "the repository the harvested game list gives for this world; the installed apworld's client declares game = \"Pokemon Black and White\"",
+      "licence": "none stated",
+      "_licence_source": "BlastSlimey/PokemonBWAP has no LICENSE file (checked via the GitHub API, 2026-08-20). The author has granted nothing explicitly. We redistribute none of this world's code -- the plugin carries only our own assembly, and the player downloads the world from the author's own release -- so nothing here depends on a grant. Recorded so the gap is visible rather than assumed away."
+    },
+    "plugin_by": "solida1987"
+  },
+  "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
 }

@@ -57,7 +57,11 @@
       "url": "https://github.com/ArchipelagoMW/Archipelago",
       "_source": "this world ships with Archipelago itself (apworld.bundled)",
       "licence": "MIT",
-      "_licence_source": "read from ArchipelagoMW/Archipelago's own LICENSE file, 2026-08-19 -- the MIT text; GitHub's classifier says 'Other' because the file carries extra wording, so the body was read rather than the label"
+      "_licence_source": "read from ArchipelagoMW/Archipelago's own LICENSE file, 2026-08-19 -- the MIT text; GitHub's classifier says 'Other' because the file carries extra wording, so the body was read rather than the label",
+      "authors": [
+        "digiholic"
+      ],
+      "_authors_source": "read from worlds/mmbn3/__init__.py in ArchipelagoMW/Archipelago -- the names the world itself publishes in its WebWorld tutorial credits. These are credited for the world's guide, which is usually but not always the same people who wrote the world; the licence holder above is unchanged."
     },
     "game_by": null,
     "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."

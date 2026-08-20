@@ -25,5 +25,16 @@
     "_protocol_source": "NOT from the world: the world ships no BizHawk client class. London does not use Archipelago client, so the bridge is our own connector plus Plugins/Scripts/games/sotn.lua, derived from the world source. Never measured in a running game."
   },
   "patch_extension": "unaudited",
-  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Until then London warns."
+  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Until then London warns.",
+  "credits": {
+    "world_by": {
+      "name": "AdmiralTryhard",
+      "url": "https://github.com/AdmiralTryhard/SOTNArchipelago",
+      "_source": "recorded in our own Plugins/Scripts/games/sotn.lua as the repository its tables were generated from. NOTE: the harvested game list points this game at Darvitz/Archipelago-Crystal, which is a different project -- the list is wrong here and was not used",
+      "licence": "MIT",
+      "_licence_source": "read from AdmiralTryhard/SOTNArchipelago's LICENSE -- the MIT text, carried over from Archipelago (copyright LLCoolDave, Berserker66)."
+    },
+    "plugin_by": "solida1987"
+  },
+  "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
 }
