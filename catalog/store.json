@@ -1,8 +1,9 @@
 {
   "note": "The launcher's store window. Addresses and metadata only — no artwork and no code is stored here. Installing still runs the launcher's own consent flow.",
-  "count": 336,
+  "count": 339,
   "platforms": [
     "Atari 2600",
+    "GB",
     "Game Boy Advance",
     "Game Boy Color",
     "Master System",
@@ -15,6 +16,7 @@
   "families": [
     "Atari",
     "Nintendo",
+    "Other",
     "PC",
     "Sega"
   ],
@@ -543,6 +545,28 @@
       "tested": false
     },
     {
+      "id": "landstalker",
+      "name": "Landstalker - The Treasures of King Nole",
+      "ap_world_name": "Landstalker - The Treasures of King Nole",
+      "subtitle": "",
+      "description": "Landstalker - The Treasures of King Nole as a multiworld. Items and progression are shuffled across the session.",
+      "platform": "GEN",
+      "platform_label": "Mega Drive / Genesis",
+      "family": "Sega",
+      "genres": [
+        "Adventure"
+      ],
+      "version": "1.0.0",
+      "world_by": "unnamed — no published author recorded",
+      "world_licence": "",
+      "plugin_by": "solida1987",
+      "cover": null,
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/sega/landstalker.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases",
+      "install_kind": "rom",
+      "tested": false
+    },
+    {
       "id": "legend_of_zelda",
       "name": "The Legend of Zelda",
       "ap_world_name": "The Legend of Zelda",
@@ -604,6 +628,28 @@
       "plugin_by": "solida1987",
       "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Advance/Named_Boxarts/Mario%20_%20Luigi%20-%20Superstar%20Saga%20%28USA%29%20%28Virtual%20Console%29.png",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/mario_luigi_superstar_saga.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases",
+      "install_kind": "rom",
+      "tested": false
+    },
+    {
+      "id": "marioland2",
+      "name": "Super Mario Land 2: 6 Golden Coins",
+      "ap_world_name": "Super Mario Land 2: 6 Golden Coins",
+      "subtitle": "",
+      "description": "Super Mario Land 2: 6 Golden Coins as a multiworld. Items and progression are shuffled across the session.",
+      "platform": "GB",
+      "platform_label": "GB",
+      "family": "Other",
+      "genres": [
+        "Platformer"
+      ],
+      "version": "1.0.0",
+      "world_by": "unnamed — no published author recorded",
+      "world_licence": "",
+      "plugin_by": "solida1987",
+      "cover": null,
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gb/marioland2.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases",
       "install_kind": "rom",
       "tested": false
@@ -946,6 +992,28 @@
       "page": "https://github.com/solida1987/london-plugin-catalog/releases",
       "install_kind": "rom",
       "tested": true
+    },
+    {
+      "id": "pokemon_rb",
+      "name": "Pokémon Red and Blue",
+      "ap_world_name": "Pokémon Red and Blue",
+      "subtitle": "",
+      "description": "Pokémon Red and Blue as a multiworld. Items and progression are shuffled across the session.",
+      "platform": "GB",
+      "platform_label": "GB",
+      "family": "Other",
+      "genres": [
+        "Adventure"
+      ],
+      "version": "1.0.0",
+      "world_by": "unnamed — no published author recorded",
+      "world_licence": "",
+      "plugin_by": "solida1987",
+      "cover": null,
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gb/pokemon_rb.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases",
+      "install_kind": "rom",
+      "tested": false
     },
     {
       "id": "smrpg",

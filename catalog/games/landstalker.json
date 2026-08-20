@@ -1,0 +1,30 @@
+{
+  "id": "landstalker",
+  "display_name": "Landstalker - The Treasures of King Nole",
+  "subtitle": "",
+  "platform": "GEN",
+  "_platform_source": "harvested game list: platform_raw='GEN'",
+  "version": "1.0.0",
+  "ap_world_name": "Landstalker - The Treasures of King Nole",
+  "_ap_world_name_source": "harvested game list, name as written there",
+  "description": "Landstalker - The Treasures of King Nole as a multiworld. Items and progression are shuffled across the session.",
+  "_description_source": "placeholder assembled from display_name; replace with what this game actually shuffles",
+  "checks_verified": false,
+  "requires": "own_copy",
+  "_requires_source": "harvested game list: requires='own_copy'",
+  "lua_module": "landstalker",
+  "_lua_module_source": "Plugins/Scripts/games/landstalker.lua exists",
+  "apworld": {
+    "bundled": true,
+    "url": "",
+    "_source": "harvested game list: source='bundled'"
+  },
+  "client": {
+    "protocol": "bizhawk",
+    "_source": "no SNIClient and no BizHawkClient -- the world most likely ships a standalone client of its own",
+    "_protocol_source": "NOT from the world: it ships no client class at all. London does not use Archipelago's client, so the bridge is our own connector plus Plugins/Scripts/games/landstalker.lua -- and that map has never been measured in a running game. checks_verified stays false; London warns."
+  },
+  "patch_extension": "none",
+  "_patch_extension_source": "read from the compiled world at landstalker.apworld: no APPatchExtension in 15 compiled file(s)",
+  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Until then London warns."
+}

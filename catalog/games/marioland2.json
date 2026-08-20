@@ -1,0 +1,30 @@
+{
+  "id": "marioland2",
+  "display_name": "Super Mario Land 2: 6 Golden Coins",
+  "subtitle": "",
+  "platform": "GB",
+  "_platform_source": "harvested game list: platform_raw='GB'",
+  "version": "1.0.0",
+  "ap_world_name": "Super Mario Land 2: 6 Golden Coins",
+  "_ap_world_name_source": "harvested game list, name as written there",
+  "description": "Super Mario Land 2: 6 Golden Coins as a multiworld. Items and progression are shuffled across the session.",
+  "_description_source": "placeholder assembled from display_name; replace with what this game actually shuffles",
+  "checks_verified": false,
+  "requires": "own_copy",
+  "_requires_source": "harvested game list: requires='own_copy'",
+  "lua_module": "marioland2",
+  "_lua_module_source": "Plugins/Scripts/games/marioland2.lua exists",
+  "apworld": {
+    "bundled": true,
+    "url": "",
+    "_source": "harvested game list: source='discord_only'"
+  },
+  "client": {
+    "protocol": "bizhawk",
+    "_source": "no SNIClient and no BizHawkClient -- the world most likely ships a standalone client of its own",
+    "_protocol_source": "world source: read from the world's own client class -- it subclasses BizHawkClient"
+  },
+  "patch_extension": "none",
+  "_patch_extension_source": "read from the compiled world at marioland2.apworld: no APPatchExtension in 10 compiled file(s)",
+  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Until then London warns."
+}
