@@ -1,6 +1,6 @@
 {
   "note": "Which London plugin covers which Archipelago game. Addresses and metadata only.",
-  "count": 344,
+  "count": 341,
   "games": {
     "Adventure": {
       "id": "adventure",
@@ -78,12 +78,6 @@
       "id": "donkey_kong_country_3",
       "platform": "SNES",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/snes/donkey_kong_country_3.londonplugin",
-      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
-    },
-    "EarthBound": {
-      "id": "earthbound",
-      "platform": "SNES",
-      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/snes/earthbound.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Final Fantasy IV Free Enterprise": {
@@ -350,22 +344,10 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/wario_land_4.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
-    "Yoshi's Island": {
-      "id": "yoshis_island",
-      "platform": "SNES",
-      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/snes/yoshis_island.londonplugin",
-      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
-    },
     "Yu-Gi-Oh! 2006": {
       "id": "yugioh_2006",
       "platform": "GBA",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/yugioh_2006.londonplugin",
-      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
-    },
-    "Zelda II: The Adventure of Link": {
-      "id": "zelda2",
-      "platform": "NES",
-      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/nes/zelda2.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Zillion": {
