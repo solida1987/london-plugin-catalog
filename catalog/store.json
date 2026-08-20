@@ -1,6 +1,6 @@
 {
   "note": "The launcher's store window. Addresses and metadata only — no artwork and no code is stored here. Installing still runs the launcher's own consent flow.",
-  "count": 337,
+  "count": 336,
   "platforms": [
     "Atari 2600",
     "Game Boy Advance",
@@ -35,6 +35,7 @@
     {
       "id": "adventure",
       "name": "Adventure",
+      "ap_world_name": "Adventure",
       "subtitle": "",
       "description": "Adventure as a multiworld. Items and progression are shuffled across the session.",
       "platform": "2600",
@@ -56,6 +57,7 @@
     {
       "id": "alttp",
       "name": "The Legend of Zelda: A Link to the Past",
+      "ap_world_name": "A Link to the Past",
       "subtitle": "SNES",
       "description": "Hyrule as a multiworld. The original Archipelago game.",
       "platform": "SNES",
@@ -77,6 +79,7 @@
     {
       "id": "banjo_tooie",
       "name": "Banjo-Tooie",
+      "ap_world_name": "Banjo-Tooie",
       "subtitle": "",
       "description": "Banjo-Tooie as a multiworld. Items and progression are shuffled across the session.",
       "platform": "N64",
@@ -99,6 +102,7 @@
     {
       "id": "castlevania_cotm",
       "name": "Castlevania: Circle of the Moon",
+      "ap_world_name": "Castlevania - Circle of the Moon",
       "subtitle": "BizHawk",
       "description": "Dracula's castle as a multiworld. DSS cards, relics and movement abilities are shuffled across the session, so how far into the castle you can reach depends on the whole group.",
       "platform": "GBA",
@@ -120,6 +124,7 @@
     {
       "id": "ctjot",
       "name": "Chrono Trigger",
+      "ap_world_name": "Chrono Trigger",
       "subtitle": "",
       "description": "Chrono Trigger as a multiworld. Items and progression are shuffled across the session.",
       "platform": "SNES",
@@ -141,6 +146,7 @@
     {
       "id": "cv64",
       "name": "Castlevania 64",
+      "ap_world_name": "Castlevania 64",
       "subtitle": "",
       "description": "Castlevania 64 as a multiworld. Items and progression are shuffled across the session.",
       "platform": "N64",
@@ -162,6 +168,7 @@
     {
       "id": "diddy_kong_racing",
       "name": "Diddy Kong Racing",
+      "ap_world_name": "Diddy Kong Racing",
       "subtitle": "",
       "description": "Diddy Kong Racing as a multiworld. Items and progression are shuffled across the session.",
       "platform": "N64",
@@ -183,6 +190,7 @@
     {
       "id": "dk64",
       "name": "Donkey Kong 64",
+      "ap_world_name": "Donkey Kong 64",
       "subtitle": "",
       "description": "Donkey Kong 64 as a multiworld. Items and progression are shuffled across the session.",
       "platform": "N64",
@@ -204,6 +212,7 @@
     {
       "id": "donkey_kong_country",
       "name": "Donkey Kong Country",
+      "ap_world_name": "Donkey Kong Country",
       "subtitle": "",
       "description": "Donkey Kong Country as a multiworld. Items and progression are shuffled across the session.",
       "platform": "SNES",
@@ -225,6 +234,7 @@
     {
       "id": "donkey_kong_country_2",
       "name": "Donkey Kong Country 2: Diddy's Kong Quest",
+      "ap_world_name": "Donkey Kong Country 2",
       "subtitle": "",
       "description": "Donkey Kong Country 2: Diddy's Kong Quest as a multiworld. Items and progression are shuffled across the session.",
       "platform": "SNES",
@@ -246,6 +256,7 @@
     {
       "id": "donkey_kong_country_3",
       "name": "Donkey Kong Country 3: Dixie Kong's Double Trouble!",
+      "ap_world_name": "Donkey Kong Country 3",
       "subtitle": "",
       "description": "Donkey Kong Country 3: Dixie Kong's Double Trouble! as a multiworld. Items and progression are shuffled across the session.",
       "platform": "SNES",
@@ -267,6 +278,7 @@
     {
       "id": "earthbound",
       "name": "EarthBound",
+      "ap_world_name": "EarthBound",
       "subtitle": "",
       "description": "EarthBound as a multiworld. Items and progression are shuffled across the session.",
       "platform": "SNES",
@@ -288,6 +300,7 @@
     {
       "id": "ff4fe",
       "name": "Final Fantasy IV",
+      "ap_world_name": "Final Fantasy IV Free Enterprise",
       "subtitle": "",
       "description": "Final Fantasy IV as a multiworld. Items and progression are shuffled across the session.",
       "platform": "SNES",
@@ -309,6 +322,7 @@
     {
       "id": "ff6wc",
       "name": "Final Fantasy VI",
+      "ap_world_name": "Final Fantasy VI",
       "subtitle": "",
       "description": "Final Fantasy VI as a multiworld. Items and progression are shuffled across the session.",
       "platform": "SNES",
@@ -330,6 +344,7 @@
     {
       "id": "ffmq",
       "name": "Final Fantasy Mystic Quest",
+      "ap_world_name": "Final Fantasy Mystic Quest",
       "subtitle": "SNI",
       "description": "Foresta and its four crystals as a multiworld. Weapons, spells and key items are shuffled across the session.",
       "platform": "SNES",
@@ -351,6 +366,7 @@
     {
       "id": "ffta",
       "name": "Final Fantasy Tactics Advance",
+      "ap_world_name": "Final Fantasy Tactics Advance",
       "subtitle": "BizHawk",
       "description": "Ivalice as a multiworld. Jobs, equipment and mission unlocks are shuffled across the session.",
       "platform": "GBA",
@@ -373,6 +389,7 @@
     {
       "id": "final_fantasy",
       "name": "Final Fantasy",
+      "ap_world_name": "Final Fantasy",
       "subtitle": "BizHawk",
       "description": "The four Fiends as a multiworld. Key items and progression are shuffled across the session.",
       "platform": "NES",
@@ -394,6 +411,7 @@
     {
       "id": "fire_emblem_sacred_stones",
       "name": "Fire Emblem: The Sacred Stones",
+      "ap_world_name": "Fire Emblem Sacred Stones",
       "subtitle": "BizHawk",
       "description": "Magvel as a multiworld. Weapons, promotion items and recruitment are shuffled across the session.",
       "platform": "GBA",
@@ -416,6 +434,7 @@
     {
       "id": "golden_sun_tla",
       "name": "Golden Sun: The Lost Age",
+      "ap_world_name": "Golden Sun The Lost Age",
       "subtitle": "BizHawk",
       "description": "Weyard as a multiworld. Djinn, summons and key items are shuffled across the session.",
       "platform": "GBA",
@@ -437,6 +456,7 @@
     {
       "id": "kdl3",
       "name": "Kirby's Dream Land 3",
+      "ap_world_name": "Kirby's Dream Land 3",
       "subtitle": "SNI",
       "description": "Ripple Star as a multiworld. Copy abilities, animal friends and heart stars are shuffled across the session.",
       "platform": "SNES",
@@ -458,6 +478,7 @@
     {
       "id": "khcom",
       "name": "KINGDOM HEARTS Chain of Memories",
+      "ap_world_name": "Kingdom Hearts Chain of Memories",
       "subtitle": "BizHawk",
       "description": "Castle Oblivion as a multiworld. Cards, world unlocks and story progress are shuffled across the session.",
       "platform": "GBA",
@@ -480,6 +501,7 @@
     {
       "id": "kirby_64",
       "name": "Kirby 64: The Crystal Shards",
+      "ap_world_name": "Kirby 64 - The Crystal Shards",
       "subtitle": "",
       "description": "Kirby 64: The Crystal Shards as a multiworld. Items and progression are shuffled across the session.",
       "platform": "N64",
@@ -501,6 +523,7 @@
     {
       "id": "ladx",
       "name": "The Legend of Zelda: Link's Awakening DX",
+      "ap_world_name": "Links Awakening DX",
       "subtitle": "",
       "description": "The Legend of Zelda: Link's Awakening DX as a multiworld. Items and progression are shuffled across the session.",
       "platform": "GBC",
@@ -522,6 +545,7 @@
     {
       "id": "legend_of_zelda",
       "name": "The Legend of Zelda",
+      "ap_world_name": "The Legend of Zelda",
       "subtitle": "",
       "description": "Hyrule as a multiworld. The original quest, shuffled.",
       "platform": "NES",
@@ -543,6 +567,7 @@
     {
       "id": "lufia2ac",
       "name": "Lufia II: Rise of the Sinistrals",
+      "ap_world_name": "Lufia II Ancient Cave",
       "subtitle": "SNI",
       "description": "The Ancient Cave as a multiworld. Blue chests, capsule monsters and spells are shuffled across the session.",
       "platform": "SNES",
@@ -564,6 +589,7 @@
     {
       "id": "mario_luigi_superstar_saga",
       "name": "Mario & Luigi: Superstar Saga",
+      "ap_world_name": "Mario & Luigi Superstar Saga",
       "subtitle": "BizHawk",
       "description": "The Beanbean Kingdom as a multiworld. Bros. moves, gear and key items are shuffled across the session.",
       "platform": "GBA",
@@ -585,6 +611,7 @@
     {
       "id": "mega_man_2",
       "name": "Mega Man 2",
+      "ap_world_name": "Mega Man 2",
       "subtitle": "BizHawk",
       "description": "The eight Robot Masters as a multiworld. Weapons, items and stage access are shuffled across the session.",
       "platform": "NES",
@@ -607,6 +634,7 @@
     {
       "id": "mega_man_x",
       "name": "Mega Man X",
+      "ap_world_name": "Mega Man X",
       "subtitle": "",
       "description": "Mega Man X as a multiworld. Items and progression are shuffled across the session.",
       "platform": "SNES",
@@ -629,6 +657,7 @@
     {
       "id": "mega_man_x2",
       "name": "Mega Man X2",
+      "ap_world_name": "Mega Man X2",
       "subtitle": "",
       "description": "Mega Man X2 as a multiworld. Items and progression are shuffled across the session.",
       "platform": "SNES",
@@ -651,6 +680,7 @@
     {
       "id": "mega_man_x3",
       "name": "Mega Man X3",
+      "ap_world_name": "Mega Man X3",
       "subtitle": "",
       "description": "Mega Man X3 as a multiworld. Items and progression are shuffled across the session.",
       "platform": "SNES",
@@ -673,6 +703,7 @@
     {
       "id": "metroid_fusion",
       "name": "Metroid Fusion",
+      "ap_world_name": "Metroid Fusion",
       "subtitle": "BizHawk",
       "description": "The B.S.L station as a multiworld. Suit upgrades and major items are shuffled across the session.",
       "platform": "GBA",
@@ -694,6 +725,7 @@
     {
       "id": "metroid_zero_mission",
       "name": "Metroid: Zero Mission",
+      "ap_world_name": "Metroid: Zero Mission",
       "subtitle": "BizHawk",
       "description": "Zebes as a multiworld. Suit upgrades, beams and missile tanks are shuffled across the session.",
       "platform": "GBA",
@@ -715,6 +747,7 @@
     {
       "id": "minish_cap",
       "name": "The Legend of Zelda: The Minish Cap",
+      "ap_world_name": "The Minish Cap",
       "subtitle": "BizHawk",
       "description": "Hyrule at two scales as a multiworld. Kinstones, figurines and key items are shuffled across the session.",
       "platform": "GBA",
@@ -736,6 +769,7 @@
     {
       "id": "mk64",
       "name": "Mario Kart 64",
+      "ap_world_name": "Mario Kart 64",
       "subtitle": "",
       "description": "Mario Kart 64 as a multiworld. Items and progression are shuffled across the session.",
       "platform": "N64",
@@ -757,6 +791,7 @@
     {
       "id": "mm3",
       "name": "Mega Man 3",
+      "ap_world_name": "Mega Man 3",
       "subtitle": "",
       "description": "Mega Man 3 as a multiworld. Items and progression are shuffled across the session.",
       "platform": "NES",
@@ -779,6 +814,7 @@
     {
       "id": "mmbn3",
       "name": "Mega Man Battle Network 3 Blue",
+      "ap_world_name": "MegaMan Battle Network 3",
       "subtitle": "BizHawk",
       "description": "The Net as a multiworld. Chips, key items and program upgrades are shuffled across the session.",
       "platform": "GBA",
@@ -801,6 +837,7 @@
     {
       "id": "oot",
       "name": "The Legend of Zelda: Ocarina of Time",
+      "ap_world_name": "Ocarina of Time",
       "subtitle": "",
       "description": "The Legend of Zelda: Ocarina of Time as a multiworld. Items and progression are shuffled across the session.",
       "platform": "N64",
@@ -822,6 +859,7 @@
     {
       "id": "paper_mario",
       "name": "Paper Mario",
+      "ap_world_name": "Paper Mario",
       "subtitle": "",
       "description": "Paper Mario as a multiworld. Items and progression are shuffled across the session.",
       "platform": "N64",
@@ -843,6 +881,7 @@
     {
       "id": "pokemon_crystal",
       "name": "Pokemon Crystal",
+      "ap_world_name": "Pokemon Crystal",
       "subtitle": "Johto badges, wild encounters and items across the multiworld",
       "description": "Randomizes Johto: badges, items, trainers and wild encounters join the multiworld. Requires your own Pokemon Crystal ROM (US 1.0 or 1.1); the seed's .apcrystal patch is applied to it.",
       "platform": "GBC",
@@ -865,6 +904,7 @@
     {
       "id": "pokemon_emerald",
       "name": "Pokemon Emerald",
+      "ap_world_name": "Pokemon Emerald",
       "subtitle": "BizHawk",
       "description": "The Hoenn region as a multiworld. Badges, HM moves and key items are shuffled across the whole session, so progress through Hoenn depends on what the other players find.",
       "platform": "GBA",
@@ -887,6 +927,7 @@
     {
       "id": "pokemon_frlg",
       "name": "Pokemon FireRed and LeafGreen",
+      "ap_world_name": "Pokemon FireRed and LeafGreen",
       "subtitle": "BizHawk",
       "description": "Kanto as a multiworld. Badges, HMs and key items are shuffled across the session.",
       "platform": "GBA",
@@ -909,6 +950,7 @@
     {
       "id": "smrpg",
       "name": "Super Mario RPG",
+      "ap_world_name": "Super Mario RPG",
       "subtitle": "",
       "description": "Super Mario RPG as a multiworld. Items and progression are shuffled across the session.",
       "platform": "SNES",
@@ -930,6 +972,7 @@
     {
       "id": "smw",
       "name": "Super Mario World",
+      "ap_world_name": "Super Mario World",
       "subtitle": "SNI",
       "description": "Dinosaur Land as a multiworld. Yoshi eggs, switch palaces and level unlocks are shuffled across the session.",
       "platform": "SNES",
@@ -951,6 +994,7 @@
     {
       "id": "smz3",
       "name": "SMZ3",
+      "ap_world_name": "SMZ3",
       "subtitle": "",
       "description": "SMZ3 as a multiworld. Items and progression are shuffled across the session.",
       "platform": "SNES",
@@ -973,6 +1017,7 @@
     {
       "id": "soe",
       "name": "Secret of Evermore",
+      "ap_world_name": "Secret of Evermore",
       "subtitle": "SNI",
       "description": "Prehistoria through Omnitopia as a multiworld. Alchemy ingredients, weapons and charms are shuffled across the session.",
       "platform": "SNES",
@@ -994,6 +1039,7 @@
     {
       "id": "sonic1",
       "name": "Sonic the Hedgehog",
+      "ap_world_name": "Sonic the Hedgehog 1",
       "subtitle": "",
       "description": "Sonic the Hedgehog as a multiworld. Items and progression are shuffled across the session.",
       "platform": "GEN",
@@ -1015,6 +1061,7 @@
     {
       "id": "super_metroid",
       "name": "Super Metroid",
+      "ap_world_name": "Super Metroid",
       "subtitle": "SNI",
       "description": "Zebes as a multiworld. Suit upgrades, beams and tanks are shuffled across the session.",
       "platform": "SNES",
@@ -1036,6 +1083,7 @@
     {
       "id": "tloz_ooa",
       "name": "The Legend of Zelda: Oracle of Ages",
+      "ap_world_name": "The Legend of Zelda - Oracle of Ages",
       "subtitle": "",
       "description": "The Legend of Zelda: Oracle of Ages as a multiworld. Items and progression are shuffled across the session.",
       "platform": "GBC",
@@ -1057,6 +1105,7 @@
     {
       "id": "tloz_oos",
       "name": "The Legend of Zelda: Oracle of Seasons",
+      "ap_world_name": "The Legend of Zelda - Oracle of Seasons",
       "subtitle": "",
       "description": "The Legend of Zelda: Oracle of Seasons as a multiworld. Items and progression are shuffled across the session.",
       "platform": "GBC",
@@ -1078,6 +1127,7 @@
     {
       "id": "wario_land_4",
       "name": "Wario Land 4",
+      "ap_world_name": "Wario Land 4",
       "subtitle": "BizHawk",
       "description": "The Golden Pyramid as a multiworld. Jewel pieces, CDs and abilities are shuffled across the session.",
       "platform": "GBA",
@@ -1099,6 +1149,7 @@
     {
       "id": "yoshis_island",
       "name": "Super Mario World 2: Yoshi's Island",
+      "ap_world_name": "Yoshi's Island",
       "subtitle": "SNI",
       "description": "Yoshi's Island as a multiworld. Level unlocks, items and abilities are shuffled across the session.",
       "platform": "SNES",
@@ -1120,6 +1171,7 @@
     {
       "id": "yugioh_2006",
       "name": "Yu-Gi-Oh! Ultimate Masters: WCT 2006",
+      "ap_world_name": "Yu-Gi-Oh! 2006",
       "subtitle": "BizHawk",
       "description": "The 2006 World Championship as a multiworld. Cards, packs and campaign progress are shuffled across the session.",
       "platform": "GBA",
@@ -1142,6 +1194,7 @@
     {
       "id": "zelda2",
       "name": "The Legend of Zelda II: The Adventure of Link",
+      "ap_world_name": "Zelda II: The Adventure of Link",
       "subtitle": "",
       "description": "The Legend of Zelda II: The Adventure of Link as a multiworld. Items and progression are shuffled across the session.",
       "platform": "NES",
@@ -1164,6 +1217,7 @@
     {
       "id": "zillion",
       "name": "Zillion",
+      "ap_world_name": "Zillion",
       "subtitle": "",
       "description": "Zillion as a multiworld. Items and progression are shuffled across the session.",
       "platform": "SMS",
@@ -1185,6 +1239,7 @@
     {
       "id": "diablo2_archipelago",
       "name": "Diablo II: Lord of Destruction",
+      "ap_world_name": "Diablo II Archipelago",
       "subtitle": "Randomiser Mod",
       "description": "Sanctuary as a multiworld: quests, hunts, waypoints and zones become checks across all three difficulties.",
       "platform": "PC",
@@ -1207,6 +1262,7 @@
     {
       "id": "openttd_archipelago",
       "name": "OpenTTD",
+      "ap_world_name": "OpenTTD",
       "subtitle": "Transport empire",
       "description": "The open-source transport simulator as a multiworld: engines, stations and company milestones as checks.",
       "platform": "PC",
@@ -1229,6 +1285,7 @@
     {
       "id": "2048",
       "name": "2048",
+      "ap_world_name": "2048",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -1250,6 +1307,7 @@
     {
       "id": "a_dance_of_fire_and_ice",
       "name": "A Dance of Fire and Ice",
+      "ap_world_name": "A Dance of Fire and Ice",
       "subtitle": "PC · game mod",
       "description": "",
       "platform": "PC",
@@ -1271,6 +1329,7 @@
     {
       "id": "a_difficult_game_about_climbing",
       "name": "A Difficult Game About Climbing",
+      "ap_world_name": "A Difficult Game About Climbing",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -1292,6 +1351,7 @@
     {
       "id": "a_hat_in_time",
       "name": "A Hat in Time",
+      "ap_world_name": "A Hat in Time",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -1313,6 +1373,7 @@
     {
       "id": "a_short_hike",
       "name": "A Short Hike",
+      "ap_world_name": "A Short Hike",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -1334,6 +1395,7 @@
     {
       "id": "a_space_archipelago",
       "name": "A Space Archipelago",
+      "ap_world_name": "A Space Archipelago",
       "subtitle": "PC · manual setup",
       "description": "",
       "platform": "PC",
@@ -1355,6 +1417,7 @@
     {
       "id": "against_the_storm",
       "name": "Against the Storm",
+      "ap_world_name": "Against the Storm",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -1376,6 +1439,7 @@
     {
       "id": "age_of_empires_ii_definitive_edition",
       "name": "Age of Empires II: Definitive Edition",
+      "ap_world_name": "Age of Empires II: Definitive Edition",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -1397,6 +1461,7 @@
     {
       "id": "an_untitled_story",
       "name": "An Untitled Story",
+      "ap_world_name": "An Untitled Story",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -1418,6 +1483,7 @@
     {
       "id": "angband",
       "name": "Angband",
+      "ap_world_name": "Angband",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -1439,6 +1505,7 @@
     {
       "id": "animal_well",
       "name": "ANIMAL WELL",
+      "ap_world_name": "ANIMAL WELL",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -1460,6 +1527,7 @@
     {
       "id": "anno_1800",
       "name": "Anno 1800",
+      "ap_world_name": "Anno 1800",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -1481,6 +1549,7 @@
     {
       "id": "anodyne",
       "name": "Anodyne",
+      "ap_world_name": "Anodyne",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -1502,6 +1571,7 @@
     {
       "id": "another_crab_s_treasure",
       "name": "Another Crab's Treasure",
+      "ap_world_name": "Another Crab's Treasure",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -1523,6 +1593,7 @@
     {
       "id": "ap_rummy",
       "name": "AP-Rummy",
+      "ap_world_name": "AP-Rummy",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -1544,6 +1615,7 @@
     {
       "id": "apquest",
       "name": "APQuest",
+      "ap_world_name": "APQuest",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -1565,6 +1637,7 @@
     {
       "id": "aquaria",
       "name": "Aquaria",
+      "ap_world_name": "Aquaria",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -1586,6 +1659,7 @@
     {
       "id": "astalon_tears_of_the_earth",
       "name": "Astalon: Tears of the Earth",
+      "ap_world_name": "Astalon: Tears of the Earth",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -1607,6 +1681,7 @@
     {
       "id": "autopelago",
       "name": "Autopelago",
+      "ap_world_name": "Autopelago",
       "subtitle": "PC · game mod",
       "description": "",
       "platform": "PC",
@@ -1628,6 +1703,7 @@
     {
       "id": "axiom_verge",
       "name": "Axiom Verge",
+      "ap_world_name": "Axiom Verge",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -1649,6 +1725,7 @@
     {
       "id": "balatro",
       "name": "Balatro",
+      "ap_world_name": "Balatro",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -1670,6 +1747,7 @@
     {
       "id": "blasphemous",
       "name": "Blasphemous",
+      "ap_world_name": "Blasphemous",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -1691,6 +1769,7 @@
     {
       "id": "blasphemous_2",
       "name": "Blasphemous 2",
+      "ap_world_name": "Blasphemous 2",
       "subtitle": "PC · manual setup",
       "description": "",
       "platform": "PC",
@@ -1712,6 +1791,7 @@
     {
       "id": "bloons_tower_defense_6",
       "name": "Bloons Tower Defense 6",
+      "ap_world_name": "Bloons Tower Defense 6",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -1733,6 +1813,7 @@
     {
       "id": "bomb_rush_cyberfunk",
       "name": "Bomb Rush Cyberfunk",
+      "ap_world_name": "Bomb Rush Cyberfunk",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -1754,6 +1835,7 @@
     {
       "id": "brotato",
       "name": "Brotato",
+      "ap_world_name": "Brotato",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -1775,6 +1857,7 @@
     {
       "id": "buckshot_roulette",
       "name": "Buckshot Roulette",
+      "ap_world_name": "Buckshot Roulette",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -1796,6 +1879,7 @@
     {
       "id": "bumper_stickers",
       "name": "Bumper Stickers",
+      "ap_world_name": "Bumper Stickers",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -1817,6 +1901,7 @@
     {
       "id": "candy_box_2",
       "name": "Candy Box 2",
+      "ap_world_name": "Candy Box 2",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -1838,6 +1923,7 @@
     {
       "id": "cartograp",
       "name": "CartogrAP",
+      "ap_world_name": "CartogrAP",
       "subtitle": "PC · manual setup",
       "description": "",
       "platform": "PC",
@@ -1859,6 +1945,7 @@
     {
       "id": "cat_quest",
       "name": "Cat Quest",
+      "ap_world_name": "Cat Quest",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -1880,6 +1967,7 @@
     {
       "id": "cave_story",
       "name": "Cave Story",
+      "ap_world_name": "Cave Story",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -1901,6 +1989,7 @@
     {
       "id": "cavern_of_dreams",
       "name": "Cavern of Dreams",
+      "ap_world_name": "Cavern of Dreams",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -1922,6 +2011,7 @@
     {
       "id": "celeste",
       "name": "Celeste",
+      "ap_world_name": "Celeste",
       "subtitle": "PC · manual setup",
       "description": "",
       "platform": "PC",
@@ -1943,6 +2033,7 @@
     {
       "id": "celeste_open_world",
       "name": "Celeste (Open World)",
+      "ap_world_name": "Celeste (Open World)",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -1964,6 +2055,7 @@
     {
       "id": "celeste_64",
       "name": "Celeste 64",
+      "ap_world_name": "Celeste 64",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -1985,6 +2077,7 @@
     {
       "id": "chained_echoes",
       "name": "Chained Echoes",
+      "ap_world_name": "Chained Echoes",
       "subtitle": "PC · game mod",
       "description": "",
       "platform": "PC",
@@ -2006,6 +2099,7 @@
     {
       "id": "checksfinder",
       "name": "ChecksFinder",
+      "ap_world_name": "ChecksFinder",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -2027,6 +2121,7 @@
     {
       "id": "checksmate",
       "name": "ChecksMate",
+      "ap_world_name": "ChecksMate",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -2048,6 +2143,7 @@
     {
       "id": "choo_choo_charles",
       "name": "Choo-Choo Charles",
+      "ap_world_name": "Choo-Choo Charles",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -2069,6 +2165,7 @@
     {
       "id": "clustertruck",
       "name": "ClusterTruck",
+      "ap_world_name": "ClusterTruck",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -2090,6 +2187,7 @@
     {
       "id": "cobalt_core",
       "name": "Cobalt Core",
+      "ap_world_name": "Cobalt Core",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -2111,6 +2209,7 @@
     {
       "id": "conbunn_cardboard",
       "name": "Conbunn Cardboard",
+      "ap_world_name": "Conbunn Cardboard",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -2132,6 +2231,7 @@
     {
       "id": "content_warning",
       "name": "Content Warning",
+      "ap_world_name": "Content Warning",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -2153,6 +2253,7 @@
     {
       "id": "corn_kidz_64",
       "name": "Corn Kidz 64",
+      "ap_world_name": "Corn Kidz 64",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -2174,6 +2275,7 @@
     {
       "id": "crosscode",
       "name": "CrossCode",
+      "ap_world_name": "CrossCode",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -2195,6 +2297,7 @@
     {
       "id": "crosswords",
       "name": "Crosswords",
+      "ap_world_name": "Crosswords",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -2216,6 +2319,7 @@
     {
       "id": "crypt_of_the_necrodancer",
       "name": "Crypt of the NecroDancer",
+      "ap_world_name": "Crypt of the NecroDancer",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -2237,6 +2341,7 @@
     {
       "id": "crystal_project",
       "name": "Crystal Project",
+      "ap_world_name": "Crystal Project",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -2258,6 +2363,7 @@
     {
       "id": "cuphead",
       "name": "Cuphead",
+      "ap_world_name": "Cuphead",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -2279,6 +2385,7 @@
     {
       "id": "dark_souls_ii",
       "name": "Dark Souls II",
+      "ap_world_name": "Dark Souls II",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -2300,6 +2407,7 @@
     {
       "id": "dark_souls_iii",
       "name": "Dark Souls III",
+      "ap_world_name": "Dark Souls III",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -2321,6 +2429,7 @@
     {
       "id": "dark_souls_remastered",
       "name": "Dark Souls: Remastered",
+      "ap_world_name": "Dark Souls: Remastered",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -2342,6 +2451,7 @@
     {
       "id": "dead_cells",
       "name": "Dead Cells",
+      "ap_world_name": "Dead Cells",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -2363,6 +2473,7 @@
     {
       "id": "deadlock",
       "name": "Deadlock",
+      "ap_world_name": "Deadlock",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -2384,6 +2495,7 @@
     {
       "id": "death_s_door",
       "name": "Death's Door",
+      "ap_world_name": "Death's Door",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -2405,6 +2517,7 @@
     {
       "id": "deep_rock_galactic",
       "name": "Deep Rock Galactic",
+      "ap_world_name": "Deep Rock Galactic",
       "subtitle": "PC · manual setup",
       "description": "",
       "platform": "PC",
@@ -2426,6 +2539,7 @@
     {
       "id": "delivering_hope",
       "name": "Delivering HOPE",
+      "ap_world_name": "Delivering HOPE",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -2447,6 +2561,7 @@
     {
       "id": "deltarune",
       "name": "Deltarune",
+      "ap_world_name": "Deltarune",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -2468,6 +2583,7 @@
     {
       "id": "devil_may_cry_3",
       "name": "Devil May Cry 3",
+      "ap_world_name": "Devil May Cry 3",
       "subtitle": "PC · game mod",
       "description": "",
       "platform": "PC",
@@ -2489,6 +2605,7 @@
     {
       "id": "dicey_dungeons",
       "name": "Dicey Dungeons",
+      "ap_world_name": "Dicey Dungeons",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -2510,6 +2627,7 @@
     {
       "id": "dlc_quest",
       "name": "DLC Quest",
+      "ap_world_name": "DLC Quest",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -2531,6 +2649,7 @@
     {
       "id": "dome_keeper",
       "name": "Dome Keeper",
+      "ap_world_name": "Dome Keeper",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -2552,6 +2671,7 @@
     {
       "id": "don_t_starve_together",
       "name": "Don't Starve Together",
+      "ap_world_name": "Don't Starve Together",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -2573,6 +2693,7 @@
     {
       "id": "doom_1993",
       "name": "DOOM 1993",
+      "ap_world_name": "DOOM 1993",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -2594,6 +2715,7 @@
     {
       "id": "doom_ii",
       "name": "DOOM II",
+      "ap_world_name": "DOOM II",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -2615,6 +2737,7 @@
     {
       "id": "door_to_door_door_salesman",
       "name": "Door to Door Door Salesman",
+      "ap_world_name": "Door to Door Door Salesman",
       "subtitle": "PC · manual setup",
       "description": "",
       "platform": "PC",
@@ -2636,6 +2759,7 @@
     {
       "id": "doronko_wanko",
       "name": "DORONKO WANKO",
+      "ap_world_name": "DORONKO WANKO",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -2657,6 +2781,7 @@
     {
       "id": "dracomino",
       "name": "Dracomino",
+      "ap_world_name": "Dracomino",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -2678,6 +2803,7 @@
     {
       "id": "dredge",
       "name": "DREDGE",
+      "ap_world_name": "DREDGE",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -2699,6 +2825,7 @@
     {
       "id": "duke_nukem_3d_atomic_edition",
       "name": "Duke Nukem 3D: Atomic Edition",
+      "ap_world_name": "Duke Nukem 3D: Atomic Edition",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -2720,6 +2847,7 @@
     {
       "id": "dungeon_clawler",
       "name": "Dungeon Clawler",
+      "ap_world_name": "Dungeon Clawler",
       "subtitle": "PC · game mod",
       "description": "",
       "platform": "PC",
@@ -2741,6 +2869,7 @@
     {
       "id": "ender_lilies_quietus_of_the_knights",
       "name": "Ender Lilies: Quietus of the Knights",
+      "ap_world_name": "Ender Lilies: Quietus of the Knights",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -2762,6 +2891,7 @@
     {
       "id": "everhood_2",
       "name": "Everhood 2",
+      "ap_world_name": "Everhood 2",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -2783,6 +2913,7 @@
     {
       "id": "factorio",
       "name": "Factorio",
+      "ap_world_name": "Factorio",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -2804,6 +2935,7 @@
     {
       "id": "factorio_space_age_without_space",
       "name": "Factorio Space Age Without Space",
+      "ap_world_name": "Factorio Space Age Without Space",
       "subtitle": "PC · manual setup",
       "description": "",
       "platform": "PC",
@@ -2825,6 +2957,7 @@
     {
       "id": "fakutori",
       "name": "Fakutori",
+      "ap_world_name": "Fakutori",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -2846,6 +2979,7 @@
     {
       "id": "final_fantasy_pixel_remaster",
       "name": "Final Fantasy Pixel Remaster",
+      "ap_world_name": "Final Fantasy Pixel Remaster",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -2867,6 +3001,7 @@
     {
       "id": "final_fantasy_x_hd_remaster",
       "name": "Final Fantasy X HD Remaster",
+      "ap_world_name": "Final Fantasy X HD Remaster",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -2888,6 +3023,7 @@
     {
       "id": "final_fantasy_xii_open_world",
       "name": "Final Fantasy XII: Open World",
+      "ap_world_name": "Final Fantasy XII: Open World",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -2909,6 +3045,7 @@
     {
       "id": "final_fantasy_xii_trial_mode",
       "name": "Final Fantasy XII: Trial Mode",
+      "ap_world_name": "Final Fantasy XII: Trial Mode",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -2930,6 +3067,7 @@
     {
       "id": "fnaf_ultimate_custom_night",
       "name": "FNAF Ultimate Custom Night",
+      "ap_world_name": "FNAF Ultimate Custom Night",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -2951,6 +3089,7 @@
     {
       "id": "fnaf_world",
       "name": "FNAF World",
+      "ap_world_name": "FNAF World",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -2972,6 +3111,7 @@
     {
       "id": "freddy_fazbear_s_pizzeria_simulator",
       "name": "Freddy Fazbear's Pizzeria Simulator",
+      "ap_world_name": "Freddy Fazbear's Pizzeria Simulator",
       "subtitle": "PC · manual setup",
       "description": "",
       "platform": "PC",
@@ -2993,6 +3133,7 @@
     {
       "id": "freedom_planet_2",
       "name": "Freedom Planet 2",
+      "ap_world_name": "Freedom Planet 2",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -3014,6 +3155,7 @@
     {
       "id": "friday_night_funkin",
       "name": "Friday Night Funkin'",
+      "ap_world_name": "Friday Night Funkin'",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -3035,6 +3177,7 @@
     {
       "id": "frogmonster",
       "name": "Frogmonster",
+      "ap_world_name": "Frogmonster",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -3056,6 +3199,7 @@
     {
       "id": "funi_racoon_game",
       "name": "Funi Racoon Game",
+      "ap_world_name": "Funi Racoon Game",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -3077,6 +3221,7 @@
     {
       "id": "garfield_kart_furious_racing",
       "name": "Garfield Kart - Furious Racing",
+      "ap_world_name": "Garfield Kart - Furious Racing",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -3098,6 +3243,7 @@
     {
       "id": "gato_roboto",
       "name": "Gato Roboto",
+      "ap_world_name": "Gato Roboto",
       "subtitle": "PC · manual setup",
       "description": "",
       "platform": "PC",
@@ -3119,6 +3265,7 @@
     {
       "id": "gato_roboto_b_side",
       "name": "Gato Roboto B-Side",
+      "ap_world_name": "Gato Roboto B-Side",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -3140,6 +3287,7 @@
     {
       "id": "gemcraft_frostborn_wrath",
       "name": "Gemcraft: Frostborn Wrath",
+      "ap_world_name": "Gemcraft: Frostborn Wrath",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -3161,6 +3309,7 @@
     {
       "id": "getting_over_it_with_bennett_foddy",
       "name": "Getting Over It with Bennett Foddy",
+      "ap_world_name": "Getting Over It with Bennett Foddy",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -3182,6 +3331,7 @@
     {
       "id": "glyphs",
       "name": "GLYPHS",
+      "ap_world_name": "GLYPHS",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -3203,6 +3353,7 @@
     {
       "id": "gnosia",
       "name": "Gnosia",
+      "ap_world_name": "Gnosia",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -3224,6 +3375,7 @@
     {
       "id": "goldeneye_007",
       "name": "Goldeneye 007",
+      "ap_world_name": "Goldeneye 007",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -3245,6 +3397,7 @@
     {
       "id": "grim_dawn",
       "name": "Grim Dawn",
+      "ap_world_name": "Grim Dawn",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -3266,6 +3419,7 @@
     {
       "id": "guild_wars_2",
       "name": "Guild Wars 2",
+      "ap_world_name": "Guild Wars 2",
       "subtitle": "PC · game mod",
       "description": "",
       "platform": "PC",
@@ -3287,6 +3441,7 @@
     {
       "id": "gzdoom",
       "name": "gzDoom",
+      "ap_world_name": "gzDoom",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -3308,6 +3463,7 @@
     {
       "id": "hacknet",
       "name": "Hacknet",
+      "ap_world_name": "Hacknet",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -3329,6 +3485,7 @@
     {
       "id": "hades",
       "name": "Hades",
+      "ap_world_name": "Hades",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -3350,6 +3507,7 @@
     {
       "id": "hammerwatch",
       "name": "Hammerwatch",
+      "ap_world_name": "Hammerwatch",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -3371,6 +3529,7 @@
     {
       "id": "harry_potter_and_the_chamber_of_secrets",
       "name": "Harry Potter and the Chamber of Secrets",
+      "ap_world_name": "Harry Potter and the Chamber of Secrets",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -3392,6 +3551,7 @@
     {
       "id": "haste_broken_worlds",
       "name": "HASTE: Broken Worlds",
+      "ap_world_name": "HASTE: Broken Worlds",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -3413,6 +3573,7 @@
     {
       "id": "hatsune_miku_project_diva_mega_mix",
       "name": "Hatsune Miku: Project Diva Mega Mix+",
+      "ap_world_name": "Hatsune Miku: Project Diva Mega Mix+",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -3434,6 +3595,7 @@
     {
       "id": "here_comes_niko",
       "name": "Here Comes Niko!",
+      "ap_world_name": "Here Comes Niko!",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -3455,6 +3617,7 @@
     {
       "id": "heretic",
       "name": "Heretic",
+      "ap_world_name": "Heretic",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -3476,6 +3639,7 @@
     {
       "id": "hero_core",
       "name": "Hero Core",
+      "ap_world_name": "Hero Core",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -3497,6 +3661,7 @@
     {
       "id": "hexcells_infinite",
       "name": "Hexcells Infinite",
+      "ap_world_name": "Hexcells Infinite",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -3518,6 +3683,7 @@
     {
       "id": "hi_fi_rush",
       "name": "Hi-Fi RUSH",
+      "ap_world_name": "Hi-Fi RUSH",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -3539,6 +3705,7 @@
     {
       "id": "high_roller",
       "name": "High Roller",
+      "ap_world_name": "High Roller",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -3560,6 +3727,7 @@
     {
       "id": "hollow_knight",
       "name": "Hollow Knight",
+      "ap_world_name": "Hollow Knight",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -3581,6 +3749,7 @@
     {
       "id": "holo8",
       "name": "holo8",
+      "ap_world_name": "holo8",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -3602,6 +3771,7 @@
     {
       "id": "hololive_treasure_mountain",
       "name": "Hololive Treasure Mountain",
+      "ap_world_name": "Hololive Treasure Mountain",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -3623,6 +3793,7 @@
     {
       "id": "hylics_2",
       "name": "Hylics 2",
+      "ap_world_name": "Hylics 2",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -3644,6 +3815,7 @@
     {
       "id": "hyperrogue",
       "name": "Hyperrogue",
+      "ap_world_name": "Hyperrogue",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -3665,6 +3837,7 @@
     {
       "id": "iji",
       "name": "Iji",
+      "ap_world_name": "Iji",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -3686,6 +3859,7 @@
     {
       "id": "inscryption",
       "name": "Inscryption",
+      "ap_world_name": "Inscryption",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -3707,6 +3881,7 @@
     {
       "id": "into_the_breach",
       "name": "Into the Breach",
+      "ap_world_name": "Into the Breach",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -3728,6 +3903,7 @@
     {
       "id": "isles_of_sea_and_sky",
       "name": "Isles of Sea and Sky",
+      "ap_world_name": "Isles of Sea and Sky",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -3749,6 +3925,7 @@
     {
       "id": "ittle_dew_2",
       "name": "Ittle Dew 2+",
+      "ap_world_name": "Ittle Dew 2+",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -3770,6 +3947,7 @@
     {
       "id": "jak_2",
       "name": "Jak 2",
+      "ap_world_name": "Jak 2",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -3791,6 +3969,7 @@
     {
       "id": "jak_3",
       "name": "Jak 3",
+      "ap_world_name": "Jak 3",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -3812,6 +3991,7 @@
     {
       "id": "js_paint",
       "name": "JS Paint",
+      "ap_world_name": "JS Paint",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -3833,6 +4013,7 @@
     {
       "id": "kabuto_park_demo",
       "name": "Kabuto Park DEMO",
+      "ap_world_name": "Kabuto Park DEMO",
       "subtitle": "PC · manual setup",
       "description": "",
       "platform": "PC",
@@ -3854,6 +4035,7 @@
     {
       "id": "keep_talking_and_nobody_explodes",
       "name": "Keep Talking and Nobody Explodes",
+      "ap_world_name": "Keep Talking and Nobody Explodes",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -3875,6 +4057,7 @@
     {
       "id": "keymaster_s_keep",
       "name": "Keymaster's Keep",
+      "ap_world_name": "Keymaster's Keep",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -3896,6 +4079,7 @@
     {
       "id": "keys_of_the_cays",
       "name": "Keys of the Cays",
+      "ap_world_name": "Keys of the Cays",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -3917,6 +4101,7 @@
     {
       "id": "kingdom_hearts_birth_by_sleep_final_mix",
       "name": "KINGDOM HEARTS Birth by Sleep FINAL MIX",
+      "ap_world_name": "KINGDOM HEARTS Birth by Sleep FINAL MIX",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -3938,6 +4123,7 @@
     {
       "id": "kingdom_hearts_final_mix",
       "name": "KINGDOM HEARTS FINAL MIX",
+      "ap_world_name": "KINGDOM HEARTS FINAL MIX",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -3959,6 +4145,7 @@
     {
       "id": "kingdom_hearts_ii_final_mix",
       "name": "KINGDOM HEARTS II FINAL MIX",
+      "ap_world_name": "KINGDOM HEARTS II FINAL MIX",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -3980,6 +4167,7 @@
     {
       "id": "kingdom_hearts_re_chain_of_memories",
       "name": "KINGDOM HEARTS Re:Chain of Memories",
+      "ap_world_name": "KINGDOM HEARTS Re:Chain of Memories",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -4001,6 +4189,7 @@
     {
       "id": "laika_aged_through_blood",
       "name": "Laika: Aged Through Blood",
+      "ap_world_name": "Laika: Aged Through Blood",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -4022,6 +4211,7 @@
     {
       "id": "league_of_legends",
       "name": "League of Legends",
+      "ap_world_name": "League of Legends",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -4043,6 +4233,7 @@
     {
       "id": "lego_batman_the_video_game",
       "name": "Lego Batman: The Video Game",
+      "ap_world_name": "Lego Batman: The Video Game",
       "subtitle": "PC · game mod",
       "description": "",
       "platform": "PC",
@@ -4064,6 +4255,7 @@
     {
       "id": "lego_harry_potter_5_7",
       "name": "Lego Harry Potter 5-7",
+      "ap_world_name": "Lego Harry Potter 5-7",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -4085,6 +4277,7 @@
     {
       "id": "lego_rock_raiders_manic_miners",
       "name": "Lego Rock Raiders / Manic Miners",
+      "ap_world_name": "Lego Rock Raiders / Manic Miners",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -4106,6 +4299,7 @@
     {
       "id": "lego_star_wars_the_complete_saga",
       "name": "Lego Star Wars: The Complete Saga",
+      "ap_world_name": "Lego Star Wars: The Complete Saga",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -4127,6 +4321,7 @@
     {
       "id": "lethal_company",
       "name": "Lethal Company",
+      "ap_world_name": "Lethal Company",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -4148,6 +4343,7 @@
     {
       "id": "lil_gator_game",
       "name": "Lil Gator Game",
+      "ap_world_name": "Lil Gator Game",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -4169,6 +4365,7 @@
     {
       "id": "lingo",
       "name": "Lingo",
+      "ap_world_name": "Lingo",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -4190,6 +4387,7 @@
     {
       "id": "lingo_2",
       "name": "Lingo 2",
+      "ap_world_name": "Lingo 2",
       "subtitle": "PC · manual setup",
       "description": "",
       "platform": "PC",
@@ -4211,6 +4409,7 @@
     {
       "id": "little_witch_nobeta",
       "name": "Little Witch Nobeta",
+      "ap_world_name": "Little Witch Nobeta",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -4232,6 +4431,7 @@
     {
       "id": "lunacid",
       "name": "Lunacid",
+      "ap_world_name": "Lunacid",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -4253,6 +4453,7 @@
     {
       "id": "melatonin",
       "name": "Melatonin",
+      "ap_world_name": "Melatonin",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -4274,6 +4475,7 @@
     {
       "id": "meritous",
       "name": "Meritous",
+      "ap_world_name": "Meritous",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -4295,6 +4497,7 @@
     {
       "id": "mina_the_hollower",
       "name": "Mina the Hollower",
+      "ap_world_name": "Mina the Hollower",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -4316,6 +4519,7 @@
     {
       "id": "mindustry",
       "name": "Mindustry",
+      "ap_world_name": "Mindustry",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -4337,6 +4541,7 @@
     {
       "id": "minecraft_neoforge",
       "name": "Minecraft (NeoForge)",
+      "ap_world_name": "Minecraft (NeoForge)",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -4358,6 +4563,7 @@
     {
       "id": "minecraft_dig",
       "name": "Minecraft Dig",
+      "ap_world_name": "Minecraft Dig",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -4379,6 +4585,7 @@
     {
       "id": "minishoot_adventures",
       "name": "Minishoot' Adventures",
+      "ap_world_name": "Minishoot' Adventures",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -4400,6 +4607,7 @@
     {
       "id": "minit",
       "name": "Minit",
+      "ap_world_name": "Minit",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -4421,6 +4629,7 @@
     {
       "id": "momodora_moonlit_farewell",
       "name": "Momodora: Moonlit Farewell",
+      "ap_world_name": "Momodora: Moonlit Farewell",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -4442,6 +4651,7 @@
     {
       "id": "monster_hunter_world",
       "name": "Monster Hunter World",
+      "ap_world_name": "Monster Hunter World",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -4463,6 +4673,7 @@
     {
       "id": "monster_sanctuary",
       "name": "Monster Sanctuary",
+      "ap_world_name": "Monster Sanctuary",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -4484,6 +4695,7 @@
     {
       "id": "muck",
       "name": "Muck",
+      "ap_world_name": "Muck",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -4505,6 +4717,7 @@
     {
       "id": "muse_dash",
       "name": "Muse Dash",
+      "ap_world_name": "Muse Dash",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -4526,6 +4739,7 @@
     {
       "id": "nine_sols",
       "name": "Nine Sols",
+      "ap_world_name": "Nine Sols",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -4547,6 +4761,7 @@
     {
       "id": "nodebuster",
       "name": "Nodebuster",
+      "ap_world_name": "Nodebuster",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -4568,6 +4783,7 @@
     {
       "id": "noita",
       "name": "Noita",
+      "ap_world_name": "Noita",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -4589,6 +4805,7 @@
     {
       "id": "northgard",
       "name": "Northgard",
+      "ap_world_name": "Northgard",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -4610,6 +4827,7 @@
     {
       "id": "old_school_runescape",
       "name": "Old School Runescape",
+      "ap_world_name": "Old School Runescape",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -4631,6 +4849,7 @@
     {
       "id": "one_must_fall_2097",
       "name": "One Must Fall 2097",
+      "ap_world_name": "One Must Fall 2097",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -4652,6 +4871,7 @@
     {
       "id": "openrct2",
       "name": "OpenRCT2",
+      "ap_world_name": "OpenRCT2",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -4671,29 +4891,9 @@
       "page": "https://github.com/Crazycolbster/rollercoaster-tycoon-randomizer/releases"
     },
     {
-      "id": "openttd",
-      "name": "OpenTTD",
-      "subtitle": "PC · needs the game's mod too",
-      "description": "",
-      "platform": "PC",
-      "platform_label": "PC",
-      "family": "PC",
-      "genres": [
-        "Adventure"
-      ],
-      "version": "v2.0.0",
-      "world_by": "solida1987",
-      "world_licence": "NOASSERTION",
-      "plugin_by": "solida1987",
-      "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1536610/header.jpg",
-      "install_kind": "apworld_and_mod",
-      "tested": false,
-      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/openttd-1.0.0.londonplugin",
-      "page": "https://github.com/solida1987/openttd-archipelago/releases"
-    },
-    {
       "id": "openttd_cargolock",
       "name": "OpenTTD CargoLock",
+      "ap_world_name": "OpenTTD CargoLock",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -4715,6 +4915,7 @@
     {
       "id": "ori_and_the_blind_forest",
       "name": "Ori and the Blind Forest",
+      "ap_world_name": "Ori and the Blind Forest",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -4736,6 +4937,7 @@
     {
       "id": "ori_and_the_will_of_the_wisps",
       "name": "Ori and the Will of the Wisps",
+      "ap_world_name": "Ori and the Will of the Wisps",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -4757,6 +4959,7 @@
     {
       "id": "osu",
       "name": "Osu!",
+      "ap_world_name": "Osu!",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -4778,6 +4981,7 @@
     {
       "id": "our_ascent",
       "name": "Our Ascent",
+      "ap_world_name": "Our Ascent",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -4799,6 +5003,7 @@
     {
       "id": "outer_wilds",
       "name": "Outer Wilds",
+      "ap_world_name": "Outer Wilds",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -4820,6 +5025,7 @@
     {
       "id": "overcooked_2",
       "name": "Overcooked! 2",
+      "ap_world_name": "Overcooked! 2",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -4841,6 +5047,7 @@
     {
       "id": "oxygen_not_included",
       "name": "Oxygen Not Included",
+      "ap_world_name": "Oxygen Not Included",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -4862,6 +5069,7 @@
     {
       "id": "parkitect",
       "name": "Parkitect",
+      "ap_world_name": "Parkitect",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -4883,6 +5091,7 @@
     {
       "id": "peaks_of_yore",
       "name": "Peaks of Yore",
+      "ap_world_name": "Peaks of Yore",
       "subtitle": "PC · manual setup",
       "description": "",
       "platform": "PC",
@@ -4904,6 +5113,7 @@
     {
       "id": "peggle_deluxe",
       "name": "Peggle Deluxe",
+      "ap_world_name": "Peggle Deluxe",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -4925,6 +5135,7 @@
     {
       "id": "peggle_nights",
       "name": "Peggle Nights",
+      "ap_world_name": "Peggle Nights",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -4946,6 +5157,7 @@
     {
       "id": "pikuniku",
       "name": "Pikuniku",
+      "ap_world_name": "Pikuniku",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -4967,6 +5179,7 @@
     {
       "id": "pinball_fx3",
       "name": "Pinball FX3",
+      "ap_world_name": "Pinball FX3",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -4988,6 +5201,7 @@
     {
       "id": "pixeldraw",
       "name": "PixelDraw",
+      "ap_world_name": "PixelDraw",
       "subtitle": "PC · manual setup",
       "description": "",
       "platform": "PC",
@@ -5009,6 +5223,7 @@
     {
       "id": "pizza_tower",
       "name": "Pizza Tower",
+      "ap_world_name": "Pizza Tower",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -5030,6 +5245,7 @@
     {
       "id": "placid_plastic_duck_simulator",
       "name": "Placid Plastic Duck Simulator",
+      "ap_world_name": "Placid Plastic Duck Simulator",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -5051,6 +5267,7 @@
     {
       "id": "plants_vs_zombies_replanted_goty",
       "name": "Plants vs Zombies: Replanted/GOTY",
+      "ap_world_name": "Plants vs Zombies: Replanted/GOTY",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -5072,6 +5289,7 @@
     {
       "id": "plateup",
       "name": "Plateup!",
+      "ap_world_name": "Plateup!",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -5093,6 +5311,7 @@
     {
       "id": "pokepelago_pokemon_guessing_game",
       "name": "Poképelago - Pokémon Guessing Game",
+      "ap_world_name": "Poképelago - Pokémon Guessing Game",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -5114,6 +5333,7 @@
     {
       "id": "portal_2",
       "name": "Portal 2",
+      "ap_world_name": "Portal 2",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -5135,6 +5355,7 @@
     {
       "id": "powerwash_simulator",
       "name": "Powerwash Simulator",
+      "ap_world_name": "Powerwash Simulator",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -5156,6 +5377,7 @@
     {
       "id": "prodigal",
       "name": "Prodigal",
+      "ap_world_name": "Prodigal",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -5177,6 +5399,7 @@
     {
       "id": "pseudoregalia",
       "name": "Pseudoregalia",
+      "ap_world_name": "Pseudoregalia",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -5198,6 +5421,7 @@
     {
       "id": "psychonauts",
       "name": "Psychonauts",
+      "ap_world_name": "Psychonauts",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -5219,6 +5443,7 @@
     {
       "id": "r_e_p_o",
       "name": "R.E.P.O.",
+      "ap_world_name": "R.E.P.O.",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -5240,6 +5465,7 @@
     {
       "id": "rabi_ribi",
       "name": "Rabi-Ribi",
+      "ap_world_name": "Rabi-Ribi",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -5261,6 +5487,7 @@
     {
       "id": "raft",
       "name": "Raft",
+      "ap_world_name": "Raft",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -5282,6 +5509,7 @@
     {
       "id": "rain_world",
       "name": "Rain World",
+      "ap_world_name": "Rain World",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -5303,6 +5531,7 @@
     {
       "id": "rayman_2_the_great_escape",
       "name": "Rayman 2: The Great Escape",
+      "ap_world_name": "Rayman 2: The Great Escape",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -5324,6 +5553,7 @@
     {
       "id": "refunct",
       "name": "Refunct",
+      "ap_world_name": "Refunct",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -5345,6 +5575,7 @@
     {
       "id": "reventure",
       "name": "Reventure",
+      "ap_world_name": "Reventure",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -5366,6 +5597,7 @@
     {
       "id": "rift_of_the_necrodancer",
       "name": "Rift of the NecroDancer",
+      "ap_world_name": "Rift of the NecroDancer",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -5387,6 +5619,7 @@
     {
       "id": "rift_wizard",
       "name": "Rift Wizard",
+      "ap_world_name": "Rift Wizard",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -5408,6 +5641,7 @@
     {
       "id": "risk_of_rain",
       "name": "Risk of Rain",
+      "ap_world_name": "Risk of Rain",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -5429,6 +5663,7 @@
     {
       "id": "risk_of_rain_2",
       "name": "Risk of Rain 2",
+      "ap_world_name": "Risk of Rain 2",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -5450,6 +5685,7 @@
     {
       "id": "risk_of_rain_returns",
       "name": "Risk of Rain Returns",
+      "ap_world_name": "Risk of Rain Returns",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -5471,6 +5707,7 @@
     {
       "id": "rogue_legacy",
       "name": "Rogue Legacy",
+      "ap_world_name": "Rogue Legacy",
       "subtitle": "PC · manual setup",
       "description": "",
       "platform": "PC",
@@ -5492,6 +5729,7 @@
     {
       "id": "rusted_moss",
       "name": "Rusted Moss",
+      "ap_world_name": "Rusted Moss",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -5513,6 +5751,7 @@
     {
       "id": "satisfactory",
       "name": "Satisfactory",
+      "ap_world_name": "Satisfactory",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -5534,6 +5773,7 @@
     {
       "id": "saving_princess",
       "name": "Saving Princess",
+      "ap_world_name": "Saving Princess",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -5555,6 +5795,7 @@
     {
       "id": "severed_soul",
       "name": "Severed Soul",
+      "ap_world_name": "Severed Soul",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -5576,6 +5817,7 @@
     {
       "id": "shapez",
       "name": "Shapez",
+      "ap_world_name": "Shapez",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -5597,6 +5839,7 @@
     {
       "id": "shapez_2",
       "name": "Shapez 2",
+      "ap_world_name": "Shapez 2",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -5618,6 +5861,7 @@
     {
       "id": "shellipelago",
       "name": "Shellipelago",
+      "ap_world_name": "Shellipelago",
       "subtitle": "PC · manual setup",
       "description": "",
       "platform": "PC",
@@ -5639,6 +5883,7 @@
     {
       "id": "shivers",
       "name": "Shivers",
+      "ap_world_name": "Shivers",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -5660,6 +5905,7 @@
     {
       "id": "sid_meier_s_civilization_v",
       "name": "Sid Meier's Civilization V",
+      "ap_world_name": "Sid Meier's Civilization V",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -5681,6 +5927,7 @@
     {
       "id": "sid_meier_s_civilization_vi",
       "name": "Sid Meier's Civilization VI",
+      "ap_world_name": "Sid Meier's Civilization VI",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -5702,6 +5949,7 @@
     {
       "id": "skul_the_hero_slayer",
       "name": "Skul the Hero Slayer",
+      "ap_world_name": "Skul the Hero Slayer",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -5723,6 +5971,7 @@
     {
       "id": "slay_the_spire",
       "name": "Slay the Spire",
+      "ap_world_name": "Slay the Spire",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -5744,6 +5993,7 @@
     {
       "id": "slay_the_spire_2",
       "name": "Slay the Spire 2",
+      "ap_world_name": "Slay the Spire 2",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -5765,6 +6015,7 @@
     {
       "id": "slime_rancher",
       "name": "Slime Rancher",
+      "ap_world_name": "Slime Rancher",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -5786,6 +6037,7 @@
     {
       "id": "smushi_come_home",
       "name": "Smushi Come Home",
+      "ap_world_name": "Smushi Come Home",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -5807,6 +6059,7 @@
     {
       "id": "sonic_adventure_2_battle",
       "name": "Sonic Adventure 2: Battle",
+      "ap_world_name": "Sonic Adventure 2: Battle",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -5828,6 +6081,7 @@
     {
       "id": "sonic_adventure_dx",
       "name": "Sonic Adventure DX",
+      "ap_world_name": "Sonic Adventure DX",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -5849,6 +6103,7 @@
     {
       "id": "sonic_heroes",
       "name": "Sonic Heroes",
+      "ap_world_name": "Sonic Heroes",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -5870,6 +6125,7 @@
     {
       "id": "spelunky_2",
       "name": "Spelunky 2",
+      "ap_world_name": "Spelunky 2",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -5891,6 +6147,7 @@
     {
       "id": "stacklands",
       "name": "Stacklands",
+      "ap_world_name": "Stacklands",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -5912,6 +6169,7 @@
     {
       "id": "star_wars_episode_i_racer",
       "name": "Star Wars: Episode I - Racer",
+      "ap_world_name": "Star Wars: Episode I - Racer",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -5933,6 +6191,7 @@
     {
       "id": "starcraft_ii",
       "name": "StarCraft II",
+      "ap_world_name": "StarCraft II",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -5954,6 +6213,7 @@
     {
       "id": "stardew_valley",
       "name": "Stardew Valley",
+      "ap_world_name": "Stardew Valley",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -5975,6 +6235,7 @@
     {
       "id": "starquest_64",
       "name": "StarQuest 64",
+      "ap_world_name": "StarQuest 64",
       "subtitle": "PC · manual setup",
       "description": "",
       "platform": "PC",
@@ -5996,6 +6257,7 @@
     {
       "id": "stick_ranger",
       "name": "Stick Ranger",
+      "ap_world_name": "Stick Ranger",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -6017,6 +6279,7 @@
     {
       "id": "subnautica",
       "name": "Subnautica",
+      "ap_world_name": "Subnautica",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -6038,6 +6301,7 @@
     {
       "id": "super_cat_planet",
       "name": "Super Cat Planet",
+      "ap_world_name": "Super Cat Planet",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -6059,6 +6323,7 @@
     {
       "id": "super_market_simulator",
       "name": "Super Market Simulator",
+      "ap_world_name": "Super Market Simulator",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -6080,6 +6345,7 @@
     {
       "id": "sweet_defeat",
       "name": "Sweet Defeat",
+      "ap_world_name": "Sweet Defeat",
       "subtitle": "PC · manual setup",
       "description": "",
       "platform": "PC",
@@ -6101,6 +6367,7 @@
     {
       "id": "system_shock_2",
       "name": "System Shock 2",
+      "ap_world_name": "System Shock 2",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -6122,6 +6389,7 @@
     {
       "id": "talos_principle_reawakened",
       "name": "Talos Principle Reawakened",
+      "ap_world_name": "Talos Principle Reawakened",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -6143,6 +6411,7 @@
     {
       "id": "tcg_card_shop_simulator",
       "name": "TCG Card Shop Simulator",
+      "ap_world_name": "TCG Card Shop Simulator",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -6164,6 +6433,7 @@
     {
       "id": "teardown",
       "name": "Teardown",
+      "ap_world_name": "Teardown",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -6185,6 +6455,7 @@
     {
       "id": "terraria",
       "name": "Terraria",
+      "ap_world_name": "Terraria",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -6206,6 +6477,7 @@
     {
       "id": "tevi",
       "name": "TEVI",
+      "ap_world_name": "TEVI",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -6227,6 +6499,7 @@
     {
       "id": "the_binding_of_isaac_repentance",
       "name": "The Binding of Isaac: Repentance",
+      "ap_world_name": "The Binding of Isaac: Repentance",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -6248,6 +6521,7 @@
     {
       "id": "the_legend_of_heroes_trails_in_the_sky_the_3rd",
       "name": "The Legend of Heroes: Trails in the Sky the 3rd",
+      "ap_world_name": "The Legend of Heroes: Trails in the Sky the 3rd",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -6269,6 +6543,7 @@
     {
       "id": "the_legend_of_zelda_ocarina_of_time_ship_of_harkinian",
       "name": "The Legend of Zelda: Ocarina of Time (Ship of Harkinian)",
+      "ap_world_name": "The Legend of Zelda: Ocarina of Time (Ship of Harkinian)",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -6290,6 +6565,7 @@
     {
       "id": "the_messenger",
       "name": "The Messenger",
+      "ap_world_name": "The Messenger",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -6311,6 +6587,7 @@
     {
       "id": "the_simpsons_hit_and_run",
       "name": "The Simpsons: Hit and Run",
+      "ap_world_name": "The Simpsons: Hit and Run",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -6332,6 +6609,7 @@
     {
       "id": "the_sims_4",
       "name": "The Sims 4",
+      "ap_world_name": "The Sims 4",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -6353,6 +6631,7 @@
     {
       "id": "the_witness",
       "name": "The Witness",
+      "ap_world_name": "The Witness",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -6374,6 +6653,7 @@
     {
       "id": "three_goblin_wobblin",
       "name": "Three Goblin Wobblin'",
+      "ap_world_name": "Three Goblin Wobblin'",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -6395,6 +6675,7 @@
     {
       "id": "time_is_broken_again",
       "name": "Time is Broken Again",
+      "ap_world_name": "Time is Broken Again",
       "subtitle": "PC · manual setup",
       "description": "",
       "platform": "PC",
@@ -6416,6 +6697,7 @@
     {
       "id": "timespinner",
       "name": "Timespinner",
+      "ap_world_name": "Timespinner",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -6437,6 +6719,7 @@
     {
       "id": "toem",
       "name": "TOEM",
+      "ap_world_name": "TOEM",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -6458,6 +6741,7 @@
     {
       "id": "tombola",
       "name": "Tombola",
+      "ap_world_name": "Tombola",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -6479,6 +6763,7 @@
     {
       "id": "tony_hawk_s_pro_skater_1_2",
       "name": "Tony Hawk's Pro Skater 1 + 2",
+      "ap_world_name": "Tony Hawk's Pro Skater 1 + 2",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -6500,6 +6785,7 @@
     {
       "id": "total_war_warhammer_3_immortal_empires",
       "name": "Total War Warhammer 3: Immortal Empires",
+      "ap_world_name": "Total War Warhammer 3: Immortal Empires",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -6521,6 +6807,7 @@
     {
       "id": "totally_accurate_battle_simulator",
       "name": "Totally Accurate Battle Simulator",
+      "ap_world_name": "Totally Accurate Battle Simulator",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -6542,6 +6829,7 @@
     {
       "id": "touhou_18_5",
       "name": "Touhou 18.5",
+      "ap_world_name": "Touhou 18.5",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -6563,6 +6851,7 @@
     {
       "id": "trackmania_random_campaign",
       "name": "Trackmania Random Campaign",
+      "ap_world_name": "Trackmania Random Campaign",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -6584,6 +6873,7 @@
     {
       "id": "tunic",
       "name": "TUNIC",
+      "ap_world_name": "TUNIC",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -6605,6 +6895,7 @@
     {
       "id": "turnip_boy_commits_tax_evasion",
       "name": "Turnip Boy Commits Tax Evasion",
+      "ap_world_name": "Turnip Boy Commits Tax Evasion",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -6626,6 +6917,7 @@
     {
       "id": "ty_the_tasmanian_tiger",
       "name": "Ty the Tasmanian Tiger",
+      "ap_world_name": "Ty the Tasmanian Tiger",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -6647,6 +6939,7 @@
     {
       "id": "tyrian",
       "name": "Tyrian",
+      "ap_world_name": "Tyrian",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -6668,6 +6961,7 @@
     {
       "id": "ufo_50",
       "name": "UFO 50",
+      "ap_world_name": "UFO 50",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -6689,6 +6983,7 @@
     {
       "id": "ultrakill",
       "name": "ULTRAKILL",
+      "ap_world_name": "ULTRAKILL",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -6710,6 +7005,7 @@
     {
       "id": "undertale",
       "name": "Undertale",
+      "ap_world_name": "Undertale",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -6731,6 +7027,7 @@
     {
       "id": "unfair_flips",
       "name": "Unfair Flips",
+      "ap_world_name": "Unfair Flips",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -6752,6 +7049,7 @@
     {
       "id": "vampire_survivors",
       "name": "Vampire Survivors",
+      "ap_world_name": "Vampire Survivors",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -6773,6 +7071,7 @@
     {
       "id": "void_sols",
       "name": "Void Sols",
+      "ap_world_name": "Void Sols",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -6794,6 +7093,7 @@
     {
       "id": "void_stranger",
       "name": "Void Stranger",
+      "ap_world_name": "Void Stranger",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -6815,6 +7115,7 @@
     {
       "id": "vvvvvv",
       "name": "VVVVVV",
+      "ap_world_name": "VVVVVV",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -6836,6 +7137,7 @@
     {
       "id": "wargroove",
       "name": "Wargroove",
+      "ap_world_name": "Wargroove",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -6857,6 +7159,7 @@
     {
       "id": "wargroove_2",
       "name": "Wargroove 2",
+      "ap_world_name": "Wargroove 2",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -6878,6 +7181,7 @@
     {
       "id": "webfishing",
       "name": "WEBFISHING",
+      "ap_world_name": "WEBFISHING",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -6899,6 +7203,7 @@
     {
       "id": "west_of_loathing",
       "name": "West of Loathing",
+      "ap_world_name": "West of Loathing",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -6920,6 +7225,7 @@
     {
       "id": "wynncraft",
       "name": "Wynncraft",
+      "ap_world_name": "Wynncraft",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -6941,6 +7247,7 @@
     {
       "id": "xcom_2_war_of_the_chosen",
       "name": "XCOM 2: War of the Chosen",
+      "ap_world_name": "XCOM 2: War of the Chosen",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -6962,6 +7269,7 @@
     {
       "id": "yarg_guitar_hero_rock_band",
       "name": "YARG (Guitar Hero/Rock Band)",
+      "ap_world_name": "YARG (Guitar Hero/Rock Band)",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -6983,6 +7291,7 @@
     {
       "id": "yarg_yet_another_rhythm_game",
       "name": "YARG (Yet Another Rhythm Game)",
+      "ap_world_name": "YARG (Yet Another Rhythm Game)",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -7004,6 +7313,7 @@
     {
       "id": "yellow_taxi_goes_vroom",
       "name": "Yellow Taxi Goes Vroom",
+      "ap_world_name": "Yellow Taxi Goes Vroom",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -7025,6 +7335,7 @@
     {
       "id": "yohane_the_parhelion_blaze_in_the_deepblue",
       "name": "Yohane the Parhelion: Blaze in the Deepblue",
+      "ap_world_name": "Yohane the Parhelion: Blaze in the Deepblue",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -7046,6 +7357,7 @@
     {
       "id": "yoku_s_island_express",
       "name": "Yoku's Island Express",
+      "ap_world_name": "Yoku's Island Express",
       "subtitle": "PC · manual setup",
       "description": "",
       "platform": "PC",
@@ -7067,6 +7379,7 @@
     {
       "id": "yooka_laylee",
       "name": "Yooka-Laylee",
+      "ap_world_name": "Yooka-Laylee",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -7088,6 +7401,7 @@
     {
       "id": "zoominoes",
       "name": "Zoominoes",
+      "ap_world_name": "Zoominoes",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -7109,6 +7423,7 @@
     {
       "id": "zork_grand_inquisitor",
       "name": "Zork: Grand Inquisitor",
+      "ap_world_name": "Zork: Grand Inquisitor",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
