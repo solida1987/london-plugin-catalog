@@ -116,8 +116,13 @@ public sealed class SniBridge : IEmulatorBridge
         {
             return "SNI could not be reached.\n\n"
                  + $"({ex.GetType().Name}: {ex.Message})\n\n"
-                 + "Start SNI, then try again. You can get it from "
-                 + $"{HomepageUrl} — this launcher never downloads it for you.";
+                 // No longer "never downloads it for you": since 3.7.15 the
+                 // launcher offers to fetch SNI from its own release after
+                 // showing the author and the licence. Saying otherwise sent
+                 // the player looking for a manual route they did not need.
+                 + "Start SNI, then try again. If you do not have it, the "
+                 + "button next to Play offers to install it, or get it "
+                 + $"yourself from {HomepageUrl}.";
         }
 
         if (devices is null)

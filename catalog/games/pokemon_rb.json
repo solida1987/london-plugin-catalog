@@ -1,0 +1,30 @@
+{
+  "id": "pokemon_rb",
+  "display_name": "Pokémon Red and Blue",
+  "subtitle": "",
+  "platform": "GB",
+  "_platform_source": "harvested game list: platform_raw='GB'",
+  "version": "1.0.0",
+  "ap_world_name": "Pokémon Red and Blue",
+  "_ap_world_name_source": "harvested game list, name as written there",
+  "description": "Pokémon Red and Blue as a multiworld. Items and progression are shuffled across the session.",
+  "_description_source": "placeholder assembled from display_name; replace with what this game actually shuffles",
+  "checks_verified": false,
+  "requires": "own_copy",
+  "_requires_source": "harvested game list: requires='own_copy'",
+  "lua_module": "pokemon_rb",
+  "_lua_module_source": "Plugins/Scripts/games/pokemon_rb.lua exists",
+  "apworld": {
+    "bundled": true,
+    "url": "",
+    "_source": "harvested game list: source='bundled'"
+  },
+  "client": {
+    "protocol": "bizhawk",
+    "_source": "no SNIClient and no BizHawkClient -- the world most likely ships a standalone client of its own",
+    "_protocol_source": "world source: read from the world's own client class -- it subclasses BizHawkClient"
+  },
+  "patch_extension": "none",
+  "_patch_extension_source": "read from the compiled world at pokemon_rb.apworld: no APPatchExtension in 16 compiled file(s)",
+  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Until then London warns."
+}
