@@ -185,10 +185,11 @@ and the module in the launcher that reads that game's memory.
 
 ### Removed on request
 
-| Asked | Worlds | Outcome |
-|---|---|---|
-| PinkSwitch | Earthbound, Yoshi's Island, Zelda II | Removed 20 August 2026, along with the three memory modules in the launcher |
-| Panda291 | Ratchet & Clank | Never in the catalogue; none of these games has ever been supported here |
-| 1theory, for Taoshi | Ratchet & Clank 3 | Never in the catalogue |
+The people who asked are not named here. Two of them asked not to be associated with this project, and a list of their names on our page would be that association all over again.
+
+| Worlds | Outcome |
+|---|---|
+| Earthbound, Yoshi's Island, Zelda II | Removed 20 August 2026 at their author's request — the plugins, the catalogue entries, the published downloads and the three memory modules in the launcher |
+| Ratchet & Clank, Ratchet & Clank 3 | Asked for on 20 August 2026; neither has ever been in the catalogue |
 
 ---
