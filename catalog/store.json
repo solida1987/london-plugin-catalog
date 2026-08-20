@@ -1,0 +1,1169 @@
+{
+  "note": "The launcher's store window. Addresses and metadata only — no artwork and no code is stored here. Installing still runs the launcher's own consent flow.",
+  "count": 59,
+  "platforms": [
+    "Atari 2600",
+    "Game Boy Advance",
+    "Game Boy Color",
+    "Master System",
+    "Mega Drive / Genesis",
+    "NES",
+    "Nintendo 64",
+    "PC",
+    "Super Nintendo"
+  ],
+  "families": [
+    "Atari",
+    "Nintendo",
+    "PC",
+    "Sega"
+  ],
+  "genres": [
+    "Action",
+    "Action-Adventure",
+    "Adventure",
+    "Card Game",
+    "Metroidvania",
+    "Monster Collecting",
+    "Platformer",
+    "RPG",
+    "Racing",
+    "Simulation",
+    "Strategy"
+  ],
+  "games": [
+    {
+      "id": "adventure",
+      "name": "Adventure",
+      "subtitle": "",
+      "description": "Adventure as a multiworld. Items and progression are shuffled across the session.",
+      "platform": "2600",
+      "platform_label": "Atari 2600",
+      "family": "Atari",
+      "genres": [
+        "Adventure"
+      ],
+      "version": "1.0.0",
+      "world_by": "the Archipelago project and its contributors",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Atari%20-%202600/Named_Boxarts/Adventure%20%28USA%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/2600/adventure.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "alttp",
+      "name": "The Legend of Zelda: A Link to the Past",
+      "subtitle": "SNES",
+      "description": "Hyrule as a multiworld. The original Archipelago game.",
+      "platform": "SNES",
+      "platform_label": "Super Nintendo",
+      "family": "Nintendo",
+      "genres": [
+        "Action-Adventure"
+      ],
+      "version": "1.0.1",
+      "world_by": "the Archipelago project and its contributors",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Legend%20of%20Zelda%2C%20The%20-%20A%20Link%20to%20the%20Past%20%28USA%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/snes/alttp.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "banjo_tooie",
+      "name": "Banjo-Tooie",
+      "subtitle": "",
+      "description": "Banjo-Tooie as a multiworld. Items and progression are shuffled across the session.",
+      "platform": "N64",
+      "platform_label": "Nintendo 64",
+      "family": "Nintendo",
+      "genres": [
+        "Platformer",
+        "Adventure"
+      ],
+      "version": "1.0.0",
+      "world_by": "jjjj12212",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Nintendo%2064/Named_Boxarts/Banjo-Tooie%20%28USA%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/n64/banjo_tooie.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "castlevania_cotm",
+      "name": "Castlevania: Circle of the Moon",
+      "subtitle": "BizHawk",
+      "description": "Dracula's castle as a multiworld. DSS cards, relics and movement abilities are shuffled across the session, so how far into the castle you can reach depends on the whole group.",
+      "platform": "GBA",
+      "platform_label": "Game Boy Advance",
+      "family": "Nintendo",
+      "genres": [
+        "Metroidvania"
+      ],
+      "version": "1.0.0",
+      "world_by": "the Archipelago project and its contributors",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Advance/Named_Boxarts/Castlevania%20-%20Circle%20of%20the%20Moon%20%28USA%29%20%28Castlevania%20Advance%20Collection%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/castlevania_cotm.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "castlevania_hod",
+      "name": "Castlevania: Harmony of Dissonance",
+      "subtitle": "BizHawk",
+      "description": "Dracula's castle across two layers as a multiworld. Relics, spell books and furniture are shuffled across the session.",
+      "platform": "GBA",
+      "platform_label": "Game Boy Advance",
+      "family": "Nintendo",
+      "genres": [
+        "Metroidvania"
+      ],
+      "version": "",
+      "world_by": "LiquidCat64",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": null,
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/castlevania_hod.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "ctjot",
+      "name": "Chrono Trigger",
+      "subtitle": "",
+      "description": "Chrono Trigger as a multiworld. Items and progression are shuffled across the session.",
+      "platform": "SNES",
+      "platform_label": "Super Nintendo",
+      "family": "Nintendo",
+      "genres": [
+        "Adventure"
+      ],
+      "version": "1.0.0",
+      "world_by": "www.wiki.ctjot.com",
+      "world_licence": null,
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Chrono%20Trigger%20%28USA%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/snes/ctjot.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "cv64",
+      "name": "Castlevania 64",
+      "subtitle": "",
+      "description": "Castlevania 64 as a multiworld. Items and progression are shuffled across the session.",
+      "platform": "N64",
+      "platform_label": "Nintendo 64",
+      "family": "Nintendo",
+      "genres": [
+        "Metroidvania"
+      ],
+      "version": "1.0.0",
+      "world_by": "the Archipelago project and its contributors",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Nintendo%2064/Named_Boxarts/Castlevania%20%28USA%29%20%28Rev%201%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/n64/cv64.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "diddy_kong_racing",
+      "name": "Diddy Kong Racing",
+      "subtitle": "",
+      "description": "Diddy Kong Racing as a multiworld. Items and progression are shuffled across the session.",
+      "platform": "N64",
+      "platform_label": "Nintendo 64",
+      "family": "Nintendo",
+      "genres": [
+        "Racing"
+      ],
+      "version": "1.0.0",
+      "world_by": "zakwiz",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Nintendo%2064/Named_Boxarts/Diddy%20Kong%20Racing%20%28USA%29%20%28En%2CFr%29%20%28Rev%201%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/n64/diddy_kong_racing.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "dk64",
+      "name": "Donkey Kong 64",
+      "subtitle": "",
+      "description": "Donkey Kong 64 as a multiworld. Items and progression are shuffled across the session.",
+      "platform": "N64",
+      "platform_label": "Nintendo 64",
+      "family": "Nintendo",
+      "genres": [
+        "Platformer"
+      ],
+      "version": "1.0.0",
+      "world_by": "dev.dk64randomizer.com",
+      "world_licence": null,
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Nintendo%2064/Named_Boxarts/Donkey%20Kong%2064%20%28USA%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/n64/dk64.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "donkey_kong_country",
+      "name": "Donkey Kong Country",
+      "subtitle": "",
+      "description": "Donkey Kong Country as a multiworld. Items and progression are shuffled across the session.",
+      "platform": "SNES",
+      "platform_label": "Super Nintendo",
+      "family": "Nintendo",
+      "genres": [
+        "Adventure"
+      ],
+      "version": "1.0.0",
+      "world_by": "TheLX5",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Donkey%20Kong%20Country%20%28USA%29%20%28Rev%201%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/snes/donkey_kong_country.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "donkey_kong_country_2",
+      "name": "Donkey Kong Country 2: Diddy's Kong Quest",
+      "subtitle": "",
+      "description": "Donkey Kong Country 2: Diddy's Kong Quest as a multiworld. Items and progression are shuffled across the session.",
+      "platform": "SNES",
+      "platform_label": "Super Nintendo",
+      "family": "Nintendo",
+      "genres": [
+        "Adventure"
+      ],
+      "version": "1.0.0",
+      "world_by": "TheLX5",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Donkey%20Kong%20Country%202%20-%20Diddy%27s%20Kong%20Quest%20%28USA%29%20%28En%2CFr%29%20%28Rev%201%29%20%28Virtual%20Console%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/snes/donkey_kong_country_2.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "donkey_kong_country_3",
+      "name": "Donkey Kong Country 3: Dixie Kong's Double Trouble!",
+      "subtitle": "",
+      "description": "Donkey Kong Country 3: Dixie Kong's Double Trouble! as a multiworld. Items and progression are shuffled across the session.",
+      "platform": "SNES",
+      "platform_label": "Super Nintendo",
+      "family": "Nintendo",
+      "genres": [
+        "Adventure"
+      ],
+      "version": "1.0.0",
+      "world_by": "the Archipelago project and its contributors",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Donkey%20Kong%20Country%203%20-%20Dixie%20Kong%27s%20Double%20Trouble%21%20%28USA%29%20%28En%2CFr%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/snes/donkey_kong_country_3.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "earthbound",
+      "name": "EarthBound",
+      "subtitle": "",
+      "description": "EarthBound as a multiworld. Items and progression are shuffled across the session.",
+      "platform": "SNES",
+      "platform_label": "Super Nintendo",
+      "family": "Nintendo",
+      "genres": [
+        "RPG"
+      ],
+      "version": "1.0.0",
+      "world_by": "PinkSwitch",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/EarthBound%20%28USA%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/snes/earthbound.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "faxanadu",
+      "name": "Faxanadu",
+      "subtitle": "",
+      "description": "Eolis and the World Tree as a multiworld.",
+      "platform": "NES",
+      "platform_label": "NES",
+      "family": "Nintendo",
+      "genres": [
+        "Adventure"
+      ],
+      "version": "",
+      "world_by": "the Archipelago project and its contributors",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": null,
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/nes/faxanadu.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "ff4fe",
+      "name": "Final Fantasy IV",
+      "subtitle": "",
+      "description": "Final Fantasy IV as a multiworld. Items and progression are shuffled across the session.",
+      "platform": "SNES",
+      "platform_label": "Super Nintendo",
+      "family": "Nintendo",
+      "genres": [
+        "RPG"
+      ],
+      "version": "1.0.0",
+      "world_by": "Rosalie-A",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Final%20Fantasy%20IV%20%28USA%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/snes/ff4fe.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "ff6wc",
+      "name": "Final Fantasy VI",
+      "subtitle": "",
+      "description": "Final Fantasy VI as a multiworld. Items and progression are shuffled across the session.",
+      "platform": "SNES",
+      "platform_label": "Super Nintendo",
+      "family": "Nintendo",
+      "genres": [
+        "RPG"
+      ],
+      "version": "1.0.0",
+      "world_by": "docs.google.com",
+      "world_licence": null,
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Final%20Fantasy%20VI%20%28USA%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/snes/ff6wc.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "ffmq",
+      "name": "Final Fantasy Mystic Quest",
+      "subtitle": "SNI",
+      "description": "Foresta and its four crystals as a multiworld. Weapons, spells and key items are shuffled across the session.",
+      "platform": "SNES",
+      "platform_label": "Super Nintendo",
+      "family": "Nintendo",
+      "genres": [
+        "RPG"
+      ],
+      "version": "1.0.0",
+      "world_by": "the Archipelago project and its contributors",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Final%20Fantasy%20-%20Mystic%20Quest%20%28USA%29%20%28Rev%201%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/snes/ffmq.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "ffta",
+      "name": "Final Fantasy Tactics Advance",
+      "subtitle": "BizHawk",
+      "description": "Ivalice as a multiworld. Jobs, equipment and mission unlocks are shuffled across the session.",
+      "platform": "GBA",
+      "platform_label": "Game Boy Advance",
+      "family": "Nintendo",
+      "genres": [
+        "RPG",
+        "Strategy"
+      ],
+      "version": "1.0.0",
+      "world_by": "spicynun",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Advance/Named_Boxarts/Final%20Fantasy%20Tactics%20Advance%20%28USA%29%20%28Virtual%20Console%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/ffta.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "final_fantasy",
+      "name": "Final Fantasy",
+      "subtitle": "BizHawk",
+      "description": "The four Fiends as a multiworld. Key items and progression are shuffled across the session.",
+      "platform": "NES",
+      "platform_label": "NES",
+      "family": "Nintendo",
+      "genres": [
+        "RPG"
+      ],
+      "version": "1.0.0",
+      "world_by": "the Archipelago project and its contributors",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Nintendo%20Entertainment%20System/Named_Boxarts/Final%20Fantasy%20%28USA%29%20%28Virtual%20Console%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/nes/final_fantasy.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "fire_emblem_sacred_stones",
+      "name": "Fire Emblem: The Sacred Stones",
+      "subtitle": "BizHawk",
+      "description": "Magvel as a multiworld. Weapons, promotion items and recruitment are shuffled across the session.",
+      "platform": "GBA",
+      "platform_label": "Game Boy Advance",
+      "family": "Nintendo",
+      "genres": [
+        "Strategy",
+        "RPG"
+      ],
+      "version": "1.0.0",
+      "world_by": "CT075",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Advance/Named_Boxarts/Fire%20Emblem%20-%20The%20Sacred%20Stones%20%28USA%29%20%28Virtual%20Console%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/fire_emblem_sacred_stones.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "golden_sun_tla",
+      "name": "Golden Sun: The Lost Age",
+      "subtitle": "BizHawk",
+      "description": "Weyard as a multiworld. Djinn, summons and key items are shuffled across the session.",
+      "platform": "GBA",
+      "platform_label": "Game Boy Advance",
+      "family": "Nintendo",
+      "genres": [
+        "RPG"
+      ],
+      "version": "1.0.0",
+      "world_by": "cjmang",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Advance/Named_Boxarts/Golden%20Sun%20-%20The%20Lost%20Age%20%28USA%2C%20Europe%29%20%28Virtual%20Console%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/golden_sun_tla.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "kdl3",
+      "name": "Kirby's Dream Land 3",
+      "subtitle": "SNI",
+      "description": "Ripple Star as a multiworld. Copy abilities, animal friends and heart stars are shuffled across the session.",
+      "platform": "SNES",
+      "platform_label": "Super Nintendo",
+      "family": "Nintendo",
+      "genres": [
+        "Platformer"
+      ],
+      "version": "1.0.0",
+      "world_by": "the Archipelago project and its contributors",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Kirby%27s%20Dream%20Land%203%20%28USA%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/snes/kdl3.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "khcom",
+      "name": "KINGDOM HEARTS Chain of Memories",
+      "subtitle": "BizHawk",
+      "description": "Castle Oblivion as a multiworld. Cards, world unlocks and story progress are shuffled across the session.",
+      "platform": "GBA",
+      "platform_label": "Game Boy Advance",
+      "family": "Nintendo",
+      "genres": [
+        "Adventure"
+      ],
+      "version": "1.0.0",
+      "world_by": "gaithernOrg",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Advance/Named_Boxarts/Kingdom%20Hearts%20-%20Chain%20of%20Memories%20%28USA%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/khcom.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "kirby_64",
+      "name": "Kirby 64: The Crystal Shards",
+      "subtitle": "",
+      "description": "Kirby 64: The Crystal Shards as a multiworld. Items and progression are shuffled across the session.",
+      "platform": "N64",
+      "platform_label": "Nintendo 64",
+      "family": "Nintendo",
+      "genres": [
+        "Adventure"
+      ],
+      "version": "1.0.0",
+      "world_by": "Silvris",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Nintendo%2064/Named_Boxarts/Kirby%2064%20-%20The%20Crystal%20Shards%20%28USA%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/n64/kirby_64.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "ladx",
+      "name": "The Legend of Zelda: Link's Awakening DX",
+      "subtitle": "",
+      "description": "The Legend of Zelda: Link's Awakening DX as a multiworld. Items and progression are shuffled across the session.",
+      "platform": "GBC",
+      "platform_label": "Game Boy Color",
+      "family": "Nintendo",
+      "genres": [
+        "Action-Adventure"
+      ],
+      "version": "1.0.0",
+      "world_by": "the Archipelago project and its contributors",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Color/Named_Boxarts/Legend%20of%20Zelda%2C%20The%20-%20Link%27s%20Awakening%20DX%20%28USA%2C%20Europe%29%20%28Rev%201%29%20%28SGB%20Enhanced%29%20%28GB%20Compatible%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gbc/ladx.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "legend_of_zelda",
+      "name": "The Legend of Zelda",
+      "subtitle": "",
+      "description": "Hyrule as a multiworld. The original quest, shuffled.",
+      "platform": "NES",
+      "platform_label": "NES",
+      "family": "Nintendo",
+      "genres": [
+        "Action-Adventure"
+      ],
+      "version": "1.0.0",
+      "world_by": "the Archipelago project and its contributors",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Nintendo%20Entertainment%20System/Named_Boxarts/Legend%20of%20Zelda%2C%20The%20%28USA%29%20%28Rev%201%29%20%28Virtual%20Console%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/nes/legend_of_zelda.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "lufia2ac",
+      "name": "Lufia II: Rise of the Sinistrals",
+      "subtitle": "SNI",
+      "description": "The Ancient Cave as a multiworld. Blue chests, capsule monsters and spells are shuffled across the session.",
+      "platform": "SNES",
+      "platform_label": "Super Nintendo",
+      "family": "Nintendo",
+      "genres": [
+        "Adventure"
+      ],
+      "version": "1.0.0",
+      "world_by": "the Archipelago project and its contributors",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Lufia%20II%20-%20Rise%20of%20the%20Sinistrals%20%28USA%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/snes/lufia2ac.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "mario_luigi_superstar_saga",
+      "name": "Mario & Luigi: Superstar Saga",
+      "subtitle": "BizHawk",
+      "description": "The Beanbean Kingdom as a multiworld. Bros. moves, gear and key items are shuffled across the session.",
+      "platform": "GBA",
+      "platform_label": "Game Boy Advance",
+      "family": "Nintendo",
+      "genres": [
+        "Platformer"
+      ],
+      "version": "1.0.0",
+      "world_by": "the Archipelago project and its contributors",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Advance/Named_Boxarts/Mario%20_%20Luigi%20-%20Superstar%20Saga%20%28USA%29%20%28Virtual%20Console%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/mario_luigi_superstar_saga.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "mega_man_2",
+      "name": "Mega Man 2",
+      "subtitle": "BizHawk",
+      "description": "The eight Robot Masters as a multiworld. Weapons, items and stage access are shuffled across the session.",
+      "platform": "NES",
+      "platform_label": "NES",
+      "family": "Nintendo",
+      "genres": [
+        "Action",
+        "Platformer"
+      ],
+      "version": "1.0.0",
+      "world_by": "the Archipelago project and its contributors",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Nintendo%20Entertainment%20System/Named_Boxarts/Mega%20Man%202%20%28USA%29%20%28Virtual%20Console%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/nes/mega_man_2.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "mega_man_x",
+      "name": "Mega Man X",
+      "subtitle": "",
+      "description": "Mega Man X as a multiworld. Items and progression are shuffled across the session.",
+      "platform": "SNES",
+      "platform_label": "Super Nintendo",
+      "family": "Nintendo",
+      "genres": [
+        "Adventure"
+      ],
+      "version": "1.0.0",
+      "world_by": "TheLX5",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Mega%20Man%20X%20%28USA%29%20%28Rev%201%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/snes/mega_man_x.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "mega_man_x2",
+      "name": "Mega Man X2",
+      "subtitle": "",
+      "description": "Mega Man X2 as a multiworld. Items and progression are shuffled across the session.",
+      "platform": "SNES",
+      "platform_label": "Super Nintendo",
+      "family": "Nintendo",
+      "genres": [
+        "Adventure"
+      ],
+      "version": "1.0.0",
+      "world_by": "TheLX5",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Mega%20Man%20X2%20%28USA%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/snes/mega_man_x2.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "mega_man_x3",
+      "name": "Mega Man X3",
+      "subtitle": "",
+      "description": "Mega Man X3 as a multiworld. Items and progression are shuffled across the session.",
+      "platform": "SNES",
+      "platform_label": "Super Nintendo",
+      "family": "Nintendo",
+      "genres": [
+        "Adventure"
+      ],
+      "version": "1.0.0",
+      "world_by": "TheLX5",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Mega%20Man%20X3%20%28USA%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/snes/mega_man_x3.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "metroid_fusion",
+      "name": "Metroid Fusion",
+      "subtitle": "BizHawk",
+      "description": "The B.S.L station as a multiworld. Suit upgrades and major items are shuffled across the session.",
+      "platform": "GBA",
+      "platform_label": "Game Boy Advance",
+      "family": "Nintendo",
+      "genres": [
+        "Metroidvania"
+      ],
+      "version": "1.0.0",
+      "world_by": "StalledStorm",
+      "world_licence": "GPL-3.0",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Advance/Named_Boxarts/Metroid%20Fusion%20%28USA%29%20%28Virtual%20Console%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/metroid_fusion.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "metroid_zero_mission",
+      "name": "Metroid: Zero Mission",
+      "subtitle": "BizHawk",
+      "description": "Zebes as a multiworld. Suit upgrades, beams and missile tanks are shuffled across the session.",
+      "platform": "GBA",
+      "platform_label": "Game Boy Advance",
+      "family": "Nintendo",
+      "genres": [
+        "Metroidvania"
+      ],
+      "version": "1.0.0",
+      "world_by": "lilDavid",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Advance/Named_Boxarts/Metroid%20-%20Zero%20Mission%20%28USA%29%20%28Virtual%20Console%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/metroid_zero_mission.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "minish_cap",
+      "name": "The Legend of Zelda: The Minish Cap",
+      "subtitle": "BizHawk",
+      "description": "Hyrule at two scales as a multiworld. Kinstones, figurines and key items are shuffled across the session.",
+      "platform": "GBA",
+      "platform_label": "Game Boy Advance",
+      "family": "Nintendo",
+      "genres": [
+        "Action-Adventure"
+      ],
+      "version": "1.0.0",
+      "world_by": "eternalcode0",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Advance/Named_Boxarts/Legend%20of%20Zelda%2C%20The%20-%20The%20Minish%20Cap%20%28USA%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/minish_cap.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "mk64",
+      "name": "Mario Kart 64",
+      "subtitle": "",
+      "description": "Mario Kart 64 as a multiworld. Items and progression are shuffled across the session.",
+      "platform": "N64",
+      "platform_label": "Nintendo 64",
+      "family": "Nintendo",
+      "genres": [
+        "Platformer"
+      ],
+      "version": "1.0.0",
+      "world_by": "Edsploration",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Nintendo%2064/Named_Boxarts/Mario%20Kart%2064%20%28USA%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/n64/mk64.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "mm3",
+      "name": "Mega Man 3",
+      "subtitle": "",
+      "description": "Mega Man 3 as a multiworld. Items and progression are shuffled across the session.",
+      "platform": "NES",
+      "platform_label": "NES",
+      "family": "Nintendo",
+      "genres": [
+        "Adventure"
+      ],
+      "version": "1.0.0",
+      "world_by": "Silvris",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Nintendo%20Entertainment%20System/Named_Boxarts/Mega%20Man%203%20%28USA%29%20%28Virtual%20Console%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/nes/mm3.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "mmbn3",
+      "name": "Mega Man Battle Network 3 Blue",
+      "subtitle": "BizHawk",
+      "description": "The Net as a multiworld. Chips, key items and program upgrades are shuffled across the session.",
+      "platform": "GBA",
+      "platform_label": "Game Boy Advance",
+      "family": "Nintendo",
+      "genres": [
+        "RPG",
+        "Card Game"
+      ],
+      "version": "1.0.0",
+      "world_by": "the Archipelago project and its contributors",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Advance/Named_Boxarts/Mega%20Man%20Battle%20Network%203%20-%20Blue%20%28Europe%29%20%28Virtual%20Console%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/mmbn3.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "oot",
+      "name": "The Legend of Zelda: Ocarina of Time",
+      "subtitle": "",
+      "description": "The Legend of Zelda: Ocarina of Time as a multiworld. Items and progression are shuffled across the session.",
+      "platform": "N64",
+      "platform_label": "Nintendo 64",
+      "family": "Nintendo",
+      "genres": [
+        "Action-Adventure"
+      ],
+      "version": "1.0.1",
+      "world_by": "the Archipelago project and its contributors",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Nintendo%2064/Named_Boxarts/Legend%20of%20Zelda%2C%20The%20-%20Ocarina%20of%20Time%20%28USA%29%20%28Rev%201%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/n64/oot.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "paper_mario",
+      "name": "Paper Mario",
+      "subtitle": "",
+      "description": "Paper Mario as a multiworld. Items and progression are shuffled across the session.",
+      "platform": "N64",
+      "platform_label": "Nintendo 64",
+      "family": "Nintendo",
+      "genres": [
+        "RPG"
+      ],
+      "version": "1.0.0",
+      "world_by": "icebound777",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Nintendo%2064/Named_Boxarts/Paper%20Mario%20%28USA%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/n64/paper_mario.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "pokemon_crystal",
+      "name": "Pokemon Crystal",
+      "subtitle": "Johto badges, wild encounters and items across the multiworld",
+      "description": "Randomizes Johto: badges, items, trainers and wild encounters join the multiworld. Requires your own Pokemon Crystal ROM (US 1.0 or 1.1); the seed's .apcrystal patch is applied to it.",
+      "platform": "GBC",
+      "platform_label": "Game Boy Color",
+      "family": "Nintendo",
+      "genres": [
+        "RPG",
+        "Monster Collecting"
+      ],
+      "version": "1.0.0",
+      "world_by": null,
+      "world_licence": null,
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Color/Named_Boxarts/Pokemon%20-%20Crystal%20Version%20%28USA%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gbc/pokemon_crystal.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "pokemon_emerald",
+      "name": "Pokemon Emerald",
+      "subtitle": "BizHawk",
+      "description": "The Hoenn region as a multiworld. Badges, HM moves and key items are shuffled across the whole session, so progress through Hoenn depends on what the other players find.",
+      "platform": "GBA",
+      "platform_label": "Game Boy Advance",
+      "family": "Nintendo",
+      "genres": [
+        "RPG",
+        "Monster Collecting"
+      ],
+      "version": "1.0.0",
+      "world_by": "the Archipelago project and its contributors",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Advance/Named_Boxarts/Pokemon%20-%20Emerald%20Version%20%28USA%2C%20Europe%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/pokemon_emerald.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "pokemon_frlg",
+      "name": "Pokemon FireRed and LeafGreen",
+      "subtitle": "BizHawk",
+      "description": "Kanto as a multiworld. Badges, HMs and key items are shuffled across the session.",
+      "platform": "GBA",
+      "platform_label": "Game Boy Advance",
+      "family": "Nintendo",
+      "genres": [
+        "RPG",
+        "Monster Collecting"
+      ],
+      "version": "1.0.0",
+      "world_by": "vyneras",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Advance/Named_Boxarts/Pokemon%20-%20FireRed%20Version%20%28USA%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/pokemon_frlg.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "smrpg",
+      "name": "Super Mario RPG",
+      "subtitle": "",
+      "description": "Super Mario RPG as a multiworld. Items and progression are shuffled across the session.",
+      "platform": "SNES",
+      "platform_label": "Super Nintendo",
+      "family": "Nintendo",
+      "genres": [
+        "Platformer"
+      ],
+      "version": "1.0.0",
+      "world_by": "TheRealSolidusSnake",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Super%20Mario%20RPG%20-%20Legend%20of%20the%20Seven%20Stars%20%28USA%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/snes/smrpg.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "smw",
+      "name": "Super Mario World",
+      "subtitle": "SNI",
+      "description": "Dinosaur Land as a multiworld. Yoshi eggs, switch palaces and level unlocks are shuffled across the session.",
+      "platform": "SNES",
+      "platform_label": "Super Nintendo",
+      "family": "Nintendo",
+      "genres": [
+        "Platformer"
+      ],
+      "version": "1.0.0",
+      "world_by": "the Archipelago project and its contributors",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Super%20Mario%20World%20%28USA%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/snes/smw.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "smz3",
+      "name": "SMZ3",
+      "subtitle": "",
+      "description": "SMZ3 as a multiworld. Items and progression are shuffled across the session.",
+      "platform": "SNES",
+      "platform_label": "Super Nintendo",
+      "family": "Nintendo",
+      "genres": [
+        "Action-Adventure",
+        "Metroidvania"
+      ],
+      "version": "1.0.0",
+      "world_by": "the Archipelago project and its contributors",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": null,
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/snes/smz3.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "soe",
+      "name": "Secret of Evermore",
+      "subtitle": "SNI",
+      "description": "Prehistoria through Omnitopia as a multiworld. Alchemy ingredients, weapons and charms are shuffled across the session.",
+      "platform": "SNES",
+      "platform_label": "Super Nintendo",
+      "family": "Nintendo",
+      "genres": [
+        "Adventure"
+      ],
+      "version": "1.0.0",
+      "world_by": "the Archipelago project and its contributors",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Secret%20of%20Evermore%20%28USA%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/snes/soe.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "sonic1",
+      "name": "Sonic the Hedgehog",
+      "subtitle": "",
+      "description": "Sonic the Hedgehog as a multiworld. Items and progression are shuffled across the session.",
+      "platform": "GEN",
+      "platform_label": "Mega Drive / Genesis",
+      "family": "Sega",
+      "genres": [
+        "Platformer"
+      ],
+      "version": "1.0.0",
+      "world_by": "kaithar",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Sonic%20The%20Hedgehog%20%28USA%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gen/sonic1.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "super_metroid",
+      "name": "Super Metroid",
+      "subtitle": "SNI",
+      "description": "Zebes as a multiworld. Suit upgrades, beams and tanks are shuffled across the session.",
+      "platform": "SNES",
+      "platform_label": "Super Nintendo",
+      "family": "Nintendo",
+      "genres": [
+        "Metroidvania"
+      ],
+      "version": "1.0.0",
+      "world_by": "the Archipelago project and its contributors",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Super%20Metroid%20%28USA%2C%20Europe%29%20%28En%2CJa%29%20%28Virtual%20Console%2C%20Classic%20Mini%2C%20Switch%20Online%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/snes/super_metroid.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "tloz_ooa",
+      "name": "The Legend of Zelda: Oracle of Ages",
+      "subtitle": "",
+      "description": "The Legend of Zelda: Oracle of Ages as a multiworld. Items and progression are shuffled across the session.",
+      "platform": "GBC",
+      "platform_label": "Game Boy Color",
+      "family": "Nintendo",
+      "genres": [
+        "Action-Adventure"
+      ],
+      "version": "1.0.0",
+      "world_by": "josephanimate2021",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Color/Named_Boxarts/Legend%20of%20Zelda%2C%20The%20-%20Oracle%20of%20Ages%20%28USA%2C%20Australia%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gbc/tloz_ooa.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "tloz_oos",
+      "name": "The Legend of Zelda: Oracle of Seasons",
+      "subtitle": "",
+      "description": "The Legend of Zelda: Oracle of Seasons as a multiworld. Items and progression are shuffled across the session.",
+      "platform": "GBC",
+      "platform_label": "Game Boy Color",
+      "family": "Nintendo",
+      "genres": [
+        "Action-Adventure"
+      ],
+      "version": "1.0.0",
+      "world_by": "Dinopony",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Color/Named_Boxarts/Legend%20of%20Zelda%2C%20The%20-%20Oracle%20of%20Seasons%20%28USA%2C%20Australia%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gbc/tloz_oos.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "wario_land_4",
+      "name": "Wario Land 4",
+      "subtitle": "BizHawk",
+      "description": "The Golden Pyramid as a multiworld. Jewel pieces, CDs and abilities are shuffled across the session.",
+      "platform": "GBA",
+      "platform_label": "Game Boy Advance",
+      "family": "Nintendo",
+      "genres": [
+        "Platformer"
+      ],
+      "version": "1.0.0",
+      "world_by": "lilDavid",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Advance/Named_Boxarts/Wario%20Land%204%20%28USA%2C%20Europe%29%20%28Virtual%20Console%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/wario_land_4.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "yoshis_island",
+      "name": "Super Mario World 2: Yoshi's Island",
+      "subtitle": "SNI",
+      "description": "Yoshi's Island as a multiworld. Level unlocks, items and abilities are shuffled across the session.",
+      "platform": "SNES",
+      "platform_label": "Super Nintendo",
+      "family": "Nintendo",
+      "genres": [
+        "Platformer"
+      ],
+      "version": "1.0.0",
+      "world_by": "the Archipelago project and its contributors",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Super%20Mario%20World%202%20-%20Yoshi%27s%20Island%20%28USA%29%20%28Rev%201%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/snes/yoshis_island.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "yugioh_2006",
+      "name": "Yu-Gi-Oh! Ultimate Masters: WCT 2006",
+      "subtitle": "BizHawk",
+      "description": "The 2006 World Championship as a multiworld. Cards, packs and campaign progress are shuffled across the session.",
+      "platform": "GBA",
+      "platform_label": "Game Boy Advance",
+      "family": "Nintendo",
+      "genres": [
+        "Adventure"
+      ],
+      "version": "1.0.0",
+      "world_by": "the Archipelago project and its contributors",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Advance/Named_Boxarts/Yu-Gi-Oh%21%20-%20Ultimate%20Masters%20-%20World%20Championship%20Tournament%202006%20%28USA%29%20%28En%2CJa%2CFr%2CDe%2CEs%2CIt%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/yugioh_2006.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "yugioh_ddm",
+      "name": "Yu-Gi-Oh! Dungeon Dice Monsters",
+      "subtitle": "BizHawk",
+      "description": "Duelist progression as a multiworld. Dice, duelists and shop stock are shuffled across the session.",
+      "platform": "GBA",
+      "platform_label": "Game Boy Advance",
+      "family": "Nintendo",
+      "genres": [
+        "Adventure"
+      ],
+      "version": "",
+      "world_by": "JustinMarshall98",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": null,
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/yugioh_ddm.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "zelda2",
+      "name": "The Legend of Zelda II: The Adventure of Link",
+      "subtitle": "",
+      "description": "The Legend of Zelda II: The Adventure of Link as a multiworld. Items and progression are shuffled across the session.",
+      "platform": "NES",
+      "platform_label": "NES",
+      "family": "Nintendo",
+      "genres": [
+        "Action-Adventure",
+        "RPG"
+      ],
+      "version": "1.0.0",
+      "world_by": "PinkSwitch",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Nintendo%20Entertainment%20System/Named_Boxarts/Zelda%20II%20-%20The%20Adventure%20of%20Link%20%28USA%29%20%28Virtual%20Console%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/nes/zelda2.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "zillion",
+      "name": "Zillion",
+      "subtitle": "",
+      "description": "Zillion as a multiworld. Items and progression are shuffled across the session.",
+      "platform": "SMS",
+      "platform_label": "Master System",
+      "family": "Sega",
+      "genres": [
+        "Action-Adventure"
+      ],
+      "version": "1.0.0",
+      "world_by": "the Archipelago project and its contributors",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Sega%20-%20Master%20System%20-%20Mark%20III/Named_Boxarts/Zillion%20%28USA%2C%20Europe%29%20%28Rev%201%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/sms/zillion.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    {
+      "id": "diablo2_archipelago",
+      "name": "Diablo II: Lord of Destruction",
+      "subtitle": "Randomiser Mod",
+      "description": "Sanctuary as a multiworld: quests, hunts, waypoints and zones become checks across all three difficulties.",
+      "platform": "PC",
+      "platform_label": "PC",
+      "family": "PC",
+      "genres": [
+        "Action",
+        "RPG"
+      ],
+      "version": "",
+      "world_by": "solida1987",
+      "world_licence": "",
+      "plugin_by": "solida1987",
+      "cover": null,
+      "plugin_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/latest/download/diablo2_archipelago.londonplugin",
+      "page": "https://github.com/solida1987/Diablo-II-Archipelago/releases"
+    },
+    {
+      "id": "openttd",
+      "name": "OpenTTD",
+      "subtitle": "Transport empire",
+      "description": "The open-source transport simulator as a multiworld: engines, stations and company milestones as checks.",
+      "platform": "PC",
+      "platform_label": "PC",
+      "family": "PC",
+      "genres": [
+        "Strategy",
+        "Simulation"
+      ],
+      "version": "",
+      "world_by": "solida1987",
+      "world_licence": "",
+      "plugin_by": "solida1987",
+      "cover": null,
+      "plugin_url": "https://github.com/solida1987/OpenTTD-London-Plugin/releases/latest/download/openttd.londonplugin",
+      "page": "https://github.com/solida1987/OpenTTD-London-Plugin/releases"
+    }
+  ]
+}
