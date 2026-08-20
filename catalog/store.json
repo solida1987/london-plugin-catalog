@@ -1,6 +1,6 @@
 {
   "note": "The launcher's store window. Addresses and metadata only — no artwork and no code is stored here. Installing still runs the launcher's own consent flow.",
-  "count": 59,
+  "count": 56,
   "platforms": [
     "Atari 2600",
     "Game Boy Advance",
@@ -48,7 +48,7 @@
       "world_licence": "MIT",
       "plugin_by": "solida1987",
       "cover": "https://thumbnails.libretro.com/Atari%20-%202600/Named_Boxarts/Adventure%20%28USA%29.png",
-      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/2600/adventure.londonplugin",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/atari/adventure.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     {
@@ -107,25 +107,6 @@
       "plugin_by": "solida1987",
       "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Advance/Named_Boxarts/Castlevania%20-%20Circle%20of%20the%20Moon%20%28USA%29%20%28Castlevania%20Advance%20Collection%29.png",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/castlevania_cotm.londonplugin",
-      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
-    },
-    {
-      "id": "castlevania_hod",
-      "name": "Castlevania: Harmony of Dissonance",
-      "subtitle": "BizHawk",
-      "description": "Dracula's castle across two layers as a multiworld. Relics, spell books and furniture are shuffled across the session.",
-      "platform": "GBA",
-      "platform_label": "Game Boy Advance",
-      "family": "Nintendo",
-      "genres": [
-        "Metroidvania"
-      ],
-      "version": "",
-      "world_by": "LiquidCat64",
-      "world_licence": "MIT",
-      "plugin_by": "solida1987",
-      "cover": null,
-      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/castlevania_hod.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     {
@@ -278,26 +259,6 @@
       "plugin_by": "solida1987",
       "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/EarthBound%20%28USA%29.png",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/snes/earthbound.londonplugin",
-      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
-    },
-    {
-      "id": "faxanadu",
-      "name": "Faxanadu",
-      "subtitle": "",
-      "description": "Eolis and the World Tree as a multiworld.",
-      "platform": "NES",
-      "platform_label": "NES",
-      "family": "Nintendo",
-      "genres": [
-        "Action-Adventure",
-        "RPG"
-      ],
-      "version": "",
-      "world_by": "the Archipelago project and its contributors",
-      "world_licence": "MIT",
-      "plugin_by": "solida1987",
-      "cover": null,
-      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/nes/faxanadu.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     {
@@ -509,7 +470,7 @@
       "world_licence": "MIT",
       "plugin_by": "solida1987",
       "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Color/Named_Boxarts/Legend%20of%20Zelda%2C%20The%20-%20Link%27s%20Awakening%20DX%20%28USA%2C%20Europe%29%20%28Rev%201%29%20%28SGB%20Enhanced%29%20%28GB%20Compatible%29.png",
-      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gbc/ladx.londonplugin",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gb-gbc/ladx.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     {
@@ -820,7 +781,7 @@
       "world_licence": "",
       "plugin_by": "solida1987",
       "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Color/Named_Boxarts/Pokemon%20-%20Crystal%20Version%20%28USA%29.png",
-      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gbc/pokemon_crystal.londonplugin",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gb-gbc/pokemon_crystal.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     {
@@ -956,7 +917,7 @@
       "world_licence": "MIT",
       "plugin_by": "solida1987",
       "cover": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Sonic%20The%20Hedgehog%20%28USA%29.png",
-      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gen/sonic1.londonplugin",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/sega/sonic1.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     {
@@ -994,7 +955,7 @@
       "world_licence": "MIT",
       "plugin_by": "solida1987",
       "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Color/Named_Boxarts/Legend%20of%20Zelda%2C%20The%20-%20Oracle%20of%20Ages%20%28USA%2C%20Australia%29.png",
-      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gbc/tloz_ooa.londonplugin",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gb-gbc/tloz_ooa.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     {
@@ -1013,7 +974,7 @@
       "world_licence": "MIT",
       "plugin_by": "solida1987",
       "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Color/Named_Boxarts/Legend%20of%20Zelda%2C%20The%20-%20Oracle%20of%20Seasons%20%28USA%2C%20Australia%29.png",
-      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gbc/tloz_oos.londonplugin",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gb-gbc/tloz_oos.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     {
@@ -1075,26 +1036,6 @@
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     {
-      "id": "yugioh_ddm",
-      "name": "Yu-Gi-Oh! Dungeon Dice Monsters",
-      "subtitle": "BizHawk",
-      "description": "Duelist progression as a multiworld. Dice, duelists and shop stock are shuffled across the session.",
-      "platform": "GBA",
-      "platform_label": "Game Boy Advance",
-      "family": "Nintendo",
-      "genres": [
-        "Card Game",
-        "Strategy"
-      ],
-      "version": "",
-      "world_by": "JustinMarshall98",
-      "world_licence": "MIT",
-      "plugin_by": "solida1987",
-      "cover": null,
-      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/yugioh_ddm.londonplugin",
-      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
-    },
-    {
       "id": "zelda2",
       "name": "The Legend of Zelda II: The Adventure of Link",
       "subtitle": "",
@@ -1130,7 +1071,7 @@
       "world_licence": "MIT",
       "plugin_by": "solida1987",
       "cover": "https://thumbnails.libretro.com/Sega%20-%20Master%20System%20-%20Mark%20III/Named_Boxarts/Zillion%20%28USA%2C%20Europe%29%20%28Rev%201%29.png",
-      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/sms/zillion.londonplugin",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/sega/zillion.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     {
@@ -1154,7 +1095,7 @@
       "page": "https://github.com/solida1987/Diablo-II-Archipelago/releases"
     },
     {
-      "id": "openttd",
+      "id": "openttd_archipelago",
       "name": "OpenTTD",
       "subtitle": "Transport empire",
       "description": "The open-source transport simulator as a multiworld: engines, stations and company milestones as checks.",
@@ -1170,8 +1111,8 @@
       "world_licence": "",
       "plugin_by": "solida1987",
       "cover": null,
-      "plugin_url": "https://github.com/solida1987/OpenTTD-London-Plugin/releases/latest/download/openttd.londonplugin",
-      "page": "https://github.com/solida1987/OpenTTD-London-Plugin/releases"
+      "plugin_url": "https://github.com/solida1987/openttd-archipelago/releases/latest/download/openttd_archipelago.londonplugin",
+      "page": "https://github.com/solida1987/openttd-archipelago/releases"
     }
   ]
 }

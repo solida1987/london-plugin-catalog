@@ -5,7 +5,7 @@
     "Adventure": {
       "id": "adventure",
       "platform": "2600",
-      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/2600/adventure.londonplugin",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/atari/adventure.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "A Link to the Past": {
@@ -149,7 +149,7 @@
     "Links Awakening DX": {
       "id": "ladx",
       "platform": "GBC",
-      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gbc/ladx.londonplugin",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gb-gbc/ladx.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "The Legend of Zelda": {
@@ -245,7 +245,7 @@
     "Pokemon Crystal": {
       "id": "pokemon_crystal",
       "platform": "GBC",
-      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gbc/pokemon_crystal.londonplugin",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gb-gbc/pokemon_crystal.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Pokemon Emerald": {
@@ -287,7 +287,7 @@
     "Sonic the Hedgehog 1": {
       "id": "sonic1",
       "platform": "GEN",
-      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gen/sonic1.londonplugin",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/sega/sonic1.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Super Metroid": {
@@ -299,13 +299,13 @@
     "The Legend of Zelda - Oracle of Ages": {
       "id": "tloz_ooa",
       "platform": "GBC",
-      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gbc/tloz_ooa.londonplugin",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gb-gbc/tloz_ooa.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "The Legend of Zelda - Oracle of Seasons": {
       "id": "tloz_oos",
       "platform": "GBC",
-      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gbc/tloz_oos.londonplugin",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gb-gbc/tloz_oos.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Wario Land 4": {
@@ -341,7 +341,7 @@
     "Zillion": {
       "id": "zillion",
       "platform": "SMS",
-      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/sms/zillion.londonplugin",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/sega/zillion.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     }
   }
