@@ -1,0 +1,30 @@
+{
+  "id": "pokemon_bw",
+  "display_name": "Pokémon Black and White",
+  "subtitle": "",
+  "platform": "DS",
+  "_platform_source": "harvested game list: platform_raw='DS'",
+  "version": "1.0.0",
+  "ap_world_name": "Pokémon Black and White",
+  "_ap_world_name_source": "harvested game list, name as written there",
+  "description": "Pokémon Black and White as a multiworld. Items and progression are shuffled across the session.",
+  "_description_source": "placeholder assembled from display_name; replace with what this game actually shuffles",
+  "checks_verified": false,
+  "requires": "own_copy",
+  "_requires_source": "harvested game list: requires='own_copy'",
+  "lua_module": "pokemon_bw",
+  "_lua_module_source": "Plugins/Scripts/games/pokemon_bw.lua exists",
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/BlastSlimey/PokemonBWAP/releases",
+    "_source": "harvested game list: source='url'"
+  },
+  "client": {
+    "protocol": "bizhawk",
+    "_source": "the world's client subclasses BizHawkClient",
+    "_protocol_source": "world source: read from the world's own client class -- it subclasses BizHawkClient"
+  },
+  "patch_extension": "none",
+  "_patch_extension_source": "read from pokemon_bw.apworld: no APPatchExtension in 133 source file(s)",
+  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Until then London warns."
+}
