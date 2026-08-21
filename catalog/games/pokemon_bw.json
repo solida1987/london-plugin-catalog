@@ -1,41 +1,41 @@
 {
-  "id": "pokemon_bw",
-  "display_name": "Pokémon Black and White",
-  "subtitle": "",
-  "platform": "DS",
-  "_platform_source": "harvested game list: platform_raw='DS'",
-  "version": "1.0.0",
-  "ap_world_name": "Pokémon Black and White",
-  "_ap_world_name_source": "harvested game list, name as written there",
-  "description": "Pokémon Black and White as a multiworld. Items and progression are shuffled across the session.",
-  "_description_source": "placeholder assembled from display_name; replace with what this game actually shuffles",
-  "checks_verified": false,
-  "requires": "own_copy",
-  "_requires_source": "harvested game list: requires='own_copy'",
-  "lua_module": "pokemon_bw",
-  "_lua_module_source": "Plugins/Scripts/games/pokemon_bw.lua exists",
-  "apworld": {
-    "bundled": false,
-    "url": "https://github.com/BlastSlimey/PokemonBWAP/releases",
-    "_source": "harvested game list: source='url'"
+ "id": "pokemon_bw",
+ "display_name": "Pokémon Black and White",
+ "subtitle": "",
+ "platform": "DS",
+ "_platform_source": "harvested game list: platform_raw='DS'",
+ "version": "1.0.0",
+ "ap_world_name": "Pokemon Black and White",
+ "_ap_world_name_source": "harvested game list, name as written there",
+ "description": "Pokémon Black and White as a multiworld. Items and progression are shuffled across the session.",
+ "_description_source": "placeholder assembled from display_name; replace with what this game actually shuffles",
+ "checks_verified": false,
+ "requires": "own_copy",
+ "_requires_source": "harvested game list: requires='own_copy'",
+ "lua_module": "pokemon_bw",
+ "_lua_module_source": "Plugins/Scripts/games/pokemon_bw.lua exists",
+ "apworld": {
+  "bundled": false,
+  "url": "https://github.com/BlastSlimey/PokemonBWAP/releases",
+  "_source": "harvested game list: source='url'"
+ },
+ "client": {
+  "protocol": "bizhawk",
+  "_source": "the world's client subclasses BizHawkClient",
+  "_protocol_source": "world source: read from the world's own client class -- it subclasses BizHawkClient"
+ },
+ "patch_extension": "none",
+ "_patch_extension_source": "read from pokemon_bw.apworld: no APPatchExtension in 133 source file(s)",
+ "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Until then London warns.",
+ "credits": {
+  "world_by": {
+   "name": "BlastSlimey",
+   "url": "https://github.com/BlastSlimey/PokemonBWAP",
+   "_source": "the repository the harvested game list gives for this world; the installed apworld's client declares game = \"Pokemon Black and White\"",
+   "licence": "none stated",
+   "_licence_source": "BlastSlimey/PokemonBWAP has no LICENSE file (checked via the GitHub API, 2026-08-20). The author has granted nothing explicitly. We redistribute none of this world's code -- the plugin carries only our own assembly, and the player downloads the world from the author's own release -- so nothing here depends on a grant. Recorded so the gap is visible rather than assumed away."
   },
-  "client": {
-    "protocol": "bizhawk",
-    "_source": "the world's client subclasses BizHawkClient",
-    "_protocol_source": "world source: read from the world's own client class -- it subclasses BizHawkClient"
-  },
-  "patch_extension": "none",
-  "_patch_extension_source": "read from pokemon_bw.apworld: no APPatchExtension in 133 source file(s)",
-  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Until then London warns.",
-  "credits": {
-    "world_by": {
-      "name": "BlastSlimey",
-      "url": "https://github.com/BlastSlimey/PokemonBWAP",
-      "_source": "the repository the harvested game list gives for this world; the installed apworld's client declares game = \"Pokemon Black and White\"",
-      "licence": "none stated",
-      "_licence_source": "BlastSlimey/PokemonBWAP has no LICENSE file (checked via the GitHub API, 2026-08-20). The author has granted nothing explicitly. We redistribute none of this world's code -- the plugin carries only our own assembly, and the player downloads the world from the author's own release -- so nothing here depends on a grant. Recorded so the gap is visible rather than assumed away."
-    },
-    "plugin_by": "solida1987"
-  },
-  "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
+  "plugin_by": "solida1987"
+ },
+ "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
 }
