@@ -992,7 +992,7 @@
   {
    "id": "pokemon_bw",
    "name": "Pokémon Black and White",
-   "ap_world_name": "Pokémon Black and White",
+   "ap_world_name": "Pokemon Black and White",
    "subtitle": "",
    "description": "Pokémon Black and White as a multiworld. Items and progression are shuffled across the session.",
    "platform": "DS",
@@ -1087,7 +1087,7 @@
   {
    "id": "pokemon_platinum",
    "name": "Pokémon Platinum",
-   "ap_world_name": "Pokémon Platinum",
+   "ap_world_name": "Pokemon Platinum",
    "subtitle": "",
    "description": "Pokémon Platinum as a multiworld. Items and progression are shuffled across the session.",
    "platform": "DS",
@@ -2845,7 +2845,7 @@
   {
    "id": "dlc_quest",
    "name": "DLC Quest",
-   "ap_world_name": "DLC Quest",
+   "ap_world_name": "DLCQuest",
    "subtitle": "PC · ships with Archipelago",
    "description": "",
    "platform": "PC",
@@ -6151,7 +6151,7 @@
   {
    "id": "shapez",
    "name": "Shapez",
-   "ap_world_name": "Shapez",
+   "ap_world_name": "shapez",
    "subtitle": "PC",
    "description": "",
    "platform": "PC",
@@ -6402,7 +6402,7 @@
   {
    "id": "sonic_adventure_2_battle",
    "name": "Sonic Adventure 2: Battle",
-   "ap_world_name": "Sonic Adventure 2: Battle",
+   "ap_world_name": "Sonic Adventure 2 Battle",
    "subtitle": "PC · ships with Archipelago",
    "description": "",
    "platform": "PC",
