@@ -4,7 +4,7 @@
  "subtitle": "",
  "platform": "DS",
  "_platform_source": "harvested game list: platform_raw='DS'",
- "version": "1.0.0",
+ "version": "1.0.1",
  "ap_world_name": "Pokemon Black and White",
  "_ap_world_name_source": "harvested game list, name as written there",
  "description": "Pokémon Black and White as a multiworld. Items and progression are shuffled across the session.",
