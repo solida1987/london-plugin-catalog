@@ -1,0 +1,25 @@
+{
+  "_comment": [
+    "The NEWS section on the launcher's landing page. Newest first; the",
+    "launcher shows at most 4. Edit this file and every launcher shows the",
+    "change next time the lobby opens — no release needed. An empty list",
+    "hides the section entirely."
+  ],
+  "news": [
+    {
+      "date": "August 2026",
+      "title": "Join a server hosted elsewhere",
+      "text": "The Join tab can now sign in to a multiworld somebody else is running: type the address and your slot name, and London asks the server which game the slot plays and sets it up — including asking for the seed's patch file when one is needed."
+    },
+    {
+      "date": "August 2026",
+      "title": "The community, in the launcher",
+      "text": "Two new pages in the top bar: Streamers, with channels that run Archipelago sessions in several languages, and Discord, with community servers whose member counts are read live when the page opens."
+    },
+    {
+      "date": "August 2026",
+      "title": "How a multiworld works",
+      "text": "The Multiworld tab grew a guide that explains the whole idea from zero: what a seed is, how to build and host one, and the four things you can do with it — including randomising several of your own games into one run."
+    }
+  ]
+}

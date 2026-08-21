@@ -1,0 +1,232 @@
+{
+  "_comment": [
+    "The community list London draws on the Streamers and Discord pages.",
+    "",
+    "This file overrides the list compiled into the launcher, so an entry can be",
+    "corrected, added or REMOVED without shipping a new build. Anyone who asks to",
+    "be taken off is taken off here, and every launcher picks that up the next",
+    "time it opens the page.",
+    "",
+    "Discord entries carry only an invite code. The name, the icon and the member",
+    "count are read from Discord itself when the page opens, so nothing here can",
+    "go stale. Streamer figures cannot be read that way, so each one carries the",
+    "date it was confirmed and the launcher prints that date beside it.",
+    "",
+    "Every invite and link below was checked against the live service on",
+    "21 August 2026, and every person listed was tied to Archipelago through a",
+    "concrete session that can be pointed at. Do not add an entry that has not",
+    "been verified the same way."
+  ],
+
+  "discord": [
+    {
+      "invite": "8Z65BR2",
+      "language": "English",
+      "official": true,
+      "blurb": "The project's own server, made by Archipelago's founder in 2020 and by far the largest place the community gathers. Sub-forums per game, help with setting a run up, and a few times a year \"The Big Async\" — one multiworld with thousands of slots, played out over weeks. The people who maintain the individual games are here too, which makes it the place a bug report actually reaches someone."
+    },
+    {
+      "invite": "kgsvpf6Stb",
+      "language": "English",
+      "blurb": "The community around MultiworldGG, a fork of Archipelago that carries extra third-party worlds which cannot be part of the original project, plus worlds still early in development. Their site hosts open lobbies around the clock, and bug reports for the fork's worlds go through this server."
+    },
+    {
+      "invite": "360chrism",
+      "language": "English",
+      "blurb": "The community server of 360Chrism, who has run some of the largest Archipelago multiworlds anywhere — hang out, share your interests, and catch the next big community randomizer."
+    },
+    {
+      "invite": "qdvcPUe",
+      "language": "English",
+      "blurb": "The community server of cjya, the speedrunner who hosted an 1100-player cross-game Archipelago randomizer."
+    },
+    {
+      "invite": "wolfpack",
+      "language": "English",
+      "blurb": "LobosJr's community server — RPGs, roguelikes and Souls challenge runs, with Archipelago team races among them."
+    },
+    {
+      "invite": "0gOY9qyDVUxk59ar",
+      "language": "English",
+      "blurb": "GrandPooBear's community server — speedrunning, Mario, and the home crowd for his randomizer and Archipelago runs."
+    },
+    {
+      "invite": "FD2pPnqneH",
+      "language": "Français",
+      "blurb": "The French-speaking Archipelago community. Runs are organised here, and there are people who will help you get your configuration working if it fights you."
+    },
+    {
+      "invite": "PPEfMDedP6",
+      "language": "Español",
+      "blurb": "The Spanish-speaking Archipelago community — they create and host randomiser sessions and will show you how the software works."
+    },
+    {
+      "invite": "c4yjE78tfD",
+      "language": "English",
+      "note": "The server states it is mainly for adults (18+).",
+      "blurb": "A small, relaxed gaming server that runs Archipelago syncs and asyncs regularly, either to join or to host yourself."
+    },
+    {
+      "invite": "xeRgQb36Dt",
+      "language": "English",
+      "blurb": "A community event server for retro gaming, run by Sprasshu and PolterGhost, with racing series streamed live. They host community Archipelago syncs regularly, and re-stream them fortnightly as a series of their own."
+    },
+    {
+      "invite": "6nyDzj62SJ",
+      "language": "Türkçe",
+      "blurb": "The Turkish Archipelago community — a small server building a place for Turkish speakers to play together, with help on installation and YAML configuration for anyone new to it."
+    }
+  ],
+
+  "streamers": [
+    {
+      "name": "360Chrism",
+      "language": "English",
+      "twitch": "https://www.twitch.tv/360chrism",
+      "youtube": "https://www.youtube.com/@360Chrism",
+      "image": "https://static-cdn.jtvnw.net/jtv_user_pictures/5cab2af5-26d0-4156-8692-b39ae5079652-profile_image-300x300.png",
+      "followers": "138,775",
+      "subs": "97,300",
+      "checked": "21 August 2026",
+      "blurb": "Randomisers and speedruns — Super Mario Odyssey, Paper Mario: The Thousand-Year Door, Pokémon Snap, Luigi's Mansion. Has run some of the largest Archipelago multiworlds anywhere, including a 770-player community session and a twelve-game cross-game run together with PangaTAS."
+    },
+    {
+      "name": "cjya",
+      "language": "English",
+      "twitch": "https://www.twitch.tv/cjya",
+      "youtube": "https://www.youtube.com/@cjya",
+      "image": "https://static-cdn.jtvnw.net/jtv_user_pictures/0c51cc21-f3b5-47f4-a92d-77234fb5e4c8-profile_image-300x300.png",
+      "followers": "148,357",
+      "subs": "540,000",
+      "checked": "21 August 2026",
+      "blurb": "Speedrunner — Super Mario 64, Hollow Knight, Celeste — and the host of an 1100-player cross-game Archipelago randomizer, one of the biggest ever run. Also part of a metroidvania Archipelago multiworld with GrandPooBear, SmallAnt, Samura1man and CraftyBoss."
+    },
+    {
+      "name": "LobosJr",
+      "language": "English",
+      "twitch": "https://www.twitch.tv/lobosjr",
+      "image": "https://static-cdn.jtvnw.net/jtv_user_pictures/lobosjr-profile_image-b5e3a6c3556aed54-300x300.png",
+      "followers": "433,758",
+      "checked": "21 August 2026",
+      "blurb": "RPGs, roguelikes and the Dark Souls games, played every way they were never meant to be played. Runs Archipelago too — including a Dark Souls trilogy team Archipelago race with an enemy randomizer on top."
+    },
+    {
+      "name": "GrandPooBear",
+      "language": "English",
+      "twitch": "https://www.twitch.tv/grandpoobear",
+      "image": "https://static-cdn.jtvnw.net/jtv_user_pictures/860047bb-4417-44cb-b059-348d5275e60c-profile_image-300x300.png",
+      "followers": "332,893",
+      "checked": "21 August 2026",
+      "blurb": "Speedrunner and variety gamer, best known for Mario. Played a metroidvania Archipelago multiworld together with cjya, SmallAnt, Samura1man and CraftyBoss."
+    },
+    {
+      "name": "SmallAnt",
+      "language": "English",
+      "twitch": "https://www.twitch.tv/smallant",
+      "image": "https://static-cdn.jtvnw.net/jtv_user_pictures/90591f72-6bf7-48c9-8dae-04ba6aeb906a-profile_image-300x300.png",
+      "followers": "1,479,225",
+      "checked": "21 August 2026",
+      "blurb": "\"I play games wrong most of the time.\" Challenge runs and speedruns — Pokémon, Super Mario Odyssey — for one of the largest audiences on Twitch. Part of the metroidvania Archipelago multiworld with GrandPooBear and cjya."
+    },
+    {
+      "name": "PangaTAS",
+      "language": "English",
+      "twitch": "https://www.twitch.tv/pangaeapanga",
+      "youtube": "https://www.youtube.com/@PangaTAS",
+      "image": "https://static-cdn.jtvnw.net/jtv_user_pictures/pangaeapanga-profile_image-dfae8789666c2bc2-300x300.png",
+      "followers": "197,719",
+      "checked": "21 August 2026",
+      "blurb": "Creator of Super Dram World and the Item Abuse series — one of the best-known names in Mario challenge content. Ran a twelve-game cross-game Archipelago randomizer together with 360Chrism."
+    },
+    {
+      "name": "TiTavion",
+      "language": "Français",
+      "twitch": "https://www.twitch.tv/titavion",
+      "image": "https://static-cdn.jtvnw.net/jtv_user_pictures/e990b10a-2c51-4335-ae90-4bd1708a30f8-profile_image-300x300.png",
+      "followers": "45,208",
+      "checked": "21 August 2026",
+      "blurb": "Streams in French — recently Onimusha 3, Mortal Shell II and Diablo II. Plays Archipelago as part of a French multiworld group alongside M_Bubbles, Nalahri, Pinde, Redrosetv and Skaradams."
+    },
+    {
+      "name": "Pinde",
+      "language": "Français",
+      "twitch": "https://www.twitch.tv/pinde",
+      "image": "https://static-cdn.jtvnw.net/jtv_user_pictures/c870e4bd-27f4-44fc-9880-d330d6fafea6-profile_image-300x300.png",
+      "followers": "19,072",
+      "checked": "21 August 2026",
+      "blurb": "FromSoftware \"specialist\", factory-game addict and self-declared hardcore randomizer fan — in his own words. Part of the French Archipelago multiworld group with TiTavion."
+    },
+    {
+      "name": "ZeroLenny",
+      "language": "English",
+      "twitch": "https://www.twitch.tv/zerolenny",
+      "image": "https://static-cdn.jtvnw.net/jtv_user_pictures/7f83d747-1ee1-4598-bfd7-db54e4cca99c-profile_image-300x300.png",
+      "followers": "49,549",
+      "checked": "21 August 2026",
+      "blurb": "Souls games and comedy in equal measure. Ran an Archipelago randomizer together with LobosJr, Parky and star0chris."
+    },
+    {
+      "name": "Samura1man",
+      "language": "English",
+      "twitch": "https://www.twitch.tv/samura1man",
+      "image": "https://static-cdn.jtvnw.net/jtv_user_pictures/7421feb2be049dbc-profile_image-300x300.png",
+      "followers": "53,059",
+      "checked": "21 August 2026",
+      "blurb": "Finnish speedrunner with over fifteen years of runs behind him. Part of the metroidvania Archipelago multiworld with GrandPooBear and cjya."
+    },
+    {
+      "name": "CraftyBoss",
+      "language": "English",
+      "twitch": "https://www.twitch.tv/craftyboss",
+      "image": "https://static-cdn.jtvnw.net/jtv_user_pictures/a2b42a06-7812-4cd1-bca8-1400cfe9ac51-profile_image-300x300.png",
+      "followers": "33,336",
+      "checked": "21 August 2026",
+      "blurb": "Speedrunner and modder. Part of the metroidvania Archipelago multiworld with GrandPooBear, cjya and SmallAnt."
+    },
+    {
+      "name": "star0chris",
+      "language": "English",
+      "twitch": "https://www.twitch.tv/star0chris",
+      "image": "https://static-cdn.jtvnw.net/jtv_user_pictures/ac686200-e53b-4f2d-a645-863054ac9d57-profile_image-300x300.png",
+      "followers": "54,229",
+      "checked": "21 August 2026",
+      "blurb": "Regular in the 360Chrism circle's Archipelago sessions — appears in their multiworld runs alongside LobosJr, ZeroLenny, YoJosherino and Mitchriz."
+    },
+    {
+      "name": "Mitchriz",
+      "language": "English",
+      "twitch": "https://www.twitch.tv/mitchriz",
+      "image": "https://static-cdn.jtvnw.net/jtv_user_pictures/6b2c8d23-e4fd-493c-b21c-b675b0523a2b-profile_image-300x300.png",
+      "followers": "44,385",
+      "checked": "21 August 2026",
+      "blurb": "Sekiro and Elden Ring speedrunner with world records to his name. Part of the Archipelago randomizer sessions in the 360Chrism circle."
+    },
+    {
+      "name": "YoJosherino",
+      "language": "English",
+      "twitch": "https://www.twitch.tv/yojosherino",
+      "image": "https://static-cdn.jtvnw.net/jtv_user_pictures/7c69a929-57c8-4663-8b31-d8eb33b818f7-profile_image-300x300.png",
+      "followers": "22,167",
+      "checked": "21 August 2026",
+      "blurb": "Speedrunner and challenge runner. Part of the Archipelago randomizer sessions in the 360Chrism circle."
+    },
+    {
+      "name": "Parky",
+      "language": "English",
+      "twitch": "https://www.twitch.tv/parky",
+      "image": "https://static-cdn.jtvnw.net/jtv_user_pictures/parky-profile_image-006820dead930db3-300x300.png",
+      "followers": "1,611",
+      "checked": "21 August 2026",
+      "blurb": "A smaller channel from the same circle — ran Archipelago randomizers together with LobosJr, ZeroLenny, star0chris and 360Chrism."
+    },
+    {
+      "name": "MaegisVonTempest",
+      "language": "English",
+      "twitch": "https://www.twitch.tv/maegisvontempest",
+      "image": "https://static-cdn.jtvnw.net/jtv_user_pictures/7b78450b-bb71-4688-a954-ddf4f687877f-profile_image-300x300.jpeg",
+      "followers": "16",
+      "checked": "21 August 2026",
+      "blurb": "\"The regular Canadian guy who enjoys a good randomizer\" — in his own words. RPGs, action and adventure, randomizers and multiworlds, and one of the first to play a full run of the Diablo II Archipelago world. A small channel at the very start of its road."
+    }
+  ]
+}
