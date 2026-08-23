@@ -30,9 +30,12 @@
   },
   "client": {
     "name": "Ape Escape 3 Archipelago",
-    "protocol": "unknown",
+    "protocol": "pine",
     "lua": null,
-    "_source": "setup guide: \"click the `Ape Escape 3 Archipelgo` button in Archipelago\" (the guide's own spelling), with PINE central to the connection. As with Ape Escape 2: we have a PINE bridge, but nothing of ours reads this game's memory, so the protocol that would carry its checks is not established."
+    "_source": "setup guide: \"click the `Ape Escape 3 Archipelgo` button in Archipelago\" (the guide's own spelling), with PINE central to the connection. As with Ape Escape 2: we have a PINE bridge, but nothing of ours reads this game's memory, so the protocol that would carry its checks is not established.",
+    "_protocol_source": "the world ships its own PINE implementation: interface/pine.py defines class Pine with IPC_OK/IPC_FAIL and __init__(self, slot: int = 28011) -- PCSX2's PINE slot, the same one extensions/pcsx2/PineBridge.cs calls PINE_DEFAULT_SLOT.",
+    "kind": "world",
+    "_kind_source": "the world registers its own client: components.py, components.append(Component(..., component_type=Type.CLIENT)) with AE3_Client.py driving it. London starts the emulator and stands aside."
   },
   "apworld": {
     "bundled": false,

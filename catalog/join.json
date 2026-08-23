@@ -1,6 +1,6 @@
 {
   "note": "Which London plugin covers which Archipelago game. Addresses and metadata only.",
-  "count": 564,
+  "count": 566,
   "games": {
     "Adventure": {
       "id": "adventure",
@@ -12,6 +12,18 @@
       "id": "alttp",
       "platform": "SNES",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/snes/alttp.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Ape Escape 2": {
+      "id": "ape_escape2",
+      "platform": "PS2",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ps2/ape_escape2.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Ape Escape 3": {
+      "id": "ape_escape3",
+      "platform": "PS2",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ps2/ape_escape3.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Banjo-Tooie": {

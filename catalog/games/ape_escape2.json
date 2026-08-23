@@ -29,9 +29,12 @@
   },
   "client": {
     "name": "Ape Escape 2 Client",
-    "protocol": "unknown",
+    "protocol": "pine",
     "lua": null,
-    "_source": "setup guide: \"Select the Ape Escape 2 Client from the Archipelago Launcher\", and it requires PINE to be switched on in PCSX2. London does carry a PINE bridge (extensions/pcsx2, protocol \"pine\") -- but a bridge only moves bytes; nothing of ours reads THIS game's memory, so no protocol of ours is established to carry its checks. Recording \"pine\" here would build a plugin that installs, launches PCSX2 and never reports a check."
+    "_source": "setup guide: \"Select the Ape Escape 2 Client from the Archipelago Launcher\", and it requires PINE to be switched on in PCSX2. London does carry a PINE bridge (extensions/pcsx2, protocol \"pine\") -- but a bridge only moves bytes; nothing of ours reads THIS game's memory, so no protocol of ours is established to carry its checks. Recording \"pine\" here would build a plugin that installs, launches PCSX2 and never reports a check.",
+    "_protocol_source": "the world speaks PINE itself: Interface.py connect_to_pcsx2() opens a TCP socket to (\"127.0.0.1\", 28011) on Windows -- PCSX2's PINE slot -- and a unix socket at pcsx2.sock elsewhere. Recorded as 'unknown' before the PCSX2 bridge existed and never revisited.",
+    "kind": "world",
+    "_kind_source": "the world ships and registers its OWN client: __init__.py line 20, components.append(Component(\"Ape Escape 2 Client\", func=run_client, component_type=Type.CLIENT)), and Client.py drives the PCSX2 connection directly. London must not read memory for this game."
   },
   "apworld": {
     "bundled": false,

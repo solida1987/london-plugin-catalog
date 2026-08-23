@@ -1,6 +1,6 @@
 {
   "note": "The launcher's store window. Addresses and metadata only — no artwork and no code is stored here. Installing still runs the launcher's own consent flow.",
-  "count": 564,
+  "count": 566,
   "platforms": [
     "Atari 2600",
     "Browser",
@@ -111,6 +111,56 @@
       "tested": true,
       "section": "stable",
       "stability": "Proven in London"
+    },
+    {
+      "id": "ape_escape2",
+      "name": "Ape Escape 2",
+      "ap_world_name": "Ape Escape 2",
+      "subtitle": "",
+      "description": "The monkeys of Ape Escape 2 as a multiworld.",
+      "platform": "PS2",
+      "platform_label": "PlayStation 2",
+      "family": "Sony",
+      "genres": [
+        "Adventure"
+      ],
+      "version": "1.0.0",
+      "world_by": "dannybonz/ae2_archipelago",
+      "world_licence": "",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Sony%20-%20PlayStation%202/Named_Boxarts/Ape%20Escape%202%20%28USA%29.png",
+      "banner": "https://thumbnails.libretro.com/Sony%20-%20PlayStation%202/Named_Titles/Ape%20Escape%202%20%28USA%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ps2/ape_escape2.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases",
+      "install_kind": "rom",
+      "tested": false,
+      "section": "unstable",
+      "stability": "Unstable"
+    },
+    {
+      "id": "ape_escape3",
+      "name": "Ape Escape 3",
+      "ap_world_name": "Ape Escape 3",
+      "subtitle": "",
+      "description": "The monkeys of Ape Escape 3 as a multiworld.",
+      "platform": "PS2",
+      "platform_label": "PlayStation 2",
+      "family": "Sony",
+      "genres": [
+        "Adventure"
+      ],
+      "version": "1.0.0",
+      "world_by": "aidanii",
+      "world_licence": "",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Sony%20-%20PlayStation%202/Named_Boxarts/Ape%20Escape%203%20%28USA%29.png",
+      "banner": "https://thumbnails.libretro.com/Sony%20-%20PlayStation%202/Named_Titles/Ape%20Escape%203%20%28USA%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ps2/ape_escape3.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases",
+      "install_kind": "rom",
+      "tested": false,
+      "section": "stable",
+      "stability": "Stable"
     },
     {
       "id": "banjo_tooie",

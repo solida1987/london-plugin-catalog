@@ -1,6 +1,6 @@
 {
  "note": "Cover and banner ADDRESSES only. No artwork is stored in this repository; the launcher fetches these onto the player's own machine, and only after they have agreed to cover art at all.",
- "count": 473,
+ "count": 475,
  "covers": {
   "2048": "https://cdn.akamai.steamstatic.com/steam/apps/942050/library_600x900_2x.jpg",
   "7_days_to_die": "https://cdn.akamai.steamstatic.com/steam/apps/251570/library_600x900_2x.jpg",
@@ -23,6 +23,8 @@
   "another_crab_s_treasure": "https://cdn.akamai.steamstatic.com/steam/apps/1887840/library_600x900_2x.jpg",
   "antonblast": "https://cdn.akamai.steamstatic.com/steam/apps/1887400/library_600x900_2x.jpg",
   "ap_rummy": "https://img.itch.zone/aW1nLzI3ODI4OTQ1LnBuZw==/315x250%23c/KNpl7N.png",
+  "ape_escape2": "https://thumbnails.libretro.com/Sony%20-%20PlayStation%202/Named_Boxarts/Ape%20Escape%202%20%28USA%29.png",
+  "ape_escape3": "https://thumbnails.libretro.com/Sony%20-%20PlayStation%202/Named_Boxarts/Ape%20Escape%203%20%28USA%29.png",
   "aquaria": "https://images.gog-statics.com/095cf6b838f59958bab671e95866824ad96908acd45826eb4dda3dbe4d60d024.jpg",
   "ark_survival_evolved": "https://cdn.akamai.steamstatic.com/steam/apps/346110/library_600x900.jpg",
   "armored_core_vi_fires_of_rubicon": "https://cdn.akamai.steamstatic.com/steam/apps/1888160/library_600x900_2x.jpg",
@@ -496,6 +498,8 @@
   "anodyne": "https://cdn.akamai.steamstatic.com/steam/apps/234900/library_hero.jpg",
   "another_crab_s_treasure": "https://cdn.akamai.steamstatic.com/steam/apps/1887840/library_hero.jpg",
   "antonblast": "https://cdn.akamai.steamstatic.com/steam/apps/1887400/library_hero.jpg",
+  "ape_escape2": "https://thumbnails.libretro.com/Sony%20-%20PlayStation%202/Named_Titles/Ape%20Escape%202%20%28USA%29.png",
+  "ape_escape3": "https://thumbnails.libretro.com/Sony%20-%20PlayStation%202/Named_Titles/Ape%20Escape%203%20%28USA%29.png",
   "aquaria": "https://cdn.akamai.steamstatic.com/steam/apps/24420/header.jpg",
   "ark_survival_evolved": "https://cdn.akamai.steamstatic.com/steam/apps/346110/library_hero.jpg",
   "armored_core_vi_fires_of_rubicon": "https://cdn.akamai.steamstatic.com/steam/apps/1888160/library_hero.jpg",
@@ -962,6 +966,8 @@
   "another_crab_s_treasure": "Steam appid 1887840",
   "antonblast": "Steam appid 1887400",
   "ap_rummy": "itch.io: \"AP-Rummy\"",
+  "ape_escape2": "libretro thumbnails: Sony - PlayStation 2/Ape Escape 2 (USA).png [Named_Titles]",
+  "ape_escape3": "libretro thumbnails: Sony - PlayStation 2/Ape Escape 3 (USA).png [Named_Titles]",
   "aquaria": "Steam appid 24420 + GOG catalogue: \"Aquaria\"",
   "ark_survival_evolved": "Steam appid 346110",
   "armored_core_vi_fires_of_rubicon": "Steam appid 1888160 (search matched \"ARMORED CORE™ VI FIRES OF RUBICON™\")",
@@ -1442,7 +1448,7 @@
   "itch.io",
   "hand-picked, listed in tools/harvest_art.py"
  ],
- "banner_count": 462,
+ "banner_count": 464,
  "deliberately_bare": [
   "cartograp",
   "crosswords",
