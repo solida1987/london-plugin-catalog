@@ -101,11 +101,26 @@ and the module in the launcher that reads that game's memory.
 
 ### Removed on request
 
-The people who asked are not named here. Two of them asked not to be associated with this project, and a list of their names on our page would be that association all over again.
+Neither the people who asked nor the worlds they asked about are named here.
+Two of them asked not to be associated with this project, and a page of ours
+listing their names — or their games — would be that association all over
+again. A removal log that keeps the titles searchable removes nothing.
 
-| Worlds | Outcome |
-|---|---|
-| Earthbound, Yoshi's Island, Zelda II | Removed 20 August 2026 at their author's request — the plugins, the catalogue entries, the published downloads and the three memory modules in the launcher |
-| Ratchet & Clank, Ratchet & Clank 3 | Asked for on 20 August 2026; neither has ever been in the catalogue |
+As of 23 August 2026, **ten worlds** across five platforms have been withdrawn
+at their authors' request. Where anything had been published, all of it went:
+the plugin, the catalogue entry, the release asset, and the module in the
+launcher that read that game's memory. Where nothing had been published, the
+title is blocked from ever entering the build.
+
+That block is enforced in code, not from memory. Every tool that can add a
+game — the sheet importer, both plugin builders and the shop-window
+generator — checks each title against the withdrawal list before it does
+anything, and refuses. The list itself is kept out of this repository for the
+same reason this section names nothing.
+
+**If you are an author and want your world out of here, open an issue or say
+so on Discord and it will go.** You do not have to explain why, and you will
+not have to ask twice — that happened once, and this process exists because
+of it.
 
 ---
