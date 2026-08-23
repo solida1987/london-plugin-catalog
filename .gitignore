@@ -40,3 +40,10 @@ catalog/removed.json
 # Proof harnesses for the bridges: our gates, not anything a player installs.
 # No other extension ships one either.
 extensions/*/proof/
+
+# Vores research-grundlag: biblioteker, salgstal, speedrun-data og
+# randomiser-vurderinger for 2.252 spil. Det er hvordan VI beslutter hvad der
+# skal bygges - ikke noget en spiller installerer, og det bringer de samme
+# forfatter-adresser med sig som blokken ovenfor. Ligger lokalt, publiceres
+# ingen steder.
+research/
