@@ -44,5 +44,7 @@
     },
     "game_by": null,
     "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
-  }
+  },
+  "mod_kind": "rom_hack",
+  "_mod_kind_source": "SMZ3 combines Super Metroid and A Link to the Past into ONE patched ROM built from the player's own copies of both. A combined hack of two games is still a hack; it stays under SNES in the filter."
 }

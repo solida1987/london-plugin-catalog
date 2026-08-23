@@ -139,7 +139,6 @@
   "final_fantasy_x_hd_remaster": "https://cdn.akamai.steamstatic.com/steam/apps/359870/library_600x900_2x.jpg",
   "final_fantasy_xii_open_world": "https://cdn.akamai.steamstatic.com/steam/apps/595520/library_600x900_2x.jpg",
   "final_fantasy_xii_trial_mode": "https://cdn.akamai.steamstatic.com/steam/apps/595520/library_600x900_2x.jpg",
-  "final_fantasy_xiii_2": "https://store-images.s-microsoft.com/image/apps.64979.13858376666954698.6bc24818-14aa-494c-84c6-bdf5315d4afc.524709bf-e7ae-4259-84a2-8c45c1251d1e",
   "fire_emblem_sacred_stones": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Advance/Named_Boxarts/Fire%20Emblem%20-%20The%20Sacred%20Stones%20%28USA%29%20%28Virtual%20Console%29.png",
   "fnaf_ultimate_custom_night": "https://cdn.akamai.steamstatic.com/steam/apps/871720/library_600x900_2x.jpg",
   "forager": "https://cdn.akamai.steamstatic.com/steam/apps/751780/library_600x900_2x.jpg",
@@ -382,7 +381,6 @@
   "stacklands": "https://cdn.akamai.steamstatic.com/steam/apps/1948280/library_600x900_2x.jpg",
   "star_trek_armada": "https://images.gog-statics.com/b9a80d04ab2acb4be52dd0191d30ace6cfb6ce17a4334308a6d5909465a99c88.jpg",
   "star_wars_episode_i_racer": "https://thumbnails.libretro.com/Nintendo%20-%20Nintendo%2064/Named_Boxarts/Star%20Wars%20Episode%20I%20-%20Racer%20%28USA%29.png",
-  "starcraft_ii": "https://store-images.s-microsoft.com/image/apps.31307.14124222480596136.ed20a9aa-83ad-4957-99bb-a6b44ee47223.446d84bc-423e-4be7-a857-40f3e33553cc",
   "stardew_valley": "https://cdn.akamai.steamstatic.com/steam/apps/413150/library_600x900_2x.jpg",
   "starquest_64": "https://img.itch.zone/aW1nLzI3ODM4OTk4LnBuZw==/315x250%23c/FffLLY.png",
   "sternly_worded_adventures": "https://cdn.akamai.steamstatic.com/steam/apps/2562130/library_600x900_2x.jpg",
@@ -479,7 +477,9 @@
   "zillion": "https://thumbnails.libretro.com/Sega%20-%20Master%20System%20-%20Mark%20III/Named_Boxarts/Zillion%20%28USA%2C%20Europe%29%20%28Rev%201%29.png",
   "zoominoes": "https://cdn.akamai.steamstatic.com/steam/apps/3282420/library_600x900_2x.jpg",
   "zork_grand_inquisitor": "https://images.gog-statics.com/5b507cf6ea3b429aba038ccd4b6ffa523faee8427d218c5182cb4326a95072e4.jpg",
-  "zuma_deluxe": "https://cdn.akamai.steamstatic.com/steam/apps/3330/library_600x900_2x.jpg"
+  "zuma_deluxe": "https://cdn.akamai.steamstatic.com/steam/apps/3330/library_600x900_2x.jpg",
+  "hades2rogue": "https://cdn.akamai.steamstatic.com/steam/apps/1145350/library_600x900_2x.jpg",
+  "perfect_dark": "https://thumbnails.libretro.com/Nintendo%20-%20Nintendo%2064/Named_Boxarts/Perfect%20Dark%20(USA).png"
  },
  "banners": {
   "2048": "https://cdn.akamai.steamstatic.com/steam/apps/942050/library_hero.jpg",
@@ -853,7 +853,6 @@
   "stacklands": "https://cdn.akamai.steamstatic.com/steam/apps/1948280/library_hero.jpg",
   "star_trek_armada": "https://images.gog-statics.com/6397b322893bf66c9b6bc5b0211caa108425d950920de218516df3c2f137ab99.png",
   "star_wars_episode_i_racer": "https://thumbnails.libretro.com/Nintendo%20-%20Nintendo%2064/Named_Titles/Star%20Wars%20Episode%20I%20-%20Racer%20%28USA%29.png",
-  "starcraft_ii": "https://store-images.s-microsoft.com/image/apps.11562.14124222480596136.ed20a9aa-83ad-4957-99bb-a6b44ee47223.966f09b0-5e8c-47d6-ada0-7714b0cb26e8",
   "stardew_valley": "https://cdn.akamai.steamstatic.com/steam/apps/413150/library_hero.jpg",
   "sternly_worded_adventures": "https://cdn.akamai.steamstatic.com/steam/apps/2562130/library_hero.jpg",
   "stray": "https://cdn.akamai.steamstatic.com/steam/apps/1332010/library_hero.jpg",
@@ -948,7 +947,9 @@
   "zillion": "https://thumbnails.libretro.com/Sega%20-%20Master%20System%20-%20Mark%20III/Named_Titles/Zillion%20%28USA%2C%20Europe%29%20%28Rev%201%29.png",
   "zoominoes": "https://cdn.akamai.steamstatic.com/steam/apps/3282420/library_hero.jpg",
   "zork_grand_inquisitor": "https://cdn.akamai.steamstatic.com/steam/apps/570680/header.jpg",
-  "zuma_deluxe": "https://cdn.akamai.steamstatic.com/steam/apps/3330/header.jpg"
+  "zuma_deluxe": "https://cdn.akamai.steamstatic.com/steam/apps/3330/header.jpg",
+  "hades2rogue": "https://cdn.akamai.steamstatic.com/steam/apps/1145350/library_hero.jpg",
+  "perfect_dark": "https://thumbnails.libretro.com/Nintendo%20-%20Nintendo%2064/Named_Titles/Perfect%20Dark%20(USA).png"
  },
  "_provenance": {
   "2048": "Steam appid 942050",
@@ -1095,7 +1096,7 @@
   "final_fantasy_x_hd_remaster": "Steam appid 359870",
   "final_fantasy_xii_open_world": "Steam appid 595520",
   "final_fantasy_xii_trial_mode": "Steam appid 595520",
-  "final_fantasy_xiii_2": "Steam appid 292140 + Microsoft Store: \"FINAL FANTASY XIII-2\"",
+  "final_fantasy_xiii_2": "Steam appid 292140, capsule (spillet har ingen library-kunst); Microsoft Store svarede 500",
   "fire_emblem_sacred_stones": "libretro thumbnails: Nintendo - Game Boy Advance/Fire Emblem - The Sacred Stones (USA, Australia).png [Named_Titles]",
   "fnaf_ultimate_custom_night": "Steam appid 871720",
   "fnaf_world": "hand-picked (Five Nights at Freddy's wiki, File:FNaFWorld-Steam-artwork.jpg)",
@@ -1346,7 +1347,6 @@
   "stacklands": "Steam appid 1948280",
   "star_trek_armada": "GOG catalogue: \"Star Trek™: Armada\"",
   "star_wars_episode_i_racer": "libretro thumbnails: Nintendo - Nintendo 64/Star Wars Episode I - Racer (USA).png [Named_Titles]",
-  "starcraft_ii": "Microsoft Store: \"StarCraft® II Campaign Collection\"",
   "stardew_valley": "Steam appid 413150",
   "starquest_64": "itch.io: \"Star Quest 64\"",
   "sternly_worded_adventures": "Steam appid 2562130",
@@ -1447,7 +1447,9 @@
   "zillion": "libretro thumbnails: Sega - Master System - Mark III/Zillion (USA, Europe) (Rev 1).png [Named_Titles]",
   "zoominoes": "Steam appid 3282420",
   "zork_grand_inquisitor": "Steam appid 570680 + GOG catalogue: \"Zork: Grand Inquisitor\"",
-  "zuma_deluxe": "Steam appid 3330"
+  "zuma_deluxe": "Steam appid 3330",
+  "hades2rogue": "Steam appid 1145350 (Hades II) -- the world is a mod on the commercial game",
+  "perfect_dark": "libretro thumbnails, N64 boxart and title screen -- the world targets the fan PC port of the same game, whose own art this is"
  },
  "sources": [
   "Steam CDN",
@@ -1457,15 +1459,23 @@
   "itch.io",
   "hand-picked, listed in tools/harvest_art.py"
  ],
- "banner_count": 467,
+ "banner_count": 468,
  "deliberately_bare": [
   "cartograp",
   "crosswords",
+  "final_fantasy_xiii_2",
   "high_roller",
   "pixeldraw",
   "smz3",
+  "starcraft_ii",
   "tombola",
   "yarg_guitar_hero_rock_band",
   "yarg_yet_another_rhythm_game"
- ]
+ ],
+ "renamed_upstream": {
+  "bloons_tower_defense_6": "Steam kalder den nu 'Bloons TD 6'. Samme produkt, appid 960090.",
+  "doom_1993": "Steam saelger den nu som 'DOOM + DOOM II'. Samme appid 2280.",
+  "pinball_fx3": "Steam kalder den nu 'Pinball FX Classic'. Samme appid 442120.",
+  "duke_nukem_3d_atomic_edition": "appid 225140 svarer ikke i appdetails (afnoteret), men adressen leverer stadig kunsten."
+ }
 }

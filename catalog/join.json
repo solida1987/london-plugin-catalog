@@ -1,6 +1,6 @@
 {
   "note": "Which London plugin covers which Archipelago game. Addresses and metadata only.",
-  "count": 574,
+  "count": 582,
   "games": {
     "Adventure": {
       "id": "adventure",
@@ -12,6 +12,12 @@
       "id": "alttp",
       "platform": "SNES",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/snes/alttp.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "AM2R": {
+      "id": "am2r",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/am2r.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Ape Escape 2": {
@@ -152,6 +158,12 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/golden_sun_tla.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
+    "Hades2Rogue": {
+      "id": "hades2rogue",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/hades2rogue.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
     "Kirby's Dream Land 3": {
       "id": "kdl3",
       "platform": "SNES",
@@ -278,6 +290,12 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/nes/mm3.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
+    "Majora's Mask Recompiled": {
+      "id": "mm_recomp",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/mm_recomp.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
     "MegaMan Battle Network 3": {
       "id": "mmbn3",
       "platform": "GBA",
@@ -300,6 +318,12 @@
       "id": "paper_mario",
       "platform": "N64",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/n64/paper_mario.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Perfect Dark": {
+      "id": "perfect_dark",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/perfect_dark.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Pokemon Black and White": {
@@ -344,6 +368,18 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gamecube/skyward_sword.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
+    "SM64 Romhack": {
+      "id": "sm64hacks",
+      "platform": "N64",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/n64/sm64hacks.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Super Mario Odyssey": {
+      "id": "smo",
+      "platform": "SWITCH",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/switch/smo.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
     "Super Mario RPG": {
       "id": "smrpg",
       "platform": "SNES",
@@ -386,6 +422,12 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ps1/spyro3.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
+    "Sonic Robo Blast 2": {
+      "id": "srb2",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/srb2.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
     "Super Metroid": {
       "id": "super_metroid",
       "platform": "SNES",
@@ -408,6 +450,12 @@
       "id": "tomba",
       "platform": "PSX",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ps1/tomba.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Toontown": {
+      "id": "toontown",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/toontown.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Paper Mario: The Thousand-Year Door": {

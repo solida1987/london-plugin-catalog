@@ -1,0 +1,64 @@
+{
+  "id": "hades2rogue",
+  "display_name": "Hades II",
+  "subtitle": "",
+  "platform": "PC",
+  "version": "1.0.0",
+  "_verified": "2026-08-23",
+  "_drafted_note": "Drafted 2026-08-23 from the world's OWN archipelago.json, README and releases. No field is filled in from memory or from what other games on the same platform do.",
+  "_platform_source": "README: Windows only, installed through r2modman with the game from Steam or Epic",
+  "ap_world_name": "Hades2Rogue",
+  "_ap_world_name_source": "worlds/hades2rogue/archipelago.json: \"game\": \"Hades2Rogue\". The world's game name is NOT the game's name -- a seed's slot says Hades2Rogue, not Hades II. Getting this wrong makes Join fail with a game the room has never heard of.",
+  "description": "Supergiant's Hades II as a multiworld.",
+  "_description_source": "written by us from the structure of the game -- no text copied from the game itself",
+  "checks_verified": false,
+  "_checks_verified_note": "Stays false until somebody has played it through London. Built is not tested.",
+  "requires": "own_copy",
+  "_requires_source": "a commercial game the player buys on Steam or Epic",
+  "mod_kind": null,
+  "_mod_kind_source": "not a remake -- this is the commercial release",
+  "client": {
+    "name": "Hades 2 Client",
+    "protocol": "self",
+    "lua": null,
+    "kind": "world",
+    "_kind_source": "README: \"Search for the Hades 2 Client in the archipelago launcher\". The world ships its own client.",
+    "_protocol_source": "the world opens its own connection to the game -- no emulator memory protocol is involved, so London carries nothing but the launch. Recorded as \"self\" rather than naming a bridge we do not use."
+  },
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/BrittisH39/Hades2Archipelago/releases/latest",
+    "asset": "Hades2Rogue.apworld",
+    "_source": "README: \"Download the APWorld from the releases tab\"; latest v0.9.3"
+  },
+  "install_kind": "apworld_and_mod",
+  "_install_kind_source": "README: the apworld into custom_worlds, PLUS the Hades2RogueArchipelago mod installed through r2modman from Thunderstore. London carries neither the game nor a mod manager, so the mod step is the player's.",
+  "setup": [
+    "Install r2modman, then pick Hades 2 and the store you own it on.",
+    "In r2modman, find Hades2RogueArchipelago online and Download with Dependencies.",
+    "Download Hades2Rogue.apworld from the release into Archipelago's custom_worlds folder.",
+    "Start the Hades 2 Client from the Archipelago launcher."
+  ],
+  "patch": {
+    "model": "none",
+    "_source": "the setup guide describes no patching step"
+  },
+  "patch_extension": "unaudited",
+  "_patch_extension_source": "world source not downloaded -- repo policy is addresses only. Flagged in every build until somebody reads it.",
+  "credits": {
+    "plugin_by": "solida1987",
+    "world_by": {
+      "name": "BrittisH39",
+      "url": "https://github.com/BrittisH39/Hades2Archipelago",
+      "_source": "the repository that publishes this world, read 2026-08-23",
+      "licence": "GPL-3.0",
+      "_licence_source": "the repository's licence as GitHub classifies it, checked 2026-08-23",
+      "authors": [
+        "BrittisH39"
+      ],
+      "_authors_source": "worlds/hades2rogue/archipelago.json: \"authors\": [\"BrittisH39\"]. The README adds \"Created by BrittisH39 with AI assistance\" -- their own words, recorded as written."
+    },
+    "game_by": "Supergiant Games",
+    "_note": "Hades II is Supergiant's and is never distributed here; the player buys their own copy. The Archipelago world is BrittisH39's. Only the plugin itself is by solida1987."
+  }
+}
