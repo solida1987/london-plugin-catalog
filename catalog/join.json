@@ -1,6 +1,6 @@
 {
   "note": "Which London plugin covers which Archipelago game. Addresses and metadata only.",
-  "count": 568,
+  "count": 573,
   "games": {
     "Adventure": {
       "id": "adventure",
@@ -236,6 +236,12 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/metroid_fusion.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
+    "Metroid Prime": {
+      "id": "metroid_prime",
+      "platform": "GC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gamecube/metroid_prime.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
     "Metroid: Zero Mission": {
       "id": "metroid_zero_mission",
       "platform": "GBA",
@@ -252,6 +258,12 @@
       "id": "mk64",
       "platform": "N64",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/n64/mk64.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Mario Kart Double Dash": {
+      "id": "mkdd",
+      "platform": "GC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gamecube/mkdd.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Mega Man 3": {
@@ -320,6 +332,12 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gb-gbc/pokemon_rb.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
+    "Skyward Sword": {
+      "id": "skyward_sword",
+      "platform": "GC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gamecube/skyward_sword.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
     "Super Mario RPG": {
       "id": "smrpg",
       "platform": "SNES",
@@ -356,6 +374,12 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ps1/sotn.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
+    "Spyro 3": {
+      "id": "spyro3",
+      "platform": "PSX",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ps1/spyro3.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
     "Super Metroid": {
       "id": "super_metroid",
       "platform": "SNES",
@@ -378,6 +402,12 @@
       "id": "tomba",
       "platform": "PSX",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ps1/tomba.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Paper Mario: The Thousand-Year Door": {
+      "id": "ttyd",
+      "platform": "GC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gamecube/ttyd.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Wario Land 3": {

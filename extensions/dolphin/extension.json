@@ -1,0 +1,13 @@
+{
+  "apiVersion": 1,
+  "extensionId": "dolphin_bridge",
+  "displayName": "Dolphin (GameCube and Wii)",
+  "protocol": "dolphin",
+  "version": "0.1.0",
+  "author": "Solida Games",
+  "authorContact": "https://github.com/solida1987/london-plugin-catalog",
+  "assembly": "CatalogDolphinBridge.dll",
+  "entryType": "LauncherV2.Extensions.Dolphin.DolphinBridge",
+  "homepageUrl": "https://dolphin-emu.org/download/",
+  "rulesAcknowledged": true
+}

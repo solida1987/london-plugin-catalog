@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Dolphin as an installable extension. A launcher, not a memory bridge:  -->
+  <!-- every GameCube and Wii world reads Dolphin itself through              -->
+  <!-- dolphin-memory-engine and ships its own client. See DolphinBridge.cs.  -->
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>CatalogDolphinBridge</AssemblyName>
+    <RootNamespace>LauncherV2.Extensions.Dolphin</RootNamespace>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <Version>0.1.0</Version>
+    <Company>Solida Games</Company>
+    <Product>Dolphin bridge extension for Multiworld Launcher</Product>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Private=false: the launcher already has IEmulatorBridge loaded, and a -->
+    <!-- second copy here would make the interface in this assembly a          -->
+    <!-- DIFFERENT type from the host's, so BridgeRegistry's cast would fail   -->
+    <!-- on a class that visibly implements it.                                -->
+    <ProjectReference Include="..\..\..\Multiworld-Launcher\LauncherV2.csproj"
+                      Private="false" ExcludeAssets="runtime" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="extension.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>

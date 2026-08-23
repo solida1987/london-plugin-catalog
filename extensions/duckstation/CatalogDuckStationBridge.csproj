@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- DuckStation as an installable extension. A launcher, not a memory      -->
+  <!-- bridge: the PS1 worlds ship their own client. See the .cs file.        -->
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>CatalogDuckStationBridge</AssemblyName>
+    <RootNamespace>LauncherV2.Extensions.DuckStation</RootNamespace>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <Version>0.1.0</Version>
+    <Company>Solida Games</Company>
+    <Product>DuckStation bridge extension for Multiworld Launcher</Product>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Multiworld-Launcher\LauncherV2.csproj"
+                      Private="false" ExcludeAssets="runtime" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="extension.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>

@@ -33,7 +33,9 @@
     "protocol": "dolphin",
     "lua": null,
     "_source": "The guide names no single client executable -- it drives the ArchipelagoLauncher. SCHEMA rule 2 fails: no RAM map Plugins/Scripts/games/ttyd.lua exists, and no installed bridge speaks Dolphin. Protocol not established.",
-    "_protocol_source": "TTYDClient.py and ttyd_runtime.py both use dolphin_memory_engine."
+    "_protocol_source": "TTYDClient.py and ttyd_runtime.py both use dolphin_memory_engine.",
+    "kind": "world",
+    "_kind_source": "__init__.py registers a Type.CLIENT component; TTYDClient.py and ttyd_runtime.py both use dolphin_memory_engine."
   },
   "apworld": {
     "bundled": false,

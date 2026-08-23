@@ -1,0 +1,13 @@
+{
+  "apiVersion": 1,
+  "extensionId": "duckstation_bridge",
+  "displayName": "DuckStation (PlayStation 1)",
+  "protocol": "duckstation",
+  "version": "0.1.0",
+  "author": "Solida Games",
+  "authorContact": "https://github.com/solida1987/london-plugin-catalog",
+  "assembly": "CatalogDuckStationBridge.dll",
+  "entryType": "LauncherV2.Extensions.DuckStation.DuckStationBridge",
+  "homepageUrl": "https://www.duckstation.org/",
+  "rulesAcknowledged": true
+}

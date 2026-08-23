@@ -32,7 +32,9 @@
     "protocol": "dolphin",
     "lua": null,
     "_source": "setup guide names a game-specific \"Metroid Prime Client\". SCHEMA rule 1 gives no answer for a world that ships its own client, and rule 2 fails: no RAM map Plugins/Scripts/games/metroid_prime.lua exists. No installed bridge speaks Dolphin (extensions/ = bizhawk, sni, pine, native_soh), so the protocol stays unestablished.",
-    "_protocol_source": "src/DolphinClient.py, and the world requires dolphin_memory_engine."
+    "_protocol_source": "src/DolphinClient.py, and the world requires dolphin_memory_engine.",
+    "kind": "world",
+    "_kind_source": "src/__init__.py registers a Type.CLIENT component and src/DolphinClient.py drives Dolphin through dolphin-memory-engine. The world owns the connector; London starts the disc."
   },
   "apworld": {
     "bundled": false,

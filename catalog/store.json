@@ -1,6 +1,6 @@
 {
   "note": "The launcher's store window. Addresses and metadata only — no artwork and no code is stored here. Installing still runs the launcher's own consent flow.",
-  "count": 568,
+  "count": 573,
   "platforms": [
     "Atari 2600",
     "Browser",
@@ -31,6 +31,7 @@
     "Game Boy",
     "Game Boy Advance",
     "Game Boy Color",
+    "GameCube",
     "Master System",
     "Mega Drive / Genesis",
     "NES",
@@ -1046,6 +1047,32 @@
       "stability": "Stable"
     },
     {
+      "id": "metroid_prime",
+      "name": "Metroid Prime",
+      "ap_world_name": "Metroid Prime",
+      "subtitle": "",
+      "description": "Tallon IV as a multiworld.",
+      "platform": "GC",
+      "platform_label": "GameCube",
+      "family": "Nintendo",
+      "genres": [
+        "Metroidvania"
+      ],
+      "version": "1.0.0",
+      "world_by": "UltiNaruto/MetroidAPrime",
+      "world_licence": "",
+      "plugin_by": "solida1987",
+      "cover": null,
+      "banner": null,
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gamecube/metroid_prime.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases",
+      "install_kind": "rom",
+      "tested": false,
+      "section": "adult",
+      "_section_reason": "no store page, no release page, no repository and no cover in any source -- nothing we could read to establish what this game contains, so it sits behind the age gate until somebody can",
+      "stability": "Stable"
+    },
+    {
       "id": "metroid_zero_mission",
       "name": "Metroid: Zero Mission",
       "ap_world_name": "Metroid: Zero Mission",
@@ -1119,6 +1146,32 @@
       "tested": false,
       "section": "unstable",
       "stability": "Unstable"
+    },
+    {
+      "id": "mkdd",
+      "name": "Mario Kart: Double Dash!!",
+      "ap_world_name": "Mario Kart Double Dash",
+      "subtitle": "",
+      "description": "The Grand Prix as a multiworld.",
+      "platform": "GC",
+      "platform_label": "GameCube",
+      "family": "Nintendo",
+      "genres": [
+        "Platformer"
+      ],
+      "version": "1.0.0",
+      "world_by": "aXu-AP/archipelago-double-dash",
+      "world_licence": "",
+      "plugin_by": "solida1987",
+      "cover": null,
+      "banner": null,
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gamecube/mkdd.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases",
+      "install_kind": "rom",
+      "tested": false,
+      "section": "adult",
+      "_section_reason": "no store page, no release page, no repository and no cover in any source -- nothing we could read to establish what this game contains, so it sits behind the age gate until somebody can",
+      "stability": "Stable"
     },
     {
       "id": "mm3",
@@ -1401,6 +1454,32 @@
       "stability": "Stable"
     },
     {
+      "id": "skyward_sword",
+      "name": "The Legend of Zelda: Skyward Sword",
+      "ap_world_name": "Skyward Sword",
+      "subtitle": "",
+      "description": "The sky and the surface as a multiworld.",
+      "platform": "GC",
+      "platform_label": "GameCube",
+      "family": "Nintendo",
+      "genres": [
+        "Action-Adventure"
+      ],
+      "version": "1.0.0",
+      "world_by": "Battlecats59/SS_APWorld",
+      "world_licence": "",
+      "plugin_by": "solida1987",
+      "cover": null,
+      "banner": null,
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gamecube/skyward_sword.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases",
+      "install_kind": "rom",
+      "tested": false,
+      "section": "adult",
+      "_section_reason": "no store page, no release page, no repository and no cover in any source -- nothing we could read to establish what this game contains, so it sits behind the age gate until somebody can",
+      "stability": "Stable"
+    },
+    {
       "id": "smrpg",
       "name": "Super Mario RPG",
       "ap_world_name": "Super Mario RPG",
@@ -1552,6 +1631,32 @@
       "stability": "Stable"
     },
     {
+      "id": "spyro3",
+      "name": "Spyro 3: Year of the Dragon",
+      "ap_world_name": "Spyro 3",
+      "subtitle": "",
+      "description": "The Forgotten Worlds as a multiworld.",
+      "platform": "PSX",
+      "platform_label": "PlayStation 1",
+      "family": "Sony",
+      "genres": [
+        "RPG"
+      ],
+      "version": "1.0.0",
+      "world_by": "Uroogla/S3AP",
+      "world_licence": "",
+      "plugin_by": "solida1987",
+      "cover": null,
+      "banner": null,
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ps1/spyro3.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases",
+      "install_kind": "rom",
+      "tested": false,
+      "section": "adult",
+      "_section_reason": "no store page, no release page, no repository and no cover in any source -- nothing we could read to establish what this game contains, so it sits behind the age gate until somebody can",
+      "stability": "Stable"
+    },
+    {
       "id": "super_metroid",
       "name": "Super Metroid",
       "ap_world_name": "Super Metroid",
@@ -1650,6 +1755,32 @@
       "tested": false,
       "section": "unstable",
       "stability": "Unstable"
+    },
+    {
+      "id": "ttyd",
+      "name": "Paper Mario: The Thousand-Year Door",
+      "ap_world_name": "Paper Mario: The Thousand-Year Door",
+      "subtitle": "",
+      "description": "Rogueport and the seven Crystal Stars as a multiworld.",
+      "platform": "GC",
+      "platform_label": "GameCube",
+      "family": "Nintendo",
+      "genres": [
+        "Platformer"
+      ],
+      "version": "1.0.0",
+      "world_by": "jamesbrq/ArchipelagoTTYD",
+      "world_licence": "",
+      "plugin_by": "solida1987",
+      "cover": null,
+      "banner": null,
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gamecube/ttyd.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases",
+      "install_kind": "rom",
+      "tested": false,
+      "section": "adult",
+      "_section_reason": "no store page, no release page, no repository and no cover in any source -- nothing we could read to establish what this game contains, so it sits behind the age gate until somebody can",
+      "stability": "Stable"
     },
     {
       "id": "wario_land_3",
