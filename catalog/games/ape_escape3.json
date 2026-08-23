@@ -7,8 +7,8 @@
   "_verified": "2026-08-23",
   "_drafted_note": "Drafted 2026-08-23 from the world's OWN setup guide, and from the world's source where the repository publishes it. No field is filled in from memory or from what other games on the same console do.",
   "_platform_source": "setup guide https://github.com/aidanii24/ae3-archipelago/blob/main/docs/setup.md -- \"PCSX2 Emulator (1.7 or higher)\" and the NTSC-U disc SCUS-97501",
-  "ap_world_name": null,
-  "_ap_world_name_source": null,
+  "ap_world_name": "Ape Escape 3",
+  "_ap_world_name_source": "the world states it itself: archipelago.json in aidanii24/ae3-archipelago reads {\"game\": \"Ape Escape 3\", \"world_version\": \"2.0.6\", \"authors\": [\"aidanii\"]}, and __init__.py line 112 binds the World class attribute to it (game = Meta.game). Not taken from the display name -- this field is what the launcher sends on Connect, and a guess here fails the join with no useful message.",
   "_ap_world_name_note": "NOT ESTABLISHED, deliberately left null. The world never writes the name literally: __init__.py has `class AE3World(World)` with `game = Meta.game`, and AE3_Client.py has `game: str = Meta.game` imported from `.data.Strings`. data/Strings.py and data/__init__.py were both read on 2026-08-23 and neither defines `game`. Writing \"Ape Escape 3\" here would be a guess, and a wrong ap_world_name makes Join fail rather than fail loudly.",
   "description": "The monkeys of Ape Escape 3 as a multiworld.",
   "_description_source": "written by us from the structure of the game - no text copied from the game itself",
@@ -50,9 +50,9 @@
   "credits": {
     "plugin_by": "solida1987",
     "world_by": {
-      "name": "aidanii24/ae3-archipelago",
+      "name": "aidanii",
       "url": "https://github.com/aidanii24/ae3-archipelago",
-      "_source": "the repository that publishes this world -- catalog/sheet_survey.json `repo` and the setup guide URL in catalog/guide_platform.json",
+      "_source": "archipelago.json in the world itself: \"authors\": [\"aidanii\"]. The repo owner handle aidanii24 was recorded before; the world names the person.",
       "licence": null,
       "_licence_source": "not read. The repository's LICENSE file has not been opened, so no licence is claimed.",
       "authors": [

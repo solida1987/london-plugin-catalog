@@ -1,0 +1,2 @@
+1.1.0
+cfff8a18db4ad30e8f178e283bc82f1fc18736b54afe139d2eb2a1f4f63eceaa

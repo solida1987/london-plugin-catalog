@@ -1,6 +1,6 @@
 {
   "note": "Which London plugin covers which Archipelago game. Addresses and metadata only.",
-  "count": 358,
+  "count": 564,
   "games": {
     "Adventure": {
       "id": "adventure",
@@ -23,7 +23,7 @@
     "Burnout 3": {
       "id": "burnout3",
       "platform": "PS2",
-      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/playstation/burnout3.londonplugin",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ps2/burnout3.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Castlevania - Circle of the Moon": {
@@ -251,7 +251,7 @@
     "Mega Man X4": {
       "id": "mmx4",
       "platform": "PSX",
-      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/playstation/mmx4.londonplugin",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ps1/mmx4.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Ocarina of Time": {
@@ -335,7 +335,7 @@
     "Castlevania: Symphony of the Night": {
       "id": "sotn",
       "platform": "PSX",
-      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/playstation/sotn.londonplugin",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ps1/sotn.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Super Metroid": {
@@ -2149,6 +2149,1242 @@
       "platform": "PC",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/zork_grand_inquisitor.londonplugin",
       "page": "https://github.com/SerpentAI/Archipelago/releases"
+    },
+    "Age of Mythology: Retold": {
+      "id": "age_of_mythology_retold",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/age_of_mythology_retold.londonplugin",
+      "page": "https://github.com/1-800-thewolf/AoM-Archipelago/releases"
+    },
+    "Baldur's Gate 3": {
+      "id": "baldur_s_gate_3",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/baldur_s_gate_3.londonplugin",
+      "page": "https://github.com/zane31415/ArchipelagoBG3/releases"
+    },
+    "Black Market of Bulletphilia ~ 100th Black Market (Touhou 18.5)": {
+      "id": "black_market_of_bulletphilia_100th_black_market_touhou_18_5",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/black_market_of_bulletphilia_100th_black_market_touhou_18_5.londonplugin",
+      "page": "https://github.com/furret78/Archipelago/releases"
+    },
+    "Chrono Trigger: Jets of Time": {
+      "id": "chrono_trigger_jets_of_time",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/chrono_trigger_jets_of_time.londonplugin",
+      "page": "https://github.com/Anguirel86/Archipelago/releases"
+    },
+    "Civilization V": {
+      "id": "civilization_v",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/civilization_v.londonplugin",
+      "page": "https://github.com/1313e/Civ-V-AP-World/releases"
+    },
+    "Dead Rising Deluxe Remastered": {
+      "id": "dead_rising_deluxe_remastered",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/dead_rising_deluxe_remastered.londonplugin",
+      "page": "https://github.com/Str8UpWHITE64/DRAP/releases"
+    },
+    "Duke Nukem 3D": {
+      "id": "duke_nukem_3d",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/duke_nukem_3d.londonplugin",
+      "page": "https://github.com/randomcodegen/NBloodAP/releases"
+    },
+    "The Elder Scrolls IV: Oblivion Remastered": {
+      "id": "the_elder_scrolls_iv_oblivion_remastered",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/the_elder_scrolls_iv_oblivion_remastered.londonplugin",
+      "page": "https://github.com/POD-io/Oblivion-ArchipelagoWorld/releases"
+    },
+    "Final Fantasy IV: Free Enterprise": {
+      "id": "final_fantasy_iv_free_enterprise",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/final_fantasy_iv_free_enterprise.londonplugin",
+      "page": "https://github.com/Rosalie-A/Archipelago/releases"
+    },
+    "Final Fantasy X": {
+      "id": "final_fantasy_x",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/final_fantasy_x.londonplugin",
+      "page": "https://github.com/FFX-AP/Archipelago/releases"
+    },
+    "Funi Raccoon Game": {
+      "id": "funi_raccoon_game",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/funi_raccoon_game.londonplugin",
+      "page": "https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases"
+    },
+    "Grandia HD Remaster": {
+      "id": "grandia_hd_remaster",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/grandia_hd_remaster.londonplugin",
+      "page": "https://github.com/Wakamu/Grandiarchipelago/releases"
+    },
+    "Hades 2 (Rogue)": {
+      "id": "hades_2_rogue",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/hades_2_rogue.londonplugin",
+      "page": "https://github.com/BrittisH39/Hades2Archipelago/releases"
+    },
+    "Kindergarten 2": {
+      "id": "kindergarten_2",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/kindergarten_2.londonplugin",
+      "page": "https://github.com/agilbert1412/Archipelagarten/releases"
+    },
+    "Minecraft": {
+      "id": "minecraft",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/minecraft.londonplugin",
+      "page": "https://github.com/qixils/NeoForgeAP/releases"
+    },
+    "Noita - Enemysanity": {
+      "id": "noita_enemysanity",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/noita_enemysanity.londonplugin",
+      "page": "https://github.com/madolinn/NoitaArchipelago/releases"
+    },
+    "Path of Exile": {
+      "id": "path_of_exile",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/path_of_exile.londonplugin",
+      "page": "https://github.com/stubobis1/Archipelago/releases"
+    },
+    "Plants vs. Zombies: GOTY": {
+      "id": "plants_vs_zombies_goty",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/plants_vs_zombies_goty.londonplugin",
+      "page": "https://github.com/dannybonz/replanted_archipelago/releases"
+    },
+    "Plants vs. Zombies: Replanted": {
+      "id": "plants_vs_zombies_replanted",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/plants_vs_zombies_replanted.londonplugin",
+      "page": "https://github.com/dannybonz/replanted_archipelago/releases"
+    },
+    "Resident Evil 2 Remake": {
+      "id": "resident_evil_2_remake",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/resident_evil_2_remake.londonplugin",
+      "page": "https://github.com/FuzzyGamesOn/RE2R_AP_World/releases"
+    },
+    "Resident Evil 3 Remake": {
+      "id": "resident_evil_3_remake",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/resident_evil_3_remake.londonplugin",
+      "page": "https://github.com/TheRealSolidusSnake/RE3R_AP_World/releases"
+    },
+    "Sekiro: Shadows Die Twice": {
+      "id": "sekiro_shadows_die_twice",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/sekiro_shadows_die_twice.londonplugin",
+      "page": "https://github.com/yenix4/ArchipelagoSekiro/releases"
+    },
+    "The Simpsons: Hit & Run": {
+      "id": "the_simpsons_hit_run",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/the_simpsons_hit_run.londonplugin",
+      "page": "https://github.com/nmize1/Archipelago/releases"
+    },
+    "TOEM: A Photo Adventure": {
+      "id": "toem_a_photo_adventure",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/toem_a_photo_adventure.londonplugin",
+      "page": "https://github.com/bbernardoni/Archipelago.TOEM/releases"
+    },
+    "Trackmania": {
+      "id": "trackmania",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/trackmania.londonplugin",
+      "page": "https://github.com/SerialBoxes/ArchipelagoTrackmania/releases"
+    },
+    "Ty The Tasmanian Tiger HD Remaster (PC)": {
+      "id": "ty_the_tasmanian_tiger_hd_remaster_pc",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/ty_the_tasmanian_tiger_hd_remaster_pc.londonplugin",
+      "page": "https://github.com/xMcacutt/Archipelago-TyTheTasmanianTiger/releases"
+    },
+    "The WereCleaner": {
+      "id": "the_werecleaner",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/the_werecleaner.londonplugin",
+      "page": "https://github.com/SWCreeperKing/Werepelago/releases"
+    },
+    "YS VIII: Lacrimosa of Dana": {
+      "id": "ys_viii_lacrimosa_of_dana",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/ys_viii_lacrimosa_of_dana.londonplugin",
+      "page": "https://github.com/junglechief87/Ys-8-AP-World/releases"
+    },
+    "7 Days to Die": {
+      "id": "7_days_to_die",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/7_days_to_die.londonplugin",
+      "page": "https://github.com/OrcThrowman/7-Days-to-Die-AP/releases"
+    },
+    "8Doors: Arum's Afterlife Adventure": {
+      "id": "8doors_arum_s_afterlife_adventure",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/8doors_arum_s_afterlife_adventure.londonplugin",
+      "page": "https://github.com/Xtruh/Arum-s-Eight-Doors-Archipelago-Randomizer/releases"
+    },
+    "Age of Empires II: Definite Edition": {
+      "id": "age_of_empires_ii_definite_edition",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/age_of_empires_ii_definite_edition.londonplugin",
+      "page": "https://github.com/dmwever/Ageipelago/releases"
+    },
+    "Age of Empires IV": {
+      "id": "age_of_empires_iv",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/age_of_empires_iv.londonplugin",
+      "page": "https://github.com/skilliard/AOE4-Archipelago/releases"
+    },
+    "ANTONBLAST": {
+      "id": "antonblast",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/antonblast.londonplugin",
+      "page": "https://github.com/ishaeromax/AP-Antonblast-Client/releases"
+    },
+    "Ark: Survival Evolved": {
+      "id": "ark_survival_evolved",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/ark_survival_evolved.londonplugin",
+      "page": "https://github.com/Jbaker16163/Ark-Survival-Archipelago/releases"
+    },
+    "Armored Core VI: Fires of Rubicon": {
+      "id": "armored_core_vi_fires_of_rubicon",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/armored_core_vi_fires_of_rubicon.londonplugin",
+      "page": "https://github.com/DeltaSilver/Armored-Core-6-Archipelago/releases"
+    },
+    "Arzette: The Jewel of Faramore": {
+      "id": "arzette_the_jewel_of_faramore",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/arzette_the_jewel_of_faramore.londonplugin",
+      "page": "https://github.com/nicolasberube/Arzette_Randomizer/releases"
+    },
+    "Atlyss": {
+      "id": "atlyss",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/atlyss.londonplugin",
+      "page": "https://github.com/Blitz0070/ATLYSS-Archipelago/releases"
+    },
+    "Baba Is You": {
+      "id": "baba_is_you",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/baba_is_you.londonplugin",
+      "page": "https://github.com/EmilyEmmi/Babapelago/releases"
+    },
+    "Baldur's Gate 3 - Trials of Tav": {
+      "id": "baldur_s_gate_3_trials_of_tav",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/baldur_s_gate_3_trials_of_tav.londonplugin",
+      "page": "https://github.com/Zoltun456/Archipelago-BG3-ToT/releases"
+    },
+    "Bat to the Heavens": {
+      "id": "bat_to_the_heavens",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/bat_to_the_heavens.londonplugin",
+      "page": "https://github.com/NathanW001/BTTHArchipelago/releases"
+    },
+    "Bayonetta": {
+      "id": "bayonetta",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/bayonetta.londonplugin",
+      "page": "https://github.com/Boi-027/BayonettaArchipelago/releases"
+    },
+    "Beat Saber": {
+      "id": "beat_saber",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/beat_saber.londonplugin",
+      "page": "https://github.com/CurrentlyPending/BeatSaberAP/releases"
+    },
+    "Bits & Bops": {
+      "id": "bits_bops",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/bits_bops.londonplugin",
+      "page": "https://github.com/xMcacutt-Archipelago/Archipelago-Bits-and-Bops/releases"
+    },
+    "Blue Fire": {
+      "id": "blue_fire",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/blue_fire.londonplugin",
+      "page": "https://github.com/Nebulea-dev/Archipelago-BlueFire/releases"
+    },
+    "Borderlands 2": {
+      "id": "borderlands_2",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/borderlands_2.londonplugin",
+      "page": "https://github.com/EdricY/Bouncy-Loot-God/releases"
+    },
+    "Borderlands The Pre-Sequel": {
+      "id": "borderlands_the_pre_sequel",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/borderlands_the_pre_sequel.londonplugin",
+      "page": "https://github.com/EdricY/Bouncy-Loot-God/releases"
+    },
+    "Brutal Orchestra": {
+      "id": "brutal_orchestra",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/brutal_orchestra.londonplugin",
+      "page": "https://github.com/DeadEyeDv/Brutal-Orchestra-Archipelago/releases"
+    },
+    "Bugsnax": {
+      "id": "bugsnax",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/bugsnax.londonplugin",
+      "page": "https://github.com/robofett28/bugsnax_ap_world/releases"
+    },
+    "Burger Shop": {
+      "id": "burger_shop",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/burger_shop.londonplugin",
+      "page": "https://github.com/zsiegel701/Burger-Shop-Archipelago/releases"
+    },
+    "Burger Shop 2": {
+      "id": "burger_shop_2",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/burger_shop_2.londonplugin",
+      "page": "https://github.com/zsiegel701/Burger-Shop-Archipelago/releases"
+    },
+    "Call of Duty: Black Ops 3 - Zombies": {
+      "id": "call_of_duty_black_ops_3_zombies",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/call_of_duty_black_ops_3_zombies.londonplugin",
+      "page": "https://github.com/colin969/bo3_archipelago/releases"
+    },
+    "Cassette Beasts": {
+      "id": "cassette_beasts",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/cassette_beasts.londonplugin",
+      "page": "https://github.com/sitskin/apCassetteBeasts/releases"
+    },
+    "Casualties: Unknown (Scav Prototype Demo)": {
+      "id": "casualties_unknown_scav_prototype_demo",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/casualties_unknown_scav_prototype_demo.londonplugin",
+      "page": "https://github.com/Nichologeam/CUAP/releases"
+    },
+    "Cash Cleaner Simulator": {
+      "id": "cash_cleaner_simulator",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/cash_cleaner_simulator.londonplugin",
+      "page": "https://github.com/aymeric-duchein/Archipelago-ccs/releases"
+    },
+    "Caves of Qud": {
+      "id": "caves_of_qud",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/caves_of_qud.londonplugin",
+      "page": "https://github.com/SabreCat/CavesOfQudArchipelagoRandomizer/releases"
+    },
+    "Civilization IV": {
+      "id": "civilization_iv",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/civilization_iv.londonplugin",
+      "page": "https://github.com/VincentBorchardt/Civ4-Archipelago-Mod/releases"
+    },
+    "Clair Obscur Expedition 33": {
+      "id": "clair_obscur_expedition_33",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/clair_obscur_expedition_33.londonplugin",
+      "page": "https://github.com/Demorck/ClairObscur_APWorld/releases"
+    },
+    "Commander Keen in Goodbye, Galaxy": {
+      "id": "commander_keen_in_goodbye_galaxy",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/commander_keen_in_goodbye_galaxy.londonplugin",
+      "page": "https://github.com/Joxtacy/Archipelago-Keen/releases"
+    },
+    "Control (Ultimate Edition)": {
+      "id": "control_ultimate_edition",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/control_ultimate_edition.londonplugin",
+      "page": "https://github.com/Alias-Cynestal/Archipelago/releases"
+    },
+    "Cookie Clicker": {
+      "id": "cookie_clicker",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/cookie_clicker.londonplugin",
+      "page": "https://github.com/Charlignon/AP_CookieClicker/releases"
+    },
+    "Crab Champions": {
+      "id": "crab_champions",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/crab_champions.londonplugin",
+      "page": "https://github.com/Str8UpWHITE64/CrabChampionsAP/releases"
+    },
+    "Cursed Words: The Word Game That Isn't": {
+      "id": "cursed_words_the_word_game_that_isn_t",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/cursed_words_the_word_game_that_isn_t.londonplugin",
+      "page": "https://github.com/JammyGeeza/CursedWords-Archipelago/releases"
+    },
+    "Cyber Hook": {
+      "id": "cyber_hook",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/cyber_hook.londonplugin",
+      "page": "https://github.com/PieOrPi/CyberHookAPWorld/releases"
+    },
+    "Cyberpunk 2077": {
+      "id": "cyberpunk_2077",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/cyberpunk_2077.londonplugin",
+      "page": "https://github.com/247Tossing/cyberpunk_archipelago/releases"
+    },
+    "Deathbulge Battle of the Bands": {
+      "id": "deathbulge_battle_of_the_bands",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/deathbulge_battle_of_the_bands.londonplugin",
+      "page": "https://github.com/neverhelios/Archipelago/releases"
+    },
+    "Death Road to Canada": {
+      "id": "death_road_to_canada",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/death_road_to_canada.londonplugin",
+      "page": "https://github.com/PixelShake92/DR2C-AP/releases"
+    },
+    "Devil May Cry 3 (Special Edition)": {
+      "id": "devil_may_cry_3_special_edition",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/devil_may_cry_3_special_edition.londonplugin",
+      "page": "https://github.com/AshIndigo/Archipelago/releases"
+    },
+    "Donut County": {
+      "id": "donut_county",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/donut_county.londonplugin",
+      "page": "https://github.com/1e1001/DonutCountyAP/releases"
+    },
+    "DOOM Eternal": {
+      "id": "doom_eternal",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/doom_eternal.londonplugin",
+      "page": "https://github.com/snowzzrra/DoomEternal-AP-Mod/releases"
+    },
+    "Drehmal APOTHEOSIS (Minecraft Map)": {
+      "id": "drehmal_apotheosis_minecraft_map",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/drehmal_apotheosis_minecraft_map.londonplugin",
+      "page": "https://github.com/threecrowsinatrenchcrowt/DrehmalAPWorld/releases"
+    },
+    "Duck Life 4": {
+      "id": "duck_life_4",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/duck_life_4.londonplugin",
+      "page": "https://github.com/spencer2585/Duck-Life-4-Archipelago/releases"
+    },
+    "Dwarf Fortress": {
+      "id": "dwarf_fortress",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/dwarf_fortress.londonplugin",
+      "page": "https://github.com/EthanTheBrave/Dwarfipelago/releases"
+    },
+    "Dyson Sphere Program": {
+      "id": "dyson_sphere_program",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/dyson_sphere_program.londonplugin",
+      "page": "https://github.com/BloodStainedCrow/Archipelago-DSP/releases"
+    },
+    "Easy Delivery Co.": {
+      "id": "easy_delivery_co",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/easy_delivery_co.londonplugin",
+      "page": "https://github.com/Aeromaze/Archipelago/releases"
+    },
+    "The Elder Scrolls Online": {
+      "id": "the_elder_scrolls_online",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/the_elder_scrolls_online.londonplugin",
+      "page": "https://github.com/spencer2585/APESO/releases"
+    },
+    "Empire Earth": {
+      "id": "empire_earth",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/empire_earth.londonplugin",
+      "page": "https://github.com/povka/EmpireEarth_Archipelago/releases"
+    },
+    "Ender Magnolia: Bloom In The Mist": {
+      "id": "ender_magnolia_bloom_in_the_mist",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/ender_magnolia_bloom_in_the_mist.londonplugin",
+      "page": "https://github.com/Trexounay/EnderLilies.Archipelago/releases"
+    },
+    "Factorio Platformer": {
+      "id": "factorio_platformer",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/factorio_platformer.londonplugin",
+      "page": "https://github.com/lepideble/factorio-apworld/releases"
+    },
+    "Factorio: Space Age": {
+      "id": "factorio_space_age",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/factorio_space_age.londonplugin",
+      "page": "https://github.com/thejoshwolfe/Archipelago/releases"
+    },
+    "Fantastic Fist": {
+      "id": "fantastic_fist",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/fantastic_fist.londonplugin",
+      "page": "https://github.com/DannySchultzDev/Fantastic-Fist-Archipelago-Client/releases"
+    },
+    "The Farmer Was Replaced": {
+      "id": "the_farmer_was_replaced",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/the_farmer_was_replaced.londonplugin",
+      "page": "https://github.com/seadoggie001/TFWR-APMod/releases"
+    },
+    "Feeding Frenzy 2": {
+      "id": "feeding_frenzy_2",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/feeding_frenzy_2.londonplugin",
+      "page": "https://github.com/barretg/feeding-frenzy-2-archipelago/releases"
+    },
+    "Fez": {
+      "id": "fez",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/fez.londonplugin",
+      "page": "https://github.com/nhyldmar/fez-ap/releases"
+    },
+    "Final Fantasy VII": {
+      "id": "final_fantasy_vii",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/final_fantasy_vii.londonplugin",
+      "page": "https://github.com/blazerwazey/FF7pelago/releases"
+    },
+    "Final Fantasy XIII-2": {
+      "id": "final_fantasy_xiii_2",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/final_fantasy_xiii_2.londonplugin",
+      "page": "https://github.com/MLSTRM/ArchipelagoFF132/releases"
+    },
+    "Final Fantasy XIII - Lightning Returns": {
+      "id": "final_fantasy_xiii_lightning_returns",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/final_fantasy_xiii_lightning_returns.londonplugin",
+      "page": "https://github.com/Bartz24/ArchipelagoLR/releases"
+    },
+    "Forager": {
+      "id": "forager",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/forager.londonplugin",
+      "page": "https://github.com/olixx12/Foragipelago/releases"
+    },
+    "Garry's Mod (apAdventure)": {
+      "id": "garry_s_mod_apadventure",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/garry_s_mod_apadventure.londonplugin",
+      "page": "https://github.com/ChrisCj8/ap_adventure/releases"
+    },
+    "Geometry Dash": {
+      "id": "geometry_dash",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/geometry_dash.londonplugin",
+      "page": "https://github.com/matorblal-byte/ArchipelagoGD2/releases"
+    },
+    "Grand Theft Auto III": {
+      "id": "grand_theft_auto_iii",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/grand_theft_auto_iii.londonplugin",
+      "page": "https://github.com/Leiqart/gta3-archipelago/releases"
+    },
+    "Grand Theft Auto: San Andreas": {
+      "id": "grand_theft_auto_san_andreas",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/grand_theft_auto_san_andreas.londonplugin",
+      "page": "https://github.com/awakenbad/SanAndreasAP/releases"
+    },
+    "Grapple Dog": {
+      "id": "grapple_dog",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/grapple_dog.londonplugin",
+      "page": "https://github.com/ProfDeCube-org/Archipelago-GrappleDog/releases"
+    },
+    "Grunn": {
+      "id": "grunn",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/grunn.londonplugin",
+      "page": "https://github.com/Serial-Developer/Grunnchipelago/releases"
+    },
+    "Halo The Master Chief Collection": {
+      "id": "halo_the_master_chief_collection",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/halo_the_master_chief_collection.londonplugin",
+      "page": "https://github.com/spencer2585/MCC-AP/releases"
+    },
+    "HITMAN: World of Assassination": {
+      "id": "hitman_world_of_assassination",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/hitman_world_of_assassination.londonplugin",
+      "page": "https://github.com/BenDipp/Archipelago/releases"
+    },
+    "Hollow Knight: Silksong (Batsong)": {
+      "id": "hollow_knight_silksong_batsong",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/hollow_knight_silksong_batsong.londonplugin",
+      "page": "https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases"
+    },
+    "Hyperdimension Neptunia Re;Birth3 V Generation": {
+      "id": "hyperdimension_neptunia_re_birth3_v_generation",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/hyperdimension_neptunia_re_birth3_v_generation.londonplugin",
+      "page": "https://github.com/vegemiiBG/Archipelago-NepRb3/releases"
+    },
+    "Hytale": {
+      "id": "hytale",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/hytale.londonplugin",
+      "page": "https://github.com/LucasRenaudineau/hytelago/releases"
+    },
+    "I am Your Beast": {
+      "id": "i_am_your_beast",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/i_am_your_beast.londonplugin",
+      "page": "https://github.com/petiboy7/IAYBArchipelago/releases"
+    },
+    "ICEwall": {
+      "id": "icewall",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/icewall.londonplugin",
+      "page": "https://github.com/System-of-Root/ICEwallAPword/releases"
+    },
+    "I Hate You, Please Suffer": {
+      "id": "i_hate_you_please_suffer",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/i_hate_you_please_suffer.londonplugin",
+      "page": "https://github.com/chloebangbang/Archipelago/releases"
+    },
+    "I Was A Teenage Exocolonist": {
+      "id": "i_was_a_teenage_exocolonist",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/i_was_a_teenage_exocolonist.londonplugin",
+      "page": "https://github.com/pamymaf/Exocolonist-AP/releases"
+    },
+    "Kerbal Space Program": {
+      "id": "kerbal_space_program",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/kerbal_space_program.londonplugin",
+      "page": "https://github.com/nickdavies/Archipelago/releases"
+    },
+    "Kingdom Hearts Dream Drop Distance": {
+      "id": "kingdom_hearts_dream_drop_distance",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/kingdom_hearts_dream_drop_distance.londonplugin",
+      "page": "https://github.com/LuxMake/Archipelago-KHDDD/releases"
+    },
+    "Kingdom Two Crowns": {
+      "id": "kingdom_two_crowns",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/kingdom_two_crowns.londonplugin",
+      "page": "https://github.com/Catalyss/Archipelago-Kingdom2Crown/releases"
+    },
+    "La-Mulana 2": {
+      "id": "la_mulana_2",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/la_mulana_2.londonplugin",
+      "page": "https://github.com/Crownmuri/Archipelago/releases"
+    },
+    "Layer8Problem": {
+      "id": "layer8problem",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/layer8problem.londonplugin",
+      "page": "https://github.com/TheZockerBrain069/Layer8Problem-AP/releases"
+    },
+    "Left 4 Dead 2": {
+      "id": "left_4_dead_2",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/left_4_dead_2.londonplugin",
+      "page": "https://github.com/yufiievershade/Left-4-Dead-2-Archipelago/releases"
+    },
+    "The Legend of Dragoon": {
+      "id": "the_legend_of_dragoon",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/the_legend_of_dragoon.londonplugin",
+      "page": "https://github.com/pkolb-dev/Archipelago/releases"
+    },
+    "Lethal Crisis": {
+      "id": "lethal_crisis",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/lethal_crisis.londonplugin",
+      "page": "https://github.com/HyperGeek7/LethalCrisis-AP/releases"
+    },
+    "Librarian: Tidy Up the Arcane Library": {
+      "id": "librarian_tidy_up_the_arcane_library",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/librarian_tidy_up_the_arcane_library.londonplugin",
+      "page": "https://github.com/Str8UpWHITE64/Librarian-AP/releases"
+    },
+    "Library of Ruina": {
+      "id": "library_of_ruina",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/library_of_ruina.londonplugin",
+      "page": "https://github.com/Az-LastPenguin/LORAP/releases"
+    },
+    "Library of Babel": {
+      "id": "library_of_babel",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/library_of_babel.londonplugin",
+      "page": "https://github.com/YarRuin/LOBAP/releases"
+    },
+    "Lies of P": {
+      "id": "lies_of_p",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/lies_of_p.londonplugin",
+      "page": "https://github.com/Xtruh/LiesOfAP/releases"
+    },
+    "Lobotomy Corporation": {
+      "id": "lobotomy_corporation",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/lobotomy_corporation.londonplugin",
+      "page": "https://github.com/Kli333/LobCorp-AP/releases"
+    },
+    "Look Outside": {
+      "id": "look_outside",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/look_outside.londonplugin",
+      "page": "https://github.com/Turese/LOArchipelagoPlugins/releases"
+    },
+    "Lost But Found": {
+      "id": "lost_but_found",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/lost_but_found.londonplugin",
+      "page": "https://github.com/Michimarii/LostButFoundAP/releases"
+    },
+    "Made in Abyss BSFD": {
+      "id": "made_in_abyss_bsfd",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/made_in_abyss_bsfd.londonplugin",
+      "page": "https://github.com/OctoberWolf/MadeInAbyssBSFD-AP/releases"
+    },
+    "Marble It Up! Ultra": {
+      "id": "marble_it_up_ultra",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/marble_it_up_ultra.londonplugin",
+      "page": "https://github.com/KitLemonfoot/ArchipelagoMIUU/releases"
+    },
+    "Mega Man 4": {
+      "id": "mega_man_4",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/mega_man_4.londonplugin",
+      "page": "https://github.com/Silvris/Archipelago/releases"
+    },
+    "Mega Man Zero 3": {
+      "id": "mega_man_zero_3",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/mega_man_zero_3.londonplugin",
+      "page": "https://github.com/brodieberger/MMZero3Archipelago/releases"
+    },
+    "Minecraft: Vault Hunters (Modpack)": {
+      "id": "minecraft_vault_hunters_modpack",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/minecraft_vault_hunters_modpack.londonplugin",
+      "page": "https://github.com/Studmuffin2227/VHAPMod/releases"
+    },
+    "Mini Metro": {
+      "id": "mini_metro",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/mini_metro.londonplugin",
+      "page": "https://github.com/Slimm160/Mini-Metro-Archipelago/releases"
+    },
+    "Mirror's Edge": {
+      "id": "mirror_s_edge",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/mirror_s_edge.londonplugin",
+      "page": "https://github.com/SerpentAI/Archipelago/releases"
+    },
+    "Monster Hunter Rise": {
+      "id": "monster_hunter_rise",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/monster_hunter_rise.londonplugin",
+      "page": "https://github.com/HillbillyDroid/MHRise-APWorld/releases"
+    },
+    "Mount & Blade II: Bannerlord": {
+      "id": "mount_blade_ii_bannerlord",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/mount_blade_ii_bannerlord.londonplugin",
+      "page": "https://github.com/dghalfor/Bannerlord-APWorld/releases"
+    },
+    "The Murder of Sonic the Hedgehog": {
+      "id": "the_murder_of_sonic_the_hedgehog",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/the_murder_of_sonic_the_hedgehog.londonplugin",
+      "page": "https://github.com/TwinklePillar/MurderOfSonicAP/releases"
+    },
+    "NEO: The World Ends with You": {
+      "id": "neo_the_world_ends_with_you",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/neo_the_world_ends_with_you.londonplugin",
+      "page": "https://github.com/Sjerver/NEO-Twewy-Archipelago-Mod/releases"
+    },
+    "Nuclear Throne": {
+      "id": "nuclear_throne",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/nuclear_throne.londonplugin",
+      "page": "https://github.com/GraphiteGraphic/NuclearThroneArchipelago/releases"
+    },
+    "Okami HD": {
+      "id": "okami_hd",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/okami_hd.londonplugin",
+      "page": "https://github.com/Ragmoa/Archipelago/releases"
+    },
+    "Once Upon a Katamari": {
+      "id": "once_upon_a_katamari",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/once_upon_a_katamari.londonplugin",
+      "page": "https://github.com/ItsSeafoamy/Once-Upon-an-Archipelago/releases"
+    },
+    "Operation Octo": {
+      "id": "operation_octo",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/operation_octo.londonplugin",
+      "page": "https://github.com/GraymonDgt/OperationOctoAP/releases"
+    },
+    "PAYDAY 2: Criminal Dawn": {
+      "id": "payday_2_criminal_dawn",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/payday_2_criminal_dawn.londonplugin",
+      "page": "https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases"
+    },
+    "Persona 5 Royal": {
+      "id": "persona_5_royal",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/persona_5_royal.londonplugin",
+      "page": "https://github.com/Daphoa/ArchipelagoP5RMod/releases"
+    },
+    "Phoenotopia: Awakening": {
+      "id": "phoenotopia_awakening",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/phoenotopia_awakening.londonplugin",
+      "page": "https://github.com/Amphyros/Phoenotopia-Awakening-AP-client/releases"
+    },
+    "Pinball FX": {
+      "id": "pinball_fx",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/pinball_fx.londonplugin",
+      "page": "https://github.com/SerpentAI/Archipelago/releases"
+    },
+    "The Planet Crafter": {
+      "id": "the_planet_crafter",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/the_planet_crafter.londonplugin",
+      "page": "https://github.com/Hawkrex/Archipelago-ThePlanetCrafter/releases"
+    },
+    "Poco": {
+      "id": "poco",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/poco.londonplugin",
+      "page": "https://github.com/SWCreeperKing/Pocopelago/releases"
+    },
+    "Q-Up": {
+      "id": "q_up",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/q_up.londonplugin",
+      "page": "https://github.com/cxve/q-ap-world/releases"
+    },
+    "Quake": {
+      "id": "quake",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/quake.londonplugin",
+      "page": "https://github.com/randomcodegen/ironwail_ap/releases"
+    },
+    "Rabbit and Steel": {
+      "id": "rabbit_and_steel",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/rabbit_and_steel.londonplugin",
+      "page": "https://github.com/tjwombo/RNSArchipelago/releases"
+    },
+    "Resident Evil 4 Remake": {
+      "id": "resident_evil_4_remake",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/resident_evil_4_remake.londonplugin",
+      "page": "https://github.com/LiterallyMetaphorical/RE4R-AP-Wizard/releases"
+    },
+    "Resident Evil 7": {
+      "id": "resident_evil_7",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/resident_evil_7.londonplugin",
+      "page": "https://github.com/ElGrenier/RE7_AP_World/releases"
+    },
+    "Rimworld": {
+      "id": "rimworld",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/rimworld.londonplugin",
+      "page": "https://github.com/PhantomOfAres/ArchipelagoRimworld/releases"
+    },
+    "Riven": {
+      "id": "riven",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/riven.londonplugin",
+      "page": "https://github.com/SerpentAI/Archipelago/releases"
+    },
+    "Rogue Legacy 2": {
+      "id": "rogue_legacy_2",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/rogue_legacy_2.londonplugin",
+      "page": "https://github.com/zaphim12/RL2Archipelago/releases"
+    },
+    "Rune Factory 4 Special": {
+      "id": "rune_factory_4_special",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/rune_factory_4_special.londonplugin",
+      "page": "https://github.com/Happyhappyism/Archipelago/releases"
+    },
+    "Running with Rifles": {
+      "id": "running_with_rifles",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/running_with_rifles.londonplugin",
+      "page": "https://github.com/mjousse72/archipelago_rwr/releases"
+    },
+    "RWBY: Grimm Eclipse": {
+      "id": "rwby_grimm_eclipse",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/rwby_grimm_eclipse.londonplugin",
+      "page": "https://github.com/nepcore/RwbyAP/releases"
+    },
+    "Sayonara Wild Hearts": {
+      "id": "sayonara_wild_hearts",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/sayonara_wild_hearts.londonplugin",
+      "page": "https://github.com/Chainsawkitten/SayonaraWildHeartsAP/releases"
+    },
+    "Scritchy Scratchy": {
+      "id": "scritchy_scratchy",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/scritchy_scratchy.londonplugin",
+      "page": "https://github.com/ksteve35/ScritchyScratchyAP/releases"
+    },
+    "The Settlers: Heritage of Kings": {
+      "id": "the_settlers_heritage_of_kings",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/the_settlers_heritage_of_kings.londonplugin",
+      "page": "https://github.com/ZorkManu/SettlersHeritageOfKingsAPWorld/releases"
+    },
+    "Scorpion Swamp": {
+      "id": "scorpion_swamp",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/scorpion_swamp.londonplugin",
+      "page": "https://github.com/LegendofFantasy/Archipelago/releases"
+    },
+    "SEUM: Speedrunners from Hell": {
+      "id": "seum_speedrunners_from_hell",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/seum_speedrunners_from_hell.londonplugin",
+      "page": "https://github.com/azukaar/SEUM-archipelago/releases"
+    },
+    "Severed Steel": {
+      "id": "severed_steel",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/severed_steel.londonplugin",
+      "page": "https://github.com/SerpentAI/Archipelago/releases"
+    },
+    "Shadow Man Remastered": {
+      "id": "shadow_man_remastered",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/shadow_man_remastered.londonplugin",
+      "page": "https://github.com/bropacman/shadow-man-remastered-ap-world/releases"
+    },
+    "Signalis": {
+      "id": "signalis",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/signalis.londonplugin",
+      "page": "https://github.com/devoidlazarus/SIGNALISArchipelagoRandomizer/releases"
+    },
+    "Silver Daze": {
+      "id": "silver_daze",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/silver_daze.londonplugin",
+      "page": "https://github.com/udime123/Silver-Daze-APWorld/releases"
+    },
+    "Star Trek: Armada": {
+      "id": "star_trek_armada",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/star_trek_armada.londonplugin",
+      "page": "https://github.com/reedwhaley/star-trek-armada-apworld/releases"
+    },
+    "Slime Rancher 2": {
+      "id": "slime_rancher_2",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/slime_rancher_2.londonplugin",
+      "page": "https://github.com/Rhelys/SlimeRancher2-AP/releases"
+    },
+    "Sonic Frontiers": {
+      "id": "sonic_frontiers",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/sonic_frontiers.londonplugin",
+      "page": "https://github.com/OnakuTV/SonicFrontiersAPWorld/releases"
+    },
+    "Spark the Electric Jester 3": {
+      "id": "spark_the_electric_jester_3",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/spark_the_electric_jester_3.londonplugin",
+      "page": "https://github.com/TwinklePillar/Spark3-Archipelago/releases"
+    },
+    "Spirit Island": {
+      "id": "spirit_island",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/spirit_island.londonplugin",
+      "page": "https://github.com/Wouter17/Spirit-Archipelago/releases"
+    },
+    "Splasher": {
+      "id": "splasher",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/splasher.londonplugin",
+      "page": "https://github.com/Frisk202020/Archipelago/releases"
+    },
+    "Star Wars: Episode 1 Racer": {
+      "id": "star_wars_episode_1_racer",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/star_wars_episode_1_racer.londonplugin",
+      "page": "https://github.com/wcolding/SWR_AP_Client/releases"
+    },
+    "Stray": {
+      "id": "stray",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/stray.londonplugin",
+      "page": "https://github.com/Nichologeam/StrayAP/releases"
+    },
+    "Streets of Rogue": {
+      "id": "streets_of_rogue",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/streets_of_rogue.londonplugin",
+      "page": "https://github.com/Jmarcs27/StreetsOfRogueArchipelago/releases"
+    },
+    "Sternly Worded Adventures": {
+      "id": "sternly_worded_adventures",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/sternly_worded_adventures.londonplugin",
+      "page": "https://github.com/ChaoskillerSR/Sternly-Worded-Peninsula/releases"
+    },
+    "Super Chipflake Ü: Quest for the Uncooked Schnitzel": {
+      "id": "super_chipflake_u_quest_for_the_uncooked_schnitzel",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/super_chipflake_u_quest_for_the_uncooked_schnitzel.londonplugin",
+      "page": "https://github.com/Max-G4/Chipflake_AP/releases"
+    },
+    "Super Meat Boy": {
+      "id": "super_meat_boy",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/super_meat_boy.londonplugin",
+      "page": "https://github.com/PixelShake92/Super-Meat-Boy-AP/releases"
+    },
+    "Supraland": {
+      "id": "supraland",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/supraland.londonplugin",
+      "page": "https://github.com/DrNjitram/ArchipelagoSupra/releases"
+    },
+    "Sven Co-op": {
+      "id": "sven_co_op",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/sven_co_op.londonplugin",
+      "page": "https://github.com/barretg/hl1-sven-ap/releases"
+    },
+    "The Talos Principle Reawakened": {
+      "id": "the_talos_principle_reawakened",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/the_talos_principle_reawakened.londonplugin",
+      "page": "https://github.com/johnso48/TalosPrincipleArchipelago/releases"
+    },
+    "Team Fortress 2 (Mann vs Machine)": {
+      "id": "team_fortress_2_mann_vs_machine",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/team_fortress_2_mann_vs_machine.londonplugin",
+      "page": "https://github.com/m-this/tf2-archipelago/releases"
+    },
+    "Terra Nil": {
+      "id": "terra_nil",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/terra_nil.londonplugin",
+      "page": "https://github.com/nepcore/TerraNilAP/releases"
+    },
+    "Totally Accurate Battle Simulator (TABS)": {
+      "id": "totally_accurate_battle_simulator_tabs",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/totally_accurate_battle_simulator_tabs.londonplugin",
+      "page": "https://github.com/duckboycool/TABS-Archipelago/releases"
+    },
+    "Total War: Warhammer III": {
+      "id": "total_war_warhammer_iii",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/total_war_warhammer_iii.londonplugin",
+      "page": "https://github.com/SinthorasRage/Archipelago_TWW3/releases"
+    },
+    "Total War: Warhammer III Alternative": {
+      "id": "total_war_warhammer_iii_alternative",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/total_war_warhammer_iii_alternative.londonplugin",
+      "page": "https://github.com/jordansds/Archipelago_TWW3_Alt/releases"
+    },
+    "Touhou Fuujinroku ~ Mountain of Faith": {
+      "id": "touhou_fuujinroku_mountain_of_faith",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/touhou_fuujinroku_mountain_of_faith.londonplugin",
+      "page": "https://github.com/Nepley/mof-apworld/releases"
+    },
+    "Ty the Tasmanian Tiger 2": {
+      "id": "ty_the_tasmanian_tiger_2",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/ty_the_tasmanian_tiger_2.londonplugin",
+      "page": "https://github.com/FyreDay/Archipelago-TyTheTasmanianTiger2/releases"
+    },
+    "Ty the Tasmanian Tiger 3": {
+      "id": "ty_the_tasmanian_tiger_3",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/ty_the_tasmanian_tiger_3.londonplugin",
+      "page": "https://github.com/xMcacutt-Archipelago/Archipelago-TyTheTasmanianTiger3/releases"
+    },
+    "Ultimate Custom Night": {
+      "id": "ultimate_custom_night",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/ultimate_custom_night.londonplugin",
+      "page": "https://github.com/fewffwa/UCN-AP/releases"
+    },
+    "UNBEATABLE": {
+      "id": "unbeatable",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/unbeatable.londonplugin",
+      "page": "https://github.com/AllPoland/unbeatAP/releases"
+    },
+    "Untitled Goose Game": {
+      "id": "untitled_goose_game",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/untitled_goose_game.londonplugin",
+      "page": "https://github.com/PixelShake92/Untitled-Goose-Game-Archipelago/releases"
+    },
+    "Valheim": {
+      "id": "valheim",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/valheim.londonplugin",
+      "page": "https://github.com/Samupo/ValheimArchipelagoRandomizer/releases"
+    },
+    "Vertical Drop Heroes HD": {
+      "id": "vertical_drop_heroes_hd",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/vertical_drop_heroes_hd.londonplugin",
+      "page": "https://github.com/zane31415/APVerticalDropHeroesHD/releases"
+    },
+    "Viscera Cleanup Details": {
+      "id": "viscera_cleanup_details",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/viscera_cleanup_details.londonplugin",
+      "page": "https://github.com/Kryen112/Viscera-Cleanup-Detail-AP/releases"
+    },
+    "Vision Soft Reset": {
+      "id": "vision_soft_reset",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/vision_soft_reset.londonplugin",
+      "page": "https://github.com/kumquat-ir/Archipelago/releases"
+    },
+    "Voices of the Void": {
+      "id": "voices_of_the_void",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/voices_of_the_void.londonplugin",
+      "page": "https://github.com/Nathan-R-Og/Archipelago/releases"
+    },
+    "VRChat": {
+      "id": "vrchat",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/vrchat.londonplugin",
+      "page": "https://github.com/Nichologeam/VRChat-AP/releases"
+    },
+    "V Rising": {
+      "id": "v_rising",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/v_rising.londonplugin",
+      "page": "https://github.com/dghalfor/V-Rising-APWorld/releases"
+    },
+    "We Love Katamari Reroll": {
+      "id": "we_love_katamari_reroll",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/we_love_katamari_reroll.londonplugin",
+      "page": "https://github.com/sapphisylph/We-Love-Archipelago-Reroll/releases"
+    },
+    "Widget Inc": {
+      "id": "widget_inc",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/widget_inc.londonplugin",
+      "page": "https://github.com/SWCreeperKing/Widgitpelago/releases"
+    },
+    "Witchspring R": {
+      "id": "witchspring_r",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/witchspring_r.londonplugin",
+      "page": "https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases"
+    },
+    "Wynncraft (Minecraft Server)": {
+      "id": "wynncraft_minecraft_server",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/wynncraft_minecraft_server.londonplugin",
+      "page": "https://github.com/EpicPuppy613/Wynncraft-APWorld/releases"
+    },
+    "Yakuza | Like a Dragon Gaiden: The Man Who Erased His Name": {
+      "id": "yakuza_like_a_dragon_gaiden_the_man_who_erased_his_name",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/yakuza_like_a_dragon_gaiden_the_man_who_erased_his_name.londonplugin",
+      "page": "https://github.com/zorasknight/YakLaDGaiRando/releases"
+    },
+    "Yarimono": {
+      "id": "yarimono",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/yarimono.londonplugin",
+      "page": "https://github.com/msent0/Yarimono-Archipelago/releases"
+    },
+    "YAYARG (YARG Custom Songs)": {
+      "id": "yayarg_yarg_custom_songs",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/yayarg_yarg_custom_songs.londonplugin",
+      "page": "https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases"
+    },
+    "You Have to Win the Game": {
+      "id": "you_have_to_win_the_game",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/you_have_to_win_the_game.londonplugin",
+      "page": "https://github.com/blitzashspear/ap-yhtwtg/releases"
+    },
+    "Ys I Chronicles": {
+      "id": "ys_i_chronicles",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/ys_i_chronicles.londonplugin",
+      "page": "https://github.com/Glomels/ys-archipelago/releases"
+    },
+    "Ys Origin": {
+      "id": "ys_origin",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/ys_origin.londonplugin",
+      "page": "https://github.com/4rtefakt/ys-origin-archipelago/releases"
+    },
+    "Yu-Gi-Oh! Legacy of the Duelist: Link Evolution": {
+      "id": "yu_gi_oh_legacy_of_the_duelist_link_evolution",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/yu_gi_oh_legacy_of_the_duelist_link_evolution.londonplugin",
+      "page": "https://github.com/HillbillyDroid/YGO-LotD-LE-APWorld/releases"
+    },
+    "Zuma Deluxe": {
+      "id": "zuma_deluxe",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/zuma_deluxe.londonplugin",
+      "page": "https://github.com/Movido51/Archipelago/releases"
+    },
+    "Momodora 4 - Reverie Under the Moonlight": {
+      "id": "momodora_4_reverie_under_the_moonlight",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/momodora_4_reverie_under_the_moonlight.londonplugin",
+      "page": "https://github.com/ordinary-magic/MomodoraArchipelagoRandomizer/releases"
+    },
+    "A Robot Named Fight!": {
+      "id": "a_robot_named_fight",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/a_robot_named_fight.londonplugin",
+      "page": "https://github.com/BetaSprite/ARNFArchipelago/releases"
+    },
+    "Seedling": {
+      "id": "seedling",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/seedling.londonplugin",
+      "page": "https://github.com/madisonsilver/SeedlingArchipelagoWorld/releases"
     }
   }
 }
