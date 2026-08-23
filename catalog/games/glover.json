@@ -29,9 +29,12 @@
   },
   "client": {
     "name": "Glover Client",
-    "protocol": "unknown",
+    "protocol": "bizhawk",
     "lua": null,
-    "_source": "setup guide names the world's own \"Glover Client\", which SCHEMA rule 1 says answers nothing. Rule 2 fails: no RAM map Plugins/Scripts/games/glover.lua exists. The guide's use of BizHawk is about the EMULATOR, and the schema names \"what another game on the same console does\" as explicitly not a source, so the protocol stays unestablished."
+    "_source": "setup guide names the world's own \"Glover Client\", which SCHEMA rule 1 says answers nothing. Rule 2 fails: no RAM map Plugins/Scripts/games/glover.lua exists. The guide's use of BizHawk is about the EMULATOR, and the schema names \"what another game on the same console does\" as explicitly not a source, so the protocol stays unestablished.",
+    "_protocol_source": "worlds/glover/GloverClient.py on branch dev loads connector_glover_bizhawk.lua from the world's own assets and its connection messages name that script by filename. ⚠ The world is NOT on the repository's default branch (main is an untouched Archipelago fork) -- it lives on dev, beta-dev and pull-request.",
+    "kind": "world",
+    "_kind_source": "worlds/glover/__init__.py line 29 on branch dev: components.append(Component(\"Glover Client\", func=run_client, component_type=Type.CLIENT)), and GloverClient.py ships connector_glover_bizhawk.lua in the world's own assets. The Lua belongs to them, not to us."
   },
   "apworld": {
     "bundled": false,

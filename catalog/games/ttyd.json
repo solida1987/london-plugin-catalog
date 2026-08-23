@@ -29,10 +29,11 @@
     "_source": "setup guide: \"Dolphin Emulator\". No version is stated."
   },
   "client": {
-    "name": null,
-    "protocol": "unknown",
+    "name": "TTYD Client",
+    "protocol": "dolphin",
     "lua": null,
-    "_source": "The guide names no single client executable -- it drives the ArchipelagoLauncher. SCHEMA rule 2 fails: no RAM map Plugins/Scripts/games/ttyd.lua exists, and no installed bridge speaks Dolphin. Protocol not established."
+    "_source": "The guide names no single client executable -- it drives the ArchipelagoLauncher. SCHEMA rule 2 fails: no RAM map Plugins/Scripts/games/ttyd.lua exists, and no installed bridge speaks Dolphin. Protocol not established.",
+    "_protocol_source": "TTYDClient.py and ttyd_runtime.py both use dolphin_memory_engine."
   },
   "apworld": {
     "bundled": false,

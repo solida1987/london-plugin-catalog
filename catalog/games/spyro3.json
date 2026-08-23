@@ -28,10 +28,11 @@
     "_source": "setup guide: \"Duckstation\". No version is stated."
   },
   "client": {
-    "name": "S3AP.Desktop.exe, the Spyro 3 client",
-    "protocol": "unknown",
+    "name": "Spyro 3 Client",
+    "protocol": "duckstation",
     "lua": null,
-    "_source": "setup guide names the world's own \"S3AP.Desktop.exe, the Spyro 3 client\" -- SCHEMA rule 1 answers nothing for a world with its own client. Rule 2 fails: no RAM map Plugins/Scripts/games/spyro3.lua, and no installed bridge speaks DuckStation."
+    "_source": "setup guide names the world's own \"S3AP.Desktop.exe, the Spyro 3 client\" -- SCHEMA rule 1 answers nothing for a world with its own client. Rule 2 fails: no RAM map Plugins/Scripts/games/spyro3.lua, and no installed bridge speaks DuckStation.",
+    "_protocol_source": "the world's README lists Duckstation as required software and tells the player to set Execution Mode to Interpreter in its settings."
   },
   "apworld": {
     "bundled": false,

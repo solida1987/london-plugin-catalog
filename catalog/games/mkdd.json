@@ -30,9 +30,10 @@
   },
   "client": {
     "name": "Mario Kart Double Dash Client",
-    "protocol": "unknown",
+    "protocol": "dolphin",
     "lua": null,
-    "_source": "setup guide: \"Mario Kart Double Dash Client from Archipelago Launcher\" -- a client of the world's own, which SCHEMA rule 1 says answers nothing. Rule 2 fails: no RAM map Plugins/Scripts/games/mkdd.lua, and no installed bridge speaks Dolphin."
+    "_source": "setup guide: \"Mario Kart Double Dash Client from Archipelago Launcher\" -- a client of the world's own, which SCHEMA rule 1 says answers nothing. Rule 2 fails: no RAM map Plugins/Scripts/games/mkdd.lua, and no installed bridge speaks Dolphin.",
+    "_protocol_source": "game_state.py imports dolphin_memory_engine; command_processor.py drives Dolphin directly."
   },
   "apworld": {
     "bundled": false,

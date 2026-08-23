@@ -1,6 +1,6 @@
 {
   "note": "Which London plugin covers which Archipelago game. Addresses and metadata only.",
-  "count": 566,
+  "count": 568,
   "games": {
     "Adventure": {
       "id": "adventure",
@@ -132,6 +132,12 @@
       "id": "fire_emblem_sacred_stones",
       "platform": "GBA",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/fire_emblem_sacred_stones.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Glover": {
+      "id": "glover",
+      "platform": "N64",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/n64/glover.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Golden Sun The Lost Age": {
@@ -366,6 +372,12 @@
       "id": "tloz_oos",
       "platform": "GBC",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gb-gbc/tloz_oos.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Tomba!": {
+      "id": "tomba",
+      "platform": "PSX",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ps1/tomba.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Wario Land 3": {

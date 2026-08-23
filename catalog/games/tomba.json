@@ -28,10 +28,13 @@
     "_source": "The guide offers two and commits to neither: \"RetroArch from: [RetroArch] 1.10.3 or newer\" or \"BizHawk from: [BizHawk] latest\". Choosing between them would be our judgement, so the field stays null; the 1.10.3 floor belongs to the RetroArch route only."
   },
   "client": {
-    "name": "the Tomba! client",
-    "protocol": "unknown",
+    "name": "Tomba! Client",
+    "protocol": "bizhawk",
     "lua": null,
-    "_source": "Neither of SCHEMA's two rules answers this one. Rule 1: the world ships a standalone client -- worlds/tomba/client/client.py has `class TombaContext(CommonContext)` (read 2026-08-23), not BizHawkClient and not SNIClient, so it says nothing about which bridge could carry it. Rule 2: no RAM map Plugins/Scripts/games/tomba.lua exists. The guide's mention of BizHawk is about the emulator, and catalog/SCHEMA.md names \"what another game on the same console does\" as explicitly not a source."
+    "_source": "Neither of SCHEMA's two rules answers this one. Rule 1: the world ships a standalone client -- worlds/tomba/client/client.py has `class TombaContext(CommonContext)` (read 2026-08-23), not BizHawkClient and not SNIClient, so it says nothing about which bridge could carry it. Rule 2: no RAM map Plugins/Scripts/games/tomba.lua exists. The guide's mention of BizHawk is about the emulator, and catalog/SCHEMA.md names \"what another game on the same console does\" as explicitly not a source.",
+    "_protocol_source": "worlds/tomba/client/emulators/bizhawk.py imports BizHawkContext, connect, read, write from worlds._bizhawk and defines class BizHawk(Emulator) with ID = options.Emulator.option_bizhawk. RetroArch is offered as an alternative in the same folder; BizHawk is the one we have a bridge for.",
+    "kind": "world",
+    "_kind_source": "worlds/tomba/components.py: components.append(Component(f\"{constants.GAME} Client\", func=run_client, game_name=constants.GAME, component_type=Type.CLIENT)) -- and worlds/tomba/client/ carries its own BizHawk and RetroArch drivers. The world owns the whole connector, so London must not load a Lua map or read memory; it starts the emulator and names the client."
   },
   "apworld": {
     "bundled": false,

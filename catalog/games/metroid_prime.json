@@ -29,9 +29,10 @@
   },
   "client": {
     "name": "Metroid Prime Client",
-    "protocol": "unknown",
+    "protocol": "dolphin",
     "lua": null,
-    "_source": "setup guide names a game-specific \"Metroid Prime Client\". SCHEMA rule 1 gives no answer for a world that ships its own client, and rule 2 fails: no RAM map Plugins/Scripts/games/metroid_prime.lua exists. No installed bridge speaks Dolphin (extensions/ = bizhawk, sni, pine, native_soh), so the protocol stays unestablished."
+    "_source": "setup guide names a game-specific \"Metroid Prime Client\". SCHEMA rule 1 gives no answer for a world that ships its own client, and rule 2 fails: no RAM map Plugins/Scripts/games/metroid_prime.lua exists. No installed bridge speaks Dolphin (extensions/ = bizhawk, sni, pine, native_soh), so the protocol stays unestablished.",
+    "_protocol_source": "src/DolphinClient.py, and the world requires dolphin_memory_engine."
   },
   "apworld": {
     "bundled": false,

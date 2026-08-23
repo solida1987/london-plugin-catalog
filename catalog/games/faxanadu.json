@@ -27,10 +27,11 @@
     "_source": "Not stated in the material we read. The group floor in catalog/GROUP_NES.md covers it."
   },
   "client": {
-    "name": "not established",
-    "protocol": "unknown",
+    "name": "Daxanadu",
+    "protocol": "daxanadu",
     "lua": null,
-    "_source": "world source: ArchipelagoMW/Archipelago worlds/faxanadu (upstream), read from the world's own code -- read from the world's client class"
+    "_source": "world source: ArchipelagoMW/Archipelago worlds/faxanadu (upstream), read from the world's own code -- read from the world's client class",
+    "_protocol_source": "the world's setup guide requires Daxanadu -- a standalone reimplementation of the NES engine with Archipelago built in. The player enters server, slot and password in the game's own ARCHIPELAGO menu; there is no emulator and no external client. Same shape as Ship of Harkinian, which we already carry as the soh_runner extension."
   },
   "apworld": {
     "bundled": true,

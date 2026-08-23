@@ -29,9 +29,10 @@
   },
   "client": {
     "name": "Skyward Sword Client",
-    "protocol": "unknown",
+    "protocol": "dolphin",
     "lua": null,
-    "_source": "setup guide names the world's own \"Skyward Sword Client\", which SCHEMA rule 1 says answers nothing. Rule 2 fails: no RAM map Plugins/Scripts/games/skyward_sword.lua, and no installed bridge speaks Dolphin."
+    "_source": "setup guide names the world's own \"Skyward Sword Client\", which SCHEMA rule 1 says answers nothing. Rule 2 fails: no RAM map Plugins/Scripts/games/skyward_sword.lua, and no installed bridge speaks Dolphin.",
+    "_protocol_source": "SSClient.py imports dolphin_memory_engine and talks to Dolphin."
   },
   "apworld": {
     "bundled": false,
