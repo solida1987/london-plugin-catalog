@@ -1,383 +1,395 @@
 {
-  "_": "What the launcher does with each age-flagged game. Two decisions only: 'excluded' never appears, 'age_gated' appears once the player has confirmed they are 18 or older. A game absent from this file stays hidden until somebody decides, with a source.",
-  "_rule": "catalog/SCHEMA.md — no field from memory or judgement. Every decision carries the source it rests on.",
-  "_excluded_policy": "Games whose sexual content IS the product. Not games that are merely violent, dark or unrated — those are gated, not banned.",
-  "decisions": {
-    "7daystodie": {
-      "name": "7 Days to Die",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 251570 (Frequent Violence or Gore, General Mature Content)",
-      "_steam_note": "Explicit Violence\r\nShock and/or Horror Content\r\nDrug Use"
-    },
-    "atlyss": {
-      "name": "Atlyss",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 2768430 (Some Nudity or Sexual Content, General Mature Content)",
-      "_steam_note": "The game contains sexualized clothing and character designs (however, nothing explicit), blood and cartoon violence. Dialog  may contain occasional swearing and mild sexual innuendo. In-game chat is included in online play, which can provide varied experiences."
-    },
-    "baldursgate3": {
-      "name": "Baldur's Gate 3",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 1086940 (Some Nudity or Sexual Content, Frequent Violence or Gore, General Mature Content)",
-      "_steam_note": "This Game may contain content not appropriate for all ages. It contains General Mature Content, and may include Nudity or Sexual Content."
-    },
-    "baldursgate3trialsoftav": {
-      "name": "Baldur's Gate 3 - Trials of Tav",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 1086940 (Some Nudity or Sexual Content, Frequent Violence or Gore, General Mature Content)",
-      "_steam_note": "This Game may contain content not appropriate for all ages. It contains General Mature Content, and may include Nudity or Sexual Content."
-    },
-    "bayonetta": {
-      "name": "Bayonetta",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 460790 (Some Nudity or Sexual Content, Frequent Violence or Gore, General Mature Content)",
-      "_steam_note": "Blood and Gore,\r\nIntense Violence,\r\nPartial Nudity,\r\nStrong Language, \r\nSuggestive Themes"
-    },
-    "borderlands2": {
-      "name": "Borderlands 2",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 49520 (none)"
-    },
-    "borderlandsthepresequel": {
-      "name": "Borderlands The Pre-Sequel",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 261640 (none)"
-    },
-    "callofdutyblackops3zombies": {
-      "name": "Call of Duty: Black Ops 3 - Zombies",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 1938090 (Frequent Violence or Gore, General Mature Content)"
-    },
-    "casualtiesunknownscavprototypedemo": {
-      "name": "Casualties: Unknown (Scav Prototype Demo)",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 4576490 (General Mature Content)",
-      "_steam_note": "This game contains scenes of violence, gore and depictions of depression and self harm."
-    },
-    "clairobscurexpedition33": {
-      "name": "Clair Obscur Expedition 33",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 1903340 (Some Nudity or Sexual Content, Frequent Violence or Gore, General Mature Content)",
-      "_steam_note": "The game features depictions of violence, blood and suicide, and imagery that some players may find disturbing. The game contains revealing outfits and light/stylistic partial nudity."
-    },
-    "controlultimateedition": {
-      "name": "Control (Ultimate Edition)",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 870780 (Frequent Violence or Gore, General Mature Content)",
-      "_steam_note": "Blood\r\nViolence\r\nStrong Language"
-    },
-    "cowtasticcafe": {
-      "name": "Cowtastic Cafe",
-      "decision": "excluded",
-      "reason": "Adult title; the sheet's own Disclosures column rates it Major, its strongest content warning.",
-      "_source": "the game's own storefront listing (Steam / itch.io) and publisher description, checked 22 Aug 2026"
-    },
-    "cyberpunk2077": {
-      "name": "Cyberpunk 2077",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 1091500 (Some Nudity or Sexual Content, Frequent Violence or Gore, General Mature Content)",
-      "_steam_note": "Cyberpunk 2077 contains strong language, intense violence, blood and gore, as well as nudity and sexual material."
-    },
-    "deadrisingdeluxeremastered": {
-      "name": "Dead Rising Deluxe Remastered",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 2527390 (Frequent Violence or Gore, General Mature Content)",
-      "_steam_note": "This Game may contain content not appropriate for all ages, or may not be appropriate for viewing at work: Frequent Violence or Gore, General Mature Content."
-    },
-    "divinityoriginalsin2": {
-      "name": "Divinity: Original Sin 2",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 435150 (General Mature Content)",
-      "_steam_note": "This is a role-playing game in which players assume the role of a hero on a quest to stop an evil called the Void. From a 3/4 overhead perspective, players explore the fantasy world of Rivellon, interact with various characters, and engage in turn-based combat against human enemies and fantastical creatures (e.g., demons, skeletons, giant insects). \r\n\r\nCharacters use weapon strikes and magic attacks to defeat enemies in combat; battles are accompanied by blood-splatter effects that stain the surrounding environment. Some areas depict large pools of blood amid human corpses and dismembered limbs. \r\n\r\nThe game contains some sexual material: the central character can employ the services of a prostitute at a pub—no sexual activity is depicted, though the dialogue/text makes sexual references (e.g., “Your hand slides all the way up until you reach her, and you make a soft circling motion with your thumb”; “Slowly she undresses you then takes you to bed\"; \"Your world explodes in bliss.\"). The word “sh*t” is heard in dialogue."
-    },
-    "doometernal": {
-      "name": "DOOM Eternal",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 782330 (Frequent Violence or Gore, General Mature Content)",
-      "_steam_note": "Similar to DOOM from 2016, DOOM Eternal will contain Blood and Gore and Intense Violence."
-    },
-    "flipwitch": {
-      "name": "Flipwitch",
-      "decision": "excluded",
-      "reason": "Steam classifies this as Adult Only Sexual Content",
-      "_source": "Steam content descriptors for appid 4492740 (Some Nudity or Sexual Content, Adult Only Sexual Content, Frequent Nudity or Sexual Content, General Mature Content)",
-      "_steam_note": "-The player character is capable of various forms of consensual sex with NPC characters in game.\r\n- Sexually explicit themes and lewd language throughout the entire game (Bosses, dialog, idle/character animations, costumes, general visuals, treasures, items, quests)\r\n- Exaggerated eroticism\r\n- Fantasy themed animated sexual encounters\r\n- Full frontal male and female nudity"
-    },
-    "garrysmodapadventure": {
-      "name": "Garry's Mod (apAdventure)",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 4000 (none)"
-    },
-    "grandtheftautoiii": {
-      "name": "Grand Theft Auto III",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 1546970 (Frequent Violence or Gore, General Mature Content)"
-    },
-    "grandtheftautosanandreas": {
-      "name": "Grand Theft Auto: San Andreas",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 1547000 (Frequent Violence or Gore, General Mature Content)"
-    },
-    "hitmanworldofassassination": {
-      "name": "HITMAN: World of Assassination",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 1659040 (Frequent Violence or Gore, General Mature Content)",
-      "_steam_note": "This Game may contain content not appropriate for all ages, or may not be appropriate for viewing at work. This game contains Frequent Violence or Gore, General Mature Content, Drug Use, illegal substances use. There are no sexual acts, but there are some sexual themes where people appear half-naked. Please be cautious as this game also includes acts of suicide."
-    },
-    "huniecamstudio": {
-      "name": "Huniecam Studio",
-      "decision": "excluded",
-      "reason": "Steam flags Frequent Nudity or Sexual Content",
-      "_source": "Steam content descriptors for appid 426000 (Some Nudity or Sexual Content, Frequent Nudity or Sexual Content, General Mature Content)",
-      "_steam_note": "This game contains adult content including frequent nudity, sexual dialog, sexual scenes/scenarios, references to drug/alcohol use, and anime boobies."
-    },
-    "huniepop": {
-      "name": "Huniepop",
-      "decision": "excluded",
-      "reason": "Steam classifies this as Adult Only Sexual Content",
-      "_source": "Steam content descriptors for appid 339800 (Some Nudity or Sexual Content, Adult Only Sexual Content, General Mature Content, Frequent Nudity or Sexual Content)",
-      "_steam_note": "This game contains adult content including frequent nudity, sexual dialog, sexual scenes/scenarios, references to drug/alcohol use, and anime boobies."
-    },
-    "huniepop2doubledate": {
-      "name": "Huniepop 2: Double Date",
-      "decision": "excluded",
-      "reason": "Steam classifies this as Adult Only Sexual Content",
-      "_source": "Steam content descriptors for appid 930210 (Some Nudity or Sexual Content, Adult Only Sexual Content, Frequent Nudity or Sexual Content, General Mature Content)",
-      "_steam_note": "This game contains adult content including frequent nudity, sexual dialog, sexual scenes/scenarios, references to drug/alcohol use, and anime boobies."
-    },
-    "kindergarten2": {
-      "name": "Kindergarten 2",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 1067850 (Frequent Violence or Gore, General Mature Content)",
-      "_steam_note": "Contains depictions of gore and violence directed at children."
-    },
-    "left4dead2": {
-      "name": "Left 4 Dead 2",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 550 (Frequent Violence or Gore, General Mature Content)",
-      "_steam_note": "Left 4 Dead 2 features intense violence, blood and gore (including decapitation or dismemberment of zombie-like creatures) and some strong language."
-    },
-    "libraryofbabel": {
-      "name": "Library of Babel",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 4286820 (none)"
-    },
-    "libraryofruina": {
-      "name": "Library of Ruina",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 1256670 (none)"
-    },
-    "lobotomycorporation": {
-      "name": "Lobotomy Corporation",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 896000 (none)"
-    },
-    "madeinabyssbsfd": {
-      "name": "Made in Abyss BSFD",
-      "decision": "age_gated",
-      "reason": "ESRB M (17+) for Blood and Gore, Violence; PEGI 18. No sexual content descriptor.",
-      "_source": "ESRB rating page for Made in Abyss: Binary Star Falling into Darkness (esrb.org/ratings/38296), checked 22 Aug 2026. Not on Steam; released for PS4 and Switch."
-    },
-    "metalgearsolid": {
-      "name": "Metal Gear Solid",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 3859630 (Frequent Violence or Gore, General Mature Content)"
-    },
-    "ohsohero": {
-      "name": "Oh So Hero",
-      "decision": "excluded",
-      "reason": "Steam classifies this as Adult Only Sexual Content",
-      "_source": "Steam content descriptors for appid 2086050 (Some Nudity or Sexual Content, Adult Only Sexual Content, Frequent Nudity or Sexual Content, General Mature Content)",
-      "_steam_note": "Oh So Hero! features cartoon violence, full frontal nudity, and explicit sexual conduct between animated characters. The game features a tournament of fighters who also engage in explicit sexual acts. This includes seduction, brawling, and hardcore male/male sex acts. All sex acts between participants are consensual, but may be sensitive for some viewers in conjunction with the fighting."
-    },
-    "pathofexile": {
-      "name": "Path of Exile",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 238960 (Some Nudity or Sexual Content, Frequent Violence or Gore, General Mature Content)",
-      "_steam_note": "HORROR SCENES\r\nVIOLENCE\r\nNUDITY"
-    },
-    "payday2criminaldawn": {
-      "name": "PAYDAY 2: Criminal Dawn",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 218620 (Frequent Violence or Gore, General Mature Content)",
-      "_steam_note": "PAYDAY 2 is a bank robbing game that glorifies clearly villanous acts. It contains high levels of violence, often against police officers or other law enforcement agencies. \r\n\r\nIt does not go out of its way to be gory or gruesome, but can appear that way in chance situations."
-    },
-    "perfectdark": {
-      "name": "Perfect Dark",
-      "decision": "age_gated",
-      "reason": "ESRB M — violence",
-      "_source": "the title's public age rating (ESRB/PEGI) or, where it predates ratings, the sheet's own Unrated flag"
-    },
-    "quake": {
-      "name": "Quake",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 2310 (Frequent Violence or Gore, General Mature Content)",
-      "_steam_note": "This game contains frequent violence, blood, and gore. Players use a variety of weapons to fight monsters and hostile enemies. Combat can result in blood effects and enemies exploding into gory remains. The game also contains horror-themed imagery, including grotesque creatures and disturbing environments."
-    },
-    "residentevil2remake": {
-      "name": "Resident Evil 2 Remake",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 883710 (Frequent Violence or Gore, General Mature Content)"
-    },
-    "residentevil3remake": {
-      "name": "Resident Evil 3 Remake",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 952060 (Frequent Violence or Gore, General Mature Content)",
-      "_steam_note": "WARNING: This game contains strong language and extreme violence."
-    },
-    "residentevil4remake": {
-      "name": "Resident Evil 4 Remake",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 2050650 (Frequent Violence or Gore, General Mature Content)",
-      "_steam_note": "This Game may contain content not appropriate for all ages, or may not be appropriate for viewing at work: Frequent Violence or Gore, General Mature Content"
-    },
-    "residentevil7": {
-      "name": "Resident Evil 7",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 418370 (Some Nudity or Sexual Content, Frequent Violence or Gore, General Mature Content)",
-      "_steam_note": "This Game may contain content not appropriate for all ages, or may not be appropriate for viewing at work: Frequent Violence or Gore, General Mature Content"
-    },
-    "returnoftheobradinn": {
-      "name": "Return of the Obra Dinn",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 653530 (Some Nudity or Sexual Content, Frequent Violence or Gore, General Mature Content)",
-      "_steam_note": "Passively depicts death and violence in freeze-frame 3D scenes. Contains mild nudity."
-    },
-    "rimworld": {
-      "name": "Rimworld",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 294100 (none)"
-    },
-    "schedulei": {
-      "name": "Schedule I",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 3164500 (General Mature Content)",
-      "_steam_note": "This game depicts the simplified production, distribution and sale of illegal drugs. It also contains non-realistic violence in the form of melee and firearm combat."
-    },
-    "sekiroshadowsdietwice": {
-      "name": "Sekiro: Shadows Die Twice",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 814380 (Frequent Violence or Gore, General Mature Content)"
-    },
-    "spiritvalley": {
-      "name": "Spirit Valley",
-      "decision": "excluded",
-      "reason": "Steam classifies this as Adult Only Sexual Content",
-      "_source": "Steam content descriptors for appid 2649480 (Some Nudity or Sexual Content, Adult Only Sexual Content, Frequent Nudity or Sexual Content, General Mature Content)",
-      "_steam_note": "All characters depicted in this game are adults. The game contains female and male nudity, violence, non-consensual sex and pornographics scenes between fantasy characters and monsters.\r\n\r\nThis game contains highly explicit sexual content that is intended for adults only."
-    },
-    "theelderscrollsivoblivionremastered": {
-      "name": "The Elder Scrolls IV: Oblivion Remastered",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 2623190 (Frequent Violence or Gore, General Mature Content)",
-      "_steam_note": "Blood and Gore\r\nSexual Themes\r\nViolence"
-    },
-    "theelderscrollsonline": {
-      "name": "The Elder Scrolls Online",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 306130 (Some Nudity or Sexual Content, Frequent Violence or Gore, General Mature Content)",
-      "_steam_note": "Blood and gore\r\nSexual themes\r\nUse of alcohol\r\nViolence"
-    },
-    "theguardianlegend": {
-      "name": "The Guardian Legend",
-      "decision": "age_gated",
-      "reason": "NES title that predates content ratings; flagged Unrated, not adult",
-      "_source": "the title's public age rating (ESRB/PEGI) or, where it predates ratings, the sheet's own Unrated flag"
-    },
-    "touhoueiyashouimperishablenight": {
-      "name": "Touhou Eiyashou ~ Imperishable Night",
-      "decision": "age_gated",
-      "reason": "doujin shooter, unrated",
-      "_source": "the title's public age rating (ESRB/PEGI) or, where it predates ratings, the sheet's own Unrated flag"
-    },
-    "touhoukoumakyoutheembodimentofscarletdevil": {
-      "name": "Touhou Koumakyou: The Embodiment of Scarlet Devil",
-      "decision": "age_gated",
-      "reason": "doujin shooter, unrated",
-      "_source": "the title's public age rating (ESRB/PEGI) or, where it predates ratings, the sheet's own Unrated flag"
-    },
-    "touhouyouyoumuperfectcherryblossom": {
-      "name": "Touhou Youyoumu ~ Perfect Cherry Blossom",
-      "decision": "age_gated",
-      "reason": "doujin shooter, unrated",
-      "_source": "the title's public age rating (ESRB/PEGI) or, where it predates ratings, the sheet's own Unrated flag"
-    },
-    "visceracleanupdetails": {
-      "name": "Viscera Cleanup Details",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 246900 (Frequent Violence or Gore, General Mature Content)",
-      "_steam_note": "Game is intended as a parody of violent video games, but as such includes frequent scenes of gore, albeit cartoonish in intention and sometimes in nature; Dismembered bodies, decapitated heads, blood impacts, loose organs, blood pools, blood graffiti, etc.\r\n\r\nFeatures crude language and cursing, and occasional mild innuendo in written form, as well as occasional reference to dark topics such as death, death threats, threats of violence, etc."
-    },
-    "warframe": {
-      "name": "Warframe",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 230410 (Frequent Violence or Gore, General Mature Content)"
-    },
-    "yakuzalikeadragongaidenthemanwhoerasedhisname": {
-      "name": "Yakuza | Like a Dragon Gaiden: The Man Who Erased His Name",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 1235140 (Some Nudity or Sexual Content, Frequent Violence or Gore, General Mature Content)",
-      "_steam_note": "This Game may contain content not appropriate for all ages, or may not be appropriate for viewing at work: Blood, Intense Violence,  Partial Nudity, Sexual Themes, Strong Language, and Use of Alcohol."
-    },
-    "yarimono": {
-      "name": "Yarimono",
-      "decision": "age_gated",
-      "reason": "mature content, but not sexual content by Steam's own descriptors",
-      "_source": "Steam content descriptors for appid 2696050 (Some Nudity or Sexual Content, General Mature Content)",
-      "_steam_note": "The game contains virtual and unrealistic combat violence and slightly revealing clothing."
-    },
-    "factoriospaceagewithoutspace": {
-      "name": "Factorio Space Age Without Space",
-      "decision": "stable",
-      "reason": "no sexual content; combat against insectoid enemies only",
-      "_source": "the game is Factorio (Steam appid 427520), rated PEGI 7 Mild Violence and ESRB TEEN for Blood and Violence -- the descriptors come from alien combat. 'Space Age Without Space' is a world configuration for that same game, not a separate title."
-    },
-    "smz3": {
-      "name": "SMZ3",
-      "decision": "stable",
-      "reason": "no sexual content; the two source games are both ESRB E",
-      "_source": "SMZ3 is a combined randomiser of Super Metroid and The Legend of Zelda: A Link to the Past, both ESRB E. It has no store page of its own because it is a ROM hack, which is why the nothing-findable rule matched it -- absence of a shop listing is not absence of a known game."
-    }
+ "_": "What the launcher does with each age-flagged game. Two decisions only: 'excluded' never appears, 'age_gated' appears once the player has confirmed they are 18 or older. A game absent from this file stays hidden until somebody decides, with a source.",
+ "_rule": "catalog/SCHEMA.md — no field from memory or judgement. Every decision carries the source it rests on.",
+ "_excluded_policy": "Games whose sexual content IS the product. Not games that are merely violent, dark or unrated — those are gated, not banned.",
+ "decisions": {
+  "7daystodie": {
+   "name": "7 Days to Die",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 251570 (Frequent Violence or Gore, General Mature Content)",
+   "_steam_note": "Explicit Violence\r\nShock and/or Horror Content\r\nDrug Use"
+  },
+  "atlyss": {
+   "name": "Atlyss",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 2768430 (Some Nudity or Sexual Content, General Mature Content)",
+   "_steam_note": "The game contains sexualized clothing and character designs (however, nothing explicit), blood and cartoon violence. Dialog  may contain occasional swearing and mild sexual innuendo. In-game chat is included in online play, which can provide varied experiences."
+  },
+  "baldursgate3": {
+   "name": "Baldur's Gate 3",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 1086940 (Some Nudity or Sexual Content, Frequent Violence or Gore, General Mature Content)",
+   "_steam_note": "This Game may contain content not appropriate for all ages. It contains General Mature Content, and may include Nudity or Sexual Content."
+  },
+  "baldursgate3trialsoftav": {
+   "name": "Baldur's Gate 3 - Trials of Tav",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 1086940 (Some Nudity or Sexual Content, Frequent Violence or Gore, General Mature Content)",
+   "_steam_note": "This Game may contain content not appropriate for all ages. It contains General Mature Content, and may include Nudity or Sexual Content."
+  },
+  "bayonetta": {
+   "name": "Bayonetta",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 460790 (Some Nudity or Sexual Content, Frequent Violence or Gore, General Mature Content)",
+   "_steam_note": "Blood and Gore,\r\nIntense Violence,\r\nPartial Nudity,\r\nStrong Language, \r\nSuggestive Themes"
+  },
+  "borderlands2": {
+   "name": "Borderlands 2",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 49520 (none)"
+  },
+  "borderlandsthepresequel": {
+   "name": "Borderlands The Pre-Sequel",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 261640 (none)"
+  },
+  "callofdutyblackops3zombies": {
+   "name": "Call of Duty: Black Ops 3 - Zombies",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 1938090 (Frequent Violence or Gore, General Mature Content)"
+  },
+  "casualtiesunknownscavprototypedemo": {
+   "name": "Casualties: Unknown (Scav Prototype Demo)",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 4576490 (General Mature Content)",
+   "_steam_note": "This game contains scenes of violence, gore and depictions of depression and self harm."
+  },
+  "clairobscurexpedition33": {
+   "name": "Clair Obscur Expedition 33",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 1903340 (Some Nudity or Sexual Content, Frequent Violence or Gore, General Mature Content)",
+   "_steam_note": "The game features depictions of violence, blood and suicide, and imagery that some players may find disturbing. The game contains revealing outfits and light/stylistic partial nudity."
+  },
+  "controlultimateedition": {
+   "name": "Control (Ultimate Edition)",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 870780 (Frequent Violence or Gore, General Mature Content)",
+   "_steam_note": "Blood\r\nViolence\r\nStrong Language"
+  },
+  "cowtasticcafe": {
+   "name": "Cowtastic Cafe",
+   "decision": "excluded",
+   "reason": "Adult title; the sheet's own Disclosures column rates it Major, its strongest content warning.",
+   "_source": "the game's own storefront listing (Steam / itch.io) and publisher description, checked 22 Aug 2026"
+  },
+  "cyberpunk2077": {
+   "name": "Cyberpunk 2077",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 1091500 (Some Nudity or Sexual Content, Frequent Violence or Gore, General Mature Content)",
+   "_steam_note": "Cyberpunk 2077 contains strong language, intense violence, blood and gore, as well as nudity and sexual material."
+  },
+  "deadrisingdeluxeremastered": {
+   "name": "Dead Rising Deluxe Remastered",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 2527390 (Frequent Violence or Gore, General Mature Content)",
+   "_steam_note": "This Game may contain content not appropriate for all ages, or may not be appropriate for viewing at work: Frequent Violence or Gore, General Mature Content."
+  },
+  "divinityoriginalsin2": {
+   "name": "Divinity: Original Sin 2",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 435150 (General Mature Content)",
+   "_steam_note": "This is a role-playing game in which players assume the role of a hero on a quest to stop an evil called the Void. From a 3/4 overhead perspective, players explore the fantasy world of Rivellon, interact with various characters, and engage in turn-based combat against human enemies and fantastical creatures (e.g., demons, skeletons, giant insects). \r\n\r\nCharacters use weapon strikes and magic attacks to defeat enemies in combat; battles are accompanied by blood-splatter effects that stain the surrounding environment. Some areas depict large pools of blood amid human corpses and dismembered limbs. \r\n\r\nThe game contains some sexual material: the central character can employ the services of a prostitute at a pub—no sexual activity is depicted, though the dialogue/text makes sexual references (e.g., “Your hand slides all the way up until you reach her, and you make a soft circling motion with your thumb”; “Slowly she undresses you then takes you to bed\"; \"Your world explodes in bliss.\"). The word “sh*t” is heard in dialogue."
+  },
+  "doometernal": {
+   "name": "DOOM Eternal",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 782330 (Frequent Violence or Gore, General Mature Content)",
+   "_steam_note": "Similar to DOOM from 2016, DOOM Eternal will contain Blood and Gore and Intense Violence."
+  },
+  "flipwitch": {
+   "name": "Flipwitch",
+   "decision": "excluded",
+   "reason": "Steam classifies this as Adult Only Sexual Content",
+   "_source": "Steam content descriptors for appid 4492740 (Some Nudity or Sexual Content, Adult Only Sexual Content, Frequent Nudity or Sexual Content, General Mature Content)",
+   "_steam_note": "-The player character is capable of various forms of consensual sex with NPC characters in game.\r\n- Sexually explicit themes and lewd language throughout the entire game (Bosses, dialog, idle/character animations, costumes, general visuals, treasures, items, quests)\r\n- Exaggerated eroticism\r\n- Fantasy themed animated sexual encounters\r\n- Full frontal male and female nudity"
+  },
+  "garrysmodapadventure": {
+   "name": "Garry's Mod (apAdventure)",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 4000 (none)"
+  },
+  "grandtheftautoiii": {
+   "name": "Grand Theft Auto III",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 1546970 (Frequent Violence or Gore, General Mature Content)"
+  },
+  "grandtheftautosanandreas": {
+   "name": "Grand Theft Auto: San Andreas",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 1547000 (Frequent Violence or Gore, General Mature Content)"
+  },
+  "hitmanworldofassassination": {
+   "name": "HITMAN: World of Assassination",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 1659040 (Frequent Violence or Gore, General Mature Content)",
+   "_steam_note": "This Game may contain content not appropriate for all ages, or may not be appropriate for viewing at work. This game contains Frequent Violence or Gore, General Mature Content, Drug Use, illegal substances use. There are no sexual acts, but there are some sexual themes where people appear half-naked. Please be cautious as this game also includes acts of suicide."
+  },
+  "huniecamstudio": {
+   "name": "Huniecam Studio",
+   "decision": "excluded",
+   "reason": "Steam flags Frequent Nudity or Sexual Content",
+   "_source": "Steam content descriptors for appid 426000 (Some Nudity or Sexual Content, Frequent Nudity or Sexual Content, General Mature Content)",
+   "_steam_note": "This game contains adult content including frequent nudity, sexual dialog, sexual scenes/scenarios, references to drug/alcohol use, and anime boobies."
+  },
+  "huniepop": {
+   "name": "Huniepop",
+   "decision": "excluded",
+   "reason": "Steam classifies this as Adult Only Sexual Content",
+   "_source": "Steam content descriptors for appid 339800 (Some Nudity or Sexual Content, Adult Only Sexual Content, General Mature Content, Frequent Nudity or Sexual Content)",
+   "_steam_note": "This game contains adult content including frequent nudity, sexual dialog, sexual scenes/scenarios, references to drug/alcohol use, and anime boobies."
+  },
+  "huniepop2doubledate": {
+   "name": "Huniepop 2: Double Date",
+   "decision": "excluded",
+   "reason": "Steam classifies this as Adult Only Sexual Content",
+   "_source": "Steam content descriptors for appid 930210 (Some Nudity or Sexual Content, Adult Only Sexual Content, Frequent Nudity or Sexual Content, General Mature Content)",
+   "_steam_note": "This game contains adult content including frequent nudity, sexual dialog, sexual scenes/scenarios, references to drug/alcohol use, and anime boobies."
+  },
+  "kindergarten2": {
+   "name": "Kindergarten 2",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 1067850 (Frequent Violence or Gore, General Mature Content)",
+   "_steam_note": "Contains depictions of gore and violence directed at children."
+  },
+  "left4dead2": {
+   "name": "Left 4 Dead 2",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 550 (Frequent Violence or Gore, General Mature Content)",
+   "_steam_note": "Left 4 Dead 2 features intense violence, blood and gore (including decapitation or dismemberment of zombie-like creatures) and some strong language."
+  },
+  "libraryofbabel": {
+   "name": "Library of Babel",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 4286820 (none)"
+  },
+  "libraryofruina": {
+   "name": "Library of Ruina",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 1256670 (none)"
+  },
+  "lobotomycorporation": {
+   "name": "Lobotomy Corporation",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 896000 (none)"
+  },
+  "madeinabyssbsfd": {
+   "name": "Made in Abyss BSFD",
+   "decision": "age_gated",
+   "reason": "ESRB M (17+) for Blood and Gore, Violence; PEGI 18. No sexual content descriptor.",
+   "_source": "ESRB rating page for Made in Abyss: Binary Star Falling into Darkness (esrb.org/ratings/38296), checked 22 Aug 2026. Not on Steam; released for PS4 and Switch."
+  },
+  "metalgearsolid": {
+   "name": "Metal Gear Solid",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 3859630 (Frequent Violence or Gore, General Mature Content)"
+  },
+  "ohsohero": {
+   "name": "Oh So Hero",
+   "decision": "excluded",
+   "reason": "Steam classifies this as Adult Only Sexual Content",
+   "_source": "Steam content descriptors for appid 2086050 (Some Nudity or Sexual Content, Adult Only Sexual Content, Frequent Nudity or Sexual Content, General Mature Content)",
+   "_steam_note": "Oh So Hero! features cartoon violence, full frontal nudity, and explicit sexual conduct between animated characters. The game features a tournament of fighters who also engage in explicit sexual acts. This includes seduction, brawling, and hardcore male/male sex acts. All sex acts between participants are consensual, but may be sensitive for some viewers in conjunction with the fighting."
+  },
+  "pathofexile": {
+   "name": "Path of Exile",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 238960 (Some Nudity or Sexual Content, Frequent Violence or Gore, General Mature Content)",
+   "_steam_note": "HORROR SCENES\r\nVIOLENCE\r\nNUDITY"
+  },
+  "payday2criminaldawn": {
+   "name": "PAYDAY 2: Criminal Dawn",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 218620 (Frequent Violence or Gore, General Mature Content)",
+   "_steam_note": "PAYDAY 2 is a bank robbing game that glorifies clearly villanous acts. It contains high levels of violence, often against police officers or other law enforcement agencies. \r\n\r\nIt does not go out of its way to be gory or gruesome, but can appear that way in chance situations."
+  },
+  "perfectdark": {
+   "name": "Perfect Dark",
+   "decision": "age_gated",
+   "reason": "ESRB M — violence",
+   "_source": "the title's public age rating (ESRB/PEGI) or, where it predates ratings, the sheet's own Unrated flag"
+  },
+  "quake": {
+   "name": "Quake",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 2310 (Frequent Violence or Gore, General Mature Content)",
+   "_steam_note": "This game contains frequent violence, blood, and gore. Players use a variety of weapons to fight monsters and hostile enemies. Combat can result in blood effects and enemies exploding into gory remains. The game also contains horror-themed imagery, including grotesque creatures and disturbing environments."
+  },
+  "residentevil2remake": {
+   "name": "Resident Evil 2 Remake",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 883710 (Frequent Violence or Gore, General Mature Content)"
+  },
+  "residentevil3remake": {
+   "name": "Resident Evil 3 Remake",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 952060 (Frequent Violence or Gore, General Mature Content)",
+   "_steam_note": "WARNING: This game contains strong language and extreme violence."
+  },
+  "residentevil4remake": {
+   "name": "Resident Evil 4 Remake",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 2050650 (Frequent Violence or Gore, General Mature Content)",
+   "_steam_note": "This Game may contain content not appropriate for all ages, or may not be appropriate for viewing at work: Frequent Violence or Gore, General Mature Content"
+  },
+  "residentevil7": {
+   "name": "Resident Evil 7",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 418370 (Some Nudity or Sexual Content, Frequent Violence or Gore, General Mature Content)",
+   "_steam_note": "This Game may contain content not appropriate for all ages, or may not be appropriate for viewing at work: Frequent Violence or Gore, General Mature Content"
+  },
+  "returnoftheobradinn": {
+   "name": "Return of the Obra Dinn",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 653530 (Some Nudity or Sexual Content, Frequent Violence or Gore, General Mature Content)",
+   "_steam_note": "Passively depicts death and violence in freeze-frame 3D scenes. Contains mild nudity."
+  },
+  "rimworld": {
+   "name": "Rimworld",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 294100 (none)"
+  },
+  "schedulei": {
+   "name": "Schedule I",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 3164500 (General Mature Content)",
+   "_steam_note": "This game depicts the simplified production, distribution and sale of illegal drugs. It also contains non-realistic violence in the form of melee and firearm combat."
+  },
+  "sekiroshadowsdietwice": {
+   "name": "Sekiro: Shadows Die Twice",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 814380 (Frequent Violence or Gore, General Mature Content)"
+  },
+  "spiritvalley": {
+   "name": "Spirit Valley",
+   "decision": "excluded",
+   "reason": "Steam classifies this as Adult Only Sexual Content",
+   "_source": "Steam content descriptors for appid 2649480 (Some Nudity or Sexual Content, Adult Only Sexual Content, Frequent Nudity or Sexual Content, General Mature Content)",
+   "_steam_note": "All characters depicted in this game are adults. The game contains female and male nudity, violence, non-consensual sex and pornographics scenes between fantasy characters and monsters.\r\n\r\nThis game contains highly explicit sexual content that is intended for adults only."
+  },
+  "theelderscrollsivoblivionremastered": {
+   "name": "The Elder Scrolls IV: Oblivion Remastered",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 2623190 (Frequent Violence or Gore, General Mature Content)",
+   "_steam_note": "Blood and Gore\r\nSexual Themes\r\nViolence"
+  },
+  "theelderscrollsonline": {
+   "name": "The Elder Scrolls Online",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 306130 (Some Nudity or Sexual Content, Frequent Violence or Gore, General Mature Content)",
+   "_steam_note": "Blood and gore\r\nSexual themes\r\nUse of alcohol\r\nViolence"
+  },
+  "theguardianlegend": {
+   "name": "The Guardian Legend",
+   "decision": "age_gated",
+   "reason": "NES title that predates content ratings; flagged Unrated, not adult",
+   "_source": "the title's public age rating (ESRB/PEGI) or, where it predates ratings, the sheet's own Unrated flag"
+  },
+  "touhoueiyashouimperishablenight": {
+   "name": "Touhou Eiyashou ~ Imperishable Night",
+   "decision": "age_gated",
+   "reason": "doujin shooter, unrated",
+   "_source": "the title's public age rating (ESRB/PEGI) or, where it predates ratings, the sheet's own Unrated flag"
+  },
+  "touhoukoumakyoutheembodimentofscarletdevil": {
+   "name": "Touhou Koumakyou: The Embodiment of Scarlet Devil",
+   "decision": "age_gated",
+   "reason": "doujin shooter, unrated",
+   "_source": "the title's public age rating (ESRB/PEGI) or, where it predates ratings, the sheet's own Unrated flag"
+  },
+  "touhouyouyoumuperfectcherryblossom": {
+   "name": "Touhou Youyoumu ~ Perfect Cherry Blossom",
+   "decision": "age_gated",
+   "reason": "doujin shooter, unrated",
+   "_source": "the title's public age rating (ESRB/PEGI) or, where it predates ratings, the sheet's own Unrated flag"
+  },
+  "visceracleanupdetails": {
+   "name": "Viscera Cleanup Details",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 246900 (Frequent Violence or Gore, General Mature Content)",
+   "_steam_note": "Game is intended as a parody of violent video games, but as such includes frequent scenes of gore, albeit cartoonish in intention and sometimes in nature; Dismembered bodies, decapitated heads, blood impacts, loose organs, blood pools, blood graffiti, etc.\r\n\r\nFeatures crude language and cursing, and occasional mild innuendo in written form, as well as occasional reference to dark topics such as death, death threats, threats of violence, etc."
+  },
+  "warframe": {
+   "name": "Warframe",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 230410 (Frequent Violence or Gore, General Mature Content)"
+  },
+  "yakuzalikeadragongaidenthemanwhoerasedhisname": {
+   "name": "Yakuza | Like a Dragon Gaiden: The Man Who Erased His Name",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 1235140 (Some Nudity or Sexual Content, Frequent Violence or Gore, General Mature Content)",
+   "_steam_note": "This Game may contain content not appropriate for all ages, or may not be appropriate for viewing at work: Blood, Intense Violence,  Partial Nudity, Sexual Themes, Strong Language, and Use of Alcohol."
+  },
+  "yarimono": {
+   "name": "Yarimono",
+   "decision": "age_gated",
+   "reason": "mature content, but not sexual content by Steam's own descriptors",
+   "_source": "Steam content descriptors for appid 2696050 (Some Nudity or Sexual Content, General Mature Content)",
+   "_steam_note": "The game contains virtual and unrealistic combat violence and slightly revealing clothing."
+  },
+  "factoriospaceagewithoutspace": {
+   "name": "Factorio Space Age Without Space",
+   "decision": "stable",
+   "reason": "no sexual content; combat against insectoid enemies only",
+   "_source": "the game is Factorio (Steam appid 427520), rated PEGI 7 Mild Violence and ESRB TEEN for Blood and Violence -- the descriptors come from alien combat. 'Space Age Without Space' is a world configuration for that same game, not a separate title."
+  },
+  "smz3": {
+   "name": "SMZ3",
+   "decision": "stable",
+   "reason": "no sexual content; the two source games are both ESRB E",
+   "_source": "SMZ3 is a combined randomiser of Super Metroid and The Legend of Zelda: A Link to the Past, both ESRB E. It has no store page of its own because it is a ROM hack, which is why the nothing-findable rule matched it -- absence of a shop listing is not absence of a known game."
+  },
+  "spyro3yearofthedragon": {
+   "name": "Spyro 3: Year of the Dragon",
+   "decision": "listed",
+   "reason": "ESRB E (Everyone, Comic Mischief); PEGI 7; ACB PG",
+   "_source": "https://www.esrb.org/ratings/5804/spyro-year-of-the-dragon/ -- looked up 2026-08-23 after a tester found the game behind the age gate. It sat there because the nothing-found rule could not read the manifest's own evidence; that mechanism is fixed, and this decision records the actual rating so the game can never drift back."
+  },
+  "thelegendofzeldaskywardsword": {
+   "name": "The Legend of Zelda: Skyward Sword",
+   "decision": "listed",
+   "reason": "ESRB E10+ (Everyone 10+); PEGI 12",
+   "_source": "the title's public ESRB rating -- recorded 2026-08-23 for the same reason as Spyro 3: it sat behind the age gate on missing evidence, not on content."
   }
+ }
 }
