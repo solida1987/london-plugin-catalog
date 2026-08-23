@@ -1,6 +1,6 @@
 {
   "note": "The launcher's store window. Addresses and metadata only — no artwork and no code is stored here. Installing still runs the launcher's own consent flow.",
-  "count": 573,
+  "count": 574,
   "platforms": [
     "Atari 2600",
     "Browser",
@@ -462,6 +462,33 @@
       "install_kind": "rom",
       "tested": false,
       "section": "stable",
+      "stability": "Stable"
+    },
+    {
+      "id": "faxanadu",
+      "name": "Faxanadu",
+      "ap_world_name": "Faxanadu",
+      "subtitle": "",
+      "description": "Eolis and the World Tree as a multiworld.",
+      "platform": "NES",
+      "platform_label": "NES",
+      "family": "Nintendo",
+      "genres": [
+        "Action-Adventure",
+        "RPG"
+      ],
+      "version": "1.0.0",
+      "world_by": "the Archipelago project and its contributors",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": null,
+      "banner": null,
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/nes/faxanadu.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases",
+      "install_kind": "rom",
+      "tested": false,
+      "section": "adult",
+      "_section_reason": "no store page, no release page, no repository and no cover in any source -- nothing we could read to establish what this game contains, so it sits behind the age gate until somebody can",
       "stability": "Stable"
     },
     {
@@ -1062,14 +1089,13 @@
       "world_by": "UltiNaruto/MetroidAPrime",
       "world_licence": "",
       "plugin_by": "solida1987",
-      "cover": null,
-      "banner": null,
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20GameCube/Named_Boxarts/Metroid%20Prime%20%28USA%29%20%28Rev%201%29.png",
+      "banner": "https://thumbnails.libretro.com/Nintendo%20-%20GameCube/Named_Titles/Metroid%20Prime%20%28USA%29%20%28Rev%201%29.png",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gamecube/metroid_prime.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases",
       "install_kind": "rom",
       "tested": false,
-      "section": "adult",
-      "_section_reason": "no store page, no release page, no repository and no cover in any source -- nothing we could read to establish what this game contains, so it sits behind the age gate until somebody can",
+      "section": "stable",
       "stability": "Stable"
     },
     {
@@ -1163,14 +1189,13 @@
       "world_by": "aXu-AP/archipelago-double-dash",
       "world_licence": "",
       "plugin_by": "solida1987",
-      "cover": null,
-      "banner": null,
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20GameCube/Named_Boxarts/Mario%20Kart%20-%20Double%20Dash%21%21%20%28USA%29.png",
+      "banner": "https://thumbnails.libretro.com/Nintendo%20-%20GameCube/Named_Titles/Mario%20Kart%20-%20Double%20Dash%21%21%20%28USA%29.png",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gamecube/mkdd.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases",
       "install_kind": "rom",
       "tested": false,
-      "section": "adult",
-      "_section_reason": "no store page, no release page, no repository and no cover in any source -- nothing we could read to establish what this game contains, so it sits behind the age gate until somebody can",
+      "section": "stable",
       "stability": "Stable"
     },
     {
@@ -1772,14 +1797,13 @@
       "world_by": "jamesbrq/ArchipelagoTTYD",
       "world_licence": "",
       "plugin_by": "solida1987",
-      "cover": null,
-      "banner": null,
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20GameCube/Named_Boxarts/Paper%20Mario%20-%20The%20Thousand-Year%20Door%20%28USA%29.png",
+      "banner": "https://thumbnails.libretro.com/Nintendo%20-%20GameCube/Named_Titles/Paper%20Mario%20-%20The%20Thousand-Year%20Door%20%28USA%29.png",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gamecube/ttyd.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases",
       "install_kind": "rom",
       "tested": false,
-      "section": "adult",
-      "_section_reason": "no store page, no release page, no repository and no cover in any source -- nothing we could read to establish what this game contains, so it sits behind the age gate until somebody can",
+      "section": "stable",
       "stability": "Stable"
     },
     {

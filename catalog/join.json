@@ -1,6 +1,6 @@
 {
   "note": "Which London plugin covers which Archipelago game. Addresses and metadata only.",
-  "count": 573,
+  "count": 574,
   "games": {
     "Adventure": {
       "id": "adventure",
@@ -96,6 +96,12 @@
       "id": "donkey_kong_country_3",
       "platform": "SNES",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/snes/donkey_kong_country_3.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Faxanadu": {
+      "id": "faxanadu",
+      "platform": "NES",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/nes/faxanadu.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Final Fantasy IV Free Enterprise": {

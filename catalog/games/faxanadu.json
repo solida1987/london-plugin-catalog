@@ -31,7 +31,9 @@
     "protocol": "daxanadu",
     "lua": null,
     "_source": "world source: ArchipelagoMW/Archipelago worlds/faxanadu (upstream), read from the world's own code -- read from the world's client class",
-    "_protocol_source": "the world's setup guide requires Daxanadu -- a standalone reimplementation of the NES engine with Archipelago built in. The player enters server, slot and password in the game's own ARCHIPELAGO menu; there is no emulator and no external client. Same shape as Ship of Harkinian, which we already carry as the soh_runner extension."
+    "_protocol_source": "the world's setup guide requires Daxanadu -- a standalone reimplementation of the NES engine with Archipelago built in. The player enters server, slot and password in the game's own ARCHIPELAGO menu; there is no emulator and no external client. Same shape as Ship of Harkinian, which we already carry as the soh_runner extension.",
+    "kind": "world",
+    "_kind_source": "there is no external client at all. The world's setup guide (worlds/faxanadu/docs/setup_en.md upstream) lists Daxanadu as the required software and says: 'Launch Daxanadu.exe. From the Main menu, go to the ARCHIPELAGO menu. Enter the server's address, slot name, and password. Then select PLAY.' The Archipelago Text Client is listed under OPTIONAL software, for reading messages Daxanadu does not display. So London starts the program and the player connects inside it."
   },
   "apworld": {
     "bundled": true,

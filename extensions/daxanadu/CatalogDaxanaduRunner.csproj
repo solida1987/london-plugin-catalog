@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Daxanadu as an installable runner. Not an emulator London drives: the  -->
+  <!-- program has Archipelago built in and connects itself. See the .cs.     -->
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>CatalogDaxanaduRunner</AssemblyName>
+    <RootNamespace>LauncherV2.Extensions.Daxanadu</RootNamespace>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <Version>0.1.0</Version>
+    <Company>Solida Games</Company>
+    <Product>Daxanadu runner extension for Multiworld Launcher</Product>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Multiworld-Launcher\LauncherV2.csproj"
+                      Private="false" ExcludeAssets="runtime" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="extension.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>
