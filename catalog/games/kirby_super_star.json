@@ -1,0 +1,73 @@
+{
+  "id": "kirby_super_star",
+  "display_name": "Kirby Super Star",
+  "subtitle": "SNI",
+  "platform": "SNES",
+  "version": "1.0.0",
+  "_verified": "2026-08-23",
+  "_drafted_note": "Drafted 2026-08-23 from the world's OWN setup guide and the world's published source. No field is filled in from memory or from what other games on the same console do.",
+  "_platform_source": "setup guide https://github.com/Silvris/Archipelago/blob/kss/worlds/kss/docs/setup_en.md -- \"Your KSS ROM file, probably named `Kirby Super Star (U).sfc`\", loaded in snes9x/bsnes/BizHawk",
+  "ap_world_name": "Kirby Super Star",
+  "_ap_world_name_source": "world source: Silvris/Archipelago (branch kss), read 2026-08-23 -- worlds/kss/client.py `class KSSSNIClient(SNIClient)` sets `game = \"Kirby Super Star\"`, and worlds/kss/rom.py sets the same on KSSProcedurePatch",
+  "description": "Dream Land's sub-games and treasures as a multiworld.",
+  "_description_source": "written by us from the structure of the game - no text copied from the game itself",
+  "checks_verified": false,
+  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Nobody has played this. London warns at launch until it is true.",
+  "requires": "own_copy",
+  "_requires_source": "SNES title - the game lives on a cartridge or disc the player owns, and the setup guide tells the player to supply it: A Kirby Super Star ROM, probably named `Kirby Super Star (U).sfc`",
+  "rom": {
+    "description": "A Kirby Super Star ROM, probably named `Kirby Super Star (U).sfc`",
+    "_description_source": "setup guide: \"Your KSS ROM file, probably named `Kirby Super Star (U).sfc`\"",
+    "md5": [
+      "cb76ea8ac989e71210c89102d91c6c57",
+      "5e0be1a462ffaca1351d446b96b25b74"
+    ],
+    "size": null,
+    "_md5_source": "world source: worlds/kss/rom.py, read 2026-08-23 -- `KSS_UHASH = \"cb76ea8ac989e71210c89102d91c6c57\"` and `KSS_VCHASH = \"5e0be1a462ffaca1351d446b96b25b74\"`, which the world lists as `hash = [KSS_UHASH, KSS_VCHASH]` on KSSProcedurePatch -- the dumps the world itself accepts (the cartridge dump and the Virtual Console one).",
+    "_size_note": "Not measured. London reads size 0 as 'unknown' and matches on MD5 alone, which is the stronger check."
+  },
+  "emulator": {
+    "name": null,
+    "min_version": null,
+    "_source": "The guide names four acceptable emulators and no version for any of them: snes9x-emunwa, snes9x-rr, BizHawk and bsnes-plus-nwa. Picking one of them here would be our judgement, not the guide's, so the field stays null."
+  },
+  "client": {
+    "name": "Archipelago's SNI Client",
+    "protocol": "sni",
+    "lua": null,
+    "_source": "SCHEMA rule 1, read from the world itself: Silvris/Archipelago (branch kss) worlds/kss/client.py, 2026-08-23 -- `class KSSSNIClient(SNIClient)`. The guide agrees, describing SNIClient launching automatically. ⚠ Recording the world's OWN transport. London does not run upstream's client -- see catalog/games/smw.json, where an SNIClient world is driven by a BizHawk RAM map instead and the protocol was set to bizhawk for that reason. Whoever writes this game's RAM map must set the protocol to match the bridge the map actually targets. ⚠ Rule 2 is NOT satisfied either: no RAM map Plugins/Scripts/games/kirby_super_star.lua exists, so the build refuses this manifest."
+  },
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/Silvris/Archipelago/releases?q=Kirby+Super+Star&expanded=true",
+    "_source": "catalog/sheet_links.json, the \"APWorld, Poptracker\" link for Kirby Super Star. The setup guide names no source."
+  },
+  "patch": {
+    "model": "procedure",
+    "extension": ".apkss",
+    "produced_by": "Archipelago Launcher - Open Patch",
+    "base_md5": [
+      "cb76ea8ac989e71210c89102d91c6c57",
+      "5e0be1a462ffaca1351d446b96b25b74"
+    ],
+    "_source": "world source: worlds/kss/rom.py, read 2026-08-23 -- `class KSSProcedurePatch(APProcedurePatch, APTokenMixin)` with `patch_file_ending = \".apkss\"`. The guide agrees: \"Your patch file should have a `.apkss` extension.\""
+  },
+  "patch_extension": "refused",
+  "_patch_extension_source": "world source: worlds/kss/rom.py, read 2026-08-23 -- the world defines `KSSPatchExtensions` with TWO methods: `apply_basepatch` and `apply_bsdiff4`. ⚠⚠ READ THIS BEFORE RECLASSIFYING. `apply_basepatch` is a NEW step name, which London's patcher refuses loudly -- that is why this field says \"refused\". But `apply_bsdiff4` is a GENERIC step name the launcher already implements, REDEFINED by this world. That is the FRLG class: generic code would run its own apply_bsdiff4, the checksum guard would pass, and the ROM would be silently wrong. This must NOT be moved to \"none\", and may only become \"replicated\" once the world's apply_bsdiff4 is replicated in Core/Patching/ApPatch.cs with the source cited.",
+  "credits": {
+    "plugin_by": "solida1987",
+    "world_by": {
+      "name": "Silvris/Archipelago",
+      "url": "https://github.com/Silvris/Archipelago",
+      "_source": "the repository that publishes this world -- catalog/sheet_survey.json `repo` and the setup guide URL in catalog/guide_platform.json",
+      "licence": null,
+      "_licence_source": "not read. The repository's LICENSE file has not been opened, so no licence is claimed.",
+      "authors": [
+        "Silvris"
+      ],
+      "_authors_source": "the GitHub account that publishes the world (the repository owner). NOT confirmed against a credits list inside the world itself, so this may name a maintainer rather than every author."
+    },
+    "game_by": null,
+    "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
+  }
+}

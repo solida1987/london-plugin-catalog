@@ -1,0 +1,65 @@
+{
+  "id": "tomba",
+  "display_name": "Tomba!",
+  "subtitle": "",
+  "platform": "PSX",
+  "version": "1.0.0",
+  "_verified": "2026-08-23",
+  "_drafted_note": "Drafted 2026-08-23 from the world's OWN setup guide and the world's published source. No field is filled in from memory or from what other games on the same console do.",
+  "_platform_source": "setup guide https://github.com/T4g1/ArchipelagoTomba/blob/main/worlds/tomba/docs/setup_en.md -- \"Your legally obtained Tomba! ROM file, probably named `Tomba! (USA).bin`\"",
+  "ap_world_name": "Tomba!",
+  "_ap_world_name_source": "world source: T4g1/ArchipelagoTomba, read 2026-08-23 -- worlds/tomba/world.py `class TombaWorld(World)` sets `game = constants.GAME`, and worlds/tomba/constants.py defines `GAME = \"Tomba!\"` -- the exclamation mark is part of the name",
+  "description": "Tomba's island and its evil pigs as a multiworld.",
+  "_description_source": "written by us from the structure of the game - no text copied from the game itself",
+  "checks_verified": false,
+  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Nobody has played this. London warns at launch until it is true.",
+  "requires": "own_copy",
+  "_requires_source": "PSX title - the game lives on a cartridge or disc the player owns, and the setup guide tells the player to supply it: A legally obtained Tomba! ROM, probably named `Tomba! (USA).bin`",
+  "rom": {
+    "description": "A legally obtained Tomba! ROM, probably named `Tomba! (USA).bin`",
+    "_description_source": "setup guide, word for word",
+    "md5": [],
+    "size": null,
+    "_hash_note": "No hash is claimed. The guide states none, and the worlds/tomba directory listing (read 2026-08-23) contains no rom.py."
+  },
+  "emulator": {
+    "name": null,
+    "min_version": null,
+    "_source": "The guide offers two and commits to neither: \"RetroArch from: [RetroArch] 1.10.3 or newer\" or \"BizHawk from: [BizHawk] latest\". Choosing between them would be our judgement, so the field stays null; the 1.10.3 floor belongs to the RetroArch route only."
+  },
+  "client": {
+    "name": "the Tomba! client",
+    "protocol": "unknown",
+    "lua": null,
+    "_source": "Neither of SCHEMA's two rules answers this one. Rule 1: the world ships a standalone client -- worlds/tomba/client/client.py has `class TombaContext(CommonContext)` (read 2026-08-23), not BizHawkClient and not SNIClient, so it says nothing about which bridge could carry it. Rule 2: no RAM map Plugins/Scripts/games/tomba.lua exists. The guide's mention of BizHawk is about the emulator, and catalog/SCHEMA.md names \"what another game on the same console does\" as explicitly not a source."
+  },
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/T4g1/ArchipelagoTomba/releases",
+    "_source": "setup guide: \"Take the latest APWorld for Tomba! here: [T4g1/ArchipelagoTomba](that address)\""
+  },
+  "patch": {
+    "model": "none",
+    "extension": null,
+    "produced_by": null,
+    "_source": "Read 2026-08-23: the guide describes loading the ROM straight into the emulator and names no patch file; worlds/tomba has no rom.py; and TombaContext declares no patch_suffix. The world does ship worlds/tomba/client/patcher.py, i.e. its own client patches at run time -- but that is the world's business, not a patch step London runs."
+  },
+  "patch_extension": "none",
+  "_patch_extension_source": "There is no Archipelago patch step to override: the worlds/tomba directory listing (read 2026-08-23) contains no rom.py, which is where catalog/SCHEMA.md locates an APPatchExtension. Only the directory listings, world.py, constants.py and client/client.py were read.",
+  "credits": {
+    "plugin_by": "solida1987",
+    "world_by": {
+      "name": "T4g1/ArchipelagoTomba",
+      "url": "https://github.com/T4g1/ArchipelagoTomba",
+      "_source": "the repository that publishes this world -- catalog/sheet_survey.json `repo` and the setup guide URL in catalog/guide_platform.json",
+      "licence": null,
+      "_licence_source": "not read. The repository's LICENSE file has not been opened, so no licence is claimed.",
+      "authors": [
+        "T4g1"
+      ],
+      "_authors_source": "the GitHub account that publishes the world (the repository owner). NOT confirmed against a credits list inside the world itself, so this may name a maintainer rather than every author."
+    },
+    "game_by": null,
+    "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
+  }
+}

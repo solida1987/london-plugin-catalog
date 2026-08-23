@@ -52,6 +52,16 @@ public class GenericEmulatorPlugin : EmulatorPlugin
     /// BridgeRegistry, with no code here knowing what SNI is.
     protected override string ClientProtocol => Manifest.ClientProtocol;
 
+    /// client.kind == "world": the world ships its own Archipelago client, so
+    /// London starts the emulator and stands aside — no Lua map, no memory
+    /// reading, no slot connection. The manifest may only say "world" with a
+    /// quoted source (the build gate enforces that), so this override is as
+    /// audited as the field it reads. First user: Burnout 3 over PINE.
+    protected override bool WorldCarriesOwnClient
+        => string.Equals(Manifest.ClientKind, "world", StringComparison.OrdinalIgnoreCase);
+
+    protected override string? WorldClientName => Manifest.ClientName;
+
     /// Who made each part, shown on the game's page.
     ///
     /// None of this is our game. A catalogue plugin is an installer: it points
@@ -310,6 +320,17 @@ public class GenericEmulatorPlugin : EmulatorPlugin
 
     public override SeedPatchRequest? GetUnmetSeedPatch(string seed, string slot)
     {
+        // A world that carries its own client is never patched by London. The
+        // whole chain -- reading memory, applying whatever the game needs,
+        // talking to the server -- belongs to that client, and London's part
+        // ends at starting the emulator. Asking for a patch here produced a
+        // dialog with no right answer: Burnout 3's world contains no patch
+        // machinery at all (no APProcedurePatch, no patch suffix, the word
+        // "patch" appears nowhere in its source), so the file it demanded
+        // could not exist. Now that cancelling stops the join, a question with
+        // no answer is not merely noise -- it is an unplayable game.
+        if (WorldCarriesOwnClient) return null;
+
         // Asked BEFORE launch, when the seed is known but the plugin has not run
         // yet, so this must not depend on GetSeedName having been called.
         if (SeedPatchStore.For(GameId).Resolve(seed, slot) != null) return null;
@@ -384,6 +405,11 @@ public sealed record GameManifest(
     string ApWorldName, string Description,
     RomSpecManifest? Rom, bool ChecksVerified, string? LuaModule,
     string ClientProtocol,
+    // client.kind: "london" (our connector reads memory; Lua map required by
+    // the build gate) or "world" (the world ships its own client; London only
+    // launches). ClientName is what the world's client is called in the
+    // Archipelago Launcher, shown to the player at launch.
+    string ClientKind, string? ClientName,
     // How this game's world builds its ROM, audited from the world itself:
     // "procedure" (container steps our patcher runs), "delta" (legacy
     // APDeltaPatch -- PatchBaseMd5 holds the world's own base-ROM hash,
@@ -440,6 +466,12 @@ public sealed record GameManifest(
             (r.TryGetProperty("client", out var cl)
                  && cl.ValueKind == JsonValueKind.Object
                  ? Str(cl, "protocol") : null) ?? "bizhawk",
+            // kind defaults to "london": every manifest that predates the
+            // field is a memory-reading game, and the gate has always
+            // guaranteed those carry a Lua map.
+            (cl.ValueKind == JsonValueKind.Object ? Str(cl, "kind") : null)
+                ?? "london",
+            cl.ValueKind == JsonValueKind.Object ? Str(cl, "name") : null,
             PatchModel(r), PatchMd5(r), Credits(r));
 
         static CreditsManifest? Credits(JsonElement r)

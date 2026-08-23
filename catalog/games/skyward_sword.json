@@ -1,0 +1,65 @@
+{
+  "id": "skyward_sword",
+  "display_name": "The Legend of Zelda: Skyward Sword",
+  "subtitle": "",
+  "platform": "GC",
+  "version": "1.0.0",
+  "_verified": "2026-08-23",
+  "_drafted_note": "Drafted 2026-08-23 from the world's OWN setup guide, and from the world's source where the repository publishes it. No field is filled in from memory or from what other games on the same console do.",
+  "_platform_source": "setup guide https://github.com/Battlecats59/SSArchipelago/blob/ss/worlds/ss/docs/setup_en.md -- \"[Dolphin Emulator]\" and a US 1.00 iso. NOTE: Skyward Sword is a Wii title; the catalogue files Wii and GameCube under the same platform tag (build_plugins.PLATFORM_TAG maps both GC and Wii to the gc-wii release), and the guide-reader that produced catalog/guide_platform.json recorded it as GC because the guide names Dolphin.",
+  "ap_world_name": "Skyward Sword",
+  "_ap_world_name_source": "world source: Battlecats59/SSArchipelago, worlds/ss/__init__.py (branch ss), read 2026-08-23 -- `class SSWorld(World)` declares `game: ClassVar[str] = \"Skyward Sword\"`",
+  "description": "The sky and the surface as a multiworld.",
+  "_description_source": "written by us from the structure of the game - no text copied from the game itself",
+  "checks_verified": false,
+  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Nobody has played this. London warns at launch until it is true.",
+  "requires": "own_copy",
+  "_requires_source": "GC title - the game lives on a cartridge or disc the player owns, and the setup guide tells the player to supply it: An unrandomized US 1.00 The Legend of Zelda: Skyward Sword ISO",
+  "rom": {
+    "description": "An unrandomized US 1.00 The Legend of Zelda: Skyward Sword ISO",
+    "_description_source": "setup guide, which words it: \"A `The Legend of Zelda: Skyward Sword` unrandomzied US 1.00 iso\" (the guide's own spelling of unrandomized)",
+    "md5": [],
+    "size": null,
+    "_hash_note": "The guide states no checksum; none is claimed here."
+  },
+  "emulator": {
+    "name": "Dolphin Emulator",
+    "min_version": null,
+    "_source": "setup guide: \"Dolphin Emulator\" with the instruction to \"use the dev version!\" -- no version number given"
+  },
+  "client": {
+    "name": "Skyward Sword Client",
+    "protocol": "unknown",
+    "lua": null,
+    "_source": "setup guide names the world's own \"Skyward Sword Client\", which SCHEMA rule 1 says answers nothing. Rule 2 fails: no RAM map Plugins/Scripts/games/skyward_sword.lua, and no installed bridge speaks Dolphin."
+  },
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/Battlecats59/SS_APWorld/releases/latest",
+    "_source": "setup guide points at the SS_APWorld repository's latest release; catalog/sheet_survey.json records the same repo"
+  },
+  "patch": {
+    "model": "unknown",
+    "extension": ".apssr",
+    "produced_by": "SS AP Patcher",
+    "_source": "setup guide: the player feeds an APSSR file named `AP_{seed}_P{player id}_{player name}.apssr` to the \"SS AP Patcher\", which writes the randomized ISO. The extension is read from that filename pattern in the guide; the guide never writes \".apssr\" on its own. Which APPatch class produces it was not read, so the model stays unknown."
+  },
+  "patch_extension": "unaudited",
+  "_patch_extension_source": "World source not read. catalog/SCHEMA.md locates this answer in the world's rom.py; the repository was not cloned and no apworld was downloaded (repo policy: addresses only). Flagged in every build until somebody reads it.",
+  "credits": {
+    "plugin_by": "solida1987",
+    "world_by": {
+      "name": "Battlecats59/SS_APWorld",
+      "url": "https://github.com/Battlecats59/SS_APWorld",
+      "_source": "the repository that publishes this world -- catalog/sheet_survey.json `repo` and the setup guide URL in catalog/guide_platform.json",
+      "licence": null,
+      "_licence_source": "not read. The repository's LICENSE file has not been opened, so no licence is claimed.",
+      "authors": [
+        "Battlecats59"
+      ],
+      "_authors_source": "the GitHub account that publishes the world (the repository owner). NOT confirmed against a credits list inside the world itself, so this may name a maintainer rather than every author -- see the catalogue's crediting rule."
+    },
+    "game_by": null,
+    "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "id": "metroid_prime",
+  "display_name": "Metroid Prime",
+  "subtitle": "",
+  "platform": "GC",
+  "version": "1.0.0",
+  "_verified": "2026-08-23",
+  "_drafted_note": "Drafted 2026-08-23 from the world's OWN setup guide, and from the world's source where the repository publishes it. No field is filled in from memory or from what other games on the same console do.",
+  "_platform_source": "setup guide https://github.com/UltiNaruto/MetroidAPrime/blob/main/src/docs/setup_en.md -- \"A Metroid Prime (GameCube version) ISO file\" and \"Latest Release of Dolphin Emulator\"",
+  "ap_world_name": "Metroid Prime",
+  "_ap_world_name_source": "world source: UltiNaruto/MetroidAPrime, src/__init__.py, read 2026-08-23 -- `class MetroidPrimeWorld(World)` declares `game = \"Metroid Prime\"`",
+  "description": "Tallon IV as a multiworld.",
+  "_description_source": "written by us from the structure of the game - no text copied from the game itself",
+  "checks_verified": false,
+  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Nobody has played this. London warns at launch until it is true.",
+  "requires": "own_copy",
+  "_requires_source": "GC title - the game lives on a cartridge or disc the player owns, and the setup guide tells the player to supply it: A Metroid Prime (GameCube version) ISO file",
+  "rom": {
+    "description": "A Metroid Prime (GameCube version) ISO file",
+    "_description_source": "setup guide, word for word. The guide adds: \"Any official release copy of the GameCube version will work. (All region versions are compatible, including all three versions of NTSC-USA)\"",
+    "md5": [],
+    "size": null,
+    "_hash_note": "The guide states no checksum; none is claimed here."
+  },
+  "emulator": {
+    "name": "Dolphin Emulator",
+    "min_version": null,
+    "_source": "setup guide: \"Latest Release of Dolphin Emulator\" (it also allows PrimeHack). No version number is given."
+  },
+  "client": {
+    "name": "Metroid Prime Client",
+    "protocol": "unknown",
+    "lua": null,
+    "_source": "setup guide names a game-specific \"Metroid Prime Client\". SCHEMA rule 1 gives no answer for a world that ships its own client, and rule 2 fails: no RAM map Plugins/Scripts/games/metroid_prime.lua exists. No installed bridge speaks Dolphin (extensions/ = bizhawk, sni, pine, native_soh), so the protocol stays unestablished."
+  },
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/UltiNaruto/MetroidAPrime/releases/latest",
+    "_source": "setup guide: \"Download the latest version of the Metroid Prime AP\" from that address"
+  },
+  "patch": {
+    "model": "unknown",
+    "extension": ".apmp1",
+    "produced_by": "Archipelago Launcher - Open Patch File",
+    "_source": "setup guide: \"In the Archipelago Launcher, click Open Patch File. Then select the .apmp1 patch file\". Which APPatch class produces it was not read, so the model stays unknown."
+  },
+  "patch_extension": "unaudited",
+  "_patch_extension_source": "World source not read. catalog/SCHEMA.md locates this answer in the world's rom.py; the repository was not cloned and no apworld was downloaded (repo policy: addresses only). Flagged in every build until somebody reads it.",
+  "credits": {
+    "plugin_by": "solida1987",
+    "world_by": {
+      "name": "UltiNaruto/MetroidAPrime",
+      "url": "https://github.com/UltiNaruto/MetroidAPrime",
+      "_source": "the repository that publishes this world -- catalog/sheet_survey.json `repo` and the setup guide URL in catalog/guide_platform.json",
+      "licence": null,
+      "_licence_source": "not read. The repository's LICENSE file has not been opened, so no licence is claimed.",
+      "authors": [
+        "UltiNaruto"
+      ],
+      "_authors_source": "the GitHub account that publishes the world (the repository owner). NOT confirmed against a credits list inside the world itself, so this may name a maintainer rather than every author -- see the catalogue's crediting rule."
+    },
+    "game_by": null,
+    "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "id": "metal_gear_solid",
+  "display_name": "Metal Gear Solid",
+  "subtitle": "BizHawk",
+  "platform": "PSX",
+  "version": "1.0.0",
+  "_verified": "2026-08-23",
+  "_drafted_note": "Drafted 2026-08-23 from the world's OWN setup guide and the world's published source. No field is filled in from memory or from what other games on the same console do.",
+  "_platform_source": "world source: SDMichaud/Archipelago-MGS worlds/mgs/Client.py, read 2026-08-23 -- `system = \"PSX\"`. The guide agrees, asking for the Disc 1 and Disc 2 files.",
+  "ap_world_name": "Metal Gear Solid",
+  "_ap_world_name_source": "world source: SDMichaud/Archipelago-MGS, worlds/mgs/Client.py, read 2026-08-23 -- `class MetalGearSolidClient(BizHawkClient)` sets `game = \"Metal Gear Solid\"`",
+  "description": "Shadow Moses as a multiworld.",
+  "_description_source": "written by us from the structure of the game - no text copied from the game itself",
+  "checks_verified": false,
+  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Nobody has played this. London warns at launch until it is true.",
+  "requires": "own_copy",
+  "_requires_source": "PSX title - the game lives on a cartridge or disc the player owns, and the setup guide tells the player to supply it: A legally obtained Metal Gear Solid ROM (Disc 1 and Disc 2)",
+  "rom": {
+    "description": "A legally obtained Metal Gear Solid ROM (Disc 1 and Disc 2)",
+    "_description_source": "setup guide, word for word: \"A legally obtained Metal Gear Solid ROM file (Disc 1 and Disc 2).\" ⚠ Two discs -- the guide has the player build a multi-disk bundle, which is not something London's single-file ROM picker handles today.",
+    "md5": [],
+    "size": null,
+    "_hash_note": "No hash is claimed. The guide states none, and the worlds/mgs directory listing (read 2026-08-23) contains no rom.py for one to be read from."
+  },
+  "emulator": {
+    "name": "BizHawk",
+    "min_version": null,
+    "_source": "setup guide: \"BizHawk\", of which \"the 2.9.1 version is recommended\". A recommendation is not a minimum, so no minimum is recorded."
+  },
+  "client": {
+    "name": "Archipelago's BizHawk Client",
+    "protocol": "bizhawk",
+    "lua": "data/lua/connector_bizhawk_generic.lua",
+    "_source": "SCHEMA rule 1, read from the world itself: worlds/mgs/Client.py, 2026-08-23 -- `class MetalGearSolidClient(BizHawkClient)` with `system = \"PSX\"` and `patch_suffix = \".apmgs\"`. The guide agrees: \"open, the `BizHawk Client`\". ⚠ Rule 2 is NOT satisfied: no RAM map Plugins/Scripts/games/metal_gear_solid.lua exists, so the build refuses this manifest until one is written."
+  },
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/SDMichaud/Archipelago-MGS/releases",
+    "_source": "catalog/sheet_links.json \"APWorld\" link, agreeing with catalog/sheet_survey.json. The guide names no source."
+  },
+  "patch": {
+    "model": "unknown",
+    "extension": ".apmgs",
+    "produced_by": null,
+    "_source": "The extension is read from the world: worlds/mgs/Client.py sets `patch_suffix = \".apmgs\"` (2026-08-23). What PRODUCES it was not found -- the worlds/mgs directory listing contains no rom.py, so the patch class lives somewhere not yet read, and the guide describes a multi-disk bundle rather than a patching step. Model stays unknown, so London will not try to build the ROM itself."
+  },
+  "patch_extension": "unaudited",
+  "_patch_extension_source": "Not answered. catalog/SCHEMA.md locates this in the world's rom.py, and worlds/mgs has no rom.py in its directory listing (read 2026-08-23) -- yet the client declares a `.apmgs` patch suffix, so a patch class exists somewhere in the world that has not been read. That gap is exactly why this stays unaudited rather than \"none\".",
+  "credits": {
+    "plugin_by": "solida1987",
+    "world_by": {
+      "name": "SDMichaud/Archipelago-MGS",
+      "url": "https://github.com/SDMichaud/Archipelago-MGS",
+      "_source": "the repository that publishes this world -- catalog/sheet_survey.json `repo` and the setup guide URL in catalog/guide_platform.json",
+      "licence": null,
+      "_licence_source": "not read. The repository's LICENSE file has not been opened, so no licence is claimed.",
+      "authors": [
+        "SDMichaud"
+      ],
+      "_authors_source": "the GitHub account that publishes the world (the repository owner). NOT confirmed against a credits list inside the world itself, so this may name a maintainer rather than every author."
+    },
+    "game_by": null,
+    "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
+  }
+}

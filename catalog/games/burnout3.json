@@ -1,0 +1,87 @@
+{
+  "id": "burnout3",
+  "display_name": "Burnout 3: Takedown",
+  "_display_name_source": "PCSX2 answered MsgTitle with \"Burnout 3 - Takedown\" when the disc was booted (measured over PINE, 23 Aug 2026). That hyphen is the disc's own internal title string; the retail title is punctuated with a colon, which is what the world's repository also writes (Metasura/Burnout3Archipelago, \"Archipelago for Burnout 3 Takedown\"). The colon form is used here and the measured string is recorded above it so the difference is visible rather than smoothed over.",
+  "subtitle": "PCSX2",
+  "_subtitle_source": "subtitle names the backend the player will actually run, the same way 18 manifests say \"BizHawk\" and 6 say \"SNI\". The backend here is PCSX2, driven over PINE.",
+  "platform": "PS2",
+  "_platform_source": "extensions/pcsx2/PineBridge.cs: `public string[] Systems => new[] { \"PS2\" };` -- and the disc itself reported serial SLUS-21050, a PS2 US serial (measured over PINE, 23 Aug 2026).",
+  "version": "1.0.0",
+  "_verified": "2026-08-23",
+
+  "ap_world_name": "Burnout 3",
+  "_ap_world_name_source": "READ FROM THE WORLD'S OWN CODE, not from the sheet: burnout3.apworld -> burnout3/__init__.py line 10 `GAME_NAME = \"Burnout 3\"`, line 198 `class Burnout3World(World): game = GAME_NAME`. Corroborated by the world's own burnout3/archipelago.json: {\"game\": \"Burnout 3\"}. ⚠ TRAP: this is NOT \"Burnout 3: Takedown\". The display name carries the subtitle and the AP slot name does not; using the display name here would make every Join fail with an unknown game. ⚠ SECOND TRAP: tools/audit_world_name.py reports this world as \"readable but declares no game name\" and therefore CANNOT confirm the value. That is a limitation of the audit, not a disagreement -- it matches a literal `game = \"...\"` and this world writes `game = GAME_NAME`, an indirection the regex cannot follow. The audit is silent here rather than agreeing, so this field rests on the two readings above; do not read a clean audit run as verification for this game.",
+
+  "description": "Burnout 3: Takedown as a multiworld. Races, crashes, cars and medals are shuffled across the session. Requires the player's own US disc (SLUS-21050), PCSX2 v2.6.3 with PINE enabled on slot 28011, and the world author's pnach loaded for that disc.",
+  "_description_source": "written by us from the world's own structure (items.py: cars_list/races_list/crashes_list; locations.py: signature_list/headline_list/medals_races_list/medals_crashes_list). No text copied from the game. The setup sentence is carried here deliberately -- see _install_text_note below.",
+
+  "checks_verified": false,
+  "_checks_verified_note": "FALSE, and this one is further from true than the usual not-yet. Nobody has carried a real check. London does not run Archipelago's client: it reads memory itself, and that needs a RAM map on OUR side. extensions/pcsx2/PineBridge.cs says so in its own words: \"What is still NOT proven: carrying an actual Archipelago check. That needs a PS2 world with a RAM map, and none of ours has one yet. This flag says the transport works, not that any game is playable.\" So this plugin will start PCSX2, attach over PINE, and produce no checks until that map is written. London warns at launch while this is false, which is exactly the right behaviour here.",
+  "_checks_verified_source": "not measured. What WAS measured (over PINE, 23 Aug 2026): PCSX2 v2.6.3 answered on slot 28011; booting Burnout 3 - Takedown (USA) returned title \"Burnout 3 - Takedown\", disc id SLUS-21050, version 1.00; 256 bytes of live EE memory were read, overwritten, read back byte for byte and restored; a 5000-byte read exercised the chunking loop. That is the transport, not a check.",
+
+  "requires": "own_copy",
+  "_requires_source": "The world's README states it as a requirement the player must supply: \"You need a PS2 Burnout 3 US ISO (SLUS-21050).\" The world ships no game data and neither do we. Of the four schema values: not `mod` (nothing is written into an install -- the pnach is loaded by the emulator, not installed into the game), not `free` (a retail PS2 title), not `unknown` (it is classified, by the author's own words). `own_copy` is the only value that lets the plugin ask the player for their own file and forbids it fetching anything.",
+
+  "rom": {
+    "description": "Your own Burnout 3: Takedown disc image for PlayStation 2 -- the US release, disc serial SLUS-21050",
+    "_description_source": "the world's README: \"You need a PS2 Burnout 3 US ISO (SLUS-21050)\". Region and serial are the author's words; the serial was independently confirmed on the disc (measured over PINE, 23 Aug 2026).",
+    "md5": null,
+    "_md5_note": "NOT MEASURED, so null. The disc id SLUS-21050 is measured; a hash of the disc is not, and a hash is the one thing that must never be guessed. Nothing in the world's source or release notes states a checksum for the disc either -- the world validates nothing about the player's file. With no hash and no size the launcher tells the player plainly that this edition cannot be checked exactly (GenericEmulatorPlugin.GetUnmetRomRequirement appends that sentence itself), which is the honest outcome.",
+    "size": null,
+    "_size_note": "NOT MEASURED, so null. Disc images are not a fixed size anyway: the same disc dumps to different byte counts as .chd, .iso or .bin/.cue, so size would be a bad check here even if it had been taken.",
+    "_pnach_crc_note": "The world's pnach is named SLUS-21050_BEBF8793.pnach. In PCSX2 that filename means serial SLUS-21050, ELF CRC BEBF8793 -- so BEBF8793 is the executable CRC the author's patch targets, and PCSX2 will refuse to load the pnach against a disc with a different CRC. Recorded here because it is a real identity fact from the release asset's own name, but it is deliberately NOT written into md5: it is an ELF CRC computed by the emulator, not a hash of the file the player picks, and putting it in md5 would make the launcher reject every valid disc."
+  },
+
+  "emulator": {
+    "name": "PCSX2",
+    "min_version": "2.6.3",
+    "_source": "the world's README, word for word: \"You need PCSX2 Lastest Stable (v2.6.3). (Nightly doesn't work for some reason).\" ⚠ Read that as an EXACT version, not a floor: the author reports nightlies failing, so newer is not automatically safer here. v2.6.3 is also the build this was measured against (23 Aug 2026)."
+  },
+
+  "client": {
+    "name": "Burnout 3 Client",
+    "_name_source": "the world registers its own client: __init__.py line 185, `components.append(Component(\"Burnout 3 Client\", func=run_client, component_type=Type.CLIENT))`. Recorded for completeness -- London never runs it.",
+    "kind": "world",
+    "_kind_source": "the world ships and registers its OWN Archipelago client: burnout3/__init__.py line 185, `components.append(Component(\"Burnout 3 Client\", func=run_client, component_type=Type.CLIENT))` -- and the transport lives in the world too: burnout3/pine.py is a PINE client that talks to PCSX2 itself. So London must NOT read memory for this game; its job is to install the apworld, start PCSX2 over the bridge with the player's disc, and tell the player to start \"Burnout 3 Client\" from the Archipelago Launcher. See docs/EXTERNAL_CLIENT_KIND.md.",
+    "protocol": "pine",
+    "_protocol_source": "extensions/pcsx2/PineBridge.cs: `public string Protocol => \"pine\";`, matching extensions/pcsx2/extension.json {\"protocol\": \"pine\"}, which is where tools/build_plugins.py discovers the buildable protocols from. Independently, the world itself speaks PINE: burnout3/pine.py is a PINE client implementation and defaults to `slot: int = 28011`, the same slot our bridge calls PINE_DEFAULT_SLOT. Both sides agree on the transport.",
+    "lua": null,
+    "_lua_note": "No Lua. PINE is a TCP protocol spoken to PCSX2 directly; there is no connector script to load, which is why `lua_module` is absent from this manifest rather than set to something."
+  },
+
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/Metasura/Burnout3Archipelago/releases",
+    "_source": "the world is published on its author's own releases page; release 0.1.0 (tag \"0.1.0\", published 2026-05-03) carries exactly two assets, burnout3.apworld and SLUS-21050_BEBF8793.pnach, read via the GitHub API on 23 Aug 2026. Not bundled with Archipelago -- it is nowhere in the Archipelago tree.",
+    "world_version": "0.1.0",
+    "_world_version_source": "burnout3/archipelago.json: {\"world_version\": \"0.1.0\"}, matching the release tag.",
+    "minimum_ap_version": "0.6.6",
+    "_minimum_ap_version_source": "burnout3/archipelago.json: {\"minimum_ap_version\": \"0.6.6\"}. Our client is 0.6.7, so this is satisfied."
+  },
+
+  "patch_extension": "none",
+  "_patch_extension_source": "read from the compiled world at burnout3.apworld: all 8 source files searched, no APPatchExtension and no APProcedurePatch anywhere. The world has no rom.py and no generate_output -- it never produces a patch container at all.",
+
+  "_patch_note": "There is deliberately NO `patch` block. This game is not patched by Archipelago: the world generates no patch container, so there is nothing for the launcher to apply and nothing to build a ROM from. ⚠ Do not mistake the pnach for an AP patch. SLUS-21050_BEBF8793.pnach is a PCSX2 cheat/patch file that the EMULATOR loads against the running disc; it is a setup step the player does once inside PCSX2, not something London builds per seed. Writing a `patch` block for it would tell the launcher to try to patch the player's disc image, which is wrong in every direction.",
+
+  "_install_text_note": "⚠ Trap found while writing this, worth recording: the manifest has NO install/setup field. tools/build_plugins.py embeds only id, display_name, subtitle, platform, ap_world_name, description, checks_verified, lua_module, rom, client, patch and credits -- inventing a `setup` key here would be silently dropped and the player would never see it. So the three things a player must have are carried by the fields that DO reach them: (a) their own US disc -> rom.description, which is the text of the file-request dialog (GenericEmulatorPlugin.GetUnmetRomRequirement); (b) PCSX2 with PINE on -> `description` on the game page, and again at launch from the bridge itself, which checks for a dumped BIOS and then explains PINE by name and slot when PCSX2 does not answer (PineBridge.GetUnmetRequirement); (c) the pnach -> `description`, because nothing else reaches the player and the bridge knows nothing game-specific.",
+
+  "_ps2_notes": "First PS2 title in the catalogue, so two things are worth knowing. 1) The launcher's ROM picker has no PS2 entry: the filter table compiled into Multiworld Launcher.dll names NDS, GBA, N64, Atari 2600 and Genesis, and falls back to \"ROM files|*.*\" for anything else. A PS2 player can still pick their .chd -- the fallback shows all files -- but the dialog will not be typed to disc images. Left alone deliberately: fixing it means changing the launcher, which is outside this manifest. 2) PCSX2 needs a PS2 BIOS the player dumped from their own console. We never ship, fetch or link one; the bridge checks for it first and explains the dump before the player watches a silent boot failure.",
+
+  "credits": {
+    "plugin_by": "solida1987",
+    "world_by": {
+      "name": "Metasura and Poulsance",
+      "authors": ["Metasura", "Poulsance"],
+      "_authors_source": "the world names them itself: burnout3/archipelago.json {\"authors\": [\"Metasura and Poulsance\"]}. Split into two names here because they are two people -- the world packs both into one string.",
+      "url": "https://github.com/Metasura/Burnout3Archipelago",
+      "_source": "the repository the world is published from; its own archipelago.json and README are what this manifest was written against.",
+      "licence": "none stated",
+      "_licence_source": "Metasura/Burnout3Archipelago has no LICENSE file -- the GitHub API returns 404 for the repository's licence and the repository metadata reports license: null (checked 23 Aug 2026). The authors have granted nothing explicitly. We redistribute none of this world's code -- the plugin carries only our own assembly and this manifest, and the player downloads the world and the pnach from the authors' own release -- so nothing here depends on a grant. Recorded so the gap is visible rather than assumed away."
+    },
+    "game_by": null,
+    "_game_by_note": "Not recorded rather than guessed. The game is the property of its publisher and is never distributed here; the player supplies their own disc. The Archipelago world is its authors' work. Only the plugin itself is by solida1987."
+  },
+
+  "_note": "Written 23 Aug 2026 against the world at release 0.1.0. Every field above is sourced; the ones that could not be sourced -- rom.md5, rom.size, client.lua, credits.game_by -- are null with the reason attached, per catalog/SCHEMA.md. The world's README also carries a gameplay caveat that is not a manifest field but matters to a player: after each Race or Crash, return to the main menu, or locations may be reported wrongly."
+}

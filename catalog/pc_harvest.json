@@ -1,5 +1,5 @@
 {
- "count": 282,
+ "count": 294,
  "games": [
   {
    "_v": 2,
@@ -163,7 +163,7 @@
    "release_page": "https://github.com/ThatOneGuy27/Archipelago-aus/releases",
    "apworld_url": "https://github.com/ThatOneGuy27/Archipelago-aus/releases/download/v1.5-beta/aus.apworld",
    "mod_url": "https://github.com/ThatOneGuy27/Archipelago-aus/releases/download/v1.5-beta/AnUntitledStory-AP-BetaV1.5.zip",
-   "steps": "# [Archipelago](https://archipelago.gg) ![Discord Shield](https://discordapp.com/api/guilds/731205301247803413/widget.png?style=shield) | [Install](https://github.com/ArchipelagoMW/Archipelago/releases)\n\nArchipelago provides a generic framework for developing multiworld capability for game randomizers. In all cases,\npresently, Archipelago is also the randomizer itself.\n\nCurrently, the following games are supported:\n\n* The Legend of Zelda: A Link to the Past\n* Factorio\n* Minecraft\n* Subnautica\n* Slay the Spire\n* Risk of Rain 2\n* The Legend of Zelda: Ocarina of Time\n* Timespinner\n* Super Metroid",
+   "steps": "",
    "licence": "NOASSERTION",
    "author": "ThatOneGuy27"
   },
@@ -246,7 +246,7 @@
    "release_page": "https://github.com/PixieCatSupreme/ArchipelagoAno/releases",
    "apworld_url": "https://github.com/PixieCatSupreme/ArchipelagoAno/releases/download/v0.6.3/anodyne.apworld",
    "mod_url": "https://github.com/PixieCatSupreme/ArchipelagoAno/releases/download/v0.6.3/anodyne-UniversalTracker.zip",
-   "steps": "# [Archipelago](https://archipelago.gg) ![Discord Shield](https://discordapp.com/api/guilds/731205301247803413/widget.png?style=shield) | [Install](https://github.com/ArchipelagoMW/Archipelago/releases)\n\nArchipelago provides a generic framework for developing multiworld capability for game randomizers. In all cases,\npresently, Archipelago is also the randomizer itself.\n\nCurrently, the following games are supported:\n\n* The Legend of Zelda: A Link to the Past\n* Factorio\n* Subnautica\n* Risk of Rain 2\n* The Legend of Zelda: Ocarina of Time\n* Timespinner\n* Super Metroid\n* Secret of Evermore\n* Final",
+   "steps": "",
    "licence": "NOASSERTION",
    "author": "PixieCatSupreme"
   },
@@ -401,7 +401,7 @@
    "release_page": "https://github.com/mail-liam/Archipelago/releases",
    "apworld_url": "https://github.com/mail-liam/Archipelago/releases/download/beta3.3/axiomverge.apworld",
    "mod_url": "https://github.com/mail-liam/Archipelago/releases/download/beta3.3/AxiomVergeAP.zip",
-   "steps": "# [Archipelago](https://archipelago.gg) ![Discord Shield](https://discordapp.com/api/guilds/731205301247803413/widget.png?style=shield) | [Install](https://github.com/ArchipelagoMW/Archipelago/releases)\n\nArchipelago provides a generic framework for developing multiworld capability for game randomizers. In all cases,\npresently, Archipelago is also the randomizer itself.\n\nCurrently, the following games are supported:\n\n* The Legend of Zelda: A Link to the Past\n* Factorio\n* Minecraft\n* Subnautica\n* Slay the Spire\n* Risk of Rain 2\n* The Legend of Zelda: Ocarina of Time\n* Timespinner\n* Super Metroid",
+   "steps": "",
    "licence": "NOASSERTION",
    "author": "mail-liam"
   },
@@ -535,7 +535,7 @@
    "release_page": "https://github.com/asdfwyay/APBuckshot/releases",
    "apworld_url": "https://github.com/asdfwyay/APBuckshot/releases/download/v0.4.1/buckshot.apworld",
    "mod_url": "https://github.com/asdfwyay/APBuckshot/releases/download/v0.4.1/asdfwyay-APBuckshot-0.4.1-hotfix.1.zip",
-   "steps": "# [Archipelago](https://archipelago.gg) ![Discord Shield](https://discordapp.com/api/guilds/731205301247803413/widget.png?style=shield) | [Install](https://github.com/ArchipelagoMW/Archipelago/releases)\n\nArchipelago provides a generic framework for developing multiworld capability for game randomizers. In all cases,\npresently, Archipelago is also the randomizer itself.\n\nCurrently, the following games are supported:\n\n* The Legend of Zelda: A Link to the Past\n* Factorio\n* Subnautica\n* Risk of Rain 2\n* The Legend of Zelda: Ocarina of Time\n* Timespinner\n* Super Metroid\n* Secret of Evermore\n* Final",
+   "steps": "",
    "licence": "NOASSERTION",
    "author": "asdfwyay"
   },
@@ -770,6 +770,26 @@
   },
   {
    "_v": 2,
+   "name": "CloverPit",
+   "source": "url",
+   "steam_appid": "3314790",
+   "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/3314790/header.jpg",
+   "repo": "Syntheal/CloverPit.Archipelago",
+   "install": "apworld_and_mod",
+   "assets": [
+    "cloverpit.apworld",
+    "Mods.zip"
+   ],
+   "tag": "v1.2.2",
+   "release_page": "https://github.com/Syntheal/CloverPit.Archipelago/releases",
+   "apworld_url": "https://github.com/Syntheal/CloverPit.Archipelago/releases/download/v1.2.2/cloverpit.apworld",
+   "mod_url": "https://github.com/Syntheal/CloverPit.Archipelago/releases/download/v1.2.2/Mods.zip",
+   "steps": "Author's own steps -- https://github.com/Syntheal/CloverPit.Archipelago\n\n1. Install BepInEx (https://github.com/BepInEx/BepInEx) if you do not have it.\n2. Install the mod, either from Thunderstore\n   (https://thunderstore.io/c/clover-pit/p/Syntheal/CloverPit_Archipelago/),\n   with a mod manager such as r2modman, or by extracting Mods.zip from the\n   release into BepInEx/plugins/.\n3. Launch the game; the mod is active.\n\nLondon installs cloverpit.apworld into your Archipelago engine. Step 2 is\nyours -- London does not write into your game folder.",
+   "licence": "",
+   "author": "Syntheal (Mads Poulsen)"
+  },
+  {
+   "_v": 2,
    "name": "ClusterTruck",
    "source": "url",
    "steam_appid": "397950",
@@ -948,7 +968,7 @@
    "release_page": "https://github.com/Emerassi/CrystalProjectAPWorld/releases",
    "apworld_url": "https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.17.0/crystal_project.apworld",
    "mod_url": "https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.17.0/CrystalProjectAPModInstaller.zip",
-   "steps": "# [Archipelago](https://archipelago.gg) ![Discord Shield](https://discordapp.com/api/guilds/731205301247803413/widget.png?style=shield) | [Install](https://github.com/ArchipelagoMW/Archipelago/releases)\n\nArchipelago provides a generic framework for developing multiworld capability for game randomizers. In all cases,\npresently, Archipelago is also the randomizer itself.\n\nCurrently, the following games are supported:\n\n* The Legend of Zelda: A Link to the Past\n* Factorio\n* Subnautica\n* Risk of Rain 2\n* The Legend of Zelda: Ocarina of Time\n* Timespinner\n* Super Metroid\n* Secret of Evermore\n* Final",
+   "steps": "",
    "licence": "NOASSERTION",
    "author": "Emerassi"
   },
@@ -1186,6 +1206,25 @@
   },
   {
    "_v": 2,
+   "name": "Divinity: Original Sin 2",
+   "source": "url",
+   "steam_appid": "435150",
+   "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/435150/header.jpg",
+   "repo": "Intaiachi/ArchipelagoDOS2",
+   "install": "apworld_and_external_mod",
+   "assets": [
+    "dos2.apworld"
+   ],
+   "tag": "v0.8.0",
+   "release_page": "https://github.com/Intaiachi/ArchipelagoDOS2/releases",
+   "apworld_url": "https://github.com/Intaiachi/ArchipelagoDOS2/releases/download/v0.8.0/dos2.apworld",
+   "mod_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3741893354",
+   "steps": "Author's own steps -- https://github.com/Intaiachi/ArchipelagoDOS2/blob/main/worlds/dos2/docs/steup_en.md\n\nNeeds Divinity: Original Sin 2 DEFINITIVE EDITION.\n\n1. Install Norbyte's Script Extender\n   (https://github.com/Norbyte/ositools/releases) -- guides are on that page.\n2. Install the Archipelago DOS2 mod. Either subscribe on the Steam Workshop\n   (https://steamcommunity.com/sharedfiles/filedetails/?id=3741893354) or take\n   the .pak from https://github.com/Intaiachi/DOS2-Archiplago-Mod/releases and\n   put it in Documents\\Larian Studios\\Divinity Original Sin 2\\Mods.\n3. Enable the mod under \"Mods\" in the main menu.\n4. Check that Documents\\Larian Studios\\Divinity Original Sin 2\\Osiris Data\n   exists. If not, create it, or play until Death Belowdecks completes.\n\nLondon installs dos2.apworld into your Archipelago engine. Steps 1-4 are yours:\na Steam Workshop subscription is not a file London can fetch.",
+   "licence": "NOASSERTION",
+   "author": "Intaiachi"
+  },
+  {
+   "_v": 2,
    "name": "DLC Quest",
    "source": "bundled",
    "steam_appid": "230050",
@@ -1409,6 +1448,26 @@
   },
   {
    "_v": 2,
+   "name": "Enter the Gungeon",
+   "source": "url",
+   "steam_appid": "311690",
+   "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/311690/header.jpg",
+   "repo": "MaoBoulve/ArchipelaGunAPWorld",
+   "install": "apworld_and_external_mod",
+   "assets": [
+    "Enter.The.Gungeon.yaml",
+    "enter_the_gungeon.apworld"
+   ],
+   "tag": "v0.1.1",
+   "release_page": "https://github.com/MaoBoulve/ArchipelaGunAPWorld/releases",
+   "apworld_url": "https://github.com/MaoBoulve/ArchipelaGunAPWorld/releases/download/v0.1.1/enter_the_gungeon.apworld",
+   "mod_url": "https://thunderstore.io/c/enter-the-gungeon/p/MaoBoulve/ArchipelaGun_Multiworld_Randomizer/",
+   "steps": "Author's own steps -- https://github.com/MaoBoulve/ArchipelaGunAPWorld\n\nInstall these three through Thunderstore, then start the game modded:\n1. ArchipelaGun Mod\n   (https://thunderstore.io/c/enter-the-gungeon/p/MaoBoulve/ArchipelaGun_Multiworld_Randomizer/)\n2. Mod the Gungeon v1.8.4\n   (https://thunderstore.io/c/enter-the-gungeon/p/MtG_API/Mod_the_Gungeon_API/)\n3. Alexandria v0.4.18\n   (https://thunderstore.io/c/enter-the-gungeon/p/Alexandria/Alexandria/)\n\nOn run start the Archipelagun spawns -- fire at it to open the mod menu, then\n\"connect (ip) (port) (slot name)\".\n\nLondon installs enter_the_gungeon.apworld into your Archipelago engine. The\nthree Thunderstore mods are yours.",
+   "licence": "NOASSERTION",
+   "author": "MaoBoulve (revision of KinTheInfinite's world)"
+  },
+  {
+   "_v": 2,
    "name": "Everhood 2",
    "source": "url",
    "steam_appid": "1984020",
@@ -1543,7 +1602,7 @@
    "release_page": "https://github.com/Bartz24/Archipelago/releases",
    "apworld_url": "https://github.com/Bartz24/Archipelago/releases/download/0.6.3/ff12_open_world.apworld",
    "mod_url": "https://github.com/Bartz24/Archipelago/releases/download/0.6.3/FF12Randomizer0.8.2.27.7z",
-   "steps": "# [Archipelago](https://archipelago.gg) ![Discord Shield](https://discordapp.com/api/guilds/731205301247803413/widget.png?style=shield) | [Install](https://github.com/ArchipelagoMW/Archipelago/releases)\n\nArchipelago provides a generic framework for developing multiworld capability for game randomizers. In all cases, presently, Archipelago is also the randomizer itself.\n\nCurrently, the following games are supported:\n* The Legend of Zelda: A Link to the Past\n* Factorio\n* Minecraft\n* Subnautica\n* Slay the Spire\n* Risk of Rain 2\n* The Legend of Zelda: Ocarina of Time\n* Timespinner\n* Super Metroid",
+   "steps": "",
    "licence": "NOASSERTION",
    "author": "Bartz24"
   },
@@ -1885,6 +1944,25 @@
   },
   {
    "_v": 2,
+   "name": "GTFO",
+   "source": "url",
+   "steam_appid": "493520",
+   "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/493520/header.jpg",
+   "repo": "RoboRyGuy/Archipelago-GTFO",
+   "install": "apworld_and_external_mod",
+   "assets": [
+    "gtfo.apworld"
+   ],
+   "tag": "0.0.5",
+   "release_page": "https://github.com/RoboRyGuy/Archipelago-GTFO/releases",
+   "apworld_url": "https://github.com/RoboRyGuy/Archipelago-GTFO/releases/download/0.0.5/gtfo.apworld",
+   "mod_url": "https://thunderstore.io/c/gtfo/p/RoboRyGuy/BetaArchipelago/",
+   "steps": "The mod is published on Thunderstore:\nhttps://thunderstore.io/c/gtfo/p/RoboRyGuy/BetaArchipelago/\n\nThe author has not published written setup steps -- the world folder in\nhttps://github.com/RoboRyGuy/Archipelago-GTFO carries no docs, and that\nrepository's README is the upstream Archipelago project's own README, not a\nguide to this game. Rather than paraphrase steps nobody wrote, London points\nyou at the mod page and the game's Discord thread.\n\nLondon installs gtfo.apworld into your Archipelago engine. The mod is yours.",
+   "licence": "NOASSERTION",
+   "author": "RoboRyGuy"
+  },
+  {
+   "_v": 2,
    "name": "Guild Wars 2",
    "source": "url",
    "steam_appid": "1284210",
@@ -1898,7 +1976,7 @@
    "release_page": "https://github.com/Feldar99/Archipelago/releases",
    "apworld_url": null,
    "mod_url": "https://github.com/Feldar99/Archipelago/releases/download/0.4.11-alpha/GuildWars2Archipelago-0-4-11.zip",
-   "steps": "# [Archipelago](https://archipelago.gg) ![Discord Shield](https://discordapp.com/api/guilds/731205301247803413/widget.png?style=shield) | [Install](https://github.com/ArchipelagoMW/Archipelago/releases)\n\nArchipelago provides a generic framework for developing multiworld capability for game randomizers. In all cases,\npresently, Archipelago is also the randomizer itself.\n\nCurrently, the following games are supported:\n\n* The Legend of Zelda: A Link to the Past\n* Factorio\n* Subnautica\n* Risk of Rain 2\n* The Legend of Zelda: Ocarina of Time\n* Timespinner\n* Super Metroid\n* Secret of Evermore\n* Final",
+   "steps": "",
    "licence": "NOASSERTION",
    "author": "Feldar99"
   },
@@ -2223,6 +2301,25 @@
   },
   {
    "_v": 2,
+   "name": "Hot Lava",
+   "source": "url",
+   "steam_appid": "382560",
+   "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/382560/header.jpg",
+   "repo": "Bongo9911/HotLavaAPWorld",
+   "install": "apworld_and_external_mod",
+   "assets": [
+    "hot_lava.apworld"
+   ],
+   "tag": "0.1.0",
+   "release_page": "https://github.com/Bongo9911/HotLavaAPWorld/releases",
+   "apworld_url": "https://github.com/Bongo9911/HotLavaAPWorld/releases/download/0.1.0/hot_lava.apworld",
+   "mod_url": "https://thunderstore.io/c/hot-lava/p/Bongo9911/HotLavaArchipelago/",
+   "steps": "The mod is published on Thunderstore:\nhttps://thunderstore.io/c/hot-lava/p/Bongo9911/HotLavaArchipelago/\nMod source: https://github.com/Bongo9911/HotLavaArchipelago\n\nThe author has not published written setup steps -- worlds/hot_lava/docs/\nsetup_en.md exists in the repository but is empty, and the repository README is\nthe upstream Archipelago project's own README, not a guide to this game.\nRather than paraphrase steps nobody wrote, London points you at the mod page.\n\nLondon installs hot_lava.apworld into your Archipelago engine. The mod is\nyours.",
+   "licence": "NOASSERTION",
+   "author": "Bongo9911"
+  },
+  {
+   "_v": 2,
    "name": "Hylics 2",
    "source": "bundled",
    "steam_appid": "1286710",
@@ -2488,6 +2585,26 @@
    "steps": "",
    "licence": "",
    "author": "Birdwards"
+  },
+  {
+   "_v": 2,
+   "name": "KeyWe",
+   "source": "url",
+   "steam_appid": "1242980",
+   "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/1242980/header.jpg",
+   "repo": "xMcacutt-Archipelago/Archipelago-KeyWe",
+   "install": "apworld_and_external_mod",
+   "assets": [
+    "keywe.apworld",
+    "KeyWe.yaml"
+   ],
+   "tag": "1.1.0",
+   "release_page": "https://github.com/xMcacutt-Archipelago/Archipelago-KeyWe/releases",
+   "apworld_url": "https://github.com/xMcacutt-Archipelago/Archipelago-KeyWe/releases/download/1.1.0/keywe.apworld",
+   "mod_url": "https://thunderstore.io/c/keywe/p/xMcacutt/KeyWe_Archipelago/",
+   "steps": "Author's own steps -- https://github.com/xMcacutt-Archipelago/KeyWe-AP-Client\n\nMod manager (recommended):\nInstall the Thunderstore Mod Manager, set up KeyWe, and install the\nArchipelago client mod\n(https://thunderstore.io/c/keywe/p/xMcacutt/KeyWe_Archipelago/).\n\nManual:\n1. Install BepInEx 5.4.23.4 into steamapps/common/KeyWe, then run KeyWe.exe\n   once so BepInEx creates its folders.\n2. Close the game and copy KeyWe_Archipelago from the latest client release\n   into BepInEx/plugins.\n3. Launch: the connection screen appears on the main menu. F7 toggles the log.\n\nLondon installs keywe.apworld into your Archipelago engine. The mod is yours.",
+   "licence": "NOASSERTION",
+   "author": "xMcacutt"
   },
   {
    "_v": 2,
@@ -3087,7 +3204,7 @@
    "release_page": "https://github.com/AzuriCaelum2/Archipelago-Nodebuster/releases",
    "apworld_url": "https://github.com/AzuriCaelum2/Archipelago-Nodebuster/releases/download/0.1.4b/nodebuster.apworld",
    "mod_url": "https://github.com/AzuriCaelum2/Archipelago-Nodebuster/releases/download/0.1.4b/NodebusterAP.zip",
-   "steps": "# [Archipelago](https://archipelago.gg) ![Discord Shield](https://discordapp.com/api/guilds/731205301247803413/widget.png?style=shield) | [Install](https://github.com/ArchipelagoMW/Archipelago/releases)\n\nArchipelago provides a generic framework for developing multiworld capability for game randomizers. In all cases,\npresently, Archipelago is also the randomizer itself.\n\nCurrently, the following games are supported:\n\n* The Legend of Zelda: A Link to the Past\n* Factorio\n* Subnautica\n* Risk of Rain 2\n* The Legend of Zelda: Ocarina of Time\n* Timespinner\n* Super Metroid\n* Secret of Evermore\n* Final",
+   "steps": "",
    "licence": "NOASSERTION",
    "author": "AzuriCaelum2"
   },
@@ -3340,6 +3457,26 @@
   },
   {
    "_v": 2,
+   "name": "Outward: Definitive Edition",
+   "source": "url",
+   "steam_appid": "794260",
+   "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/794260/header.jpg",
+   "repo": "Daemonarian/AP_Outward",
+   "install": "apworld_and_mod",
+   "assets": [
+    "outward.apworld",
+    "OutwardArchipelago.zip"
+   ],
+   "tag": "v0.2.2",
+   "release_page": "https://github.com/Daemonarian/AP_Outward/releases",
+   "apworld_url": "https://github.com/Daemonarian/AP_Outward/releases/download/v0.2.2/outward.apworld",
+   "mod_url": "https://github.com/Daemonarian/AP_Outward/releases/download/v0.2.2/OutwardArchipelago.zip",
+   "steps": "Author's own steps -- https://github.com/Daemonarian/AP_Outward\n\noutward.apworld is needed by whoever HOSTS the multiworld; the person playing\nneeds the mod. The mod version must match the .apworld version exactly.\n\nRecommended -- R2ModMan (https://thunderstore.io/package/ebkr/r2modman/):\n1. Make a new R2ModMan profile for Outward: Definitive Edition.\n2. Under Mods > Online, install OutwardArchipelago and its dependencies.\n3. Click \"Start modded\" once to generate the config file, then exit.\n\nOtherwise take OutwardArchipelago.zip from the release and follow the general\nOutward mod instructions (https://outward.fandom.com/wiki/Installing_Mods).\n\nLondon installs outward.apworld into your Archipelago engine. The mod is\nyours.",
+   "licence": "MIT",
+   "author": "Daemonarian"
+  },
+  {
+   "_v": 2,
    "name": "Overcooked! 2",
    "source": "bundled",
    "steam_appid": "728880",
@@ -3378,6 +3515,25 @@
   },
   {
    "_v": 2,
+   "name": "Paquerette Down the Bunburrows",
+   "source": "url",
+   "steam_appid": "1628610",
+   "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/1628610/header.jpg",
+   "repo": "SergeAzel/Archipelago_PDTB",
+   "install": "apworld_and_external_mod",
+   "assets": [
+    "paquerette_down_the_bunburrows.apworld"
+   ],
+   "tag": "paquerette_down_the_bunburrows-0.1.0",
+   "release_page": "https://github.com/SergeAzel/Archipelago_PDTB/releases",
+   "apworld_url": "https://github.com/SergeAzel/Archipelago_PDTB/releases/download/paquerette_down_the_bunburrows-0.1.0/paquerette_down_the_bunburrows.apworld",
+   "mod_url": "https://thunderstore.io/c/paquerette-down-the-bunburrows/p/BNYSmod/Bunject_Archipelago/",
+   "steps": "Author's own steps -- https://github.com/SergeAzel/Archipelago_PDTB/blob/main/worlds/paquerette_down_the_bunburrows/docs/setup_en.md\n\nRecommended: install the client mod through Thunderstore\n(https://thunderstore.io/c/paquerette-down-the-bunburrows/p/BNYSmod/Bunject_Archipelago/).\n\nManual:\n1. Find your install, e.g. C:\\Program Files (x86)\\Steam\\steamapps\\common\\\n   Paquerette Down the Bunburrows\\\n2. Install BepInEx 5 (https://github.com/BepInEx/BepInEx) into that folder, so\n   you get BepInEx\\core, BepInEx\\config and BepInEx\\plugins.\n3. Take the latest zip from https://github.com/SergeAzel/Bunject/releases/ and\n   extract it into BepInEx\\plugins.\n\nLondon installs paquerette_down_the_bunburrows.apworld into your Archipelago\nengine. The mod is yours.",
+   "licence": "NOASSERTION",
+   "author": "SergeAzel"
+  },
+  {
+   "_v": 2,
    "name": "Parkitect",
    "source": "url",
    "steam_appid": "453090",
@@ -3394,6 +3550,27 @@
    "steps": "",
    "licence": "NOASSERTION",
    "author": "CrusherRL"
+  },
+  {
+   "_v": 2,
+   "name": "PEAK",
+   "source": "url",
+   "steam_appid": "3527290",
+   "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/3527290/header.jpg",
+   "repo": "Mickemoose/peak-archipelago",
+   "install": "apworld_and_mod",
+   "assets": [
+    "peak.apworld",
+    "PEAK.yaml",
+    "peakpelago_0.6.1.zip"
+   ],
+   "tag": "0.6.1",
+   "release_page": "https://github.com/Mickemoose/peak-archipelago/releases",
+   "apworld_url": "https://github.com/Mickemoose/peak-archipelago/releases/download/0.6.1/peak.apworld",
+   "mod_url": "https://github.com/Mickemoose/peak-archipelago/releases/download/0.6.1/peakpelago_0.6.1.zip",
+   "steps": "Author's own steps -- https://github.com/Mickemoose/peak-archipelago/blob/main/GUIDE.md\n\nThunderstore (recommended):\n1. Install a mod manager, e.g. Gale Mod Manager.\n2. Install the PEAKPELAGO mod\n   (https://thunderstore.io/c/peak/p/PeakArchipelago/PEAKPELAGO/).\n3. Start PEAK -- the plugin writes its config on first run. Connect from the\n   in-game UI.\n\nManual:\n1. Install BepInEx 5.x into the PEAK game directory and run the game once.\n2. Drag the peakpelago folder from the release into BepInEx/plugins/.\n3. Start PEAK and connect from the in-game pause menu.\n\nLondon installs peak.apworld into your Archipelago engine. The mod is yours.",
+   "licence": "",
+   "author": "Mickemoose"
   },
   {
    "_v": 2,
@@ -4022,6 +4199,26 @@
   },
   {
    "_v": 2,
+   "name": "Schedule I",
+   "source": "url",
+   "steam_appid": "3164500",
+   "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/3164500/header.jpg",
+   "repo": "MacH8s/Narcopelago",
+   "install": "apworld_and_external_mod",
+   "assets": [
+    "Schedule.I.yaml",
+    "Schedule_I.apworld"
+   ],
+   "tag": "v3.6.3",
+   "release_page": "https://github.com/MacH8s/Narcopelago/releases",
+   "apworld_url": "https://github.com/MacH8s/Narcopelago/releases/download/v3.6.3/Schedule_I.apworld",
+   "mod_url": "https://thunderstore.io/c/schedule-i/p/Narcopelago/Narcopelago/",
+   "steps": "Author's own steps -- https://github.com/MacH8s/Narcopelago/blob/main/worlds/Schedule_I/docs/setup_en.md\n\n1. Install the Thunderstore Mod Manager and open it.\n2. Choose Schedule I and make a profile for Archipelago.\n3. Search for \"Narcopelago\" and install it\n   (https://thunderstore.io/c/schedule-i/p/Narcopelago/Narcopelago/).\n4. Launch with \"Start modded\" -- every time you want to play Archipelago.\n5. Connect from the in-game UI, then create a new world and skip the prologue.\n\nSave often. Restart the game to switch rooms.\n\nLondon installs Schedule_I.apworld into your Archipelago engine. The mod is\nyours.",
+   "licence": "",
+   "author": "MacH8s"
+  },
+  {
+   "_v": 2,
    "name": "Severed Soul",
    "source": "url",
    "steam_appid": null,
@@ -4106,6 +4303,25 @@
    "apworld_url": null,
    "mod_url": null,
    "tag": ""
+  },
+  {
+   "_v": 2,
+   "name": "Shovel Knight Pocket Dungeon",
+   "source": "url",
+   "steam_appid": "1184760",
+   "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/1184760/header.jpg",
+   "repo": "Mitchell1711/Archipelago",
+   "install": "apworld_and_external_mod",
+   "assets": [
+    "pocket_dungeon.apworld"
+   ],
+   "tag": "v0.3.2",
+   "release_page": "https://github.com/Mitchell1711/Archipelago/releases",
+   "apworld_url": "https://github.com/Mitchell1711/Archipelago/releases/download/v0.3.2/pocket_dungeon.apworld",
+   "mod_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3619001702",
+   "steps": "Author's own steps -- https://github.com/Mitchell1711/Archipelago/blob/skpd_ap/worlds/pocket_dungeon/docs/setup_en.md\n\n1. Switch the game to the Pals Pack early preview branch (instructions:\n   yachtclubgames.com blog, \"early preview update notes\", #branch).\n2. Subscribe to the mod on the Steam Workshop\n   (https://steamcommunity.com/sharedfiles/filedetails/?id=3619001702).\n3. Open the Archipelago launcher and pick the Shovel Knight Pocket Dungeon\n   client; set the folder paths it asks for.\n4. In the client run /setup_mod -- it copies the workshop files into place.\n5. Connect in the client, then start the game from Steam (recommended for\n   controller players) or with /launch_game.\n\nLondon installs pocket_dungeon.apworld into your Archipelago engine. Steps 1-5\nare yours: a Steam Workshop subscription is not a file London can fetch.",
+   "licence": "NOASSERTION",
+   "author": "Mitchell1711"
   },
   {
    "_v": 2,
@@ -4571,7 +4787,7 @@
    "release_page": "https://github.com/Evereliquest/Archipelago/releases",
    "apworld_url": "https://github.com/Evereliquest/Archipelago/releases/download/v0.3.1/teardown.apworld",
    "mod_url": "https://github.com/Evereliquest/Archipelago/releases/download/v0.3.1/data.zip",
-   "steps": "# [Archipelago](https://archipelago.gg) ![Discord Shield](https://discordapp.com/api/guilds/731205301247803413/widget.png?style=shield) | [Install](https://github.com/ArchipelagoMW/Archipelago/releases)\n\nArchipelago provides a generic framework for developing multiworld capability for game randomizers. In all cases,\npresently, Archipelago is also the randomizer itself.\n\nCurrently, the following games are supported:\n\n* The Legend of Zelda: A Link to the Past\n* Factorio\n* Subnautica\n* Risk of Rain 2\n* The Legend of Zelda: Ocarina of Time\n* Timespinner\n* Super Metroid\n* Secret of Evermore\n* Final",
+   "steps": "",
    "licence": "NOASSERTION",
    "author": "Evereliquest"
   },
@@ -4728,7 +4944,7 @@
    "release_page": "https://github.com/benny-dreamly/Archipelago/releases",
    "apworld_url": "https://github.com/benny-dreamly/Archipelago/releases/download/ts-1.1.0/taylorswift.apworld",
    "mod_url": "https://github.com/benny-dreamly/Archipelago/releases/download/ts-1.1.0/Taylor.Swift.Discography.zip",
-   "steps": "# [Archipelago](https://archipelago.gg) ![Discord Shield](https://discordapp.com/api/guilds/731205301247803413/widget.png?style=shield) | [Install](https://github.com/ArchipelagoMW/Archipelago/releases)\n\nArchipelago provides a generic framework for developing multiworld capability for game randomizers. In all cases,\npresently, Archipelago is also the randomizer itself.\n\nCurrently, the following games are supported:\n\n* The Legend of Zelda: A Link to the Past\n* Factorio\n* Subnautica\n* Risk of Rain 2\n* The Legend of Zelda: Ocarina of Time\n* Timespinner\n* Super Metroid\n* Secret of Evermore\n* Final",
+   "steps": "",
    "licence": "NOASSERTION",
    "author": "benny-dreamly"
   },
@@ -5116,6 +5332,26 @@
   },
   {
    "_v": 2,
+   "name": "Very Very Valet",
+   "source": "url",
+   "steam_appid": "1448840",
+   "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/1448840/header.jpg",
+   "repo": "xMcacutt-Archipelago/Archipelago-VeryVeryValet",
+   "install": "apworld_and_external_mod",
+   "assets": [
+    "Very.Very.Valet.yaml",
+    "very_very_valet.apworld"
+   ],
+   "tag": "1.0.1",
+   "release_page": "https://github.com/xMcacutt-Archipelago/Archipelago-VeryVeryValet/releases",
+   "apworld_url": "https://github.com/xMcacutt-Archipelago/Archipelago-VeryVeryValet/releases/download/1.0.1/very_very_valet.apworld",
+   "mod_url": "https://thunderstore.io/c/very-very-valet/",
+   "steps": "Author's own steps -- https://github.com/xMcacutt-Archipelago/VeryVeryValet-APClient\n\nRecommended: install the client mod through the Thunderstore Mod Manager\n(https://thunderstore.io/c/very-very-valet/).\n\nManual:\n1. Download BepInEx 5.4 x64 and extract it into your Very Very Valet\\windows\n   directory.\n2. Launch the game once, then close it.\n3. In BepInEx/config open BepInEx.cfg and set HideManagerGameObject to true.\n4. Take the latest release from\n   https://github.com/xMcacutt-Archipelago/VeryVeryValet-APClient/releases and\n   extract the Parkipelago folder into BepInEx/plugins.\n5. Launch the game.\n\nLondon installs very_very_valet.apworld into your Archipelago engine. The mod\nis yours.",
+   "licence": "NOASSERTION",
+   "author": "xMcacutt"
+  },
+  {
+   "_v": 2,
    "name": "Void Sols",
    "source": "url",
    "steam_appid": "2736690",
@@ -5430,7 +5666,7 @@
    "release_page": "https://github.com/chickentuna/Archipelago-Zoominoes/releases",
    "apworld_url": "https://github.com/chickentuna/Archipelago-Zoominoes/releases/download/v0.1.0/zoominoes.apworld",
    "mod_url": "https://github.com/chickentuna/Archipelago-Zoominoes/releases/download/v0.1.0/ZoominoesArchipelago.zip",
-   "steps": "# [Archipelago](https://archipelago.gg) ![Discord Shield](https://discordapp.com/api/guilds/731205301247803413/widget.png?style=shield) | [Install](https://github.com/ArchipelagoMW/Archipelago/releases)\n\nArchipelago provides a generic framework for developing multiworld capability for game randomizers. In all cases,\npresently, Archipelago is also the randomizer itself.\n\nCurrently, the following games are supported:\n\n* The Legend of Zelda: A Link to the Past\n* Factorio\n* Subnautica\n* Risk of Rain 2\n* The Legend of Zelda: Ocarina of Time\n* Timespinner\n* Super Metroid\n* Secret of Evermore\n* Final",
+   "steps": "",
    "licence": "NOASSERTION",
    "author": "chickentuna"
   },

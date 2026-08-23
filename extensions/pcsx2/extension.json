@@ -1,0 +1,13 @@
+{
+  "apiVersion": 1,
+  "extensionId": "pine_bridge",
+  "displayName": "PCSX2 (PINE)",
+  "protocol": "pine",
+  "version": "0.1.0",
+  "author": "Solida Games",
+  "authorContact": "https://github.com/solida1987/london-plugin-catalog",
+  "assembly": "CatalogPineBridge.dll",
+  "entryType": "LauncherV2.Extensions.Pine.PineBridge",
+  "homepageUrl": "https://pcsx2.net",
+  "rulesAcknowledged": true
+}

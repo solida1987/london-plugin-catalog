@@ -1,0 +1,72 @@
+{
+  "id": "soul_blazer",
+  "display_name": "Soul Blazer",
+  "subtitle": "SNI",
+  "platform": "SNES",
+  "version": "1.0.0",
+  "_verified": "2026-08-23",
+  "_drafted_note": "Drafted 2026-08-23 from the world's OWN setup guide and the world's published source. No field is filled in from memory or from what other games on the same console do.",
+  "_platform_source": "setup guide https://github.com/Tranquilite0/Archipelago-SoulBlazer/blob/soulblazer/worlds/soulblazer/docs/setup_en.md -- \"Your legally obtained Soul Blazer US ROM file, probably named `Soul Blazer (USA).sfc`\"",
+  "_display_name_source": "spelled as the world spells it -- `game = \"Soul Blazer\"`, two words. The games sheet writes it \"SoulBlazer\".",
+  "ap_world_name": "Soul Blazer",
+  "_ap_world_name_source": "world source: Tranquilite0/Archipelago-SoulBlazer (branch soulblazer), read 2026-08-23 -- worlds/soulblazer/Client.py `class SoulBlazerSNIClient(SNIClient)` sets `game = \"Soul Blazer\"`, and worlds/soulblazer/Rom.py sets the same on SoulBlazerProcedurePatch",
+  "description": "The sealed world and its freed souls as a multiworld.",
+  "_description_source": "written by us from the structure of the game - no text copied from the game itself",
+  "checks_verified": false,
+  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Nobody has played this. London warns at launch until it is true.",
+  "requires": "own_copy",
+  "_requires_source": "SNES title - the game lives on a cartridge or disc the player owns, and the setup guide tells the player to supply it: A legally obtained Soul Blazer US ROM, probably named `Soul Blazer (USA).sfc`",
+  "rom": {
+    "description": "A legally obtained Soul Blazer US ROM, probably named `Soul Blazer (USA).sfc`",
+    "_description_source": "setup guide, word for word",
+    "md5": [
+      "83cf41d53a1b94aeea1a645037a24004"
+    ],
+    "size": null,
+    "_md5_source": "world source: worlds/soulblazer/Rom.py, read 2026-08-23 -- `USHASH = \"83cf41d53a1b94aeea1a645037a24004\"`, used as `hash` on SoulBlazerProcedurePatch, i.e. the dump the world validates the player's file against.",
+    "_size_note": "Not measured. London reads size 0 as 'unknown' and matches on MD5 alone, which is the stronger check."
+  },
+  "emulator": {
+    "name": "RetroArch",
+    "min_version": "1.10.3",
+    "_source": "setup guide: \"RetroArch 1.10.3 or newer\", with the warning that \"RetroArch 1.9.x will not work as it is older than 1.10.3.\""
+  },
+  "client": {
+    "name": "Archipelago's SNI Client",
+    "protocol": "sni",
+    "lua": null,
+    "_source": "SCHEMA rule 1, read from the world itself: worlds/soulblazer/Client.py, 2026-08-23 -- `class SoulBlazerSNIClient(SNIClient)`. ⚠ The setup guide is NOT usable for this: its connection section still tells the player about \"the Donkey Kong Country 3 Client\", which is a copy-paste left in the author's guide. The world's own code was used instead. ⚠ Recording the world's OWN transport. London does not run upstream's client -- see catalog/games/smw.json, where an SNIClient world is driven by a BizHawk RAM map instead and the protocol was set to bizhawk for that reason. Whoever writes this game's RAM map must set the protocol to match the bridge the map actually targets. ⚠ Rule 2 is NOT satisfied: no RAM map Plugins/Scripts/games/soul_blazer.lua exists, so the build refuses this manifest."
+  },
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/Tranquilite0/Archipelago/releases/latest",
+    "_source": "catalog/sheet_links.json, the \"APWorld, Emotracker\" link for SoulBlazer. ⚠ Note this is a DIFFERENT repository from the one that holds the source and the guide (Tranquilite0/Archipelago-SoulBlazer); the sheet and catalog/sheet_survey.json both point releases at Tranquilite0/Archipelago. The guide names no source at all."
+  },
+  "patch": {
+    "model": "procedure",
+    "extension": ".apsb",
+    "produced_by": "Archipelago Launcher - Open Patch",
+    "base_md5": [
+      "83cf41d53a1b94aeea1a645037a24004"
+    ],
+    "_source": "world source: worlds/soulblazer/Rom.py, read 2026-08-23 -- `class SoulBlazerProcedurePatch(APProcedurePatch, APTokenMixin)` with `patch_file_ending = \".apsb\"`. The guide agrees: double-clicking the `.apsb` file creates the ROM beside it."
+  },
+  "patch_extension": "refused",
+  "_patch_extension_source": "world source: worlds/soulblazer/Rom.py, read 2026-08-23 -- the world defines `SoulBlazerPatchExtensions`, an APPatchExtension subclass, with the single method `apply_patches`. That is a NEW step name, not one of the generic set (apply_bsdiff4, apply_tokens, copy, calc_snes_crc, apply_ips, apply_xdelta), so London's patcher refuses it loudly and the game would play unpatched -- the safe failure, not the silent one.",
+  "credits": {
+    "plugin_by": "solida1987",
+    "world_by": {
+      "name": "Tranquilite0/Archipelago-SoulBlazer",
+      "url": "https://github.com/Tranquilite0/Archipelago-SoulBlazer",
+      "_source": "the repository that publishes this world -- catalog/sheet_survey.json `repo` and the setup guide URL in catalog/guide_platform.json",
+      "licence": null,
+      "_licence_source": "not read. The repository's LICENSE file has not been opened, so no licence is claimed.",
+      "authors": [
+        "Tranquilite0"
+      ],
+      "_authors_source": "the GitHub account that publishes the world (the repository owner). NOT confirmed against a credits list inside the world itself, so this may name a maintainer rather than every author."
+    },
+    "game_by": null,
+    "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
+  }
+}

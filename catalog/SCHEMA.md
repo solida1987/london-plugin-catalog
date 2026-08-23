@@ -57,6 +57,7 @@ console does.
 
   "client": {
     "name": "Archipelago's BizHawk Client",
+    "kind": "london",                   // london | world — who carries the checks, see below
     "protocol": "bizhawk",              // bizhawk | sni | unknown
     "lua": "data/lua/connector_bizhawk_generic.lua",
     "_source": "the world's client subclasses BizHawkClient"
@@ -83,6 +84,7 @@ console does.
 | `requires` | Whether to ask for the player's own file |
 | `rom.md5` / `rom.size` | `AcceptableBaseRoms` — rejecting a wrong dump |
 | `emulator` | Which backend, and whether the version is high enough |
+| `client.kind` | Whether London reads memory itself, or only launches and defers to the world's own client |
 | `client.lua` | Which connector script gets loaded |
 | `patch` | Whether a ROM has to be built before launch |
 | `apworld` | Whether it ships with AP, or comes from the publisher |
@@ -146,6 +148,46 @@ The build **refuses** a manifest whose `requires` is
 outside this set. A value it does not recognise must never fall through to a
 default: if the name were ever changed and one caller missed, the plugin would
 quietly stop asking the player for their own file.
+
+## `client.kind` — who carries the checks
+
+Two kinds of game exist in this catalogue, and the difference decides what
+London *is* for that game:
+
+| Value | Meaning |
+|---|---|
+| `london` (default) | London's own connector reads the game's memory over the bridge. This is every BizHawk and SNI game: our Lua RAM map under `Plugins/Scripts/games/` is the whole substance of the connection, so the build **requires** that the map exists. |
+| `world` | The world ships its **own** Archipelago client — it registers a `Component(..., component_type=Type.CLIENT)` in its own `__init__.py`, and its client speaks to the emulator itself (Burnout 3's `pine.py` talks PINE to PCSX2 directly). London must **not** read memory for such a game. |
+
+For a `world` game, London's job is exactly three things:
+
+1. install the apworld into the player's Archipelago (`custom_worlds`),
+2. start the emulator over the bridge with the right disc,
+3. tell the player to start the world's own client from the Archipelago
+   Launcher — by the name in `client.name`.
+
+The build gates follow from that:
+
+- `"kind": "world"` **requires `_kind_source`** in the client block: the
+  world's own `components.append(...)` line, quoted. The claim must be the
+  world's words, not our impression — without the quote the manifest is
+  **rejected**. (This is deliberate: a wrongly-classified game launches and
+  then no code anywhere carries its checks.)
+- `"kind": "world"` **requires `apworld.url`**: the world's client is the only
+  thing that will ever carry checks, so it must be fetchable.
+- `"kind": "world"` **skips the Lua-map requirement** — no code of ours reads
+  the game, so demanding our map would hold every self-clienting world out of
+  the catalogue forever. Every other gate (protocol bridge, requires,
+  patch_extension, removed-games) applies unchanged.
+- An unrecognised value is rejected, never defaulted — the same rule as
+  `requires`.
+
+`checks_verified` keeps its meaning: it stays **false** until a real check has
+been watched travelling through the world's client, and London warns at launch
+while it is false. "The transport works" is not "a check arrived".
+
+The runtime contract — what the launcher must actually do at Play for a
+`world` game — is written out in `docs/EXTERNAL_CLIENT_KIND.md`.
 
 ## patch_extension (required)
 

@@ -23,3 +23,20 @@ catalog/pc_build_report.json
 catalog/games.json
 catalog/index.json
 catalog/gamelist_raw.txt
+
+# More harvested research, same reasoning as the block above: these are how WE
+# decide what to build, they carry every world author's repository address, and
+# no player or launcher ever reads them.
+catalog/sheet_survey.json
+catalog/sheet_links.json
+catalog/guide_platform.json
+catalog/content.json
+
+# The removal list. Publishing it would name the people who asked to be left
+# alone and list the work they asked us to drop -- the exact opposite of what
+# honouring the request means. It is gate input, and the gate lives in tools/.
+catalog/removed.json
+
+# Proof harnesses for the bridges: our gates, not anything a player installs.
+# No other extension ships one either.
+extensions/*/proof/

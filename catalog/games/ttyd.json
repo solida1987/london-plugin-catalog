@@ -1,0 +1,66 @@
+{
+  "id": "ttyd",
+  "display_name": "Paper Mario: The Thousand-Year Door",
+  "subtitle": "",
+  "platform": "GC",
+  "version": "1.0.0",
+  "_verified": "2026-08-23",
+  "_drafted_note": "Drafted 2026-08-23 from the world's OWN setup guide, and from the world's source where the repository publishes it. No field is filled in from memory or from what other games on the same console do.",
+  "_platform_source": "setup guide https://github.com/jamesbrq/ArchipelagoTTYD/blob/main/docs/setup_en.md -- \"A US copy of Paper Mario: The Thousand-Year Door in .iso format\" and \"Dolphin Emulator\"",
+  "_display_name_source": "spelled as the world itself spells it -- `game = \"Paper Mario: The Thousand-Year Door\"`, hyphenated. The games sheet writes it without the hyphen; the world's spelling is what the server matches on.",
+  "ap_world_name": "Paper Mario: The Thousand-Year Door",
+  "_ap_world_name_source": "world source: jamesbrq/ArchipelagoTTYD, __init__.py, read 2026-08-23 -- `class TTYDWorld(World)` declares `game = \"Paper Mario: The Thousand-Year Door\"`",
+  "description": "Rogueport and the seven Crystal Stars as a multiworld.",
+  "_description_source": "written by us from the structure of the game - no text copied from the game itself",
+  "checks_verified": false,
+  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Nobody has played this. London warns at launch until it is true.",
+  "requires": "own_copy",
+  "_requires_source": "GC title - the game lives on a cartridge or disc the player owns, and the setup guide tells the player to supply it: A US copy of Paper Mario: The Thousand-Year Door in .iso format",
+  "rom": {
+    "description": "A US copy of Paper Mario: The Thousand-Year Door in .iso format",
+    "_description_source": "setup guide, word for word. It adds that the file \"can not be a .ciso or .nkit.iso (or nkit.rvz) file\".",
+    "md5": [],
+    "size": null,
+    "_hash_note": "The guide states no checksum; none is claimed here."
+  },
+  "emulator": {
+    "name": "Dolphin Emulator",
+    "min_version": null,
+    "_source": "setup guide: \"Dolphin Emulator\". No version is stated."
+  },
+  "client": {
+    "name": null,
+    "protocol": "unknown",
+    "lua": null,
+    "_source": "The guide names no single client executable -- it drives the ArchipelagoLauncher. SCHEMA rule 2 fails: no RAM map Plugins/Scripts/games/ttyd.lua exists, and no installed bridge speaks Dolphin. Protocol not established."
+  },
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/jamesbrq/ArchipelagoTTYD/releases",
+    "_source": "setup guide: \"[Latest releases](that address)\""
+  },
+  "patch": {
+    "model": "unknown",
+    "extension": null,
+    "produced_by": "Archipelago Launcher - Open Patch",
+    "_source": "setup guide: the patch arrives as \"a .zip file that contains your patch\" and \"In the launcher, you will find an `Open Patch` button you can use to run the patch and get your `.iso` file\". The guide names no patch-file extension, so none is recorded."
+  },
+  "patch_extension": "unaudited",
+  "_patch_extension_source": "World source not read. catalog/SCHEMA.md locates this answer in the world's rom.py; the repository was not cloned and no apworld was downloaded (repo policy: addresses only). Flagged in every build until somebody reads it.",
+  "credits": {
+    "plugin_by": "solida1987",
+    "world_by": {
+      "name": "jamesbrq/ArchipelagoTTYD",
+      "url": "https://github.com/jamesbrq/ArchipelagoTTYD",
+      "_source": "the repository that publishes this world -- catalog/sheet_survey.json `repo` and the setup guide URL in catalog/guide_platform.json",
+      "licence": null,
+      "_licence_source": "not read. The repository's LICENSE file has not been opened, so no licence is claimed.",
+      "authors": [
+        "jamesbrq"
+      ],
+      "_authors_source": "the GitHub account that publishes the world (the repository owner). NOT confirmed against a credits list inside the world itself, so this may name a maintainer rather than every author -- see the catalogue's crediting rule."
+    },
+    "game_by": null,
+    "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
+  }
+}

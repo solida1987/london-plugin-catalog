@@ -1,0 +1,67 @@
+{
+  "id": "mmx4",
+  "display_name": "Mega Man X4",
+  "subtitle": "BizHawk",
+  "platform": "PSX",
+  "version": "1.0.0",
+  "_verified": "2026-08-23",
+  "_drafted_note": "Drafted 2026-08-23 from the world's OWN setup guide, and from the world's source where the repository publishes it. No field is filled in from memory or from what other games on the same console do.",
+  "_platform_source": "setup guide https://github.com/Daxtear/ArchipelagoMMX4/blob/MMX4_BossRestrictions/worlds/mmx4/docs/setup_en.md -- Required Software: \"A legally acquired US ROM of Mega Man X4 for the Playstation\" and \"A legally acquired Playstation BIOS\"",
+  "ap_world_name": "Mega Man X4",
+  "_ap_world_name_source": "world source: Daxtear/ArchipelagoMMX4, worlds/mmx4/__init__.py (branch MMX4_BossRestrictions), read 2026-08-23 -- `class MMX4World(World)` declares `game = \"Mega Man X4\"`",
+  "description": "Maverick hunting as a multiworld. Armour capsules, collectables and the defeated Mavericks are the checks.",
+  "_description_source": "written by us from what the RAM map actually reads -- Plugins/Scripts/games/mmx4.lua watches ADDRESS_ARMOR_PICKED_UP, ADDRESS_BOSSES_DEFEATED and ADDRESS_ITEMS_PICKED_UP. No text copied from the game.",
+  "checks_verified": false,
+  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Nobody has played this. London warns at launch until it is true.",
+  "requires": "own_copy",
+  "_requires_source": "PSX title - the game lives on a cartridge or disc the player owns, and the setup guide tells the player to supply it: A legally acquired US ROM of Mega Man X4 for the Playstation",
+  "rom": {
+    "description": "A legally acquired US ROM of Mega Man X4 for the Playstation",
+    "_description_source": "setup guide, Required Software, word for word",
+    "md5": [],
+    "size": null,
+    "_hash_note": "The guide states no checksum, and the world declares none we could read. The RAM map gates on identity instead: 16 ASCII bytes \"MMX4_ARCHIPELAGO\" at MainRAM 0x0F1740, written by the xdelta patch (Plugins/Scripts/games/mmx4.lua, derived from the world's Client.py validate_rom()). London can therefore only warn about the player's file, not reject it."
+  },
+  "emulator": {
+    "name": "BizHawk",
+    "min_version": null,
+    "_source": "setup guide, Required Software: \"[Bizhawk](https://github.com/TASEmulators/BizHawk/releases)\" -- no version is stated, so none is claimed"
+  },
+  "client": {
+    "name": "Archipelago's BizHawk Client",
+    "protocol": "bizhawk",
+    "lua": "data/lua/connector_bizhawk_generic.lua",
+    "_source": "setup guide: \"the Archipelago Bizhawk Client\" / \"the Bizhawk Client Tool in the Archipelago Launcher\". SCHEMA rule 2 also answers it: our RAM map Plugins/Scripts/games/mmx4.lua exists, and its header records every address as generated from the world's own worlds/mmx4/Client.py (apworld v0.1.3), reading BizHawk's PSX MainRAM domain."
+  },
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/Daxtear/ArchipelagoMMX4/releases",
+    "_source": "catalog/sheet_survey.json: repo \"Daxtear/ArchipelagoMMX4\", apworld_url. The setup guide itself does not say where the apworld is downloaded from."
+  },
+  "patch": {
+    "model": "unknown",
+    "extension": ".apmmx4",
+    "produced_by": "Archipelago Launcher - Open Patch",
+    "_source": "setup guide: \"Run the .apmmx4 file acquired from the lobby using the Archipelago Launcher\". The guide documents a second, manual route that applies the STATIC \"MMX4_Archipelago.xdelta\" from the releases page with xdelta3. Which APPatch class produces .apmmx4 was NOT established -- worlds/mmx4/rom.py was not opened -- so the model stays unknown and London will not build the ROM itself."
+  },
+  "lua_module": "mmx4",
+  "_lua_module_source": "the file Multiworld-Launcher/Plugins/Scripts/games/mmx4.lua, whose header names \"Mega Man X4 (PSX, USA) -- community apworld by Daxtear\"",
+  "patch_extension": "unaudited",
+  "_patch_extension_source": "World source not read. catalog/SCHEMA.md locates this answer in the world's rom.py; the repository was not cloned and no apworld was downloaded (repo policy: addresses only). Flagged in every build until somebody reads it.",
+  "credits": {
+    "plugin_by": "solida1987",
+    "world_by": {
+      "name": "Daxtear/ArchipelagoMMX4",
+      "url": "https://github.com/Daxtear/ArchipelagoMMX4",
+      "_source": "the repository that publishes this world -- catalog/sheet_survey.json `repo` and the setup guide URL in catalog/guide_platform.json",
+      "licence": null,
+      "_licence_source": "not read. The repository's LICENSE file has not been opened, so no licence is claimed.",
+      "authors": [
+        "Daxtear"
+      ],
+      "_authors_source": "the GitHub account that publishes the world (the repository owner). NOT confirmed against a credits list inside the world itself, so this may name a maintainer rather than every author -- see the catalogue's crediting rule."
+    },
+    "game_by": null,
+    "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
+  }
+}
