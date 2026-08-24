@@ -57,6 +57,7 @@ public sealed class ModRelay : IDisposable
     private readonly List<(long Id, string From)> _items = new();
     private int _sentCount;
     private bool _handshakeSent;
+    private bool _handshakeHadData;
 
     // Checks the mod named before London had the location table. Parked, not
     // dropped: a check that goes missing here is a seed that cannot finish.
@@ -96,6 +97,7 @@ public sealed class ModRelay : IDisposable
             try { _writer?.Dispose(); } catch { }
             _writer = null;
             _handshakeSent = false;
+                _handshakeHadData = false;
             _sentCount = 0;
         }
     }
@@ -187,6 +189,7 @@ public sealed class ModRelay : IDisposable
                 _writer = new StreamWriter(client.GetStream(), new UTF8Encoding(false)) { AutoFlush = true };
                 // A fresh connection knows nothing: full handshake and replay.
                 _handshakeSent = false;
+                _handshakeHadData = false;
                 _sentCount = 0;
             }
             _ = ReadLoopAsync(client, ct);
@@ -214,6 +217,7 @@ public sealed class ModRelay : IDisposable
                 if (_writer != null) { try { _writer.Dispose(); } catch { } }
                 _writer = null;
                 _handshakeSent = false;
+                _handshakeHadData = false;
                 _sentCount = 0;
             }
             _log("The game's mod disconnected.");
@@ -296,7 +300,17 @@ public sealed class ModRelay : IDisposable
         {
             if (_writer == null) return;
 
-            if (!_handshakeSent)
+            // The handshake goes out as soon as there is a session, and again
+            // if the seed's slot_data turns up afterwards.
+            //
+            // ⚠ Order is not guaranteed. A game already running when the
+            // player joins dials us before Archipelago has sent slot_data, and
+            // a handshake without it configures the mod from defaults: wrong
+            // carrier counts, wrong goal, checks sent for locations the seed
+            // does not have. Sending once and never again made that permanent
+            // for the whole session.
+            bool haveData = _slotData is not null;
+            if (!_handshakeSent || (!_handshakeHadData && haveData))
             {
                 if (_slot < 0) return;   // no session yet — nothing to say
                 var payload = new Dictionary<string, object?>
@@ -308,6 +322,7 @@ public sealed class ModRelay : IDisposable
                 if (_slotData is { } sd) payload["slot_data"] = sd;
                 if (!TryWriteLocked(JsonSerializer.Serialize(payload))) return;
                 _handshakeSent = true;
+                _handshakeHadData = haveData;
             }
 
             if (_itemNames == null && _sentCount < _items.Count)
@@ -354,6 +369,7 @@ public sealed class ModRelay : IDisposable
             try { _writer.Dispose(); } catch { }
             _writer = null;
             _handshakeSent = false;
+                _handshakeHadData = false;
             _sentCount = 0;
             return false;
         }

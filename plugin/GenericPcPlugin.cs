@@ -872,6 +872,8 @@ public class GenericPcPlugin : IGamePlugin
     // sees a second client window.
     private ModRelay? _relay;
     private IApServices? _apServices;
+    private GameWatcher? _watcher;
+    private int _exitReported;   // GameExited is raised exactly once per session
 
     private void WireRelay()
     {
@@ -929,6 +931,10 @@ public class GenericPcPlugin : IGamePlugin
     /// progress bar over somebody else's socket.
     public Task LaunchAsync(ApSession session, CancellationToken ct = default)
     {
+        // A fresh launch is a fresh session: whatever ended the last one must
+        // not stop this one from reporting its own end.
+        Interlocked.Exchange(ref _exitReported, 0);
+
         if (_relay != null)
         {
             // London is the AP client here; the mod dials our socket and the
@@ -958,11 +964,17 @@ public class GenericPcPlugin : IGamePlugin
                 });
                 IsRunning = true;
                 LogLine?.Invoke($"[{DisplayName}] Asked Steam to start the game.");
+                StartWatching();
             }
             else
             {
                 LogLine?.Invoke($"[{DisplayName}] Start the game yourself — London does "
                               + "not know where this one is installed.");
+                // Not knowing how to START it does not mean we cannot SEE it:
+                // if the folder is known, the watcher still notices the game
+                // appear and, later, close.
+                IsRunning = true;
+                StartWatching();
             }
         }
         catch (Exception e)
@@ -974,13 +986,39 @@ public class GenericPcPlugin : IGamePlugin
         return Task.CompletedTask;
     }
 
+    /// Watch the game's own process, since Steam hands us nothing to hold.
+    /// Silent when the game folder is unknown — the setup check already says
+    /// so, and a second complaint at launch helps nobody.
+    private void StartWatching()
+    {
+        string? folder = RegisteredGameFolder;
+        if (folder == null) return;
+
+        _watcher?.Stop();
+        _watcher = new GameWatcher(folder,
+            msg => LogLine?.Invoke($"[{DisplayName}] {msg}"),
+            code => ReportExit(code));
+        _watcher.Start();
+    }
+
+    /// One exit per session, wherever it comes from — the watcher seeing the
+    /// process vanish, or the player pressing Stop. Two would end the session
+    /// twice and, on the join path, log a second "Game closed" over a session
+    /// that is already gone.
+    private void ReportExit(int code)
+    {
+        if (Interlocked.Exchange(ref _exitReported, 1) != 0) return;
+        IsRunning = false;
+        _relay?.Stop();          // free the port for the next session
+        _watcher?.Stop();
+        GameExited?.Invoke(code);
+    }
+
     public Task StopAsync()
     {
         // London did not take the game over, so it does not get to close it.
         // Saying "stopped" would only be true of our own bookkeeping.
-        _relay?.Stop();
-        IsRunning = false;
-        GameExited?.Invoke(0);
+        ReportExit(0);
         return Task.CompletedTask;
     }
 
