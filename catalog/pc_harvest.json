@@ -9900,7 +9900,9 @@
    "mod_url": "https://github.com/solida1987/TerraTech-Archipelago/releases/download/v0.1.0/TerraTechArchipelago.zip",
    "steps": "Put terratech.apworld in Archipelago's custom_worlds folder, and extract TerraTechArchipelago.zip into <TerraTech>/QMods/TerraTechArchipelago/. London does both: point it at your TerraTech folder and press Install.",
    "_london_exclusive": true,
-   "_note": "Our own world and our own mod, not harvested from anyone else's repository."
+   "_note": "Our own world and our own mod, not harvested from anyone else's repository.",
+   "client_protocol": "tcp_json",
+   "client_port": 24601
   }
  ],
  "_excluded": [

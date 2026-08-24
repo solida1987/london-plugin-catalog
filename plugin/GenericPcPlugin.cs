@@ -63,6 +63,7 @@ public class GenericPcPlugin : IGamePlugin
         using var s = asm.GetManifestResourceStream(name)!;
         using var r = new StreamReader(s);
         Manifest = PcManifest.Parse(r.ReadToEnd());
+        WireRelay();
     }
 
     /// For proofs. The public constructor reads the embedded pc.json, which
@@ -70,7 +71,11 @@ public class GenericPcPlugin : IGamePlugin
     /// ("does a .7z game refuse to claim AutoMod?") need one harness to wear
     /// every install kind in turn. Injection is for test harnesses only; a
     /// shipped plugin always carries its manifest inside itself.
-    protected GenericPcPlugin(PcManifest manifest) => Manifest = manifest;
+    protected GenericPcPlugin(PcManifest manifest)
+    {
+        Manifest = manifest;
+        WireRelay();
+    }
 
     // ------------------------------------------------------------- identity
 
@@ -766,6 +771,47 @@ public class GenericPcPlugin : IGamePlugin
     public event Action<string>? LogLine;
     public event Action<int>? GameExited;
 
+    // ------------------------------------------------------------ mod relay
+    // Present only when the manifest declares one (client_protocol
+    // "tcp_json"). This is the Diablo II pattern on a socket: London holds
+    // the one AP connection and relays to the mod inside the game. The
+    // protocol matches the world's own text client line for line, so a
+    // player without London loses nothing — and a player with London never
+    // sees a second client window.
+    private ModRelay? _relay;
+    private IApServices? _apServices;
+
+    private void WireRelay()
+    {
+        if (!string.Equals(Manifest.ClientProtocol, "tcp_json", StringComparison.Ordinal))
+            return;
+        if (Manifest.ClientPort is <= 0 or > 65535)
+            return;
+
+        _relay = new ModRelay(Manifest.ClientPort,
+                              msg => LogLine?.Invoke($"[{DisplayName}] {msg}"));
+        _relay.ChecksResolved += ids => LocationsChecked?.Invoke(ids);
+        _relay.GoalReached    += () => GoalCompleted?.Invoke();
+        // ReportDeath checks DeathLinkEnabled itself; no second gate here.
+        _relay.DeathReported  += cause => _apServices?.ReportDeath(cause);
+    }
+
+    public void OnApServicesAttached(IApServices? services) => _apServices = services;
+
+    public void OnSlotData(JsonElement slotData) => _relay?.SetSlotData(slotData);
+
+    public void OnItemTable(IReadOnlyDictionary<string, long> nameToId)
+        => _relay?.SetItemTable(nameToId);
+
+    public void OnLocationTable(IReadOnlyDictionary<string, long> nameToId)
+        => _relay?.SetLocationTable(nameToId);
+
+    public Task OnDeathLinkReceivedAsync(string source, string cause)
+    {
+        _relay?.SendDeathLink(source, cause);
+        return Task.CompletedTask;
+    }
+
     public Func<JsonElement?>? GetSlotData { get; set; }
     public Func<long[]?>? GetServerLocations { get; set; }
     public Func<int>? GetOwnSlot { get; set; }
@@ -778,11 +824,23 @@ public class GenericPcPlugin : IGamePlugin
     /// progress bar over somebody else's socket.
     public Task LaunchAsync(ApSession session, CancellationToken ct = default)
     {
-        string where = session.ServerUri;
-        LogLine?.Invoke($"[{DisplayName}] {DisplayName} connects to Archipelago from "
-                      + $"inside the game. In its Archipelago screen, enter:");
-        LogLine?.Invoke($"[{DisplayName}]   server: {where}");
-        LogLine?.Invoke($"[{DisplayName}]   slot:   {session.SlotName}");
+        if (_relay != null)
+        {
+            // London is the AP client here; the mod dials our socket and the
+            // player types nothing anywhere.
+            _relay.Start();
+            _relay.SetSession(GetOwnSlot?.Invoke() ?? -1, GetSeedName?.Invoke());
+            LogLine?.Invoke($"[{DisplayName}] London relays Archipelago to the "
+                          + "game's mod — start playing, everything else is wired.");
+        }
+        else
+        {
+            string where = session.ServerUri;
+            LogLine?.Invoke($"[{DisplayName}] {DisplayName} connects to Archipelago from "
+                          + $"inside the game. In its Archipelago screen, enter:");
+            LogLine?.Invoke($"[{DisplayName}]   server: {where}");
+            LogLine?.Invoke($"[{DisplayName}]   slot:   {session.SlotName}");
+        }
 
         try
         {
@@ -815,13 +873,18 @@ public class GenericPcPlugin : IGamePlugin
     {
         // London did not take the game over, so it does not get to close it.
         // Saying "stopped" would only be true of our own bookkeeping.
+        _relay?.Stop();
         IsRunning = false;
         GameExited?.Invoke(0);
         return Task.CompletedTask;
     }
 
     public Task ReceiveItemsAsync(ApNetworkItem[] items, int index, CancellationToken ct = default)
-        => Task.CompletedTask;
+    {
+        _relay?.PutItems(items, index,
+            player => _apServices?.ResolvePlayerName(player) ?? $"Player {player}");
+        return Task.CompletedTask;
+    }
 
     public void OnApStateChanged(ApConnectionState state) { }
 
@@ -1524,7 +1587,9 @@ public sealed record PcManifest(
     string? Licence,
     string SteamAppId,
     string Version,
-    string Steps)
+    string Steps,
+    string ClientProtocol,
+    int ClientPort)
 {
     public static PcManifest Parse(string json)
     {
@@ -1557,6 +1622,9 @@ public sealed record PcManifest(
             N(r, "licence"),
             S(r, "steam_appid"),
             S(r, "version"),
-            S(r, "steps"));
+            S(r, "steps"),
+            S(r, "client_protocol"),
+            r.TryGetProperty("client_port", out var cp)
+                && cp.ValueKind == JsonValueKind.Number ? cp.GetInt32() : 0);
     }
 }
