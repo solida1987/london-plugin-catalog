@@ -390,6 +390,12 @@
    "decision": "listed",
    "reason": "ESRB E10+ (Everyone 10+); PEGI 12",
    "_source": "the title's public ESRB rating -- recorded 2026-08-23 for the same reason as Spyro 3: it sat behind the age gate on missing evidence, not on content."
+  },
+  "terratech": {
+   "name": "TerraTech",
+   "decision": "listed",
+   "reason": "ESRB E10+ (Everyone 10+); PEGI 7",
+   "_source": "the title's published ratings, recorded 2026-08-24"
   }
  }
 }

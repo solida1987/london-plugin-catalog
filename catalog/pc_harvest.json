@@ -1,5 +1,5 @@
 {
- "count": 501,
+ "count": 502,
  "games": [
   {
    "_v": 2,
@@ -9881,6 +9881,26 @@
    "steps": "",
    "licence": "MIT",
    "author": "madisonsilver"
+  },
+  {
+   "_v": 2,
+   "name": "TerraTech",
+   "source": "london_exclusive",
+   "steam_appid": "285920",
+   "image": "https://cdn.akamai.steamstatic.com/steam/apps/285920/library_600x900_2x.jpg",
+   "repo": "solida1987/TerraTech-Archipelago",
+   "install": "apworld_and_mod",
+   "assets": [
+    "TerraTechArchipelago.zip",
+    "terratech.apworld"
+   ],
+   "tag": "v0.1.0",
+   "release_page": "https://github.com/solida1987/TerraTech-Archipelago/releases",
+   "apworld_url": "https://github.com/solida1987/TerraTech-Archipelago/releases/download/v0.1.0/terratech.apworld",
+   "mod_url": "https://github.com/solida1987/TerraTech-Archipelago/releases/download/v0.1.0/TerraTechArchipelago.zip",
+   "steps": "Put terratech.apworld in Archipelago's custom_worlds folder, and extract TerraTechArchipelago.zip into <TerraTech>/QMods/TerraTechArchipelago/. London does both: point it at your TerraTech folder and press Install.",
+   "_london_exclusive": true,
+   "_note": "Our own world and our own mod, not harvested from anyone else's repository."
   }
  ],
  "_excluded": [

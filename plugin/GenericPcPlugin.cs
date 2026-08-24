@@ -198,10 +198,94 @@ public class GenericPcPlugin : IGamePlugin
         get
         {
             var s = SettingsStore.Load();
-            return s.OriginalGameLocations.TryGetValue(GameId, out var f)
-                   && !string.IsNullOrWhiteSpace(f) && Directory.Exists(f)
-                       ? f : null;
+            if (s.OriginalGameLocations.TryGetValue(GameId, out var f)
+                && !string.IsNullOrWhiteSpace(f) && Directory.Exists(f))
+                return f;
+
+            // The player never told us -- but Steam probably knows. Asking
+            // costs a millisecond and saves them a hunt through Program Files.
+            string? found = AutoFindGameFolder();
+            if (found != null)
+            {
+                // Remember it, so the answer is stable and the player can see
+                // and change it in Settings like any other game location.
+                try
+                {
+                    s.OriginalGameLocations[GameId] = found;
+                    SettingsStore.Save(s);
+                }
+                catch { /* a folder we cannot cache is one we look up again */ }
+            }
+            return found;
         }
+    }
+
+    /// Where this game is installed, according to the machine rather than the
+    /// player. Null when we genuinely cannot tell -- never a guess.
+    ///
+    /// ⚠ Every candidate is confirmed to contain an executable before it is
+    /// returned. A path that merely LOOKS right would turn a question the
+    /// player can answer into an install that quietly does nothing.
+    private string? AutoFindGameFolder()
+    {
+        try
+        {
+            if (int.TryParse(Manifest.SteamAppId, out int appId) && appId > 0)
+            {
+                string? dir = LauncherV2.Core.SteamLocator.FindGameDir(appId);
+                if (LooksLikeAGame(dir)) return dir;
+            }
+        }
+        catch { /* Steam not installed, or a registry we may not read */ }
+
+        // Epic and hand-installed copies leave nothing to query, so try where
+        // installers actually put things. The folder is named after the game.
+        string leaf = SafeFolderLeaf(Manifest.DisplayName);
+        if (leaf.Length == 0) return null;
+
+        foreach (string root in LikelyGameRoots())
+        {
+            try
+            {
+                string candidate = Path.Combine(root, leaf);
+                if (LooksLikeAGame(candidate)) return candidate;
+            }
+            catch { }
+        }
+        return null;
+    }
+
+    private static IEnumerable<string> LikelyGameRoots()
+    {
+        foreach (var drive in DriveInfo.GetDrives())
+        {
+            if (!drive.IsReady) continue;
+            string d = drive.RootDirectory.FullName;
+            yield return Path.Combine(d, "SteamLibrary", "steamapps", "common");
+            yield return Path.Combine(d, "Program Files", "Epic Games");
+            yield return Path.Combine(d, "Epic Games");
+            yield return Path.Combine(d, "Games");
+        }
+        yield return Path.Combine(
+            Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86),
+            "Steam", "steamapps", "common");
+    }
+
+    private static string SafeFolderLeaf(string name)
+    {
+        var sb = new System.Text.StringBuilder();
+        foreach (char c in name ?? "")
+            if (!Path.GetInvalidFileNameChars().Contains(c)) sb.Append(c);
+        return sb.ToString().Trim();
+    }
+
+    /// A folder is a game when it holds an executable. Checking the name alone
+    /// would accept an empty folder somebody made by mistake.
+    private static bool LooksLikeAGame(string? dir)
+    {
+        if (string.IsNullOrWhiteSpace(dir) || !Directory.Exists(dir)) return false;
+        try { return Directory.EnumerateFiles(dir, "*.exe").Any(); }
+        catch { return false; }
     }
 
     /// Where a downloaded mod archive lands, receipt or not. Kept under the
@@ -925,7 +1009,11 @@ public static class PcSetup
     /// Loader trees whose root the archive may overlay directly onto the game
     /// folder. Everything the tree needs lives under its own directory.
     private static readonly string[] OverlayRoots =
-        { "BepInEx", "MelonLoader", "Mods", "UserData" };
+        // QMods is the convention TerraTech and the QModManager family use --
+        // a folder per mod, dropped beside the executable, no loader tree to
+        // install first. Adding it here is what lets London place such a mod
+        // instead of refusing because it was looking for BepInEx.
+        { "BepInEx", "MelonLoader", "Mods", "UserData", "QMods" };
 
     /// Root-level files a loader overlay legitimately ships next to its tree:
     /// the doorstop/proxy bootstraps and the usual paperwork. Anything else at
