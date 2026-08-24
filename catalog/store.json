@@ -1,6 +1,6 @@
 {
   "note": "The launcher's store window. Addresses and metadata only — no artwork and no code is stored here. Installing still runs the launcher's own consent flow.",
-  "count": 582,
+  "count": 583,
   "platforms": [
     "Atari 2600",
     "Browser",
@@ -15293,6 +15293,32 @@
       "banner": null,
       "section": "unstable",
       "stability": "Broken on Main"
+    },
+    {
+      "id": "terratech",
+      "name": "TerraTech",
+      "ap_world_name": "TerraTech",
+      "subtitle": "PC · needs the game's mod too",
+      "description": "",
+      "platform": "PC",
+      "platform_label": "PC",
+      "family": "PC",
+      "genres": [
+        "Adventure"
+      ],
+      "version": "v0.1.0",
+      "world_by": "solida1987",
+      "mod_kind": null,
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://cdn.akamai.steamstatic.com/steam/apps/285920/library_600x900_2x.jpg",
+      "install_kind": "apworld_and_mod",
+      "tested": false,
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/terratech.londonplugin",
+      "page": "https://github.com/solida1987/TerraTech-Archipelago/releases",
+      "banner": null,
+      "section": "exclusive",
+      "stability": "Our own world"
     }
   ]
 }

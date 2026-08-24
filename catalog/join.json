@@ -1,6 +1,6 @@
 {
   "note": "Which London plugin covers which Archipelago game. Addresses and metadata only.",
-  "count": 582,
+  "count": 583,
   "games": {
     "Adventure": {
       "id": "adventure",
@@ -3493,6 +3493,12 @@
       "platform": "PC",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/seedling.londonplugin",
       "page": "https://github.com/madisonsilver/SeedlingArchipelagoWorld/releases"
+    },
+    "TerraTech": {
+      "id": "terratech",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/terratech.londonplugin",
+      "page": "https://github.com/solida1987/TerraTech-Archipelago/releases"
     }
   }
 }
