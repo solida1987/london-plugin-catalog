@@ -397,6 +397,76 @@ public class GenericPcPlugin : IGamePlugin
 
         await InstallModAsync(progress, startPct: hasWorld ? 55 : 5,
                               worldInstalled: hasWorld, ct).ConfigureAwait(false);
+        await InstallLoaderAsync(progress, ct).ConfigureAwait(false);
+    }
+
+    // ------------------------------------------------------------- loader --
+    // Some games load no outside code by themselves — TerraTech was measured
+    // at zero references to any mod folder convention. For those the manifest
+    // names a loader (BepInEx), fetched from ITS OWN official release, never
+    // bundled with ours. Same posture as emulators: offered and named on the
+    // consent screen, downloaded only from the address declared there.
+
+    private bool LoaderDeclared =>
+        string.Equals(Manifest.LoaderKind, "bepinex", StringComparison.Ordinal)
+        && PcSetup.IsZipUrl(Manifest.LoaderUrl);
+
+    /// The chainloader's own preloader is the proof: winhttp.dll alone is any
+    /// number of things, but nothing else puts BepInEx/core/ in a game folder.
+    private static bool LoaderPresent(string gameFolder)
+        => File.Exists(Path.Combine(gameFolder, "winhttp.dll"))
+        && File.Exists(Path.Combine(gameFolder, "BepInEx", "core", "BepInEx.Preloader.dll"));
+
+    private async Task InstallLoaderAsync(IProgress<(int Pct, string Msg)>? progress,
+                                          CancellationToken ct)
+    {
+        if (!LoaderDeclared) return;
+        string? gameFolder = RegisteredGameFolder;
+        if (gameFolder == null) return;             // the mod step already said so
+        if (LoaderPresent(gameFolder)) return;      // theirs, or ours from last time
+
+        progress?.Report((92, "Downloading BepInEx (the mod loader) from its own "
+                            + "official release…"));
+        byte[] data = await PcSetup.DownloadAsync(Manifest.LoaderUrl!, ct).ConfigureAwait(false);
+        if (!PcSetup.LooksLikeZip(data))
+            throw new InvalidDataException(
+                "What came back from the BepInEx release address was not a zip. "
+              + "Get it by hand from https://github.com/BepInEx/BepInEx/releases");
+
+        string archive = Path.Combine(AppContext.BaseDirectory, "Data", "Downloads",
+                                      GameId + "_loader.zip");
+        Directory.CreateDirectory(Path.GetDirectoryName(archive)!);
+        await File.WriteAllBytesAsync(archive, data, ct).ConfigureAwait(false);
+
+        progress?.Report((95, $"Placing BepInEx into {gameFolder}…"));
+        int placed = 0;
+        using (var za = ZipFile.OpenRead(archive))
+        {
+            foreach (var e in za.Entries)
+            {
+                if (e.FullName.EndsWith("/", StringComparison.Ordinal)) continue;
+                // Only the loader's own tree — a zip with anything else in it
+                // is not the release we asked for.
+                bool ours = e.FullName.StartsWith("BepInEx/", StringComparison.Ordinal)
+                         || e.FullName is "winhttp.dll" or "doorstop_config.ini"
+                                        or ".doorstop_version" or "changelog.txt";
+                if (!ours) continue;
+                string dest = Path.Combine(gameFolder,
+                    e.FullName.Replace('/', Path.DirectorySeparatorChar));
+                // Never clobber: a player who already runs BepInEx keeps every
+                // byte of their setup, and this pass only fills what is absent.
+                if (File.Exists(dest)) continue;
+                Directory.CreateDirectory(Path.GetDirectoryName(dest)!);
+                e.ExtractToFile(dest);
+                placed++;
+            }
+        }
+        // ⚠ No uninstall receipt on purpose: the loader is shared ground —
+        // other mods the player installs later run through the same BepInEx,
+        // so removing our game must not pull the floor out from under them.
+        progress?.Report((100, placed > 0
+            ? $"BepInEx placed — {placed} file(s). The game now loads the mod at start."
+            : "BepInEx was already in the game folder — nothing touched."));
     }
 
     private async Task InstallWorldAsync(IProgress<(int Pct, string Msg)>? progress,
@@ -611,6 +681,7 @@ public class GenericPcPlugin : IGamePlugin
                     ? $"https://store.steampowered.com/app/{Manifest.SteamAppId}/" : null));
 
             list.Add(ModComponent(folder));
+            if (LoaderDeclared) list.Add(LoaderComponent(folder));
         }
         else if (kind == "apworld_and_external_mod")
         {
@@ -694,6 +765,27 @@ public class GenericPcPlugin : IGamePlugin
                 ? "Open the setup check — it opens the downloaded file and your game "
                   + "folder side by side."
                 : "Click Install — London fetches the mod from the author's release.");
+    }
+
+    /// Honest to the whole chain: mod files on disk mean nothing if the game
+    /// never loads outside code. This row is what turned "everything is green
+    /// but nothing works" into a fixable answer for TerraTech.
+    private GameComponent LoaderComponent(string? gameFolder)
+    {
+        const string name = "Mod loader (BepInEx) in the game";
+        if (gameFolder == null)
+            return new GameComponent(name, false, ComponentNeed.Required,
+                "Waiting for your game folder — the loader goes inside it.",
+                "Locate the game folder first, then click Install.");
+        return LoaderPresent(gameFolder)
+            ? new GameComponent(name, true, ComponentNeed.Required,
+                "BepInEx is in the game folder — the game loads the mod at start.")
+            : new GameComponent(name, false, ComponentNeed.Required,
+                "Without a loader the game starts clean and the mod's files are "
+              + "never read — everything looks fine and nothing ever happens.",
+                "Click Install — London fetches BepInEx from its own official "
+              + "release and places it in the game folder.",
+                "https://github.com/BepInEx/BepInEx/releases");
     }
 
     /// The walkthrough exists for every kind where part of the job can be the
@@ -798,6 +890,19 @@ public class GenericPcPlugin : IGamePlugin
 
     public void OnApServicesAttached(IApServices? services) => _apServices = services;
 
+    /// Who an item came from, in words a player recognises.
+    ///
+    /// Slot 0 is not a player: it is the server itself, which is what grants
+    /// items released by another world, handed out by an admin, or included
+    /// as starting inventory. Reporting that as "Player 0" is technically
+    /// where the number came from and tells the player nothing.
+    private string SenderName(int slot)
+    {
+        if (slot <= 0) return "Archipelago";
+        string? name = _apServices?.ResolvePlayerName(slot);
+        return string.IsNullOrWhiteSpace(name) ? $"Player {slot}" : name;
+    }
+
     public void OnSlotData(JsonElement slotData) => _relay?.SetSlotData(slotData);
 
     public void OnItemTable(IReadOnlyDictionary<string, long> nameToId)
@@ -881,8 +986,7 @@ public class GenericPcPlugin : IGamePlugin
 
     public Task ReceiveItemsAsync(ApNetworkItem[] items, int index, CancellationToken ct = default)
     {
-        _relay?.PutItems(items, index,
-            player => _apServices?.ResolvePlayerName(player) ?? $"Player {player}");
+        _relay?.PutItems(items, index, SenderName);
         return Task.CompletedTask;
     }
 
@@ -1589,7 +1693,9 @@ public sealed record PcManifest(
     string Version,
     string Steps,
     string ClientProtocol,
-    int ClientPort)
+    int ClientPort,
+    string LoaderKind,
+    string? LoaderUrl)
 {
     public static PcManifest Parse(string json)
     {
@@ -1625,6 +1731,8 @@ public sealed record PcManifest(
             S(r, "steps"),
             S(r, "client_protocol"),
             r.TryGetProperty("client_port", out var cp)
-                && cp.ValueKind == JsonValueKind.Number ? cp.GetInt32() : 0);
+                && cp.ValueKind == JsonValueKind.Number ? cp.GetInt32() : 0,
+            S(r, "loader_kind"),
+            N(r, "loader_url"));
     }
 }

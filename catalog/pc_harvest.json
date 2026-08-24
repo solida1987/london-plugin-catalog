@@ -9898,11 +9898,13 @@
    "release_page": "https://github.com/solida1987/TerraTech-Archipelago/releases",
    "apworld_url": "https://github.com/solida1987/TerraTech-Archipelago/releases/download/v0.1.0/terratech.apworld",
    "mod_url": "https://github.com/solida1987/TerraTech-Archipelago/releases/download/v0.1.0/TerraTechArchipelago.zip",
-   "steps": "Put terratech.apworld in Archipelago's custom_worlds folder, and extract TerraTechArchipelago.zip into <TerraTech>/QMods/TerraTechArchipelago/. London does both: point it at your TerraTech folder and press Install.",
+   "steps": "London does all three steps: terratech.apworld into Archipelago's custom_worlds, the mod into <TerraTech>/BepInEx/plugins/, and BepInEx itself (the mod loader) from its own official release into the game folder. Point London at your TerraTech folder and press Install.",
    "_london_exclusive": true,
    "_note": "Our own world and our own mod, not harvested from anyone else's repository.",
    "client_protocol": "tcp_json",
-   "client_port": 24601
+   "client_port": 24601,
+   "loader_kind": "bepinex",
+   "loader_url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.3/BepInEx_win_x64_5.4.23.3.zip"
   }
  ],
  "_excluded": [
