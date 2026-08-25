@@ -1,0 +1,13 @@
+{
+  "apiVersion": 1,
+  "extensionId": "azahar_runner",
+  "displayName": "Azahar (3DS)",
+  "protocol": "azahar",
+  "version": "0.1.0",
+  "author": "Solida Games",
+  "authorContact": "https://github.com/solida1987/london-plugin-catalog",
+  "assembly": "CatalogAzaharRunner.dll",
+  "entryType": "LauncherV2.Extensions.Azahar.AzaharRunner",
+  "homepageUrl": "https://github.com/azahar-emu/azahar/releases",
+  "rulesAcknowledged": true
+}

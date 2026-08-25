@@ -1,6 +1,6 @@
 {
   "note": "Which London plugin covers which Archipelago game. Addresses and metadata only.",
-  "count": 593,
+  "count": 597,
   "games": {
     "Armored Core 3": {
       "id": "ac3",
@@ -12,6 +12,12 @@
       "id": "adventure",
       "platform": "2600",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/atari/adventure.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "A Link Between Worlds": {
+      "id": "albw",
+      "platform": "3DS",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/3ds/albw.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "A Link to the Past": {
@@ -494,6 +500,18 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gb-gbc/tloz_oos.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
+    "The Legend of Zelda - Phantom Hourglass": {
+      "id": "tloz_ph",
+      "platform": "DS",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ds/tloz_ph.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "The Legend of Zelda - Spirit Tracks": {
+      "id": "tloz_st",
+      "platform": "DS",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ds/tloz_st.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
     "Tomba!": {
       "id": "tomba",
       "platform": "PSX",
@@ -516,6 +534,12 @@
       "id": "ttyd",
       "platform": "GC",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gamecube/ttyd.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Twilight Princess": {
+      "id": "twilight_princess",
+      "platform": "GC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gamecube/twilight_princess.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Wario Land 3": {
