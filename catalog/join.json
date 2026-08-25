@@ -1,7 +1,13 @@
 {
   "note": "Which London plugin covers which Archipelago game. Addresses and metadata only.",
-  "count": 583,
+  "count": 591,
   "games": {
+    "Armored Core 3": {
+      "id": "ac3",
+      "platform": "PS2",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ps2/ac3.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
     "Adventure": {
       "id": "adventure",
       "platform": "2600",
@@ -56,10 +62,22 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/castlevania_hod.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
+    "Mega Man X: Command Mission": {
+      "id": "cmdmission",
+      "platform": "GC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gamecube/cmdmission.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
     "Chrono Trigger": {
       "id": "ctjot",
       "platform": "SNES",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/snes/ctjot.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Custom Robo": {
+      "id": "customrobo",
+      "platform": "GC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gamecube/customrobo.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Castlevania 64": {
@@ -362,6 +380,24 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gb-gbc/pokemon_rb.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
+    "Ratchet & Clank 2": {
+      "id": "rac2",
+      "platform": "PS2",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ps2/rac2.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Ratchet & Clank: Size Matters": {
+      "id": "racsm",
+      "platform": "PS2",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ps2/racsm.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Road Trip Adventure": {
+      "id": "roadtrip",
+      "platform": "PS2",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ps2/roadtrip.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
     "Skyward Sword": {
       "id": "skyward_sword",
       "platform": "GC",
@@ -416,6 +452,12 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ps1/sotn.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
+    "Spyro 2": {
+      "id": "spyro2",
+      "platform": "PSX",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ps1/spyro2.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
     "Spyro 3": {
       "id": "spyro3",
       "platform": "PSX",
@@ -456,6 +498,12 @@
       "id": "toontown",
       "platform": "PC",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/toontown.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Toy Story 2": {
+      "id": "ts2",
+      "platform": "PSX",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ps1/ts2.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Paper Mario: The Thousand-Year Door": {

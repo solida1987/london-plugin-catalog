@@ -1,0 +1,70 @@
+{
+  "id": "customrobo",
+  "display_name": "Custom Robo",
+  "subtitle": "Dolphin",
+  "_subtitle_source": "subtitle names the backend the player will actually run, the same way 18 manifests say \"BizHawk\".",
+  "platform": "GC",
+  "_platform_source": "the world's own setup guide requires \"[Dolphin Gamecube/Wii Emulator]\" and \"Your US ISO file, probably named `Custom Robo (USA).iso`\" -- a GameCube disc image.",
+  "version": "1.0.0",
+  "_verified": "2026-08-25",
+  "_drafted_note": "Drafted 2026-08-25 from the world's OWN repository -- its __init__.py, archipelago.json, setup guide and README, read that day. No field is filled in from memory or from what other games on the same console do.",
+  "ap_world_name": "Custom Robo",
+  "_ap_world_name_source": "the world's own archipelago.json: {\"game\": \"Custom Robo\"}, read 25 Aug 2026.",
+  "description": "Custom Robo as a multiworld. Robo parts and the progressive Rahu evolution are shuffled; every battle and every first use of a part is a check. Requires the player's own US disc, Dolphin with MMU disabled, and the world's gclib folder installed into Archipelago's lib directory.",
+  "_description_source": "written by us from the world's own structure and its setup guide's stated requirements. No text is copied from the game.",
+  "checks_verified": false,
+  "_checks_verified_note": "FALSE. Nobody has played this. For a kind=world game the checks travel through the WORLD'S client, not through London -- so what is unproven here is not a RAM map of ours (there is none) but the whole chain: apworld installs, emulator starts over the bridge, the world's client attaches and carries a check. London warns at launch while this is false, which is exactly right until a tester reports one.",
+  "requires": "own_copy",
+  "_requires_source": "GameCube title. The setup guide lists it among the player's own requirements: \"Your US ISO file, probably named `Custom Robo (USA).iso`\".",
+  "rom": {
+    "description": "Your own Custom Robo disc image for GameCube -- the US release, as an .iso file (the world's client will not accept other container formats)",
+    "_description_source": "the setup guide: \"Your US ISO file, probably named `Custom Robo (USA).iso`\". The .iso-only restriction is the guide's own troubleshooting note: \"please double check your rom that is a .iso ONLY! You cannot convert into .iso from other file formats.\"",
+    "md5": [],
+    "size": null,
+    "_hash_note": "No hash is claimed. The guide states none."
+  },
+  "emulator": {
+    "name": "Dolphin",
+    "min_version": null,
+    "_source": "the setup guide says to install Dolphin \"making sure to install the most recent version\" -- a direction, not a version number, so no minimum is recorded. The guide DOES state a hard setting: \"Make sure Dolphin's MMU (Memory Management Unit) is disabled\", which is carried in the description because nothing else reaches the player."
+  },
+  "client": {
+    "name": "Custom Robo Client",
+    "_name_source": "the world registers it under this exact display name in worlds/custom_robo/__init__.py: `Component(display_name=\"Custom Robo Client\", ..., component_type=Type.CLIENT)`. The launcher subprocess is named \"CustomRoboClient\"; the display name is what the player sees in the list.",
+    "kind": "world",
+    "_kind_source": "the world ships and registers its OWN Archipelago client: worlds/custom_robo/__init__.py does `Component(display_name=\"Custom Robo Client\", ..., component_type=Type.CLIENT)` and launches it with `launch_subprocess(sync_main, name=\"CustomRoboClient\")`. The transport is the world's own: CRClient.py imports dolphin_memory_engine and talks to Dolphin directly. London must NOT read memory for this game.",
+    "protocol": "dolphin",
+    "_protocol_source": "extensions/dolphin/extension.json declares {\"protocol\": \"dolphin\"} and DolphinBridge.Systems are [\"GC\", \"Wii\", \"WII\"]. The world reaches Dolphin itself through dolphin_memory_engine, which is the same emulator our bridge starts.",
+    "lua": null,
+    "_lua_note": "No Lua. dolphin_memory_engine attaches to the running emulator process; there is no connector script to load."
+  },
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/Metaruler/ArchipelagoCR/releases",
+    "_source": "the author's own releases page; the newest release read 25 Aug 2026 is V0.3, carrying custom_robo.apworld, lib-windows.zip, lib-linux.zip and a sample YAML. ⚠ The apworld is NOT enough on its own -- see _manual_setup_note.",
+    "world_version": "0.1.1",
+    "_world_version_source": "the world's archipelago.json: {\"world_version\": \"0.1.1\"}. ⚠ The newest release tag reads V0.3, so the world's own file and its tag disagree. Recorded as the world states it, with the difference visible.",
+    "minimum_ap_version": "0.6.3",
+    "_minimum_ap_version_source": "the world's archipelago.json: {\"minimum_ap_version\": \"0.6.3\"}. Our client is 0.6.7, so this is satisfied."
+  },
+  "patch_extension": "none",
+  "_patch_extension_source": "read from the world's own source, 25 Aug 2026: the 11 .py files in worlds/custom_robo were searched. cr_rom.py defines an APPatch-family class with a patch_file_ending, and CRPatcher.py a result_file_ending, but NO `APPatchExtension` appears -- so there are no custom Python patch steps for London's patcher to refuse.",
+  "_patch_note": "There is deliberately NO `patch` block. This world DOES produce a patch (a `.apcr` file), but for a kind=world game Archipelago's own \"Open Patch\" applies it and then starts the world's client -- the setup guide says so: \"This action will AUTOMATICALLY run the Custom Robo Client.\" London neither builds nor applies it.",
+  "credits": {
+    "plugin_by": "solida1987",
+    "world_by": {
+      "name": "Metaruler",
+      "authors": [
+        "Metaruler"
+      ],
+      "_authors_source": "the world names them itself: archipelago.json {\"authors\": \"Metaruler\"}. ⚠ A single string, not a list, unlike most worlds.",
+      "url": "https://github.com/Metaruler/ArchipelagoCR",
+      "_source": "the repository the world is published from; its own source, archipelago.json and setup guide are what this manifest was written against.",
+      "licence": "NOASSERTION",
+      "_licence_source": "the GitHub API reports spdx_id NOASSERTION, name \"Other\" (25 Aug 2026) -- an Archipelago fork carrying a licence file GitHub cannot classify. Not read line by line, so nothing more specific is claimed."
+    },
+    "game_by": null,
+    "_game_by_note": "Not recorded rather than guessed. The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its authors' work. Only the plugin itself is by solida1987."
+  },
+  "_manual_setup_note": "⚠ THIS GAME NEEDS A SETUP STEP LONDON CANNOT DO. The setup guide requires the player to download lib-windows.zip (or lib-linux.zip) from the same release and extract its `gclib` folder into their Archipelago installation's /lib directory. Without it the world's client cannot reach Dolphin. London installs the apworld and starts the emulator; the gclib step and the MMU setting are the player's, and are named in `description` because that is the field that reaches them."
+}
