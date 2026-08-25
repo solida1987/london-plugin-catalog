@@ -3,7 +3,7 @@
   "display_name": "The Legend of Zelda: A Link Between Worlds",
   "subtitle": "Azahar (3DS)",
   "platform": "3DS",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "_verified": "2026-08-25",
   "ap_world_name": "A Link Between Worlds",
   "_ap_world_name_source": "world source: the installed albw.apworld declares this exact string",
@@ -25,9 +25,9 @@
   },
   "client": {
     "name": "A Link Between Worlds Client",
-    "kind": "world",
+    "kind": "london",
     "protocol": "azahar",
-    "_kind_source": "world source: the world registers its own Component(\"A Link Between Worlds Client\") and launches it itself. London starts the emulator with the scripting server on and attaches nothing.",
+    "_kind_source": "London 3.13.0: the launcher itself is the client -- LaunchViaAzaharAsync connects to Azahar's scripting server (UDP 45987, the protocol measured from the world's Citra.py) and runs Plugins/Scripts/games/albw.lua in Snes9xLuaBridge passthrough mode. The world's own Component is no longer started; the address map and watcher logic were ported from albw/Client.py (GPL-2.0).",
     "_protocol_source": "extensions/azahar/extension.json declares {\"protocol\": \"azahar\"}; AzaharRunner.Systems includes \"3DS\"."
   },
   "apworld": {
@@ -54,5 +54,7 @@
     "_source": "world source: albw/Patch.py -- ALBWProcedurePatch's procedure is [(\"patch_albw\", [\"patch_info.json\"])], a step name only the world's own ALBWPatchExtension implements, and result_file_ending is .zip. London never runs world Python; the player opens the .apalbw with Archipelago's own client (the world's setup guide's own flow), which builds a zip holding the 3DS mod folder 00040000000EC300/. London stores THAT zip per (seed, slot), installs it into Azahar's load/mods before every launch, and plays a per-seed copy of the player's own dump.",
     "base_md5": []
   },
-  "_patch_extension_source": "albw/Patch.py declares ALBWPatchExtension with the new step name patch_albw. Refused as a patch STEP per the catalogue's rule -- but the seed still arrives, as the finished zip the world's own client builds."
+  "_patch_extension_source": "albw/Patch.py declares ALBWPatchExtension with the new step name patch_albw. Refused as a patch STEP per the catalogue's rule -- but the seed still arrives, as the finished zip the world's own client builds.",
+  "lua_module": "albw",
+  "_lua_module_source": "albw.lua is generated from the world's own Locations.py and native albwrandomizer library (453 locations, 367 with codes, 77 item ids), not typed by hand."
 }

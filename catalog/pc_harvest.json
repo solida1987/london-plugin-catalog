@@ -7868,8 +7868,8 @@
    "_v": 2,
    "name": "Layer8Problem",
    "source": "sheet",
-   "steam_appid": "4487580",
-   "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/4487580/header.jpg",
+   "steam_appid": null,
+   "image": null,
    "repo": "TheZockerBrain069/Layer8Problem-AP",
    "install": "apworld_and_mod",
    "assets": [
@@ -7948,8 +7948,8 @@
    "_v": 2,
    "name": "Librarian: Tidy Up the Arcane Library",
    "source": "sheet",
-   "steam_appid": "4197610",
-   "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/4197610/header.jpg",
+   "steam_appid": null,
+   "image": null,
    "repo": "Str8UpWHITE64/Librarian-AP",
    "install": "apworld_and_mod",
    "assets": [

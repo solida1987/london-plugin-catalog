@@ -11,11 +11,13 @@ namespace LauncherV2.Extensions.Azahar;
 
 // The 3DS, through Azahar.
 //
-// London reads no memory here. The 3DS worlds ship their own Archipelago
-// client, and that client speaks Azahar's own scripting protocol -- a UDP
-// request/response on 127.0.0.1:45987 carrying read and write packets. So this
+// London itself is the client here: the launcher connects to Azahar's own
+// scripting protocol -- a UDP request/response on 127.0.0.1:45987 carrying
+// read and write packets -- and runs the game's AP logic module in its Lua
+// bridge (see the launcher's AzaharMemory + LaunchViaAzaharAsync). So this
 // extension does what SohRunner and DaxanaduRunner do: find the emulator, set
-// the one thing that has to be set, start it, and get out of the way.
+// the one thing that has to be set, start it, and get out of the way. The
+// transport lives launcher-side, not in this extension.
 //
 // ⚠⚠ THE ONE THING THAT HAS TO BE SET. Azahar declares enable_rpc_server among
 // its [Debugging] keys and starts the scripting server only when it is true.
@@ -39,7 +41,7 @@ public sealed class AzaharRunner : IEmulatorBridge
 
     /// True: this extension promises a launch with the scripting server on,
     /// and both halves are implemented. It promises no transport, because the
-    /// world's own client is the transport.
+    /// launcher's own AzaharMemory is the transport.
     public bool IsReady => true;
 
     public IReadOnlyList<EmulatorRequirement> Emulators => new[]
@@ -244,15 +246,15 @@ public sealed class AzaharRunner : IEmulatorBridge
 
     public Task<byte[]> ReadAsync(long address, int length, CancellationToken ct)
         => throw new NotSupportedException(
-            "3DS worlds talk to Archipelago through their own client, which "
-            + "speaks Azahar's scripting protocol directly; London does not "
-            + "read this emulator's memory.");
+            "The 3DS transport is the launcher's own AzaharMemory (UDP "
+            + "scripting protocol), not this extension; nothing routes memory "
+            + "traffic through here.");
 
     public Task WriteAsync(long address, byte[] data, CancellationToken ct)
         => throw new NotSupportedException(
-            "3DS worlds talk to Archipelago through their own client, which "
-            + "speaks Azahar's scripting protocol directly; London does not "
-            + "write this emulator's memory.");
+            "The 3DS transport is the launcher's own AzaharMemory (UDP "
+            + "scripting protocol), not this extension; nothing routes memory "
+            + "traffic through here.");
 
     public Task DisconnectAsync() => Task.CompletedTask;
 }
