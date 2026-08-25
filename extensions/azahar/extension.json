@@ -3,7 +3,7 @@
   "extensionId": "azahar_runner",
   "displayName": "Azahar (3DS)",
   "protocol": "azahar",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Solida Games",
   "authorContact": "https://github.com/solida1987/london-plugin-catalog",
   "assembly": "CatalogAzaharRunner.dll",

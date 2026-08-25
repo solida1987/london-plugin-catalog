@@ -198,26 +198,45 @@ public sealed class AzaharRunner : IEmulatorBridge
     /// Set one key inside one section, creating the section at the end when it
     /// is missing. Only that section is touched: the same key name under
     /// another section could belong to someone else.
+    ///
+    /// ⚠ THE COMPANION IS THE VALUE'S ANCHOR. Azahar's config carries a
+    /// "key\default" marker beside every key, and a marker of true means
+    /// "this equals the built-in default -- follow the default", so the stored
+    /// value is IGNORED on load and rewritten on exit. That is exactly what
+    /// happened on 25 Aug 2026: use_custom_storage=true was written, the stale
+    /// marker said default, and Azahar quietly played on the shared SD card.
+    /// So every set also pins the marker to false.
     private static void SetKey(List<string> lines, string section, string key,
                                string value)
     {
+        string marker = key + "\\default";
         int start = lines.FindIndex(l =>
             l.Trim().Equals("[" + section + "]", StringComparison.OrdinalIgnoreCase));
         if (start < 0)
         {
             lines.Add("[" + section + "]");
+            lines.Add(marker + "=false");
             lines.Add(key + "=" + value);
             return;
         }
         int end = lines.FindIndex(start + 1, l => l.TrimStart().StartsWith("["));
         if (end < 0) end = lines.Count;
+
+        int keyAt = -1, markerAt = -1;
         for (int i = start + 1; i < end; i++)
         {
-            if (lines[i].TrimStart().StartsWith(key + "=",
-                    StringComparison.OrdinalIgnoreCase))
-            { lines[i] = key + "=" + value; return; }
+            string t = lines[i].TrimStart();
+            if (t.StartsWith(key + "=", StringComparison.OrdinalIgnoreCase))
+                keyAt = i;
+            else if (t.StartsWith(marker + "=", StringComparison.OrdinalIgnoreCase))
+                markerAt = i;
         }
-        lines.Insert(start + 1, key + "=" + value);
+
+        if (markerAt >= 0) lines[markerAt] = marker + "=false";
+        else { lines.Insert(start + 1, marker + "=false"); if (keyAt > start) keyAt++; }
+
+        if (keyAt >= 0) lines[keyAt] = key + "=" + value;
+        else lines.Insert(start + 1, key + "=" + value);
     }
 
     public Task<bool> ConnectAsync(BridgeContext context, CancellationToken ct)
