@@ -1,6 +1,6 @@
 {
  "note": "Cover and banner ADDRESSES only. No artwork is stored in this repository; the launcher fetches these onto the player's own machine, and only after they have agreed to cover art at all.",
- "count": 487,
+ "count": 488,
  "covers": {
   "2048": "https://cdn.akamai.steamstatic.com/steam/apps/942050/library_600x900_2x.jpg",
   "7_days_to_die": "https://cdn.akamai.steamstatic.com/steam/apps/251570/library_600x900_2x.jpg",
@@ -488,7 +488,8 @@
   "zillion": "https://thumbnails.libretro.com/Sega%20-%20Master%20System%20-%20Mark%20III/Named_Boxarts/Zillion%20%28USA%2C%20Europe%29%20%28Rev%201%29.png",
   "zoominoes": "https://cdn.akamai.steamstatic.com/steam/apps/3282420/library_600x900_2x.jpg",
   "zork_grand_inquisitor": "https://images.gog-statics.com/5b507cf6ea3b429aba038ccd4b6ffa523faee8427d218c5182cb4326a95072e4.jpg",
-  "zuma_deluxe": "https://cdn.akamai.steamstatic.com/steam/apps/3330/library_600x900_2x.jpg"
+  "zuma_deluxe": "https://cdn.akamai.steamstatic.com/steam/apps/3330/library_600x900_2x.jpg",
+  "zelda2": "https://thumbnails.libretro.com/Nintendo%20-%20Nintendo%20Entertainment%20System/Named_Boxarts/Zelda%20II%20-%20The%20Adventure%20of%20Link%20%28USA%29.png"
  },
  "banners": {
   "2048": "https://cdn.akamai.steamstatic.com/steam/apps/942050/library_hero.jpg",

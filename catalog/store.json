@@ -1,6 +1,6 @@
 {
   "note": "The launcher's store window. Addresses and metadata only — no artwork and no code is stored here. Installing still runs the launcher's own consent flow.",
-  "count": 592,
+  "count": 593,
   "platforms": [
     "Atari 2600",
     "Browser",
@@ -2483,6 +2483,34 @@
       "tested": false,
       "section": "stable",
       "stability": "Stable"
+    },
+    {
+      "id": "zelda2",
+      "name": "Zelda II: The Adventure of Link",
+      "ap_world_name": "Zelda II: The Adventure of Link",
+      "subtitle": "BizHawk",
+      "description": "Zelda II: The Adventure of Link as a multiworld. 112 locations across Hyrule's overworld, towns and seven palaces are shuffled into the session, with key placement, the item pool and the starting Attack, Magic and Life levels configurable. Requires the player's own NES cartridge dump (USA).",
+      "platform": "NES",
+      "platform_label": "NES",
+      "family": "Nintendo",
+      "genres": [
+        "Action-Adventure",
+        "RPG"
+      ],
+      "version": "1.0.0",
+      "world_by": "solida1987",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Nintendo%20Entertainment%20System/Named_Boxarts/Zelda%20II%20-%20The%20Adventure%20of%20Link%20%28USA%29.png",
+      "banner": null,
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/nes/zelda2.londonplugin",
+      "page": "https://github.com/solida1987/Zelda-II-The-Adventure-of-Link-Archipelago/releases",
+      "mod_kind": null,
+      "_apworld_url": "https://github.com/solida1987/Zelda-II-The-Adventure-of-Link-Archipelago/releases/latest/download/zelda2.apworld",
+      "install_kind": "rom",
+      "tested": false,
+      "section": "exclusive",
+      "stability": "Our own world"
     },
     {
       "id": "zillion",

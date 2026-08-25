@@ -1,6 +1,6 @@
 {
   "note": "Which London plugin covers which Archipelago game. Addresses and metadata only.",
-  "count": 592,
+  "count": 593,
   "games": {
     "Armored Core 3": {
       "id": "ac3",
@@ -535,6 +535,12 @@
       "platform": "GBA",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/yugioh_2006.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Zelda II: The Adventure of Link": {
+      "id": "zelda2",
+      "platform": "NES",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/nes/zelda2.londonplugin",
+      "page": "https://github.com/solida1987/Zelda-II-The-Adventure-of-Link-Archipelago/releases"
     },
     "Zillion": {
       "id": "zillion",
