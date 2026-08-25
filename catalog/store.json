@@ -12518,7 +12518,7 @@
       "mod_kind": null,
       "world_licence": "NOASSERTION",
       "plugin_by": "solida1987",
-      "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/292140/header.jpg",
+      "cover": "https://store-images.s-microsoft.com/image/apps.64979.13858376666954698.6bc24818-14aa-494c-84c6-bdf5315d4afc.524709bf-e7ae-4259-84a2-8c45c1251d1e",
       "install_kind": "apworld_only",
       "tested": false,
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/final_fantasy_xiii_2.londonplugin",
@@ -15695,7 +15695,7 @@
       "tested": false,
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/terratech.londonplugin",
       "page": "https://github.com/solida1987/TerraTech-Archipelago/releases",
-      "banner": null,
+      "banner": "https://cdn.akamai.steamstatic.com/steam/apps/285920/library_hero.jpg",
       "section": "exclusive",
       "stability": "Our own world"
     }
