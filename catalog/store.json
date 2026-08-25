@@ -4203,7 +4203,7 @@
     {
       "id": "dlc_quest",
       "name": "DLC Quest",
-      "ap_world_name": "DLC Quest",
+      "ap_world_name": "DLCQuest",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -4794,7 +4794,7 @@
       "tested": false,
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/fnaf_world.londonplugin",
       "page": "https://github.com/EviVirus/Archipelago/releases",
-      "banner": "https://static.wikia.nocookie.net/freddy-fazbears-pizza/images/6/62/FNaFWorld-Steam-artwork.jpg",
+      "banner": null,
       "section": "stable",
       "stability": "Stable"
     },
@@ -8181,7 +8181,7 @@
     {
       "id": "shapez",
       "name": "Shapez",
-      "ap_world_name": "Shapez",
+      "ap_world_name": "shapez",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -8493,7 +8493,7 @@
     {
       "id": "sonic_adventure_2_battle",
       "name": "Sonic Adventure 2: Battle",
-      "ap_world_name": "Sonic Adventure 2: Battle",
+      "ap_world_name": "Sonic Adventure 2 Battle",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -10625,7 +10625,7 @@
     {
       "id": "plants_vs_zombies_replanted",
       "name": "Plants vs. Zombies: Replanted",
-      "ap_world_name": "Plants vs. Zombies: Replanted",
+      "ap_world_name": "Plants vs. Zombies Replanted",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",

@@ -932,7 +932,7 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/divinity_original_sin_2.londonplugin",
       "page": "https://github.com/Intaiachi/ArchipelagoDOS2/releases"
     },
-    "DLC Quest": {
+    "DLCQuest": {
       "id": "dlc_quest",
       "platform": "PC",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/dlc_quest.londonplugin",
@@ -1850,7 +1850,7 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/severed_soul.londonplugin",
       "page": "https://github.com/Grenhunterr/Archipelago/releases"
     },
-    "Shapez": {
+    "shapez": {
       "id": "shapez",
       "platform": "PC",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/shapez.londonplugin",
@@ -1922,7 +1922,7 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/smushi_come_home.londonplugin",
       "page": "https://github.com/xMcacutt-Archipelago/Archipelago-SmushiComeHome/releases"
     },
-    "Sonic Adventure 2: Battle": {
+    "Sonic Adventure 2 Battle": {
       "id": "sonic_adventure_2_battle",
       "platform": "PC",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/sonic_adventure_2_battle.londonplugin",
@@ -2414,7 +2414,7 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/plants_vs_zombies_goty.londonplugin",
       "page": "https://github.com/dannybonz/replanted_archipelago/releases"
     },
-    "Plants vs. Zombies: Replanted": {
+    "Plants vs. Zombies Replanted": {
       "id": "plants_vs_zombies_replanted",
       "platform": "PC",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/plants_vs_zombies_replanted.londonplugin",

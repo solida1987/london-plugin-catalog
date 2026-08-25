@@ -40,10 +40,14 @@ public sealed class BizHawkBridge : IEmulatorBridge
     /// platform listed there but not here gives the player an empty emulator
     /// dropdown and a Play button that cannot answer. PSX runs on the bundled
     /// Nymashock core and NDS on melonDS; both spellings of the Atari are
-    /// carried because the catalogue writes "2600" and the backend "A26".
+    /// carried because the catalogue writes "2600" and the backend "A26" --
+    /// and both spellings of the DS for the very same reason: the manifests
+    /// write "DS", older code wrote "NDS", and carrying only one of them is
+    /// how Pokémon B/W and Platinum sat without an emulator button from
+    /// 20 to 25 Aug while this comment described the trap one line up.
     public string[] Systems => new[]
         { "GBA", "GBC", "GB", "SNES", "NES", "N64", "GEN", "SMS", "PCE",
-          "PSX", "NDS", "2600", "A26" };
+          "PSX", "NDS", "DS", "2600", "A26" };
 
     /// Proven: this is the transport the GBA plugins already run on.
     public bool IsReady => true;
