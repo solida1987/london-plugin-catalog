@@ -61,5 +61,6 @@
     },
     "game_by": null,
     "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
-  }
+  },
+  "_build_blocked": "JUDGED 2026-08-25 against mgs.apworld v0.7.0 (SDMichaud), Client.py (1887 lines) read: NOT buildable read-only. The client keeps its own JSON save-state and WRITES the entire inventory into MainRAM every cycle -- weapons, ammo, and the KEY CARDS that gate every door in the game. Received items materialise only through its item handler's writes. Without them the player cannot progress past the first card door. Blocked until the write path is measured in a running game. items_handling=0b111."
 }

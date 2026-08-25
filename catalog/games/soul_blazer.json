@@ -68,5 +68,6 @@
     },
     "game_by": null,
     "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
-  }
+  },
+  "_build_blocked": "JUDGED 2026-08-25: doubly blocked. (1) The world's client is `class SoulBlazerSNIClient(SNIClient)` -- SNI transport, same gap as kirby_super_star. (2) tools/survey_candidates.py: no release of Tranquilite0's repository carries a soulblazer .apworld, so the world is not obtainable by a player at all -- 'no release' is the survey's own verdict."
 }

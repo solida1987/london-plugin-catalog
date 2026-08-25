@@ -69,5 +69,6 @@
     },
     "game_by": null,
     "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
-  }
+  },
+  "_build_blocked": "JUDGED 2026-08-25: blocked on TRANSPORT, not on a map. The world's client is `class KSSSNIClient(SNIClient)` (Silvris/Archipelago, branch kss) -- SNI, not BizHawk. Every proven map in Plugins/Scripts/games/ runs over the BizHawk connector; no sni-protocol game has ever been built, so the first one needs the SNI transport path proven end to end, which is launcher work, not one Lua file."
 }
