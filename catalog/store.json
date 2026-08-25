@@ -131,7 +131,7 @@
       "genres": [
         "Action-Adventure"
       ],
-      "version": "1.0.2",
+      "version": "1.0.3",
       "world_by": "randomsalience",
       "world_licence": "GPL-2.0",
       "plugin_by": "solida1987",
@@ -142,9 +142,9 @@
       "mod_kind": null,
       "_apworld_url": "https://github.com/randomsalience/albw-archipelago/releases",
       "install_kind": "rom",
-      "tested": false,
+      "tested": true,
       "section": "stable",
-      "stability": "Stable"
+      "stability": "Proven in London"
     },
     {
       "id": "alttp",
@@ -2616,9 +2616,9 @@
       "mod_kind": null,
       "_apworld_url": "https://github.com/solida1987/Zelda-II-The-Adventure-of-Link-Archipelago/releases/latest/download/zelda2.apworld",
       "install_kind": "rom",
-      "tested": false,
+      "tested": true,
       "section": "exclusive",
-      "stability": "Our own world"
+      "stability": "Proven in London"
     },
     {
       "id": "zillion",
