@@ -11,7 +11,7 @@
     <AssemblyName>CatalogAzaharRunner</AssemblyName>
     <RootNamespace>LauncherV2.Extensions.Azahar</RootNamespace>
     <EnableDynamicLoading>true</EnableDynamicLoading>
-    <Version>0.1.0</Version>
+    <Version>0.1.1</Version>
     <Company>Solida Games</Company>
     <Product>Azahar (3DS) runner extension for Multiworld Launcher</Product>
   </PropertyGroup>

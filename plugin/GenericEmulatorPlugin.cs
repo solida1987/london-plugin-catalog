@@ -1,4 +1,5 @@
 using System.IO;
+using System.IO.Compression;
 using System.Linq;
 using System.Text.Json;
 
@@ -175,6 +176,76 @@ public class GenericEmulatorPlugin : EmulatorPlugin
     /// rebuilt correctly on every launch -- the save was not, and a save that
     /// outlives its seed is the one thing a multiworld cannot have.
     ///
+    /// The single top-level 16-hex-digit folder of a 3DS mod zip, or null.
+    /// Public and static so the rule can be checked without a running game.
+    public static string? ThreeDsModTitleId(string zipPath)
+    {
+        try
+        {
+            using var zip = ZipFile.OpenRead(zipPath);
+            var tops = zip.Entries
+                .Select(e => e.FullName.Replace('\\', '/').Split('/')[0])
+                .Where(t => t.Length > 0)
+                .Distinct(StringComparer.OrdinalIgnoreCase)
+                .ToList();
+            if (tops.Count != 1) return null;
+            string t = tops[0];
+            return t.Length == 16 && t.All(Uri.IsHexDigit) ? t : null;
+        }
+        catch { return null; }
+    }
+
+    /// Put THIS seed's mod in the emulator's mods folder, and launch a
+    /// per-seed copy of the plain ROM.
+    ///
+    /// The mods folder is global to the emulator, so it is owned by whichever
+    /// seed launched last: the title folder is deleted and rewritten whenever
+    /// the marker disagrees. A stale seed playing under a new one is the same
+    /// leak as replayed checks, and it is closed the same way -- by force.
+    private string? InstallThreeDsModSession(string zip, string titleId,
+                                             ApSession session)
+    {
+        string seed = GetSeedName?.Invoke() ?? "";
+        string stamp = seed + "|" + session.SlotName;
+        string modsRoot = Path.Combine(EmulatorDirectory, "user", "load", "mods");
+        string target = Path.Combine(modsRoot, titleId);
+        string marker = Path.Combine(target, ".london_seed");
+
+        bool current = File.Exists(marker)
+                    && File.ReadAllText(marker).Trim() == stamp;
+        if (!current)
+        {
+            if (Directory.Exists(target)) Directory.Delete(target, true);
+            Directory.CreateDirectory(modsRoot);
+            ZipFile.ExtractToDirectory(zip, modsRoot, overwriteFiles: true);
+            File.WriteAllText(marker, stamp);
+        }
+
+        string? rom = CopyForSaveIsolation(session);
+        SessionRomNote = $"[{DisplayName}] Seed mod installed for slot "
+                       + $"\"{session.SlotName}\"; playing a per-seed copy of "
+                       + "your own dump with it.";
+        return rom;
+    }
+
+    /// A per-(slot, seed) copy of the library ROM, or null when the seed is
+    /// not known -- best effort, because the game must still start.
+    private string? CopyForSaveIsolation(ApSession session)
+    {
+        string? seed = GetSeedName?.Invoke();
+        if (RomPath is null || !File.Exists(RomPath)
+            || string.IsNullOrWhiteSpace(seed)) return null;
+        try
+        {
+            string outPath = Path.Combine(RomLibraryDirectory, "sessions",
+                SessionRomName(session.SlotName, seed, Path.GetExtension(RomPath)));
+            Directory.CreateDirectory(Path.GetDirectoryName(outPath)!);
+            if (!File.Exists(outPath)) File.Copy(RomPath, outPath);
+            return outPath;
+        }
+        catch { return null; }
+    }
+
     /// Public and static so the rule can be checked without a running game.
     public static string SessionRomName(string slot, string? seed, string ending)
     {
@@ -210,6 +281,15 @@ public class GenericEmulatorPlugin : EmulatorPlugin
         if (patch is not null && Manifest.PatchModel == "custom"
             && ApPatch.ReadManifest(patch) is null)
         {
+            // A zip whose top level is one 16-hex-digit folder is a 3DS
+            // layered-FS mod: the SEED lives in that folder, not in the ROM.
+            // A Link Between Worlds delivers exactly this -- the player opens
+            // the .apalbw with Archipelago's own client, which builds a zip
+            // holding 00040000000EC300/.
+            string? titleId = ThreeDsModTitleId(patch);
+            if (titleId != null)
+                return InstallThreeDsModSession(patch, titleId, session);
+
             SessionRomNote = $"[{DisplayName}] Playing the randomized game file "
                            + $"stored for slot \"{session.SlotName}\".";
             return patch;
@@ -222,7 +302,16 @@ public class GenericEmulatorPlugin : EmulatorPlugin
             // is the wrong thing to say: the player was told to bring a ROM that
             // is ALREADY patched, and telling them it is unpatched sends them
             // looking for a problem that isn't there.
-            if (Manifest.PatchModel != "custom") { SessionRomNote = note; return null; }
+            if (Manifest.PatchModel != "custom")
+            {
+                SessionRomNote = note;
+                // No patch does not mean no seed. The emulator names its save
+                // after the ROM file, so launching the library copy hands
+                // every seed one shared save -- the same leak the patched
+                // games fixed with SessionRomName. The copy is byte-identical;
+                // only its name carries the seed.
+                return CopyForSaveIsolation(session);
+            }
 
             // But the launcher must not TAKE THEIR WORD for it either. These
             // games are the one case where nothing downstream can tell a seed
@@ -336,6 +425,11 @@ public class GenericEmulatorPlugin : EmulatorPlugin
         return null;
     }
 
+    /// "procedure", "delta" or "custom": the world produces a per-seed file,
+    /// so there is something real to ask the player for.
+    private bool DeclaresPatchMachinery
+        => Manifest.PatchModel is "procedure" or "delta" or "custom";
+
     public override SeedPatchRequest? GetUnmetSeedPatch(string seed, string slot)
     {
         // A world that carries its own client is never patched by London. The
@@ -347,7 +441,15 @@ public class GenericEmulatorPlugin : EmulatorPlugin
         // "patch" appears nowhere in its source), so the file it demanded
         // could not exist. Now that cancelling stops the join, a question with
         // no answer is not merely noise -- it is an unplayable game.
-        if (WorldCarriesOwnClient) return null;
+        // A world that carries its own client still BUILDS a per-seed game
+        // when its manifest declares patch machinery -- A Link Between Worlds
+        // ships its own client AND an .apalbw. Skipping the question here
+        // launched the plain library ROM: the emulator ran, the client
+        // connected, and the game was ordinary vanilla. Only a world with no
+        // patch machinery at all (Burnout 3: no APProcedurePatch, no patch
+        // suffix, the word "patch" nowhere in its source) has no file to ask
+        // for, and asking would be a dialog with no right answer.
+        if (WorldCarriesOwnClient && !DeclaresPatchMachinery) return null;
 
         // Asked BEFORE launch, when the seed is known but the plugin has not run
         // yet, so this must not depend on GetSeedName having been called.
@@ -357,8 +459,12 @@ public class GenericEmulatorPlugin : EmulatorPlugin
         // patch -- so that is what the player is asked for, in those words,
         // with the ROM picker filter rather than *.ap*.
         if (Manifest.PatchModel == "custom")
-            return new SeedPatchRequest(DisplayName, seed, slot, BuildRomFilter(),
-                WhatToPick: "the randomized game file built for this seed "
+            return new SeedPatchRequest(DisplayName, seed, slot,
+                "Randomized game file or seed archive (*.zip;*.cci;*.3ds;*.nds;"
+              + "*.z64;*.sfc;*.gba;*.gbc;*.gb;*.nes;*.iso;*.bin)|*.zip;*.cci;"
+              + "*.3ds;*.nds;*.z64;*.sfc;*.gba;*.gbc;*.gb;*.nes;*.iso;*.bin|"
+              + "All files (*.*)|*.*",
+                WhatToPick: "the randomized file built for this seed "
                           + "(Archipelago's own client builds it from the patch "
                           + "you were given)");
 

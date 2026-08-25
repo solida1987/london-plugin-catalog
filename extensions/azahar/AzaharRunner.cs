@@ -81,6 +81,7 @@ public sealed class AzaharRunner : IEmulatorBridge
 
         string dir = Path.GetDirectoryName(exe)!;
         EnableRpcServer(dir);
+        ConfigureSessionStorage(dir, context.RomPath);
 
         // The ROM goes on the command line; Azahar loads it straight away.
         return new LaunchPlan(exe, $"\"{context.RomPath}\"", dir);
@@ -155,6 +156,68 @@ public sealed class AzaharRunner : IEmulatorBridge
         {
             // Unwritable config -- the launch still goes ahead.
         }
+    }
+
+    /// Point Azahar's SD card at a folder named after the ROM file.
+    ///
+    /// 3DS saves live on the emulated SD card, keyed by title id -- NOT by ROM
+    /// file name -- so two seeds of the same game share one save unless the
+    /// card itself moves. The session ROM's name carries the slot and seed, so
+    /// a card per ROM stem is a card per seed. Measured contract, from the
+    /// config Azahar itself wrote on 25 Aug 2026: section [Data%20Storage],
+    /// keys use_custom_storage and sdmc_directory, forward slashes accepted.
+    /// The NAND (system files) stays shared on purpose.
+    internal static void ConfigureSessionStorage(string emulatorDir, string romPath)
+    {
+        try
+        {
+            string stem = Path.GetFileNameWithoutExtension(romPath);
+            if (stem.Length == 0) return;
+            string card = Path.Combine(emulatorDir, "user", "sdmc_sessions", stem)
+                              .Replace('\\', '/') + "/";
+            Directory.CreateDirectory(card);
+
+            string conf = Path.Combine(emulatorDir, "user", "config", "qt-config.ini");
+            Directory.CreateDirectory(Path.GetDirectoryName(conf)!);
+
+            var lines = File.Exists(conf)
+                ? File.ReadAllLines(conf).ToList()
+                : new List<string>();
+
+            SetKey(lines, "Data%20Storage", "use_custom_storage", "true");
+            SetKey(lines, "Data%20Storage", "sdmc_directory", card);
+            File.WriteAllLines(conf, lines);
+        }
+        catch
+        {
+            // Unwritable config -- the launch still goes ahead; the cost is a
+            // shared card, not a refused game.
+        }
+    }
+
+    /// Set one key inside one section, creating the section at the end when it
+    /// is missing. Only that section is touched: the same key name under
+    /// another section could belong to someone else.
+    private static void SetKey(List<string> lines, string section, string key,
+                               string value)
+    {
+        int start = lines.FindIndex(l =>
+            l.Trim().Equals("[" + section + "]", StringComparison.OrdinalIgnoreCase));
+        if (start < 0)
+        {
+            lines.Add("[" + section + "]");
+            lines.Add(key + "=" + value);
+            return;
+        }
+        int end = lines.FindIndex(start + 1, l => l.TrimStart().StartsWith("["));
+        if (end < 0) end = lines.Count;
+        for (int i = start + 1; i < end; i++)
+        {
+            if (lines[i].TrimStart().StartsWith(key + "=",
+                    StringComparison.OrdinalIgnoreCase))
+            { lines[i] = key + "=" + value; return; }
+        }
+        lines.Insert(start + 1, key + "=" + value);
     }
 
     public Task<bool> ConnectAsync(BridgeContext context, CancellationToken ct)

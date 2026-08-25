@@ -3,7 +3,7 @@
   "display_name": "The Legend of Zelda: Phantom Hourglass",
   "subtitle": "BizHawk",
   "platform": "DS",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "_verified": "2026-08-25",
   "ap_world_name": "The Legend of Zelda - Phantom Hourglass",
   "_ap_world_name_source": "world source: the installed tloz_ph.apworld declares this exact string in its archipelago.json",

@@ -3,7 +3,7 @@
   "display_name": "The Legend of Zelda: A Link Between Worlds",
   "subtitle": "Azahar (3DS)",
   "platform": "3DS",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "_verified": "2026-08-25",
   "ap_world_name": "A Link Between Worlds",
   "_ap_world_name_source": "world source: the installed albw.apworld declares this exact string",
@@ -36,8 +36,8 @@
     "world_version": "0.1.5",
     "_source": "the author's own releases page; the newest asset is albw.apworld (tag v0.3.2)"
   },
-  "patch_extension": "none",
-  "_patch_note": "The world declares ALBWProcedurePatch and builds its own game file. London stores what the player is given and plays it as-is.",
+  "patch_extension": "refused",
+  "_patch_note": "The seed lives in a layered-FS mod, not in the ROM: the zip's 00040000000EC300/ goes into the emulator's load/mods, owned by whichever seed launched last (cleared and rewritten on seed change), and the ROM launched is a per-(slot, seed) copy so the emulated SD card -- where 3DS saves actually live -- follows the seed too.",
   "credits": {
     "plugin_by": "solida1987",
     "world_by": {
@@ -48,5 +48,11 @@
     },
     "game_by": null,
     "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. Only the plugin itself is by solida1987."
-  }
+  },
+  "patch": {
+    "model": "custom",
+    "_source": "world source: albw/Patch.py -- ALBWProcedurePatch's procedure is [(\"patch_albw\", [\"patch_info.json\"])], a step name only the world's own ALBWPatchExtension implements, and result_file_ending is .zip. London never runs world Python; the player opens the .apalbw with Archipelago's own client (the world's setup guide's own flow), which builds a zip holding the 3DS mod folder 00040000000EC300/. London stores THAT zip per (seed, slot), installs it into Azahar's load/mods before every launch, and plays a per-seed copy of the player's own dump.",
+    "base_md5": []
+  },
+  "_patch_extension_source": "albw/Patch.py declares ALBWPatchExtension with the new step name patch_albw. Refused as a patch STEP per the catalogue's rule -- but the seed still arrives, as the finished zip the world's own client builds."
 }
