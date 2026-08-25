@@ -2489,7 +2489,7 @@
       "name": "Zelda II: The Adventure of Link",
       "ap_world_name": "Zelda II: The Adventure of Link",
       "subtitle": "BizHawk",
-      "description": "Zelda II: The Adventure of Link as a multiworld. 112 locations across Hyrule's overworld, towns and seven palaces are shuffled into the session, with key placement, the item pool and the starting Attack, Magic and Life levels configurable. Requires the player's own NES cartridge dump (USA).",
+      "description": "Zelda II: The Adventure of Link as a multiworld. 68 locations across Hyrule's overworld, towns and seven palaces are shuffled into the session, with key placement, the item pool and the starting Attack, Magic and Life levels configurable. Requires the player's own NES cartridge dump (USA).",
       "platform": "NES",
       "platform_label": "NES",
       "family": "Nintendo",
@@ -2497,7 +2497,7 @@
         "Action-Adventure",
         "RPG"
       ],
-      "version": "1.0.1",
+      "version": "1.0.2",
       "world_by": "solida1987",
       "world_licence": "MIT",
       "plugin_by": "solida1987",
