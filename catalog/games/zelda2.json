@@ -5,7 +5,7 @@
   "_subtitle_source": "subtitle names the backend the player runs, as in 18 other manifests.",
   "platform": "NES",
   "_platform_source": "The game is a NES cartridge, and our own world targets it there: worlds/zelda2 reads the NES work RAM through London's BizHawk connector. Every other release of Zelda II (GameCube Collector's Edition, Classic NES Series on GBA, Virtual Console, Switch Online) is this same NES ROM inside an emulator, so NES is not one option among several -- it is the only form the game exists in.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "_verified": "2026-08-25",
   "ap_world_name": "Zelda II: The Adventure of Link",
   "_ap_world_name_source": "OUR OWN world declares it: Zelda2-Archipelago worlds/zelda2/__init__.py, `game = \"Zelda II: The Adventure of Link\"`, and worlds/zelda2/archipelago.json carries the same string. Confirmed end to end by generating 25 seeds against Archipelago 0.6.7, which resolves a world by exactly this name.",
@@ -46,7 +46,7 @@
     "bundled": false,
     "url": "https://github.com/solida1987/Zelda-II-The-Adventure-of-Link-Archipelago/releases/latest/download/zelda2.apworld",
     "_source": "our own repository, published 25 Aug 2026. The address is the release asset itself so the launcher can fetch it directly.",
-    "world_version": "0.1.2",
+    "world_version": "0.1.4",
     "_world_version_source": "worlds/zelda2/archipelago.json.",
     "minimum_ap_version": "0.6.0",
     "_minimum_ap_version_source": "worlds/zelda2/archipelago.json. Generation is verified against 0.6.7, which is what the project's own engine runs."
