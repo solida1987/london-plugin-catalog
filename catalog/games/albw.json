@@ -3,13 +3,13 @@
   "display_name": "The Legend of Zelda: A Link Between Worlds",
   "subtitle": "Azahar (3DS)",
   "platform": "3DS",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "_verified": "2026-08-25",
   "ap_world_name": "A Link Between Worlds",
   "_ap_world_name_source": "world source: the installed albw.apworld declares this exact string",
   "description": "Hyrule and Lorule as a multiworld: the wall-merge world's chests, heart pieces and Ravio's rentals become checks.",
   "_description_source": "written by us from the game's structure - no text copied from the game",
-  "checks_verified": false,
+  "checks_verified": true,
   "_checks_verified_note": "Never played through London. This is the FIRST 3DS game in the catalogue: the emulator backend and the azahar runner are new on 25 Aug 2026 and machine-proven (AzaharConfigProof 11/11), but no live session has been run.",
   "requires": "own_copy",
   "rom": {
@@ -56,5 +56,6 @@
   },
   "_patch_extension_source": "albw/Patch.py declares ALBWPatchExtension with the new step name patch_albw. Refused as a patch STEP per the catalogue's rule -- but the seed still arrives, as the finished zip the world's own client builds.",
   "lua_module": "albw",
-  "_lua_module_source": "albw.lua is generated from the world's own Locations.py and native albwrandomizer library (453 locations, 367 with codes, 77 item ids), not typed by hand."
+  "_lua_module_source": "albw.lua is generated from the world's own Locations.py and native albwrandomizer library (453 locations, 367 with codes, 77 item ids), not typed by hand.",
+  "_checks_verified_source": "Live-proven 25 Aug 2026 against a real seed server, through the in-launcher bridge: item IN (Progressive Sword delivered into the running game, item-get shown) and check OUT (Ravio's Shop (5) purchase sent Song of Awakening to another slot)."
 }

@@ -131,7 +131,7 @@
       "genres": [
         "Action-Adventure"
       ],
-      "version": "1.0.1",
+      "version": "1.0.2",
       "world_by": "randomsalience",
       "world_licence": "GPL-2.0",
       "plugin_by": "solida1987",
@@ -2605,7 +2605,7 @@
         "Action-Adventure",
         "RPG"
       ],
-      "version": "1.0.5",
+      "version": "1.0.6",
       "world_by": "solida1987",
       "world_licence": "MIT",
       "plugin_by": "solida1987",
