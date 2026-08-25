@@ -166,6 +166,25 @@ public class GenericEmulatorPlugin : EmulatorPlugin
                                   hashes.Count == 1 ? hashes[0] : null,
                                   WrongVersionPresent: false, BuildRomFilter());
     }
+    /// What this seed's ROM is called on disk.
+    ///
+    /// ⚠ THE SEED BELONGS IN THE NAME, not only in the bytes. Emulators name
+    /// the battery save after the ROM file, so two seeds played under the same
+    /// slot name shared one save: a brand new multiworld opened on the previous
+    /// one's file-select screen with its characters still on it. The ROM was
+    /// rebuilt correctly on every launch -- the save was not, and a save that
+    /// outlives its seed is the one thing a multiworld cannot have.
+    ///
+    /// Public and static so the rule can be checked without a running game.
+    public static string SessionRomName(string slot, string? seed, string ending)
+    {
+        static string Safe(string s) => string.Concat(
+            s.Select(c => Path.GetInvalidFileNameChars().Contains(c) ? '_' : c));
+
+        string tag = string.IsNullOrWhiteSpace(seed) ? "" : "_" + Safe(seed!);
+        return Safe(slot) + tag + ending;
+    }
+
     /// Turn the player's own ROM into THIS seed's ROM.
     ///
     /// Without this the launcher starts the plain library ROM: the emulator
@@ -240,10 +259,9 @@ public class GenericEmulatorPlugin : EmulatorPlugin
         // One output per slot, rebuilt every launch. Patching a 16 MB ROM takes
         // a fraction of a second, and always rebuilding means a re-generated
         // seed can never be played against yesterday's patched copy.
-        string safeSlot = string.Concat(session.SlotName
-                            .Select(c => Path.GetInvalidFileNameChars().Contains(c) ? '_' : c));
         string ending = ApPatch.ReadManifest(patch)?.ResultFileEnding ?? ".rom";
-        string outPath = Path.Combine(RomLibraryDirectory, "sessions", safeSlot + ending);
+        string outPath = Path.Combine(RomLibraryDirectory, "sessions",
+            SessionRomName(session.SlotName, GetSeedName?.Invoke(), ending));
 
         try
         {
