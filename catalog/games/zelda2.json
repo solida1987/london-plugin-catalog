@@ -5,7 +5,7 @@
   "_subtitle_source": "subtitle names the backend the player runs, as in 18 other manifests.",
   "platform": "NES",
   "_platform_source": "The game is a NES cartridge, and our own world targets it there: worlds/zelda2 reads the NES work RAM through London's BizHawk connector. Every other release of Zelda II (GameCube Collector's Edition, Classic NES Series on GBA, Virtual Console, Switch Online) is this same NES ROM inside an emulator, so NES is not one option among several -- it is the only form the game exists in.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "_verified": "2026-08-25",
   "ap_world_name": "Zelda II: The Adventure of Link",
   "_ap_world_name_source": "OUR OWN world declares it: Zelda2-Archipelago worlds/zelda2/__init__.py, `game = \"Zelda II: The Adventure of Link\"`, and worlds/zelda2/archipelago.json carries the same string. Confirmed end to end by generating 25 seeds against Archipelago 0.6.7, which resolves a world by exactly this name.",
@@ -17,14 +17,15 @@
   "requires": "own_copy",
   "_requires_source": "NES cartridge title. The player supplies their own dump; nothing of the game is distributed here, and the patch is useless without it.",
   "rom": {
-    "description": "Your own Zelda II: The Adventure of Link cartridge dump for NES -- the USA release. Both the iNES and NES 2.0 header forms are accepted; they are the same cartridge",
+    "description": "Your own Zelda II: The Adventure of Link cartridge dump for NES -- the USA release, with its 16-byte iNES header",
     "_description_source": "our own patcher's rule, worlds/zelda2/Rom.py: identity is the MD5 of PRG+CHR with the 16-byte header excluded, so the two header forms the same dump circulates under are both accepted. A whole-file hash would have refused one of them for a difference that is not in the game.",
     "md5": [
-      "88c0493fb1146834836c0ff4f3e06e45"
+      "764d36fa8a2450834da5e8194281035a",
+      "e6dd4104fa46eb4bef2cb52dc341dd38"
     ],
-    "_md5_source": "MEASURED from the project owner's own cartridge dump 25 Aug 2026, and cross-checked: rebuilding the iNES v1 header over the same data reproduces 764d36fa8a2450834da5e8194281035a, the hash Zelda 2 Redux's ReadMe documents for the base ROM. ⚠ This is the HEADERLESS hash -- see rom.description.",
-    "size": null,
-    "_size_note": "Not recorded. The same cartridge is 262144 bytes headerless and 262160 with either header, so a single size would reject a valid dump. The MD5 above is the stronger check and does not have that problem."
+    "_md5_source": "MEASURED 25 Aug 2026 from two of the project owner's own USA dumps. Both carry IDENTICAL game data -- headerless MD5 88c0493fb1146834836c0ff4f3e06e45 for both -- but DIFFERENT 16-byte headers, so their whole-file hashes differ. The launcher hashes the whole file, so both forms are listed; a single hash would have refused one of two dumps that are the same cartridge. 764d36fa is also the hash Zelda 2 Redux documents for the base ROM. Rom.md5 is a LIST for exactly this case.",
+    "size": 262160,
+    "_size_note": "Both accepted dumps are 262160 bytes: the cartridge plus its header. A headerless 262144-byte dump is deliberately NOT accepted -- every patch offset is counted from the start of a headered file."
   },
   "emulator": {
     "name": "BizHawk",
@@ -74,8 +75,9 @@
     "model": "procedure",
     "_source": "world source: worlds/zelda2/Rom.py -- class Zelda2ProcedurePatch(APProcedurePatch, APTokenMixin), procedure [(\"apply_tokens\", [\"token_data.bin\"])], patch_file_ending .apz2, result_file_ending .nes.",
     "base_md5": [
-      "764d36fa8a2450834da5e8194281035a"
+      "764d36fa8a2450834da5e8194281035a",
+      "e6dd4104fa46eb4bef2cb52dc341dd38"
     ],
-    "_base_md5_note": "The headered form of the same dump, which is what the patch manifest records. Identity is still checked headerless; patching additionally requires the header, because every offset is counted from the start of a headered file."
+    "_base_md5_note": "The same two headered forms the ROM gate accepts, so a dump that passes the gate can also be patched. Identity inside the world is still checked headerless."
   }
 }
