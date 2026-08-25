@@ -34,7 +34,7 @@
     "name": "Archipelago's BizHawk Client",
     "protocol": "bizhawk",
     "lua": "data/lua/connector_bizhawk_generic.lua",
-    "_source": "SCHEMA rule 1, read from the world itself: lagdotcom/Archipelago worlds/shining_itd/client.py, 2026-08-23 -- `class SITDClient(BizHawkClient)` with `system = \"GEN\"`. The guide calls it \"The built-in Archipelago client\". ⚠ Rule 2 is NOT satisfied: no RAM map Plugins/Scripts/games/shining_itd.lua exists yet, so the build refuses this manifest until one is written."
+    "_source": "SCHEMA rule 1, read from the world itself: lagdotcom/Archipelago release tag 0.0.4, shining_itd.apworld Client.py, re-read 2026-08-25 -- `class SITDClient(BizHawkClient)` with `system = 'GEN'`, `rom = 'MD CART'`, `ram = '68K RAM'`, items_handling 0b101. Rule 2 satisfied 2026-08-25: Plugins/Scripts/games/shining_itd.lua written from that same package (133 locations + 3 goal tables GENERATED from Locations.py/Goals.py, not hand-copied), proven 19/19 against synthetic memory incl. the multi-bit-mask negative (mask 0x30 with one bit set must NOT report) and the false-goal-at-boot gate, and green through lint_lua_domains, lint_goal_guard and BootGarbageCheck. NOT played -- checks_verified stays false. ⚠ ONE-REPO-MANY-WORLDS: the repository's 'latest' release is Phantasy Star II; the tag, not latest, is the address of this world."
   },
   "apworld": {
     "bundled": false,

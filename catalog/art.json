@@ -1,6 +1,6 @@
 {
  "note": "Cover and banner ADDRESSES only. No artwork is stored in this repository; the launcher fetches these onto the player's own machine, and only after they have agreed to cover art at all.",
- "count": 486,
+ "count": 487,
  "covers": {
   "2048": "https://cdn.akamai.steamstatic.com/steam/apps/942050/library_600x900_2x.jpg",
   "7_days_to_die": "https://cdn.akamai.steamstatic.com/steam/apps/251570/library_600x900_2x.jpg",
@@ -361,6 +361,7 @@
   "shapez": "https://cdn.akamai.steamstatic.com/steam/apps/1318690/library_600x900_2x.jpg",
   "shapez_2": "https://cdn.akamai.steamstatic.com/steam/apps/2162800/library_600x900_2x.jpg",
   "shellipelago": "https://img.itch.zone/aW1nLzI4MDk3NTM0LnBuZw==/315x250%23c/H3e9oS.png",
+  "shining_itd": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Shining%20in%20the%20Darkness%20%28USA%29.png",
   "shivers": "https://images.gog-statics.com/2cd695c026f4f8c8a8d0847dc02ca028eb01c4c21ff764d10511c1f2202a8930.jpg",
   "shovel_knight_pocket_dungeon": "https://cdn.akamai.steamstatic.com/steam/apps/1184760/library_600x900_2x.jpg",
   "sid_meier_s_civilization_v": "https://cdn.akamai.steamstatic.com/steam/apps/8930/library_600x900_2x.jpg",
@@ -841,6 +842,7 @@
   "shadow_man_remastered": "https://cdn.akamai.steamstatic.com/steam/apps/1413870/library_hero.jpg",
   "shapez": "https://cdn.akamai.steamstatic.com/steam/apps/1318690/library_hero.jpg",
   "shapez_2": "https://cdn.akamai.steamstatic.com/steam/apps/2162800/library_hero.jpg",
+  "shining_itd": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Titles/Shining%20in%20the%20Darkness%20%28USA%2C%20Europe%29.png",
   "shivers": "https://images.gog-statics.com/6f8d7da96e6e8f19c0c6e66d576cff3b19593f6e58c04f5b8331adb5dab1b0b8.png",
   "shovel_knight_pocket_dungeon": "https://cdn.akamai.steamstatic.com/steam/apps/1184760/library_hero.jpg",
   "sid_meier_s_civilization_v": "https://cdn.akamai.steamstatic.com/steam/apps/8930/library_hero.jpg",
@@ -1340,6 +1342,7 @@
   "shapez": "Steam appid 1318690",
   "shapez_2": "Steam appid 2162800",
   "shellipelago": "itch.io: \"Shellipelago\"",
+  "shining_itd": "hand-picked (libretro Sega - Mega Drive - Genesis Named_Titles, 'Shining in the Darkness (USA, Europe)' -- read from the server's own directory index 25 Aug 2026.) + libretro thumbnails: Sega - Mega Drive - Genesis/Shining in the Darkness (USA).png",
   "shivers": "GOG catalogue: \"Shivers\"",
   "shovel_knight_pocket_dungeon": "Steam appid 1184760",
   "sid_meier_s_civilization_v": "Steam appid 8930",

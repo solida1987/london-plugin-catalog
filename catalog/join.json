@@ -1,6 +1,6 @@
 {
   "note": "Which London plugin covers which Archipelago game. Addresses and metadata only.",
-  "count": 591,
+  "count": 592,
   "games": {
     "Armored Core 3": {
       "id": "ac3",
@@ -396,6 +396,12 @@
       "id": "roadtrip",
       "platform": "PS2",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ps2/roadtrip.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Shining in the Darkness": {
+      "id": "shining_itd",
+      "platform": "GEN",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/sega/shining_itd.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Skyward Sword": {

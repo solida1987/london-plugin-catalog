@@ -1,6 +1,6 @@
 {
   "note": "The launcher's store window. Addresses and metadata only — no artwork and no code is stored here. Installing still runs the launcher's own consent flow.",
-  "count": 591,
+  "count": 592,
   "platforms": [
     "Atari 2600",
     "Browser",
@@ -1856,6 +1856,33 @@
       "page": "https://github.com/solida1987/london-plugin-catalog/releases",
       "mod_kind": null,
       "_apworld_url": "https://github.com/Phenra/RoadTripAdventure-AP/releases",
+      "install_kind": "rom",
+      "tested": false,
+      "section": "unstable",
+      "stability": "Unstable"
+    },
+    {
+      "id": "shining_itd",
+      "name": "Shining in the Darkness",
+      "ap_world_name": "Shining in the Darkness",
+      "subtitle": "BizHawk",
+      "description": "The Labyrinth beneath Thornwood as a multiworld.",
+      "platform": "GEN",
+      "platform_label": "Mega Drive / Genesis",
+      "family": "Sega",
+      "genres": [
+        "Adventure"
+      ],
+      "version": "1.0.0",
+      "world_by": "lagdotcom/Archipelago",
+      "world_licence": "",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Shining%20in%20the%20Darkness%20%28USA%29.png",
+      "banner": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Titles/Shining%20in%20the%20Darkness%20%28USA%2C%20Europe%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/sega/shining_itd.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases",
+      "mod_kind": null,
+      "_apworld_url": "https://github.com/lagdotcom/Archipelago/releases?q=Shining+in+the+Darkness&expanded=true",
       "install_kind": "rom",
       "tested": false,
       "section": "unstable",
