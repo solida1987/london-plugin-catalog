@@ -124,6 +124,15 @@ public class GenericEmulatorPlugin : EmulatorPlugin
     /// would silently load nothing for ten of the sixteen GBA games.
     protected override string LuaModuleName => Manifest.LuaModule ?? Manifest.Id;
 
+    /// The world's OWN connector filename, when it ships one. London looks for
+    /// it under Archipelago's data/lua/ -- which is where the world's client
+    /// puts it -- and hands it to the emulator.
+    protected override string? WorldConnectorLuaName => Manifest.WorldConnectorLua;
+
+    protected override string? WorldRomPathSetting => Manifest.WorldRomPathSetting;
+
+    protected override string? WorldRelayName => Manifest.WorldRelay;
+
     /// Only becomes true once the RAM map for THIS game has been measured
     /// in-game. Until then the launcher warns at launch, so nobody sits in a
     /// multiworld for an hour with no checks arriving.
@@ -230,6 +239,101 @@ public class GenericEmulatorPlugin : EmulatorPlugin
 
     /// A per-(slot, seed) copy of the library ROM, or null when the seed is
     /// not known -- best effort, because the game must still start.
+
+    /// Build this seed's ROM by applying the world's own fixed patch.
+    ///
+    /// The patch and the md5 to check against both come out of the apworld
+    /// the player installed, so London produces the same bytes the world's
+    /// own client would -- and proves it did before handing the file over.
+    private string? ApplyStaticPatchForSession(StaticPatchManifest sp, ApSession session)
+    {
+        string? seed = GetSeedName?.Invoke();
+        if (RomPath is null || !File.Exists(RomPath) || string.IsNullOrWhiteSpace(seed))
+            return null;
+
+        string outPath;
+        try
+        {
+            outPath = Path.Combine(RomLibraryDirectory, "sessions",
+                SessionRomName(session.SlotName, seed!, Path.GetExtension(RomPath)));
+            Directory.CreateDirectory(Path.GetDirectoryName(outPath)!);
+        }
+        catch { return null; }
+
+        // ⚠ An existing session file is NOT proof it is the right one: the
+        // build that wrote it may be the one that copied the retail ROM.
+        // Hash it, and rebuild when it is wrong.
+        if (File.Exists(outPath) && ComputeMd5(outPath) == sp.ResultMd5)
+        {
+            SessionRomNote = $"[{DisplayName}] Playing this seed's patched ROM.";
+            return outPath;
+        }
+
+        byte[] rom;
+        try { rom = File.ReadAllBytes(RomPath); } catch { return null; }
+
+        // The player may have brought a ROM the world already patched.
+        if (Md5Hex(rom) == sp.ResultMd5)
+        {
+            File.WriteAllBytes(outPath, rom);
+            SessionRomNote = $"[{DisplayName}] Your ROM is already patched for "
+                           + "this game; playing a copy named for this seed.";
+            return outPath;
+        }
+
+        // N64 dumps come in both byte orders and the patch expects one of them.
+        if (Manifest.Rom!.ByteswapMd5.Contains(Md5Hex(rom)))
+        {
+            var sw = new byte[rom.Length];
+            for (int i = 0; i + 1 < rom.Length; i += 2) { sw[i] = rom[i + 1]; sw[i + 1] = rom[i]; }
+            if ((rom.Length & 1) == 1) sw[rom.Length - 1] = rom[rom.Length - 1];
+            rom = sw;
+        }
+
+        byte[]? patch = ReadFromApworld(sp.Entry);
+        if (patch is null)
+        {
+            // Say the true thing rather than launching something that cannot work.
+            throw new SessionRomRefusedException(
+                $"{DisplayName}'s Archipelago world is not installed.\n\n"
+              + "The launcher builds this seed's ROM from a patch that ships "
+              + "inside the world, and it is not on this machine yet. Install "
+              + $"the {Manifest.ApWorldName} apworld in Archipelago, then press "
+              + "Play again.");
+        }
+
+        byte[] patched;
+        try { patched = LauncherV2.Core.Patching.ApPatch.ApplyRawBsdiff(rom, patch); }
+        catch (Exception ex)
+        {
+            throw new SessionRomRefusedException(
+                $"That {DisplayName} ROM could not be patched.\n\n{ex.Message}\n\n"
+              + "Check that your copy is one of the dumps this game accepts.");
+        }
+
+        string got = Md5Hex(patched);
+        if (got != sp.ResultMd5)
+        {
+            // ⚠ Never hand over a ROM that failed the world's own check. A
+            // wrong-but-bootable ROM is the worst outcome there is: the game
+            // runs, nothing is ever sent, and the bridge takes the blame.
+            throw new SessionRomRefusedException(
+                $"The patched {DisplayName} ROM is not what its world expects.\n\n"
+              + $"Result {got}, expected {sp.ResultMd5}.\n\n"
+              + "That means the ROM you chose is not the dump this patch was "
+              + "built against. Choose a different copy in Settings → "
+              + $"{DisplayName}.");
+        }
+
+        File.WriteAllBytes(outPath, patched);
+        SessionRomNote = $"[{DisplayName}] Patched your ROM for this seed and "
+                       + "checked it against the world's own hash.";
+        return outPath;
+    }
+
+    private static string Md5Hex(byte[] data)
+        => Convert.ToHexString(System.Security.Cryptography.MD5.HashData(data)).ToLowerInvariant();
+
     private string? CopyForSaveIsolation(ApSession session)
     {
         string? seed = GetSeedName?.Invoke();
@@ -269,6 +373,22 @@ public class GenericEmulatorPlugin : EmulatorPlugin
         ApSession session, CancellationToken ct)
     {
         await Task.CompletedTask;
+
+        // ⚠⚠ FIRST: a world that patches with ONE fixed bsdiff.
+        //
+        // These games have no per-seed container, so the old path fell
+        // straight through to CopyForSaveIsolation and handed the emulator a
+        // byte-for-byte copy of the RETAIL ROM. Everything downstream then
+        // looked healthy -- the game booted, the client ran, the connector
+        // loaded -- and not one check could ever be sent, because the AP hooks
+        // the connector reads at 0x80400000 only exist in the patched file.
+        // Found 26 Aug 2026 by md5-ing the session ROM London had actually
+        // launched: 741a94ee... , the untouched cartridge dump.
+        if (Manifest.Rom?.StaticPatch is { } staticPatch)
+        {
+            string? built = ApplyStaticPatchForSession(staticPatch, session);
+            if (built != null) return built;
+        }
 
         string? patch = ResolvePatch(session.SlotName, out string note);
 
@@ -513,7 +633,22 @@ public class GenericEmulatorPlugin : EmulatorPlugin
 /// Md5 is a LIST: some games accept more than one legitimate dump. Empty means
 /// no hash is known, which is a real state -- not an error to paper over.
 public sealed record RomSpecManifest(
-    string Description, long Size, IReadOnlyList<string> Md5);
+    string Description, long Size, IReadOnlyList<string> Md5,
+    /// A world that ships ONE fixed bsdiff against the retail dump rather
+    /// than building a patch per seed. Its client applies this on the
+    /// player's machine; nothing about it needs the world's Python, so
+    /// London applies it too and hands the emulator a ROM that actually
+    /// carries the AP hooks. Null when the world has no such patch.
+    StaticPatchManifest? StaticPatch,
+    /// Dumps that are byte-swapped relative to the patch's expected input.
+    /// N64 dumps come in both orders and the world swaps before patching;
+    /// skip that and bsdiff produces garbage that boots to a black screen.
+    IReadOnlyList<string> ByteswapMd5);
+
+/// `entry` is the file inside the apworld; `result_md5` is the world's own
+/// answer for what the patched ROM must hash to, so London can prove it
+/// produced the same file the world's client would have.
+public sealed record StaticPatchManifest(string Entry, string ResultMd5);
 
 /// Who made what. The game and the Archipelago world are other people's work;
 /// only the plugin is ours, and the launcher says so on the game's page.
@@ -534,6 +669,22 @@ public sealed record GameManifest(
     // launches). ClientName is what the world's client is called in the
     // Archipelago Launcher, shown to the player at launch.
     string ClientKind, string? ClientName,
+    // The connector the WORLD ships for itself, by filename. A kind=world game
+    // on BizHawk has no RAM map of ours, but many of them still need a Lua
+    // script loaded in the emulator -- their own client writes it into
+    // Archipelago's data/lua/ and expects to find the emulator already running
+    // it. Star Fox 64 is the first: without this London started BizHawk with
+    // no script at all, so there was nothing for the client to talk to and no
+    // check ever moved. Null for worlds that need no script.
+    string? WorldConnectorLua,
+    // The world's own setting that names the player's ROM, "block.key" in
+    // Archipelago's host.yaml. Without it the world's client opens a file
+    // dialog on every launch for a ROM London already knows the path to.
+    string? WorldRomPathSetting,
+    // ⭐ The built-in relay that REPLACES this world's Archipelago client.
+    // When it is set London opens the socket the emulator's connector dials
+    // and starts no second program at all.
+    string? WorldRelay,
     // How this game's world builds its ROM, audited from the world itself:
     // "procedure" (container steps our patcher runs), "delta" (legacy
     // APDeltaPatch -- PatchBaseMd5 holds the world's own base-ROM hash,
@@ -570,7 +721,8 @@ public sealed record GameManifest(
             }
 
             rom = new RomSpecManifest(
-                Str(ro, "description") ?? "your own copy of the game", size, md5);
+                Str(ro, "description") ?? "your own copy of the game", size, md5,
+                StaticPatch(ro), ByteswapMd5(ro));
         }
 
         return new GameManifest(
@@ -596,6 +748,10 @@ public sealed record GameManifest(
             (cl.ValueKind == JsonValueKind.Object ? Str(cl, "kind") : null)
                 ?? "london",
             cl.ValueKind == JsonValueKind.Object ? Str(cl, "name") : null,
+            // The world's own connector filename, when it ships one.
+            cl.ValueKind == JsonValueKind.Object ? Str(cl, "world_lua") : null,
+            cl.ValueKind == JsonValueKind.Object ? Str(cl, "rom_path_setting") : null,
+            cl.ValueKind == JsonValueKind.Object ? Str(cl, "relay") : null,
             PatchModel(r), PatchMd5(r), Credits(r));
 
         static CreditsManifest? Credits(JsonElement r)
@@ -636,6 +792,23 @@ public sealed record GameManifest(
             => r.TryGetProperty("patch", out var p)
                && p.ValueKind == JsonValueKind.Object
                ? Str(p, "model") ?? "unknown" : "unknown";
+
+        static StaticPatchManifest? StaticPatch(JsonElement rom)
+        {
+            if (!rom.TryGetProperty("static_patch", out var sp)
+                || sp.ValueKind != JsonValueKind.Object) return null;
+            string? entry = Str(sp, "entry"), md5 = Str(sp, "result_md5");
+            if (string.IsNullOrWhiteSpace(entry) || string.IsNullOrWhiteSpace(md5))
+                return null;
+            return new StaticPatchManifest(entry!, md5!.ToLowerInvariant());
+        }
+
+        static IReadOnlyList<string> ByteswapMd5(JsonElement rom)
+            => rom.TryGetProperty("byteswap_md5", out var b)
+               && b.ValueKind == JsonValueKind.Array
+               ? b.EnumerateArray().Where(e => e.ValueKind == JsonValueKind.String)
+                  .Select(e => e.GetString()!.ToLowerInvariant()).ToArray()
+               : Array.Empty<string>();
 
         static IReadOnlyList<string> PatchMd5(JsonElement r)
         {

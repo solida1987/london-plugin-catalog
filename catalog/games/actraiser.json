@@ -1,0 +1,56 @@
+{
+  "id": "actraiser",
+  "display_name": "Actraiser",
+  "subtitle": "BizHawk",
+  "_subtitle_source": "subtitle names the backend the player will run.",
+  "platform": "SNES",
+  "_platform_source": "Archipelago wiki platform category (https://archipelago.miraheze.org/wiki/Actraiser)",
+  "version": "1.0.0",
+  "_verified": "2026-08-26",
+  "ap_world_name": "Actraiser",
+  "_ap_world_name_source": "the world's own `game` value, read out of the world's own package, Happyhappyism/Archipelago, on 2026-08-26",
+  "description": "",
+  "_description_note": "Left empty rather than invented. Write it from the world's own docs before release.",
+  "checks_verified": false,
+  "_checks_verified_note": "FALSE. Nobody has played this through London.",
+  "requires": "own_copy",
+  "rom": {
+    "description": "Your own Actraiser copy",
+    "md5": [],
+    "size": null,
+    "_md5_source": "Not measured and not invented: the world's code carries no hash."
+  },
+  "emulator": {
+    "name": "BizHawk",
+    "min_version": null,
+    "_source": "SNES title; BizHawk is the backend London offers for it."
+  },
+  "client": {
+    "name": "Actraiser Client",
+    "kind": "world",
+    "protocol": "bizhawk",
+    "lua": null,
+    "_kind_source": "the world registers its own Component and carries its own client (read out of the world's own package, Happyhappyism/Archipelago, on 2026-08-26). London installs the apworld and starts the emulator; it must NOT read memory for this game."
+  },
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/Happyhappyism/Archipelago/releases",
+    "world_version": "1.3.4",
+    "min_ap": "0.6.3",
+    "_source": "the author's own releases page, read 26 Aug 2026 (Happyhappyism/Archipelago)"
+  },
+  "patch_extension": "unaudited",
+  "_patch_extension_source": "searched every .py in the package, read out of the world's own package, Happyhappyism/Archipelago, on 2026-08-26",
+  "credits": {
+    "plugin_by": "solida1987",
+    "world_by": {
+      "name": "Happyhappyism",
+      "url": "https://github.com/Happyhappyism/Archipelago",
+      "licence": "NOASSERTION",
+      "_name_source": "the world names them itself in archipelago.json",
+      "_licence_source": "GitHub's own classification of the repository's LICENSE, read 26 Aug 2026"
+    },
+    "game_by": null,
+    "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its authors' work. Only the plugin itself is by solida1987."
+  }
+}

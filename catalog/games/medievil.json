@@ -1,0 +1,57 @@
+{
+  "id": "medievil",
+  "display_name": "Medievil",
+  "subtitle": "BizHawk",
+  "_subtitle_source": "subtitle names the backend the player will run.",
+  "platform": "PSX",
+  "_platform_source": "Archipelago wiki platform category (https://archipelago.miraheze.org/wiki/Medievil)",
+  "version": "1.0.0",
+  "_verified": "2026-08-26",
+  "ap_world_name": "Medievil",
+  "_ap_world_name_source": "the world's own `game` value, read out of the world's own package, riezahughes/MedievilAPWorld, on 2026-08-26",
+  "description": "",
+  "_description_note": "Left empty rather than invented. Write it from the world's own docs before release.",
+  "checks_verified": false,
+  "_checks_verified_note": "FALSE. Nobody has played this through London.",
+  "requires": "own_copy",
+  "rom": {
+    "description": "Your own Medievil copy",
+    "md5": [],
+    "size": null,
+    "_md5_source": "Not measured and not invented: the world's code carries no hash."
+  },
+  "emulator": {
+    "name": "DuckStation",
+    "min_version": null,
+    "_source": "the world's OWN setup guide names DuckStation, not BizHawk. ⚠ The first draft set BizHawk from the platform alone (PSX -> BizHawk) without reading the guide -- that is how three PS1 games were pointed at the wrong emulator."
+  },
+  "client": {
+    "name": "Medievil Client",
+    "kind": "world",
+    "protocol": "duckstation",
+    "lua": null,
+    "_kind_source": "the world registers its own Component and carries its own client (read out of the world's own package, riezahughes/MedievilAPWorld, on 2026-08-26). London installs the apworld and starts the emulator; it must NOT read memory for this game.",
+    "_protocol_source": "the world's setup guide runs the game in DuckStation; extensions/duckstation declares protocol \"duckstation\" and Systems [PSX, PS1]."
+  },
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/riezahughes/MedievilAPWorld/releases",
+    "world_version": "0.3.0",
+    "min_ap": "0.6.7",
+    "_source": "the author's own releases page, read 26 Aug 2026 (riezahughes/MedievilAPWorld)"
+  },
+  "patch_extension": "none",
+  "_patch_extension_source": "searched every .py in the package, read out of the world's own package, riezahughes/MedievilAPWorld, on 2026-08-26",
+  "credits": {
+    "plugin_by": "solida1987",
+    "world_by": {
+      "name": "RiezaHughes",
+      "url": "https://github.com/riezahughes/MedievilAPWorld",
+      "licence": "NOASSERTION",
+      "_name_source": "the world names them itself in archipelago.json",
+      "_licence_source": "GitHub's own classification of the repository's LICENSE, read 26 Aug 2026"
+    },
+    "game_by": null,
+    "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its authors' work. Only the plugin itself is by solida1987."
+  }
+}

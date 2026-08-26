@@ -1,5 +1,5 @@
 {
- "count": 504,
+ "count": 574,
  "games": [
   {
    "_v": 2,
@@ -9944,6 +9944,1406 @@
    "licence": "MIT",
    "author": "Spineraks",
    "_source": "the world's own archipelago.json (bundled with Archipelago 0.6.7): game 'Yacht Dice', authors ['Spineraks'], world_version 2.1.4. It ships no client file -- there is no game to launch and nothing to bridge."
+  },
+  {
+   "_v": 2,
+   "name": "ArchipelaCode",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "ShackledMars261/Archipelago",
+   "install": "apworld_only",
+   "assets": [
+    "archipelacode.apworld"
+   ],
+   "tag": "0.0.1",
+   "release_page": "https://github.com/ShackledMars261/Archipelago/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "ShackledMars261",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/ArchipelaCode) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of ShackledMars261/Archipelago's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "BK Simulator",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "BK-Simulator/BK-Simulator",
+   "install": "apworld_only",
+   "assets": [
+    "bksim.apworld"
+   ],
+   "tag": "1.0.2",
+   "release_page": "https://github.com/BK-Simulator/BK-Simulator/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "EmilyV99",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/BK_Simulator) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of BK-Simulator/BK-Simulator's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Backlog Expedition",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "Nikkilites/Archipelago-BacklogExpedition-APWorld",
+   "install": "apworld_only",
+   "assets": [
+    "backlog_expedition.apworld"
+   ],
+   "tag": "1.3.0",
+   "release_page": "https://github.com/Nikkilites/Archipelago-BacklogExpedition-APWorld/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "Nikkilite",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Backlog_Expedition) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of Nikkilites/Archipelago-BacklogExpedition-APWorld's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Before We Leave",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "haydencase0/BWLArchipelago",
+   "install": "apworld_only",
+   "assets": [
+    "before_we_leave.apworld"
+   ],
+   "tag": "",
+   "release_page": "https://github.com/haydencase0/BWLArchipelago/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "Chilly",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Before_We_Leave) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of haydencase0/BWLArchipelago's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Bendy and the Ink Machine",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "Lorecrafter703/Archipelago",
+   "install": "apworld_only",
+   "assets": [
+    "batim.apworld"
+   ],
+   "tag": "1.3.0",
+   "release_page": "https://github.com/Lorecrafter703/Archipelago/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "Lorecrafter703",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Bendy_and_the_Ink_Machine) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of Lorecrafter703/Archipelago's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Bitburner",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "Shhwip/Archipelago",
+   "install": "apworld_only",
+   "assets": [
+    "bitburner.apworld"
+   ],
+   "tag": "0.6.0",
+   "release_page": "https://github.com/Shhwip/Archipelago/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "shhwip",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Bitburner) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of Shhwip/Archipelago's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Blender",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "GBFound/BlenderArchipelago",
+   "install": "apworld_only",
+   "assets": [
+    "blender.apworld"
+   ],
+   "tag": "",
+   "release_page": "https://github.com/GBFound/BlenderArchipelago/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "MIT",
+   "author": "GBFound",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Blender) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of GBFound/BlenderArchipelago's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Bloodstained: Ritual of the Night",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "vgfreak95/BloodstainedAP",
+   "install": "apworld_only",
+   "assets": [
+    "bloodstained_rotn.apworld"
+   ],
+   "tag": "1.0.2",
+   "release_page": "https://github.com/vgfreak95/BloodstainedAP/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "VGFreak95",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Bloodstained%3A_Ritual_of_the_Night) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of vgfreak95/BloodstainedAP's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "ChristmasDelivery",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "ObsidianMakerDevelopment/christmasdeliveryapworld",
+   "install": "apworld_only",
+   "assets": [
+    "christmasdeliveryapworld-main.apworld"
+   ],
+   "tag": "",
+   "release_page": "https://github.com/ObsidianMakerDevelopment/christmasdeliveryapworld/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "MIT",
+   "author": "ObsidianMakerDevelopment",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/ChristmasDelivery) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of ObsidianMakerDevelopment/christmasdeliveryapworld's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Chrono Gear",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "Kalithar/ArchipelagoChronoGear",
+   "install": "apworld_only",
+   "assets": [
+    "chrono_gear.apworld"
+   ],
+   "tag": "1.0.1",
+   "release_page": "https://github.com/Kalithar/ArchipelagoChronoGear/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "Kalithar",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Chrono_Gear) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of Kalithar/ArchipelagoChronoGear's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Codeforces",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "glipR/Archipelago",
+   "install": "apworld_only",
+   "assets": [
+    "codeforces.apworld"
+   ],
+   "tag": "0.0.3",
+   "release_page": "https://github.com/glipR/Archipelago/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "glipR",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Codeforces) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of glipR/Archipelago's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Cowtastic Cafe",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "zane31415/APCowtasticCafe",
+   "install": "apworld_only",
+   "assets": [
+    "cowtastic_cafe.apworld"
+   ],
+   "tag": "1.0.2",
+   "release_page": "https://github.com/zane31415/APCowtasticCafe/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "MIT",
+   "author": "Broney",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Cowtastic_Cafe) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of zane31415/APCowtasticCafe's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Creature Kitchen",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "stroodlydoodles/Creature-Kitchen-Randomizer-Mod",
+   "install": "apworld_only",
+   "assets": [
+    "creature_kitchen.apworld"
+   ],
+   "tag": "0.1.0",
+   "release_page": "https://github.com/stroodlydoodles/Creature-Kitchen-Randomizer-Mod/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "stroodlydoodles",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Creature_Kitchen) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of stroodlydoodles/Creature-Kitchen-Randomizer-Mod's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Dawnsbury Days",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "ordinary-magic/DawnsburyDaysArchipelago",
+   "install": "apworld_only",
+   "assets": [
+    "dawnsbury.apworld"
+   ],
+   "tag": "",
+   "release_page": "https://github.com/ordinary-magic/DawnsburyDaysArchipelago/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "GPL-3.0",
+   "author": "ordinary-magic",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Dawnsbury_Days) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of ordinary-magic/DawnsburyDaysArchipelago's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "DeathLinkipelago",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "SWCreeperKing/DeathLinkipelago",
+   "install": "apworld_only",
+   "assets": [
+    "deathlinkipelago.apworld"
+   ],
+   "tag": "",
+   "release_page": "https://github.com/SWCreeperKing/DeathLinkipelago/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "SWCreeperKing",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/DeathLinkipelago) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of SWCreeperKing/DeathLinkipelago's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Dorfromantik",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "Str8UpWHITE64/Dorfromantik-AP",
+   "install": "apworld_only",
+   "assets": [
+    "dorfromantik.apworld"
+   ],
+   "tag": "0.1.0",
+   "release_page": "https://github.com/Str8UpWHITE64/Dorfromantik-AP/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "MIT",
+   "author": "Str8UpWHITE64",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Dorfromantik) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of Str8UpWHITE64/Dorfromantik-AP's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Elden Ring",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "4laric/er-archipelago",
+   "install": "apworld_only",
+   "assets": [
+    "eldenring-dev.apworld"
+   ],
+   "tag": "0.5.1",
+   "release_page": "https://github.com/4laric/er-archipelago/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "Alaric",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Elden_Ring) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of 4laric/er-archipelago's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Elementipelago",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "peppidesu/elementipelago",
+   "install": "apworld_only",
+   "assets": [
+    "elementipelago.apworld"
+   ],
+   "tag": "0.1.0",
+   "release_page": "https://github.com/peppidesu/elementipelago/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "AGPL-3.0",
+   "author": "itepastra, peppidesu",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Elementipelago) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of peppidesu/elementipelago's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "FF1 Pixel Remaster",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "wildham0/FF1PRAP",
+   "install": "apworld_only",
+   "assets": [
+    "ff1pr.apworld"
+   ],
+   "tag": "0.6.0",
+   "release_page": "https://github.com/wildham0/FF1PRAP/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "MIT",
+   "author": "wildham",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/FF1_Pixel_Remaster) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of wildham0/FF1PRAP's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "FFPS",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "EviVirus/Archipelago-FFPS",
+   "install": "apworld_only",
+   "assets": [
+    "ffps.apworld"
+   ],
+   "tag": "1.0.0-pre1",
+   "release_page": "https://github.com/EviVirus/Archipelago-FFPS/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "Evi.Virus, Mewlif",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/FFPS) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of EviVirus/Archipelago-FFPS's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "FNaFW",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "EviVirus/Archipelago",
+   "install": "apworld_only",
+   "assets": [
+    "fnafw.apworld"
+   ],
+   "tag": "1.2.1",
+   "release_page": "https://github.com/EviVirus/Archipelago/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "Evi.Virus, Fewffwa, Mewlif (former)",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/FNaFW) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of EviVirus/Archipelago's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Flipwitch Forbidden Sex Hex",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "Witchybun/FlipwitchAPClient",
+   "install": "apworld_only",
+   "assets": [
+    "flipwitch.apworld"
+   ],
+   "tag": "",
+   "release_page": "https://github.com/Witchybun/FlipwitchAPClient/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "BSD-3-Clause",
+   "author": "Witchybun",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Flipwitch_Forbidden_Sex_Hex) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of Witchybun/FlipwitchAPClient's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Forty-Five",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "IveBenGamin/Archipelago---APWorld-For-Forty-Five",
+   "install": "apworld_only",
+   "assets": [
+    "forty-five.apworld"
+   ],
+   "tag": "1.0.0",
+   "release_page": "https://github.com/IveBenGamin/Archipelago---APWorld-For-Forty-Five/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "IveBenGamin",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Forty-Five) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of IveBenGamin/Archipelago---APWorld-For-Forty-Five's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "GMod - apAdventure",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "ChrisCj8/ap_adventure",
+   "install": "apworld_only",
+   "assets": [
+    "gmod_apadv.apworld"
+   ],
+   "tag": "",
+   "release_page": "https://github.com/ChrisCj8/ap_adventure/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "ChrisCj8",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/GMod_-_apAdventure) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of ChrisCj8/ap_adventure's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Half-Life (Sven Co-op)",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "barretg/hl1-sven-ap",
+   "install": "apworld_only",
+   "assets": [
+    "half_life_sven.apworld"
+   ],
+   "tag": "0.1.0",
+   "release_page": "https://github.com/barretg/hl1-sven-ap/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "hl1-sven-ap",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Half-Life_%28Sven_Co-op%29) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of barretg/hl1-sven-ap's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Hangman",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "pointfivetee/Archipelago-Hangman",
+   "install": "apworld_only",
+   "assets": [
+    "hangman.apworld"
+   ],
+   "tag": "",
+   "release_page": "https://github.com/pointfivetee/Archipelago-Hangman/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "pointfivetee",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Hangman) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of pointfivetee/Archipelago-Hangman's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Hunie Pop",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "DotsofdarknessArchipelago/HuniePopArchipelago",
+   "install": "apworld_only",
+   "assets": [
+    "huniepop.apworld"
+   ],
+   "tag": "2.3.1",
+   "release_page": "https://github.com/DotsofdarknessArchipelago/HuniePopArchipelago/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "MIT",
+   "author": "Dotsofdarkness",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Hunie_Pop) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of DotsofdarknessArchipelago/HuniePopArchipelago's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Hunie Pop 2",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "DotsofdarknessArchipelago/HuniePop2Archipelago",
+   "install": "apworld_only",
+   "assets": [
+    "huniepop2.apworld"
+   ],
+   "tag": "3.1.0",
+   "release_page": "https://github.com/DotsofdarknessArchipelago/HuniePop2Archipelago/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "MIT",
+   "author": "Dotsofdarkness",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Hunie_Pop_2) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of DotsofdarknessArchipelago/HuniePop2Archipelago's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Jet Island",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "Nullctipus/JetIslandArchipelago",
+   "install": "apworld_only",
+   "assets": [
+    "jet_island.apworld"
+   ],
+   "tag": "",
+   "release_page": "https://github.com/Nullctipus/JetIslandArchipelago/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "MIT",
+   "author": "Nullctipus",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Jet_Island) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of Nullctipus/JetIslandArchipelago's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Johnny Upgrade",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "barretg/johnny-upgrade-ap",
+   "install": "apworld_only",
+   "assets": [
+    "johnny_upgrade.apworld"
+   ],
+   "tag": "",
+   "release_page": "https://github.com/barretg/johnny-upgrade-ap/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "barretg",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Johnny_Upgrade) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of barretg/johnny-upgrade-ap's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Loonyland",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "AutomaticFrenzy/Archipelago",
+   "install": "apworld_only",
+   "assets": [
+    "loonyland.apworld"
+   ],
+   "tag": "0.2.5",
+   "release_page": "https://github.com/AutomaticFrenzy/Archipelago/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "AutomaticFrenzy, Spacemaniac",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Loonyland) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of AutomaticFrenzy/Archipelago's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Luck be a Landlord",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "Littlemuzz5/Luck-Be-a-Landlord-AP",
+   "install": "apworld_only",
+   "assets": [
+    "luck_be_a_landlord.apworld"
+   ],
+   "tag": "0.1.6",
+   "release_page": "https://github.com/Littlemuzz5/Luck-Be-a-Landlord-AP/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "Littlemuz",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Luck_be_a_Landlord) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of Littlemuzz5/Luck-Be-a-Landlord-AP's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Metal: Hellsinger",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "DanielSchaack/ArchipelagoMetalHellsinger",
+   "install": "apworld_only",
+   "assets": [
+    "metal_hellsinger.apworld"
+   ],
+   "tag": "1.0.0",
+   "release_page": "https://github.com/DanielSchaack/ArchipelagoMetalHellsinger/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "Schaackii",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Metal%3A_Hellsinger) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of DanielSchaack/ArchipelagoMetalHellsinger's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Nothing archipelago",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "Phllyphl/Nothing_Archipelago",
+   "install": "apworld_only",
+   "assets": [
+    "nothing_archipelago.apworld"
+   ],
+   "tag": "0.2.3",
+   "release_page": "https://github.com/Phllyphl/Nothing_Archipelago/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "Phllyphl",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Nothing_archipelago) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of Phllyphl/Nothing_Archipelago's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Oh So Hero!",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "L-technology-mods/Archipelago-Oh-So-Heroe",
+   "install": "apworld_only",
+   "assets": [
+    "oh_so_hero.apworld"
+   ],
+   "tag": "0.3.0",
+   "release_page": "https://github.com/L-technology-mods/Archipelago-Oh-So-Heroe/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "LightSoul",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Oh_So_Hero%21) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of L-technology-mods/Archipelago-Oh-So-Heroe's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "One Finger Death Punch 2",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "Reiji-Kogarashi/OFDP2-Archipelago",
+   "install": "apworld_only",
+   "assets": [
+    "ofdp2.apworld"
+   ],
+   "tag": "0.1.2",
+   "release_page": "https://github.com/Reiji-Kogarashi/OFDP2-Archipelago/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "Reiji Kogarashi",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/One_Finger_Death_Punch_2) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of Reiji-Kogarashi/OFDP2-Archipelago's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "P2CE",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "marclemieux64/P2CE-Archipelago",
+   "install": "apworld_only",
+   "assets": [
+    "p2ce.apworld"
+   ],
+   "tag": "1.0.0",
+   "release_page": "https://github.com/marclemieux64/P2CE-Archipelago/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "GlassToadstool, marclemieux64",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/P2CE) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of marclemieux64/P2CE-Archipelago's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Pharcryption",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "JKLeckr/Pharcryption-APWorld",
+   "install": "apworld_only",
+   "assets": [
+    "pharcryption.apworld"
+   ],
+   "tag": "1.1.0",
+   "release_page": "https://github.com/JKLeckr/Pharcryption-APWorld/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "MIT",
+   "author": "Zach Parks",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Pharcryption) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of JKLeckr/Pharcryption-APWorld's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Pipistrello and the Cursed Yoyo",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "CertifiedPyro/PipistrelloArchipelago",
+   "install": "apworld_only",
+   "assets": [
+    "pipistrello.apworld"
+   ],
+   "tag": "0.2.0",
+   "release_page": "https://github.com/CertifiedPyro/PipistrelloArchipelago/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "CertifiedPyro",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Pipistrello_and_the_Cursed_Yoyo) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of CertifiedPyro/PipistrelloArchipelago's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Prisma Road",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "MoraAntonio/Prisma-Road-APWorld",
+   "install": "apworld_only",
+   "assets": [
+    "prisma_road.apworld"
+   ],
+   "tag": "0.1.0",
+   "release_page": "https://github.com/MoraAntonio/Prisma-Road-APWorld/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "Anriot",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Prisma_Road) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of MoraAntonio/Prisma-Road-APWorld's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "RE:RUN",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "MuratDev41/rerun-ap",
+   "install": "apworld_only",
+   "assets": [
+    "rerun.apworld"
+   ],
+   "tag": "",
+   "release_page": "https://github.com/MuratDev41/rerun-ap/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "MuratDev41",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/RE%3ARUN) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of MuratDev41/rerun-ap's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "SBURBelago",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "SephDB/SBURBelago",
+   "install": "apworld_only",
+   "assets": [
+    "sburbelago.apworld"
+   ],
+   "tag": "2.1.0",
+   "release_page": "https://github.com/SephDB/SBURBelago/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "MIT",
+   "author": "SephDB",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/SBURBelago) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of SephDB/SBURBelago's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "SULFUR",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "FrederikRasmussen/APWorldSULFUR",
+   "install": "apworld_only",
+   "assets": [
+    "sulfur.apworld"
+   ],
+   "tag": "0.0.0",
+   "release_page": "https://github.com/FrederikRasmussen/APWorldSULFUR/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "nuzzles",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/SULFUR) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of FrederikRasmussen/APWorldSULFUR's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Salt and Sanctuary",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "PixelShake92/Salt-and-Sanctuary-AP",
+   "install": "apworld_only",
+   "assets": [
+    "salt_and_sanctuary.apworld"
+   ],
+   "tag": "",
+   "release_page": "https://github.com/PixelShake92/Salt-and-Sanctuary-AP/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "PixelShake92",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Salt_and_Sanctuary) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of PixelShake92/Salt-and-Sanctuary-AP's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Santa",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "Ishigh1/Santa_AP",
+   "install": "apworld_only",
+   "assets": [
+    "santa.apworld"
+   ],
+   "tag": "",
+   "release_page": "https://github.com/Ishigh1/Santa_AP/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "MIT",
+   "author": "Ishigh1",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Santa) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of Ishigh1/Santa_AP's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Shadow Generations",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "OnakuTV/ShadGensAP",
+   "install": "apworld_only",
+   "assets": [
+    "shadow_generations.apworld"
+   ],
+   "tag": "",
+   "release_page": "https://github.com/OnakuTV/ShadGensAP/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "GPL-3.0",
+   "author": "OnakuTV",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Shadow_Generations) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of OnakuTV/ShadGensAP's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Shahrazad",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "qwint/ap-shahrazad",
+   "install": "apworld_only",
+   "assets": [
+    "shahrazad.apworld"
+   ],
+   "tag": "",
+   "release_page": "https://github.com/qwint/ap-shahrazad/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "MIT",
+   "author": "qwint",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Shahrazad) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of qwint/ap-shahrazad's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Ship of Harkinian",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "HarbourMasters/Archipelago-SoH",
+   "install": "apworld_only",
+   "assets": [
+    "oot_soh.apworld"
+   ],
+   "tag": "1.4.1",
+   "release_page": "https://github.com/HarbourMasters/Archipelago-SoH/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "aMannus, jeromkiller, ScipioWright, Fanta-Tanked, Sam, DaComputerNerd717, A-Green-Spoon, StuBob, Tzuf23, mattman107, Varuuna, Lorithan, BootsinSoots, briaguya, Sirius902, ThatHypedPerson",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Ship_of_Harkinian) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of HarbourMasters/Archipelago-SoH's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "SlotLock",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "gjgfuj/SlotLock",
+   "install": "apworld_only",
+   "assets": [
+    "slotlock.apworld"
+   ],
+   "tag": "0.10.4",
+   "release_page": "https://github.com/gjgfuj/SlotLock/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "Sandra (TheSandromatic)",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/SlotLock) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of gjgfuj/SlotLock's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Sonic Generations",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "absoluteSpacehead/Archipelago",
+   "install": "apworld_only",
+   "assets": [
+    "SonicGenerations.apworld"
+   ],
+   "tag": "0.0.0",
+   "release_page": "https://github.com/absoluteSpacehead/Archipelago/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "absoluteSpacehead",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Sonic_Generations) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of absoluteSpacehead/Archipelago's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Status Lock",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "guigui0246/StatusLock",
+   "install": "apworld_only",
+   "assets": [
+    "status_lock.apworld"
+   ],
+   "tag": "0.4.1",
+   "release_page": "https://github.com/guigui0246/StatusLock/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "Guigui0246, Elire, Astra, Vei (idea)",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Status_Lock) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of guigui0246/StatusLock's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Tales of Maj'Eyal",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "rosen200/Archipelago",
+   "install": "apworld_only",
+   "assets": [
+    "tome.apworld"
+   ],
+   "tag": "0.0.5",
+   "release_page": "https://github.com/rosen200/Archipelago/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "rosen200",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Tales_of_Maj%27Eyal) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of rosen200/Archipelago's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "The Chrono-Rancher",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "BardicRogue/ArchipelagoChronorancher",
+   "install": "apworld_only",
+   "assets": [
+    "chronorancher.apworld"
+   ],
+   "tag": "1.1.0",
+   "release_page": "https://github.com/BardicRogue/ArchipelagoChronorancher/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "BardicRogue",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/The_Chrono-Rancher) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of BardicRogue/ArchipelagoChronorancher's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "The Henry Stickmin Collection",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "funjeff/HenryStickminArchipelagoIntegration",
+   "install": "apworld_only",
+   "assets": [
+    "henry.apworld"
+   ],
+   "tag": "1.0.0",
+   "release_page": "https://github.com/funjeff/HenryStickminArchipelagoIntegration/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "Dude45",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/The_Henry_Stickmin_Collection) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of funjeff/HenryStickminArchipelagoIntegration's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "The Password Game",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "ThePhar/ThePasswordGameArchipelago",
+   "install": "apworld_only",
+   "assets": [
+    "password.apworld"
+   ],
+   "tag": "",
+   "release_page": "https://github.com/ThePhar/ThePasswordGameArchipelago/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "MIT",
+   "author": "ThePhar",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/The_Password_Game) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of ThePhar/ThePasswordGameArchipelago's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Tomb Raider 1 Remastered",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "ReynierMatth/archipelago-tomb-raider-1-remastered",
+   "install": "apworld_only",
+   "assets": [
+    "tr1r.apworld"
+   ],
+   "tag": "",
+   "release_page": "https://github.com/ReynierMatth/archipelago-tomb-raider-1-remastered/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "MIT",
+   "author": "ReynierMatth",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Tomb_Raider_1_Remastered) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of ReynierMatth/archipelago-tomb-raider-1-remastered's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Touhou Eiyashou ~ Imperishable Night",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "Nepley/in-apworld",
+   "install": "apworld_only",
+   "assets": [
+    "th08.apworld"
+   ],
+   "tag": "1.1.3",
+   "release_page": "https://github.com/Nepley/in-apworld/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "MIT",
+   "author": "Nepley",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Touhou_Eiyashou_~_Imperishable_Night) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of Nepley/in-apworld's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Touhou Koumakyou ~ the Embodiment of Scarlet Devil",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "Nepley/eosd-apworld",
+   "install": "apworld_only",
+   "assets": [
+    "th06.apworld"
+   ],
+   "tag": "1.4.1",
+   "release_page": "https://github.com/Nepley/eosd-apworld/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "MIT",
+   "author": "Nepley",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Touhou_Koumakyou_~_the_Embodiment_of_Scarlet_Devil) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of Nepley/eosd-apworld's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Touhou Youyoumu ~ Perfect Cherry Blossom",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "Nepley/pcb-apworld",
+   "install": "apworld_only",
+   "assets": [
+    "th07.apworld"
+   ],
+   "tag": "1.2.3",
+   "release_page": "https://github.com/Nepley/pcb-apworld/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "MIT",
+   "author": "Nepley",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Touhou_Youyoumu_~_Perfect_Cherry_Blossom) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of Nepley/pcb-apworld's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "TurnipBoy",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "pointfivetee/TurnipBoyRandomizer",
+   "install": "apworld_only",
+   "assets": [
+    "turnipboy.apworld"
+   ],
+   "tag": "",
+   "release_page": "https://github.com/pointfivetee/TurnipBoyRandomizer/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "pointfivetee",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/TurnipBoy) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of pointfivetee/TurnipBoyRandomizer's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Turok 2",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "chikakoo/Turok-2-AP-World",
+   "install": "apworld_only",
+   "assets": [
+    "turok2.apworld"
+   ],
+   "tag": "0.5.0",
+   "release_page": "https://github.com/chikakoo/Turok-2-AP-World/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "Chikakoo",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Turok_2) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of chikakoo/Turok-2-AP-World's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "UZDoom",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "ToxicFrog/doom-mods",
+   "install": "apworld_only",
+   "assets": [
+    "uzdoom.apworld"
+   ],
+   "tag": "",
+   "release_page": "https://github.com/ToxicFrog/doom-mods/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "ToxicFrog",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/UZDoom) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of ToxicFrog/doom-mods's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Uncanny Cat Golf",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "Jeffdev-Archipelago-Implementations/Archipelago-UCG",
+   "install": "apworld_only",
+   "assets": [
+    "ucg.apworld"
+   ],
+   "tag": "1.0.3",
+   "release_page": "https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-UCG/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "Jeffdev",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Uncanny_Cat_Golf) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of Jeffdev-Archipelago-Implementations/Archipelago-UCG's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Vardrain--",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "flingoXD/Archipelago",
+   "install": "apworld_only",
+   "assets": [
+    "vardrain--.apworld"
+   ],
+   "tag": "0.0.0",
+   "release_page": "https://github.com/flingoXD/Archipelago/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "flingo",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Vardrain--) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of flingoXD/Archipelago's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Vespadian",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "Quinn-Patrick/Archipelago-Vespadian",
+   "install": "apworld_only",
+   "assets": [
+    "vespadian.apworld"
+   ],
+   "tag": "",
+   "release_page": "https://github.com/Quinn-Patrick/Archipelago-Vespadian/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "Quinn-Patrick",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Vespadian) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of Quinn-Patrick/Archipelago-Vespadian's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Viscera Cleanup Detail",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "Kryen112/Viscera-Cleanup-Detail-AP",
+   "install": "apworld_only",
+   "assets": [
+    "viscera_cleanup_detail.apworld"
+   ],
+   "tag": "",
+   "release_page": "https://github.com/Kryen112/Viscera-Cleanup-Detail-AP/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "Kryen112",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Viscera_Cleanup_Detail) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of Kryen112/Viscera-Cleanup-Detail-AP's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Warcraft 3",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "MatthewMarinets/war3-ap-maps",
+   "install": "apworld_only",
+   "assets": [
+    "wc3.apworld"
+   ],
+   "tag": "0.0.1",
+   "release_page": "https://github.com/MatthewMarinets/war3-ap-maps/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "phaneros",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Warcraft_3) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of MatthewMarinets/war3-ap-maps's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Wikipelago",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "Dreskn/Wikipelago-Continued",
+   "install": "apworld_only",
+   "assets": [
+    "wikipelago.apworld"
+   ],
+   "tag": "1.0.1",
+   "release_page": "https://github.com/Dreskn/Wikipelago-Continued/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "Dreskn (continued), Skrumptily69 (original)",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Wikipelago) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of Dreskn/Wikipelago-Continued's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "WordSearch",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "ProfDeCube/Archipelago",
+   "install": "apworld_only",
+   "assets": [
+    "wordsearch.apworld"
+   ],
+   "tag": "1.0.1",
+   "release_page": "https://github.com/ProfDeCube/Archipelago/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "ProfDeCube",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/WordSearch) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of ProfDeCube/Archipelago's LICENSE."
+  },
+  {
+   "_v": 2,
+   "name": "Wordipelago",
+   "source": "url",
+   "steam_appid": null,
+   "image": null,
+   "repo": "ProfDeCube/Archipelago",
+   "install": "apworld_only",
+   "assets": [
+    "wordipelago.apworld"
+   ],
+   "tag": "1.0.1",
+   "release_page": "https://github.com/ProfDeCube/Archipelago/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "NOASSERTION",
+   "author": "ProfDeCube",
+   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Wordipelago) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of ProfDeCube/Archipelago's LICENSE."
   }
  ],
  "_excluded": [

@@ -5,14 +5,14 @@
   "_subtitle_source": "subtitle names the backend the player will actually run. The world's setup guide supports BizHawk, Project64 4.0 and a real console via EverDrive64; BizHawk is the one London drives.",
   "platform": "N64",
   "_platform_source": "N64 title. The world's setup guide asks for the Star Fox 64 v1.1 ROM and loads it in BizHawk.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "_verified": "2026-08-26",
   "ap_world_name": "Star Fox 64",
   "_ap_world_name_source": "the world's own star_fox_64/__init__.py: `game = \"Star Fox 64\"`, read out of star_fox_64.apworld from release v0.4.1.",
   "description": "The Lylat system as a multiworld. Medals, level unlocks and the branching route map become checks across all fifteen missions.",
   "_description_source": "written by us from the world's own docs and location tables - no text copied from the game.",
-  "checks_verified": false,
-  "_checks_verified_note": "FALSE. Nobody has played this. For a kind=world game the checks travel through the WORLD'S client and ITS OWN connector script, not through a RAM map of ours - so what is unproven is the whole chain: apworld installs, the player patches their ROM, BizHawk loads the world's Lua, and a check comes back.",
+  "checks_verified": true,
+  "_checks_verified_note": "TRUE — proven live 27 Aug 2026 through London's OWN bridge, with no Archipelago client running at all. The server log recorded three real in-game checks crossing: 01:21:58 Gold Ring (Corneria - Near First Ground Robot: Laser Upgrade), 01:22:08 Bomb (Corneria - Behind Second Ground Robot: Bomb), 01:22:44 Silver Ring (Corneria - After Falco's G-Diffuser Issue: Laser Upgrade), and the items came back into the launcher's own item list. London patched the ROM itself (md5 b265706122ce24ad7052b29b78a2724e, the world's own answer), installed the world's connector, and answered port 24420 as the client.",
   "requires": "own_copy",
   "_requires_source": "N64 title - the player supplies their own cartridge dump, which the world then patches.",
   "rom": {
@@ -23,7 +23,16 @@
     ],
     "size": null,
     "_md5_source": "the world's own docs/setup_en.md lists both under \"You will need the Star Fox 64 v1.1 ROM. MD5s of supported files\", and star_fox_64/client.py carries the same two strings. Read 26 Aug 2026.",
-    "_patched_note": "The world patches the ROM itself and checks the result against b265706122ce24ad7052b29b78a2724e (star_fox_64/assets/Star_Fox_64_Patched.z64-md5). London does not build that patch - see _manual_setup_note."
+    "_patched_note": "London now builds this itself: it reads the patch out of the installed apworld and checks the result against the world's own md5. Before that it copied the RETAIL ROM into the session folder, which booted fine and could never send a check.",
+    "byteswap_md5": [
+      "ef9a76901153f66123dafccb0c13cd94"
+    ],
+    "_byteswap_md5_source": "star_fox_64/client.py patch_rom(): the dump whose md5 is ef9a769... is byte-swapped and the world swaps every pair before applying the patch; 741a94ee... is applied as-is. Skipping the swap makes bsdiff produce a ROM that boots to nothing.",
+    "static_patch": {
+      "entry": "assets/Star_Fox_64.patch",
+      "result_md5": "b265706122ce24ad7052b29b78a2724e"
+    },
+    "_static_patch_source": "the world ships ONE fixed BSDIFF40 against the retail dump (star_fox_64/assets/Star_Fox_64.patch, magic bytes verified) plus its own answer for the result in assets/Star_Fox_64_Patched.z64-md5. London applies it and refuses to launch unless the result matches -- read from the world's own package 26 Aug 2026."
   },
   "emulator": {
     "name": "BizHawk",
@@ -35,10 +44,16 @@
     "kind": "world",
     "protocol": "bizhawk",
     "lua": null,
-    "_name_source": "the world registers it itself: star_fox_64/__init__.py does Component(\"Star Fox 64 Client\", \"SF64Client\", func=launch_client).",
+    "_name_source": "the world registers it itself: star_fox_64/__init__.py does Component(\"Star Fox 64 Client\", \"SF64Client\", func=launch_client). ⚠ Kept for reference only: with `relay` set London does NOT start this component.",
     "_kind_source": "⭐ The world carries EVERYTHING: its own client (star_fox_64/client.py), its own BizHawk connector (star_fox_64/assets/connector_sf64_bizhawk.lua), its own ROM patch and its own md5 check. London installs the apworld and starts the emulator; it must NOT read memory for this game.",
     "_protocol_source": "the world ships connector_sf64_bizhawk.lua and its setup guide loads it in BizHawk. ⚠ Its client.py subclasses CommonContext, NOT BizHawkClient - which is exactly why tools/survey_candidates.py filed this game as \"NO CLIENT\" on 20 Aug 2026 and it was never built. That verdict was wrong: a world carrying its own connector is CHEAPER to package than one we must write a RAM map for, not impossible. See _survey_note.",
-    "_survey_note": "survey_candidates.py returns \"NO CLIENT\" when client.py does not contain the string \"BizHawkClient\". It knows one of the two valid shapes. The other - a world that brings its own client and connector - is the shape 32 manifests in this catalogue already use (dolphin, pine, duckstation, self, and five on bizhawk). The tool's question should be \"can this game reach the emulator at all\", not \"does it subclass our preferred base class\"."
+    "_survey_note": "survey_candidates.py returns \"NO CLIENT\" when client.py does not contain the string \"BizHawkClient\". It knows one of the two valid shapes. The other - a world that brings its own client and connector - is the shape 32 manifests in this catalogue already use (dolphin, pine, duckstation, self, and five on bizhawk). The tool's question should be \"can this game reach the emulator at all\", not \"does it subclass our preferred base class\".",
+    "world_lua": "connector_sf64_bizhawk.lua",
+    "_world_lua_source": "the world ships this connector itself (star_fox_64/assets/connector_sf64_bizhawk.lua) and its own client writes it into Archipelago's data/lua/ at startup. London starts the client first, waits for the file, and hands that path to BizHawk -- without it the emulator runs no script at all and nothing is listening for the client. Read from the world's own package 26 Aug 2026.",
+    "rom_path_setting": "sf64_options.rom_path",
+    "_rom_path_setting_source": "the world's StarFox64Settings is a settings.Group, so Archipelago writes it into host.yaml as `sf64_options:` with `rom_path:` under it (read from the live host.yaml 27 Aug 2026). Empty, the client opens 'Open your Star Fox 64 v1.1 ROM' on every launch and then logs 'No ROM selected' -- which reads like a failure. London fills in the path the player chose.",
+    "relay": "star_fox_64",
+    "_relay_source": "⭐ The world's Archipelago client is PORTED INTO London (Core/Worlds/StarFox64Relay.cs). Its transport was measured in the world's own MIT-licensed source: the ROM keeps two mailboxes in RDRAM, connector_sf64_bizhawk.lua tunnels them over TCP to 127.0.0.1:24420, and the frames are [u16 size][u16 cmd][payload] big-endian. London answers that socket itself, so the player never opens a second window -- no connect bar, no ROM dialog. The id tables are generated from the world's own ids.py by tools/gen_world_relay_ids.py."
   },
   "apworld": {
     "bundled": false,
@@ -48,7 +63,7 @@
   },
   "patch_extension": "none",
   "_patch_extension_source": "read from the world's own source, 26 Aug 2026: no APPatchExtension appears in the package, so there are no custom Python patch steps for London's patcher to refuse.",
-  "_manual_setup_note": "⚠ The player patches their own ROM through Archipelago's client, and the world's connector script must sit in Archipelago/data/lua/ - the world's own `/autostart` command puts it there and can launch BizHawk with the ROM and script already loaded. London neither patches the ROM nor installs the connector.",
+  "_manual_setup_note": "Nothing. London patches the ROM, installs the world's connector, and IS the client: it opens port 24420 and speaks the ROM's protocol itself. Press Play.",
   "credits": {
     "plugin_by": "solida1987",
     "world_by": {

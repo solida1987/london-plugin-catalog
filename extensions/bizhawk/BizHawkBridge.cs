@@ -105,8 +105,27 @@ public sealed class BizHawkBridge : IEmulatorBridge
         if (exe is null) return null;
 
         string dir = Path.GetDirectoryName(exe)!;
-        string args = $"\"{context.RomPath}\" --lua=\"{context.ScriptPath}\""
-                    + (context.Fullscreen ? " --fullscreen" : "");
+
+        // ⚠⚠ --lua ONLY WHEN WE ACTUALLY HAVE A SCRIPT.
+        //
+        // This used to append --lua="{ScriptPath}" unconditionally. For every
+        // game whose manifest is `client.kind = "world"` there IS no script of
+        // ours -- the world ships its own connector and loads it itself -- so
+        // ScriptPath is empty and BizHawk was handed `--lua=""`. Its ArgParser
+        // rejects that outright:
+        //
+        //     failed to parse command-line arguments:
+        //     Required argument missing for option: '--lua'.
+        //
+        // The emulator then dies on a modal dialog before the ROM is even
+        // opened. Found 26 Aug 2026 by launching Star Fox 64 end to end; it
+        // affected every kind=world game on this bridge -- around forty of
+        // them, all of today's SNES, PSX, DS and N64 additions included.
+        string args = $"\"{context.RomPath}\"";
+        if (!string.IsNullOrWhiteSpace(context.ScriptPath))
+            args += $" --lua=\"{context.ScriptPath}\"";
+        if (context.Fullscreen)
+            args += " --fullscreen";
 
         var env = new Dictionary<string, string>();
         if (!string.IsNullOrEmpty(context.ConfigPath))
