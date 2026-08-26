@@ -1,0 +1,64 @@
+{
+  "id": "shadowgate64",
+  "display_name": "Shadowgate 64: Trials of the Four Towers",
+  "subtitle": "BizHawk",
+  "_subtitle_source": "the world's own setup guide: \"As we are using BizHawk, this guide is only applicable to Windows and Linux systems.\"",
+  "platform": "N64",
+  "_platform_source": "N64 title. The setup guide asks for \"A Shadowgate 64 ROM (English)\" and opens it in BizHawk.",
+  "version": "1.0.0",
+  "_verified": "2026-08-26",
+  "ap_world_name": "Shadowgate 64",
+  "_ap_world_name_source": "the world's own shadowgate64/__init__.py: `game = \"Shadowgate 64\"`, read out of shadowgate64.apworld from release V0.1.",
+  "description": "The four towers of Castle Shadowgate as a multiworld. Keys, tools and the spells that open each tower are shuffled across the session.",
+  "_description_source": "written by us from the world's own structure - no text copied from the game.",
+  "checks_verified": false,
+  "_checks_verified_note": "FALSE. Nobody has played this. The checks travel through the WORLD'S own client, not a RAM map of ours, so the unproven part is the whole chain: apworld installs, the player patches their ROM, BizHawk runs it and a check comes back.",
+  "requires": "own_copy",
+  "_requires_source": "N64 title - the player supplies their own dump, which the world then patches.",
+  "rom": {
+    "description": "Your own Shadowgate 64: Trials of the Four Towers (English) ROM",
+    "md5": [
+      "407a1a18bd7dbe0485329296c3f84eb8",
+      "9d369956a0d42a8700c8263651a06a81",
+      "ca0df738ae6a16bfb4b46d3860c159d9"
+    ],
+    "size": null,
+    "_md5_source": "read from the world's own shadowgate64/Sg64Client.py, 26 Aug 2026 - the three dumps it accepts.",
+    "_patched_note": "The world patches the ROM itself: \"The patched rom is located in your Archipelago root folder\". London neither builds nor applies that patch."
+  },
+  "emulator": {
+    "name": "BizHawk",
+    "min_version": "2.9.1",
+    "_source": "the world's setup guide: \"Open Bizhawk (2.9.1+) and open your patched Shadowgate 64 game\".",
+    "_settings_note": "⚠ The setup guide requires one BizHawk setting the player must set themselves: under the N64 menu, enable \"Use Expansion Slot\". That menu only appears after a ROM is loaded. London does not set it."
+  },
+  "client": {
+    "name": "Shadowgate 64 Client",
+    "kind": "world",
+    "protocol": "bizhawk",
+    "lua": null,
+    "_name_source": "the world registers it itself: shadowgate64/__init__.py does Component(\"Shadowgate 64 Client\", func=run_client, component_type=Type.CLIENT) and launches it with launch_subprocess(main).",
+    "_kind_source": "the world ships its own client (shadowgate64/Sg64Client.py, which subclasses CommonContext rather than BizHawkClient) and drives the emulator itself. London installs the apworld and starts BizHawk; it must NOT read memory for this game.",
+    "_protocol_source": "the world's setup guide runs the game in BizHawk, which is the backend our bizhawk extension starts for N64."
+  },
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/jjjj12212/Archipelago-Shadowgate64/releases",
+    "world_version": "0.1",
+    "_source": "the author's own releases page, read 26 Aug 2026 (tag V0.1, carrying shadowgate64.apworld and shadowgate64_connector.lua)."
+  },
+  "patch_extension": "none",
+  "_patch_extension_source": "read from the world's own source, 26 Aug 2026: no APPatchExtension appears in the package.",
+  "credits": {
+    "plugin_by": "solida1987",
+    "world_by": {
+      "name": "jjjj12212",
+      "url": "https://github.com/jjjj12212/Archipelago-Shadowgate64",
+      "licence": "MIT",
+      "_name_source": "the repository owner; the world is published from jjjj12212/Archipelago-Shadowgate64.",
+      "_licence_source": "GitHub's own classification of the repository's LICENSE, read 26 Aug 2026: spdx_id MIT."
+    },
+    "game_by": null,
+    "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
+  }
+}

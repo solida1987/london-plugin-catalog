@@ -1,0 +1,64 @@
+{
+  "id": "star_fox_64",
+  "display_name": "Star Fox 64",
+  "subtitle": "BizHawk",
+  "_subtitle_source": "subtitle names the backend the player will actually run. The world's setup guide supports BizHawk, Project64 4.0 and a real console via EverDrive64; BizHawk is the one London drives.",
+  "platform": "N64",
+  "_platform_source": "N64 title. The world's setup guide asks for the Star Fox 64 v1.1 ROM and loads it in BizHawk.",
+  "version": "1.0.0",
+  "_verified": "2026-08-26",
+  "ap_world_name": "Star Fox 64",
+  "_ap_world_name_source": "the world's own star_fox_64/__init__.py: `game = \"Star Fox 64\"`, read out of star_fox_64.apworld from release v0.4.1.",
+  "description": "The Lylat system as a multiworld. Medals, level unlocks and the branching route map become checks across all fifteen missions.",
+  "_description_source": "written by us from the world's own docs and location tables - no text copied from the game.",
+  "checks_verified": false,
+  "_checks_verified_note": "FALSE. Nobody has played this. For a kind=world game the checks travel through the WORLD'S client and ITS OWN connector script, not through a RAM map of ours - so what is unproven is the whole chain: apworld installs, the player patches their ROM, BizHawk loads the world's Lua, and a check comes back.",
+  "requires": "own_copy",
+  "_requires_source": "N64 title - the player supplies their own cartridge dump, which the world then patches.",
+  "rom": {
+    "description": "Your own Star Fox 64 (v1.1) ROM",
+    "md5": [
+      "741a94eee093c4c8684e66b89f8685e8",
+      "ef9a76901153f66123dafccb0c13cd94"
+    ],
+    "size": null,
+    "_md5_source": "the world's own docs/setup_en.md lists both under \"You will need the Star Fox 64 v1.1 ROM. MD5s of supported files\", and star_fox_64/client.py carries the same two strings. Read 26 Aug 2026.",
+    "_patched_note": "The world patches the ROM itself and checks the result against b265706122ce24ad7052b29b78a2724e (star_fox_64/assets/Star_Fox_64_Patched.z64-md5). London does not build that patch - see _manual_setup_note."
+  },
+  "emulator": {
+    "name": "BizHawk",
+    "min_version": "2.10",
+    "_source": "the world's setup guide: \"Version 2.10 and later is supported.\""
+  },
+  "client": {
+    "name": "Star Fox 64 Client",
+    "kind": "world",
+    "protocol": "bizhawk",
+    "lua": null,
+    "_name_source": "the world registers it itself: star_fox_64/__init__.py does Component(\"Star Fox 64 Client\", \"SF64Client\", func=launch_client).",
+    "_kind_source": "⭐ The world carries EVERYTHING: its own client (star_fox_64/client.py), its own BizHawk connector (star_fox_64/assets/connector_sf64_bizhawk.lua), its own ROM patch and its own md5 check. London installs the apworld and starts the emulator; it must NOT read memory for this game.",
+    "_protocol_source": "the world ships connector_sf64_bizhawk.lua and its setup guide loads it in BizHawk. ⚠ Its client.py subclasses CommonContext, NOT BizHawkClient - which is exactly why tools/survey_candidates.py filed this game as \"NO CLIENT\" on 20 Aug 2026 and it was never built. That verdict was wrong: a world carrying its own connector is CHEAPER to package than one we must write a RAM map for, not impossible. See _survey_note.",
+    "_survey_note": "survey_candidates.py returns \"NO CLIENT\" when client.py does not contain the string \"BizHawkClient\". It knows one of the two valid shapes. The other - a world that brings its own client and connector - is the shape 32 manifests in this catalogue already use (dolphin, pine, duckstation, self, and five on bizhawk). The tool's question should be \"can this game reach the emulator at all\", not \"does it subclass our preferred base class\"."
+  },
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/Auztin/AP-Star-Fox-64/releases",
+    "world_version": "0.4.1",
+    "_source": "the author's own releases page, read 26 Aug 2026 (tag v0.4.1, carrying star_fox_64.apworld, connector_sf64_bizhawk.lua, connector_sf64_ed64.exe, connector_sf64_ed64_linux and connector_sf64_pj64.js)."
+  },
+  "patch_extension": "none",
+  "_patch_extension_source": "read from the world's own source, 26 Aug 2026: no APPatchExtension appears in the package, so there are no custom Python patch steps for London's patcher to refuse.",
+  "_manual_setup_note": "⚠ The player patches their own ROM through Archipelago's client, and the world's connector script must sit in Archipelago/data/lua/ - the world's own `/autostart` command puts it there and can launch BizHawk with the ROM and script already loaded. London neither patches the ROM nor installs the connector.",
+  "credits": {
+    "plugin_by": "solida1987",
+    "world_by": {
+      "name": "Auztin",
+      "url": "https://github.com/Auztin/AP-Star-Fox-64",
+      "licence": "MIT",
+      "_name_source": "the repository owner; the world is published from Auztin/AP-Star-Fox-64.",
+      "_licence_source": "GitHub's own classification of the repository's LICENSE, read 26 Aug 2026: spdx_id MIT."
+    },
+    "game_by": null,
+    "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its author's work. Only the plugin itself is by solida1987."
+  }
+}

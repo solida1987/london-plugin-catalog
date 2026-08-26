@@ -1,0 +1,55 @@
+{
+  "id": "pokemon_stadium",
+  "display_name": "Pokémon Stadium",
+  "subtitle": "BizHawk",
+  "_subtitle_source": "the world's client subclasses BizHawkClient, so it runs through Archipelago's BizHawk Client - the same shape as the 24 other manifests here that use the generic connector.",
+  "platform": "N64",
+  "_platform_source": "N64 title.",
+  "version": "1.0.0",
+  "_verified": "2026-08-26",
+  "ap_world_name": "Pokemon Stadium",
+  "_ap_world_name_source": "the world's own pokemon_stadium/__init__.py: `game = \"Pokemon Stadium\"` - note the plain 'e', not 'é'. Read out of pokemon_stadium.apworld from release v0.8.0.",
+  "description": "The Stadium cups and Gym Leader Castle as a multiworld. Cup victories and rental Pokémon become checks.",
+  "_description_source": "written by us from the world's own structure - no text copied from the game.",
+  "checks_verified": false,
+  "_checks_verified_note": "FALSE. Nobody has played this, and no RAM map of ours is involved - the world's own BizHawkClient subclass reads the game through Archipelago's generic connector. What is unproven is the whole chain end to end.",
+  "requires": "own_copy",
+  "_requires_source": "N64 title - the player supplies their own dump.",
+  "rom": {
+    "description": "Your own Pokémon Stadium (N64) ROM",
+    "md5": [],
+    "size": null,
+    "_hash_note": "Not measured, and deliberately not invented: no md5 appears anywhere in the world's own source. The world's client validates what the emulator has open."
+  },
+  "emulator": {
+    "name": "BizHawk",
+    "min_version": null,
+    "_source": "the world's client subclasses BizHawkClient. No minimum version is stated anywhere in the package, so none is recorded."
+  },
+  "client": {
+    "name": "Archipelago's BizHawk Client",
+    "lua": "data/lua/connector_bizhawk_generic.lua",
+    "protocol": "bizhawk",
+    "_source": "the world's pokemon_stadium/Client.py subclasses BizHawkClient, so Archipelago's own BizHawk Client drives it through the generic connector - exactly like castlevania_cotm and the 23 other manifests on this pattern. Read 26 Aug 2026."
+  },
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/jciii91/Pokemon-Stadium-AP-World/releases",
+    "world_version": "0.8.0",
+    "_source": "the author's own releases page, read 26 Aug 2026 (tag v0.8.0, carrying pokemon_stadium.apworld). ⚠ The repository was renamed: jciii91/Pokemon-Stadium now redirects to jciii91/Pokemon-Stadium-AP-World, and the new name is recorded here."
+  },
+  "patch_extension": "none",
+  "_patch_extension_source": "read from the world's own source, 26 Aug 2026: no APPatchExtension appears in the package.",
+  "credits": {
+    "plugin_by": "solida1987",
+    "world_by": {
+      "name": "jciii, ArcTG",
+      "url": "https://github.com/jciii91/Pokemon-Stadium-AP-World",
+      "licence": "NOASSERTION",
+      "_name_source": "the world names them itself: archipelago.json {\"authors\": [\"jciii\", \"ArcTG\"]}.",
+      "_licence_source": "⚠ GitHub reports spdx_id NOASSERTION - the repository carries no recognised LICENSE file, so no licence has been granted in writing. Recorded honestly rather than assumed. Same standing as Jak 2, Jak 3 and Twilight Princess in this catalogue: we distribute no part of the world, only its address."
+    },
+    "game_by": null,
+    "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its authors' work. Only the plugin itself is by solida1987."
+  }
+}

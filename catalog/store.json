@@ -1,6 +1,6 @@
 {
   "note": "The launcher's store window. Addresses and metadata only — no artwork and no code is stored here. Installing still runs the launcher's own consent flow.",
-  "count": 600,
+  "count": 602,
   "platforms": [
     "Atari 2600",
     "Browser",
@@ -1889,6 +1889,33 @@
       "stability": "Unstable"
     },
     {
+      "id": "shadowgate64",
+      "name": "Shadowgate 64: Trials of the Four Towers",
+      "ap_world_name": "Shadowgate 64",
+      "subtitle": "BizHawk",
+      "description": "The four towers of Castle Shadowgate as a multiworld. Keys, tools and the spells that open each tower are shuffled across the session.",
+      "platform": "N64",
+      "platform_label": "Nintendo 64",
+      "family": "Nintendo",
+      "genres": [
+        "Adventure"
+      ],
+      "version": "1.0.0",
+      "world_by": "jjjj12212",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Nintendo%2064/Named_Boxarts/Shadowgate%2064%20-%20Trials%20of%20the%20Four%20Towers%20%28USA%29%20%28En%2CEs%29.png",
+      "banner": "https://thumbnails.libretro.com/Nintendo%20-%20Nintendo%2064/Named_Titles/Shadowgate%2064%20-%20Trials%20of%20the%20Four%20Towers%20%28USA%29%20%28En%2CEs%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/n64/shadowgate64.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases",
+      "mod_kind": null,
+      "_apworld_url": "https://github.com/jjjj12212/Archipelago-Shadowgate64/releases",
+      "install_kind": "rom",
+      "tested": false,
+      "section": "unstable",
+      "stability": "Unstable"
+    },
+    {
       "id": "shining_itd",
       "name": "Shining in the Darkness",
       "ap_world_name": "Shining in the Darkness",
@@ -2239,6 +2266,33 @@
       "tested": false,
       "section": "unstable",
       "stability": "Unknown"
+    },
+    {
+      "id": "star_fox_64",
+      "name": "Star Fox 64",
+      "ap_world_name": "Star Fox 64",
+      "subtitle": "BizHawk",
+      "description": "The Lylat system as a multiworld. Medals, level unlocks and the branching route map become checks across all fifteen missions.",
+      "platform": "N64",
+      "platform_label": "Nintendo 64",
+      "family": "Nintendo",
+      "genres": [
+        "Adventure"
+      ],
+      "version": "1.0.0",
+      "world_by": "Auztin",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Nintendo%2064/Named_Boxarts/Star%20Fox%2064%20%28USA%29%20%28Rev%201%29.png",
+      "banner": "https://thumbnails.libretro.com/Nintendo%20-%20Nintendo%2064/Named_Titles/Star%20Fox%2064%20%28USA%29%20%28Rev%201%29.png",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/n64/star_fox_64.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases",
+      "mod_kind": null,
+      "_apworld_url": "https://github.com/Auztin/AP-Star-Fox-64/releases",
+      "install_kind": "rom",
+      "tested": false,
+      "section": "stable",
+      "stability": "Stable"
     },
     {
       "id": "super_metroid",

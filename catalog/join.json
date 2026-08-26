@@ -1,6 +1,6 @@
 {
   "note": "Which London plugin covers which Archipelago game. Addresses and metadata only.",
-  "count": 600,
+  "count": 602,
   "games": {
     "Armored Core 3": {
       "id": "ac3",
@@ -404,6 +404,12 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ps2/roadtrip.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
+    "Shadowgate 64": {
+      "id": "shadowgate64",
+      "platform": "N64",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/n64/shadowgate64.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
     "Shining in the Darkness": {
       "id": "shining_itd",
       "platform": "GEN",
@@ -480,6 +486,12 @@
       "id": "srb2",
       "platform": "PC",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/srb2.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Star Fox 64": {
+      "id": "star_fox_64",
+      "platform": "N64",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/n64/star_fox_64.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Super Metroid": {
