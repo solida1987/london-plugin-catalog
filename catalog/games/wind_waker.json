@@ -1,0 +1,63 @@
+{
+  "id": "wind_waker",
+  "display_name": "The Legend of Zelda: The Wind Waker",
+  "subtitle": "Dolphin",
+  "_subtitle_source": "subtitle names the backend the player will actually run, the same way twilight_princess.json says \"Dolphin\".",
+  "platform": "GC",
+  "_platform_source": "GameCube title. The world's own setup guide asks for \"A The Wind Waker ISO (North American version)\" and opens it in Dolphin.",
+  "version": "1.0.0",
+  "_verified": "2026-08-26",
+  "ap_world_name": "The Wind Waker",
+  "_ap_world_name_source": "the world's own tww/archipelago.json: {\"game\": \"The Wind Waker\"}, read out of the apworld shipped with Archipelago 0.6.7 on this machine.",
+  "description": "The Great Sea as a multiworld. Chests, NPC gifts and treasure salvaged from the ocean floor become checks, in a world opened up from the start.",
+  "_description_source": "written by us from the world's own docs/en_The Wind Waker.md description of what it randomizes - no text copied from the game.",
+  "checks_verified": false,
+  "_checks_verified_note": "FALSE. Nobody has played this. For a kind=world game the checks travel through the WORLD'S client, not through London -- so what is unproven is not a RAM map of ours (there is none) but the whole chain: apworld installs, Dolphin starts over the bridge, the world's client attaches and carries a check. ⚠ The dolphin bridge itself has never been proven live for ANY game (TESTREGISTER lists it as untested), so this game is also the first real test of that bridge.",
+  "requires": "own_copy",
+  "_requires_source": "GameCube title - the player supplies their own disc image. The world's setup guide names the file it expects.",
+  "rom": {
+    "description": "Your own The Legend of Zelda: The Wind Waker (GameCube, North American) disc image",
+    "md5": [],
+    "size": null,
+    "_hash_note": "Not measured, and deliberately not invented. The player does not hand London this ISO: they run the author's randomizer build on it themselves, and the world's own client validates what Dolphin has open.",
+    "_source": "the world's docs/setup_en.md: \"A The Wind Waker ISO (North American version), probably named 'Legend of Zelda, The - The Wind Waker (USA).iso'\"."
+  },
+  "emulator": {
+    "name": "Dolphin",
+    "min_version": null,
+    "_source": "the world's setup guide: \"Install Dolphin Emulator. We recommend using the latest release.\" No minimum is stated, so none is recorded.",
+    "_settings_note": "The world's setup guide names three Dolphin settings the player must get right: `Fallback Region` set to NTSC-U, `Enable Emulated Memory Size Override` under Options > Configuration > Advanced, and Dolphin on the same drive as Archipelago. London does not set these -- they are the player's, and the world's client reports when they are wrong."
+  },
+  "client": {
+    "name": "The Wind Waker Client",
+    "kind": "world",
+    "protocol": "dolphin",
+    "_name_source": "read from the world's own tww/__init__.pyc, which registers `Component` with display name \"The Wind Waker Client\" and launches the subprocess as \"TheWindWakerClient\". The setup guide tells the player to choose that same entry.",
+    "_kind_source": "the world ships and registers its OWN Archipelago client (tww/TWWClient.pyc) and reaches the emulator itself: tww/requirements.txt declares `dolphin-memory-engine>=1.3.0`. London installs the apworld, starts Dolphin over the bridge, and attaches nothing. London must NOT read memory for this game.",
+    "_protocol_source": "extensions/dolphin declares {\"protocol\": \"dolphin\"}; dolphin-memory-engine attaches to the same emulator process our bridge starts."
+  },
+  "apworld": {
+    "bundled": true,
+    "url": null,
+    "world_version": null,
+    "_source": "⭐ This world is OFFICIAL: tww.apworld ships with Archipelago itself and was read from C:/ProgramData/Archipelago/lib/worlds on 26 Aug 2026. There is no third-party release page to track and no separate licence to assess.",
+    "_world_version_note": "Not recorded rather than guessed. The world's archipelago.json carries {\"version\": 7} -- that is the datapackage version, not a release number -- and no `world_version` field at all, unlike the third-party worlds in this catalogue.",
+    "min_ap": "0.6.7",
+    "_min_ap_source": "the world's archipelago.json: {\"minimum_ap_version\": \"0.6.7\", \"maximum_ap_version\": \"0.6.7\"}. ⚠ It pins BOTH ends to 0.6.7 -- our client is exactly 0.6.7, so this is satisfied today, but an Archipelago upgrade will break this game until the bundled world moves with it."
+  },
+  "patch_extension": "none",
+  "_patch_extension_source": "read from the world's own source, 26 Aug 2026: every .pyc in tww/ was searched. `patch_file_ending` appears in __init__, but NO `APPatchExtension` -- so there are no custom Python patch steps for London's patcher to refuse.",
+  "_manual_setup_note": "⚠ THE APWORLD IS NOT ENOUGH ON ITS OWN. The player must download the author's TWW AP Randomizer Build (https://github.com/tanjo3/wwrando/releases?q=tag%3Aap_2), point it at their own ISO, and press Randomize; Dolphin then opens the randomized ISO the tool wrote. London neither builds nor applies this patch, and does not distribute the tool. The world's setup guide also warns that the build must match the Archipelago version the seed was generated on.",
+  "credits": {
+    "plugin_by": "solida1987",
+    "world_by": {
+      "name": "tanjo3",
+      "url": "https://github.com/tanjo3/wwrando",
+      "licence": "MIT",
+      "_name_source": "the world names them in its own compiled source (tww/__init__.pyc), and the setup guide points at github.com/tanjo3/wwrando for the randomizer build.",
+      "_licence_source": "the world is bundled with Archipelago, which is MIT (C:/ProgramData/Archipelago/LICENSE: \"MIT License, Copyright (c) 2017 LLCoolDave\"). ⚠ That covers the apworld we ship a manifest for. The separate wwrando randomizer build is the author's own project and is downloaded by the player from the author, never by us."
+    },
+    "game_by": null,
+    "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its authors' work. Only the plugin itself is by solida1987."
+  }
+}

@@ -1,6 +1,6 @@
 {
   "note": "The launcher's store window. Addresses and metadata only — no artwork and no code is stored here. Installing still runs the launcher's own consent flow.",
-  "count": 597,
+  "count": 600,
   "platforms": [
     "Atari 2600",
     "Browser",
@@ -2562,6 +2562,34 @@
       "install_kind": "rom",
       "tested": false,
       "section": "stable",
+      "stability": "Stable"
+    },
+    {
+      "id": "wind_waker",
+      "name": "The Legend of Zelda: The Wind Waker",
+      "ap_world_name": "The Wind Waker",
+      "subtitle": "Dolphin",
+      "description": "The Great Sea as a multiworld. Chests, NPC gifts and treasure salvaged from the ocean floor become checks, in a world opened up from the start.",
+      "platform": "GC",
+      "platform_label": "GameCube",
+      "family": "Nintendo",
+      "genres": [
+        "Action-Adventure"
+      ],
+      "version": "1.0.0",
+      "world_by": "tanjo3",
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": null,
+      "banner": null,
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gamecube/wind_waker.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases",
+      "mod_kind": null,
+      "_apworld_url": null,
+      "install_kind": "rom",
+      "tested": false,
+      "section": "adult",
+      "_section_reason": "no store page, no release page, no repository and no cover in any source -- nothing we could read to establish what this game contains, so it sits behind the age gate until somebody can",
       "stability": "Stable"
     },
     {
@@ -6056,7 +6084,7 @@
     {
       "id": "js_paint",
       "name": "JS Paint",
-      "ap_world_name": "JS Paint",
+      "ap_world_name": "Paint",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -6066,7 +6094,7 @@
         "Adventure"
       ],
       "version": "",
-      "world_by": "the Archipelago project and its contributors",
+      "world_by": "MarioManTAW",
       "mod_kind": null,
       "world_licence": "MIT",
       "plugin_by": "solida1987",
@@ -6076,8 +6104,8 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/js_paint.londonplugin",
       "page": "https://github.com/ArchipelagoMW/Archipelago/releases",
       "banner": null,
-      "section": "unstable",
-      "stability": "Unknown"
+      "section": "stable",
+      "stability": "Stable"
     },
     {
       "id": "kabuto_park_demo",
@@ -15698,6 +15726,58 @@
       "banner": "https://cdn.akamai.steamstatic.com/steam/apps/285920/library_hero.jpg",
       "section": "exclusive",
       "stability": "Our own world"
+    },
+    {
+      "id": "jak_and_daxter_the_precursor_legacy",
+      "name": "Jak and Daxter: The Precursor Legacy",
+      "ap_world_name": "Jak and Daxter: The Precursor Legacy",
+      "subtitle": "PC · ships with Archipelago",
+      "description": "",
+      "platform": "PC",
+      "platform_label": "PC",
+      "family": "PC",
+      "genres": [
+        "Adventure"
+      ],
+      "version": "",
+      "world_by": "markustulliuscicero",
+      "mod_kind": null,
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": null,
+      "install_kind": "bundled",
+      "tested": false,
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/jak_and_daxter_the_precursor_legacy.londonplugin",
+      "page": "https://github.com/ArchipelagoMW/Archipelago/releases",
+      "banner": null,
+      "section": "stable",
+      "stability": "Stable"
+    },
+    {
+      "id": "yacht_dice",
+      "name": "Yacht Dice",
+      "ap_world_name": "Yacht Dice",
+      "subtitle": "PC · ships with Archipelago",
+      "description": "",
+      "platform": "PC",
+      "platform_label": "PC",
+      "family": "PC",
+      "genres": [
+        "Adventure"
+      ],
+      "version": "",
+      "world_by": "Spineraks",
+      "mod_kind": null,
+      "world_licence": "MIT",
+      "plugin_by": "solida1987",
+      "cover": null,
+      "install_kind": "bundled",
+      "tested": false,
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/yacht_dice.londonplugin",
+      "page": "https://github.com/ArchipelagoMW/Archipelago/releases",
+      "banner": null,
+      "section": "stable",
+      "stability": "Stable"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "note": "Which London plugin covers which Archipelago game. Addresses and metadata only.",
-  "count": 597,
+  "count": 600,
   "games": {
     "Armored Core 3": {
       "id": "ac3",
@@ -552,6 +552,12 @@
       "id": "wario_land_4",
       "platform": "GBA",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/wario_land_4.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "The Wind Waker": {
+      "id": "wind_waker",
+      "platform": "GC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gamecube/wind_waker.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Yu-Gi-Oh! 2006": {
@@ -1358,7 +1364,7 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/jak_3.londonplugin",
       "page": "https://github.com/Blake645/Archipelago/releases"
     },
-    "JS Paint": {
+    "Paint": {
       "id": "js_paint",
       "platform": "PC",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/js_paint.londonplugin",
@@ -3583,6 +3589,18 @@
       "platform": "PC",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/terratech.londonplugin",
       "page": "https://github.com/solida1987/TerraTech-Archipelago/releases"
+    },
+    "Jak and Daxter: The Precursor Legacy": {
+      "id": "jak_and_daxter_the_precursor_legacy",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/jak_and_daxter_the_precursor_legacy.londonplugin",
+      "page": "https://github.com/ArchipelagoMW/Archipelago/releases"
+    },
+    "Yacht Dice": {
+      "id": "yacht_dice",
+      "platform": "PC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/yacht_dice.londonplugin",
+      "page": "https://github.com/ArchipelagoMW/Archipelago/releases"
     }
   }
 }

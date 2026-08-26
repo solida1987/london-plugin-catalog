@@ -1,5 +1,5 @@
 {
- "count": 502,
+ "count": 504,
  "games": [
   {
    "_v": 2,
@@ -2506,11 +2506,12 @@
    "assets": [],
    "steps": "",
    "licence": "MIT",
-   "author": "the Archipelago project and its contributors",
+   "author": "MarioManTAW",
    "release_page": "https://github.com/ArchipelagoMW/Archipelago/releases",
    "apworld_url": null,
    "mod_url": null,
-   "tag": ""
+   "tag": "",
+   "_source": "the world's own archipelago.json (bundled with Archipelago 0.6.7): game 'Paint', authors ['MarioManTAW'], world_version 0.5.2. ⚠ Display name stays 'JS Paint' -- that is what the program is called and what the world's guide links to (mariomantaw.github.io/jspaint) -- but the AP world is named 'Paint', so ap_world_names.py maps between them."
   },
   {
    "_v": 2,
@@ -9907,6 +9908,42 @@
    "loader_url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.3/BepInEx_win_x64_5.4.23.3.zip",
    "author": "solida1987",
    "licence": "MIT"
+  },
+  {
+   "_v": 2,
+   "name": "Jak and Daxter: The Precursor Legacy",
+   "source": "bundled",
+   "steam_appid": null,
+   "image": null,
+   "repo": "ArchipelagoMW/Archipelago",
+   "install": "bundled",
+   "assets": [],
+   "tag": "",
+   "release_page": "https://github.com/ArchipelagoMW/Archipelago/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "Play the OpenGOAL PC port, not the PS2 disc. Install the OpenGOAL Launcher, add the ArchipelaGOAL mod from it, then Compile. Start the game from Archipelago's own client, not from the OpenGOAL Launcher.",
+   "licence": "MIT",
+   "author": "markustulliuscicero",
+   "_source": "the world's own archipelago.json (bundled with Archipelago 0.6.7): game 'Jak and Daxter: The Precursor Legacy', authors ['markustulliuscicero'], world_version 1.1.5. Steps summarised from its docs/setup_en.md, read 26 Aug 2026."
+  },
+  {
+   "_v": 2,
+   "name": "Yacht Dice",
+   "source": "bundled",
+   "steam_appid": null,
+   "image": null,
+   "repo": "ArchipelagoMW/Archipelago",
+   "install": "bundled",
+   "assets": [],
+   "tag": "",
+   "release_page": "https://github.com/ArchipelagoMW/Archipelago/releases",
+   "apworld_url": null,
+   "mod_url": null,
+   "steps": "",
+   "licence": "MIT",
+   "author": "Spineraks",
+   "_source": "the world's own archipelago.json (bundled with Archipelago 0.6.7): game 'Yacht Dice', authors ['Spineraks'], world_version 2.1.4. It ships no client file -- there is no game to launch and nothing to bridge."
   }
  ],
  "_excluded": [
