@@ -1,6 +1,6 @@
 {
  "note": "Cover and banner ADDRESSES only. No artwork is stored in this repository; the launcher fetches these onto the player's own machine, and only after they have agreed to cover art at all.",
- "count": 500,
+ "count": 503,
  "covers": {
   "2048": "https://cdn.akamai.steamstatic.com/steam/apps/942050/library_600x900_2x.jpg",
   "7_days_to_die": "https://cdn.akamai.steamstatic.com/steam/apps/251570/library_600x900_2x.jpg",
@@ -202,6 +202,7 @@
   "ittle_dew_2": "https://cdn.akamai.steamstatic.com/steam/apps/395620/library_600x900_2x.jpg",
   "jak_2": "https://thumbnails.libretro.com/Sony%20-%20PlayStation%202/Named_Boxarts/Jak%20II%20%28USA%29%20%28En%2CJa%2CFr%2CDe%2CEs%2CIt%2CKo%29%20%28v1.00%29.png",
   "jak_3": "https://thumbnails.libretro.com/Sony%20-%20PlayStation%202/Named_Boxarts/Jak%203%20%28USA%29%20%28En%2CFr%2CDe%2CEs%2CIt%2CPt%2CRu%29.png",
+  "jak_and_daxter_the_precursor_legacy": "https://thumbnails.libretro.com/Sony%20-%20PlayStation%202/Named_Boxarts/Jak%20and%20Daxter%20-%20The%20Precursor%20Legacy%20%28USA%29%20%28En%2CFr%2CDe%2CEs%2CIt%29%20%28Rev%201%29.png",
   "kabuto_park_demo": "https://cdn.akamai.steamstatic.com/steam/apps/3493560/library_600x900_2x.jpg",
   "kdl3": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Kirby%27s%20Dream%20Land%203%20%28USA%29.png",
   "keep_talking_and_nobody_explodes": "https://cdn.akamai.steamstatic.com/steam/apps/341800/library_600x900_2x.jpg",
@@ -485,6 +486,7 @@
   "webfishing": "https://cdn.akamai.steamstatic.com/steam/apps/3146520/library_600x900_2x.jpg",
   "west_of_loathing": "https://cdn.akamai.steamstatic.com/steam/apps/597220/library_600x900_2x.jpg",
   "widget_inc": "https://cdn.akamai.steamstatic.com/steam/apps/3184110/library_600x900_2x.jpg",
+  "wind_waker": "https://thumbnails.libretro.com/Nintendo%20-%20GameCube/Named_Boxarts/Legend%20of%20Zelda%2C%20The%20-%20The%20Wind%20Waker%20%28USA%29.png",
   "witchspring_r": "https://cdn.akamai.steamstatic.com/steam/apps/1958220/library_600x900_2x.jpg",
   "xcom_2_war_of_the_chosen": "https://images.gog-statics.com/43fd2462f646a98b17c184a5d3f3d2e63a16b3707c0b09b9ae25d24bd1a8ca3a.jpg",
   "yarimono": "https://cdn.akamai.steamstatic.com/steam/apps/2696050/library_600x900_2x.jpg",
@@ -701,6 +703,7 @@
   "ittle_dew_2": "https://cdn.akamai.steamstatic.com/steam/apps/395620/library_hero.jpg",
   "jak_2": "https://thumbnails.libretro.com/Sony%20-%20PlayStation%202/Named_Titles/Jak%20II%20%28USA%29%20%28En%2CJa%2CFr%2CDe%2CEs%2CIt%2CKo%29%20%28v1.00%29.png",
   "jak_3": "https://thumbnails.libretro.com/Sony%20-%20PlayStation%202/Named_Titles/Jak%203%20%28USA%29%20%28En%2CFr%2CDe%2CEs%2CIt%2CPt%2CRu%29.png",
+  "jak_and_daxter_the_precursor_legacy": "https://thumbnails.libretro.com/Sony%20-%20PlayStation%202/Named_Titles/Jak%20and%20Daxter%20-%20The%20Precursor%20Legacy%20%28USA%29%20%28En%2CFr%2CDe%2CEs%2CIt%29%20%28Rev%201%29.png",
   "kabuto_park_demo": "https://cdn.akamai.steamstatic.com/steam/apps/3493560/library_hero.jpg",
   "kdl3": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Titles/Kirby%27s%20Dream%20Land%203%20%28USA%29.png",
   "keep_talking_and_nobody_explodes": "https://cdn.akamai.steamstatic.com/steam/apps/341800/library_hero.jpg",
@@ -970,6 +973,7 @@
   "webfishing": "https://cdn.akamai.steamstatic.com/steam/apps/3146520/library_hero.jpg",
   "west_of_loathing": "https://cdn.akamai.steamstatic.com/steam/apps/597220/library_hero.jpg",
   "widget_inc": "https://cdn.akamai.steamstatic.com/steam/apps/3184110/library_hero.jpg",
+  "wind_waker": "https://thumbnails.libretro.com/Nintendo%20-%20GameCube/Named_Titles/Legend%20of%20Zelda%2C%20The%20-%20The%20Wind%20Waker%20%28USA%29.png",
   "witchspring_r": "https://cdn.akamai.steamstatic.com/steam/apps/1958220/library_hero.jpg",
   "xcom_2_war_of_the_chosen": "https://cdn.akamai.steamstatic.com/steam/apps/593380/header.jpg",
   "yarimono": "https://cdn.akamai.steamstatic.com/steam/apps/2696050/library_hero.jpg",
@@ -1198,6 +1202,7 @@
   "ittle_dew_2": "Steam appid 395620",
   "jak_2": "libretro thumbnails: Sony - PlayStation 2/Jak II (USA) (En,Ja,Fr,De,Es,It,Ko) (v1.00).png [Named_Titles]",
   "jak_3": "libretro thumbnails: Sony - PlayStation 2/Jak 3 (USA) (En,Fr,De,Es,It,Pt,Ru).png [Named_Titles]",
+  "jak_and_daxter_the_precursor_legacy": "libretro thumbnails: Sony - PlayStation 2/Jak and Daxter - The Precursor Legacy (USA) (En,Fr,De,Es,It) (Rev 1).png [Named_Titles]",
   "kabuto_park_demo": "Steam appid 3493560 (search matched \"Kabuto Park Demo\")",
   "kdl3": "libretro thumbnails: Nintendo - Super Nintendo Entertainment System/Kirby's Dream Land 3 (USA).png [Named_Titles]",
   "keep_talking_and_nobody_explodes": "Steam appid 341800",
@@ -1488,6 +1493,7 @@
   "webfishing": "Steam appid 3146520",
   "west_of_loathing": "Steam appid 597220",
   "widget_inc": "Steam appid 3184110",
+  "wind_waker": "libretro thumbnails: Nintendo - GameCube/Legend of Zelda, The - The Wind Waker (USA).png [Named_Titles]",
   "witchspring_r": "Steam appid 1958220",
   "xcom_2_war_of_the_chosen": "Steam appid 593380 (search matched \"XCOM 2: War of the Chosen\") + GOG catalogue: \"XCOM® 2\"",
   "yarg_guitar_hero_rock_band": "deliberately left bare, see NEVER_GUESS",
@@ -1516,7 +1522,7 @@
   "itch.io",
   "hand-picked, listed in tools/harvest_art.py"
  ],
- "banner_count": 483,
+ "banner_count": 486,
  "deliberately_bare": [
   "cartograp",
   "crosswords",
@@ -1532,5 +1538,8 @@
   "doom_1993": "Steam saelger den nu som 'DOOM + DOOM II'. Samme appid 2280.",
   "pinball_fx3": "Steam kalder den nu 'Pinball FX Classic'. Samme appid 442120.",
   "duke_nukem_3d_atomic_edition": "appid 225140 svarer ikke i appdetails (afnoteret), men adressen leverer stadig kunsten."
+ },
+ "_never_search_steam": {
+  "yacht_dice": "Archipelago's Yacht Dice is a BROWSER game by Spineraks (yacht-dice-ap.netlify.app), read from the world's own setup_en.md 26 Aug 2026. A Steam search matches appid 1737690 'Yacht Dice' by GoodOldMan Studio -- a DIFFERENT, commercial game. Its box art must never sit on this card. Same failure as the JS Paint / Paint mix-up: a name is not an identity."
  }
 }
