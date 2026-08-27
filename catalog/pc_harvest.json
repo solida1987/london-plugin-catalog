@@ -9897,11 +9897,11 @@
    "author": "HarbourMasters",
    "mod_kind": "fan_port",
    "_mod_kind_source": "Ship of Harkinian is the Ocarina of Time decompilation running natively on PC; the player supplies their own ROM. Same game, rebuilt -- fan_port.",
-   "plugin_version": "1.4.0",
+   "plugin_version": "1.5.0",
    "description": "Ocarina of Time rebuilt to run natively on PC, with Archipelago built in. The download is the whole game -- but the Ship ships no copyrighted assets, so you supply your own Ocarina of Time ROM and the game turns it into the files it needs on first run.",
    "standalone_game": true,
    "game_exe": "soh.exe",
-   "bring_your_own": "Your own Ocarina of Time ROM",
+   "bring_your_own": "Ocarina of Time ROM",
    "bring_your_own_files": "*.z64,*.n64,*.v64,oot.o2r",
    "_standalone_source": "The release's Windows zip is the whole game (soh.exe, soh.o2r, assets/) and contains no oot.o2r -- read from SoH_Archipelago_1-4-2_Windows.zip, 27 Aug 2026. The readme states the player supplies their own copy."
   },
