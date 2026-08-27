@@ -26,10 +26,13 @@
     "_source": "GBA title; BizHawk is the backend London offers for it."
   },
   "client": {
-    "name": "Archipelago's BizHawk Client",
+    "name": "BizHawk Client",
     "lua": "data/lua/connector_bizhawk_generic.lua",
     "protocol": "bizhawk",
-    "_source": "the world's client subclasses BizHawkClient (read out of the world's own package, Meliacci/Archipelago, on 2026-08-26). ⚠ London must supply the RAM map for this shape - build_plugins.py refuses the game until Plugins/Scripts/games/gbapquest.lua exists."
+    "_source": "the world's client subclasses BizHawkClient (read out of the world's own package, Meliacci/Archipelago, on 2026-08-26). ⚠ London must supply the RAM map for this shape - build_plugins.py refuses the game until Plugins/Scripts/games/gbapquest.lua exists.",
+    "kind": "world",
+    "world_lua": "connector_bizhawk_generic.lua",
+    "_kind_source": "GBApquestclient.py subclasses Archipelago's generic BizHawk client, so AP's own \"BizHawk Client\" component drives it. ⚠ Its components.py DOES contain a Component(\"GBAPQuest Client\", ...) call -- but every line of it is commented out. A probe that greps for `Component(` reads that as a live registration; read 27 Aug 2026."
   },
   "apworld": {
     "bundled": false,

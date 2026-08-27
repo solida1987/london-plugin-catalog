@@ -12,7 +12,7 @@
   "description": "The zones of Sonic Advance 2 as a multiworld.",
   "_description_source": "written by us from the structure of the game - no text copied from the game itself",
   "checks_verified": false,
-  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Nobody has played this. London warns at launch until it is true.",
+  "_checks_verified_note": "FALSE. Buildable and installable, but nobody has played a check through it.",
   "requires": "own_copy",
   "_requires_source": "GBA title - the game lives on a cartridge or disc the player owns, and the setup guide tells the player to supply it: A North American copy of Sonic Advance 2 (A2NE should be printed on the bottom right of the cartridge label)",
   "rom": {
@@ -28,10 +28,14 @@
     "_source": "setup guide: \"Bizhawk 2.7 or later\" (it also allows mGBA with a connector script)"
   },
   "client": {
-    "name": "Archipelago's BizHawk Client",
+    "name": "BizHawk Client",
     "protocol": "bizhawk",
     "lua": "data/lua/connector_bizhawk_generic.lua",
-    "_source": "SCHEMA rule 1, read from the world itself: worlds/sadv2/Client.py, 2026-08-23 -- `class SonicAdvance2Client(BizHawkClient)` with `system = \"GBA\"`. The guide agrees: \"Archipelago's Bizhawk Client, which can be found in the Archipelago Launcher\". ⚠ Rule 2 is NOT satisfied: no RAM map Plugins/Scripts/games/sonic_advance_2.lua exists, so the build refuses this manifest until one is written."
+    "_source": "SCHEMA rule 1, read from the world itself: worlds/sadv2/Client.py, 2026-08-23 -- `class SonicAdvance2Client(BizHawkClient)` with `system = \"GBA\"`. The guide agrees: \"Archipelago's Bizhawk Client, which can be found in the Archipelago Launcher\". ⚠ Rule 2 is NOT satisfied: no RAM map Plugins/Scripts/games/sonic_advance_2.lua exists, so the build refuses this manifest until one is written.",
+    "kind": "world",
+    "world_lua": "connector_bizhawk_generic.lua",
+    "_kind_source": "⭐ The world does NOT register a client of its own -- it subclasses Archipelago's generic BizHawk client (worlds._bizhawk / BizHawkClient), which Archipelago drives through its own \"BizHawk Client\" component. So there is nothing for London to write: it installs the apworld, starts that component with --connect, and hands BizHawk the generic connector. Verified 27 Aug 2026 by running the component: it created logs/BizHawkClient_*.txt and attempted the connection. ⚠ This is the shape that has been miscounted twice -- the old survey called it \"NO CLIENT\", and a later probe called it \"needs a RAM map\". Both made the cheapest games look like the most expensive.",
+    "_world_lua_source": "Archipelago's own generic connector, which ships in its data/lua/. London installs it for the emulator so the player never loads a script by hand."
   },
   "apworld": {
     "bundled": false,

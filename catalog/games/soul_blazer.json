@@ -13,7 +13,7 @@
   "description": "The sealed world and its freed souls as a multiworld.",
   "_description_source": "written by us from the structure of the game - no text copied from the game itself",
   "checks_verified": false,
-  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Nobody has played this. London warns at launch until it is true.",
+  "_checks_verified_note": "FALSE. Buildable, but nobody has played a check through it.",
   "requires": "own_copy",
   "_requires_source": "SNES title - the game lives on a cartridge or disc the player owns, and the setup guide tells the player to supply it: A legally obtained Soul Blazer US ROM, probably named `Soul Blazer (USA).sfc`",
   "rom": {
@@ -32,10 +32,12 @@
     "_source": "setup guide: \"RetroArch 1.10.3 or newer\", with the warning that \"RetroArch 1.9.x will not work as it is older than 1.10.3.\""
   },
   "client": {
-    "name": "Archipelago's SNI Client",
+    "name": "SNI Client",
     "protocol": "sni",
     "lua": null,
-    "_source": "SCHEMA rule 1, read from the world itself: worlds/soulblazer/Client.py, 2026-08-23 -- `class SoulBlazerSNIClient(SNIClient)`. ⚠ The setup guide is NOT usable for this: its connection section still tells the player about \"the Donkey Kong Country 3 Client\", which is a copy-paste left in the author's guide. The world's own code was used instead. ⚠ Recording the world's OWN transport. London does not run upstream's client -- see catalog/games/smw.json, where an SNIClient world is driven by a BizHawk RAM map instead and the protocol was set to bizhawk for that reason. Whoever writes this game's RAM map must set the protocol to match the bridge the map actually targets. ⚠ Rule 2 is NOT satisfied: no RAM map Plugins/Scripts/games/soul_blazer.lua exists, so the build refuses this manifest."
+    "_source": "SCHEMA rule 1, read from the world itself: worlds/soulblazer/Client.py, 2026-08-23 -- `class SoulBlazerSNIClient(SNIClient)`. ⚠ The setup guide is NOT usable for this: its connection section still tells the player about \"the Donkey Kong Country 3 Client\", which is a copy-paste left in the author's guide. The world's own code was used instead. ⚠ Recording the world's OWN transport. London does not run upstream's client -- see catalog/games/smw.json, where an SNIClient world is driven by a BizHawk RAM map instead and the protocol was set to bizhawk for that reason. Whoever writes this game's RAM map must set the protocol to match the bridge the map actually targets. ⚠ Rule 2 is NOT satisfied: no RAM map Plugins/Scripts/games/soul_blazer.lua exists, so the build refuses this manifest.",
+    "kind": "world",
+    "_kind_source": "The world subclasses Archipelago's own SNI client (SNIClient / SNIContext / snes_read), so AP's \"SNI Client\" component drives it over SNI -- there is no client of its own to register and nothing for London to write. Read out of the package's source 27 Aug 2026."
   },
   "apworld": {
     "bundled": false,

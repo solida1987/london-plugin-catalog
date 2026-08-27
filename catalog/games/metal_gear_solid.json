@@ -12,7 +12,7 @@
   "description": "Shadow Moses as a multiworld.",
   "_description_source": "written by us from the structure of the game - no text copied from the game itself",
   "checks_verified": false,
-  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Nobody has played this. London warns at launch until it is true.",
+  "_checks_verified_note": "FALSE. Buildable, but nobody has played a check through it.",
   "requires": "own_copy",
   "_requires_source": "PSX title - the game lives on a cartridge or disc the player owns, and the setup guide tells the player to supply it: A legally obtained Metal Gear Solid ROM (Disc 1 and Disc 2)",
   "rom": {
@@ -28,10 +28,12 @@
     "_source": "setup guide: \"BizHawk\", of which \"the 2.9.1 version is recommended\". A recommendation is not a minimum, so no minimum is recorded."
   },
   "client": {
-    "name": "Archipelago's BizHawk Client",
+    "name": "MGS Client",
     "protocol": "bizhawk",
     "lua": "data/lua/connector_bizhawk_generic.lua",
-    "_source": "SCHEMA rule 1, read from the world itself: worlds/mgs/Client.py, 2026-08-23 -- `class MetalGearSolidClient(BizHawkClient)` with `system = \"PSX\"` and `patch_suffix = \".apmgs\"`. The guide agrees: \"open, the `BizHawk Client`\". ⚠ Rule 2 is NOT satisfied: no RAM map Plugins/Scripts/games/metal_gear_solid.lua exists, so the build refuses this manifest until one is written."
+    "_source": "SCHEMA rule 1, read from the world itself: worlds/mgs/Client.py, 2026-08-23 -- `class MetalGearSolidClient(BizHawkClient)` with `system = \"PSX\"` and `patch_suffix = \".apmgs\"`. The guide agrees: \"open, the `BizHawk Client`\". ⚠ Rule 2 is NOT satisfied: no RAM map Plugins/Scripts/games/metal_gear_solid.lua exists, so the build refuses this manifest until one is written.",
+    "kind": "world",
+    "_kind_source": "The world registers its own Archipelago client: `Component(\"MGS Client\", ...)`, read out of the package's own source 27 Aug 2026. London installs the apworld and starts that component; it carries the code that talks to the emulator."
   },
   "apworld": {
     "bundled": false,

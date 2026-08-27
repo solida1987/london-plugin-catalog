@@ -1,6 +1,6 @@
 {
   "note": "Which London plugin covers which Archipelago game. Addresses and metadata only.",
-  "count": 756,
+  "count": 795,
   "games": {
     "A Bug's Life": {
       "id": "a_bug_s_life",
@@ -44,6 +44,12 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/am2r.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
+    "Animal Crossing: Wild World": {
+      "id": "animal_crossing_wild_world",
+      "platform": "DS",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ds/animal_crossing_wild_world.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
     "Ape Escape 2": {
       "id": "ape_escape2",
       "platform": "PS2",
@@ -62,10 +68,46 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/n64/banjo_tooie.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
+    "Blue Sphere": {
+      "id": "blue_sphere",
+      "platform": "GEN",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/sega/blue_sphere.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Bomberman 64": {
+      "id": "bomberman_64",
+      "platform": "N64",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/n64/bomberman_64.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Bomberman Quest": {
+      "id": "bomberman_quest",
+      "platform": "GBC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gb-gbc/bomberman_quest.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Brave Fencer Musashi": {
+      "id": "brave_fencer_musashi",
+      "platform": "PSX",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ps1/brave_fencer_musashi.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Bubble Bobble": {
+      "id": "bubble_bobble",
+      "platform": "NES",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/nes/bubble_bobble.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
     "Burnout 3": {
       "id": "burnout3",
       "platform": "PS2",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ps2/burnout3.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Castlevania - Aria of Sorrow": {
+      "id": "castlevania_aria_of_sorrow",
+      "platform": "GBA",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/castlevania_aria_of_sorrow.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Castlevania - Circle of the Moon": {
@@ -98,10 +140,22 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ps1/crash2.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
+    "Crash Bash": {
+      "id": "crash_bash",
+      "platform": "PSX",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ps1/crash_bash.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
     "Crazy Taxi": {
       "id": "crazy_taxi",
       "platform": "GC",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gamecube/crazy_taxi.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Crystalis": {
+      "id": "crystalis",
+      "platform": "NES",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/nes/crystalis.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Chrono Trigger": {
@@ -170,6 +224,12 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/snes/donkey_kong_toluca.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
+    "DQ2": {
+      "id": "dq2",
+      "platform": "NES",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/nes/dq2.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
     "Dragon Ball Z Budokai 3": {
       "id": "dragon_ball_z_budokai_3",
       "platform": "PS2",
@@ -182,10 +242,28 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ps2/dragon_ball_z_budokai_tenkaichi_2.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
+    "Dragon Quest IX": {
+      "id": "dragon_quest_ix",
+      "platform": "DS",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ds/dragon_quest_ix.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Dragon Quest Monsters 2": {
+      "id": "dragon_quest_monsters_2",
+      "platform": "GBC",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gb-gbc/dragon_quest_monsters_2.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
     "Dragon Warrior": {
       "id": "dragon_warrior",
       "platform": "NES",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/nes/dragon_warrior.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Etrian Odyssey": {
+      "id": "etrian_odyssey",
+      "platform": "DS",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ds/etrian_odyssey.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Faxanadu": {
@@ -234,6 +312,12 @@
       "id": "gauntlet_legends",
       "platform": "N64",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/n64/gauntlet_legends.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "GBAPQuest": {
+      "id": "gbapquest",
+      "platform": "GBA",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/gbapquest.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Glover": {
@@ -308,6 +392,18 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ds/kirby_squeak_squad.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
+    "Kirby Super Star": {
+      "id": "kirby_super_star",
+      "platform": "SNES",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/snes/kirby_super_star.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Kirby & The Amazing Mirror": {
+      "id": "kirby_the_amazing_mirror",
+      "platform": "GBA",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/kirby_the_amazing_mirror.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
     "Links Awakening DX": {
       "id": "ladx",
       "platform": "GBC",
@@ -344,6 +440,12 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/wii/marbles_balance_challenge.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
+    "Mario and Luigi Dream Team": {
+      "id": "mario_and_luigi_dream_team",
+      "platform": "3DS",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/3ds/mario_and_luigi_dream_team.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
     "Mario is Missing": {
       "id": "mario_is_missing",
       "platform": "SNES",
@@ -360,6 +462,12 @@
       "id": "mario_luigi_superstar_saga",
       "platform": "GBA",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/mario_luigi_superstar_saga.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Mario Party Advance": {
+      "id": "mario_party_advance",
+      "platform": "GBA",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/mario_party_advance.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Mario Sports Mix": {
@@ -422,6 +530,12 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/snes/mega_man_x3.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
+    "Metal Gear Solid": {
+      "id": "metal_gear_solid",
+      "platform": "PSX",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ps1/metal_gear_solid.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
     "Metroid Fusion": {
       "id": "metroid_fusion",
       "platform": "GBA",
@@ -444,6 +558,12 @@
       "id": "metroid_zero_mission",
       "platform": "GBA",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/metroid_zero_mission.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "MGS: Masala Garden Salad": {
+      "id": "mgs_masala_garden_salad",
+      "platform": "PSX",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ps1/mgs_masala_garden_salad.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "The Minish Cap": {
@@ -506,6 +626,12 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ds/new_super_mario_bros_ds.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
+    "Nicktoons: Battle for Volcano Island": {
+      "id": "nicktoons_battle_for_volcano_island",
+      "platform": "GBA",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/nicktoons_battle_for_volcano_island.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
     "NSMBW": {
       "id": "nsmbw",
       "platform": "Wii",
@@ -528,6 +654,12 @@
       "id": "perfect_dark",
       "platform": "PC",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/perfect_dark.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Phantasy Star II": {
+      "id": "phantasy_star_ii",
+      "platform": "GEN",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/sega/phantasy_star_ii.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Pikmin 2": {
@@ -566,6 +698,18 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/pokemon_frlg.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
+    "Pokemon HeartGold and SoulSilver": {
+      "id": "pokemon_heartgold_and_soulsilver",
+      "platform": "DS",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ds/pokemon_heartgold_and_soulsilver.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Pokemon HGSS": {
+      "id": "pokemon_hgss",
+      "platform": "DS",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ds/pokemon_hgss.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
     "Pokemon Platinum": {
       "id": "pokemon_platinum",
       "platform": "DS",
@@ -578,6 +722,12 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gb-gbc/pokemon_rb.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
+    "Pokemon Stadium": {
+      "id": "pokemon_stadium",
+      "platform": "N64",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/n64/pokemon_stadium.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
     "Ratchet & Clank 2": {
       "id": "rac2",
       "platform": "PS2",
@@ -588,6 +738,12 @@
       "id": "racsm",
       "platform": "PS2",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ps2/racsm.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Rhythm Tengoku": {
+      "id": "rhythm_tengoku",
+      "platform": "GBA",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/rhythm_tengoku.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Road Trip Adventure": {
@@ -698,6 +854,18 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/sega/sonic1.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
+    "Sonic Advance 2": {
+      "id": "sonic_advance_2",
+      "platform": "GBA",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/sonic_advance_2.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Sonic Colours (DS)": {
+      "id": "sonic_colours_ds",
+      "platform": "DS",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ds/sonic_colours_ds.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
     "Sonic Riders": {
       "id": "sonic_riders",
       "platform": "GC",
@@ -708,6 +876,12 @@
       "id": "sotn",
       "platform": "PSX",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ps1/sotn.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Soul Blazer": {
+      "id": "soul_blazer",
+      "platform": "SNES",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/snes/soul_blazer.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Spyro 2": {
@@ -746,6 +920,12 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gamecube/star_fox_adventures.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
+    "Streets of Rage": {
+      "id": "streets_of_rage",
+      "platform": "GEN",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/sega/streets_of_rage.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
     "Super Junkoid": {
       "id": "super_junkoid",
       "platform": "SNES",
@@ -770,6 +950,12 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/snes/super_metroid.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
+    "Super Smash Bros. 64": {
+      "id": "super_smash_bros_64",
+      "platform": "N64",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/n64/super_smash_bros_64.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
     "Super Smash Bros. Brawl - The Subspace Emissary": {
       "id": "super_smash_bros_brawl_the_subspace_emissary",
       "platform": "Wii",
@@ -786,6 +972,18 @@
       "id": "tetris_attack",
       "platform": "SNES",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/snes/tetris_attack.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "The Grinch": {
+      "id": "the_grinch",
+      "platform": "PSX",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ps1/the_grinch.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "The Guardian Legend": {
+      "id": "the_guardian_legend",
+      "platform": "NES",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/nes/the_guardian_legend.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "The Legend of Spyro: Dawn of the Dragon": {
@@ -818,6 +1016,12 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ds/tloz_st.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
+    "ToeJam and Earl": {
+      "id": "toejam_and_earl",
+      "platform": "GEN",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/sega/toejam_and_earl.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
     "Tomba!": {
       "id": "tomba",
       "platform": "PSX",
@@ -848,10 +1052,22 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gamecube/twilight_princess.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
+    "Ufouria": {
+      "id": "ufouria",
+      "platform": "NES",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/nes/ufouria.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
     "Vagrant Story": {
       "id": "vagrant_story",
       "platform": "PSX",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ps1/vagrant_story.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Voltorb Flip": {
+      "id": "voltorb_flip",
+      "platform": "DS",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ds/voltorb_flip.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Wario Land 3": {
@@ -864,6 +1080,12 @@
       "id": "wario_land_4",
       "platform": "GBA",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/wario_land_4.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "WarioWare, Inc. - Mega Microgame$!": {
+      "id": "warioware_inc_mega_microgame",
+      "platform": "GBA",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/warioware_inc_mega_microgame.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Warioworld": {
@@ -882,6 +1104,24 @@
       "id": "xenoblade_x",
       "platform": "WIIU",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/wiiu/xenoblade_x.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Yu-Gi-Oh! Dungeon Dice Monsters": {
+      "id": "yugioh_ddm",
+      "platform": "GBA",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/gba/yugioh_ddm.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Yu-Gi-Oh! Forbidden Memories": {
+      "id": "yu_gi_oh_forbidden_memories",
+      "platform": "PSX",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ps1/yu_gi_oh_forbidden_memories.londonplugin",
+      "page": "https://github.com/solida1987/london-plugin-catalog/releases"
+    },
+    "Yu-Gi-Oh! World Championship 2008": {
+      "id": "yu_gi_oh_world_championship_2008",
+      "platform": "DS",
+      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/ds/yu_gi_oh_world_championship_2008.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
     "Yu-Gi-Oh! 2006": {
@@ -2731,12 +2971,6 @@
       "platform": "PC",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/meritous.londonplugin",
       "page": "https://github.com/ArchipelagoMW/Archipelago/releases"
-    },
-    "Metal Gear Solid": {
-      "id": "metal_gear_solid",
-      "platform": "PC",
-      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/metal_gear_solid.londonplugin",
-      "page": "https://github.com/SDMichaud/Archipelago-MGS/releases"
     },
     "Metal: Hellsinger": {
       "id": "metal_hellsinger",

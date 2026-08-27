@@ -12,7 +12,7 @@
   "description": "",
   "_description_note": "Left empty rather than invented. Write it from the world's own docs before release.",
   "checks_verified": false,
-  "_checks_verified_note": "FALSE. Nobody has played this through London.",
+  "_checks_verified_note": "FALSE. Buildable, but nobody has played a check through it.",
   "requires": "own_copy",
   "rom": {
     "description": "Your own Brave Fencer Musashi copy",
@@ -26,10 +26,12 @@
     "_source": "PSX title; BizHawk is the backend London offers for it."
   },
   "client": {
-    "name": "Archipelago's BizHawk Client",
+    "name": "BFM Client",
     "lua": "data/lua/connector_bizhawk_generic.lua",
     "protocol": "bizhawk",
-    "_source": "the world's client subclasses BizHawkClient (read out of the world's own package, AegeusEvander/Brave-Fencer-Musashi-AP-World, on 2026-08-26). ⚠ London must supply the RAM map for this shape - build_plugins.py refuses the game until Plugins/Scripts/games/brave_fencer_musashi.lua exists."
+    "_source": "the world's client subclasses BizHawkClient (read out of the world's own package, AegeusEvander/Brave-Fencer-Musashi-AP-World, on 2026-08-26). ⚠ London must supply the RAM map for this shape - build_plugins.py refuses the game until Plugins/Scripts/games/brave_fencer_musashi.lua exists.",
+    "kind": "world",
+    "_kind_source": "The world registers its own Archipelago client: `Component(\"BFM Client\", ...)`, read out of the package's own source 27 Aug 2026. London installs the apworld and starts that component; it carries the code that talks to the emulator."
   },
   "apworld": {
     "bundled": false,

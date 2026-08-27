@@ -12,7 +12,7 @@
   "description": "Dream Land's sub-games and treasures as a multiworld.",
   "_description_source": "written by us from the structure of the game - no text copied from the game itself",
   "checks_verified": false,
-  "_checks_verified_note": "Stays false until the RAM map has been MEASURED in-game. Nobody has played this. London warns at launch until it is true.",
+  "_checks_verified_note": "FALSE. Buildable, but nobody has played a check through it.",
   "requires": "own_copy",
   "_requires_source": "SNES title - the game lives on a cartridge or disc the player owns, and the setup guide tells the player to supply it: A Kirby Super Star ROM, probably named `Kirby Super Star (U).sfc`",
   "rom": {
@@ -32,10 +32,12 @@
     "_source": "The guide names four acceptable emulators and no version for any of them: snes9x-emunwa, snes9x-rr, BizHawk and bsnes-plus-nwa. Picking one of them here would be our judgement, not the guide's, so the field stays null."
   },
   "client": {
-    "name": "Archipelago's SNI Client",
+    "name": "SNI Client",
     "protocol": "sni",
     "lua": null,
-    "_source": "SCHEMA rule 1, read from the world itself: Silvris/Archipelago (branch kss) worlds/kss/client.py, 2026-08-23 -- `class KSSSNIClient(SNIClient)`. The guide agrees, describing SNIClient launching automatically. ⚠ Recording the world's OWN transport. London does not run upstream's client -- see catalog/games/smw.json, where an SNIClient world is driven by a BizHawk RAM map instead and the protocol was set to bizhawk for that reason. Whoever writes this game's RAM map must set the protocol to match the bridge the map actually targets. ⚠ Rule 2 is NOT satisfied either: no RAM map Plugins/Scripts/games/kirby_super_star.lua exists, so the build refuses this manifest."
+    "_source": "SCHEMA rule 1, read from the world itself: Silvris/Archipelago (branch kss) worlds/kss/client.py, 2026-08-23 -- `class KSSSNIClient(SNIClient)`. The guide agrees, describing SNIClient launching automatically. ⚠ Recording the world's OWN transport. London does not run upstream's client -- see catalog/games/smw.json, where an SNIClient world is driven by a BizHawk RAM map instead and the protocol was set to bizhawk for that reason. Whoever writes this game's RAM map must set the protocol to match the bridge the map actually targets. ⚠ Rule 2 is NOT satisfied either: no RAM map Plugins/Scripts/games/kirby_super_star.lua exists, so the build refuses this manifest.",
+    "kind": "world",
+    "_kind_source": "The world subclasses Archipelago's own SNI client (SNIClient / SNIContext / snes_read), so AP's \"SNI Client\" component drives it over SNI -- there is no client of its own to register and nothing for London to write. Read out of the package's source 27 Aug 2026."
   },
   "apworld": {
     "bundled": false,
