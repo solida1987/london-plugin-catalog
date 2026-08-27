@@ -1,0 +1,59 @@
+{
+  "id": "gauntlet_legends",
+  "display_name": "Gauntlet Legends",
+  "subtitle": "RetroArch",
+  "_subtitle_source": "subtitle names the backend the player will run. The world's own setup guide: \"Retroarch is only emulator this client will accept.\"",
+  "platform": "N64",
+  "_platform_source": "Archipelago wiki platform category (https://archipelago.miraheze.org/wiki/Gauntlet_Legends)",
+  "version": "1.0.0",
+  "_verified": "2026-08-26",
+  "ap_world_name": "Gauntlet Legends",
+  "_ap_world_name_source": "the world's own `game` value, read out of the world's own package, jamesbrq/GauntletLegendsAP, on 2026-08-26",
+  "description": "",
+  "_description_note": "Left empty rather than invented. Write it from the world's own docs before release.",
+  "checks_verified": false,
+  "_checks_verified_note": "FALSE. The bridge is new and nobody has played a check through it. Its IsReady is false for the same reason.",
+  "requires": "own_copy",
+  "rom": {
+    "description": "Your own Gauntlet Legends copy",
+    "md5": [
+      "9cb963e8b71f18568f78ec1af120362e"
+    ],
+    "size": null,
+    "_md5_source": "the 1 hash(es) the world's own code checks against, read out of the world's own package, jamesbrq/GauntletLegendsAP, on 2026-08-26"
+  },
+  "emulator": {
+    "name": "RetroArch",
+    "_source": "the world's own docs/setup_en.md: \"Retroarch is only emulator this client will accept.\" Its client launches retroarch.exe with cores/mupen64plus_next_libretro.dll."
+  },
+  "client": {
+    "name": "Gauntlet Legends Client",
+    "kind": "world",
+    "protocol": "retroarch",
+    "lua": null,
+    "_kind_source": "The world registers its own Archipelago client and carries the code that talks to the emulator, so London installs the apworld and starts the emulator only. Its own registration, read from the package's __init__.py: `Component(\"Gauntlet Legends Client\", func=launch_client, component_type=Type.CLIENT, file_identifier=SuffixIdentifier(\".apgl\"))`",
+    "_protocol_source": "measured in the world's own gl/GauntletLegendsClient.py: a UDP socket to 127.0.0.1:55355 speaking READ_CORE_RAM / WRITE_CORE_RAM. ⚠ It uses READ_CORE_RAM (core-relative), NOT READ_CORE_MEMORY (system-bus) -- the two read different address spaces."
+  },
+  "apworld": {
+    "bundled": false,
+    "url": "https://github.com/jamesbrq/GauntletLegendsAP/releases",
+    "world_version": "2.1.6",
+    "min_ap": "0.6.6",
+    "_source": "the author's own releases page, read 26 Aug 2026 (jamesbrq/GauntletLegendsAP)"
+  },
+  "patch_extension": "unaudited",
+  "_patch_extension_source": "searched every .py in the package, read out of the world's own package, jamesbrq/GauntletLegendsAP, on 2026-08-26",
+  "credits": {
+    "plugin_by": "solida1987",
+    "world_by": {
+      "name": "jamesbrq",
+      "url": "https://github.com/jamesbrq/GauntletLegendsAP",
+      "licence": "NOASSERTION",
+      "_name_source": "the world names them itself in archipelago.json",
+      "_licence_source": "GitHub's own classification of the repository's LICENSE, read 26 Aug 2026"
+    },
+    "game_by": null,
+    "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its authors' work. Only the plugin itself is by solida1987."
+  },
+  "_bridge_note": "London's RetroArch bridge was written for this game (extensions/retroarch). It also turns on RetroArch's network commands and sets the N64 core's CountPerOp=1 -- two steps the world's guide asks the player to do by hand."
+}

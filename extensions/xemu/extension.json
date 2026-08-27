@@ -1,0 +1,13 @@
+{
+  "apiVersion": 1,
+  "extensionId": "xemu_bridge",
+  "displayName": "xemu",
+  "protocol": "xemu",
+  "version": "0.1.0",
+  "author": "Solida Games",
+  "authorContact": "https://github.com/solida1987/london-plugin-catalog",
+  "assembly": "CatalogXemuBridge.dll",
+  "entryType": "LauncherV2.Extensions.Xemu.XemuBridge",
+  "homepageUrl": "https://xemu.app",
+  "rulesAcknowledged": true
+}

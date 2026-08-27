@@ -1,0 +1,13 @@
+{
+  "apiVersion": 1,
+  "extensionId": "cemu_bridge",
+  "displayName": "Cemu",
+  "protocol": "cemu",
+  "version": "0.1.0",
+  "author": "Solida Games",
+  "authorContact": "https://github.com/solida1987/london-plugin-catalog",
+  "assembly": "CatalogCemuBridge.dll",
+  "entryType": "LauncherV2.Extensions.Cemu.CemuBridge",
+  "homepageUrl": "https://cemu.info",
+  "rulesAcknowledged": true
+}

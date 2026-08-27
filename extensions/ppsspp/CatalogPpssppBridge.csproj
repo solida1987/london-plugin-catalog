@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- The PCSX2 PINE bridge as an installable extension. Protocol only: the -->
+  <!-- player installs PCSX2 themselves.                                     -->
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>CatalogPpssppBridge</AssemblyName>
+    <RootNamespace>LauncherV2.Extensions.Ppsspp</RootNamespace>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <Version>0.1.0</Version>
+    <Company>Solida Games</Company>
+    <Product>PPSSPP bridge extension for Multiworld Launcher</Product>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Private=false for the same reason a plugin does it: the launcher      -->
+    <!-- already has IEmulatorBridge loaded, and a second copy here would make  -->
+    <!-- the interface in this assembly a DIFFERENT type from the host's, so    -->
+    <!-- the cast in BridgeRegistry would fail on a type that visibly           -->
+    <!-- implements it.                                                         -->
+    <ProjectReference Include="..\..\..\Multiworld-Launcher\LauncherV2.csproj"
+                      Private="false" ExcludeAssets="runtime" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="extension.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- The proof harness lives in proof\ and is a project of its own. Without -->
+    <!-- this the bridge globs its generated AssemblyInfo and fails to build.   -->
+    <Compile Remove="proof\**" />
+    <None    Remove="proof\**" />
+  </ItemGroup>
+
+</Project>

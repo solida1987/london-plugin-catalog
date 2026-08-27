@@ -1,0 +1,13 @@
+{
+  "apiVersion": 1,
+  "extensionId": "retroarch_bridge",
+  "displayName": "RetroArch",
+  "protocol": "retroarch",
+  "version": "0.1.0",
+  "author": "Solida Games",
+  "authorContact": "https://github.com/solida1987/london-plugin-catalog",
+  "assembly": "CatalogRetroArchBridge.dll",
+  "entryType": "LauncherV2.Extensions.RetroArch.RetroArchBridge",
+  "homepageUrl": "https://www.retroarch.com",
+  "rulesAcknowledged": true
+}
