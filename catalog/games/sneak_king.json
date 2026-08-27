@@ -54,5 +54,5 @@
     "game_by": null,
     "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its authors' work. Only the plugin itself is by solida1987."
   },
-  "_manual_setup_note": "⚠ xemu needs your own Xbox BIOS and hard-disk image, set in Settings -> System."
+  "_manual_setup_note": "⚠ xemu needs your own Xbox BIOS and hard-disk image, set in Settings -> System. London starts xemu with the disc already mounted (-dvd_path, read out of xemu's own system/vl.c) but ships neither of those files and never will."
 }

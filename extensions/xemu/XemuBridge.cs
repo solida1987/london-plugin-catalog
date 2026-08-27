@@ -75,7 +75,17 @@ public sealed class XemuBridge : IEmulatorBridge
         if (exe is null) return null;
 
         string args = $"-dvd_path \"{context.RomPath}\"";
-        if (context.Fullscreen) args += " --fullscreen";
+
+        // ⚠⚠ -full-screen, NOT --fullscreen.
+        //
+        // xemu is QEMU underneath and inherits its argument spelling:
+        // qemu-options.hx declares DEF("full-screen", 0, QEMU_OPTION_full_screen).
+        // The double-dashed spelling every other emulator here uses would be
+        // rejected outright and xemu would die on the command line before the
+        // disc was ever opened -- exactly how BizHawk died on an empty --lua.
+        // Read out of xemu's own source 27 Aug 2026, along with -dvd_path
+        // (system/vl.c, which overrides the configured disc from argv).
+        if (context.Fullscreen) args += " -full-screen";
 
         return new LaunchPlan(exe, args, Path.GetDirectoryName(exe)!,
                               new Dictionary<string, string>());

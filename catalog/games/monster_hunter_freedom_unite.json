@@ -54,5 +54,5 @@
     "game_by": null,
     "_note": "The game is the property of its publisher and is never distributed here; the player supplies their own copy. The Archipelago world is its authors' work. Only the plugin itself is by solida1987."
   },
-  "_manual_setup_note": "⚠ PPSSPP's \"Allow remote debugger\" is off by default and the world needs it."
+  "_manual_setup_note": "Nothing. London turns PPSSPP's remote debugger on itself by writing RemoteDebuggerOnStartup=True into ppsspp.ini -- the step this world's guide asks the player to do by hand in Tools -> Developer tools."
 }
