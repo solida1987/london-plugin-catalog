@@ -1,6 +1,6 @@
 {
   "note": "The launcher's store window. Addresses and metadata only — no artwork and no code is stored here. Installing still runs the launcher's own consent flow.",
-  "count": 796,
+  "count": 794,
   "platforms": [
     "Atari 2600",
     "Browser",
@@ -13049,32 +13049,6 @@
       "stability": "Unstable"
     },
     {
-      "id": "mega_man_1",
-      "name": "Mega Man 1",
-      "ap_world_name": "Mega Man 1",
-      "subtitle": "PC",
-      "description": "",
-      "platform": "PC",
-      "platform_label": "PC",
-      "family": "PC",
-      "genres": [
-        "Adventure"
-      ],
-      "version": "mm4_0.1.1",
-      "world_by": "Silvris",
-      "mod_kind": null,
-      "world_licence": "NOASSERTION",
-      "plugin_by": "solida1987",
-      "cover": "https://thumbnails.libretro.com/Nintendo%20-%20Nintendo%20Entertainment%20System/Named_Boxarts/Mega%20Man%20%28USA%29.png",
-      "install_kind": "apworld_only",
-      "tested": false,
-      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/mega_man_1.londonplugin",
-      "page": "https://github.com/Silvris/Archipelago/releases",
-      "banner": "https://thumbnails.libretro.com/Nintendo%20-%20Nintendo%20Entertainment%20System/Named_Titles/Mega%20Man%20%28USA%29.png",
-      "section": "unstable",
-      "stability": "Unstable"
-    },
-    {
       "id": "mega_man_4",
       "name": "Mega Man 4",
       "ap_world_name": "Mega Man 4",
@@ -16455,32 +16429,6 @@
       "stability": "Stable"
     },
     {
-      "id": "ship_of_harkinian",
-      "name": "Ship of Harkinian",
-      "ap_world_name": "Ship of Harkinian",
-      "subtitle": "PC",
-      "description": "",
-      "platform": "PC",
-      "platform_label": "PC",
-      "family": "PC",
-      "genres": [
-        "Adventure"
-      ],
-      "version": "1.4.1",
-      "world_by": "aMannus, jeromkiller, ScipioWright, Fanta-Tanked, Sam, DaComputerNerd717, A-Green-Spoon, StuBob, Tzuf23, mattman107, Varuuna, Lorithan, BootsinSoots, briaguya, Sirius902, ThatHypedPerson",
-      "mod_kind": null,
-      "world_licence": "NOASSERTION",
-      "plugin_by": "solida1987",
-      "cover": null,
-      "install_kind": "apworld_only",
-      "tested": false,
-      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/ship_of_harkinian.londonplugin",
-      "page": "https://github.com/HarbourMasters/Archipelago-SoH/releases",
-      "banner": null,
-      "section": "unstable",
-      "stability": "Unknown"
-    },
-    {
       "id": "shivers",
       "name": "Shivers",
       "ap_world_name": "Shivers",
@@ -18173,7 +18121,7 @@
     {
       "id": "the_legend_of_zelda_ocarina_of_time_ship_of_harkinian",
       "name": "The Legend of Zelda: Ocarina of Time (Ship of Harkinian)",
-      "ap_world_name": "The Legend of Zelda: Ocarina of Time (Ship of Harkinian)",
+      "ap_world_name": "Ship of Harkinian",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",

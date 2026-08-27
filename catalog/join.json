@@ -1,6 +1,6 @@
 {
   "note": "Which London plugin covers which Archipelago game. Addresses and metadata only.",
-  "count": 795,
+  "count": 793,
   "games": {
     "A Bug's Life": {
       "id": "a_bug_s_life",
@@ -2942,12 +2942,6 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/marble_it_up_ultra.londonplugin",
       "page": "https://github.com/KitLemonfoot/ArchipelagoMIUU/releases"
     },
-    "Mega Man 1": {
-      "id": "mega_man_1",
-      "platform": "PC",
-      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/mega_man_1.londonplugin",
-      "page": "https://github.com/Silvris/Archipelago/releases"
-    },
     "Mega Man 4": {
       "id": "mega_man_4",
       "platform": "PC",
@@ -3728,12 +3722,6 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/shellipelago.londonplugin",
       "page": "https://github.com/solida1987/london-plugin-catalog/releases"
     },
-    "Ship of Harkinian": {
-      "id": "ship_of_harkinian",
-      "platform": "PC",
-      "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/ship_of_harkinian.londonplugin",
-      "page": "https://github.com/HarbourMasters/Archipelago-SoH/releases"
-    },
     "Shivers": {
       "id": "shivers",
       "platform": "PC",
@@ -4124,7 +4112,7 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/the_legend_of_heroes_trails_in_the_sky_the_3rd.londonplugin",
       "page": "https://github.com/Archipelago-Trails-in-the-Sky-the-3rd/Archipelago-Trails-in-the-Sky-the-3rd/releases"
     },
-    "The Legend of Zelda: Ocarina of Time (Ship of Harkinian)": {
+    "Ship of Harkinian": {
       "id": "the_legend_of_zelda_ocarina_of_time_ship_of_harkinian",
       "platform": "PC",
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/the_legend_of_zelda_ocarina_of_time_ship_of_harkinian.londonplugin",

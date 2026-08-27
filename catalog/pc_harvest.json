@@ -495,7 +495,7 @@
    "tag": "3.3.2",
    "release_page": "https://github.com/APSudoku/APSudoku/releases",
    "apworld_url": null,
-   "mod_url": "https://github.com/APSudoku/APSudoku/releases/download/3.3.2/APSudoku_Linux_arm64_3_3_2.zip",
+   "mod_url": "https://github.com/APSudoku/APSudoku/releases/download/3.3.2/APSudoku_Win_x64_3_3_2.zip",
    "steps": "# APSudoku\nClassic Sudoku Game\n- Play Sudoku at 3 different difficulty levels (Easy:48, Normal:35, Hard:24)\n- Connect to [Archipelago Randomizer](https://archipelago.gg/)\n  - Earn hints:\n    - Completing a puzzle grants you a random hint for a location in the slot you are connected to\n    - Harder difficulty puzzles are more likely to hint a 'Progression' type item\n  - DeathLink support (Set before connecting!)\n    - Lose a life if you check an incorrect puzzle (not an _incomplete_ puzzle), or quit a puzzle without solving it (including disconnecting).\n    - Life count customizable (default 0)",
    "licence": "",
    "author": "APSudoku"
@@ -2779,7 +2779,7 @@
    "tag": "0.4.0",
    "release_page": "https://github.com/snowzzrra/DoomEternal-AP-Mod/releases",
    "apworld_url": null,
-   "mod_url": "https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/download/0.4.0/DoomEternalArchipelago-v0.4.0-beta.4-linux-x86_64.zip",
+   "mod_url": "https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/download/0.4.0/DoomEternalArchipelago-v0.4.0-beta.4-windows-x86_64.zip",
    "steps": "# DOOM Eternal Archipelago\n\n> [!CAUTION]\n> This project is a beta, not a finished 1.0 release. Windows and Linux/Proton\n> are supported.\n\n\n## 1. What this mod is\n\nDOOM Eternal Archipelago turns the base campaign into an Archipelago\nprogression randomizer. Weapons, weapon mods, runes, suit upgrades, equipment,\nresources, and other useful items are distributed across hundreds of objectives\nthroughout the campaign. A secret, challenge, collectible, combat encounter, or\nmission milestone can provide the item that opens your next route.\n\n[Archipelago](https://archipelago.gg/) connects randomizers t",
    "licence": "",
    "author": "snowzzrra"
@@ -5933,25 +5933,6 @@
   },
   {
    "_v": 2,
-   "name": "Mega Man 1",
-   "source": "sheet",
-   "steam_appid": "742300",
-   "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/742300/header.jpg",
-   "repo": "Silvris/Archipelago",
-   "install": "apworld_only",
-   "assets": [
-    "mm4.apworld"
-   ],
-   "tag": "mm4_0.1.1",
-   "release_page": "https://github.com/Silvris/Archipelago/releases",
-   "apworld_url": "https://github.com/Silvris/Archipelago/releases/download/mm4_0.1.1/mm4.apworld",
-   "mod_url": null,
-   "steps": "",
-   "licence": "NOASSERTION",
-   "author": "Silvris"
-  },
-  {
-   "_v": 2,
    "name": "Mega Man 4",
    "source": "sheet",
    "steam_appid": null,
@@ -7841,7 +7822,7 @@
    "tag": "v.1.4.0",
    "release_page": "https://github.com/spinerak/refunct-tas-archipelago/releases",
    "apworld_url": "https://github.com/spinerak/refunct-tas-archipelago/releases/download/v.1.4.0/refunct.apworld",
-   "mod_url": "https://github.com/spinerak/refunct-tas-archipelago/releases/download/v.1.4.0/practice-linux.zip",
+   "mod_url": "https://github.com/spinerak/refunct-tas-archipelago/releases/download/v.1.4.0/practice-windows.zip",
    "steps": "This mod is possible because of the amazing work from the [refunct-tas](https://github.com/oberien/refunct-tas) team!\n\n# Refunct for Archipelago\n\nHow does it work, what are items and locations?\n- You will have to unlock every cluster of platforms (that normally rise by pressing a button).\n- You also have to find your abilities to swim, ledge grab, wall kick and jump on jumppads!\n- Location checks are making platforms grassy by jumping on 'em (200+ locations).\n- Your goal is to collect enough grass and go to the final platform (adjustable via yaml, shown in-game).\n- There are now minigames that",
    "licence": "",
    "author": "spinerak"
@@ -8617,26 +8598,6 @@
    "install": "manual",
    "assets": [],
    "steps": ""
-  },
-  {
-   "_v": 2,
-   "name": "Ship of Harkinian",
-   "source": "url",
-   "steam_appid": null,
-   "image": null,
-   "repo": "HarbourMasters/Archipelago-SoH",
-   "install": "apworld_only",
-   "assets": [
-    "oot_soh.apworld"
-   ],
-   "tag": "1.4.1",
-   "release_page": "https://github.com/HarbourMasters/Archipelago-SoH/releases",
-   "apworld_url": null,
-   "mod_url": null,
-   "steps": "",
-   "licence": "NOASSERTION",
-   "author": "aMannus, jeromkiller, ScipioWright, Fanta-Tanked, Sam, DaComputerNerd717, A-Green-Spoon, StuBob, Tzuf23, mattman107, Varuuna, Lorithan, BootsinSoots, briaguya, Sirius902, ThatHypedPerson",
-   "_source": "Archipelago wiki (https://archipelago.miraheze.org/wiki/Ship_of_Harkinian) named the repo; the world's own package supplied game, authors and version (read 26 Aug 2026). Licence is GitHub's classification of HarbourMasters/Archipelago-SoH's LICENSE."
   },
   {
    "_v": 2,
@@ -9930,12 +9891,14 @@
    "tag": "Soh_1.4.2",
    "release_page": "https://github.com/HarbourMasters/Archipelago-SoH/releases",
    "apworld_url": "https://github.com/HarbourMasters/Archipelago-SoH/releases/download/Soh_1.4.2/oot_soh.apworld",
-   "mod_url": "https://github.com/HarbourMasters/Archipelago-SoH/releases/download/Soh_1.4.2/SoH_Archipelago_1-4-2_Linux.zip",
+   "mod_url": "https://github.com/HarbourMasters/Archipelago-SoH/releases/download/Soh_1.4.2/SoH_Archipelago_1-4-2_Windows.zip",
    "steps": "<img width=\"777\" height=\"181\" alt=\"SoH_AP_Logo\" src=\"https://github.com/user-attachments/assets/3e40eaaa-02ce-432e-b830-7e5ef48cfe9f\" />\n\n# Ship of Harkinian + Archipelago\n\n## What is this?\n\nThis is for the Archipelago integration in Ship of Harkinian. For now, a separate version of SoH will have to be downloaded to play this, but eventually this page will only contain the .apworld needed to play AP in Ship. \n\nIf you need more info about AP in SoH in general, please take a look at our [overview doc](https://github.com/HarbourMasters/Archipelago-SoH/blob/oot-soh/worlds/oot_soh/docs/en_Ship%20of",
    "licence": "NOASSERTION",
    "author": "HarbourMasters",
    "mod_kind": "fan_port",
-   "_mod_kind_source": "Ship of Harkinian is the Ocarina of Time decompilation running natively on PC; the player supplies their own ROM. Same game, rebuilt -- fan_port."
+   "_mod_kind_source": "Ship of Harkinian is the Ocarina of Time decompilation running natively on PC; the player supplies their own ROM. Same game, rebuilt -- fan_port.",
+   "plugin_version": "1.3.0",
+   "description": "Ocarina of Time rebuilt to run natively on PC, with Archipelago built in. The download is the whole game -- but the Ship ships no copyrighted assets, so you supply your own Ocarina of Time ROM and the game turns it into the files it needs on first run."
   },
   {
    "_v": 2,
@@ -10731,7 +10694,7 @@
    "tag": "v1.0.5",
    "release_page": "https://github.com/KScl/TyrianArchipelago/releases",
    "apworld_url": "https://github.com/KScl/TyrianArchipelago/releases/download/v1.0.5/tyrian.apworld",
-   "mod_url": "https://github.com/KScl/TyrianArchipelago/releases/download/v1.0.5/aptyrian-Ubuntu2004-Release.zip",
+   "mod_url": "https://github.com/KScl/TyrianArchipelago/releases/download/v1.0.5/aptyrian-x64-Release.zip",
    "steps": "### Setup\n\nAfter downloading APTyrian, you will need to download the data files for Tyrian\nand extract them to a subfolder called \"data\". Tyrian 2.1 data files will only\nwork for seeds with \"enable_tyrian_2000_support\" turned OFF, whereas Tyrian 2000\ndata files will work for all seeds.\n\n* [Tyrian 2.1](https://www.camanis.net/tyrian/tyrian21.zip)\n* [Tyrian 2000](https://www.camanis.net/tyrian/tyrian2000.zip)\n\n### Important Notes\n\nConnecting to an Archipelago server can be done through the in-game menus, or\nalternatively through the command line with the following option. Password may\nbe omitted if there isn't one.\n* `--connect=\"<slot_name>:<password>@archipelago.gg:<port_number>\"`\n\nIf you have a single player .aptyrian file, drag and drop it over the game\nwindow while in the \"Select Game Mode\" menu to start playing it. The option\nwithin that menu to play a local game will eventually open a file dialog, but\nthat has yet to be implemented.\n\nFuture roadmap:\n* Ship Specs screen (showing received item progress, twiddles, other stats)\n* Chaos twiddle randomizer (new actions, new inputs)",
    "licence": "GPL-2.0",
    "author": "KScl"
