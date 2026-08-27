@@ -15,10 +15,12 @@
   "_checks_verified_note": "FALSE. Buildable and installable, but nobody has played a check through it.",
   "requires": "own_copy",
   "rom": {
-    "description": "Your own Ufouria copy",
-    "md5": [],
+    "description": "Your own European Ufouria: The Saga cartridge dump",
+    "md5": [
+      "75190f8724f5541ad30234374432dd5c"
+    ],
     "size": null,
-    "_md5_source": "Not measured and not invented: the world's code carries no hash."
+    "_md5_source": "the world's own ufouria/rom.py carries this hash, and its setup guide asks for \"An EU copy of Ufouria\". Read 27 Aug 2026. ⚠ The US releases are prototypes with different hashes and will not patch."
   },
   "emulator": {
     "name": "BizHawk",
