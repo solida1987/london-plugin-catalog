@@ -1,0 +1,1868 @@
+{
+ "note": "Tracker packs, keyed by London game id. Harvested by tools/harvest_trackers.py from each pack's own manifest.json.",
+ "poptracker": {
+  "repo": "black-sliver/PopTracker",
+  "packs_folder": "Documents/PopTracker/packs"
+ },
+ "universal_tracker": {
+  "repo": "FarisTheAncient/Archipelago",
+  "asset": "tracker.apworld",
+  "note": "One apworld into the engine's custom_worlds; tracks any game."
+ },
+ "count": 147,
+ "games": {
+  "banjo_tooie": {
+   "game": "Banjo-Tooie",
+   "pack_repo": "Ozone31/banjo-tooie-ap-tracker",
+   "pack_name": "Banjo-Tooie",
+   "package_uid": "ap_banjotooie",
+   "versions_url": "https://raw.githubusercontent.com/Ozone31/banjo-tooie-ap-tracker/versions/versions.json",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
+  "castlevania_aria_of_sorrow": {
+   "game": "Castlevania - Aria of Sorrow",
+   "pack_repo": "SchwartzGandhi/CVAoSPT",
+   "pack_name": "Castlevania: Aria of Sorrow Pack for PopTracker",
+   "package_uid": "cvaos_pack",
+   "versions_url": "https://raw.githubusercontent.com/SchwartzGandhi/CVAoSPT/refs/heads/main/versions.json",
+   "variants": [
+    "archipelago_h",
+    "archipelago_v",
+    "vanilla_h",
+    "vanilla_v",
+    "var_itemsonly"
+   ],
+   "min_poptracker": "0.25.9",
+   "in_poptracker_repo": false
+  },
+  "castlevania_hod": {
+   "game": "Castlevania: Harmony of Dissonance",
+   "pack_repo": "Armipotent/HarmonyOfDissonancePoptracker",
+   "pack_name": "Castlevania: Harmony of Dissonance Tracker",
+   "package_uid": "cvhod",
+   "versions_url": "https://raw.githubusercontent.com/Armipotent/HarmonyOfDissonancePoptracker/main/versions.json",
+   "variants": [
+    "standard",
+    "var_largesize",
+    "var_mediumsize"
+   ],
+   "min_poptracker": "0.25.9",
+   "in_poptracker_repo": false
+  },
+  "cmdmission": {
+   "game": "Mega Man X: Command Mission",
+   "pack_repo": "Zexbid/commandmission_poptracker",
+   "pack_name": "Mega Man X: Command Mission Tracker",
+   "package_uid": "commandmission_pack",
+   "versions_url": "",
+   "variants": [
+    "standard",
+    "var_itemsonly"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
+  "customrobo": {
+   "game": "Custom Robo",
+   "pack_repo": "Swiftmane/Custom_Robo_Tracker",
+   "pack_name": "Custom Robo Archipelago",
+   "package_uid": "custom robo_ap",
+   "versions_url": "https://raw.githubusercontent.com/Swiftmane/Custom_Robo_Tracker/refs/heads/version/versions.json",
+   "variants": [
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.31.0",
+   "in_poptracker_repo": false
+  },
+  "diddy_kong_racing": {
+   "game": "Diddy Kong Racing",
+   "pack_repo": "Ozone31/diddy-kong-racing-ap-tracker",
+   "pack_name": "Diddy Kong Racing",
+   "package_uid": "ap_dkr",
+   "versions_url": "https://raw.githubusercontent.com/Ozone31/diddy-kong-racing-ap-tracker/refs/heads/versions/versions.json",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
+  "donkey_kong_country": {
+   "game": "Donkey Kong Country",
+   "pack_repo": "pwkfisher/ap-dkc-tracker",
+   "pack_name": "Donkey Kong Country Archipelago",
+   "package_uid": "donkey kong country_ap",
+   "versions_url": "https://raw.githubusercontent.com/pwkfisher/ap-dkc-tracker/refs/heads/main/versions.json",
+   "variants": [
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.27.0",
+   "in_poptracker_repo": false
+  },
+  "donkey_kong_country_2": {
+   "game": "Donkey Kong Country 2: Diddy's Kong Quest",
+   "pack_repo": "pwkfisher/ap-dkc2-tracker",
+   "pack_name": "Donkey Kong Country 2 Archipelago",
+   "package_uid": "donkey kong country 2_ap",
+   "versions_url": "https://raw.githubusercontent.com/pwkfisher/ap-dkc2-tracker/refs/heads/main/versions.json",
+   "variants": [
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.27.0",
+   "in_poptracker_repo": false
+  },
+  "dragon_quest_monsters_2": {
+   "game": "Dragon Quest Monsters 2",
+   "pack_repo": "OmegaZeron/DQM2-AP-PopTracker-Pack",
+   "pack_name": "Dragon Quest Monsters 2 AP Tracker",
+   "package_uid": "dqm2_ap",
+   "versions_url": "https://raw.githubusercontent.com/OmegaZeron/DQM2-AP-PopTracker-Pack/versions/versions.json",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "0.35.1",
+   "in_poptracker_repo": false
+  },
+  "ff6wc": {
+   "game": "Final Fantasy VI",
+   "pack_repo": "Llisandur/FF6-Worlds-Collide-PopTracker-pack",
+   "pack_name": "FFVI Worlds Collide AP",
+   "package_uid": "ff6wc-ap",
+   "versions_url": "https://raw.githubusercontent.com/llisandur/FF6-Worlds-Collide-PopTracker-pack/refs/heads/master/versions.json",
+   "variants": [
+    "standard",
+    "var_itemsonly",
+    "var_treasuresanity"
+   ],
+   "min_poptracker": "0.26.2",
+   "in_poptracker_repo": false
+  },
+  "final_fantasy": {
+   "game": "Final Fantasy",
+   "pack_repo": "haate/FFR_AP_autotracking",
+   "pack_name": "Final Fantasy 1 Randomizer",
+   "package_uid": "ff1_rando_ap",
+   "versions_url": "",
+   "variants": [
+    "shardHunt",
+    "shardHuntNoMap",
+    "standard",
+    "standardNoMap"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
+  "golden_sun_tla": {
+   "game": "Golden Sun: The Lost Age",
+   "pack_repo": "cloudofdarkhole6/GSTLAPopTracker",
+   "pack_name": "Golden Sun TLA PopTracker",
+   "package_uid": "tla_poptracker_rawkhawk64",
+   "versions_url": "https://raw.githubusercontent.com/cloudofdarkhole6/GSTLAPopTracker/main/versions.json",
+   "variants": [
+    "standard",
+    "var_itemsonly"
+   ],
+   "min_poptracker": "0.29.0",
+   "in_poptracker_repo": false
+  },
+  "kdl3": {
+   "game": "Kirby's Dream Land 3",
+   "pack_repo": "Silvris/Kirby_Dream_Land_3_AP_Poptracker",
+   "pack_name": "Kirby's Dream Land 3 Archipelago Randomizer",
+   "package_uid": "KDL3_Silvris_AP",
+   "versions_url": "",
+   "variants": [
+    "ap_map_tracker"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
+  "kirby_air_ride": {
+   "game": "Kirby Air Ride",
+   "pack_repo": "lighting8282/KAR-Poptracker",
+   "pack_name": "Kirby Air Ride Archipelago",
+   "package_uid": "kirby air ride_ap",
+   "versions_url": "https://raw.githubusercontent.com/lighting8282/KAR-Poptracker/main/versions.json",
+   "variants": [
+    "Items Only",
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.31.0",
+   "in_poptracker_repo": false
+  },
+  "kirby_super_star": {
+   "game": "Kirby Super Star",
+   "pack_repo": "Talcerase/kss-ap-poptracker",
+   "pack_name": "Kirby Super Star AP Tracker",
+   "package_uid": "KSS_AP_TRACKER",
+   "versions_url": "",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "0.28.0",
+   "in_poptracker_repo": false
+  },
+  "luigi_s_mansion": {
+   "game": "Luigi's Mansion",
+   "pack_repo": "DevinLB/Luigis_Mansion_Poptracker",
+   "pack_name": "Luigi's Mansion",
+   "package_uid": "lm_poptracker",
+   "versions_url": "https://raw.githubusercontent.com/DevinLB/Luigis_Mansion_Poptracker/refs/heads/main/versions.json",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "0.25.9",
+   "in_poptracker_repo": false
+  },
+  "mario_luigi_superstar_saga": {
+   "game": "Mario & Luigi: Superstar Saga",
+   "pack_repo": "seto10987/MLSS-PopTracker",
+   "pack_name": "MLSS AP PopTracker",
+   "package_uid": "mlss_maptracker_Seto10987",
+   "versions_url": "https://raw.githubusercontent.com/seto10987/MLSS-PopTracker/versions/versions.json",
+   "variants": [
+    "ap_vertical_tracker",
+    "var_horizontal",
+    "var_split_horizontal",
+    "var_split_vertical",
+    "var_z_items_only"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
+  "marioland2": {
+   "game": "Super Mario Land 2: 6 Golden Coins",
+   "pack_repo": "mobby45/SuperMarioLand2TrackerAP",
+   "pack_name": "Super Mario Land 2 AP Tracker",
+   "package_uid": "sml2_ap",
+   "versions_url": "https://raw.githubusercontent.com/mobby45/SuperMarioLand2TrackerAP/refs/heads/main/versions.json",
+   "variants": [
+    "standard",
+    "var_itemsonly",
+    "var_verticalmap"
+   ],
+   "min_poptracker": "0.27.0",
+   "in_poptracker_repo": false
+  },
+  "medievil_2": {
+   "game": "Medievil 2",
+   "pack_repo": "Kuzurreesh/MediEvil2-Poptracker",
+   "pack_name": "MediEvil 2 Poptracker Pack",
+   "package_uid": "ME2_ap",
+   "versions_url": "",
+   "variants": [
+    "Full Tracker"
+   ],
+   "min_poptracker": "0.32.0",
+   "in_poptracker_repo": false
+  },
+  "metal_gear_solid": {
+   "game": "Metal Gear Solid",
+   "pack_repo": "RopeyRed/MGS-Poptracker-Pack",
+   "pack_name": "Metal Gear Solid Archipelago",
+   "package_uid": "metal gear solid_ap",
+   "versions_url": "",
+   "variants": [
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.31.0",
+   "in_poptracker_repo": false
+  },
+  "metroid_prime": {
+   "game": "Metroid Prime",
+   "pack_repo": "lilDavid/MetroidPrimeAP-PoptrackerPack",
+   "pack_name": "Metroid Prime - Archipelago",
+   "package_uid": "MetroidPrime-Archipelago-lilDavid",
+   "versions_url": "https://raw.githubusercontent.com/lilDavid/MetroidPrimeAP-PoptrackerPack/main/versions.json",
+   "variants": [
+    "standard",
+    "var_itemsonly"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
+  "metroid_samus_returns": {
+   "game": "Metroid: Samus Returns",
+   "pack_repo": "LuigiXRules/Metroid-Samus-Returns-Poptracker-Pack",
+   "pack_name": "Metroid: Samus Returns Poptracker Pack",
+   "package_uid": "samus_returns_pack",
+   "versions_url": "https://raw.githubusercontent.com/LuigiXRules/Metroid-Samus-Returns-Poptracker-Pack/versions/versions.json",
+   "variants": [
+    "standard",
+    "v_bigger_maps"
+   ],
+   "min_poptracker": "0.34.0",
+   "in_poptracker_repo": false
+  },
+  "metroid_zero_mission": {
+   "game": "Metroid: Zero Mission",
+   "pack_repo": "ladybunne/MetroidZeroMission_PopTrackerPack",
+   "pack_name": "Metroid: Zero Mission - Archipelago",
+   "package_uid": "MetroidZeroMission-Archipelago",
+   "versions_url": "https://raw.githubusercontent.com/ladybunne/MetroidZeroMission_PopTrackerPack/main/versions.json",
+   "variants": [
+    "standard",
+    "variant_01_items_on_left",
+    "variant_02_map_only",
+    "variant_03_items_only"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
+  "mkdd": {
+   "game": "Mario Kart: Double Dash!!",
+   "pack_repo": "Razerock/double-dash-ap-tracker",
+   "pack_name": "Mario Kart Double Dash Archipelago",
+   "package_uid": "mario-kart-double-dash-ap",
+   "versions_url": "https://raw.githubusercontent.com/Razerock/double-dash-ap-tracker/refs/heads/versions/versions.json",
+   "variants": [
+    "trackerMain",
+    "trackerVertical"
+   ],
+   "min_poptracker": "0.32.0",
+   "in_poptracker_repo": false
+  },
+  "mm3": {
+   "game": "Mega Man 3",
+   "pack_repo": "drothe/megaman3-ap-poptracker",
+   "pack_name": "Mega Man 3 Archipelago",
+   "package_uid": "megaman3_drothe",
+   "versions_url": "",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "0.25.9",
+   "in_poptracker_repo": false
+  },
+  "mmx4": {
+   "game": "Mega Man X4",
+   "pack_repo": "l337f00l/mega-man-x4-ap-poptracker",
+   "pack_name": "Mega Man X4 Archipelago",
+   "package_uid": "mega man x4_ap",
+   "versions_url": "https://raw.githubusercontent.com/l337f00l/mega-man-x4-ap-poptracker/main/versions.json",
+   "variants": [
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.31.0",
+   "in_poptracker_repo": false
+  },
+  "phantasy_star_ii": {
+   "game": "Phantasy Star II",
+   "pack_repo": "lagdotcom/poptracker-phantasy-star-2",
+   "pack_name": "Phantasy Star II AP Tracker",
+   "package_uid": "phantasy_star_2",
+   "versions_url": "",
+   "variants": [
+    "standard",
+    "var_itemsonly"
+   ],
+   "min_poptracker": "0.25.9",
+   "in_poptracker_repo": false
+  },
+  "pikmin_2": {
+   "game": "Pikmin 2",
+   "pack_repo": "Vinaigre1/Pikmin2-PopTracker",
+   "pack_name": "Pikmin 2 Poptracker",
+   "package_uid": "ap_pikmin2",
+   "versions_url": "https://raw.githubusercontent.com/Vinaigre1/Pikmin2-PopTracker/refs/heads/main/versions.json",
+   "variants": [
+    "standard",
+    "var_horizontal"
+   ],
+   "min_poptracker": "0.31.0",
+   "in_poptracker_repo": false
+  },
+  "pokemon_bw": {
+   "game": "Pokémon Black and White",
+   "pack_repo": "Radis7Noir/pokemon-bw-ap-tracker",
+   "pack_name": "Pokémon Black and White Archipelago",
+   "package_uid": "ap_pokemon_bw",
+   "versions_url": "https://raw.githubusercontent.com/Radis7Noir/pokemon-bw-ap-tracker/versions/versions.json",
+   "variants": [
+    "standard",
+    "var_vertical"
+   ],
+   "min_poptracker": "0.34.0",
+   "in_poptracker_repo": false
+  },
+  "pokemon_frlg": {
+   "game": "Pokemon FireRed and LeafGreen",
+   "pack_repo": "vyneras/pokemon-frlg-tracker",
+   "pack_name": "Pokémon FireRed/LeafGreen Tracker",
+   "package_uid": "pokemon_frlg",
+   "versions_url": "https://raw.githubusercontent.com/vyneras/pokemon-frlg-tracker/versions/versions.json",
+   "variants": [
+    "standard",
+    "standard_vertical",
+    "var_items_only"
+   ],
+   "min_poptracker": "0.35.4",
+   "in_poptracker_repo": false
+  },
+  "pokemon_platinum": {
+   "game": "Pokémon Platinum",
+   "pack_repo": "palex00/platinum-ap-tracker",
+   "pack_name": "Pokemon Platinum Archipelago",
+   "package_uid": "pokemon_platinum_ap",
+   "versions_url": "https://raw.githubusercontent.com/palex00/platinum-ap-tracker/versions/versions.json",
+   "variants": [
+    "standard",
+    "var_vertical"
+   ],
+   "min_poptracker": "0.33.0",
+   "in_poptracker_repo": false
+  },
+  "rac2": {
+   "game": "Ratchet & Clank 2: Going Commando",
+   "pack_repo": "cloudofdarkhole6/RaC2-poptracker",
+   "pack_name": "Ratchet & Clank 2 Archipelago",
+   "package_uid": "ratchet & clank 2_ap",
+   "versions_url": "https://raw.githubusercontent.com/cloudofdarkhole6/RaC2-poptracker/main/versions.json",
+   "variants": [
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.27.0",
+   "in_poptracker_repo": false
+  },
+  "shadow_the_hedgehog": {
+   "game": "Shadow the Hedgehog",
+   "pack_repo": "jxjacob/shadow-ap-tracker",
+   "pack_name": "Shadow The Hedgehog",
+   "package_uid": "ap_shadowthehedgehog",
+   "versions_url": "https://raw.githubusercontent.com/jxjacob/shadow-ap-tracker/versions/versions.json",
+   "variants": [
+    "standard",
+    "var_itemonly"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
+  "sly_2_band_of_thieves": {
+   "game": "Sly 2: Band of Thieves",
+   "pack_repo": "lastingParadox/Sly2-Poptracker",
+   "pack_name": "Sly 2: Band of Thieves - Archipelago",
+   "package_uid": "sly 2_ap",
+   "versions_url": "https://raw.githubusercontent.com/lastingParadox/Sly2-Poptracker/versions/versions.json",
+   "variants": [
+    "var_horizontal",
+    "vertical"
+   ],
+   "min_poptracker": "0.30.4",
+   "in_poptracker_repo": false
+  },
+  "sly_cooper_and_the_thievius_raccoonus": {
+   "game": "Sly Cooper and the Thievius Raccoonus",
+   "pack_repo": "Slinq17/Sly1-Poptracker",
+   "pack_name": "Sly1-PopTracker",
+   "package_uid": "sly1_ap",
+   "versions_url": "",
+   "variants": [
+    "standard",
+    "var_itemsonly"
+   ],
+   "min_poptracker": "0.32.0",
+   "in_poptracker_repo": false
+  },
+  "smz3": {
+   "game": "SMZ3",
+   "pack_repo": "Dessyreqt/smz3-ap-tracker",
+   "pack_name": "SMZ3 Archipelago",
+   "package_uid": "smz3_ap_dessyreqt",
+   "versions_url": "https://raw.githubusercontent.com/dessyreqt/smz3-ap-tracker/refs/heads/main/versions.json",
+   "variants": [
+    "standard",
+    "var_keysanity"
+   ],
+   "min_poptracker": "0.26.2",
+   "in_poptracker_repo": false
+  },
+  "sneak_king": {
+   "game": "Sneak King",
+   "pack_repo": "earthor1/sneak_king_pt",
+   "pack_name": "Sneak King Archipelago",
+   "package_uid": "sneak king_ap",
+   "versions_url": "",
+   "variants": [
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.32.0",
+   "in_poptracker_repo": false
+  },
+  "sonic_colours_ds": {
+   "game": "Sonic Colours (DS)",
+   "pack_repo": "SilicDev/SonicColoursDS-poptracker",
+   "pack_name": "Sonic Colours (DS) Archipelago",
+   "package_uid": "scds-silicdev",
+   "versions_url": "https://raw.githubusercontent.com/SilicDev/SonicColoursDS-poptracker/master/versions.json",
+   "variants": [
+    "Items Only",
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.31.0",
+   "in_poptracker_repo": false
+  },
+  "spyro2": {
+   "game": "Spyro 2: Ripto's Rage",
+   "pack_repo": "routhken/Spyro_2_tracker",
+   "pack_name": "Spyro 2 Tracker",
+   "package_uid": "ap_spyro_2",
+   "versions_url": "https://raw.githubusercontent.com/routhken/Spyro_2_tracker/refs/heads/main/versions.json",
+   "variants": [
+    "a_standard",
+    "b_vertical",
+    "c_items_only"
+   ],
+   "min_poptracker": "0.26.0",
+   "in_poptracker_repo": false
+  },
+  "spyro3": {
+   "game": "Spyro 3: Year of the Dragon",
+   "pack_repo": "19techguy91/S3AP_Poptracker",
+   "pack_name": "Spyro 3 AP",
+   "package_uid": "spyro3_tracker",
+   "versions_url": "",
+   "variants": [
+    "a_standard"
+   ],
+   "min_poptracker": "0.34.0",
+   "in_poptracker_repo": false
+  },
+  "streets_of_rage": {
+   "game": "Streets of Rage",
+   "pack_repo": "UltiNaruto/SOR_AP_Tracker",
+   "pack_name": "Streets of Rage",
+   "package_uid": "ap_streetsofrage",
+   "versions_url": "",
+   "variants": [
+    "standard",
+    "var_itemsonly"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
+  "super_mario_sunshine": {
+   "game": "Super Mario Sunshine",
+   "pack_repo": "UmedMuzl/Sunshine_Pop",
+   "pack_name": "Super Mario Sunshine Poptracker",
+   "package_uid": "ap_sunshine",
+   "versions_url": "https://raw.githubusercontent.com/AmedMusl/Sunshine_Pop/refs/heads/main/versions.json",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
+  "super_metroid": {
+   "game": "Super Metroid",
+   "pack_repo": "Cyb3RGER/sm_ap_tracker",
+   "pack_name": "VARIA Randomizer (Super Metroid) AP",
+   "package_uid": "smrando_ap_cyb3r",
+   "versions_url": "https://raw.githubusercontent.com/Cyb3RGER/sm_ap_tracker/main/versions.json",
+   "variants": [
+    "standard",
+    "var_itemsonly"
+   ],
+   "min_poptracker": "0.32.0",
+   "in_poptracker_repo": true
+  },
+  "taz_wanted": {
+   "game": "Taz Wanted",
+   "pack_repo": "imklubb/Taz-Wanted-Poptracker",
+   "pack_name": "Taz Wanted",
+   "package_uid": "tazwanted_ap",
+   "versions_url": "https://raw.githubusercontent.com/imklubb/Taz-Wanted-Poptracker/versions/versions.json",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "0.25.6",
+   "in_poptracker_repo": false
+  },
+  "tomba": {
+   "game": "Tomba!",
+   "pack_repo": "T4g1/PopTrackerTomba",
+   "pack_name": "Tomba! PopTracker",
+   "package_uid": "ap_tomba",
+   "versions_url": "",
+   "variants": [
+    "default"
+   ],
+   "min_poptracker": "0.23.1",
+   "in_poptracker_repo": false
+  },
+  "ts2": {
+   "game": "Toy Story 2: Buzz Lightyear to the Rescue",
+   "pack_repo": "imklubb/Toy-Story-2-Poptracker",
+   "pack_name": "Toy Story 2",
+   "package_uid": "toystory2_ap",
+   "versions_url": "https://raw.githubusercontent.com/imklubb/Toy-Story-2-Poptracker/versions/versions.json",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "0.25.6",
+   "in_poptracker_repo": false
+  },
+  "twilight_princess": {
+   "game": "The Legend of Zelda: Twilight Princess",
+   "pack_repo": "Kizugaya/TPRAP_poptracker",
+   "pack_name": "Twilight Princess Archipelago Tracker",
+   "package_uid": "tpr_ap_tracker",
+   "versions_url": "https://raw.githubusercontent.com/Kizugaya/TPRAP_poptracker/versions/versions.json",
+   "variants": [
+    "standard",
+    "y_standard75",
+    "z_standard50"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
+  "wario_land_3": {
+   "game": "Wario Land 3",
+   "pack_repo": "LizzieTwoShoes/WL3-AP-PopTracker-Pack",
+   "pack_name": "Wario Land 3 Archipelago",
+   "package_uid": "wario land 3_ap",
+   "versions_url": "",
+   "variants": [
+    "defaultmap",
+    "var_itemsonly"
+   ],
+   "min_poptracker": "0.31.0",
+   "in_poptracker_repo": false
+  },
+  "yu_gi_oh_dungeon_dice_monsters": {
+   "game": "Yu-Gi-Oh! Dungeon Dice Monsters",
+   "pack_repo": "Aureooo-0/yugioh_ddm_poptracker",
+   "pack_name": "Yu-Gi-Oh! Dungeon Dice Monsters Archipelago",
+   "package_uid": "yugioh_ddm_ap",
+   "versions_url": "https://raw.githubusercontent.com/Aureooo-0/yugioh_ddm_poptracker/main/versions/versions.json",
+   "variants": [
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.31.0",
+   "in_poptracker_repo": false
+  },
+  "yugioh_ddm": {
+   "game": "Yu-Gi-Oh! Dungeon Dice Monsters",
+   "pack_repo": "Aureooo-0/yugioh_ddm_poptracker",
+   "pack_name": "Yu-Gi-Oh! Dungeon Dice Monsters Archipelago",
+   "package_uid": "yugioh_ddm_ap",
+   "versions_url": "https://raw.githubusercontent.com/Aureooo-0/yugioh_ddm_poptracker/main/versions/versions.json",
+   "variants": [
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.31.0",
+   "in_poptracker_repo": false
+  },
+  "zelda2": {
+   "game": "Zelda II: The Adventure of Link",
+   "pack_repo": "palex00/zelda-2-ap-tracker",
+   "pack_name": "Zelda II Archipelago Tracker",
+   "package_uid": "zelda_2_ap",
+   "versions_url": "https://raw.githubusercontent.com/palex00/zelda-2-ap-tracker/versions/versions.json",
+   "variants": [
+    "Items Only",
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.30.1",
+   "in_poptracker_repo": false
+  },
+  "a_hat_in_time": {
+   "game": "A Hat in Time",
+   "pack_repo": "hoppel16/ahit-poptracker",
+   "pack_name": "ahit Randomizer - AP",
+   "package_uid": "ahit-nep",
+   "versions_url": "",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
+  "against_the_storm": {
+   "game": "Against the Storm",
+   "pack_repo": "Chfou/ATS-poptracker",
+   "pack_name": "Against the Storm",
+   "package_uid": "ats_poptracker",
+   "versions_url": "",
+   "variants": [
+    "bp",
+    "standard"
+   ],
+   "min_poptracker": "0.25.9",
+   "in_poptracker_repo": false
+  },
+  "an_untitled_story": {
+   "game": "An Untitled Story",
+   "pack_repo": "ladybunne/AnUntitledStory_PopTrackerPack",
+   "pack_name": "An Untitled Story - Archipelago",
+   "package_uid": "AnUntitledStory-Archipelago",
+   "versions_url": "https://raw.githubusercontent.com/ladybunne/AnUntitledStory_PopTrackerPack/main/versions.json",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
+  "anodyne": {
+   "game": "Anodyne",
+   "pack_repo": "palex00/anodyne-ap-tracker",
+   "pack_name": "Anodyne Archipelago Tracker",
+   "package_uid": "anodyne_ap",
+   "versions_url": "https://raw.githubusercontent.com/palex00/anodyne-ap-tracker/versions/versions.json",
+   "variants": [
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.30.4",
+   "in_poptracker_repo": false
+  },
+  "apquest": {
+   "game": "APQuest",
+   "pack_repo": "palex00/ap-quest-tracker",
+   "pack_name": "APQuest Tracker",
+   "package_uid": "apquest_ap",
+   "versions_url": "https://raw.githubusercontent.com/palex00/ap-quest-tracker/versions/versions.json",
+   "variants": [
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.31.0",
+   "in_poptracker_repo": false
+  },
+  "ark_survival_evolved": {
+   "game": "Ark: Survival Evolved",
+   "pack_repo": "lurch9229/Arkipelago-Poptracker",
+   "pack_name": "Arkipelago Tracker",
+   "package_uid": "Ark_Tracker_Lurch9229",
+   "versions_url": "",
+   "variants": [
+    "map_tracker"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
+  "balatro": {
+   "game": "Balatro",
+   "pack_repo": "graygooglitch/balatroap_poptracker",
+   "pack_name": "BalatroAP Tracker",
+   "package_uid": "balatroap",
+   "versions_url": "",
+   "variants": [
+    "compact",
+    "map_only",
+    "standard"
+   ],
+   "min_poptracker": "0.25.9",
+   "in_poptracker_repo": false
+  },
+  "baldur_s_gate_3": {
+   "game": "Baldur's Gate 3",
+   "pack_repo": "jeditobe1/bg3-ap-tracker",
+   "pack_name": "Baldur's Gate 3 Archipelago",
+   "package_uid": "bg3-ap-tracker",
+   "versions_url": "",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
+  "bloons_tower_defense_6": {
+   "game": "Bloons Tower Defense 6",
+   "pack_repo": "Fairweather-Furry/btd6_fair",
+   "pack_name": "Bloons Tower Defense 6 Archipelago",
+   "package_uid": "btd6_fair",
+   "versions_url": "https://raw.githubusercontent.com/Fairweather-Furry/btd6_fair/refs/heads/main/versions.json",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
+  "borderlands_2": {
+   "game": "Borderlands 2",
+   "pack_repo": "DDogeOneeSama/Borderlands-2-PopTracker",
+   "pack_name": "Borderlands 2 Archipelago",
+   "package_uid": "borderlands 2_ap",
+   "versions_url": "https://raw.githubusercontent.com/DDogeOneeSama/Borderlands-2-PopTracker/versions/versions.json",
+   "variants": [
+    "default_tracker",
+    "items_only"
+   ],
+   "min_poptracker": "0.31.0",
+   "in_poptracker_repo": false
+  },
+  "brotato": {
+   "game": "Brotato",
+   "pack_repo": "mrkssr/PopTracker-AP-Brotato",
+   "pack_name": "Brotato Archipelago",
+   "package_uid": "brotato_ap",
+   "versions_url": "",
+   "variants": [
+    "Items Only",
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.27.0",
+   "in_poptracker_repo": false
+  },
+  "cat_quest": {
+   "game": "Cat Quest",
+   "pack_repo": "MegaPatches/CatQuest_Poptracker",
+   "pack_name": "Cat Quest Archipelago",
+   "package_uid": "cat quest_ap",
+   "versions_url": "https://github.com/MegaPatches/CatQuest_Poptracker",
+   "variants": [
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.1.1",
+   "in_poptracker_repo": false
+  },
+  "celeste": {
+   "game": "Celeste",
+   "pack_repo": "Reisz/Celeste-OpenWorld-AP-Tracker",
+   "pack_name": "Celeste OpenWorld PopTracker",
+   "package_uid": "celeste-openworld",
+   "versions_url": "",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
+  "celeste_open_world": {
+   "game": "Celeste (Open World)",
+   "pack_repo": "Zeeveez/CelesteOpenWorldPoptracker",
+   "pack_name": "Celeste (Open World) - Archipelago Tracker",
+   "package_uid": "celeste_poptracker",
+   "versions_url": "https://raw.githubusercontent.com/Zeeveez/CelesteOpenWorldPoptracker/master/versions.json",
+   "variants": [
+    "map_tracker",
+    "map_tracker_with_logic"
+   ],
+   "min_poptracker": "0.35.4",
+   "in_poptracker_repo": false
+  },
+  "checksmate": {
+   "game": "ChecksMate",
+   "pack_repo": "checkerslogic/checksmate-poptracker",
+   "pack_name": "ChecksMate ChecksTrack",
+   "package_uid": "checksmate_tracker",
+   "versions_url": "",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "0.30.3",
+   "in_poptracker_repo": false
+  },
+  "choo_choo_charles": {
+   "game": "Choo-Choo Charles",
+   "pack_repo": "Xgor/choochoo_ap_tracker",
+   "pack_name": "Choo-Choo Charles Archipelago",
+   "package_uid": "choo-choo charles_ap",
+   "versions_url": "",
+   "variants": [
+    "Items Only",
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.32.0",
+   "in_poptracker_repo": false
+  },
+  "clair_obscur_expedition_33": {
+   "game": "Clair Obscur Expedition 33",
+   "pack_repo": "Demorck/ClairObscur-Archipelago-Poptracker",
+   "pack_name": "Clair Obscur Expedition 33 - Archipelago",
+   "package_uid": "COE33-Archipelago-Demorck",
+   "versions_url": "https://raw.githubusercontent.com/Demorck/ClairObscur-Archipelago-Poptracker/refs/heads/main/versions.json",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
+  "cloverpit": {
+   "game": "CloverPit",
+   "pack_repo": "snileaf/CloverPit-poptracker",
+   "pack_name": "CloverPit Archipelago",
+   "package_uid": "cloverpit_ap",
+   "versions_url": "https://raw.githubusercontent.com/snileaf/CloverPit-poptracker/versions/versions.json",
+   "variants": [
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.31.0",
+   "in_poptracker_repo": true
+  },
+  "content_warning": {
+   "game": "Content Warning",
+   "pack_repo": "Jakeodude/cw-poptracker",
+   "pack_name": "Content Warning AP Tracker",
+   "package_uid": "content_warning_ap",
+   "versions_url": "",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "0.32.1",
+   "in_poptracker_repo": false
+  },
+  "crash_team_racing": {
+   "game": "Crash Team Racing",
+   "pack_repo": "therawkhawk64/CTRTrackerAP",
+   "pack_name": "Crash Team Racing AP Tracker",
+   "package_uid": "ap_ctr",
+   "versions_url": "",
+   "variants": [
+    "a_standard"
+   ],
+   "min_poptracker": "0.26.0",
+   "in_poptracker_repo": false
+  },
+  "crosscode": {
+   "game": "CrossCode",
+   "pack_repo": "lurch9229/CrossCode-Poptracker-AP",
+   "pack_name": "CrossCode Randomizer PopTracker",
+   "package_uid": "crosscode_maptracker_lurch9229",
+   "versions_url": "",
+   "variants": [
+    "1_map_tracker",
+    "2_alt_tracker",
+    "3_no_setting_tracker",
+    "4_items_only",
+    "5_world_map"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
+  "cuphead": {
+   "game": "Cuphead",
+   "pack_repo": "TheArcticFox42/CupheadPoptracker",
+   "pack_name": "Cuphead PopTracker",
+   "package_uid": "cuphead_poptracker",
+   "versions_url": "https://raw.githubusercontent.com/TheArcticFox42/CupheadPoptracker/refs/heads/main/versions.json",
+   "variants": [
+    "standard",
+    "var_dlc"
+   ],
+   "min_poptracker": "0.35.1",
+   "in_poptracker_repo": false
+  },
+  "dark_souls_remastered": {
+   "game": "Dark Souls: Remastered",
+   "pack_repo": "routhken/Dark_Souls_Remastered_tracker",
+   "pack_name": "Dark Souls Remastered",
+   "package_uid": "ap_dark_souls_remastered",
+   "versions_url": "https://raw.githubusercontent.com/routhken/Dark_Souls_Remastered_tracker/refs/heads/main/versions.json",
+   "variants": [
+    "a_standard",
+    "b_vertical",
+    "c_items_only"
+   ],
+   "min_poptracker": "0.26.0",
+   "in_poptracker_repo": false
+  },
+  "dead_cells": {
+   "game": "Dead Cells",
+   "pack_repo": "ArgnzAstalan/DeadCellsPoptracker",
+   "pack_name": "Dead Cells AP",
+   "package_uid": "DC_AP",
+   "versions_url": "",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "0.32.0",
+   "in_poptracker_repo": false
+  },
+  "deadlock": {
+   "game": "Deadlock",
+   "pack_repo": "GreenestJ/deadlockipelago-poptracker",
+   "pack_name": "Deadlockipelago 1.1.5",
+   "package_uid": "deadlockipelago",
+   "versions_url": "",
+   "variants": [
+    "standard",
+    "street_brawl"
+   ],
+   "min_poptracker": "0.35.1",
+   "in_poptracker_repo": false
+  },
+  "deltarune": {
+   "game": "Deltarune",
+   "pack_repo": "Tenebrosful/Deltarune-PopTracker",
+   "pack_name": "DELTARUNE Archipelago",
+   "package_uid": "deltarune_ap",
+   "versions_url": "",
+   "variants": [
+    "Items Only"
+   ],
+   "min_poptracker": "0.31.0",
+   "in_poptracker_repo": false
+  },
+  "devil_may_cry_3": {
+   "game": "Devil May Cry 3",
+   "pack_repo": "DanielSchaack/DMC3-PopTracker",
+   "pack_name": "Devil May Cry 3 Archipelago",
+   "package_uid": "devil_may_cry_3_ap",
+   "versions_url": "https://raw.githubusercontent.com/DanielSchaack/DMC3-PopTracker/refs/heads/main/versions.json",
+   "variants": [
+    "Full Tracker"
+   ],
+   "min_poptracker": "0.31.0",
+   "in_poptracker_repo": false
+  },
+  "dicey_dungeons": {
+   "game": "Dicey Dungeons",
+   "pack_repo": "Fylcoast/Dicey-Dungeons-AP-Tracker",
+   "pack_name": "Dicey Dungeons Archipelago",
+   "package_uid": "dicey dungeons_ap",
+   "versions_url": "",
+   "variants": [
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.31.0",
+   "in_poptracker_repo": false
+  },
+  "dlc_quest": {
+   "game": "DLC Quest",
+   "pack_repo": "RaceProUK/DLCQuest-APTracker",
+   "pack_name": "DLC Quest AP Tracker",
+   "package_uid": "dlcquest_rando_raceprouk",
+   "versions_url": "https://raw.githubusercontent.com/RaceProUK/DLCQuest-APTracker/main/versions.json",
+   "variants": [
+    "both",
+    "dlc",
+    "lfod"
+   ],
+   "min_poptracker": "0.25.6",
+   "in_poptracker_repo": false
+  },
+  "doom_1993": {
+   "game": "DOOM 1993",
+   "pack_repo": "Ozone31/doom-ap-tracker",
+   "pack_name": "DOOM 1993",
+   "package_uid": "ap_doom",
+   "versions_url": "https://raw.githubusercontent.com/Ozone31/doom-ap-tracker/versions/versions.json",
+   "variants": [
+    "standard",
+    "var_maponly"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
+  "dredge": {
+   "game": "DREDGE",
+   "pack_repo": "Fedjoyd/DREDGE-pack-poptracker",
+   "pack_name": "DREDGE Archipelago",
+   "package_uid": "dredge_ap",
+   "versions_url": "https://raw.githubusercontent.com/Fedjoyd/DREDGE-pack-poptracker/master/versions.json",
+   "variants": [
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.31.0",
+   "in_poptracker_repo": false
+  },
+  "duke_nukem_3d": {
+   "game": "Duke Nukem 3D",
+   "pack_repo": "Joxtacy/dukenukem3d-poptracker",
+   "pack_name": "Duke Nukem 3D AP Tracker",
+   "package_uid": "duke_nukem_3d_ap_tracker",
+   "versions_url": "https://github.com/joxtacy/dukenukem3d-poptracker/releases/latest/download/versions.json",
+   "variants": [
+    "all_episodes"
+   ],
+   "min_poptracker": "0.25.0",
+   "in_poptracker_repo": false
+  },
+  "easy_delivery_co": {
+   "game": "Easy Delivery Co.",
+   "pack_repo": "InkyCodes/Easy-Delivery-co.-AP-Tracker",
+   "pack_name": "Easy Delivery Co. Archipelago",
+   "package_uid": "easy delivery co._ap",
+   "versions_url": "",
+   "variants": [
+    "Items Only",
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.35.4",
+   "in_poptracker_repo": false
+  },
+  "fez": {
+   "game": "Fez",
+   "pack_repo": "maYayoh/GAT",
+   "pack_name": "GAT - FezAP Track Pack",
+   "package_uid": "fez_track_pack",
+   "versions_url": "",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "0.26.2",
+   "in_poptracker_repo": false
+  },
+  "final_fantasy_pixel_remaster": {
+   "game": "Final Fantasy Pixel Remaster",
+   "pack_repo": "CTConqueror/FF1PR-AP-MapTracker",
+   "pack_name": "Final Fantasy Pixel Remaster Map Tracker",
+   "package_uid": "ff1pr_tracker",
+   "versions_url": "https://raw.githubusercontent.com/CTConqueror/FF1PR-AP-MapTracker/refs/heads/main/versions.json",
+   "variants": [
+    "map_tracker",
+    "var_itemsonly"
+   ],
+   "min_poptracker": "0.23.1",
+   "in_poptracker_repo": false
+  },
+  "final_fantasy_vii": {
+   "game": "Final Fantasy VII",
+   "pack_repo": "Wakamu/FF7pelago-poptracker",
+   "pack_name": "Final Fantasy VII Pelago",
+   "package_uid": "ff7pelago-poptracker",
+   "versions_url": "https://raw.githubusercontent.com/Wakamu/ff7pelago-poptracker/versions/versions.json",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "0.25.5",
+   "in_poptracker_repo": false
+  },
+  "final_fantasy_x": {
+   "game": "Final Fantasy X",
+   "pack_repo": "FFX-AP/FFX-Poptracker",
+   "pack_name": "Final Fantasy X",
+   "package_uid": "final_fantasy_X_andrewki",
+   "versions_url": "https://raw.githubusercontent.com/Andrewki44/FFX-Poptracker/refs/heads/main/versions.json",
+   "variants": [
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.31.0",
+   "in_poptracker_repo": false
+  },
+  "funi_raccoon_game": {
+   "game": "Funi Raccoon Game",
+   "pack_repo": "Jeffdev-Archipelago-Implementations/FuniRaccoonPopTracker",
+   "pack_name": "Funi Raccoon Game Archipelago",
+   "package_uid": "funi raccoon game_ap",
+   "versions_url": "https://raw.githubusercontent.com/Jeffdev-Archipelago-Implementations/FuniRaccoonPopTracker/refs/heads/main/versions.json",
+   "variants": [
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.31.0",
+   "in_poptracker_repo": false
+  },
+  "gato_roboto": {
+   "game": "Gato Roboto",
+   "pack_repo": "Ravenmist-Games/Gato-Roboto-AP-Tracker",
+   "pack_name": "Gato Roboto AP Tracker",
+   "package_uid": "gatoroboto_ap_pack",
+   "versions_url": "",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "0.25.9",
+   "in_poptracker_repo": false
+  },
+  "grim_dawn": {
+   "game": "Grim Dawn",
+   "pack_repo": "routhken/Grim_Dawn_tracker",
+   "pack_name": "Grim Dawn",
+   "package_uid": "ap_grim_dawn",
+   "versions_url": "https://raw.githubusercontent.com/routhken/Grim_Dawn_tracker/refs/heads/master/versions.json",
+   "variants": [
+    "a_standard",
+    "b_vertical",
+    "c_items_only"
+   ],
+   "min_poptracker": "0.26.0",
+   "in_poptracker_repo": false
+  },
+  "hades": {
+   "game": "Hades",
+   "pack_repo": "OmegaZeron/Hades-AP-Poptracker-Pack",
+   "pack_name": "Hades Tracker",
+   "package_uid": "hades_ap",
+   "versions_url": "https://raw.githubusercontent.com/OmegaZeron/Hades-AP-Poptracker-Pack/versions/versions.json",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
+  "heretic": {
+   "game": "Heretic",
+   "pack_repo": "Forsaken-angel/heretic-ap-tracker",
+   "pack_name": "Heretic",
+   "package_uid": "ap_heretic",
+   "versions_url": "https://github.com/Forsaken-angel/heretic-ap-tracker/main/versions.json",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
+  "hollow_knight": {
+   "game": "Hollow Knight",
+   "pack_repo": "murnco/Hollow-Knight-Items-Only-Poptracker-Pack",
+   "pack_name": "Hollow Knight Items Only",
+   "package_uid": "hollow knight_ap",
+   "versions_url": "",
+   "variants": [
+    "Items Only"
+   ],
+   "min_poptracker": "0.31.0",
+   "in_poptracker_repo": false
+  },
+  "hot_lava": {
+   "game": "Hot Lava",
+   "pack_repo": "Bongo9911/HotLavaAPTracker",
+   "pack_name": "Hot Lava Archipelago",
+   "package_uid": "hot lava_ap",
+   "versions_url": "",
+   "variants": [
+    "Items Only",
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.31.0",
+   "in_poptracker_repo": false
+  },
+  "hylics_2": {
+   "game": "Hylics 2",
+   "pack_repo": "superfid2006/Hylics2-poptracker",
+   "pack_name": "Hylics 2 Archipelago",
+   "package_uid": "hylics 2_ap",
+   "versions_url": "https://raw.githubusercontent.com/superfid2006/Hylics2-poptracker/main/versions.json",
+   "variants": [
+    "Map Tracker"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
+  "hyperdimension_neptunia_re_birth3_v_generation": {
+   "game": "Hyperdimension Neptunia Re;Birth3 V Generation",
+   "pack_repo": "RazgrizEast/hyperdimension-neptunia-rebirth-3-poptracker-razgriz",
+   "pack_name": "Hyperdimension Neptunia Re;Birth3 V GENERATION Archipelago PopTracker",
+   "package_uid": "hyperdimension_rebirth3_poptracker_razgriz",
+   "versions_url": "",
+   "variants": [
+    "Items Only",
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.31.0",
+   "in_poptracker_repo": false
+  },
+  "iji": {
+   "game": "Iji",
+   "pack_repo": "ladybunne/Iji_PopTrackerPack",
+   "pack_name": "Iji - Archipelago",
+   "package_uid": "Iji-Archipelago",
+   "versions_url": "https://raw.githubusercontent.com/ladybunne/Iji_PopTrackerPack/main/versions.json",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
+  "inscryption": {
+   "game": "Inscryption",
+   "pack_repo": "DrBibop/Inscryption_Poptracker",
+   "pack_name": "Inscryption Archipelago Randomizer",
+   "package_uid": "InscryptionTracker",
+   "versions_url": "",
+   "variants": [
+    "items_only",
+    "map_tracker"
+   ],
+   "min_poptracker": "0.23.1",
+   "in_poptracker_repo": false
+  },
+  "isles_of_sea_and_sky": {
+   "game": "Isles of Sea and Sky",
+   "pack_repo": "Levisaxos/IslesOfSeaAndSky_PoptrackerPack",
+   "pack_name": "Isles of Sea and Sky Map Tracker",
+   "package_uid": "isles_of_sea_and_sky",
+   "versions_url": "",
+   "variants": [
+    "rooms",
+    "standard"
+   ],
+   "min_poptracker": "0.32.0",
+   "in_poptracker_repo": false
+  },
+  "kindergarten_2": {
+   "game": "Kindergarten 2",
+   "pack_repo": "blupeecounter/Kindergarten2-Poptracker",
+   "pack_name": "Kindergarten 2 PopTracker",
+   "package_uid": "Blupee_UID_Moment",
+   "versions_url": "",
+   "variants": [
+    "standard",
+    "var_itemsonly"
+   ],
+   "min_poptracker": "0.25.9",
+   "in_poptracker_repo": false
+  },
+  "kingdom_hearts_iii": {
+   "game": "Kingdom Hearts III",
+   "pack_repo": "z3xox/kh3-archipelago-poptracker",
+   "pack_name": "Kingdom Hearts III Archipelago",
+   "package_uid": "kh3_archipelago_tracker",
+   "versions_url": "https://raw.githubusercontent.com/z3xox/kh3-archipelago-poptracker/main/versions.json",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "0.26.2",
+   "in_poptracker_repo": false
+  },
+  "la_mulana_2": {
+   "game": "La-Mulana 2",
+   "pack_repo": "Crownmuri/LaMulana2AP-PopTracker",
+   "pack_name": "La-Mulana 2 AP Tracker",
+   "package_uid": "lm2_archipelago_tracker",
+   "versions_url": "https://raw.githubusercontent.com/Crownmuri/LaMulana2AP-PopTracker/master/versions.json",
+   "variants": [
+    "var_0er",
+    "var_1map",
+    "var_2items"
+   ],
+   "min_poptracker": "0.27.0",
+   "in_poptracker_repo": false
+  },
+  "lego_harry_potter_5_7": {
+   "game": "Lego Harry Potter 5-7",
+   "pack_repo": "jonnytheagent/LHP5-7_AP_UniversalTracker",
+   "pack_name": "Lego Harry Potter 5-7 Archipelago",
+   "package_uid": "legoharrypotter57_ap",
+   "versions_url": "",
+   "variants": [
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.31.0",
+   "in_poptracker_repo": false
+  },
+  "lego_star_wars_the_complete_saga": {
+   "game": "Lego Star Wars: The Complete Saga",
+   "pack_repo": "Mysteryem/TCS_AP_PopTracker",
+   "pack_name": "Lego Star Wars: The Complete Saga Archipelago",
+   "package_uid": "legostarwarsthecompletesaga_mysteryem_ap",
+   "versions_url": "https://raw.githubusercontent.com/Mysteryem/TCS_AP_PopTracker/refs/heads/main/versions.json",
+   "variants": [
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.31.0",
+   "in_poptracker_repo": false
+  },
+  "lunacid": {
+   "game": "Lunacid",
+   "pack_repo": "ScorpioGameKing/Lunacid-Poptracker",
+   "pack_name": "Lunacid Pack",
+   "package_uid": "1f1dbd3f-bf6c-45a4-9ff7-f841a0b0ebe2",
+   "versions_url": "",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": true
+  },
+  "minecraft": {
+   "game": "Minecraft",
+   "pack_repo": "Cyb3RGER/minecraft_rando_tracker",
+   "pack_name": "Minecraft Randomizer",
+   "package_uid": "minecraft_randomizer_emotracker-neomatamune",
+   "versions_url": "https://raw.githubusercontent.com/Cyb3RGER/minecraft_rando_tracker/master/versions.json",
+   "variants": [
+    "tracker"
+   ],
+   "min_poptracker": "0.24.1",
+   "in_poptracker_repo": true
+  },
+  "momodora_moonlit_farewell": {
+   "game": "Momodora: Moonlit Farewell",
+   "pack_repo": "FuyumiSogeki/Momodora-Moonlit-Farewell-Poptracker",
+   "pack_name": "Momodora Moonlit Farewell Tracker",
+   "package_uid": "momodoramfap",
+   "versions_url": "",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "0.25.9",
+   "in_poptracker_repo": false
+  },
+  "noita": {
+   "game": "Noita",
+   "pack_repo": "ScipioWright/Noita-poptracker",
+   "pack_name": "Noita Tracker",
+   "package_uid": "noita_scipiowright",
+   "versions_url": "https://raw.githubusercontent.com/ScipioWright/Noita-poptracker/master/versions.json",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
+  "okami_hd": {
+   "game": "Okami HD",
+   "pack_repo": "Ragmoa/Okami-HD-AP-Tracker",
+   "pack_name": "Okami HD AP Tracker",
+   "package_uid": "ecb828b0-5fe1-4b6b-abd7-76090cc38be0",
+   "versions_url": "",
+   "variants": [],
+   "min_poptracker": "0.35.1",
+   "in_poptracker_repo": false
+  },
+  "osu": {
+   "game": "Osu!",
+   "pack_repo": "dkgervais/osu-poptracker",
+   "pack_name": "Osu! Pack for PopTracker",
+   "package_uid": "ap_osu",
+   "versions_url": "",
+   "variants": [
+    "var_itemsonly"
+   ],
+   "min_poptracker": "0.25.9",
+   "in_poptracker_repo": false
+  },
+  "path_of_exile": {
+   "game": "Path of Exile",
+   "pack_repo": "stubobis1/PathOfExilePoptracker",
+   "pack_name": "Path of Exile Archipelago",
+   "package_uid": "path of exile_ap",
+   "versions_url": "",
+   "variants": [
+    "Items Only"
+   ],
+   "min_poptracker": "0.27.0",
+   "in_poptracker_repo": false
+  },
+  "pikuniku": {
+   "game": "Pikuniku",
+   "pack_repo": "robotzurg/PikunikuPopTracker",
+   "pack_name": "Pikuniku Archipelago",
+   "package_uid": "pikuniku_ap",
+   "versions_url": "https://raw.githubusercontent.com/robotzurg/PikunikuPopTracker/refs/heads/main/versions.json",
+   "variants": [
+    "Items Only",
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.31.0",
+   "in_poptracker_repo": false
+  },
+  "pipistrello_and_the_cursed_yoyo": {
+   "game": "Pipistrello and the Cursed Yoyo",
+   "pack_repo": "MHFsilver/Pipistrello-Tracker",
+   "pack_name": "Pipistrello and the Cursed Yoyo Tracker",
+   "package_uid": "pipistrello_tracker",
+   "versions_url": "",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
+  "pizza_tower": {
+   "game": "Pizza Tower",
+   "pack_repo": "Fairweather-Furry/pt-fair",
+   "pack_name": "Pizza Tower Randomizer AP",
+   "package_uid": "pt_fair",
+   "versions_url": "https://raw.githubusercontent.com/Fairweather-Furry/pt-fair/refs/heads/main/versions.json",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
+  "prodigal": {
+   "game": "Prodigal",
+   "pack_repo": "MrKarato/ProdigalPopTracker",
+   "pack_name": "Prodigal ",
+   "package_uid": "prodigal_karato",
+   "versions_url": "",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
+  "psychonauts": {
+   "game": "Psychonauts",
+   "pack_repo": "Mysteryem/Psychonauts_AP_PopTracker",
+   "pack_name": "PsychoRando AP",
+   "package_uid": "PsychoRandoAPTracker",
+   "versions_url": "https://raw.githubusercontent.com/Mysteryem/Psychonauts_AP_PopTracker/main/versions.json",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "0.32.0",
+   "in_poptracker_repo": false
+  },
+  "q_up": {
+   "game": "Q-Up",
+   "pack_repo": "cxve/q-ap-poptracker",
+   "pack_name": "Q-AP",
+   "package_uid": "qap_cxve",
+   "versions_url": "",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "0.35.2",
+   "in_poptracker_repo": false
+  },
+  "rabi_ribi": {
+   "game": "Rabi-Ribi",
+   "pack_repo": "rajanb/RabiRibiPoptracker",
+   "pack_name": "Rabi Ribi AP Poptracker",
+   "package_uid": "rabiribi-poptracker-rajanb",
+   "versions_url": "https://raw.githubusercontent.com/rajanb/RabiRibiPoptracker/refs/heads/main/versions.json",
+   "variants": [
+    "standard",
+    "var_itemsonly"
+   ],
+   "min_poptracker": "0.25.9",
+   "in_poptracker_repo": false
+  },
+  "rain_world": {
+   "game": "Rain World",
+   "pack_repo": "ThePirateJaz/Rain-World-PopTracker",
+   "pack_name": "Rain World Poptracker Pack",
+   "package_uid": "rain_world_pack",
+   "versions_url": "https://raw.githubusercontent.com/ThePirateJaz/Rain-World-PopTracker/refs/heads/main/versions.json",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "0.25.9",
+   "in_poptracker_repo": false
+  },
+  "resident_evil_2_remake": {
+   "game": "Resident Evil 2 Remake",
+   "pack_repo": "TheRealSolidusSnake/RE2R-Poptracker-Pack",
+   "pack_name": "Resident Evil 2 Remake Archipelago",
+   "package_uid": "resident evil 2 remake_ap",
+   "versions_url": "",
+   "variants": [
+    "Map Tracker",
+    "var_ItemsOnly"
+   ],
+   "min_poptracker": "0.27.0",
+   "in_poptracker_repo": false
+  },
+  "resident_evil_3_remake": {
+   "game": "Resident Evil 3 Remake",
+   "pack_repo": "TheRealSolidusSnake/RE3R_Poptracker",
+   "pack_name": "Resident Evil 3 Remake Archipelago",
+   "package_uid": "resident evil 3 remake_ap",
+   "versions_url": "",
+   "variants": [
+    "Map Tracker",
+    "var_ItemsOnly"
+   ],
+   "min_poptracker": "0.27.0",
+   "in_poptracker_repo": false
+  },
+  "satisfactory": {
+   "game": "Satisfactory",
+   "pack_repo": "snileaf/Satisfactory-poptracker",
+   "pack_name": "Satisfactory PopTracker",
+   "package_uid": "satisfactory_ap",
+   "versions_url": "https://raw.githubusercontent.com/snileaf/Satisfactory-poptracker/versions/versions.json",
+   "variants": [
+    "Items Only"
+   ],
+   "min_poptracker": "0.31.0",
+   "in_poptracker_repo": true
+  },
+  "schedule_i": {
+   "game": "Schedule I",
+   "pack_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+   "pack_name": "Schedule I Archipelago PopTracker",
+   "package_uid": "schedule_i_poptracker_razgriz",
+   "versions_url": "",
+   "variants": [
+    "Items Only",
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.31.0",
+   "in_poptracker_repo": false
+  },
+  "sekiro_shadows_die_twice": {
+   "game": "Sekiro: Shadows Die Twice",
+   "pack_repo": "vonTungsten/Sekiro-Poptracker",
+   "pack_name": "Sekiro: Shadows Die Twice Archipelago",
+   "package_uid": "sekiro: shadows die twice_ap",
+   "versions_url": "",
+   "variants": [
+    "Items Only",
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.31.0",
+   "in_poptracker_repo": false
+  },
+  "shivers": {
+   "game": "Shivers",
+   "pack_repo": "digiholic/Shivers-AP-Poptracker",
+   "pack_name": "Shivers Archipelago",
+   "package_uid": "shivers_ap",
+   "versions_url": "",
+   "variants": [
+    "Items Only",
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.31.0",
+   "in_poptracker_repo": false
+  },
+  "slime_rancher": {
+   "game": "Slime Rancher",
+   "pack_repo": "Sparky5000/SlimeRancher-Poptracker",
+   "pack_name": "Slime Rancher Archipelago",
+   "package_uid": "slime rancher_ap",
+   "versions_url": "",
+   "variants": [
+    "Items Only",
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.31.0",
+   "in_poptracker_repo": false
+  },
+  "smushi_come_home": {
+   "game": "Smushi Come Home",
+   "pack_repo": "xMcacutt-Archipelago/Smushi-Poptracker",
+   "pack_name": "Smushi Come Home Archipelago",
+   "package_uid": "smushi_come_home_ap",
+   "versions_url": "https://raw.githubusercontent.com/xMcacutt-Archipelago/Smushi-Poptracker/refs/heads/main/versions.json",
+   "variants": [
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.27.0",
+   "in_poptracker_repo": false
+  },
+  "sonic_heroes": {
+   "game": "Sonic Heroes",
+   "pack_repo": "Ethicallogic-Archipelago/SonicHeroesArchipelagoPopTracker",
+   "pack_name": "Sonic Heroes Archipelago Tracker",
+   "package_uid": "sonicheroes_ap_tracker",
+   "versions_url": "",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
+  "spelunky_2": {
+   "game": "Spelunky 2",
+   "pack_repo": "Bogdan1000pink/Spelunky-2-Tracker",
+   "pack_name": "Spelunky2 AP Tracker",
+   "package_uid": "spelunky2ap",
+   "versions_url": "",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "0.25.9",
+   "in_poptracker_repo": false
+  },
+  "splasher": {
+   "game": "Splasher",
+   "pack_repo": "Ung-W/Splasher-AP-Poptracker",
+   "pack_name": "Splasher Archipelago",
+   "package_uid": "splasher_ap",
+   "versions_url": "https://raw.githubusercontent.com/Ung-W/Splasher-AP-Poptracker/refs/heads/main/versions.json",
+   "variants": [
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.31.0",
+   "in_poptracker_repo": false
+  },
+  "subnautica": {
+   "game": "Subnautica",
+   "pack_repo": "lurch9229/SubnauticaAP_maptracker_lurch9229",
+   "pack_name": "Subnautica Randomizer for Archipelago",
+   "package_uid": "Subnautica Maptracker",
+   "versions_url": "",
+   "variants": [
+    "items_only",
+    "map_tracker"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
+  "terraria": {
+   "game": "Terraria",
+   "pack_repo": "SerpentAI/TerrariaAPTracker",
+   "pack_name": "Terraria",
+   "package_uid": "ap_terraria",
+   "versions_url": "https://raw.githubusercontent.com/SerpentAI/TerrariaAPTracker/master/versions.json",
+   "variants": [
+    "map"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
+  "the_legend_of_zelda_ocarina_of_time_ship_of_harkinian": {
+   "game": "The Legend of Zelda: Ocarina of Time (Ship of Harkinian)",
+   "pack_repo": "Brian0255/ship-of-harkinian-ap-tracker",
+   "pack_name": "Ship of Harkinian Archipelago",
+   "package_uid": "ship_of_harkinian_ap",
+   "versions_url": "https://raw.githubusercontent.com/Brian0255/ship-of-harkinian-ap-tracker/versions/versions.json",
+   "variants": [
+    "map_tracker_horizontal"
+   ],
+   "min_poptracker": "0.31.0",
+   "in_poptracker_repo": false
+  },
+  "the_messenger": {
+   "game": "The Messenger",
+   "pack_repo": "alwaysintreble/TheMessengerTrackPack",
+   "pack_name": "The Messenger Randomizer Track Pack",
+   "package_uid": "messenger_track_pack",
+   "versions_url": "",
+   "variants": [
+    "standard",
+    "var_itemsonly"
+   ],
+   "min_poptracker": "0.25.3",
+   "in_poptracker_repo": true
+  },
+  "the_simpsons_hit_and_run": {
+   "game": "The Simpsons: Hit and Run",
+   "pack_repo": "Tommaygun/SHAR-Poptracker",
+   "pack_name": "The Simpsons Hit And Run Archipelago",
+   "package_uid": "the simpsons hit and run_ap",
+   "versions_url": "https://raw.githubusercontent.com/Tommaygun/SHAR-Poptracker/refs/heads/main/versions.json",
+   "variants": [
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.31.0",
+   "in_poptracker_repo": false
+  },
+  "toem_a_photo_adventure": {
+   "game": "TOEM: A Photo Adventure",
+   "pack_repo": "culk/toem-poptracker-pack",
+   "pack_name": "TOEM: A Photo Adventure AP Tracker",
+   "package_uid": "toem_ap",
+   "versions_url": "https://raw.githubusercontent.com/culk/toem-poptracker-pack/versions/versions.json",
+   "variants": [
+    "default"
+   ],
+   "min_poptracker": "0.31.0",
+   "in_poptracker_repo": false
+  },
+  "turok_2": {
+   "game": "Turok 2",
+   "pack_repo": "chikakoo/Turok-2-Poptracker",
+   "pack_name": "Turok 2 Tracker",
+   "package_uid": "turok_2_tracker",
+   "versions_url": "",
+   "variants": [
+    "standard",
+    "var_tabbed"
+   ],
+   "min_poptracker": "0.25.9",
+   "in_poptracker_repo": false
+  },
+  "ty_the_tasmanian_tiger": {
+   "game": "Ty the Tasmanian Tiger",
+   "pack_repo": "FyreDay/Ty1-Poptracker",
+   "pack_name": "Ty the Tasmanian Tiger Archipelago",
+   "package_uid": "ty_the_tasmanian_tiger_ap",
+   "versions_url": "https://fyreday.github.io/Ty1-Poptracker/versions.json",
+   "variants": [
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.27.0",
+   "in_poptracker_repo": false
+  },
+  "ultrakill": {
+   "game": "ULTRAKILL",
+   "pack_repo": "BowserCrusher/UltrakillPoptracker",
+   "pack_name": "ULTRAKILL",
+   "package_uid": "uk",
+   "versions_url": "https://raw.githubusercontent.com/BowserCrusher/UltrakillPoptracker/main/versions.json",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
+  "undertale": {
+   "game": "Undertale",
+   "pack_repo": "Pikachu979/Undertale-Poptracker",
+   "pack_name": "Undertale Tracker",
+   "package_uid": "undertale_ap",
+   "versions_url": "",
+   "variants": [
+    "Beta - Items Only",
+    "Beta - Map Tracker",
+    "Items Only",
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.27.0",
+   "in_poptracker_repo": false
+  },
+  "unfair_flips": {
+   "game": "Unfair Flips",
+   "pack_repo": "lighting8282/Unfair-Flips-PopTracker",
+   "pack_name": "Unfair Flips Archipelago",
+   "package_uid": "unfair_flips_ap",
+   "versions_url": "https://raw.githubusercontent.com/lighting8282/Unfair-Flips-PopTracker/main/versions.json",
+   "variants": [
+    "Items Only",
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.31.0",
+   "in_poptracker_repo": false
+  },
+  "vision_soft_reset": {
+   "game": "Vision Soft Reset",
+   "pack_repo": "kumquat-ir/vsr-tracker",
+   "pack_name": "Vision Soft Reset Tracker",
+   "package_uid": "vision soft reset ap",
+   "versions_url": "",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "0.31.0",
+   "in_poptracker_repo": false
+  },
+  "vvvvvv": {
+   "game": "VVVVVV",
+   "pack_repo": "JBarrows/vvvvvv_archipelago_tracker",
+   "pack_name": "VVVVVV Archipelago",
+   "package_uid": "vvvvvv_ap_JBarrows",
+   "versions_url": "",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "0.25.3",
+   "in_poptracker_repo": false
+  },
+  "yohane_the_parhelion_blaze_in_the_deepblue": {
+   "game": "Yohane the Parhelion: Blaze in the Deepblue",
+   "pack_repo": "SeanCass/YohaneTheParhelion-BlazeInTheDeepblue-Poptracker",
+   "pack_name": "YOHANE THE PARHELION -BLAZE in the DEEPBLUE- Archipelago",
+   "package_uid": "yohane the parhelion -blaze in the deepblue-_ap",
+   "versions_url": "https://raw.githubusercontent.com/SeanCass/YohaneTheParhelion-BlazeInTheDeepblue-Poptracker/refs/heads/main/versions.json",
+   "variants": [
+    "Items Only",
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.31.0",
+   "in_poptracker_repo": false
+  },
+  "yooka_laylee": {
+   "game": "Yooka-Laylee",
+   "pack_repo": "RisingPhoenix64/Yooka-Laylee-AP-tracker",
+   "pack_name": "Yooka-Laylee AP PopTracker",
+   "package_uid": "Yooka-Laylee_maptracker_risingphoenix64",
+   "versions_url": "https://raw.githubusercontent.com/RisingPhoenix64/Yooka-Laylee-AP-tracker/main/versions.json",
+   "variants": [
+    "standard",
+    "var_itemsonly"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
+  "zork_grand_inquisitor": {
+   "game": "Zork: Grand Inquisitor",
+   "pack_repo": "SerpentAI/ZorkGrandInquisitorAPTracker",
+   "pack_name": "Zork Grand Inquisitor",
+   "package_uid": "ap_zork_grand_inquisitor",
+   "versions_url": "https://raw.githubusercontent.com/SerpentAI/ZorkGrandInquisitorAPTracker/master/versions.json",
+   "variants": [
+    "map"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  }
+ }
+}
