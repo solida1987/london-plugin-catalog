@@ -5287,7 +5287,7 @@
         "Strategy",
         "Simulation"
       ],
-      "version": "1.4.3",
+      "version": "1.4.4",
       "world_by": "solida1987",
       "world_licence": "",
       "plugin_by": "solida1987",
@@ -14897,7 +14897,7 @@
     {
       "id": "plants_vs_zombies_replanted",
       "name": "Plants vs. Zombies: Replanted",
-      "ap_world_name": "Plants vs. Zombies: Replanted",
+      "ap_world_name": "Plants vs. Zombies Replanted",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",

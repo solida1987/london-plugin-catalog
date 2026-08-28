@@ -1915,13 +1915,13 @@
     "openttd_archipelago": {
       "game": "OpenTTD",
       "ap_world_name": "OpenTTD",
-      "source": "solida1987/openttd-archipelago",
-      "match": "name",
+      "source": "direct",
+      "match": "direct",
       "asset": "openttd.apworld",
-      "url": "https://github.com/solida1987/openttd-archipelago/releases/download/v2.0.4/openttd.apworld",
-      "size": 58049,
-      "tag": "v2.0.4",
-      "published": "2026-08-20",
+      "url": "https://github.com/solida1987/openttd-archipelago/releases/latest/download/openttd.apworld",
+      "size": 60134,
+      "tag": "latest",
+      "published": "2026-08-28",
       "prerelease": false
     },
     "2048": {
