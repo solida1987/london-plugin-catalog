@@ -104,7 +104,9 @@ public class GenericPcPlugin : IGamePlugin
     /// this code can never fetch an address the consent screen did not name.
     private bool ModIsDirectFile => PcSetup.IsDirectFileUrl(Manifest.ModUrl);
 
-    public string[] GameBadges => Manifest.Install switch
+    public string[] GameBadges => Manifest.StandaloneGame
+        ? new[] { "PC", "London installs the game" }
+        : Manifest.Install switch
     {
         "apworld_only"    => new[] { "PC", "Adds itself to your seeds" },
         // The badge states which half is automatic, per game, because the
@@ -141,6 +143,10 @@ public class GenericPcPlugin : IGamePlugin
     {
         "apworld_only" => InstallCapability.AutoInstall,
         "bundled"      => InstallCapability.AutoInstall,
+        // London downloads the game itself, so there is no folder to point at
+        // and nothing for the player to fetch. One button, start to finish.
+        _ when Manifest.StandaloneGame && ModIsAppliableArchive
+                       => InstallCapability.AutoInstall,
         "apworld_and_mod" or "mod_package" when ModIsAppliableArchive
                        => InstallCapability.AutoMod,
         _              => InstallCapability.ManualSetup,
@@ -198,10 +204,25 @@ public class GenericPcPlugin : IGamePlugin
     /// The player's own install of the game, if they have pointed London at
     /// it. The launcher's locate flow writes this key; the setup check writes
     /// the same one, so both doors lead to the same room.
+    /// Where a game London provides itself lives. Under the plugin's own
+    /// folder, so uninstalling the plugin takes the game with it and nothing
+    /// of the player's is ever touched.
+    private string OwnGameFolder => Path.Combine(GameDirectory, "game");
+
     private string? RegisteredGameFolder
     {
         get
         {
+            // ⚠ London PROVIDES this game, so there is nothing to point at and
+            // nothing to auto-find. Asking the player for a folder here is what
+            // made Ship of Harkinian uninstallable: the setup check demanded a
+            // copy of a game that only exists inside the download.
+            if (Manifest.StandaloneGame)
+            {
+                Directory.CreateDirectory(OwnGameFolder);
+                return OwnGameFolder;
+            }
+
             var s = SettingsStore.Load();
             if (s.OriginalGameLocations.TryGetValue(GameId, out var f)
                 && !string.IsNullOrWhiteSpace(f) && Directory.Exists(f))
@@ -567,6 +588,30 @@ public class GenericPcPlugin : IGamePlugin
             plan = PcSetup.PlanZip(za.Entries.Select(e => (e.FullName, e.Length)).ToList(),
                                    gameFolder, receiptFiles);
 
+        if (Manifest.StandaloneGame)
+        {
+            // ⚠ PlanZip is deliberately skipped. It exists to keep London from
+            // dropping files into a folder full of the PLAYER's game, and it
+            // refuses layouts it does not recognise -- which is right for a
+            // mod and wrong here, because this archive is not a mod. Ship of
+            // Harkinian's top level is assets/, debug/, soh.exe: not a
+            // mod-loader tree, and there is nothing to be careful around,
+            // because the folder is London's own and holds only what London
+            // put there. So it is extracted whole.
+            progress?.Report((85, $"Unpacking the game into {gameFolder}…"));
+            var placed = PcSetup.ExtractAll(archive, gameFolder, ct);
+            PcSetup.WriteReceipt(ModReceiptPath, new PcSetup.Receipt(
+                Manifest.ModUrl!, Manifest.Version, placed));
+
+            string need = Manifest.BringYourOwn.Length > 0
+                            && !HasBringYourOwn(gameFolder)
+                ? " One thing left: open the setup check and press "
+                  + $"\"Locate my {Manifest.BringYourOwn}…\"."
+                : "";
+            progress?.Report((100, doneLead + $"{DisplayName} is installed." + need));
+            return;
+        }
+
         if (plan.Reason != null)
         {
             // The layout is not one London recognises. DO NOT GUESS — a file
@@ -661,7 +706,39 @@ public class GenericPcPlugin : IGamePlugin
                                + "author's release."));
         }
 
-        if (kind is "apworld_and_mod" or "mod_package")
+        if (Manifest.StandaloneGame)
+        {
+            // London provides this game, so there is no "your copy" to find.
+            string folder = OwnGameFolder;
+            string exe = Path.Combine(folder, Manifest.GameExe);
+            bool here = Manifest.GameExe.Length > 0 && File.Exists(exe);
+            list.Add(new GameComponent(
+                "The game", here, ComponentNeed.Required,
+                here ? $"{Manifest.GameExe} is in {folder}."
+                     : "The game has not been downloaded yet.",
+                here ? null : "Click Install — London downloads it from the "
+                            + "author's release and unpacks it here."));
+
+            if (Manifest.BringYourOwn.Length > 0)
+            {
+                bool got = HasBringYourOwn(folder);
+                // ⚠ Optional on purpose. This is the ONE thing London cannot
+                // do for the player, and it is also the one thing London
+                // cannot verify -- the game checks the file against its own
+                // hashes. A red light here would block the launch on a guess,
+                // which is exactly the dead end this whole shape replaced.
+                list.Add(new GameComponent(
+                    $"Your own {Manifest.BringYourOwn}", got, ComponentNeed.Optional,
+                    got ? $"Copied into {folder}."
+                        : "The game cannot start without it.",
+                    got ? null
+                        : $"Press the \"Locate my {Manifest.BringYourOwn}…\" button "
+                        + "in this window — London copies it into the game's "
+                        + "folder. The game turns it into what it needs on first run.",
+                    Manifest.ReleasePage.Length > 0 ? Manifest.ReleasePage : null));
+            }
+        }
+        else if (kind is "apworld_and_mod" or "mod_package")
         {
             string? folder = RegisteredGameFolder;
             bool located = folder != null;
@@ -707,6 +784,36 @@ public class GenericPcPlugin : IGamePlugin
         }
 
         return list;
+    }
+
+    /// Has the player put their own file in the game's folder?
+    ///
+    /// Evidence only. The patterns come from the manifest, so this stays a
+    /// property of the GAME rather than a list of ROM extensions baked into
+    /// code shared by six hundred plugins.
+    /// The same question, for the setup dialog. It lives in the same file and
+    /// still asks through here, so there is one answer rather than two that
+    /// can drift.
+    internal bool HasOwnFile(string folder) => HasBringYourOwn(folder);
+
+    /// The folder London manages for a game it provides. Exposed so the setup
+    /// dialog opens THAT one and not a stale path in the settings.
+    internal string ProvidedGameFolder => OwnGameFolder;
+
+    private bool HasBringYourOwn(string folder)
+    {
+        if (Manifest.BringYourOwnFiles.Length == 0) return false;
+        foreach (string pat in Manifest.BringYourOwnFiles.Split(
+                     ',', StringSplitOptions.RemoveEmptyEntries
+                        | StringSplitOptions.TrimEntries))
+        {
+            try
+            {
+                if (Directory.EnumerateFiles(folder, pat).Any()) return true;
+            }
+            catch { /* a folder that vanished is simply no evidence */ }
+        }
+        return false;
     }
 
     /// The mod's state, told apart honestly:
@@ -966,6 +1073,23 @@ public class GenericPcPlugin : IGamePlugin
                 LogLine?.Invoke($"[{DisplayName}] Asked Steam to start the game.");
                 StartWatching();
             }
+            else if (Manifest.StandaloneGame && Manifest.GameExe.Length > 0
+                     && File.Exists(Path.Combine(OwnGameFolder, Manifest.GameExe)))
+            {
+                // London downloaded it and knows exactly where it is, so it
+                // starts it. ⚠ WorkingDirectory matters: the game looks for
+                // its own assets beside the exe, and a process started from
+                // the launcher's folder would not find them.
+                Process.Start(new ProcessStartInfo
+                {
+                    FileName = Path.Combine(OwnGameFolder, Manifest.GameExe),
+                    WorkingDirectory = OwnGameFolder,
+                    UseShellExecute = true,
+                });
+                IsRunning = true;
+                LogLine?.Invoke($"[{DisplayName}] Started {Manifest.GameExe}.");
+                StartWatching();
+            }
             else
             {
                 LogLine?.Invoke($"[{DisplayName}] Start the game yourself — London does "
@@ -1128,6 +1252,21 @@ public static class PcSetup
     /// token with the game's title — "Blasphemous.exe" for Blasphemous,
     /// "oriDE.exe" for Ori. Null when nothing matches; the caller words the
     /// doubt, because absence here is a warning, not proof of a wrong folder.
+    /// A file-dialog filter from the manifest's own patterns.
+    ///
+    /// "*.z64,*.n64,*.v64,oot.o2r" becomes one entry naming them all plus an
+    /// "All files" escape hatch — a player whose dump has an odd extension
+    /// must not be locked out by our list.
+    public static string FilterFor(string patterns, string label)
+    {
+        var pats = patterns.Split(',', StringSplitOptions.RemoveEmptyEntries
+                                     | StringSplitOptions.TrimEntries)
+                           .Where(p => p.Length > 0).ToArray();
+        if (pats.Length == 0) return "All files|*.*";
+        return $"{label} ({string.Join("; ", pats)})|{string.Join(";", pats)}"
+             + "|All files|*.*";
+    }
+
     public static string? NameEvidence(string folder, string gameName)
     {
         var tokens = gameName.Split(' ', ':', '-', '\'', '!', '.', ',')
@@ -1144,7 +1283,15 @@ public static class PcSetup
                          .SelectMany(d => SafeEntries(d).Take(64))))
             {
                 string name = Path.GetFileName(path).ToLowerInvariant();
-                if (tokens.Any(name.Contains))
+                // ⚠ ONE shared word is not evidence. This used to accept any
+                // token of four letters or more, so a Majora's Mask ROM in the
+                // folder was shown as proof that it was the Ocarina of Time
+                // folder -- "zelda" matched, and the setup check went green on
+                // the wrong game. Either two distinct words of the title, or
+                // one word long enough to be the title's own ("harkinian",
+                // "blasphemous"), never a word every game in the series shares.
+                int hits = tokens.Count(name.Contains);
+                if (hits >= 2 || tokens.Any(t => t.Length >= 8 && name.Contains(t)))
                     return Path.GetFileName(path);
             }
         }
@@ -1411,6 +1558,47 @@ public static class PcSetup
         return installed;
     }
 
+    /// Unpack a whole archive into a folder London owns.
+    ///
+    /// For a standalone game the archive IS the game, so there is no layout to
+    /// recognise and nothing of the player's to be careful around — the folder
+    /// holds only what London put there. PlanZip's caution is right for a mod
+    /// dropped into somebody's Steam install and wrong here.
+    ///
+    /// ⚠ Entry names are still checked. A zip may name an entry "..\..\x",
+    /// and extracting that writes outside the folder we were handed.
+    public static List<ReceiptFile> ExtractAll(string archivePath, string destFolder,
+                                               CancellationToken ct)
+    {
+        var placed = new List<ReceiptFile>();
+        string root = Path.GetFullPath(destFolder);
+        Directory.CreateDirectory(root);
+
+        using var za = ZipFile.OpenRead(archivePath);
+        foreach (var entry in za.Entries)
+        {
+            ct.ThrowIfCancellationRequested();
+            if (entry.FullName.EndsWith("/") || entry.Length == 0
+                && entry.Name.Length == 0) continue;          // a directory
+
+            string dest = Path.GetFullPath(Path.Combine(root, entry.FullName));
+            if (!dest.StartsWith(root + Path.DirectorySeparatorChar,
+                                 StringComparison.OrdinalIgnoreCase)
+                && !dest.Equals(root, StringComparison.OrdinalIgnoreCase))
+                throw new InvalidDataException(
+                    $"The archive tries to write outside the game folder "
+                  + $"(\"{entry.FullName}\"). Nothing was installed.");
+
+            Directory.CreateDirectory(Path.GetDirectoryName(dest)!);
+            string part = dest + ".part";
+            entry.ExtractToFile(part, overwrite: true);
+            File.Move(part, dest, overwrite: true);
+            placed.Add(new ReceiptFile(
+                Path.GetRelativePath(root, dest), entry.Length));
+        }
+        return placed;
+    }
+
     // --------------------------- recognising a hand-made install -----------
 
     private static readonly object ScanLock = new();
@@ -1631,7 +1819,12 @@ internal static class PcSetupDialog
 
             gameFolder = ReadFolder();
 
-            bool folderKind = manifest.Install is "apworld_and_mod" or "mod_package";
+            // — The folder picker is for a game the PLAYER owns. London
+            // provides a standalone one, so offering "Change game folder"
+            // there invites exactly the mistake this shape removed: pointing
+            // at another copy on disk that London does not manage.
+            bool folderKind = !manifest.StandaloneGame
+                              && manifest.Install is "apworld_and_mod" or "mod_package";
             if (folderKind)
                 AddButton(gameFolder == null ? "Locate my game folder…"
                                              : "Change game folder…",
@@ -1648,6 +1841,34 @@ internal static class PcSetupDialog
                         { status.Text = why; return; }
                         persistFolder(dlg.FolderName);
                         status.Text = "";
+                        Redraw();
+                    });
+
+            // — The one thing London cannot download. Same shape as every
+            // ROM game in the catalogue: ask where the file is, then COPY it
+            // into the install folder. Telling the player to go and put it
+            // there themselves is a step we can simply take for them.
+            if (manifest.StandaloneGame && manifest.BringYourOwn.Length > 0
+                && gameFolder != null && !plugin.HasOwnFile(gameFolder))
+                AddButton($"Locate my {manifest.BringYourOwn}…",
+                    "Point London at the file. It is copied into the game's folder; "
+                  + "your original is left where it is.",
+                    () =>
+                    {
+                        var dlg = new Microsoft.Win32.OpenFileDialog
+                        {
+                            Title = $"Locate your {manifest.BringYourOwn}",
+                            Filter = PcSetup.FilterFor(manifest.BringYourOwnFiles,
+                                                       manifest.BringYourOwn),
+                            CheckFileExists = true,
+                        };
+                        if (dlg.ShowDialog(win) != true) return;
+                        string dest = Path.Combine(gameFolder!,
+                                                   Path.GetFileName(dlg.FileName));
+                        // Copy, never move: it is the player's file and it may
+                        // well be the copy another game of theirs uses.
+                        File.Copy(dlg.FileName, dest, overwrite: true);
+                        status.Text = $"Copied {Path.GetFileName(dest)} into the game folder.";
                         Redraw();
                     });
 
@@ -1679,7 +1900,8 @@ internal static class PcSetupDialog
                     () => Process.Start(new ProcessStartInfo
                     { FileName = gameFolder, UseShellExecute = true }));
 
-            if (downloadedMod.Length > 0 && File.Exists(downloadedMod))
+            if (!manifest.StandaloneGame
+                && downloadedMod.Length > 0 && File.Exists(downloadedMod))
                 AddButton("Open downloaded mod",
                     "Shows the mod archive London downloaded, so you can unpack "
                   + "it into the game folder as the author describes.",
@@ -1701,6 +1923,13 @@ internal static class PcSetupDialog
 
         string? ReadFolder()
         {
+            // — For a game London provides, the settings entry is not the
+            // answer and may be a leftover from before this game had a shape
+            // of its own. Ship of Harkinian still had C:\spil\... registered
+            // from an earlier attempt, so "Open game folder" opened the
+            // player's old download instead of the one London installed.
+            if (manifest.StandaloneGame) return plugin.ProvidedGameFolder;
+
             var s = SettingsStore.Load();
             return s.OriginalGameLocations.TryGetValue(plugin.GameId, out var f)
                    && !string.IsNullOrWhiteSpace(f) && Directory.Exists(f) ? f : null;
@@ -1733,7 +1962,29 @@ public sealed record PcManifest(
     string ClientProtocol,
     int ClientPort,
     string LoaderKind,
-    string? LoaderUrl)
+    string? LoaderUrl,
+    // --- a game London provides itself -----------------------------------
+    //
+    // A standalone fan port is NOT a mod for a game you own: the release's
+    // zip IS the game. Ship of Harkinian shipped as "apworld_and_mod", so the
+    // setup check demanded "Your copy of the game" -- a folder for something
+    // that exists nowhere, is not on Steam, and that London could simply have
+    // downloaded. The player could not get past it.
+    bool StandaloneGame,
+    // The executable inside that download, so London can start it. Without a
+    // Steam id there is nothing else to go on.
+    string GameExe,
+    // What the player must still put in the folder, or empty. ⚠ Not every
+    // standalone port is self-contained: Ship of Harkinian ships no
+    // copyrighted assets and turns the player's own ROM into what it needs on
+    // first run. Saying "nothing needed" there would be a lie the player only
+    // discovers when the game refuses to start.
+    string BringYourOwn,
+    // The patterns that show the player has done it -- "*.z64,*.n64,oot.o2r".
+    // ⚠ Evidence, not validation: Ship of Harkinian checks the ROM against
+    // its own hash list, and London has no business second-guessing that. A
+    // match turns the reminder green; a miss leaves it amber and never blocks.
+    string BringYourOwnFiles)
 {
     public static PcManifest Parse(string json)
     {
@@ -1771,6 +2022,11 @@ public sealed record PcManifest(
             r.TryGetProperty("client_port", out var cp)
                 && cp.ValueKind == JsonValueKind.Number ? cp.GetInt32() : 0,
             S(r, "loader_kind"),
-            N(r, "loader_url"));
+            N(r, "loader_url"),
+            r.TryGetProperty("standalone_game", out var sg)
+                && sg.ValueKind == JsonValueKind.True,
+            S(r, "game_exe"),
+            S(r, "bring_your_own"),
+            S(r, "bring_your_own_files"));
     }
 }
