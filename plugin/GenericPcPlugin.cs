@@ -465,15 +465,23 @@ public class GenericPcPlugin : IGamePlugin
         {
             foreach (var e in za.Entries)
             {
-                if (e.FullName.EndsWith("/", StringComparison.Ordinal)) continue;
+                // ⚠⚠ Normalise the separator FIRST. A zip that stores its
+                // paths with backslashes -- Azahar publishes one, and it broke
+                // the 3DS install -- would fail every test below: the
+                // directory check, the BepInEx/ prefix, all of it. Nothing
+                // would be extracted and `placed` would stay 0, so the player
+                // would be told BepInEx was installed while the folder stayed
+                // empty. Silence is the worse half of this bug.
+                string name = e.FullName.Replace('\\', '/');
+                if (name.EndsWith('/') || e.Name.Length == 0) continue;
                 // Only the loader's own tree — a zip with anything else in it
                 // is not the release we asked for.
-                bool ours = e.FullName.StartsWith("BepInEx/", StringComparison.Ordinal)
-                         || e.FullName is "winhttp.dll" or "doorstop_config.ini"
-                                        or ".doorstop_version" or "changelog.txt";
+                bool ours = name.StartsWith("BepInEx/", StringComparison.Ordinal)
+                         || name is "winhttp.dll" or "doorstop_config.ini"
+                                  or ".doorstop_version" or "changelog.txt";
                 if (!ours) continue;
                 string dest = Path.Combine(gameFolder,
-                    e.FullName.Replace('/', Path.DirectorySeparatorChar));
+                    name.Replace('/', Path.DirectorySeparatorChar));
                 // Never clobber: a player who already runs BepInEx keeps every
                 // byte of their setup, and this pass only fills what is absent.
                 if (File.Exists(dest)) continue;
