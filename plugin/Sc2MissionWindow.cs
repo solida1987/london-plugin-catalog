@@ -182,6 +182,11 @@ internal sealed class Sc2Bridge : IDisposable
 {
     private Process? _proc;
     public bool Ready { get; private set; }
+
+    /// The process runs but may still be warming up — the frozen engine
+    /// imports five hundred worlds before our component even starts, and
+    /// that takes it a minute. Warming is NOT a reason to restart it.
+    public bool Alive => _proc is { HasExited: false };
     public event Action<string>? StateChanged;
     public event Action<string>? LineReceived;
 
@@ -657,44 +662,74 @@ internal sealed class Sc2MissionWindow : Window
         _detailHost.Children.Add(launch);
     }
 
+    private Sc2Mission? _pendingLaunch;
+    private Sc2Bridge? _hookedBridge;
+
+    private void HookBridge(Sc2Bridge b)
+    {
+        if (_hookedBridge == b) return;
+        if (_hookedBridge != null) _hookedBridge.StateChanged -= OnBridgeState;
+        _hookedBridge = b;
+        b.StateChanged += OnBridgeState;
+        Closed += (_, _) => { b.StateChanged -= OnBridgeState; };
+    }
+
+    private void OnBridgeState(string s)
+    {
+        if (s != "ready") return;
+        var m = _pendingLaunch;
+        _pendingLaunch = null;
+        if (m == null) return;
+        Dispatcher.Invoke(() =>
+        { SetFooter($"Launching {m.Name}…"); _bridge()?.Play(m.Id); });
+    }
+
     private void Launch(Sc2Mission m)
     {
         var b = _bridge();
-        if (b is not { Ready: true })
+        if (b is { Ready: true })
+        {
+            SetFooter($"Launching {m.Name}…");
+            b.Play(m.Id);
+            return;
+        }
+
+        // The order waits for the engine; the engine is never punished for
+        // being asked twice. The first version restarted a warming engine on
+        // every click — a one-minute warm-up nobody could ever sit out.
+        _pendingLaunch = m;
+
+        if (b is { Alive: true })
+        {
+            HookBridge(b);
+            SetFooter($"The engine is warming up — {m.Name} launches the moment "
+                    + "it is ready. (First start takes about a minute.)");
+        }
+        else
         {
             SetFooter("Starting the mission engine…");
             if (!_startBridge())
             {
                 SetFooter("The mission engine could not start — see the session log.");
+                _pendingLaunch = null;
                 return;
             }
             b = _bridge();
-            if (b == null) return;
-            // Fire once it reports ready; a second click is never needed.
-            void OnState(string s)
-            {
-                if (s != "ready") return;
-                b.StateChanged -= OnState;
-                Dispatcher.Invoke(() => { SetFooter($"Launching {m.Name}…"); b.Play(m.Id); });
-            }
-            b.StateChanged += OnState;
-
-            // Silence is the one thing this window may never answer with.
-            // The engine needs the seed's server to be up; when it is not,
-            // "ready" never comes — say so instead of waiting mutely.
-            var timer = new System.Windows.Threading.DispatcherTimer
-            { Interval = TimeSpan.FromSeconds(60) };
-            timer.Tick += (_, _) =>
-            {
-                timer.Stop();
-                if (_bridge() is not { Ready: true })
-                    SetFooter("The engine did not become ready — is this seed's "
-                            + "server running? Press Play on the slot, then launch again.");
-            };
-            timer.Start();
-            return;
+            if (b != null) HookBridge(b);
         }
-        SetFooter($"Launching {m.Name}…");
-        b.Play(m.Id);
+
+        // Silence is the one thing this window may never answer with. The
+        // engine needs the seed's server to be up; when it is not, "ready"
+        // never comes — say so instead of waiting mutely.
+        var timer = new System.Windows.Threading.DispatcherTimer
+        { Interval = TimeSpan.FromSeconds(120) };
+        timer.Tick += (_, _) =>
+        {
+            timer.Stop();
+            if (_bridge() is not { Ready: true })
+                SetFooter("The engine did not become ready — is this seed's "
+                        + "server running? Press Play on the slot, then launch again.");
+        };
+        timer.Start();
     }
 }

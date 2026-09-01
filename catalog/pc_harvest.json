@@ -9169,7 +9169,7 @@
       "data_asset": "Archipelago-SC2Data.zip",
       "data_marker": "Mods/ArchipelagoCore.SC2Mod",
       "locator_kind": "sc2_executeinfo",
-      "plugin_version": "1.4.3",
+      "plugin_version": "1.4.4",
       "data_metadata_file": "ArchipelagoSC2Metadata.txt",
       "session_window": "sc2_missions",
       "min_launcher": "3.23.0"

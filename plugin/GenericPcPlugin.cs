@@ -58,6 +58,7 @@ public class GenericPcPlugin : IGamePlugin
     private readonly HashSet<long> _mcChecked = new();
     private Sc2MissionWindow? _mcWindow;
     private Sc2Bridge? _mcBridge;
+    private string? _mcBridgeEndpoint; // what the running engine is connected to
     private string? _mcAuth;    // "slot:password", escaped — the connect URI's userinfo
     private string? _mcServer;  // host:port
 
@@ -1363,6 +1364,12 @@ public class GenericPcPlugin : IGamePlugin
     private bool StartMissionBridge()
     {
         if (_mcAuth == null || _mcServer == null) return false;
+
+        // A live engine on the same room is reused, warm or ready — its
+        // one-minute warm-up must never be paid twice for the same session.
+        string endpoint = _mcAuth + "@" + _mcServer;
+        if (_mcBridge is { Alive: true } && _mcBridgeEndpoint == endpoint)
+            return true;
         string? exe = Sc2Bridge.FindLauncherExe();
         if (exe == null)
         {
@@ -1414,6 +1421,7 @@ public class GenericPcPlugin : IGamePlugin
             };
         }
         string? folder = RegisteredGameFolder;
+        _mcBridgeEndpoint = endpoint;
         return _mcBridge.Start(exe, _mcAuth, _mcServer,
                                Manifest.LocatorKind.Length > 0 ? folder : null);
     }
