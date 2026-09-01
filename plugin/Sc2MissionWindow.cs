@@ -491,11 +491,20 @@ internal sealed class Sc2MissionWindow : Window
 
     /// Rebuild the model from live data and redraw. Called on open and on
     /// every session change (checks landing, table arriving).
+    private int _lastCheckedCount = -1;
+
     public void Refresh()
     {
-        var (sd, locs, _, seedLocs) = _data();
+        var (sd, locs, got, seedLocs) = _data();
         _board = Sc2Board.Build(sd, locs, seedLocs);
         if (_bridge() is { } b) HookBridge(b);
+        // Progress voids old refusals: a mission the game refused an hour
+        // ago may be open now that its requirements fell.
+        if (got.Count != _lastCheckedCount)
+        {
+            _lastCheckedCount = got.Count;
+            _refusedByGame.Clear();
+        }
         Redraw();
     }
 
@@ -720,7 +729,7 @@ internal sealed class Sc2MissionWindow : Window
         bool lockedNow = open == false || _refusedByGame.Contains(m.Id);
         bool warming = _bridge() is { Alive: true, Ready: false };
         string label = _gameLoading
-            ? "⏳   GAME IS LOADING — the first start takes a while…"
+            ? "⏳   GAME IS LOADING…"
             : _pendingLaunch != null
                 ? "⏳   QUEUED — launches the moment the engine is ready…"
             : _launchBusy ? "…   LAUNCHING"
@@ -774,6 +783,21 @@ internal sealed class Sc2MissionWindow : Window
     /// scared the pilot, and meant nothing.
     private void OnBridgeLine(string line)
     {
+        // The engine says when the game closed — victory, defeat or the
+        // player quitting. That is the board's cue to stand down; without
+        // it the card said GAME LOADING at an empty desktop.
+        if (line.StartsWith("MISSION:ended"))
+        {
+            Dispatcher.BeginInvoke(() =>
+            {
+                _loadingTimer?.Stop();
+                _launchBusy = false; _gameLoading = false; _launchingId = null;
+                SetFooter("The game closed. Checks you earned are on the "
+                        + "server; pick the next mission when ready.");
+                Redraw();
+            });
+            return;
+        }
         if (!_launchBusy) return;
         if (!line.StartsWith("err:") || !line.Contains("Error")) return;
         Dispatcher.BeginInvoke(() => SetFooter(line[4..].Trim()));

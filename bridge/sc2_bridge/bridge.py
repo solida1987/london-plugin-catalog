@@ -52,7 +52,27 @@ async def main(args) -> None:
     threading.Thread(target=stdin_reader, daemon=True, name="StdinReader").start()
 
     announced = False
+    run_task = None
     while not ctx.exit_event.is_set():
+        # Watch the mission run. When the game closes — victory, defeat or
+        # the player just quitting — the task ends, and TWO things must
+        # happen here: London gets told (the board clears its loading
+        # state), and the task's exception gets consumed. Unconsumed, the
+        # bot's protobuf farewell ("ValueError: Value out of range:
+        # 4294967296" when quitting mid-mission) is dumped to stderr by
+        # asyncio and ends up scaring the player. It means nothing.
+        current = getattr(ctx, "sc2_run_task", None)
+        if current is not None and current is not run_task:
+            run_task = current
+        if run_task is not None and run_task.done():
+            try:
+                run_task.result()
+                out("MISSION:ended")
+            except asyncio.CancelledError:
+                out("MISSION:ended cancelled")
+            except Exception as e:
+                out(f"MISSION:ended {type(e).__name__}")
+            run_task = None
         # Announce readiness once the mission order has arrived — that is the
         # moment PLAY can mean anything.
         if not announced and getattr(ctx, "custom_mission_order", None):
