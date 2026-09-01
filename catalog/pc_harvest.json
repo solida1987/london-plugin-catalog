@@ -9162,7 +9162,13 @@
       "release_page": "https://github.com/ArchipelagoMW/Archipelago/releases",
       "apworld_url": null,
       "mod_url": null,
-      "tag": ""
+      "tag": "",
+      "world_client_name": "Starcraft 2 Client",
+      "data_repo": "archipelago-sc2/Archipelago-SC2-data",
+      "data_tag": "API4",
+      "data_asset": "Archipelago-SC2Data.zip",
+      "data_marker": "Mods/ArchipelagoCore.SC2Mod",
+      "locator_kind": "sc2_executeinfo"
     },
     {
       "_v": 2,

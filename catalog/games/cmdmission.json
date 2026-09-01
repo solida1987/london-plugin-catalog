@@ -8,7 +8,7 @@
   "version": "1.0.0",
   "_verified": "2026-08-25",
   "_drafted_note": "Drafted 2026-08-25 from the world's OWN repository -- its __init__.py, archipelago.json, setup guide and README, read that day. No field is filled in from memory or from what other games on the same console do.",
-  "ap_world_name": "Mega Man X: Command Mission",
+  "ap_world_name": "Mega Man X Command Mission",
   "_ap_world_name_source": "the world's own archipelago.json: {\"game\": \"Mega Man X: Command Mission\"}, read 25 Aug 2026. ⚠ Note the colon -- the sheet lists this game as \"Mega Man X Command Mission\" without one, and the AP slot name is the world's spelling, not the sheet's.",
   "description": "Mega Man X: Command Mission as a multiworld. Characters, weapons, force metal and consumables are shuffled, with new Access Code and Rebellion Medal items gating the stages. Requires the player's own EU disc, Dolphin with MMU disabled, and the world's gclib folder installed into Archipelago's lib directory.",
   "_description_source": "written by us from the world's own structure and its setup guide's stated requirements. No text is copied from the game.",

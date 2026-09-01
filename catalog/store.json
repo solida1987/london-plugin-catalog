@@ -642,7 +642,7 @@
     {
       "id": "cmdmission",
       "name": "Mega Man X: Command Mission",
-      "ap_world_name": "Mega Man X: Command Mission",
+      "ap_world_name": "Mega Man X Command Mission",
       "subtitle": "Dolphin",
       "description": "Mega Man X: Command Mission as a multiworld. Characters, weapons, force metal and consumables are shuffled, with new Access Code and Rebellion Medal items gating the stages. Requires the player's own EU disc, Dolphin with MMU disabled, and the world's gclib folder installed into Archipelago's lib directory.",
       "platform": "GC",
@@ -5287,7 +5287,7 @@
         "Strategy",
         "Simulation"
       ],
-      "version": "1.5.1",
+      "version": "1.5.3",
       "world_by": "solida1987",
       "world_licence": "",
       "plugin_by": "solida1987",
@@ -5329,7 +5329,7 @@
     {
       "id": "7_days_to_die",
       "name": "7 Days to Die",
-      "ap_world_name": "7 Days to Die",
+      "ap_world_name": "7 Days To Die",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -5589,7 +5589,7 @@
     {
       "id": "age_of_empires_ii_definitive_edition",
       "name": "Age of Empires II: Definitive Edition",
-      "ap_world_name": "Age of Empires II: Definitive Edition",
+      "ap_world_name": "Age Of Empires II: Definitive Edition",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -5641,7 +5641,7 @@
     {
       "id": "age_of_mythology_retold",
       "name": "Age of Mythology: Retold",
-      "ap_world_name": "Age of Mythology: Retold",
+      "ap_world_name": "Age Of Mythology Retold",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -5797,7 +5797,7 @@
     {
       "id": "another_crab_s_treasure",
       "name": "Another Crab's Treasure",
-      "ap_world_name": "Another Crab's Treasure",
+      "ap_world_name": "Another Crabs Treasure",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -6083,7 +6083,7 @@
     {
       "id": "ark_survival_evolved",
       "name": "Ark: Survival Evolved",
-      "ap_world_name": "Ark: Survival Evolved",
+      "ap_world_name": "ARK Survival Evolved",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -6629,7 +6629,7 @@
     {
       "id": "bk_simulator",
       "name": "BK Simulator",
-      "ap_world_name": "BK Simulator",
+      "ap_world_name": "BKSimulator",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -7227,7 +7227,7 @@
     {
       "id": "cash_cleaner_simulator",
       "name": "Cash Cleaner Simulator",
-      "ap_world_name": "Cash Cleaner Simulator",
+      "ap_world_name": "Cash cleaner simulator",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -7643,7 +7643,7 @@
     {
       "id": "chrono_trigger_jets_of_time",
       "name": "Chrono Trigger: Jets of Time",
-      "ap_world_name": "Chrono Trigger: Jets of Time",
+      "ap_world_name": "Chrono Trigger Jets of Time",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -8371,7 +8371,7 @@
     {
       "id": "dark_souls_remastered",
       "name": "Dark Souls: Remastered",
-      "ap_world_name": "Dark Souls: Remastered",
+      "ap_world_name": "Dark Souls Remastered",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -8631,7 +8631,7 @@
     {
       "id": "delivering_hope",
       "name": "Delivering HOPE",
-      "ap_world_name": "Delivering HOPE",
+      "ap_world_name": "Delivering Hope",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -8761,7 +8761,7 @@
     {
       "id": "divinity_original_sin_2",
       "name": "Divinity: Original Sin 2",
-      "ap_world_name": "Divinity: Original Sin 2",
+      "ap_world_name": "Divinity Original Sin 2",
       "subtitle": "PC · mod from Thunderstore or Workshop",
       "description": "",
       "platform": "PC",
@@ -9567,7 +9567,7 @@
     {
       "id": "factorio_platformer",
       "name": "Factorio Platformer",
-      "ap_world_name": "Factorio Platformer",
+      "ap_world_name": "Factorio: Platformer",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -9957,7 +9957,7 @@
     {
       "id": "final_fantasy_xii_trial_mode",
       "name": "Final Fantasy XII: Trial Mode",
-      "ap_world_name": "Final Fantasy XII: Trial Mode",
+      "ap_world_name": "Final Fantasy XII Trial Mode",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -10243,7 +10243,7 @@
     {
       "id": "friday_night_funkin",
       "name": "Friday Night Funkin'",
-      "ap_world_name": "Friday Night Funkin'",
+      "ap_world_name": "Friday Night Funkin",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -10451,7 +10451,7 @@
     {
       "id": "gemcraft_frostborn_wrath",
       "name": "Gemcraft: Frostborn Wrath",
-      "ap_world_name": "Gemcraft: Frostborn Wrath",
+      "ap_world_name": "GemCraft: Frostborn Wrath",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -10607,7 +10607,7 @@
     {
       "id": "goldeneye_007",
       "name": "Goldeneye 007",
-      "ap_world_name": "Goldeneye 007",
+      "ap_world_name": "GoldenEye 007",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -10919,7 +10919,7 @@
     {
       "id": "hades_2_rogue",
       "name": "Hades 2 (Rogue)",
-      "ap_world_name": "Hades 2 (Rogue)",
+      "ap_world_name": "Hades2Rogue",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -11101,7 +11101,7 @@
     {
       "id": "hatsune_miku_project_diva_mega_mix",
       "name": "Hatsune Miku: Project Diva Mega Mix+",
-      "ap_world_name": "Hatsune Miku: Project Diva Mega Mix+",
+      "ap_world_name": "Hatsune Miku Project Diva Mega Mix+",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -11309,7 +11309,7 @@
     {
       "id": "hitman_world_of_assassination",
       "name": "HITMAN: World of Assassination",
-      "ap_world_name": "HITMAN: World of Assassination",
+      "ap_world_name": "HITMAN World of Assassination",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -11647,7 +11647,7 @@
     {
       "id": "i_was_a_teenage_exocolonist",
       "name": "I Was A Teenage Exocolonist",
-      "ap_world_name": "I Was A Teenage Exocolonist",
+      "ap_world_name": "I Was a Teenage Exocolonist",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -12635,7 +12635,7 @@
     {
       "id": "librarian_tidy_up_the_arcane_library",
       "name": "Librarian: Tidy Up the Arcane Library",
-      "ap_world_name": "Librarian: Tidy Up the Arcane Library",
+      "ap_world_name": "Librarian Tidy Up the Arcane Library",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -12921,7 +12921,7 @@
     {
       "id": "lost_but_found",
       "name": "Lost But Found",
-      "ap_world_name": "Lost But Found",
+      "ap_world_name": "LostButFound",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -13207,7 +13207,7 @@
     {
       "id": "mina_the_hollower",
       "name": "Mina the Hollower",
-      "ap_world_name": "Mina the Hollower",
+      "ap_world_name": "Mina The Hollower",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -14039,7 +14039,7 @@
     {
       "id": "one_must_fall_2097",
       "name": "One Must Fall 2097",
-      "ap_world_name": "One Must Fall 2097",
+      "ap_world_name": "One Must Fall: 2097",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -14091,7 +14091,7 @@
     {
       "id": "openttd_cargolock",
       "name": "OpenTTD CargoLock",
-      "ap_world_name": "OpenTTD CargoLock",
+      "ap_world_name": "OpenTTD Cargolock",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -14195,7 +14195,7 @@
     {
       "id": "osu",
       "name": "Osu!",
-      "ap_world_name": "Osu!",
+      "ap_world_name": "osu!",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -14377,7 +14377,7 @@
     {
       "id": "paquerette_down_the_bunburrows",
       "name": "Paquerette Down the Bunburrows",
-      "ap_world_name": "Paquerette Down the Bunburrows",
+      "ap_world_name": "Paquerette Down The Bunburrows",
       "subtitle": "PC · mod from Thunderstore or Workshop",
       "description": "",
       "platform": "PC",
@@ -14897,7 +14897,7 @@
     {
       "id": "plants_vs_zombies_replanted",
       "name": "Plants vs. Zombies: Replanted",
-      "ap_world_name": "Plants vs. Zombies Replanted",
+      "ap_world_name": "Plants vs. Zombies: Replanted",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -15209,7 +15209,7 @@
     {
       "id": "r_e_p_o",
       "name": "R.E.P.O.",
-      "ap_world_name": "R.E.P.O.",
+      "ap_world_name": "R.E.P.O",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -15547,7 +15547,7 @@
     {
       "id": "rift_of_the_necrodancer",
       "name": "Rift of the NecroDancer",
-      "ap_world_name": "Rift of the NecroDancer",
+      "ap_world_name": "Rift of the Necrodancer",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -15885,7 +15885,7 @@
     {
       "id": "rwby_grimm_eclipse",
       "name": "RWBY: Grimm Eclipse",
-      "ap_world_name": "RWBY: Grimm Eclipse",
+      "ap_world_name": "RWBY Grimm Eclipse",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -16379,7 +16379,7 @@
     {
       "id": "shapez_2",
       "name": "Shapez 2",
-      "ap_world_name": "Shapez 2",
+      "ap_world_name": "shapez 2",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -16587,7 +16587,7 @@
     {
       "id": "skul_the_hero_slayer",
       "name": "Skul the Hero Slayer",
-      "ap_world_name": "Skul the Hero Slayer",
+      "ap_world_name": "Skul: The Hero Slayer",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -17159,7 +17159,7 @@
     {
       "id": "starcraft_ii",
       "name": "StarCraft II",
-      "ap_world_name": "StarCraft II",
+      "ap_world_name": "Starcraft 2",
       "subtitle": "PC · ships with Archipelago",
       "description": "",
       "platform": "PC",
@@ -17179,8 +17179,8 @@
       "plugin_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/pc/starcraft_ii.londonplugin",
       "page": "https://github.com/ArchipelagoMW/Archipelago/releases",
       "banner": "https://store-images.s-microsoft.com/image/apps.11562.14124222480596136.ed20a9aa-83ad-4957-99bb-a6b44ee47223.966f09b0-5e8c-47d6-ada0-7714b0cb26e8",
-      "section": "unstable",
-      "stability": "Unknown"
+      "section": "stable",
+      "stability": "Stable"
     },
     {
       "id": "stardew_valley",
@@ -17497,7 +17497,7 @@
     {
       "id": "super_market_simulator",
       "name": "Super Market Simulator",
-      "ap_world_name": "Super Market Simulator",
+      "ap_world_name": "Supermarket Simulator",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -17757,7 +17757,7 @@
     {
       "id": "team_fortress_2_mann_vs_machine",
       "name": "Team Fortress 2 (Mann vs Machine)",
-      "ap_world_name": "Team Fortress 2 (Mann vs Machine)",
+      "ap_world_name": "Team Fortress 2 Mann vs Machine",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -17809,7 +17809,7 @@
     {
       "id": "terra_nil",
       "name": "Terra Nil",
-      "ap_world_name": "Terra Nil",
+      "ap_world_name": "TerraNil",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -17887,7 +17887,7 @@
     {
       "id": "tevi",
       "name": "TEVI",
-      "ap_world_name": "TEVI",
+      "ap_world_name": "Tevi",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -17913,7 +17913,7 @@
     {
       "id": "the_binding_of_isaac_repentance",
       "name": "The Binding of Isaac: Repentance",
-      "ap_world_name": "The Binding of Isaac: Repentance",
+      "ap_world_name": "The Binding of Isaac Repentance",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -18433,7 +18433,7 @@
     {
       "id": "three_goblin_wobblin",
       "name": "Three Goblin Wobblin'",
-      "ap_world_name": "Three Goblin Wobblin'",
+      "ap_world_name": "Three Goblin Wobblin",
       "subtitle": "PC · needs the game's mod too",
       "description": "",
       "platform": "PC",
@@ -20253,7 +20253,7 @@
     {
       "id": "xcom_2_war_of_the_chosen",
       "name": "XCOM 2: War of the Chosen",
-      "ap_world_name": "XCOM 2: War of the Chosen",
+      "ap_world_name": "XCOM 2 War of the Chosen",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -20643,7 +20643,7 @@
     {
       "id": "yohane_the_parhelion_blaze_in_the_deepblue",
       "name": "Yohane the Parhelion: Blaze in the Deepblue",
-      "ap_world_name": "Yohane the Parhelion: Blaze in the Deepblue",
+      "ap_world_name": "YOHANE THE PARHELION -BLAZE in the DEEPBLUE-",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",
@@ -20877,7 +20877,7 @@
     {
       "id": "zork_grand_inquisitor",
       "name": "Zork: Grand Inquisitor",
-      "ap_world_name": "Zork: Grand Inquisitor",
+      "ap_world_name": "Zork Grand Inquisitor",
       "subtitle": "PC",
       "description": "",
       "platform": "PC",

@@ -254,6 +254,11 @@ public class GenericPcPlugin : IGamePlugin
     /// player can answer into an install that quietly does nothing.
     private string? AutoFindGameFolder()
     {
+        // A named lookup the game itself vouches for beats any guess, so it
+        // goes first.
+        string? told = LocatedByGame();
+        if (told != null) return told;
+
         try
         {
             if (int.TryParse(Manifest.SteamAppId, out int appId) && appId > 0)
@@ -279,6 +284,45 @@ public class GenericPcPlugin : IGamePlugin
             catch { }
         }
         return null;
+    }
+
+    /// The install path the GAME recorded for itself, when the manifest names
+    /// a lookup for it. Null when there is no locator, the file is absent, or
+    /// it does not point at something that looks like the game -- never a
+    /// guess dressed up as an answer.
+    ///
+    /// ⚠ Battle.net games are invisible to the Steam locator and are not
+    /// installed under any of the usual roots (this one was measured on
+    /// F:\Spil\StarCraft II), so without this London asks the player for a
+    /// folder it could simply have read.
+    private string? LocatedByGame()
+    {
+        if (!string.Equals(Manifest.LocatorKind, "sc2_executeinfo",
+                           StringComparison.OrdinalIgnoreCase))
+            return null;
+
+        try
+        {
+            // Same file, same shape as the world's own client reads:
+            //     executable = <root>\Versions\BaseNNNNN\SC2_x64.exe
+            string info = Path.Combine(
+                Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),
+                "StarCraft II", "ExecuteInfo.txt");
+            if (!File.Exists(info)) return null;
+
+            string text = File.ReadAllText(info);
+            int eq = text.IndexOf('=');
+            if (eq < 0) return null;
+            string exe = text[(eq + 1)..].Trim();
+
+            // Everything above "Versions" IS the install root.
+            int cut = exe.IndexOf(@"\Versions", StringComparison.OrdinalIgnoreCase);
+            if (cut <= 0) return null;
+            string root = exe[..cut];
+
+            return LooksLikeAGame(root) ? root : null;
+        }
+        catch { return null; }
     }
 
     private static IEnumerable<string> LikelyGameRoots()
@@ -328,7 +372,15 @@ public class GenericPcPlugin : IGamePlugin
         // The world ships inside Archipelago; nothing of ours is installed,
         // and saying "not installed" about a game the engine already knows
         // would send the player looking for a download that does not exist.
-        "bundled" => CustomWorldsDir() != null,
+        // A bundled world with a data package is only really installed once
+        // that package is on disk -- saying "installed" while the maps are
+        // missing is how a player ends up pressing Play into a client that
+        // immediately tells them to run /download_data.
+        "bundled" => Manifest.DataRepo.Length > 0
+            ? RegisteredGameFolder is { } gf
+              && Manifest.DataMarker.Length > 0
+              && Path.Exists(Path.Combine(gf, Manifest.DataMarker))
+            : CustomWorldsDir() != null,
         "manual" or "discord_only" => Directory.Exists(GameDirectory),
         // A pure mod package has no world file to point at: installed means
         // the mod is in the player's game folder — our receipt, or the scan
@@ -369,6 +421,83 @@ public class GenericPcPlugin : IGamePlugin
         finally { Interlocked.Exchange(ref _installing, 0); }
     }
 
+    /// Fetch the world's data package and unpack it into the GAME's folder.
+    ///
+    /// ⛔ WE DISTRIBUTE NOTHING. This is the same file, from the same release,
+    /// that the world's own client downloads when the player types
+    /// /download_data into its console -- London just does it up front, from
+    /// the project's own repository, so the player never meets that console.
+    ///
+    /// ⚠ Pinned to a TAG, not "latest". These releases are API versions: the
+    /// newest one belongs to a newer apworld than the one installed, and
+    /// taking it would hand the game maps its client cannot read.
+    private async Task InstallGameDataAsync(IProgress<(int Pct, string Msg)> progress,
+                                            CancellationToken ct)
+    {
+        string? folder = RegisteredGameFolder;
+        if (folder == null)
+        {
+            progress?.Report((100,
+                $"{DisplayName} ships with Archipelago, but London needs to know where "
+              + "the game itself is before it can add the Archipelago maps and mods. "
+              + "Point at it in Settings, then press Install again."));
+            return;
+        }
+
+        if (Manifest.DataMarker.Length > 0
+            && Path.Exists(Path.Combine(folder, Manifest.DataMarker)))
+        {
+            progress?.Report((100, $"The Archipelago data is already in {folder}."));
+            return;
+        }
+
+        string url = $"https://github.com/{Manifest.DataRepo}/releases/download/"
+                   + $"{Manifest.DataTag}/{Manifest.DataAsset}";
+
+        // ⚠ Streamed to a file, never into memory: this package is hundreds of
+        // megabytes and a byte[] of it is a needless spike in a launcher that
+        // is already holding a game library.
+        string tmp = Path.Combine(Path.GetTempPath(),
+                                  $"{Manifest.Id}-{Manifest.DataTag}-{Manifest.DataAsset}");
+        try
+        {
+            progress?.Report((5, $"Fetching {Manifest.DataAsset} ({Manifest.DataTag})…"));
+            await PcSetup.DownloadToFileAsync(url, tmp,
+                p => progress?.Report((5 + p * 80 / 100,
+                        $"Fetching {Manifest.DataAsset} — {p}%")), ct)
+                .ConfigureAwait(false);
+
+            progress?.Report((88, $"Unpacking into {folder}…"));
+            using (var zip = System.IO.Compression.ZipFile.OpenRead(tmp))
+            {
+                foreach (var entry in zip.Entries)
+                {
+                    ct.ThrowIfCancellationRequested();
+                    // Normalise BEFORE the folder test: a zip written with
+                    // backslash entries (Azahar's was; a foreign data pack can
+                    // be too) otherwise fails every check below and installs
+                    // nothing, silently.
+                    string rel = entry.FullName.Replace('\\', '/');
+                    if (rel.EndsWith('/')) continue;
+
+                    // Refuse anything that would land outside the game folder.
+                    string target = Path.GetFullPath(
+                        Path.Combine(folder, rel.Replace('/', Path.DirectorySeparatorChar)));
+                    if (!target.StartsWith(Path.GetFullPath(folder), StringComparison.OrdinalIgnoreCase))
+                        continue;
+
+                    Directory.CreateDirectory(Path.GetDirectoryName(target)!);
+                    entry.ExtractToFile(target, overwrite: true);
+                }
+            }
+            progress?.Report((100, $"Archipelago maps and mods installed into {folder}."));
+        }
+        finally
+        {
+            try { if (File.Exists(tmp)) File.Delete(tmp); } catch { /* temp */ }
+        }
+    }
+
     private async Task InstallCoreAsync(IProgress<(int Pct, string Msg)> progress,
                                         CancellationToken ct)
     {
@@ -376,6 +505,13 @@ public class GenericPcPlugin : IGamePlugin
 
         if (Manifest.Install == "bundled")
         {
+            // The world file ships with Archipelago, but the game may still
+            // need a data package dropped beside it before anything works.
+            if (Manifest.DataRepo.Length > 0)
+            {
+                await InstallGameDataAsync(progress, ct).ConfigureAwait(false);
+                return;
+            }
             progress?.Report((100, $"{DisplayName} ships with Archipelago itself — "
                                  + "nothing to download."));
             return;
@@ -1098,6 +1234,16 @@ public class GenericPcPlugin : IGamePlugin
                 LogLine?.Invoke($"[{DisplayName}] Started {Manifest.GameExe}.");
                 StartWatching();
             }
+            else if (Manifest.WorldClientName.Length > 0 && StartWorldClient(session))
+            {
+                // The world's client IS the launcher for these games: it
+                // connects to the multiworld and then starts the game with the
+                // right map. Telling the player to start the game themselves
+                // would be the wrong instruction, not just an unhelpful one --
+                // a hand-started game is not in the session at all.
+                IsRunning = true;
+                StartWatching();
+            }
             else
             {
                 LogLine?.Invoke($"[{DisplayName}] Start the game yourself — London does "
@@ -1116,6 +1262,82 @@ public class GenericPcPlugin : IGamePlugin
 
         LastSlotName = session.SlotName;
         return Task.CompletedTask;
+    }
+
+    /// Start the client the WORLD ships, and hand it this session.
+    ///
+    /// Same contract as EmulatorPlugin.StartWorldClient, for PC games that
+    /// have no emulator: London opens nothing on the session itself, because
+    /// a second reader on one slot is a bug, not redundancy. The world's
+    /// client connects, and it is what starts the game.
+    ///
+    /// ⚠ The slot rides INSIDE the connect URI. Archipelago's client parser
+    /// has only --connect and --password; an unknown --name kills the whole
+    /// parse and the client sits mute. The colon is always there because the
+    /// websockets library refuses a username without a password.
+    private bool StartWorldClient(ApSession session)
+    {
+        try
+        {
+            var st = SettingsStore.Load();
+            string? exe = null;
+            foreach (string root in new[] { st.ApEnginePath, st.ApworldSyncDir,
+                                            @"C:\ProgramData\Archipelago" })
+            {
+                if (string.IsNullOrWhiteSpace(root)) continue;
+                string cand = Path.Combine(root, "ArchipelagoLauncher.exe");
+                if (File.Exists(cand)) { exe = cand; break; }
+            }
+            if (exe == null)
+            {
+                LogLine?.Invoke($"[{DisplayName}] Could not start "
+                    + $"{Manifest.WorldClientName}: no Archipelago install found.");
+                return false;
+            }
+
+            string server = session.ServerUri
+                .Replace("ws://", "").Replace("wss://", "").TrimEnd('/');
+            string auth = Uri.EscapeDataString(session.SlotName) + ":"
+                        + Uri.EscapeDataString(session.Password ?? "");
+
+            // ⚠⚠ EXACTLY the form the emulator path uses, scheme and all.
+            // A bare "slot:pw@host:port" is not what the client's parser
+            // expects -- the proven call is archipelago://…, and this was
+            // written without it once and the client simply did not connect.
+            //
+            // ⚠⚠ NO --nogui. Archipelago's clients are kivy apps: started
+            // without a window they come up half-initialised and die on the
+            // first message the server sends. A visible client window is a far
+            // smaller price than a session that quietly never joins.
+            var psi = new ProcessStartInfo
+            {
+                FileName         = exe,
+                Arguments        = $"\"{Manifest.WorldClientName}\" "
+                                 + $"-- --connect \"archipelago://{auth}@{server}\"",
+                WorkingDirectory = Path.GetDirectoryName(exe)!,
+                UseShellExecute  = false,
+            };
+
+            // ⚠ The client finds the game through this. Its own detection reads
+            // Documents\StarCraft II\ExecuteInfo.txt, which is right until the
+            // player has more than one install or the file is stale -- London
+            // already knows which folder it installed the data into, so it
+            // says so rather than letting the two disagree.
+            string? folder = RegisteredGameFolder;
+            if (folder != null && Manifest.LocatorKind.Length > 0)
+                psi.EnvironmentVariables["SC2PATH"] = folder;
+
+            Process.Start(psi);
+            LogLine?.Invoke($"[{DisplayName}] Started {Manifest.WorldClientName} and "
+                          + "pointed it at your session — it opens the game itself.");
+            return true;
+        }
+        catch (Exception e)
+        {
+            LogLine?.Invoke($"[{DisplayName}] Could not start "
+                          + $"{Manifest.WorldClientName}: {e.Message}");
+            return false;
+        }
     }
 
     /// Watch the game's own process, since Steam hands us nothing to hold.
@@ -1213,6 +1435,46 @@ public static class PcSetup
         using var http = new HttpClient { Timeout = TimeSpan.FromMinutes(5) };
         http.DefaultRequestHeaders.UserAgent.ParseAdd("MultiworldLauncher");
         return await http.GetByteArrayAsync(url, ct).ConfigureAwait(false);
+    }
+
+    /// Download straight to disk, reporting percent as it goes.
+    ///
+    /// ⚠ Not DownloadAsync with a bigger buffer: a data package is hundreds of
+    /// megabytes, and holding one as a byte[] spikes the launcher's memory for
+    /// no reason. No overall timeout either -- a five-minute cap turns a slow
+    /// connection into a failed install; the cancellation token is what stops
+    /// this, and the player owns that.
+    public static async Task DownloadToFileAsync(string url, string path,
+                                                 Action<int>? onPercent,
+                                                 CancellationToken ct)
+    {
+        using var http = new HttpClient { Timeout = Timeout.InfiniteTimeSpan };
+        http.DefaultRequestHeaders.UserAgent.ParseAdd("MultiworldLauncher");
+
+        using var resp = await http.GetAsync(url, HttpCompletionOption.ResponseHeadersRead, ct)
+                                   .ConfigureAwait(false);
+        resp.EnsureSuccessStatusCode();
+
+        long? total = resp.Content.Headers.ContentLength;
+        Directory.CreateDirectory(Path.GetDirectoryName(path)!);
+
+        await using var src = await resp.Content.ReadAsStreamAsync(ct).ConfigureAwait(false);
+        await using var dst = File.Create(path);
+
+        var buffer = new byte[81920];
+        long done = 0;
+        int lastPct = -1;
+        int read;
+        while ((read = await src.ReadAsync(buffer, ct).ConfigureAwait(false)) > 0)
+        {
+            await dst.WriteAsync(buffer.AsMemory(0, read), ct).ConfigureAwait(false);
+            done += read;
+            if (total is > 0)
+            {
+                int pct = (int)(done * 100 / total.Value);
+                if (pct != lastPct) { lastPct = pct; onPercent?.Invoke(pct); }
+            }
+        }
     }
 
     public static bool LooksLikeZip(byte[] data)
@@ -1992,7 +2254,44 @@ public sealed record PcManifest(
     // ⚠ Evidence, not validation: Ship of Harkinian checks the ROM against
     // its own hash list, and London has no business second-guessing that. A
     // match turns the reminder green; a miss leaves it amber and never blocks.
-    string BringYourOwnFiles)
+    string BringYourOwnFiles,
+
+    // --- a game whose world ships its own client -------------------------
+    //
+    // The name the world registers its client under in Archipelago's Launcher
+    // ("Starcraft 2 Client"). Empty for every game where London or a bridge is
+    // the client. When set, Play starts THAT client and hands it the session,
+    // instead of telling the player to start the game themselves -- which for
+    // these games is not even the right instruction, because the world's
+    // client is what launches the game.
+    //
+    // ⚠ Only set this when the world's launch_client takes *args. One that
+    // declares launch_client() dies on the arguments and nothing reaches the
+    // server -- see EmulatorPlugin.StartWorldClient for the measurement.
+    string WorldClientName,
+
+    // --- data the game needs beside itself -------------------------------
+    //
+    // Some worlds need a package of maps/mods dropped into the GAME's folder
+    // before anything works, and ship it as a GitHub release rather than in
+    // the apworld. Starcraft 2 is the first: eleven .SC2Mod folders and 83
+    // campaign maps, 383 MB, which its client otherwise makes the player fetch
+    // by typing /download_data into a console.
+    //
+    // "owner/repo", the release TAG (these are pinned to an API version, not
+    // "latest" -- a newer tag belongs to a newer apworld), and the asset name.
+    string DataRepo,
+    string DataTag,
+    string DataAsset,
+    // One path inside the game folder that proves the package is unpacked, so
+    // Install can be honest about whether there is anything left to do.
+    string DataMarker,
+
+    // How to find the game when Steam and the usual roots cannot: a named,
+    // verifiable lookup rather than a guess. "sc2_executeinfo" reads the path
+    // out of Documents\StarCraft II\ExecuteInfo.txt, which is the same file
+    // the world's own client reads.
+    string LocatorKind)
 {
     public static PcManifest Parse(string json)
     {
@@ -2035,6 +2334,12 @@ public sealed record PcManifest(
                 && sg.ValueKind == JsonValueKind.True,
             S(r, "game_exe"),
             S(r, "bring_your_own"),
-            S(r, "bring_your_own_files"));
+            S(r, "bring_your_own_files"),
+            S(r, "world_client_name"),
+            S(r, "data_repo"),
+            S(r, "data_tag"),
+            S(r, "data_asset"),
+            S(r, "data_marker"),
+            S(r, "locator_kind"));
     }
 }
