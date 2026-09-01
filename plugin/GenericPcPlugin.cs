@@ -490,12 +490,124 @@ public class GenericPcPlugin : IGamePlugin
                     entry.ExtractToFile(target, overwrite: true);
                 }
             }
+            // The receipt the world's client checks. Without it the client
+            // opens with "your map files may be outdated (version number not
+            // found)" on every single connect — about files London just
+            // installed. Best-effort: a missing receipt only re-shows that
+            // notice, so it must never fail the install.
+            if (Manifest.DataMetadataFile.Length > 0)
+                await WriteDataReceiptAsync(folder, ct).ConfigureAwait(false);
+
             progress?.Report((100, $"Archipelago maps and mods installed into {folder}."));
         }
         finally
         {
             try { if (File.Exists(tmp)) File.Delete(tmp); } catch { /* temp */ }
         }
+    }
+
+    /// Write the metadata file the world's client uses to judge whether the
+    /// data package is current.
+    ///
+    /// Measured against sc2's client.pyc: /download_data stores the GitHub
+    /// release object for the pinned tag — with the volatile "assets" and
+    /// "download_count" keys removed — as Python's str(dict), and the update
+    /// check is a plain string comparison against a fresh fetch. So this is
+    /// written in Python repr form, not JSON: single-quoted strings, True/
+    /// False/None. A byte that differs only re-shows the client's own
+    /// "may be outdated" notice, which /download_data then heals.
+    private async Task WriteDataReceiptAsync(string folder, CancellationToken ct)
+    {
+        try
+        {
+            using var http = new HttpClient();
+            http.DefaultRequestHeaders.UserAgent.ParseAdd("MultiworldLauncher");
+            http.DefaultRequestHeaders.Accept.ParseAdd("application/vnd.github.v3+json");
+            string url = $"https://api.github.com/repos/{Manifest.DataRepo}"
+                       + $"/releases/tags/{Manifest.DataTag}";
+            string json = await http.GetStringAsync(url, ct).ConfigureAwait(false);
+
+            using var doc = System.Text.Json.JsonDocument.Parse(json);
+            var sb = new System.Text.StringBuilder();
+            PyRepr(doc.RootElement, sb, skipTopLevel: new[] { "assets", "download_count" });
+
+            await File.WriteAllTextAsync(
+                Path.Combine(folder, Manifest.DataMetadataFile),
+                sb.ToString(), ct).ConfigureAwait(false);
+        }
+        catch (Exception e)
+        {
+            LogLine?.Invoke($"[{DisplayName}] Data receipt not written ({e.Message}) — "
+                          + "the game client may show a harmless 'may be outdated' note.");
+        }
+    }
+
+    /// Python's str() of a decoded JSON value, faithfully enough for a
+    /// release object: ordered dicts, single-quoted strings (double when the
+    /// value contains a single quote and no double), True/False/None, and
+    /// control characters escaped the way repr() escapes them.
+    private static void PyRepr(System.Text.Json.JsonElement el,
+                               System.Text.StringBuilder sb,
+                               string[]? skipTopLevel = null)
+    {
+        switch (el.ValueKind)
+        {
+            case System.Text.Json.JsonValueKind.Object:
+                sb.Append('{');
+                bool first = true;
+                foreach (var p in el.EnumerateObject())
+                {
+                    if (skipTopLevel != null && Array.IndexOf(skipTopLevel, p.Name) >= 0)
+                        continue;
+                    if (!first) sb.Append(", ");
+                    first = false;
+                    PyStr(p.Name, sb);
+                    sb.Append(": ");
+                    PyRepr(p.Value, sb);
+                }
+                sb.Append('}');
+                break;
+            case System.Text.Json.JsonValueKind.Array:
+                sb.Append('[');
+                bool f2 = true;
+                foreach (var item in el.EnumerateArray())
+                {
+                    if (!f2) sb.Append(", ");
+                    f2 = false;
+                    PyRepr(item, sb);
+                }
+                sb.Append(']');
+                break;
+            case System.Text.Json.JsonValueKind.String:
+                PyStr(el.GetString() ?? "", sb);
+                break;
+            case System.Text.Json.JsonValueKind.Number:
+                sb.Append(el.GetRawText());
+                break;
+            case System.Text.Json.JsonValueKind.True:  sb.Append("True");  break;
+            case System.Text.Json.JsonValueKind.False: sb.Append("False"); break;
+            default:                                   sb.Append("None");  break;
+        }
+    }
+
+    private static void PyStr(string s, System.Text.StringBuilder sb)
+    {
+        // repr() prefers single quotes; flips to double only when the string
+        // has a single quote and no double quote.
+        char q = s.Contains('\'') && !s.Contains('"') ? '"' : '\'';
+        sb.Append(q);
+        foreach (char c in s)
+        {
+            if (c == '\\')      sb.Append("\\\\");
+            else if (c == q)    sb.Append('\\').Append(q);
+            else if (c == '\n') sb.Append("\\n");
+            else if (c == '\r') sb.Append("\\r");
+            else if (c == '\t') sb.Append("\\t");
+            else if (c < 0x20 || c == '\x7f')
+                sb.Append("\\x").Append(((int)c).ToString("x2"));
+            else sb.Append(c);
+        }
+        sb.Append(q);
     }
 
     private async Task InstallCoreAsync(IProgress<(int Pct, string Msg)> progress,
@@ -2287,6 +2399,10 @@ public sealed record PcManifest(
     // Install can be honest about whether there is anything left to do.
     string DataMarker,
 
+    // The receipt file the world's client checks the package version with
+    // (SC2: ArchipelagoSC2Metadata.txt). Empty = the world keeps no receipt.
+    string DataMetadataFile,
+
     // How to find the game when Steam and the usual roots cannot: a named,
     // verifiable lookup rather than a guess. "sc2_executeinfo" reads the path
     // out of Documents\StarCraft II\ExecuteInfo.txt, which is the same file
@@ -2340,6 +2456,7 @@ public sealed record PcManifest(
             S(r, "data_tag"),
             S(r, "data_asset"),
             S(r, "data_marker"),
+            S(r, "data_metadata_file"),
             S(r, "locator_kind"));
     }
 }
