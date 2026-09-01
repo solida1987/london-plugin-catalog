@@ -143,33 +143,70 @@ internal sealed class Sc2Board
 
     /// A beat-count entry rule, evaluated. Null = a shape we do not know —
     /// the caller treats that as "open" and lets play_mission be the judge.
+    ///
+    /// ⚠ A rule WITHOUT an "amount" means ALL of it, not none of it. Measured
+    /// live: {mission_ids:[3]} — beat Zero Hour, no amount key — and the
+    /// missing-key-means-zero reading declared it free. The board said
+    /// "Unlocked", the game said no, and the player got a bare "Refused: 31".
     public bool? RuleMet(JsonElement rule, HashSet<long> got)
     {
         if (rule.ValueKind != JsonValueKind.Object) return true;
-        int amount = rule.TryGetProperty("amount", out var am) ? am.GetInt32() : 0;
+        int? amount = rule.TryGetProperty("amount", out var am)
+                      && am.ValueKind == JsonValueKind.Number
+            ? am.GetInt32() : null;
 
         if (rule.TryGetProperty("mission_ids", out var ids)
             && ids.ValueKind == JsonValueKind.Array)
         {
+            int total = ids.GetArrayLength();
             int beaten = ids.EnumerateArray()
                 .Count(x => ById.TryGetValue(x.GetInt32(), out var m) && m.Beaten(got));
-            return beaten >= amount;
+            return beaten >= (amount ?? total);
         }
 
         if (rule.TryGetProperty("sub_rules", out var subs)
             && subs.ValueKind == JsonValueKind.Array)
         {
-            int met = 0; bool unknown = false;
-            foreach (var s in subs.EnumerateArray())
+            int met = 0, total = 0; bool unknown = false;
+            foreach (var sub in subs.EnumerateArray())
             {
-                var r = RuleMet(s, got);
+                total++;
+                var r = RuleMet(sub, got);
                 if (r == null) unknown = true;
                 else if (r == true) met++;
             }
-            if (met >= amount) return true;
+            if (met >= (amount ?? total)) return true;
             return unknown ? null : false;
         }
         return null;
+    }
+
+    /// The missions a locked rule still wants beaten, for the detail panel.
+    /// Bounded, best effort — the point is "requires Zero Hour", not a proof.
+    public List<string> UnmetNames(JsonElement rule, HashSet<long> got, int cap = 4)
+    {
+        var outp = new List<string>();
+        void Walk(JsonElement r)
+        {
+            if (outp.Count >= cap || r.ValueKind != JsonValueKind.Object) return;
+            if (r.TryGetProperty("mission_ids", out var ids)
+                && ids.ValueKind == JsonValueKind.Array)
+            {
+                foreach (var x in ids.EnumerateArray())
+                {
+                    if (outp.Count >= cap) return;
+                    if (ById.TryGetValue(x.GetInt32(), out var m)
+                        && !m.Beaten(got) && !outp.Contains(m.Name))
+                        outp.Add(m.Name);
+                }
+                return;
+            }
+            if (r.TryGetProperty("sub_rules", out var subs)
+                && subs.ValueKind == JsonValueKind.Array)
+                foreach (var sub in subs.EnumerateArray()) Walk(sub);
+        }
+        Walk(rule);
+        return outp;
     }
 }
 
@@ -189,6 +226,8 @@ internal sealed class Sc2Bridge : IDisposable
     public bool Alive => _proc is { HasExited: false };
     public event Action<string>? StateChanged;
     public event Action<string>? LineReceived;
+    /// (missionId, accepted) — the world's own verdict on a PLAY order.
+    public event Action<int, bool>? PlayResult;
 
     public static string? FindLauncherExe()
     {
@@ -262,6 +301,16 @@ internal sealed class Sc2Bridge : IDisposable
                 LineReceived?.Invoke(e.Data);
                 if (e.Data.StartsWith("STATE:ready")) { Ready = true; StateChanged?.Invoke("ready"); }
                 else if (e.Data.StartsWith("STATE:")) StateChanged?.Invoke(e.Data[6..]);
+                else if (e.Data.StartsWith("PLAY:"))
+                {
+                    string body = e.Data[5..];
+                    bool ok = body.StartsWith("accepted:");
+                    string idPart = body[(body.IndexOf(':') + 1)..];
+                    int sp = idPart.IndexOf(' ');
+                    if (sp >= 0) idPart = idPart[..sp];
+                    if (int.TryParse(idPart, out int mid))
+                        PlayResult?.Invoke(mid, ok);
+                }
             };
             _proc.ErrorDataReceived += (_, e) =>
             { if (e.Data != null) LineReceived?.Invoke("err: " + e.Data); };
@@ -504,6 +553,7 @@ internal sealed class Sc2MissionWindow : Window
 
         bool beaten = m.Beaten(got);
         bool? open = beaten ? true : _board!.RuleMet(m.EntryRule, got);
+        if (_refusedByGame.Contains(m.Id) && !beaten) open = false;
         int done = m.Done(got), tot = m.Locations.Count;
 
         string state = beaten ? "done" : open != false ? "avail" : "lock";
@@ -638,25 +688,35 @@ internal sealed class Sc2MissionWindow : Window
             _detailHost.Children.Add(row);
         }
 
+        string why;
+        if (beaten) why = "Beaten — its remaining checks can still be collected.";
+        else if (open == true) why = "Unlocked — entry requirements met.";
+        else if (open == false)
+        {
+            var need = _board!.UnmetNames(m.EntryRule, got);
+            why = need.Count > 0
+                ? "Locked — requires: " + string.Join(", ", need)
+                : "Locked — beat more missions on its path first.";
+        }
+        else why = "Requirements unknown — the game itself decides on launch.";
         _detailHost.Children.Add(new TextBlock
         {
-            Text = beaten ? "Beaten — its remaining checks can still be collected."
-                 : open == true ? "Unlocked — entry requirements met."
-                 : open == false ? "Locked — beat more missions on its path first."
-                 : "Requirements unknown — the game itself decides on launch.",
+            Text = why,
             FontSize = 11.5, Foreground = Muted, TextWrapping = TextWrapping.Wrap,
             Margin = new Thickness(0, 8, 0, 12),
         });
 
+        bool busy = _launchBusy || _pendingLaunch != null;
+        bool lockedNow = open == false || _refusedByGame.Contains(m.Id);
         var launch = new Button
         {
-            Content = "▶   LAUNCH MISSION",
+            Content = busy ? "…   LAUNCHING" : "▶   LAUNCH MISSION",
             FontSize = 14, FontWeight = FontWeights.Bold,
-            Background = open == false ? Locked : Gold,
-            Foreground = open == false ? Muted : GoldInk,
+            Background = lockedNow || busy ? Locked : Gold,
+            Foreground = lockedNow || busy ? Muted : GoldInk,
             BorderThickness = new Thickness(0),
             Padding = new Thickness(0, 11, 0, 11),
-            IsEnabled = open != false,
+            IsEnabled = !lockedNow && !busy,
         };
         launch.Click += (_, _) => Launch(m);
         _detailHost.Children.Add(launch);
@@ -664,14 +724,45 @@ internal sealed class Sc2MissionWindow : Window
 
     private Sc2Mission? _pendingLaunch;
     private Sc2Bridge? _hookedBridge;
+    private bool _launchBusy;
+    private readonly HashSet<int> _refusedByGame = new();
 
     private void HookBridge(Sc2Bridge b)
     {
         if (_hookedBridge == b) return;
-        if (_hookedBridge != null) _hookedBridge.StateChanged -= OnBridgeState;
+        if (_hookedBridge != null)
+        {
+            _hookedBridge.StateChanged -= OnBridgeState;
+            _hookedBridge.PlayResult -= OnPlayResult;
+        }
         _hookedBridge = b;
         b.StateChanged += OnBridgeState;
-        Closed += (_, _) => { b.StateChanged -= OnBridgeState; };
+        b.PlayResult += OnPlayResult;
+        Closed += (_, _) =>
+        { b.StateChanged -= OnBridgeState; b.PlayResult -= OnPlayResult; };
+    }
+
+    /// The world's own verdict. On refusal the board LEARNS: the mission is
+    /// marked locked whatever the evaluator thought — the game outranks us.
+    private void OnPlayResult(int missionId, bool accepted)
+    {
+        Dispatcher.BeginInvoke(() =>
+        {
+            _launchBusy = false;
+            string nm = _board?.ById.TryGetValue(missionId, out var m) == true
+                ? m!.Name : $"Mission {missionId}";
+            if (accepted)
+            {
+                SetFooter($"{nm} accepted — StarCraft II is opening…");
+            }
+            else
+            {
+                _refusedByGame.Add(missionId);
+                SetFooter($"{nm} was refused by the game — it is still locked. "
+                        + "Beat the missions on its path first.");
+            }
+            Redraw();
+        });
     }
 
     private void OnBridgeState(string s)
@@ -681,15 +772,33 @@ internal sealed class Sc2MissionWindow : Window
         _pendingLaunch = null;
         if (m == null) return;
         Dispatcher.Invoke(() =>
-        { SetFooter($"Launching {m.Name}…"); _bridge()?.Play(m.Id); });
+        {
+            _launchBusy = true;
+            SetFooter($"Launching {m.Name}…");
+            RedrawDetailOnly();
+            _bridge()?.Play(m.Id);
+        });
+    }
+
+    private void RedrawDetailOnly()
+    {
+        var (_, _, got, _) = _data();
+        RedrawDetail(got);
     }
 
     private void Launch(Sc2Mission m)
     {
+        // One order at a time. A double-click, or impatience, must be a
+        // no-op — never a second engine start, never a second PLAY.
+        if (_launchBusy || _pendingLaunch != null) return;
+
         var b = _bridge();
         if (b is { Ready: true })
         {
+            _launchBusy = true;
+            HookBridge(b);
             SetFooter($"Launching {m.Name}…");
+            RedrawDetailOnly();
             b.Play(m.Id);
             return;
         }
