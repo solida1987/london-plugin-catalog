@@ -509,13 +509,16 @@ public class GenericPcPlugin : IGamePlugin
     /// Write the metadata file the world's client uses to judge whether the
     /// data package is current.
     ///
-    /// Measured against sc2's client.pyc: /download_data stores the GitHub
-    /// release object for the pinned tag — with the volatile "assets" and
-    /// "download_count" keys removed — as Python's str(dict), and the update
-    /// check is a plain string comparison against a fresh fetch. So this is
-    /// written in Python repr form, not JSON: single-quoted strings, True/
-    /// False/None. A byte that differs only re-shows the client's own
-    /// "may be outdated" notice, which /download_data then heals.
+    /// Measured against worlds/sc2/client.py (0.6.7): /download_data stores
+    /// the GitHub release object for the pinned tag as Python's str(dict),
+    /// and the update check is a plain string comparison against a fresh
+    /// fetch. cleanup_downloaded_metadata KEEPS the assets array and deletes
+    /// only each asset's volatile "download_count" — the first version of
+    /// this receipt dropped the whole assets key, and the client answered
+    /// with "Update for required files found" about files it had just been
+    /// given. So: Python repr form, single-quoted strings, True/False/None,
+    /// download_count omitted wherever it appears. A byte that differs only
+    /// re-shows the client's notice, which /download_data then heals.
     private async Task WriteDataReceiptAsync(string folder, CancellationToken ct)
     {
         try
@@ -529,7 +532,7 @@ public class GenericPcPlugin : IGamePlugin
 
             using var doc = System.Text.Json.JsonDocument.Parse(json);
             var sb = new System.Text.StringBuilder();
-            PyRepr(doc.RootElement, sb, skipTopLevel: new[] { "assets", "download_count" });
+            PyRepr(doc.RootElement, sb);
 
             await File.WriteAllTextAsync(
                 Path.Combine(folder, Manifest.DataMetadataFile),
@@ -547,8 +550,7 @@ public class GenericPcPlugin : IGamePlugin
     /// value contains a single quote and no double), True/False/None, and
     /// control characters escaped the way repr() escapes them.
     private static void PyRepr(System.Text.Json.JsonElement el,
-                               System.Text.StringBuilder sb,
-                               string[]? skipTopLevel = null)
+                               System.Text.StringBuilder sb)
     {
         switch (el.ValueKind)
         {
@@ -557,8 +559,10 @@ public class GenericPcPlugin : IGamePlugin
                 bool first = true;
                 foreach (var p in el.EnumerateObject())
                 {
-                    if (skipTopLevel != null && Array.IndexOf(skipTopLevel, p.Name) >= 0)
-                        continue;
+                    // The one key the client's cleanup deletes. In a GitHub
+                    // release object it only occurs on assets, so dropping it
+                    // wherever it appears matches the client's file exactly.
+                    if (p.Name == "download_count") continue;
                     if (!first) sb.Append(", ");
                     first = false;
                     PyStr(p.Name, sb);
