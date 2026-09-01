@@ -617,6 +617,15 @@ internal sealed class Sc2MissionWindow : Window
                 Width = Math.Max(0, 148.0 * done / tot),
             };
 
+        if (_launchingId == m.Id)
+        {
+            body.Children.Add(new TextBlock
+            {
+                Text = _gameLoading ? "⏳ GAME LOADING…" : "⏳ LAUNCHING…",
+                FontSize = 9.5, FontWeight = FontWeights.Bold, Foreground = Gold,
+                Margin = new Thickness(0, 4, 0, 0),
+            });
+        }
         g.Children.Add(body);
         card.Child = g;
         card.MouseLeftButtonUp += (_, _) => { _selected = m; Redraw(); };
@@ -708,9 +717,15 @@ internal sealed class Sc2MissionWindow : Window
 
         bool busy = _launchBusy || _pendingLaunch != null;
         bool lockedNow = open == false || _refusedByGame.Contains(m.Id);
+        string label = _gameLoading
+            ? "⏳   GAME IS LOADING — the first start takes a while…"
+            : _pendingLaunch != null
+                ? "⏳   ENGINE WARMING UP — launches when ready…"
+                : busy ? "…   LAUNCHING"
+                       : "▶   LAUNCH MISSION";
         var launch = new Button
         {
-            Content = busy ? "…   LAUNCHING" : "▶   LAUNCH MISSION",
+            Content = label,
             FontSize = 14, FontWeight = FontWeights.Bold,
             Background = lockedNow || busy ? Locked : Gold,
             Foreground = lockedNow || busy ? Muted : GoldInk,
@@ -725,6 +740,9 @@ internal sealed class Sc2MissionWindow : Window
     private Sc2Mission? _pendingLaunch;
     private Sc2Bridge? _hookedBridge;
     private bool _launchBusy;
+    private int? _launchingId;          // the mission in flight, for its card
+    private bool _gameLoading;          // accepted — SC2 itself is booting
+    private System.Windows.Threading.DispatcherTimer? _loadingTimer;
     private readonly HashSet<int> _refusedByGame = new();
 
     private void HookBridge(Sc2Bridge b)
@@ -738,8 +756,23 @@ internal sealed class Sc2MissionWindow : Window
         _hookedBridge = b;
         b.StateChanged += OnBridgeState;
         b.PlayResult += OnPlayResult;
+        b.LineReceived += OnBridgeLine;
         Closed += (_, _) =>
-        { b.StateChanged -= OnBridgeState; b.PlayResult -= OnPlayResult; };
+        {
+            b.StateChanged -= OnBridgeState; b.PlayResult -= OnPlayResult;
+            b.LineReceived -= OnBridgeLine;
+        };
+    }
+
+    /// Raw engine lines reach the footer ONLY while a launch is in flight.
+    /// After the game closed they are the bot saying goodbye in protobuf —
+    /// "ValueError: Value out of range: 4294967296" reached the corner once,
+    /// scared the pilot, and meant nothing.
+    private void OnBridgeLine(string line)
+    {
+        if (!_launchBusy) return;
+        if (!line.StartsWith("err:") || !line.Contains("Error")) return;
+        Dispatcher.BeginInvoke(() => SetFooter(line[4..].Trim()));
     }
 
     /// The world's own verdict. On refusal the board LEARNS: the mission is
@@ -748,15 +781,29 @@ internal sealed class Sc2MissionWindow : Window
     {
         Dispatcher.BeginInvoke(() =>
         {
-            _launchBusy = false;
             string nm = _board?.ById.TryGetValue(missionId, out var m) == true
                 ? m!.Name : $"Mission {missionId}";
             if (accepted)
             {
-                SetFooter($"{nm} accepted — StarCraft II is opening…");
+                // Not done — the game itself takes a while to boot, and the
+                // board must say so ON THE BUTTON, not in a corner.
+                _gameLoading = true;
+                _launchingId = missionId;
+                SetFooter($"{nm} accepted — StarCraft II is loading…");
+                _loadingTimer?.Stop();
+                _loadingTimer = new System.Windows.Threading.DispatcherTimer
+                { Interval = TimeSpan.FromSeconds(100) };
+                _loadingTimer.Tick += (_, _) =>
+                {
+                    _loadingTimer?.Stop();
+                    _launchBusy = false; _gameLoading = false; _launchingId = null;
+                    Redraw();
+                };
+                _loadingTimer.Start();
             }
             else
             {
+                _launchBusy = false; _gameLoading = false; _launchingId = null;
                 _refusedByGame.Add(missionId);
                 SetFooter($"{nm} was refused by the game — it is still locked. "
                         + "Beat the missions on its path first.");
@@ -774,8 +821,9 @@ internal sealed class Sc2MissionWindow : Window
         Dispatcher.Invoke(() =>
         {
             _launchBusy = true;
+            _launchingId = m.Id;
             SetFooter($"Launching {m.Name}…");
-            RedrawDetailOnly();
+            Redraw();
             _bridge()?.Play(m.Id);
         });
     }
@@ -796,9 +844,10 @@ internal sealed class Sc2MissionWindow : Window
         if (b is { Ready: true })
         {
             _launchBusy = true;
+            _launchingId = m.Id;
             HookBridge(b);
             SetFooter($"Launching {m.Name}…");
-            RedrawDetailOnly();
+            Redraw();
             b.Play(m.Id);
             return;
         }

@@ -1399,9 +1399,7 @@ public class GenericPcPlugin : IGamePlugin
                         ? "Refused: " + line["PLAY:refused:".Length..]
                     : line.StartsWith("Launching ")
                         ? line
-                    : line.StartsWith("err:") && line.Contains("Error")
-                        ? line[4..]
-                    : null;
+                    : null; // raw err lines: the window filters them by phase
                 if (note != null)
                 {
                     LogLine?.Invoke($"[{DisplayName}] engine: {note}");
