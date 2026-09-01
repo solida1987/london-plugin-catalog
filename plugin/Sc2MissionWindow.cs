@@ -495,6 +495,7 @@ internal sealed class Sc2MissionWindow : Window
     {
         var (sd, locs, _, seedLocs) = _data();
         _board = Sc2Board.Build(sd, locs, seedLocs);
+        if (_bridge() is { } b) HookBridge(b);
         Redraw();
     }
 
@@ -717,16 +718,19 @@ internal sealed class Sc2MissionWindow : Window
 
         bool busy = _launchBusy || _pendingLaunch != null;
         bool lockedNow = open == false || _refusedByGame.Contains(m.Id);
+        bool warming = _bridge() is { Alive: true, Ready: false };
         string label = _gameLoading
             ? "⏳   GAME IS LOADING — the first start takes a while…"
             : _pendingLaunch != null
-                ? "⏳   ENGINE WARMING UP — launches when ready…"
-                : busy ? "…   LAUNCHING"
-                       : "▶   LAUNCH MISSION";
+                ? "⏳   QUEUED — launches the moment the engine is ready…"
+            : _launchBusy ? "…   LAUNCHING"
+            : warming ? "⏳   ENGINE WARMING UP — click once to queue this mission"
+                      : "▶   LAUNCH MISSION";
         var launch = new Button
         {
             Content = label,
-            FontSize = 14, FontWeight = FontWeights.Bold,
+            FontSize = warming && !busy ? 12 : 14,
+            FontWeight = FontWeights.Bold,
             Background = lockedNow || busy ? Locked : Gold,
             Foreground = lockedNow || busy ? Muted : GoldInk,
             BorderThickness = new Thickness(0),
@@ -817,7 +821,11 @@ internal sealed class Sc2MissionWindow : Window
         if (s != "ready") return;
         var m = _pendingLaunch;
         _pendingLaunch = null;
-        if (m == null) return;
+        if (m == null)
+        {
+            Dispatcher.BeginInvoke(Redraw);
+            return;
+        }
         Dispatcher.Invoke(() =>
         {
             _launchBusy = true;
@@ -875,6 +883,10 @@ internal sealed class Sc2MissionWindow : Window
             b = _bridge();
             if (b != null) HookBridge(b);
         }
+        // The queue must be VISIBLE where the click happened. This redraw
+        // was missing once, and the button sat there golden inviting three
+        // hundred more clicks while the order quietly waited.
+        Redraw();
 
         // Silence is the one thing this window may never answer with. The
         // engine needs the seed's server to be up; when it is not, "ready"
