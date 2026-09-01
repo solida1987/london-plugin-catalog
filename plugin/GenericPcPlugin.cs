@@ -51,6 +51,16 @@ public class GenericPcPlugin : IGamePlugin
 {
     protected readonly PcManifest Manifest;
 
+    // --- Mission Control (session_window games; StarCraft 2 first) ---
+    // The board draws from these; they fill through the ordinary plugin
+    // callbacks, so no new launcher API was needed for the data.
+    private IReadOnlyDictionary<string, long>? _mcLocationTable;
+    private readonly HashSet<long> _mcChecked = new();
+    private Sc2MissionWindow? _mcWindow;
+    private Sc2Bridge? _mcBridge;
+    private string? _mcAuth;    // "slot:password", escaped — the connect URI's userinfo
+    private string? _mcServer;  // host:port
+
     public GenericPcPlugin()
     {
         var asm = GetType().Assembly;
@@ -1278,7 +1288,81 @@ public class GenericPcPlugin : IGamePlugin
         => _relay?.SetItemTable(nameToId);
 
     public void OnLocationTable(IReadOnlyDictionary<string, long> nameToId)
-        => _relay?.SetLocationTable(nameToId);
+    {
+        _relay?.SetLocationTable(nameToId);
+        _mcLocationTable = nameToId;
+        McRefresh();
+    }
+
+    /// Checks landing — ours or replayed by the server. The board's live feed.
+    public void OnCheckedLocations(long[] locationIds)
+    {
+        lock (_mcChecked)
+            foreach (long id in locationIds) _mcChecked.Add(id);
+        McRefresh();
+    }
+
+    private void McRefresh()
+    {
+        var w = _mcWindow;
+        if (w == null) return;
+        try { w.Dispatcher.BeginInvoke(w.Refresh); } catch (Exception) { }
+    }
+
+    // --- Mission Control window ---
+
+    public bool SupportsSessionWindow
+        => Manifest.SessionWindow.Length > 0 && _apServices?.SlotData != null;
+
+    public void OpenSessionWindow()
+    {
+        var sd = _apServices?.SlotData;
+        if (sd == null) return;
+        if (_mcWindow is { IsLoaded: true })
+        {
+            _mcWindow.Activate();
+            return;
+        }
+        HashSet<long> Snapshot()
+        { lock (_mcChecked) return new HashSet<long>(_mcChecked); }
+
+        _mcWindow = new Sc2MissionWindow(
+            LastSlotName ?? "?", _mcServer ?? "session",
+            () => (_apServices?.SlotData, _mcLocationTable, Snapshot()),
+            () => _mcBridge,
+            StartMissionBridge);
+        _mcWindow.Closed += (_, _) => _mcWindow = null;
+        _mcWindow.Show();
+    }
+
+    /// Start (or restart) the headless mission engine for the current session.
+    private bool StartMissionBridge()
+    {
+        if (_mcAuth == null || _mcServer == null) return false;
+        string? exe = Sc2Bridge.FindLauncherExe();
+        if (exe == null)
+        {
+            LogLine?.Invoke($"[{DisplayName}] No Archipelago install found for the mission engine.");
+            return false;
+        }
+        if (!Sc2Bridge.EnsureInstalled(exe, t => LogLine?.Invoke($"[{DisplayName}] {t}")))
+            return false;
+
+        _mcBridge ??= new Sc2Bridge();
+        _mcBridge.LineReceived += line =>
+        { if (line.StartsWith("LOG:")) LogLine?.Invoke($"[{DisplayName}] engine: {line[4..]}"); };
+        _mcBridge.StateChanged += s =>
+        {
+            LogLine?.Invoke($"[{DisplayName}] mission engine: {s}");
+            var w = _mcWindow;
+            if (w != null)
+                try { w.Dispatcher.BeginInvoke(() => w.SetFooter($"Engine: {s}")); }
+                catch (Exception) { }
+        };
+        string? folder = RegisteredGameFolder;
+        return _mcBridge.Start(exe, _mcAuth, _mcServer,
+                               Manifest.LocatorKind.Length > 0 ? folder : null);
+    }
 
     public Task OnDeathLinkReceivedAsync(string source, string cause)
     {
@@ -1350,6 +1434,15 @@ public class GenericPcPlugin : IGamePlugin
                 LogLine?.Invoke($"[{DisplayName}] Started {Manifest.GameExe}.");
                 StartWatching();
             }
+            else if (Manifest.SessionWindow.Length > 0 && StartMissionControl(session))
+            {
+                // Mission Control takes the kivy client's place entirely:
+                // London's own board window plus the headless engine. The
+                // fallback below still exists — a machine where the bridge
+                // cannot start keeps the world's own client.
+                IsRunning = true;
+                StartWatching();
+            }
             else if (Manifest.WorldClientName.Length > 0 && StartWorldClient(session))
             {
                 // The world's client IS the launcher for these games: it
@@ -1378,6 +1471,36 @@ public class GenericPcPlugin : IGamePlugin
 
         LastSlotName = session.SlotName;
         return Task.CompletedTask;
+    }
+
+    /// London's takeover of a world-client game: remember the session's
+    /// endpoint, start the headless engine, open the board. Returns false so
+    /// the kivy fallback can run when any of it cannot.
+    private bool StartMissionControl(ApSession session)
+    {
+        try
+        {
+            _mcServer = session.ServerUri
+                .Replace("ws://", "").Replace("wss://", "").TrimEnd('/');
+            _mcAuth = Uri.EscapeDataString(session.SlotName) + ":"
+                    + Uri.EscapeDataString(session.Password ?? "");
+            LastSlotName = session.SlotName;
+
+            if (!StartMissionBridge()) return false;
+
+            var app = System.Windows.Application.Current;
+            if (app != null)
+                app.Dispatcher.BeginInvoke(OpenSessionWindow);
+            LogLine?.Invoke($"[{DisplayName}] Mission Control is open — pick a "
+                          + "mission there and London launches it.");
+            return true;
+        }
+        catch (Exception e)
+        {
+            LogLine?.Invoke($"[{DisplayName}] Mission Control failed ({e.Message}) — "
+                          + "falling back to the game's own client.");
+            return false;
+        }
     }
 
     /// Start the client the WORLD ships, and hand it this session.
@@ -2407,6 +2530,11 @@ public sealed record PcManifest(
     // (SC2: ArchipelagoSC2Metadata.txt). Empty = the world keeps no receipt.
     string DataMetadataFile,
 
+    // Non-empty = this game's session gets London's own window (a mission
+    // board) instead of the world's kivy client. Value names the board kind;
+    // "sc2_missions" is the first.
+    string SessionWindow,
+
     // How to find the game when Steam and the usual roots cannot: a named,
     // verifiable lookup rather than a guess. "sc2_executeinfo" reads the path
     // out of Documents\StarCraft II\ExecuteInfo.txt, which is the same file
@@ -2461,6 +2589,7 @@ public sealed record PcManifest(
             S(r, "data_asset"),
             S(r, "data_marker"),
             S(r, "data_metadata_file"),
+            S(r, "session_window"),
             S(r, "locator_kind"));
     }
 }
