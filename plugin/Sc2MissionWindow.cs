@@ -57,8 +57,14 @@ internal sealed class Sc2Board
     public Dictionary<int, Sc2Mission> ById = new();
 
     /// Parse slot_data + the location table into a drawable board.
+    ///
+    /// `seedLocations` is the set of location ids THIS SEED actually has
+    /// (checked + still missing, from the server). The table names every
+    /// location the game could ever have; counting against that showed
+    /// Devil's Playground as 0/19 in a seed where it holds far fewer.
     public static Sc2Board? Build(JsonElement? slotData,
-                                  IReadOnlyDictionary<string, long>? locationTable)
+                                  IReadOnlyDictionary<string, long>? locationTable,
+                                  HashSet<long>? seedLocations)
     {
         if (slotData is not { } sd) return null;
         if (!sd.TryGetProperty("custom_mission_order", out var cmo)
@@ -115,6 +121,8 @@ internal sealed class Sc2Board
                 .OrderByDescending(m => m.FullName.Length).ToList();
             foreach (var kv in locationTable)
             {
+                if (seedLocations is { Count: > 0 } && !seedLocations.Contains(kv.Value))
+                    continue;
                 foreach (var m in byFull)
                 {
                     if (!kv.Key.StartsWith(m.FullName + ": ", StringComparison.Ordinal))
@@ -304,7 +312,7 @@ internal sealed class Sc2MissionWindow : Window
         new SolidColorBrush((Color)ColorConverter.ConvertFromString(s));
 
     private readonly Func<(JsonElement? SlotData, IReadOnlyDictionary<string, long>? Locs,
-                           HashSet<long> Checked)> _data;
+                           HashSet<long> Checked, HashSet<long>? SeedLocs)> _data;
     private readonly Func<Sc2Bridge?> _bridge;
     private readonly Func<bool> _startBridge;
 
@@ -325,7 +333,8 @@ internal sealed class Sc2MissionWindow : Window
 
     public Sc2MissionWindow(
         string slotName, string address,
-        Func<(JsonElement?, IReadOnlyDictionary<string, long>?, HashSet<long>)> data,
+        Func<(JsonElement?, IReadOnlyDictionary<string, long>?, HashSet<long>,
+              HashSet<long>?)> data,
         Func<Sc2Bridge?> bridge, Func<bool> startBridge)
     {
         _data = data; _bridge = bridge; _startBridge = startBridge;
@@ -430,8 +439,8 @@ internal sealed class Sc2MissionWindow : Window
     /// every session change (checks landing, table arriving).
     public void Refresh()
     {
-        var (sd, locs, got) = _data();
-        _board = Sc2Board.Build(sd, locs);
+        var (sd, locs, _, seedLocs) = _data();
+        _board = Sc2Board.Build(sd, locs, seedLocs);
         Redraw();
     }
 
@@ -449,7 +458,7 @@ internal sealed class Sc2MissionWindow : Window
             });
             return;
         }
-        var (_, _, got) = _data();
+        var (_, _, got, _) = _data();
 
         int total = _board.ById.Values.Sum(m => m.Locations.Count);
         int done = _board.ById.Values.Sum(m => m.Done(got));

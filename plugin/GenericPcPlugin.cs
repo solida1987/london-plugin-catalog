@@ -1267,7 +1267,18 @@ public class GenericPcPlugin : IGamePlugin
         _relay.DeathReported  += cause => _apServices?.ReportDeath(cause);
     }
 
-    public void OnApServicesAttached(IApServices? services) => _apServices = services;
+    public void OnApServicesAttached(IApServices? services)
+    {
+        _apServices = services;
+        if (services != null)
+        {
+            // A fresh session. Location ids are stable across seeds for the
+            // same game, so the previous seed's checks would read as this
+            // seed's — cleared before the server replays the real set.
+            lock (_mcChecked) _mcChecked.Clear();
+            McRefresh();
+        }
+    }
 
     /// Who an item came from, in words a player recognises.
     ///
@@ -1326,9 +1337,22 @@ public class GenericPcPlugin : IGamePlugin
         HashSet<long> Snapshot()
         { lock (_mcChecked) return new HashSet<long>(_mcChecked); }
 
+        HashSet<long>? SeedLocs()
+        {
+            var ap = _apServices;
+            if (ap == null) return null;
+            try
+            {
+                var set = new HashSet<long>(ap.CheckedLocations());
+                set.UnionWith(ap.UncheckedLocations());
+                return set;
+            }
+            catch (Exception) { return null; }
+        }
+
         _mcWindow = new Sc2MissionWindow(
             LastSlotName ?? "?", _mcServer ?? "session",
-            () => (_apServices?.SlotData, _mcLocationTable, Snapshot()),
+            () => (_apServices?.SlotData, _mcLocationTable, Snapshot(), SeedLocs()),
             () => _mcBridge,
             StartMissionBridge);
         _mcWindow.Closed += (_, _) => _mcWindow = null;
@@ -1348,17 +1372,22 @@ public class GenericPcPlugin : IGamePlugin
         if (!Sc2Bridge.EnsureInstalled(exe, t => LogLine?.Invoke($"[{DisplayName}] {t}")))
             return false;
 
-        _mcBridge ??= new Sc2Bridge();
-        _mcBridge.LineReceived += line =>
-        { if (line.StartsWith("LOG:")) LogLine?.Invoke($"[{DisplayName}] engine: {line[4..]}"); };
-        _mcBridge.StateChanged += s =>
+        if (_mcBridge == null)
         {
-            LogLine?.Invoke($"[{DisplayName}] mission engine: {s}");
-            var w = _mcWindow;
-            if (w != null)
-                try { w.Dispatcher.BeginInvoke(() => w.SetFooter($"Engine: {s}")); }
-                catch (Exception) { }
-        };
+            // Subscribed once, at creation — a restart must not stack a
+            // second copy of every handler onto the same events.
+            _mcBridge = new Sc2Bridge();
+            _mcBridge.LineReceived += line =>
+            { if (line.StartsWith("LOG:")) LogLine?.Invoke($"[{DisplayName}] engine: {line[4..]}"); };
+            _mcBridge.StateChanged += st =>
+            {
+                LogLine?.Invoke($"[{DisplayName}] mission engine: {st}");
+                var w = _mcWindow;
+                if (w != null)
+                    try { w.Dispatcher.BeginInvoke(() => w.SetFooter($"Engine: {st}")); }
+                    catch (Exception) { }
+            };
+        }
         string? folder = RegisteredGameFolder;
         return _mcBridge.Start(exe, _mcAuth, _mcServer,
                                Manifest.LocatorKind.Length > 0 ? folder : null);
