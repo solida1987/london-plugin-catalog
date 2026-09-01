@@ -1378,7 +1378,32 @@ public class GenericPcPlugin : IGamePlugin
             // second copy of every handler onto the same events.
             _mcBridge = new Sc2Bridge();
             _mcBridge.LineReceived += line =>
-            { if (line.StartsWith("LOG:")) LogLine?.Invoke($"[{DisplayName}] engine: {line[4..]}"); };
+            {
+                if (line.StartsWith("LOG:"))
+                    LogLine?.Invoke($"[{DisplayName}] engine: {line[4..]}");
+
+                // The window must never sit silent about a launch. Measured
+                // failure mode: the engine could not reach the room (server
+                // mid-restart) and the board just said nothing.
+                string? note =
+                      line.StartsWith("PLAY:accepted:")
+                        ? "Mission accepted — StarCraft II is opening…"
+                    : line.StartsWith("PLAY:refused:")
+                        ? "Refused: " + line["PLAY:refused:".Length..]
+                    : line.StartsWith("Launching ")
+                        ? line
+                    : line.StartsWith("err:") && line.Contains("Error")
+                        ? line[4..]
+                    : null;
+                if (note != null)
+                {
+                    LogLine?.Invoke($"[{DisplayName}] engine: {note}");
+                    var w2 = _mcWindow;
+                    if (w2 != null)
+                        try { w2.Dispatcher.BeginInvoke(() => w2.SetFooter(note)); }
+                        catch (Exception) { }
+                }
+            };
             _mcBridge.StateChanged += st =>
             {
                 LogLine?.Invoke($"[{DisplayName}] mission engine: {st}");

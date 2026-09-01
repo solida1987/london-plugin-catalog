@@ -678,6 +678,20 @@ internal sealed class Sc2MissionWindow : Window
                 Dispatcher.Invoke(() => { SetFooter($"Launching {m.Name}…"); b.Play(m.Id); });
             }
             b.StateChanged += OnState;
+
+            // Silence is the one thing this window may never answer with.
+            // The engine needs the seed's server to be up; when it is not,
+            // "ready" never comes — say so instead of waiting mutely.
+            var timer = new System.Windows.Threading.DispatcherTimer
+            { Interval = TimeSpan.FromSeconds(60) };
+            timer.Tick += (_, _) =>
+            {
+                timer.Stop();
+                if (_bridge() is not { Ready: true })
+                    SetFooter("The engine did not become ready — is this seed's "
+                            + "server running? Press Play on the slot, then launch again.");
+            };
+            timer.Start();
             return;
         }
         SetFooter($"Launching {m.Name}…");
