@@ -80,6 +80,15 @@ internal sealed class Sc2Board
                     {
                         if (!mEl.TryGetProperty("mission_id", out var idEl)) continue;
                         int id = idEl.GetInt32();
+                        // The layout pads its grid with empty cells
+                        // (mission_id -1) so columns line up — the golden
+                        // path's staircase shape. They are spacing, not
+                        // missions: kept as gaps, never as cards.
+                        if (id < 0)
+                        {
+                            col.Missions.Add(new Sc2Mission { Id = -1 });
+                            continue;
+                        }
                         var m = new Sc2Mission { Id = id };
                         if (Sc2MissionTable.ById.TryGetValue(id, out var info))
                         {
@@ -451,10 +460,11 @@ internal sealed class Sc2MissionWindow : Window
         foreach (var col in _board.Columns)
         {
             var stack = new StackPanel { Width = 172, Margin = new Thickness(0, 0, 12, 0) };
-            int cDone = col.Missions.Count(m => m.Beaten(got));
+            var real = col.Missions.Where(m => m.Id >= 0).ToList();
+            int cDone = real.Count(m => m.Beaten(got));
             stack.Children.Add(new TextBlock
             {
-                Text = $"{col.Title.ToUpperInvariant()}   {cDone}/{col.Missions.Count}",
+                Text = $"{col.Title.ToUpperInvariant()}   {cDone}/{real.Count}",
                 FontSize = 11, FontWeight = FontWeights.SemiBold, Foreground = Muted,
                 Margin = new Thickness(2, 0, 0, 8), TextAlignment = TextAlignment.Center,
             });
@@ -470,6 +480,14 @@ internal sealed class Sc2MissionWindow : Window
 
     private UIElement? MissionCard(Sc2Mission m, HashSet<long> got)
     {
+        // A grid gap: air with a card's height, so the staircase shape the
+        // layout drew the board in survives. Filtered views are lists, not
+        // grids, so the air collapses there.
+        if (m.Id < 0)
+            return _filter == "all"
+                ? new Border { Height = 56, Margin = new Thickness(0, 0, 0, 7) }
+                : null;
+
         bool beaten = m.Beaten(got);
         bool? open = beaten ? true : _board!.RuleMet(m.EntryRule, got);
         int done = m.Done(got), tot = m.Locations.Count;
