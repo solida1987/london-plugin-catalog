@@ -9,7 +9,7 @@
   "asset": "tracker.apworld",
   "note": "One apworld into the engine's custom_worlds; tracks any game."
  },
- "count": 193,
+ "count": 194,
  "games": {
   "a_hat_in_time": {
    "game": "A Hat in Time",
@@ -34,6 +34,36 @@
     "standard"
    ],
    "min_poptracker": "0.25.9",
+   "in_poptracker_repo": false
+  },
+  "albw": {
+   "game": "The Legend of Zelda: A Link Between Worlds",
+   "pack_repo": "Legendgreat/albw-ap-poptracker",
+   "pack_name": "ALBW Auto PopTracker",
+   "package_uid": "albw-ap-poptracker",
+   "versions_url": "https://raw.githubusercontent.com/Legendgreat/albw-ap-poptracker/refs/heads/versions/versions.json",
+   "variants": [
+    "map_horizontal_compact",
+    "map_vertical_compact",
+    "standard",
+    "z_map_vertical",
+    "zz_items_only"
+   ],
+   "min_poptracker": "0.31.0",
+   "in_poptracker_repo": false
+  },
+  "alttp": {
+   "game": "The Legend of Zelda: A Link to the Past",
+   "pack_repo": "StripesOO7/alttp-ap-poptracker-pack",
+   "pack_name": "A Link to the Past Archipelago",
+   "package_uid": "ap_alltp",
+   "versions_url": "https://raw.githubusercontent.com/StripesOO7/alttp-ap-poptracker-pack/versions/versions.json",
+   "variants": [
+    "Map Tracker - AP",
+    "Map Tracker - SNES",
+    "Map Tracker ALTTPR Race Mode - SNES"
+   ],
+   "min_poptracker": "0.35.4",
    "in_poptracker_repo": false
   },
   "an_untitled_story": {
@@ -263,6 +293,18 @@
    "min_poptracker": "",
    "in_poptracker_repo": false
   },
+  "celeste_64": {
+   "game": "Celeste 64",
+   "pack_repo": "PoryGone/Celeste-64-AP-Tracker",
+   "pack_name": "Celeste 64 - Archipelago Tracker",
+   "package_uid": "celeste_64_randomizer_porygone",
+   "versions_url": "",
+   "variants": [
+    "itemrando"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
   "celeste_open_world": {
    "game": "Celeste (Open World)",
    "pack_repo": "Zeeveez/CelesteOpenWorldPoptracker",
@@ -274,18 +316,6 @@
     "map_tracker_with_logic"
    ],
    "min_poptracker": "0.35.4",
-   "in_poptracker_repo": false
-  },
-  "celeste_64": {
-   "game": "Celeste 64",
-   "pack_repo": "PoryGone/Celeste-64-AP-Tracker",
-   "pack_name": "Celeste 64 - Archipelago Tracker",
-   "package_uid": "celeste_64_randomizer_porygone",
-   "versions_url": "",
-   "variants": [
-    "itemrando"
-   ],
-   "min_poptracker": "",
    "in_poptracker_repo": false
   },
   "checksmate": {
@@ -336,6 +366,19 @@
    ],
    "min_poptracker": "0.31.0",
    "in_poptracker_repo": true
+  },
+  "cmdmission": {
+   "game": "Mega Man X: Command Mission",
+   "pack_repo": "Zexbid/commandmission_poptracker",
+   "pack_name": "Mega Man X: Command Mission Tracker",
+   "package_uid": "commandmission_pack",
+   "versions_url": "",
+   "variants": [
+    "standard",
+    "var_itemsonly"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
   },
   "content_warning": {
    "game": "Content Warning",
@@ -495,6 +538,18 @@
    "min_poptracker": "0.31.0",
    "in_poptracker_repo": false
   },
+  "diablo2_archipelago": {
+   "game": "Diablo II Archipelago",
+   "pack_repo": "solida1987/Diablo-II-Archipelago",
+   "pack_name": "Diablo II Archipelago Tracker",
+   "package_uid": "solida_diablo2_ap",
+   "versions_url": "https://raw.githubusercontent.com/solida1987/Diablo-II-Archipelago/main/tracker/versions.json",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "0.25.4",
+   "in_poptracker_repo": false
+  },
   "dicey_dungeons": {
    "game": "Dicey Dungeons",
    "pack_repo": "Fylcoast/Dicey-Dungeons-AP-Tracker",
@@ -533,20 +588,6 @@
    "min_poptracker": "",
    "in_poptracker_repo": false
   },
-  "dlc_quest": {
-   "game": "DLC Quest",
-   "pack_repo": "RaceProUK/DLCQuest-APTracker",
-   "pack_name": "DLC Quest AP Tracker",
-   "package_uid": "dlcquest_rando_raceprouk",
-   "versions_url": "https://raw.githubusercontent.com/RaceProUK/DLCQuest-APTracker/main/versions.json",
-   "variants": [
-    "both",
-    "dlc",
-    "lfod"
-   ],
-   "min_poptracker": "0.25.6",
-   "in_poptracker_repo": false
-  },
   "dk64": {
    "game": "Donkey Kong 64",
    "pack_repo": "2dos/bananatracker",
@@ -563,6 +604,20 @@
     "standard"
    ],
    "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
+  "dlc_quest": {
+   "game": "DLC Quest",
+   "pack_repo": "RaceProUK/DLCQuest-APTracker",
+   "pack_name": "DLC Quest AP Tracker",
+   "package_uid": "dlcquest_rando_raceprouk",
+   "versions_url": "https://raw.githubusercontent.com/RaceProUK/DLCQuest-APTracker/main/versions.json",
+   "variants": [
+    "both",
+    "dlc",
+    "lfod"
+   ],
+   "min_poptracker": "0.25.6",
    "in_poptracker_repo": false
   },
   "donkey_kong_country": {
@@ -715,19 +770,18 @@
    "min_poptracker": "0.26.2",
    "in_poptracker_repo": false
   },
-  "final_fantasy": {
-   "game": "Final Fantasy",
-   "pack_repo": "haate/FFR_AP_autotracking",
-   "pack_name": "Final Fantasy 1 Randomizer",
-   "package_uid": "ff1_rando_ap",
-   "versions_url": "",
+  "ff6wc": {
+   "game": "Final Fantasy VI",
+   "pack_repo": "Llisandur/FF6-Worlds-Collide-PopTracker-pack",
+   "pack_name": "FFVI Worlds Collide AP",
+   "package_uid": "ff6wc-ap",
+   "versions_url": "https://raw.githubusercontent.com/llisandur/FF6-Worlds-Collide-PopTracker-pack/refs/heads/master/versions.json",
    "variants": [
-    "shardHunt",
-    "shardHuntNoMap",
     "standard",
-    "standardNoMap"
+    "var_itemsonly",
+    "var_treasuresanity"
    ],
-   "min_poptracker": "",
+   "min_poptracker": "0.26.2",
    "in_poptracker_repo": false
   },
   "ffmq": {
@@ -743,6 +797,21 @@
    "min_poptracker": "",
    "in_poptracker_repo": false
   },
+  "final_fantasy": {
+   "game": "Final Fantasy",
+   "pack_repo": "haate/FFR_AP_autotracking",
+   "pack_name": "Final Fantasy 1 Randomizer",
+   "package_uid": "ff1_rando_ap",
+   "versions_url": "",
+   "variants": [
+    "shardHunt",
+    "shardHuntNoMap",
+    "standard",
+    "standardNoMap"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
   "final_fantasy_pixel_remaster": {
    "game": "Final Fantasy Pixel Remaster",
    "pack_repo": "CTConqueror/FF1PR-AP-MapTracker",
@@ -754,20 +823,6 @@
     "var_itemsonly"
    ],
    "min_poptracker": "0.23.1",
-   "in_poptracker_repo": false
-  },
-  "ff6wc": {
-   "game": "Final Fantasy VI",
-   "pack_repo": "Llisandur/FF6-Worlds-Collide-PopTracker-pack",
-   "pack_name": "FFVI Worlds Collide AP",
-   "package_uid": "ff6wc-ap",
-   "versions_url": "https://raw.githubusercontent.com/llisandur/FF6-Worlds-Collide-PopTracker-pack/refs/heads/master/versions.json",
-   "variants": [
-    "standard",
-    "var_itemsonly",
-    "var_treasuresanity"
-   ],
-   "min_poptracker": "0.26.2",
    "in_poptracker_repo": false
   },
   "final_fantasy_vii": {
@@ -1021,6 +1076,18 @@
    "min_poptracker": "0.23.1",
    "in_poptracker_repo": false
   },
+  "kdl3": {
+   "game": "Kirby's Dream Land 3",
+   "pack_repo": "Silvris/Kirby_Dream_Land_3_AP_Poptracker",
+   "pack_name": "Kirby's Dream Land 3 Archipelago Randomizer",
+   "package_uid": "KDL3_Silvris_AP",
+   "versions_url": "",
+   "variants": [
+    "ap_map_tracker"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
   "kindergarten_2": {
    "game": "Kindergarten 2",
    "pack_repo": "blupeecounter/Kindergarten2-Poptracker",
@@ -1084,18 +1151,6 @@
    "min_poptracker": "0.28.0",
    "in_poptracker_repo": false
   },
-  "kdl3": {
-   "game": "Kirby's Dream Land 3",
-   "pack_repo": "Silvris/Kirby_Dream_Land_3_AP_Poptracker",
-   "pack_name": "Kirby's Dream Land 3 Archipelago Randomizer",
-   "package_uid": "KDL3_Silvris_AP",
-   "versions_url": "",
-   "variants": [
-    "ap_map_tracker"
-   ],
-   "min_poptracker": "",
-   "in_poptracker_repo": false
-  },
   "la_mulana_2": {
    "game": "La-Mulana 2",
    "pack_repo": "Crownmuri/LaMulana2AP-PopTracker",
@@ -1108,6 +1163,19 @@
     "var_2items"
    ],
    "min_poptracker": "0.27.0",
+   "in_poptracker_repo": false
+  },
+  "legend_of_zelda": {
+   "game": "The Legend of Zelda",
+   "pack_repo": "Br00ty/tloz_brooty",
+   "pack_name": "TLoZ Randomizer - AP",
+   "package_uid": "tloz_brooty",
+   "versions_url": "https://raw.githubusercontent.com/Br00ty/tloz_brooty/master/versions.json",
+   "variants": [
+    "standard",
+    "var_itemsonly"
+   ],
+   "min_poptracker": "",
    "in_poptracker_repo": false
   },
   "lego_harry_potter_5_7": {
@@ -1186,30 +1254,18 @@
    "min_poptracker": "",
    "in_poptracker_repo": false
   },
-  "mk64": {
-   "game": "Mario Kart 64",
-   "pack_repo": "SporyTike/Mario-Kart-64-AP-Tracker",
-   "pack_name": "Mario Kart 64 Tracker",
-   "package_uid": "ap_MK64",
-   "versions_url": "https://raw.githubusercontent.com/SporyTike/Mario-Kart-64-AP-Tracker/main/versions.json",
+  "marioland2": {
+   "game": "Super Mario Land 2: 6 Golden Coins",
+   "pack_repo": "mobby45/SuperMarioLand2TrackerAP",
+   "pack_name": "Super Mario Land 2 AP Tracker",
+   "package_uid": "sml2_ap",
+   "versions_url": "https://raw.githubusercontent.com/mobby45/SuperMarioLand2TrackerAP/refs/heads/main/versions.json",
    "variants": [
-    "courseMap",
-    "cupMap"
+    "standard",
+    "var_itemsonly",
+    "var_verticalmap"
    ],
-   "min_poptracker": "",
-   "in_poptracker_repo": false
-  },
-  "mkdd": {
-   "game": "Mario Kart: Double Dash!!",
-   "pack_repo": "Razerock/double-dash-ap-tracker",
-   "pack_name": "Mario Kart Double Dash Archipelago",
-   "package_uid": "mario-kart-double-dash-ap",
-   "versions_url": "https://raw.githubusercontent.com/Razerock/double-dash-ap-tracker/refs/heads/versions/versions.json",
-   "variants": [
-    "trackerMain",
-    "trackerVertical"
-   ],
-   "min_poptracker": "0.32.0",
+   "min_poptracker": "0.27.0",
    "in_poptracker_repo": false
   },
   "medievil_2": {
@@ -1234,18 +1290,6 @@
     "standard"
    ],
    "min_poptracker": "",
-   "in_poptracker_repo": false
-  },
-  "mm3": {
-   "game": "Mega Man 3",
-   "pack_repo": "drothe/megaman3-ap-poptracker",
-   "pack_name": "Mega Man 3 Archipelago",
-   "package_uid": "megaman3_drothe",
-   "versions_url": "",
-   "variants": [
-    "standard"
-   ],
-   "min_poptracker": "0.25.9",
    "in_poptracker_repo": false
   },
   "mega_man_x": {
@@ -1280,31 +1324,6 @@
    "versions_url": "https://raw.githubusercontent.com/BrianCumminger/megamanx3-ap-poptracker/master/versions.json",
    "variants": [
     "standard"
-   ],
-   "min_poptracker": "",
-   "in_poptracker_repo": false
-  },
-  "mmx4": {
-   "game": "Mega Man X4",
-   "pack_repo": "l337f00l/mega-man-x4-ap-poptracker",
-   "pack_name": "Mega Man X4 Archipelago",
-   "package_uid": "mega man x4_ap",
-   "versions_url": "https://raw.githubusercontent.com/l337f00l/mega-man-x4-ap-poptracker/main/versions.json",
-   "variants": [
-    "Map Tracker"
-   ],
-   "min_poptracker": "0.31.0",
-   "in_poptracker_repo": false
-  },
-  "cmdmission": {
-   "game": "Mega Man X: Command Mission",
-   "pack_repo": "Zexbid/commandmission_poptracker",
-   "pack_name": "Mega Man X: Command Mission Tracker",
-   "package_uid": "commandmission_pack",
-   "versions_url": "",
-   "variants": [
-    "standard",
-    "var_itemsonly"
    ],
    "min_poptracker": "",
    "in_poptracker_repo": false
@@ -1374,6 +1393,56 @@
    "min_poptracker": "0.24.1",
    "in_poptracker_repo": true
   },
+  "mk64": {
+   "game": "Mario Kart 64",
+   "pack_repo": "SporyTike/Mario-Kart-64-AP-Tracker",
+   "pack_name": "Mario Kart 64 Tracker",
+   "package_uid": "ap_MK64",
+   "versions_url": "https://raw.githubusercontent.com/SporyTike/Mario-Kart-64-AP-Tracker/main/versions.json",
+   "variants": [
+    "courseMap",
+    "cupMap"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
+  "mkdd": {
+   "game": "Mario Kart: Double Dash!!",
+   "pack_repo": "Razerock/double-dash-ap-tracker",
+   "pack_name": "Mario Kart Double Dash Archipelago",
+   "package_uid": "mario-kart-double-dash-ap",
+   "versions_url": "https://raw.githubusercontent.com/Razerock/double-dash-ap-tracker/refs/heads/versions/versions.json",
+   "variants": [
+    "trackerMain",
+    "trackerVertical"
+   ],
+   "min_poptracker": "0.32.0",
+   "in_poptracker_repo": false
+  },
+  "mm3": {
+   "game": "Mega Man 3",
+   "pack_repo": "drothe/megaman3-ap-poptracker",
+   "pack_name": "Mega Man 3 Archipelago",
+   "package_uid": "megaman3_drothe",
+   "versions_url": "",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "0.25.9",
+   "in_poptracker_repo": false
+  },
+  "mmx4": {
+   "game": "Mega Man X4",
+   "pack_repo": "l337f00l/mega-man-x4-ap-poptracker",
+   "pack_name": "Mega Man X4 Archipelago",
+   "package_uid": "mega man x4_ap",
+   "versions_url": "https://raw.githubusercontent.com/l337f00l/mega-man-x4-ap-poptracker/main/versions.json",
+   "variants": [
+    "Map Tracker"
+   ],
+   "min_poptracker": "0.31.0",
+   "in_poptracker_repo": false
+  },
   "momodora_moonlit_farewell": {
    "game": "Momodora: Moonlit Farewell",
    "pack_repo": "FuyumiSogeki/Momodora-Moonlit-Farewell-Poptracker",
@@ -1419,6 +1488,18 @@
    "versions_url": "",
    "variants": [],
    "min_poptracker": "0.35.1",
+   "in_poptracker_repo": false
+  },
+  "oot": {
+   "game": "The Legend of Zelda: Ocarina of Time",
+   "pack_repo": "brennanzynda/oot-ap-autotracker",
+   "pack_name": "Ocarina of Time - Archipelago Tracker",
+   "package_uid": "oot-ap-autotracker",
+   "versions_url": "",
+   "variants": [
+    "itemrando"
+   ],
+   "min_poptracker": "0.25.1",
    "in_poptracker_repo": false
   },
   "osu": {
@@ -1523,6 +1604,19 @@
    "min_poptracker": "",
    "in_poptracker_repo": false
   },
+  "pokemon_bw": {
+   "game": "Pokémon Black and White",
+   "pack_repo": "Radis7Noir/pokemon-bw-ap-tracker",
+   "pack_name": "Pokémon Black and White Archipelago",
+   "package_uid": "ap_pokemon_bw",
+   "versions_url": "https://raw.githubusercontent.com/Radis7Noir/pokemon-bw-ap-tracker/versions/versions.json",
+   "variants": [
+    "standard",
+    "var_vertical"
+   ],
+   "min_poptracker": "0.34.0",
+   "in_poptracker_repo": false
+  },
   "pokemon_crystal": {
    "game": "Pokemon Crystal",
    "pack_repo": "palex00/crystal-ap-tracker",
@@ -1561,19 +1655,6 @@
     "var_items_only"
    ],
    "min_poptracker": "0.35.4",
-   "in_poptracker_repo": false
-  },
-  "pokemon_bw": {
-   "game": "Pokémon Black and White",
-   "pack_repo": "Radis7Noir/pokemon-bw-ap-tracker",
-   "pack_name": "Pokémon Black and White Archipelago",
-   "package_uid": "ap_pokemon_bw",
-   "versions_url": "https://raw.githubusercontent.com/Radis7Noir/pokemon-bw-ap-tracker/versions/versions.json",
-   "variants": [
-    "standard",
-    "var_vertical"
-   ],
-   "min_poptracker": "0.34.0",
    "in_poptracker_repo": false
   },
   "pokemon_platinum": {
@@ -1650,18 +1731,6 @@
    "min_poptracker": "0.25.9",
    "in_poptracker_repo": false
   },
-  "rain_world": {
-   "game": "Rain World",
-   "pack_repo": "ThePirateJaz/Rain-World-PopTracker",
-   "pack_name": "Rain World Poptracker Pack",
-   "package_uid": "rain_world_pack",
-   "versions_url": "https://raw.githubusercontent.com/ThePirateJaz/Rain-World-PopTracker/refs/heads/main/versions.json",
-   "variants": [
-    "standard"
-   ],
-   "min_poptracker": "0.25.9",
-   "in_poptracker_repo": false
-  },
   "rac2": {
    "game": "Ratchet & Clank 2: Going Commando",
    "pack_repo": "cloudofdarkhole6/RaC2-poptracker",
@@ -1672,6 +1741,18 @@
     "Map Tracker"
    ],
    "min_poptracker": "0.27.0",
+   "in_poptracker_repo": false
+  },
+  "rain_world": {
+   "game": "Rain World",
+   "pack_repo": "ThePirateJaz/Rain-World-PopTracker",
+   "pack_name": "Rain World Poptracker Pack",
+   "package_uid": "rain_world_pack",
+   "versions_url": "https://raw.githubusercontent.com/ThePirateJaz/Rain-World-PopTracker/refs/heads/main/versions.json",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "0.25.9",
    "in_poptracker_repo": false
   },
   "resident_evil_2_remake": {
@@ -1825,6 +1906,18 @@
     "Map Tracker"
    ],
    "min_poptracker": "0.27.0",
+   "in_poptracker_repo": false
+  },
+  "smw": {
+   "game": "Super Mario World",
+   "pack_repo": "PoryGone/SMW_AP_Tracker",
+   "pack_name": "Super Mario World - Archipelago Tracker",
+   "package_uid": "super_mario_world_randomizer_porygone",
+   "versions_url": "",
+   "variants": [
+    "itemrando"
+   ],
+   "min_poptracker": "",
    "in_poptracker_repo": false
   },
   "smz3": {
@@ -2001,20 +2094,6 @@
    "min_poptracker": "",
    "in_poptracker_repo": false
   },
-  "marioland2": {
-   "game": "Super Mario Land 2: 6 Golden Coins",
-   "pack_repo": "mobby45/SuperMarioLand2TrackerAP",
-   "pack_name": "Super Mario Land 2 AP Tracker",
-   "package_uid": "sml2_ap",
-   "versions_url": "https://raw.githubusercontent.com/mobby45/SuperMarioLand2TrackerAP/refs/heads/main/versions.json",
-   "variants": [
-    "standard",
-    "var_itemsonly",
-    "var_verticalmap"
-   ],
-   "min_poptracker": "0.27.0",
-   "in_poptracker_repo": false
-  },
   "super_mario_sunshine": {
    "game": "Super Mario Sunshine",
    "pack_repo": "UmedMuzl/Sunshine_Pop",
@@ -2023,18 +2102,6 @@
    "versions_url": "https://raw.githubusercontent.com/AmedMusl/Sunshine_Pop/refs/heads/main/versions.json",
    "variants": [
     "standard"
-   ],
-   "min_poptracker": "",
-   "in_poptracker_repo": false
-  },
-  "smw": {
-   "game": "Super Mario World",
-   "pack_repo": "PoryGone/SMW_AP_Tracker",
-   "pack_name": "Super Mario World - Archipelago Tracker",
-   "package_uid": "super_mario_world_randomizer_porygone",
-   "versions_url": "",
-   "variants": [
-    "itemrando"
    ],
    "min_poptracker": "",
    "in_poptracker_repo": false
@@ -2089,61 +2156,6 @@
    "min_poptracker": "0.30.4",
    "in_poptracker_repo": false
   },
-  "legend_of_zelda": {
-   "game": "The Legend of Zelda",
-   "pack_repo": "Br00ty/tloz_brooty",
-   "pack_name": "TLoZ Randomizer - AP",
-   "package_uid": "tloz_brooty",
-   "versions_url": "https://raw.githubusercontent.com/Br00ty/tloz_brooty/master/versions.json",
-   "variants": [
-    "standard",
-    "var_itemsonly"
-   ],
-   "min_poptracker": "",
-   "in_poptracker_repo": false
-  },
-  "albw": {
-   "game": "The Legend of Zelda: A Link Between Worlds",
-   "pack_repo": "Legendgreat/albw-ap-poptracker",
-   "pack_name": "ALBW Auto PopTracker",
-   "package_uid": "albw-ap-poptracker",
-   "versions_url": "https://raw.githubusercontent.com/Legendgreat/albw-ap-poptracker/refs/heads/versions/versions.json",
-   "variants": [
-    "map_horizontal_compact",
-    "map_vertical_compact",
-    "standard",
-    "z_map_vertical",
-    "zz_items_only"
-   ],
-   "min_poptracker": "0.31.0",
-   "in_poptracker_repo": false
-  },
-  "alttp": {
-   "game": "The Legend of Zelda: A Link to the Past",
-   "pack_repo": "StripesOO7/alttp-ap-poptracker-pack",
-   "pack_name": "A Link to the Past Archipelago",
-   "package_uid": "ap_alltp",
-   "versions_url": "https://raw.githubusercontent.com/StripesOO7/alttp-ap-poptracker-pack/versions/versions.json",
-   "variants": [
-    "Map Tracker - AP",
-    "Map Tracker - SNES",
-    "Map Tracker ALTTPR Race Mode - SNES"
-   ],
-   "min_poptracker": "0.35.4",
-   "in_poptracker_repo": false
-  },
-  "oot": {
-   "game": "The Legend of Zelda: Ocarina of Time",
-   "pack_repo": "brennanzynda/oot-ap-autotracker",
-   "pack_name": "Ocarina of Time - Archipelago Tracker",
-   "package_uid": "oot-ap-autotracker",
-   "versions_url": "",
-   "variants": [
-    "itemrando"
-   ],
-   "min_poptracker": "0.25.1",
-   "in_poptracker_repo": false
-  },
   "the_legend_of_zelda_ocarina_of_time_ship_of_harkinian": {
    "game": "The Legend of Zelda: Ocarina of Time (Ship of Harkinian)",
    "pack_repo": "Brian0255/ship-of-harkinian-ap-tracker",
@@ -2154,44 +2166,6 @@
     "map_tracker_horizontal"
    ],
    "min_poptracker": "0.31.0",
-   "in_poptracker_repo": false
-  },
-  "tloz_oos": {
-   "game": "The Legend of Zelda: Oracle of Seasons",
-   "pack_repo": "seto10987/Oracle-of-Seasons-AP-Poptracker-Pack",
-   "pack_name": "Oracle of Seasons Tracker",
-   "package_uid": "seasons_ap",
-   "versions_url": "https://raw.githubusercontent.com/seto10987/Oracle-of-Seasons-AP-Poptracker-Pack/versions/versions.json",
-   "variants": [
-    "standard",
-    "var_horizontal"
-   ],
-   "min_poptracker": "",
-   "in_poptracker_repo": false
-  },
-  "wind_waker": {
-   "game": "The Legend of Zelda: The Wind Waker",
-   "pack_repo": "Ouro-dev/ww-poptracker",
-   "pack_name": "Wind Waker AP Tracker",
-   "package_uid": "ap_windwaker",
-   "versions_url": "",
-   "variants": [
-    "standard"
-   ],
-   "min_poptracker": "",
-   "in_poptracker_repo": false
-  },
-  "twilight_princess": {
-   "game": "The Legend of Zelda: Twilight Princess",
-   "pack_repo": "Phantom5800/tp-tracker",
-   "pack_name": "Twilight Princess Item Tracker",
-   "package_uid": "tptracker_phantom",
-   "versions_url": "",
-   "variants": [
-    "item_tracker",
-    "map_tracker"
-   ],
-   "min_poptracker": "",
    "in_poptracker_repo": false
   },
   "the_messenger": {
@@ -2217,6 +2191,19 @@
     "Map Tracker"
    ],
    "min_poptracker": "0.31.0",
+   "in_poptracker_repo": false
+  },
+  "tloz_oos": {
+   "game": "The Legend of Zelda: Oracle of Seasons",
+   "pack_repo": "seto10987/Oracle-of-Seasons-AP-Poptracker-Pack",
+   "pack_name": "Oracle of Seasons Tracker",
+   "package_uid": "seasons_ap",
+   "versions_url": "https://raw.githubusercontent.com/seto10987/Oracle-of-Seasons-AP-Poptracker-Pack/versions/versions.json",
+   "variants": [
+    "standard",
+    "var_horizontal"
+   ],
+   "min_poptracker": "",
    "in_poptracker_repo": false
   },
   "toem_a_photo_adventure": {
@@ -2281,6 +2268,19 @@
     "var_tabbed"
    ],
    "min_poptracker": "0.25.9",
+   "in_poptracker_repo": false
+  },
+  "twilight_princess": {
+   "game": "The Legend of Zelda: Twilight Princess",
+   "pack_repo": "Phantom5800/tp-tracker",
+   "pack_name": "Twilight Princess Item Tracker",
+   "package_uid": "tptracker_phantom",
+   "versions_url": "",
+   "variants": [
+    "item_tracker",
+    "map_tracker"
+   ],
+   "min_poptracker": "",
    "in_poptracker_repo": false
   },
   "ty_the_tasmanian_tiger": {
@@ -2378,6 +2378,18 @@
    "pack_name": "Wario Land 4 Randomizer AP",
    "package_uid": "wl4_jth",
    "versions_url": "https://raw.githubusercontent.com/JackTHerbert/wl4_jth/master/versions.json",
+   "variants": [
+    "standard"
+   ],
+   "min_poptracker": "",
+   "in_poptracker_repo": false
+  },
+  "wind_waker": {
+   "game": "The Legend of Zelda: The Wind Waker",
+   "pack_repo": "Ouro-dev/ww-poptracker",
+   "pack_name": "Wind Waker AP Tracker",
+   "package_uid": "ap_windwaker",
+   "versions_url": "",
    "variants": [
     "standard"
    ],
