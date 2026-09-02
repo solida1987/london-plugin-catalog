@@ -257,6 +257,25 @@ public class GenericPcPlugin : IGamePlugin
         }
     }
 
+    ///
+    /// Build this game's map tracker pictures from the player's own install.
+    ///
+    /// A pack for one of OUR games ships no game artwork — it ships a recipe,
+    /// and this follows it. Cheap when there is nothing to do, so it can be
+    /// called on every set-up; silent for the games whose packs ship complete,
+    /// which is nearly all of them.
+    ///
+    public Task<int> BuildTrackerArtworkAsync(string packDir,
+                                              CancellationToken ct = default)
+    {
+        string? game = RegisteredGameFolder;
+        if (string.IsNullOrEmpty(game) || !Directory.Exists(packDir))
+            return Task.FromResult(0);
+        // Disk work over tens of megabytes of archives: not on the UI thread.
+        return Task.Run(() => TrackerArtwork.Build(
+            packDir, game!, m => LogLine?.Invoke($"[{DisplayName}] {m}")), ct);
+    }
+
     /// Where this game is installed, according to the machine rather than the
     /// player. Null when we genuinely cannot tell -- never a guess.
     ///
