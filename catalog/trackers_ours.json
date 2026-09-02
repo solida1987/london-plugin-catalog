@@ -7,7 +7,22 @@
       "pack_name": "Diablo II Archipelago Tracker",
       "package_uid": "solida_diablo2_ap",
       "versions_url": "https://raw.githubusercontent.com/solida1987/Diablo-II-Archipelago/main/tracker/versions.json",
-      "variants": ["standard"],
+      "variants": [
+        "standard"
+      ],
+      "min_poptracker": "0.25.4",
+      "in_poptracker_repo": false
+    },
+    "starcraft_ii": {
+      "game": "StarCraft II",
+      "pack_repo": "solida1987/london-plugin-catalog",
+      "pack_name": "StarCraft II Archipelago Tracker",
+      "package_uid": "solida_starcraft2_ap",
+      "versions_url": "https://raw.githubusercontent.com/solida1987/london-plugin-catalog/main/catalog/trackers/solida_starcraft2_ap.json",
+      "variants": [
+        "standard",
+        "large"
+      ],
       "min_poptracker": "0.25.4",
       "in_poptracker_repo": false
     }

@@ -9,7 +9,7 @@
   "asset": "tracker.apworld",
   "note": "One apworld into the engine's custom_worlds; tracks any game."
  },
- "count": 194,
+ "count": 195,
  "games": {
   "a_hat_in_time": {
    "game": "A Hat in Time",
@@ -2054,6 +2054,19 @@
     "standard"
    ],
    "min_poptracker": "0.32.0",
+   "in_poptracker_repo": false
+  },
+  "starcraft_ii": {
+   "game": "StarCraft II",
+   "pack_repo": "solida1987/london-plugin-catalog",
+   "pack_name": "StarCraft II Archipelago Tracker",
+   "package_uid": "solida_starcraft2_ap",
+   "versions_url": "https://raw.githubusercontent.com/solida1987/london-plugin-catalog/main/catalog/trackers/solida_starcraft2_ap.json",
+   "variants": [
+    "standard",
+    "large"
+   ],
+   "min_poptracker": "0.25.4",
    "in_poptracker_repo": false
   },
   "stardew_valley": {

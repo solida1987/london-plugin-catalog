@@ -1,0 +1,9 @@
+{
+  "versions": [
+    {
+      "package_version": "1.0.0",
+      "download_url": "https://github.com/solida1987/london-plugin-catalog/releases/download/tracker-sc2-v1.0.0/solida_starcraft2_ap.zip",
+      "sha256": "4079e64daab73a3b3453b632ca8162319c767ebb9e8d81fe26eead428251128b"
+    }
+  ]
+}
