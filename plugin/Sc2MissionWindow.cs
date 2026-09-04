@@ -38,6 +38,11 @@ internal sealed class Sc2Mission
     public string FullName = "";
     public string Race = "";
     public JsonElement EntryRule;
+    /// The location that ends the mission: objective 0, the one the world's
+    /// own client tests in is_mission_completed (get_location_id(id, 0)).
+    /// It is named "Victory" on every mission but In Utter Darkness, whose
+    /// scripted end is "Defeat" — the player is meant to fall. Matching on
+    /// the word "Victory" left that mission unbeatable on the board.
     public long VictoryLoc = -1;
     public List<(long Id, string Objective)> Locations = new();
 
@@ -53,6 +58,10 @@ internal sealed class Sc2Column
 
 internal sealed class Sc2Board
 {
+    /// worlds/sc2/locations.py VICTORY_MODULO: every mission owns a block of
+    /// this many location ids, and the block's first id is its end.
+    private const long VictoryModulo = 100;
+
     public List<Sc2Column> Columns = new();
     public Dictionary<int, Sc2Mission> ById = new();
 
@@ -129,13 +138,17 @@ internal sealed class Sc2Board
                         continue;
                     string obj = kv.Key[(m.FullName.Length + 2)..];
                     m.Locations.Add((kv.Value, obj));
-                    if (obj == "Victory") m.VictoryLoc = kv.Value;
+                    // Objective 0 ends the mission, whatever it is called —
+                    // the same arithmetic the world's client uses. The name
+                    // is a fallback for a table whose ids do not follow it.
+                    if (kv.Value % VictoryModulo == 0) m.VictoryLoc = kv.Value;
+                    else if (obj == "Victory" && m.VictoryLoc < 0) m.VictoryLoc = kv.Value;
                     break;
                 }
             }
             foreach (var m in board.ById.Values)
                 m.Locations.Sort((a, b) =>
-                    a.Objective == "Victory" ? -1 : b.Objective == "Victory" ? 1
+                    a.Id == m.VictoryLoc ? -1 : b.Id == m.VictoryLoc ? 1
                     : string.Compare(a.Objective, b.Objective, StringComparison.Ordinal));
         }
         return board;
